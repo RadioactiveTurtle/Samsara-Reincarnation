@@ -72,6 +72,7 @@ Hexen I:
 
 + The Bloodscourge now has its special ripper properties from Hexen, meaning that it rips all enemies that are not boss monsters.
 + The Bloodscourge now forces half of its splash damage, to make it capable of killing bosses like it could in the original Hexen.
+- The Bloodscourge now only deals 4-32 direct hit damage (decreased from 16-128), to compensate for ripping all enemies that aren't bosses.
 
 -Baratus-
 

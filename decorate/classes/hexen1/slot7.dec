@@ -460,7 +460,7 @@ actor MageStaffFX3 : MageStaffFX2 //Needed for special mage staff ripper that ri
     Radius 2
     Height 2
     Speed 17
-    Damage 8 // was 16. Nerfed because it turns out 16 damage with hexen native super ripper just annihilates everything
+    Damage 4 // was 16. Nerfed because it turns out 16 damage with hexen native super ripper is way too much
     DamageType "Fire"
     DeathSound "MageStaffExplode"
     Decal "Scorch"

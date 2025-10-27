@@ -121,6 +121,10 @@ Kyle Katarn (Star Wars: Dark Forces):
 ! The Wookie Bowcaster's main projectile now deals 96 splash damage (changed from 84-108).
 ! The Wookie Bowcaster's cluster projectiles now deal 80 damage (changed from 70-85).
 
+Bitterman (Quake II):
+
+* Fixed a possible crash when getting crushed as Bitterman.
+
 Sarge (Quake III Arena):
 
 - The rocket launcher now does 80 direct damage in PVE (decreased from 100).

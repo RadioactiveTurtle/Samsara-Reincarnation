@@ -123,6 +123,7 @@ Kyle Katarn (Star Wars: Dark Forces):
 
 Bitterman (Quake II):
 
+* Fixed Bitterman playing the wrong sound when getting crushed.
 * Fixed a possible crash when getting crushed as Bitterman.
 
 Sarge (Quake III Arena):

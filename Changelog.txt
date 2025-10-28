@@ -19,7 +19,6 @@ Doom:
 ! The status bar HUD has been improved and now shows the other weapons.
 - The chainsaw only saws once every two tics instead of once every tic, to bring it in line with the other chainsaws while still being better.
 - The shotgun, under improved balance, fires once every 31 tics, 36 if fire isn't held down (increased from 29 tics, 31 if fire isn't held down).
-- The flamer's flame damage is decreased from 5 to 4, and most flame tics no longer inflict pain.
 - Gas ammo has been generally halved; small ammo 4 pickups give 12 and big ammo 4 pickups give 48, to make it less viable to spam the flame weapons.
 - Mine ammo has also been reduced; big ammo 3 pickups only give 1 mine instead of 2.
 ! The railgun no longer does more damage by using the scope, because that was a stupid mechanic that is bad legacy design of Untitled (who's making this change).

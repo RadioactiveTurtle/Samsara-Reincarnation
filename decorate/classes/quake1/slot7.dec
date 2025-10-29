@@ -343,10 +343,10 @@ ACTOR LGBeamProjectile : MjolnirProjectile
         }
 }
 
-ACTOR LGBeamProjectileCoop : LGBeamProjectile { Damage (50) +THRUSPECIES +MTHRUSPECIES Species "Player" }
+ACTOR LGBeamProjectileCoop : LGBeamProjectile { Damage (40) +THRUSPECIES +MTHRUSPECIES Species "Player" }
 ACTOR LGBeamProjectile2 : LGBeamProjectile
 {
-    Damage (50)
+    Damage (40)
     States
     {
         Spawn:

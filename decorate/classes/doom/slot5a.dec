@@ -19,7 +19,7 @@ actor "Rocket Launcher" : RocketLauncher
 	Ready:
 		TNT1 A 0 A_JumpIfInventory("DoomClassMode",2,"ReadyStr")
 		TNT1 A 0 A_JumpIfInventory("DoomClassMode",1,"Ready64")
-		DMIS A 1 A_WeaponReady(WRF_NOSECONDARY)
+		DMIS A 1 A_WeaponReady
 		loop
 
 	Deselect:
@@ -77,7 +77,7 @@ actor "Rocket Launcher" : RocketLauncher
 
 	// Doom 64 (has recoil visual and kickback)
 	Ready64:
-		64ML A 1 A_WeaponReady(WRF_NOSECONDARY)
+		64ML A 1 A_WeaponReady
 		goto Ready
 
 	Deselect64:
@@ -118,9 +118,9 @@ actor "Rocket Launcher" : RocketLauncher
 	// Stronghold
 	// Unpowered
 	ReadyStr:
-		TNT1 A 0 A_JumpIfInventory("PowerSamsaraDoomguyStrWeaponPower",1,"ReadyStrPowered")
-		TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"ReadyStrPowered")
-		DMIS H 1 A_WeaponReady(WRF_NOSECONDARY)
+		//TNT1 A 0 A_JumpIfInventory("PowerSamsaraDoomguyStrWeaponPower",1,"ReadyStrPowered")
+		//TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"ReadyStrPowered")
+		DMIS H 1 A_WeaponReady
 		goto Ready
 
 	DeselectStr:
@@ -154,9 +154,11 @@ actor "Rocket Launcher" : RocketLauncher
 		goto LightDone
 
 	// Powered
+/*
 	ReadyStrPowered:
 		DMIS H 1 A_WeaponReady
 		goto Ready
+*/
 
 	DeselectStrPowered:
 		TNT1 A 0 A_Lower
@@ -520,6 +522,7 @@ actor SamsaraDoomguyStrRocketLauncherPoweredPrimaryAttackHandler : Trigger
     }
 }
 
+/*
 actor SamsaraDoomguyStrRocketLauncherPoweredSecondaryAttackHandler1 : Trigger
 {
     States
@@ -627,6 +630,7 @@ actor SamsaraDoomguyStrRocketLauncherPoweredSecondaryAttackHandler3 : Trigger
         stop
     }
 }
+*/
 
 // Rocket
 

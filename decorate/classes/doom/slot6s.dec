@@ -1005,11 +1005,11 @@ actor SamsaraDoomguyStrRailgunPoweredAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupZoomedAttackCoop")
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupZoomedAttackCoop")
       PickupZoomedAttackDM:
-        TNT1 AAAA 0 A_RailAttack(20,0,false,"00 FF FF","FF FF FF",RGF_SILENT|RGF_FULLBRIGHT,0,"SamsaraDoomguyStrRailgunPuff") // total damage: 120
+        TNT1 AAAA 0 A_RailAttack(20,0,false,"00 FF FF","FF FF FF",RGF_SILENT|RGF_FULLBRIGHT,0,"SamsaraDoomguyStrRailgunPuff") // total damage: 80
         stop
 
       PickupZoomedAttackCoop:
-        TNT1 AAAA 0 A_RailAttack(30,0,false,"00 FF FF","FF FF FF",RGF_SILENT|RGF_FULLBRIGHT,0,"SamsaraDoomguyStrRailgunPuffCoop")
+        TNT1 AAAA 0 A_RailAttack(30,0,false,"00 FF FF","FF FF FF",RGF_SILENT|RGF_FULLBRIGHT,0,"SamsaraDoomguyStrRailgunPuffCoop") // total damage: 120
         stop
     }
 }

@@ -273,14 +273,16 @@ actor BFG10KBall : BFGBall
         goto DeathExplode
 
       DeathExplode:
-        BGE1 C 0 Bright A_Explode(200,200,1)
-        BGE1 C 0 Bright A_JumpIfInTargetLOS("BigExplode")
-		Goto DeathFinish
-	  BigExplode:
+        BGE1 C 0 Bright A_Explode(200,200)
+        BGE1 C 0 Bright A_JumpIfInTargetLOS("DeathExplodeBig")
+        goto DeathFinish
+
+      DeathExplodeBig:
         BGE1 C 0 Bright A_Explode(500,1000,0)
         BGE1 C 0 Bright A_RadiusGive("BFG10KExtraSpawnerCoop",1000,RGF_MONSTERS|RGF_OBJECTS)
         //BGE1 C 0 Bright A_BFGSpray("BFG10KExtra",40,20)
-		Goto DeathFinish
+        goto DeathFinish
+
       DeathFinish:
         BGE1 C 5 Bright
         BGE1 D 5 Bright A_GiveInventory("SamsaraQuake2BFG10KProjectileOrbitRemoval") // this thing removes the orbiting particles
@@ -401,14 +403,15 @@ actor BFG10KBallDM : BFG10KBall
         goto SpawnCycle1
 
       DeathExplode:
-        BGE1 C 0 Bright A_Explode(200,200,1)
-        BGE1 C 0 Bright A_JumpIfInTargetLOS("BigExplode")
-		Goto DeathFinish
-	  BigExplode:
+        BGE1 C 0 Bright A_Explode(200,200)
+        BGE1 C 0 Bright A_JumpIfInTargetLOS("DeathExplodeBig")
+        goto DeathFinish
+
+      DeathExplodeBig:
         BGE1 C 0 Bright A_Explode(200,1000,0)
         BGE1 C 0 Bright A_RadiusGive("BFG10KExtraSpawner",1000,RGF_PLAYERS|RGF_MONSTERS|RGF_OBJECTS)
         //BGE1 C 0 Bright A_BFGSpray("BFG10KExtra",40,20)
-		Goto DeathFinish
+        goto DeathFinish
     }
 }
 

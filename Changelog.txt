@@ -17,32 +17,53 @@ Doom:
 -Doomguy (Stronghold)-
 
 ! The status bar HUD has been improved and now shows the other weapons.
-- The chainsaw only saws once every two tics instead of once every tic, to bring it in line with the other chainsaws while still being better.
-- The shotgun, under improved balance, fires once every 31 tics, 36 if fire isn't held down (increased from 29 tics, 31 if fire isn't held down).
+- With improved weapon balance, the chainsaw (unpowered) now only saws once every two tics instead of once every tic, to bring it in line with the other chainsaws while still being better.
+- The chainsaw (powered) now only saws twice per tic instead of four times per tic.
+- The powered secondary fire modes for the pistol, shotgun, super shotgun, chaingun, minigun, rocket launcher, plasma rifle, and homing rocket launcher have been disabled for balance reasons.
+- The pistol (powered) firing animation tics have been increased (from 3 to 5 passing refire, 6-12 to 10-18 depending on refires failed).
+- The pistol (powered) now deals 7-21 damage in multiples of 7 (decreased from 12-36 in multiples of 12).
++ With improved weapon balance, the shotgun (unpowered) firing animation tics have been decreased (from 32 to 31 passing refire, 37 to 36 failing refire).
+- With improved weapon balance, the shotgun (unpowered) now fires 7 pellets (decreased from 8).
+- The shotgun (powered) firing animation tics have been increased (from 16 to 18 passing refire, 17 to 19 failing refire).
++ The shotgun (powered) now has a horizontal spread of 1.5 (decreased from 3) and a vertical spread of 0.5 (decreased from 2.5).
+- The shotgun (powered) now deals 5-15 damage in multiples of 5 per pellet (decreased from 12-36 in multiples of 12).
++ The super shotgun (powered) now has a horizontal spread of 7.3 (decreased from 14.6) and a vertical spread of 4.7 (decreased from 9.4).
+- The super shotgun (powered) now deals 6-18 damage in multiples of 6 per pellet (decreased from 12-36 in multiples of 12).
+- The auto shotgun (powered) now fires 7 pellets (decreased from 8).
+- The auto shotgun (powered) now deals 3-9 damage in multiples of 3 per pellet (decreased from 5-15 in multiples of 5).
++ The chaingun (powered) now fires in bursts of 2 tics, totaling 8 tics (decreased from 3 tics, totaling 12 tics).
+- The chaingun (powered) now has a horizontal spread of 3 (increased from 0.75) and a vertical spread of 2.1 (increased from 0.75).
+- The chaingun (powered) now deals 10-30 damage in multiples of 10 (decreased from 20-60 in multiples of 20).
+- The flamethrower (powered) no longer has +RIPPER.
+- The minigun (powered) now has a horizontal spread of 14.6 (increased from 4) and a vertical spread of 9.4 (increased from 2.3).
++ The minigun (powered) now fires 3 pellets (increased from 2).
+- The minigun (powered) now deals 5-15 damage in multiples of 5 (decreased from 10-30 in multiples of 10).
+- The rocket launcher (powered) now deals 70 direct damage (decreased from 96).
+- The rocket launcher (powered) now deals its splash damage within a radius of 128 map units (decreased from 192).
+- The grenade launcher (powered)'s tiny grenades now deal 4-32 damage in multiples of 4 (decreased from 5-40 in multiples of 5).
+- The grenade launcher (powered)'s tiny grenades now deal 51 splash damage (decreased from 64).
+! The plasma rifle (powered) has been reworked; it now uses the homing plasma of its former secondary fire that deals 9-72 damage in multiples of 9 (average 90; changed from 60).
+- The railgun (unpowered) no longer adds 25 damage by using the scope, because that was a stupid mechanic that is bad legacy design of Untitled (who has made this change).
+! The railgun (unpowered) now deals 75 damage in PVP (changed from 50-100 vanilla; decreased from 100 improved) with a level 1 shot.
++ The railgun (unpowered) now deals 150 damage in PVP (changed from 100-150 vanilla) with a level 2 shot.
++ The railgun (unpowered) now deals 225 damage in PVP (increased from 150-200 vanilla and 200 improved) with a level 3 shot.
++ The railgun (unpowered) now deals 100 damage in PVE (changed from 50-100 vanilla) with a level 1 shot.
++ The railgun (unpowered) now deals 200 damage in PVE (increased from 100-150 vanilla and 150 improved) with a level 2 shot.
++ The railgun (unpowered) now deals 300 damage in PVE (increased from 150-200 vanilla and 200 improved) with a level 3 shot.
+- The railgun (powered) now does 20 damage per unzoomed rail attack in PVP, totaling 40, and 30 damage per unzoomed rail attack in PVE, totaling 60 (decreased from 45, totaling 90).
+- The railgun (powered) now does 20 damage per zoomed rail attack in PVP, totaling 80 (decreased from 30, totaling 120).
+- The railgun (powered) now fires twice as slowly when zoomed.
+- With improved weapon balance, the B.F.G. 9000 (unpowered) no longer has the extra explosion damage or additional weaker BFG sprays from Stronghold Rejuvenated, since the context makes it unneeded here.
+- The B.F.G. 9000 (powered) now deals 20-160 damage (average 90, changed from 100), only deals 128 splash damage in a consistent radius (decreased from 192), has no smaller BFG spray, and deals self-damage.
+- With improved weapon balance, the pyro cannon lingering fire now deals 4 splash damage (decreased from 5). It also cannot put actors in their Pain state in every frame except the first.
+- The pyro cannon (powered) now mushrooms into 3 pyro shots (decreased from 4).
+- The devastator (powered) now deals 300-400 direct hit damage (decreased from 400-800), and deals a total of 576 splash damage on impact (decreased from 800).
+- The devastator (powered)'s damaging trail now deals 96 splash damage (decreased from 112).
+! The homing rocket launcher (powered) has been reworked; it now fires clusters of six rockets that do 8-64 damage in multiples of 8 each with an explosion of 64 splash damage across 96 map units.
+- The plasma repeater (powered) now deals 9-27 direct damage in multiples of 9 (decreased from 20-60 in multiples of 20 for the first sequence and 10-30 in multiples of 10 for the second sequence).
+- The plasma repeater (powered) now deals self-damage. In the second sequence, the self-damage only applies to half of the pellets.
 - Gas ammo has been generally halved; small ammo 4 pickups give 12 and big ammo 4 pickups give 48, to make it less viable to spam the flame weapons.
 - Mine ammo has also been reduced; big ammo 3 pickups only give 1 mine instead of 2.
-! The railgun no longer does more damage by using the scope, because that was a stupid mechanic that is bad legacy design of Untitled (who's making this change).
-! The railgun also has its damage numbers adjusted: in coop, now deals 100 at no charge, 200 damage at partial charge, and 300 damage at full charge.
-- The railgun, in DM, now deals 75 damage at no charge, 150 at partial charge, and 225 at full charge.
-- The BFG no longer has the extra explosion damage or additional weaker BFG spray from Stronghold Rejuvenated, since the context makes it unneeded here.
-- The Weapon Powerup Kit in general is nerfed heavily; every single weapon except the fists is now weaker in some manner:
-- The powered secondary fire modes for the pistol, shotgun, super shotgun, chaingun, rocket launcher, plasma rifle, and homing rocket launcher have been disabled for balance reasons.
-- The powered pistol deals 7-21 damage and fires once every 5 tics (nerfed from 12-36 damage and firing every 3).
-- The powered chainsaw only saws twice per tic instead of four times per tic.
-! The powered shotgun now fires 10 pellets of 5-15 damage each (decreased from 10 pellets of 12-36 damage each). It is, however, slightly more accurate.
-! The powered SSG now fires 20 pellets of 6-18 damage each per barrel (decreased from 20 pellets of 12-36 damage each). It's also slightly more accurate.
-- The powered Autoshotgun now fires 7 pellets of 3-9 damage each (decreased from 8 pellets of 5-15).
-! The powered chaingun fires once every 2 tics (decreased from once every 3 tics), but deals 10-30 damage (decreased from 20-60).
-- The powered flamer no longer has +RIPPER.
-! The powered minigun has its damage reduced from 10-30 to 15-5, but fires in bursts in 3 per bullet ammo (increased from 2 per bullet ammo).
-- The powered rocket launcher deals 70 damage (decreased from 96), and its explosion radius for the first explosion is reduced to 128 (decreased from 128).
-! The powered HRL has been reworked; it now fires clusters of six rockets that do 8-64 damage each with an explosion of 64 damage with 96 radius.
-! The powered plasma rifle has been reworked; it now uses the homing plasma of its former altfire, with reduced damage of 9-72 (average 90, decreased from 60).
-- The powered railgun now does 30 damage per rail attack (decreased from 45), and the scope fire, which does twice as much damage, fires twice as slowly.
-- The powered repeater has its direct hit damage halved, and half of the pellets now deal splash damage back to the user.
-- The powered BFG deals 20-160 damage (average 90, decreased from 100), only deals 128 explosion damage (decreased from 192), and has no smaller BFG spray.
-- The powered pyro cannon mushrooms into three pyro shots (decreased from 4).
-- The powered devastator deals 300-400 direct hit damage (decreased from 400-800), and deals a total of 576 explosion damage on impact (down from 800).
 
 Fred Chexter (Chex Quest):
 
@@ -73,9 +94,9 @@ Hexen I:
 
 -Daedolon-
 
-+ The Bloodscourge now has its special ripper properties from Hexen, meaning that it rips all enemies that are not boss monsters.
++ The Bloodscourge now has its special ripper properties from Hexen, meaning that it rips all enemies that are not boss monsters. This also applies to Classic Parias' Bloodscourge.
+- The Bloodscourge now only deals 4-32 direct damage in multiples of 4 (decreased from 16-128 in multiples of 16), to compensate for ripping all enemies that aren't bosses.
 + The Bloodscourge now forces half of its splash damage, to make it capable of killing bosses like it could in the original Hexen.
-- The Bloodscourge now only deals 4-32 direct hit damage (decreased from 16-128), to compensate for ripping all enemies that aren't bosses.
 
 -Baratus-
 
@@ -151,6 +172,8 @@ Bitterman (Quake II):
 
 * Fixed Bitterman playing the wrong sound when getting crushed.
 * Fixed a possible crash when getting crushed as Bitterman.
+! Instead of a convoluted layered explosion, the BFG10K projectile now deals 200 splash damage in a radius of 200 map units, as per Quake II. However, it now deals self-damage, also as per Quake II.
++ The BFG10K projectile now calls a second explosion when the player is in line of sight of the projectile as it explodes, similar to how the original game's super explosion worked. This explosion deals 200 splash damage (PVP) or 500 splash damage (PVE) in a radius of 1000 map units.
 
 Sarge (Quake III Arena):
 

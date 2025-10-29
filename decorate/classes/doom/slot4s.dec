@@ -31,10 +31,10 @@ ACTOR " Minigun " : Weapon
 		TNT1 A 0 A_JumpIfInventory("DoomClassMode",1,"Ready64")
 		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"ReadySmooth")
 	ReadyVanilla:
-		DMNG A 1 A_WeaponReady(WRF_NOSECONDARY)
+		DMNG A 1 A_WeaponReady
 		goto Ready
 	ReadySmooth:
-		PKMG A 1 A_WeaponReady(WRF_NOSECONDARY)
+		PKMG A 1 A_WeaponReady
 		goto Ready
 
 	Deselect:
@@ -155,7 +155,7 @@ ACTOR " Minigun " : Weapon
 
 	// Doom 64 (no changes)
 	Ready64:
-		64MN A 1 A_WeaponReady(WRF_NOSECONDARY)
+		64MN A 1 A_WeaponReady
 		goto Ready
 
 	Deselect64:
@@ -227,9 +227,9 @@ ACTOR " Minigun " : Weapon
 	// Stronghold
 	// Unpowered
 	ReadyStr:
-		TNT1 A 0 A_JumpIfInventory("PowerSamsaraDoomguyStrWeaponPower",1,"ReadyStrPowered")
-		TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"ReadyStrPowered")
-		DMNG C 1 A_WeaponReady(WRF_NOSECONDARY)
+		//TNT1 A 0 A_JumpIfInventory("PowerSamsaraDoomguyStrWeaponPower",1,"ReadyStrPowered")
+		//TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"ReadyStrPowered")
+		DMNG C 1 A_WeaponReady
 		goto Ready
 
 	DeselectStr:
@@ -318,9 +318,11 @@ ACTOR " Minigun " : Weapon
 		goto LightDone
 
 	// Powered
+/*
 	ReadyStrPowered:
 		DMNG C 1 A_WeaponReady
 		goto Ready
+*/
 
 	DeselectStrPowered:
 		TNT1 A 0 A_Lower
@@ -672,6 +674,7 @@ actor SamsaraDoomguyStrMinigunPoweredPrimaryAttackHandler : Trigger
     }
 }
 
+/*
 actor SamsaraDoomguyStrMinigunPoweredSecondaryAttackHandler : Trigger
 {
     States
@@ -715,6 +718,7 @@ actor SamsaraDoomguyStrMinigunPoweredSecondaryAttackHandler : Trigger
         stop
     }
 }
+*/
 
 actor SamsaraDoomguyStrMinigunFiringPoweredEndSoundPlayer : Trigger
 {

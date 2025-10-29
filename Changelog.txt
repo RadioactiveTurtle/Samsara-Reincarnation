@@ -123,11 +123,12 @@ Security Officer (Marathon):
 
 Ranger (Quake I):
 
-- Ranger recieves the normal amount of Ammo 3 rounds from ammo pickups instead of getting more rounds.
 - The grenade launcher and rocket launcher now deal 160 splash damage in PVE (decreased from 192).
 + Each cluster tiny grenade now deals 51 splash damage in PVP and 64 splash damage in PVE (increased from 50).
 - Multi rockets now deal 64 splash damage in PVP and 80 splash damage in PVE (decreased from 100). This is because it adds up to doing twice as much damage as a primary shot over four multi rockets.
-- The Thunderbolt's primary projectile now deals 40 damage in PVE (decreased from 50).
+- The thunderbolt (lightning mode) now deals 40 damage in PVE (decreased from 50).
+- The thunderbolt (plasma mode)'s lightning bolts now deal 40 damage (decreased from 50).
+- Ranger now receives the normal amount of Ammo 3 rounds from ammo pickups instead of getting more rounds.
 
 Strifeguy (Strife):
 

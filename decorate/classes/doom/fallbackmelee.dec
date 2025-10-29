@@ -572,7 +572,7 @@ actor DoomPunchPuffSoundPerkristan : DoomPunchPuff
 	{
 	Spawn:
 	Crash:
-		DPFF C 0 A_PlaySound("doomguy/wallpunch2")
+		DPFF C 0 //A_PlaySound("doomguy/wallpunch2")
 		goto Puff
 	Puff:
 		DPFF CD 4
@@ -592,7 +592,7 @@ actor DoomPunchPuff_CoopSoundPerkristan : DoomPunchPuff_Coop
 	{
 	Spawn:
 	Crash:
-		DPFF C 0 A_PlaySound("doomguy/wallpunch2")
+		DPFF C 0 //A_PlaySound("doomguy/wallpunch2")
 		goto Puff
 	Puff:
 		DPFF CD 4
@@ -612,16 +612,16 @@ actor DoomPunchPuff2SoundPerkristan : DoomPunchPuff2
 	{
 	Spawn:
 	Crash:
-		DPFF C 0 A_PlaySound("doomguy/wallpunch")
+		DPFF C 0 //A_PlaySound("doomguy/wallpunch")
 		goto Puff
 	Puff:
 		DPFF CD 4
 		stop
 	Melee:
-		DPFF C 0 A_PlaySound("doomguy/punch2")
+		DPFF C 0 A_PlaySound("doomguy/perkristan/punch") //A_PlaySound("doomguy/punch2")
 		goto Puff
 	XDeath:
-		TNT1 A 0 A_PlaySound("doomguy/punch2")
+		TNT1 A 0 A_PlaySound("doomguy/perkristan/punch") //A_PlaySound("doomguy/punch2")
 		stop
 	}
 }
@@ -632,16 +632,16 @@ actor DoomPunchPuff2_CoopSoundPerkristan : DoomPunchPuff2_Coop
 	{
 	Spawn:
 	Crash:
-		DPFF C 0 A_PlaySound("doomguy/wallpunch")
+		DPFF C 0 //A_PlaySound("doomguy/wallpunch")
 		goto Puff
 	Puff:
 		DPFF CD 4
 		stop
 	Melee:
-		DPFF C 0 A_PlaySound("doomguy/punch2")
+		DPFF C 0 A_PlaySound("doomguy/perkristan/punch") //A_PlaySound("doomguy/punch2")
 		goto Puff
 	XDeath:
-		TNT1 A 0 A_PlaySound("doomguy/punch2")
+		TNT1 A 0 A_PlaySound("doomguy/perkristan/punch") //A_PlaySound("doomguy/punch2")
 		stop
 	}
 }

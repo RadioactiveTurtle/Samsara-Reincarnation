@@ -1401,7 +1401,7 @@ actor Ammo3Small : SamsaraAmmoPickup
         stop
 
       PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("RocketAmmo",3)
+        TNT1 A 0 A_GiveInventory("RocketAmmo",2)
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
         TNT1 A 0 A_GiveInventory("MultiRocketAmmo",1)
         stop
@@ -1586,7 +1586,7 @@ actor Ammo3Medium : Ammo3Small
         stop
 
       PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("RocketAmmo",6)
+        TNT1 A 0 A_GiveInventory("RocketAmmo",4)
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
         TNT1 A 0 A_GiveInventory("MultiRocketAmmo",2)
         stop
@@ -1763,7 +1763,7 @@ actor Ammo3Big : Ammo3Small
         stop
 
       PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("RocketAmmo",9)
+        TNT1 A 0 A_GiveInventory("RocketAmmo",6)
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
         TNT1 A 0 A_GiveInventory("MultiRocketAmmo",3)
         stop
@@ -5990,7 +5990,7 @@ actor Q2RocketsPickup : Ammo3Big
         stop
 
       PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("RocketAmmo",10)
+        TNT1 A 0 A_GiveInventory("RocketAmmo",8)
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
         TNT1 A 0 A_GiveInventory("MultiRocketAmmo",3)
         stop

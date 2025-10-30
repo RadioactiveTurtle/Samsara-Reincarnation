@@ -466,7 +466,7 @@ script "SamsaraDecorate" (int choice, int arg1, int arg2) //215 - SAMSARA_DECORA
         result = CheckFlag(0, "INVULNERABLE") ||
                  CheckInventory("PowerFakeInvulnerable") || CheckInventory("PowerFakeInvulnerableCleric") || CheckInventory("PowerFakeInvulnerableMage") ||
                  CheckInventory("PowerFakeInvulnerableFighter") || CheckInventory("QuakePentagram") || CheckInventory("PowerGodProtection") ||
-                 CheckInventory("PowerDogProtection") || CheckInventory("Painkiller_IronWill_Protection") || CheckInventory("PainkillerDemonMorphInvulnerability");
+                 CheckInventory("PowerDoggyMorph") || CheckInventory("Painkiller_IronWill_Protection") || CheckInventory("PainkillerDemonMorphInvulnerability");
         break;
 	}
 
@@ -16985,7 +16985,7 @@ script "SamsaraPlayerOxygenAdjuster" (int mode, int amount)
     bool invulncheck = CheckFlag(0, "INVULNERABLE") ||
                        CheckInventory("PowerFakeInvulnerable") || CheckInventory("PowerFakeInvulnerableCleric") || CheckInventory("PowerFakeInvulnerableMage") ||
                        CheckInventory("PowerFakeInvulnerableFighter") || CheckInventory("QuakePentagram") || CheckInventory("PowerGodProtection") ||
-                       CheckInventory("PowerDogProtection") || CheckInventory("Painkiller_IronWill_Protection") || CheckInventory("PainkillerDemonMorphInvulnerability");
+                       CheckInventory("PowerDoggyMorph") || CheckInventory("Painkiller_IronWill_Protection") || CheckInventory("PainkillerDemonMorphInvulnerability");
 
     if (GetActorProperty(0, APROP_WaterLevel) < 3 || radsuitcheck || invulncheck) // GetAirSupply's quite finicky
     {

@@ -6130,7 +6130,7 @@ script "SamsaraPlayerOxygenFakeInvulnCheck" ENTER
 
         if (CheckInventory("PowerFakeInvulnerable") || CheckInventory("PowerFakeInvulnerableCleric") || CheckInventory("PowerFakeInvulnerableMage") ||
             CheckInventory("PowerFakeInvulnerableFighter") || CheckInventory("QuakePentagram") || CheckInventory("PowerGodProtection") ||
-            CheckInventory("PowerDogProtection") || CheckInventory("Painkiller_IronWill_Protection") || CheckInventory("PainkillerDemonMorphInvulnerability"))
+            CheckInventory("PowerDoggyMorph") || CheckInventory("Painkiller_IronWill_Protection") || CheckInventory("PainkillerDemonMorphInvulnerability"))
         { SetAirSupply(PlayerNumber(), aircapacity); }
 
         Delay(1);

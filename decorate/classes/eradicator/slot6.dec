@@ -246,7 +246,7 @@ actor EradSmokeBombExplosion
     States
     {
       Spawn:
-        GLBB A 0 //First state skipped
+        GLBB A 0 Bright //First state skipped
         GLBB ABC 3 Bright
         GLBB DEF 3 Bright A_FadeOut
         stop
@@ -264,7 +264,7 @@ actor "Napalm Charge" : SamsaraEradicatorWeapon
     Weapon.SelectionOrder 1350
     Weapon.AmmoType "Cell"
     //Weapon.AmmoGive 48
-    Weapon.AmmoUse 2
+    Weapon.AmmoUse 4
     Obituary "%k made a new scar on %o's face."
     Tag "Napalm Charge"
     +EXPLOSIVE
@@ -682,7 +682,7 @@ actor "Ion Sphere" : SamsaraEradicatorWeapon
     Weapon.SelectionOrder 1350
     Weapon.AmmoType "Cell"
     //Weapon.AmmoGive 48
-    Weapon.AmmoUse 2
+    Weapon.AmmoUse 4
     Obituary "%o was electrocuted by %k's Ion Sphere."
     Tag "Ion Sphere"
     +EXPLOSIVE

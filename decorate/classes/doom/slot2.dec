@@ -273,6 +273,7 @@ actor " Shotgun " : Shotgun
 		TNT1 A 3 Bright A_Light1
 		TNT1 A 3 Bright A_Light2
 		goto LightDone
+
 /*
 	AltFire:
 		DSHT L 3

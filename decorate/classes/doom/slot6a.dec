@@ -375,6 +375,7 @@ actor "Plasma Rifle" : PlasmaRifle
 	SelectStartStrPowered:
 		TNT1 A 0 A_Raise
 		goto SelectStartStrContinue
+
 /*
 	AltFire:
 		TNT1 A 0 A_JumpIfInventory("SamsaraDoom64PlasmaRifleSoundActive",1,"AltFireStopSound")
@@ -731,6 +732,7 @@ actor SamsaraDoomguyStrPowerPlasmaBallCoopSoundDE : SamsaraDoomguyStrPowerPlasma
 	Species "Player"
 	+THRUSPECIES
 }
+
 /*
 // Powered homing plasma ball
 
@@ -773,6 +775,7 @@ actor SamsaraDoomguyStrPowerPlasmaBall2CoopSoundDE : SamsaraDoomguyStrPowerPlasm
 	+THRUSPECIES
 }
 */
+
 // Powered plasma ball trail
 
 actor SamsaraDoomguyStrPowerPlasmaBallTrail : SamsaraDoomguyStrElectricalPuff

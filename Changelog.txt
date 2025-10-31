@@ -169,6 +169,7 @@ Eradicator:
 - The Plasma Ball has a ReactionTime of 28 (decreased from 36), meaning it lasts roughly 12 seconds (decreased from roughly 15.4).
 - The Plasma Ball in DM explodes for 300-350 damage with a radius of 192 (decreased from (700 to 800)/(1 to 2) damage with a radius of 211).
 - The Plasma Ball in coop explodes three times for 100-200 damage each with a radius of 192 (decreased from 284/(1 to 2) three times with a radius of 211).
+- All of the Eradicator classes no longer have higher ForwardMove and SideMove properties, making them slower.
 
 Kyle Katarn (Star Wars: Dark Forces):
 

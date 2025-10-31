@@ -429,7 +429,7 @@ actor NapalmChargeGlass
 
 actor NapalmChargeCoopGlass : NapalmChargeGlass
 {
-    DamageType "EradCoopExplosive2"
+    DamageType "EradExplosive2"
     Species "Player"
     +NODAMAGETHRUST
     +THRUSPECIES

@@ -275,9 +275,19 @@ Bitterman (Quake II):
 
 GoldenEye 007:
 
+-James Bond (GoldenEye 007)-
+
+! Golden bullets are now given only if James Bond has the Golden Gun or Gold PP7 Special Issue.
+
+-James Bond (Goldfinger 64)-
+
+! Golden bullets are now given only if James Bond has the Golden Magnum.
+
 -All-
 
 - Headshots no longer deal additional damage towards monsters that have 1000 or more health.
+- Golden bullet ammo capacity has been lowered to 10 (decreased from 25).
+- James Bond now gets 1 golden bullet from big Ammo 4 pickups (decreased from 5).
 
 Prisoner 849 (Unreal):
 

@@ -566,8 +566,8 @@ actor Goldeneye_GoldenGunRounds : Ammo
 {
     Inventory.Icon "AMSMS0"
     Inventory.Amount 1
-    Inventory.MaxAmount 25
-    Ammo.BackpackMaxAmount 50
+    Inventory.MaxAmount 10
+    Ammo.BackpackMaxAmount 20
     Tag "Golden Bullets"
     +IGNORESKILL
 }

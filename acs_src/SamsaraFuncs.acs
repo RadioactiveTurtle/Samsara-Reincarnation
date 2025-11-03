@@ -992,7 +992,7 @@ function void HandleAmmoCapacities (int pickedup)
 
     // GE Ammo
     SetAmmoCapacity("Goldeneye_ThrowingKnivesAmmo", noAmmoCap ? INTMAXSAFE : (maxShell * hasBackPack) / 8);
-    SetAmmoCapacity("Goldeneye_GoldenGunRounds", noAmmoCap ? INTMAXSAFE : (maxCell * hasBackPack) / 12);
+    SetAmmoCapacity("Goldeneye_GoldenGunRounds", noAmmoCap ? INTMAXSAFE : (maxCell * hasBackPack) / 30);
 
     // PK Ammo
     ammocalc = ((maxClip * hasBackPack) * 3) / 4;

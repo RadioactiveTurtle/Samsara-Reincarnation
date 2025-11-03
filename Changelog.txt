@@ -277,11 +277,11 @@ GoldenEye 007:
 
 -James Bond (GoldenEye 007)-
 
-! Golden bullets are now given only if James Bond has the Golden Gun or Gold PP7 Special Issue.
+- Golden bullets are now given only if James Bond has the Golden Gun or Gold PP7 Special Issue.
 
 -James Bond (Goldfinger 64)-
 
-! Golden bullets are now given only if James Bond has the Golden Magnum.
+- Golden bullets are now given only if James Bond has the Golden Magnum.
 
 -All-
 

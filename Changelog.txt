@@ -250,15 +250,15 @@ Kyle Katarn (Star Wars: Dark Forces):
 
 Grondoval (Witchaven):
 
-+ Most melee attacks have +50% range. This buff includes the Dagger, Shortsword, Battle Axe, Ice Halberd, Fire Mace, Broad Sword, and Frozen Two-Hand Sword.
-+ A lot of melee attacks have +33% damage. This buff includes the Dagger, Battle Axe, Ice Halberd, Fire Mace, and Frozen Two-Hand Sword.
-- The Pike Axe takes 10 cells to fire (increased from 8).
-+ The Pike Axe's melee attacks have 192 range (increased from 64).
-+ The Pike Axe's strong melee attack deals 220-320 damage (increased from 110-160).
-+ The Pike Axe's weak melee attack deals 120-190 damage (increased from 60-95).
-+ The Pike Axe's projectiles now deal 300-480 damage in coop (increased from 100-160) and 200 damage in DM (increased from 100).
-+ The Pike Axe's projectiles now move at speed 48 in coop (increased from 40) and speed 36 in DM (increased from 30).
-+ The Pike Axe's projectiles now have a weak form of homing in DM.
++ Most melee attacks have +50% range. This buff includes the dagger, shortsword, battle axe, ice halberd, fire mace, broad sword, and frozen two-hand sword.
++ A lot of melee attacks have +33% damage. This buff includes the dagger (strong), shortsword (unenchanted), battle axe, ice halberd, fire mace, broad sword (unenchanted), and frozen two-hand sword.
+- The Pike Axe now takes 10 rounds of Ammo 4 to fire (increased from 8).
++ The Pike Axe's melee attacks now have 192 range (increased from 64).
++ The Pike Axe's weak melee attack now deals 120-190 damage (increased from 60-95).
++ The Pike Axe's strong melee attack now deals 220-320 damage (increased from 110-160).
++ The Pike Axe's projectiles now deal 200 damage in PVP (increased from 100), and 300-480 damage in PVE (increased from 100-160).
++ The Pike Axe's projectiles now move at speed 36 in PVP (increased from 30), and speed 48 in PVE (increased from 40).
++ The Pike Axe's projectiles now have a weak form of homing in PVP.
 
 Bitterman (Quake II):
 

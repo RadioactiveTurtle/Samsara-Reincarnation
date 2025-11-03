@@ -209,7 +209,7 @@ Actor WTThrownAxe
 	}
 }
 
-Actor WTThrownAxe_2 : WTThrownAxe { Species "Player" +THRUSPECIES +DONTHARMCLASS + DONTHARMSPECIES +MTHRUSPECIES  }
+Actor WTThrownAxe_2 : WTThrownAxe { Species "Player" +THRUSPECIES +DONTHARMCLASS +DONTHARMSPECIES +MTHRUSPECIES  }
 
 Actor WTThrownAxe_3 : WTThrownAxe
 {

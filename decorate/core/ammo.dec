@@ -1286,8 +1286,6 @@ actor Ammo3Small : SamsaraAmmoPickup
       PickupStronghold:
         TNT1 A 0 A_JumpIfInventory("RocketAmmo",0,1)
         goto PickupDisplay
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        goto PickupFail
         TNT1 A 0 A_JumpIfInventory("DoomguyStrMines",0,"PickupFail")
         goto PickupDisplay
 
@@ -1386,8 +1384,6 @@ actor Ammo3Small : SamsaraAmmoPickup
 
       PickupSuccessStronghold:
         TNT1 A 0 A_GiveInventory("RocketAmmo",2)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrMines",1)
         stop
 
@@ -1571,8 +1567,6 @@ actor Ammo3Medium : Ammo3Small
 
       PickupSuccessStronghold:
         TNT1 A 0 A_GiveInventory("RocketAmmo",4)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrMines",1)
         stop
 
@@ -1739,8 +1733,6 @@ actor Ammo3Big : Ammo3Small
 
       PickupSuccessStronghold:
         TNT1 A 0 A_GiveInventory("RocketAmmo",6)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrMines",1)
         stop
 
@@ -1944,8 +1936,6 @@ actor Ammo4Small : SamsaraAmmoPickup
       PickupStronghold:
         TNT1 A 0 A_JumpIfInventory("Cell",0,1)
         goto PickupDisplay
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        goto PickupFail
         TNT1 A 0 A_JumpIfInventory("DoomguyStrGas",0,"PickupFail")
         goto PickupDisplay
 
@@ -2020,8 +2010,6 @@ actor Ammo4Small : SamsaraAmmoPickup
 
       PickupSuccessStronghold:
         TNT1 A 0 A_GiveInventory("Cell",20)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrGas",12)
         stop
 
@@ -2190,8 +2178,6 @@ actor Ammo4Medium : Ammo4Small
 
       PickupSuccessStronghold:
         TNT1 A 0 A_GiveInventory("Cell",60)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrGas",24)
         stop
 
@@ -2343,8 +2329,6 @@ actor Ammo4Big : Ammo4Small
 
       PickupSuccessStronghold:
         TNT1 A 0 A_GiveInventory("Cell",100)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrGas",48)
         stop
 
@@ -3148,8 +3132,6 @@ actor Ammo34Small : SamsaraAmmoPickup
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Cell",0,1)
         goto PickupDisplay
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        goto PickupFail
         TNT1 A 0 A_JumpIfInventory("DoomguyStrMines",0,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("DoomguyStrGas",0,"PickupFail")
@@ -3319,8 +3301,6 @@ actor Ammo34Small : SamsaraAmmoPickup
       PickupSuccessStronghold:
         TNT1 A 0 A_GiveInventory("RocketAmmo",5)
         TNT1 A 0 A_GiveInventory("Cell",10)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrMines",1)
         TNT1 A 0 A_GiveInventory("DoomguyStrGas",12)
         stop
@@ -3528,8 +3508,6 @@ actor EverythingAmmo : SamsaraAmmoPickup
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Cell",0,1)
         goto PickupDisplay
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        goto PickupFail
         TNT1 A 0 A_JumpIfInventory("DoomguyStrMines",0,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("DoomguyStrGas",0,"PickupFail")
@@ -3826,8 +3804,6 @@ actor EverythingAmmo : SamsaraAmmoPickup
         TNT1 A 0 A_GiveInventory("Shell",15)
         TNT1 A 0 A_GiveInventory("RocketAmmo",15)
         TNT1 A 0 A_GiveInventory("Cell",15)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrMines",2)
         TNT1 A 0 A_GiveInventory("DoomguyStrGas",24)
         stop
@@ -4103,8 +4079,6 @@ actor AmmoComboSmall : SamsaraAmmoPickup
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Cell",0,1)
         goto PickupDisplay
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        goto PickupFail
         TNT1 A 0 A_JumpIfInventory("DoomguyStrGas",0,"PickupFail")
         goto PickupDisplay
 
@@ -4320,8 +4294,6 @@ actor AmmoComboSmall : SamsaraAmmoPickup
         TNT1 A 0 A_GiveInventory("Clip",5)
         TNT1 A 0 A_GiveInventory("Shell",2)
         TNT1 A 0 A_GiveInventory("Cell",4)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrGas",12)
         stop
 
@@ -4531,8 +4503,6 @@ actor AmmoComboBig : AmmoComboSmall
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Cell",0,1)
         goto PickupDisplay
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        goto PickupFail
         TNT1 A 0 A_JumpIfInventory("DoomguyStrMines",0,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("DoomguyStrGas",0,"PickupFail")
@@ -4779,8 +4749,6 @@ actor AmmoComboBig : AmmoComboSmall
         TNT1 A 0 A_GiveInventory("Shell",10)
         TNT1 A 0 A_GiveInventory("RocketAmmo",1)
         TNT1 A 0 A_GiveInventory("Cell",10)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrMines",1)
         TNT1 A 0 A_GiveInventory("DoomguyStrGas",12)
         stop
@@ -5970,8 +5938,6 @@ actor Q2RocketsPickup : Ammo3Big
 
       PickupSuccessStronghold:
         TNT1 A 0 A_GiveInventory("RocketAmmo",8)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrMines",2)
         stop
 
@@ -6069,8 +6035,6 @@ actor Q2CellPickup : Ammo4Small
 
       PickupSuccessStronghold:
         TNT1 A 0 A_GiveInventory("Cell",50)
-        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
-        stop
         TNT1 A 0 A_GiveInventory("DoomguyStrGas",24)
         stop
 

@@ -275,7 +275,7 @@ Sarge (Quake III Arena):
 
 -Settings-
 
-- Removed the "Extra Weapons" setting in the weapon options.
+- samsara_extraweapons has been removed.
 
 --------------------------------------------------------------------------
 -----------------------------Reincarnation 2.2----------------------------

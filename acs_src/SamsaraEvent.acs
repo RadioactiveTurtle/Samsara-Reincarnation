@@ -354,11 +354,8 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 
         if (!respawning)
         {
-            if (GetCVar("samsara_currentgame") == GAME_STRIFE)
-            {
-                SetInventory("StrifeGuyInStrife", 1);
-                SetInventory("BlackBirdInStrife", (isSinglePlayer() || isCoop()) && !isInvasion());
-            }
+            // keeping strife game check just in case
+            if (CheckInventory("StrifeGuyInStrife") || GetCVar("samsara_currentgame") == GAME_STRIFE) { SetInventory("BlackBirdInStrife", (isSinglePlayer() || isCoop()) && !isInvasion()); }
 
             if (!GetUserCVar(pln, "samsara_cl_ballgag")) { GiveInventory("BlackBirdReady", 1); }
         }

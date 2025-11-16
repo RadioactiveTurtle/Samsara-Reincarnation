@@ -148,6 +148,7 @@ Rise of the Triad:
 
 Strifeguy (Strife):
 
+* Fixed Blackbird talking earlier than intended when playing Strife in GZDoom.
 - High explosive grenades no longer have +FORCERADIUSDMG, because the projectile didn't have that flag in Strife while some enemies had +NORADIUSDMG, meaning it's an intended weakness.
 
 Eradicator:

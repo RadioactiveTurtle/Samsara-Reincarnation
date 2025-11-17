@@ -100,13 +100,13 @@ Wolfenstein 3D:
 
 Hexen I:
 
+-Parias (Reincarnation)-
+
+! Updated crusader's longbow pickup sprite to use blue fletchings on arrows.
+
 -Parias (Classic)-
 
 - The Bloodscourge now only deals 7-56 direct damage in multiples of 7 (decreased from 14-112 in multiples of 14), to compensate for ripping all enemies that aren't bosses (see Daedolon's section).
-
--Parias (Reincarnation)-
-
-! Updated Crusader's Longbow pickup sprite to use blue fletchings on arrows.
 
 -Daedolon-
 

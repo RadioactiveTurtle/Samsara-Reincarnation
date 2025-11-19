@@ -351,6 +351,10 @@ JC Denton (Deus Ex):
 
 - samsara_extraweapons has been removed.
 
+-Other-
+
+* Fixed random characters that can be interacted with not have their USESPECIAL flag cleared on death.
+
 --------------------------------------------------------------------------
 -----------------------------Reincarnation 2.2----------------------------
 --------------------------------------------------------------------------

@@ -353,7 +353,7 @@ JC Denton (Deus Ex):
 
 -Other-
 
-* Fixed random characters that can be interacted with not have their USESPECIAL flag cleared on death.
+* Fixed random characters that can be interacted with not having their USESPECIAL flag cleared on death.
 
 --------------------------------------------------------------------------
 -----------------------------Reincarnation 2.2----------------------------

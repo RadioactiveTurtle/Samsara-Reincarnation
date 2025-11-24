@@ -38,23 +38,40 @@ actor Catacomb_RandomGemStrife : Trigger
 {
     States
     {
-      Pickup:
-        TNT1 A 0 A_Jump(256,"PickupFireball","PickupSpread","PickupFast","PickupBounce")
-      PickupFireball:
-        TNT1 A 0 A_GiveInventory("Catacomb_FireRingInventoryItem")
-        stop
+	Pickup:
+		TNT1 A 0 A_JumpIfInventory("Catacomb_FireRingInventoryItem",0,1)
+		goto PickupSuccess
+		TNT1 A 0 A_JumpIfInventory("Catacomb_SpreadShotInventoryItem",0,1)
+		goto PickupSuccess
+		TNT1 A 0 A_JumpIfInventory("Catacomb_RapidFireInventoryItem",0,1)
+		goto PickupSuccess
+		TNT1 A 0 A_JumpIfInventory("Catacomb_BounceShotInventoryItem",0,"PickupFail")
+		goto PickupSuccess
 
-      PickupSpread:
-        TNT1 A 0 A_GiveInventory("Catacomb_SpreadShotInventoryItem")
-        stop
+	PickupSuccess:
+		TNT1 A 0 A_Jump(256,"PickupFireball","PickupSpread","PickupFast","PickupBounce")
+		goto PickupFireball
 
-      PickupFast:
-        TNT1 A 0 A_GiveInventory("Catacomb_RapidFireInventoryItem")
-        stop
+	PickupFireball:
+		TNT1 A 0 A_JumpIfInventory("Catacomb_FireRingInventoryItem",0,"PickupSuccess")
+		TNT1 A 0 A_GiveInventory("Catacomb_FireRingInventoryItem")
+		stop
+	PickupSpread:
+		TNT1 A 0 A_JumpIfInventory("Catacomb_SpreadShotInventoryItem",0,"PickupSuccess")
+		TNT1 A 0 A_GiveInventory("Catacomb_SpreadShotInventoryItem")
+		stop
+	PickupFast:
+		TNT1 A 0 A_JumpIfInventory("Catacomb_RapidFireInventoryItem",0,"PickupSuccess")
+		TNT1 A 0 A_GiveInventory("Catacomb_RapidFireInventoryItem")
+		stop
+	PickupBounce:
+		TNT1 A 0 A_JumpIfInventory("Catacomb_BounceShotInventoryItem",0,"PickupSuccess")
+		TNT1 A 0 A_GiveInventory("Catacomb_BounceShotInventoryItem")
+		stop
 
-      PickupBounce:
-        TNT1 A 0 A_GiveInventory("Catacomb_BounceShotInventoryItem")
-        stop
+	PickupFail:
+		TNT1 A 0
+		stop
     }
 }	
 

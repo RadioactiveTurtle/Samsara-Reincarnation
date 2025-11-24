@@ -61,7 +61,7 @@ actor Catacomb_RandomGemStrife : Trigger
 actor Catacomb_FireRingInventoryItem : CustomInventory
 {
     Inventory.UseSound ""
-    Inventory.Icon "CTAAO0" // placeholder graphic
+    Inventory.Icon "CTAAP0"
     Inventory.MaxAmount 3
     Inventory.InterHubAmount 3
     Inventory.RestrictedTo "PettonEverhail"
@@ -87,7 +87,7 @@ actor Catacomb_FireRingInventoryItem : CustomInventory
 
 actor Catacomb_SpreadShotInventoryItem : Catacomb_FireRingInventoryItem
 {
-    Inventory.Icon "CTAAO0" // placeholder graphic
+    Inventory.Icon "CTAAQ0"
     Tag "Ring of Earth"
 	States
     {
@@ -104,7 +104,7 @@ actor Catacomb_SpreadShotInventoryItem : Catacomb_FireRingInventoryItem
 
 actor Catacomb_RapidFireInventoryItem : Catacomb_FireRingInventoryItem
 {
-    Inventory.Icon "CTAAO0" // placeholder graphic
+    Inventory.Icon "CTAAR0"
     Tag "Ring of Water"
 	States
     {
@@ -121,7 +121,7 @@ actor Catacomb_RapidFireInventoryItem : Catacomb_FireRingInventoryItem
 
 actor Catacomb_BounceShotInventoryItem : Catacomb_FireRingInventoryItem
 {
-    Inventory.Icon "CTAAO0" // placeholder graphic
+    Inventory.Icon "CTAAS0"
     Tag "Ring of Lightning"
 	States
     {

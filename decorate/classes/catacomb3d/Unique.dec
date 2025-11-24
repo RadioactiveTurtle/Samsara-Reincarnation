@@ -155,39 +155,19 @@ actor Catacomb_BounceShotInventoryItem : Catacomb_FireRingInventoryItem
 
 actor Catacomb_FireRing : SamsaraPowerupGiver { Powerup.Type "Catacomb_FireRing" }
 
-actor PowerCatacomb_FireRing : Powerup
-{
-    Powerup.Duration -90
-    +HUBPOWER
-    //+PERSISTENTPOWER
-}
+actor PowerCatacomb_FireRing : Powerup { Powerup.Duration -90 }
 
 actor Catacomb_SpreadShot : SamsaraPowerupGiver { Powerup.Type "Catacomb_SpreadShot" }
 
-actor PowerCatacomb_SpreadShot : Powerup
-{
-    Powerup.Duration -90
-    +HUBPOWER
-    //+PERSISTENTPOWER
-}
+actor PowerCatacomb_SpreadShot : Powerup { Powerup.Duration -90 }
 
 actor Catacomb_RapidFire : SamsaraPowerupGiver { Powerup.Type "Catacomb_RapidFire" }
 
-actor PowerCatacomb_RapidFire : PowerDoubleFiringSpeed
-{
-    Powerup.Duration -90
-    +HUBPOWER
-    //+PERSISTENTPOWER
-}
+actor PowerCatacomb_RapidFire : PowerDoubleFiringSpeed { Powerup.Duration -90 }
 
 actor Catacomb_BounceShot : SamsaraPowerupGiver { Powerup.Type "Catacomb_BounceShot" }
 
-actor PowerCatacomb_BounceShot : Powerup
-{
-    Powerup.Duration -90
-    +HUBPOWER
-    //+PERSISTENTPOWER
-}
+actor PowerCatacomb_BounceShot : Powerup { Powerup.Duration -90 }
 
 Actor Catacomb_FireBallProjectileV2 : Catacomb_FireballProjectile 
 { 

@@ -158,6 +158,7 @@ Caleb (Blood):
 
 ! In Strife, the Guns Akimbo is now distributed through an inventory item regardless of the "Blood: Guns Akimbo Behavior" setting.
 ! If the player has a Guns Akimbo inventory item, and "Blood: Guns Akimbo Behavior" is set to "Toggle", it will now give quad damage on use instead of switching between single and dual wielding.
+- The Guns Akimbo's effect (instant use version only) no longer carries over between levels in a hub, since Strife now handles giving it differently.
 
 Strifeguy (Strife):
 
@@ -327,7 +328,8 @@ GoldenEye 007:
 
 Petton Everhail (Catacomb 3D):
 
-! In Strife, the uniques for Petton Everhail are now distributed through inventory items.
+! In Strife, the Rings are now distributed through inventory items.
+- The Rings' effects no longer carry over between levels in a hub, since Strife now handles giving them differently.
 
 Prisoner 849 (Unreal):
 

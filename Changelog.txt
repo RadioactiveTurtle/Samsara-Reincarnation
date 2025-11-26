@@ -146,6 +146,7 @@ Ranger (Quake I):
 - The thunderbolt (plasma mode)'s lightning bolts now deal 40 damage (decreased from 50).
 - Ranger now gets 2 rounds of Ammo 3 from medium Ammo 2 pickups (decreased from 3) and 3 rounds of Ammo 3 from large Ammo 2 pickups (decreased from 4).
 - Ranger now receives the normal amount of Ammo 3 rounds from ammo pickups instead of getting more rounds.
+! The Pentagram of Protection's icon on the legacy fullscreen HUD is now red.
 
 Rise of the Triad:
 

@@ -126,10 +126,10 @@ Duke Nukem 3D:
 
 -Duke Nukem (Original/Life's a Beach)-
 
-- Pipebombs now have a splash radius of 210 map units (decreased from 250).
+- Pipebombs/pineapples now have a splash radius of 210 map units (decreased from 250).
 ! The M16 sprites have been extended, and a new pickup sprite has been added.
-- The RPG's explosion now deals 70 splash damage (decreased from 140), with the total being 210 on a direct hit (decreased from 280).
-- The RPG's explosion now has a splash radius of 140 (decreased from 178).
+- The RPG/coconut launcher's explosion's splash damage on a direct hit is now 70 (decreased from 140), with the total being 210 (decreased from 280).
+- The RPG/coconut launcher's explosion now has a splash radius of 140 (decreased from 178).
 
 Security Officer (Marathon):
 

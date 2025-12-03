@@ -564,8 +564,8 @@ script "SamsaraClientDecorate" (int which, int a1, int a2) clientside //212 -- S
 			case BLOODYHELL_VANILLA:		break;
 			case BLOODYHELL_NASHGORE:		SetActorState(0,"XDeathNashgore"); break;
 			case BLOODYHELL_NASHGORE2D:		SetActorState(0,"XDeathNashgore2D"); break;
-			case BLOODYHELL_BRUTAL:			SetActorState(0,"XDeathBrutal"); break;
-			case BLOODYHELL_BRUTAL2D:		SetActorState(0,"XDeathBrutal2D"); break;
+			case BLOODYHELL_CHUNKY:			SetActorState(0,"XDeathChunky"); break;
+			case BLOODYHELL_CHUNKY2D:		SetActorState(0,"XDeathChunky2D"); break;
 			case BLOODYHELL_NIGHTMARE:		SetActorState(0,StrParam(s: "XDeathNightmare", d: random(1,2))); break;
 			case BLOODYHELL_NIGHTMARE2D:	SetActorState(0,StrParam(s: "XDeathNightmare2D", d: random(1,2))); break;
 			case BLOODYHELL_BOLOGNESE:		SetActorState(0,"XDeathBolognese"); break;
@@ -594,8 +594,8 @@ script "SamsaraClientDecorate" (int which, int a1, int a2) clientside //212 -- S
 			case BLOODYHELL_VANILLA:		break;
 			case BLOODYHELL_NASHGORE:		SetActorState(0,"DeathNashgore"); break;
 			case BLOODYHELL_NASHGORE2D:		SetActorState(0,"DeathNashgore2D"); break;
-			case BLOODYHELL_BRUTAL:			SetActorState(0,"DeathBrutal"); break;
-			case BLOODYHELL_BRUTAL2D:		SetActorState(0,"DeathBrutal2D"); break;
+			case BLOODYHELL_CHUNKY:			SetActorState(0,"DeathChunky"); break;
+			case BLOODYHELL_CHUNKY2D:		SetActorState(0,"DeathChunky2D"); break;
 			case BLOODYHELL_NIGHTMARE:		SetActorState(0,StrParam(s: "DeathNightmare", d: random(1,6))); break;
 			case BLOODYHELL_NIGHTMARE2D:	SetActorState(0,StrParam(s: "DeathNightmare2D", d: random(1,6))); break;
 			case BLOODYHELL_BOLOGNESE:		SetActorState(0,"DeathBolognese"); break;
@@ -638,8 +638,8 @@ script "SamsaraClientDecorate" (int which, int a1, int a2) clientside //212 -- S
 				case BLOODYHELL_VANILLA:		SetActorState(0,GetBloodStateModifier("SpawnNormal", a1)); break;
 				case BLOODYHELL_NASHGORE:		SetActorState(0,GetBloodStateModifier("SpawnNashgore", a1)); break;
 				case BLOODYHELL_NASHGORE2D:		SetActorState(0,GetBloodStateModifier("SpawnNashgore2D", a1)); break;
-				case BLOODYHELL_BRUTAL:			SetActorState(0,"SpawnBrutal"); break;
-				case BLOODYHELL_BRUTAL2D:		SetActorState(0,"SpawnBrutal2D"); break;
+				case BLOODYHELL_CHUNKY:			SetActorState(0,"SpawnChunky"); break;
+				case BLOODYHELL_CHUNKY2D:		SetActorState(0,"SpawnChunky2D"); break;
 				case BLOODYHELL_NIGHTMARE:		SetActorState(0,GetBloodStateModifier("SpawnNightmare", a1)); break;
 				case BLOODYHELL_NIGHTMARE2D:	SetActorState(0,GetBloodStateModifier("SpawnNightmare2D", a1)); break;
 				case BLOODYHELL_BOLOGNESE:		SetActorState(0,"SpawnBolognese"); break;
@@ -686,8 +686,8 @@ script "SamsaraClientDecorate" (int which, int a1, int a2) clientside //212 -- S
 			case BLOODYHELL_VANILLA:		break;
 			case BLOODYHELL_NASHGORE:		SetActorState(0,"CrashNashgore"); break;
 			case BLOODYHELL_NASHGORE2D:		SetActorState(0,"CrashNashgore2D"); break;
-			case BLOODYHELL_BRUTAL:			SetActorState(0,"CrashBrutal"); break;
-			case BLOODYHELL_BRUTAL2D:		SetActorState(0,"CrashBrutal2D"); break;
+			case BLOODYHELL_CHUNKY:			SetActorState(0,"CrashChunky"); break;
+			case BLOODYHELL_CHUNKY2D:		SetActorState(0,"CrashChunky2D"); break;
 			case BLOODYHELL_NIGHTMARE:		SetActorState(0,"CrashNightmare"); break;
 			case BLOODYHELL_NIGHTMARE2D:	SetActorState(0,"CrashNightmare2D"); break;
 			case BLOODYHELL_BOLOGNESE:		SetActorState(0,"CrashBolognese"); break;
@@ -715,8 +715,8 @@ script "SamsaraClientDecorate" (int which, int a1, int a2) clientside //212 -- S
 			case BLOODYHELL_VANILLA:		SetActorState(0,"DeathVanilla"); break;
 			case BLOODYHELL_NASHGORE:		SetActorState(0,"DeathNashgore"); break;
 			case BLOODYHELL_NASHGORE2D:		SetActorState(0,"DeathNashgore2D"); break;
-			case BLOODYHELL_BRUTAL:			SetActorState(0,"DeathBrutal"); break;
-			case BLOODYHELL_BRUTAL2D:		SetActorState(0,"DeathBrutal2D"); break;
+			case BLOODYHELL_CHUNKY:			SetActorState(0,"DeathChunky"); break;
+			case BLOODYHELL_CHUNKY2D:		SetActorState(0,"DeathChunky2D"); break;
 			case BLOODYHELL_NIGHTMARE:		SetActorState(0,StrParam(s: "DeathNightmare", d: random(1,6))); break;
 			case BLOODYHELL_NIGHTMARE2D:	SetActorState(0,StrParam(s: "DeathNightmare2D", d: random(1,6))); break;
 			case BLOODYHELL_BOLOGNESE:		SetActorState(0,"DeathBolognese"); break;

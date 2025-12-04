@@ -363,8 +363,8 @@ JC Denton (Deus Ex):
 
 -Settings-
 
-- samsara_extraweapons has been removed.
 ! The "Brutal" bloody hell setting has been renamed to "Chunky".
+- samsara_extraweapons has been removed.
 
 -Other-
 

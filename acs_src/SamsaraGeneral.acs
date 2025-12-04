@@ -3675,7 +3675,7 @@ script "Samsara_FillInventory" (void)
 			break;
 
 		case CLASS_HEXEN:
-			GiveInventory("AllyCellphone",1);
+			if (!GetCVar("samsara_banallies")) { GiveInventory("AllyCellphone",1); }
             SetInventory("SamsaraHexenHasLMSPistolDisabled", 0);
 			GiveInventory("SamsaraHexenHasSlot7", 1);
 			GiveInventory("SamsaraClassicPariasHasBloodscourge", 1);
@@ -3725,7 +3725,7 @@ script "Samsara_FillInventory" (void)
 			break;
 
 		case CLASS_ROTT:
-			GiveInventory("AllyCellphone",1);
+			if (!GetCVar("samsara_banallies")) { GiveInventory("AllyCellphone",1); }
 			break;
 
 		case CLASS_CALEB:
@@ -3765,7 +3765,7 @@ script "Samsara_FillInventory" (void)
 			break;
 
 		case CLASS_ERAD:
-			GiveInventory("AllyCellphone",1);
+			if (!GetCVar("samsara_banallies")) { GiveInventory("AllyCellphone",1); }
 			break;
 
 		case CLASS_RMR:
@@ -3773,7 +3773,7 @@ script "Samsara_FillInventory" (void)
 			break;
 
 		case CLASS_POGREED:
-			GiveInventory("AllyCellphone",1);
+			if (!GetCVar("samsara_banallies")) { GiveInventory("AllyCellphone",1); }
 			GiveInventory("Medtube",20);
 			GiveInventory("IPOGReversoPill",1);
 			break;
@@ -3820,7 +3820,7 @@ script "Samsara_FillInventory" (void)
 			GiveInventory("RRCowPie",6);
 			GiveInventory("RRBubbaBeer",6);
 			GiveInventory("RRCheapasswhiskey",100);
-			GiveInventory("AllyCellphone",1);
+			if (!GetCVar("samsara_banallies")) { GiveInventory("AllyCellphone",1); }
 			break;
 
 		case CLASS_BITTERMAN:
@@ -3864,7 +3864,7 @@ script "Samsara_FillInventory" (void)
 			GiveInventory("Goldfinger_GoldMagnumDualToken",1);
 			GiveInventory("SamsaraGoldfingerHasGoldMagnum",1);
 			GiveInventory("SamsaraGoldenEyePermanentTankCannon", 1);
-			GiveInventory("AllyCellphone",1);
+			if (!GetCVar("samsara_banallies")) { GiveInventory("AllyCellphone",1); }
 			break;
 
 		case CLASS_CATACOMB:

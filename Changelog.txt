@@ -369,6 +369,7 @@ JC Denton (Deus Ex):
 -Other-
 
 * Fixed random characters that can be interacted with not having their USESPECIAL flag cleared on death.
+! The ally cell phone is no longer granted with keyboard cheats if allies are disabled.
 
 --------------------------------------------------------------------------
 -----------------------------Reincarnation 2.2----------------------------

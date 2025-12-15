@@ -1464,9 +1464,9 @@ actor PowerWTFireProof : PowerProtection
     DamageFactor "DoomDamageTypeFireExplosive", 0
     DamageFactor "RottFire", 0
     DamageFactor "WTRangedFire", 0
+    DamageFactor "DeusExPistolFire", 0
     DamageFactor "DeusExFlamed", 0
     DamageFactor "PSFire", 0
-    DamageFactor "SWFlame", 0
     DamageFactor "PGFire", 0
     DamageFactor "PainkillerFire", 0
     DamageFactor "QuakeFire", 0
@@ -1481,6 +1481,7 @@ actor PowerWTFireProof : PowerProtection
     DamageFactor "SWFlame2", 0
     DamageFactor "SWFlame2Coop", 0
     DamageFactor "SWFlame3", 0
+    DamageFactor "BittermanFire", 0
 }
 
 actor SamsaraPowerIronFeetGiverDeusEx1 : SamsaraPowerIronFeetGiver {}

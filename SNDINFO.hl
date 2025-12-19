@@ -114,6 +114,15 @@ $random halflife/mp5_grenadehit { HW40HIT0 HW40HIT1 HW40HIT2 }
 halflife/mp5_clipeject	HW40COUT
 halflife/mp5_clipinsert	HW40CIN
 
+// * UZI
+$random halflife/uzi_shoot { halflife/uzi_shoot1 halflife/uzi_shoot2 halflife/uzi_shoot3 }
+halflife/uzi_shoot1 "Sounds/HalfLife/Weapons/uzi_shoot1.wav"
+halflife/uzi_shoot2 "Sounds/HalfLife/Weapons/uzi_shoot2.wav"
+halflife/uzi_shoot3 "Sounds/HalfLife/Weapons/uzi_shoot3.wav"
+halflife/uzi_reload1 "Sounds/HalfLife/Weapons/uzi_reload1.wav"
+halflife/uzi_reload2 "Sounds/HalfLife/Weapons/uzi_reload2.wav"
+halflife/uzi_reload3 "Sounds/HalfLife/Weapons/uzi_reload3.wav"
+
 // * RPG
 halflife/rpg_shoot			HW50SHOT
 halflife/rpg_shoot2			HW40GRE0

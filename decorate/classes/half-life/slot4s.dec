@@ -404,7 +404,7 @@ actor SamsaraHalfLifeUziAttackHandler : Trigger
 
       // Attack stuff
       PickupAttack:
-        TNT1 A 0 A_PlaySound("halflife/mp5_shoot",CHAN_WEAPON)
+        TNT1 A 0 A_PlaySound("halflife/uzi_shoot",CHAN_WEAPON)
         TNT1 A 0 A_FireCustomMissile("HLBrassShellCaser",0,false)
         TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupAttackCoop")
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupAttackCoop")

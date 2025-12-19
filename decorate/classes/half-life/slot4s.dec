@@ -164,7 +164,7 @@ Actor "HLUzi" : HLWeapon
         HW00 A 0 A_GiveInventory("SamsaraHalfLifeUziAttackHandler")
         HW00 A 0 //A_JumpIfInventory("HalfLifeOpposingForce",1,"FireStartShephard")
         HW10 I 1 Bright A_WeaponReady(WRF_NOSWITCH|WRF_NOFIRE)
-		HW10 J 2 A_WeaponReady(WRF_NOSWITCH|WRF_NOFIRE)
+        HW10 J 2 A_WeaponReady(WRF_NOSWITCH|WRF_NOFIRE)
         HW10 L 0 A_ReFire HW10 L 1 A_WeaponReady(WRF_NOSWITCH|WRF_NOFIRE)
         HW10 N 0 A_ReFire HW10 N 1 A_WeaponReady(WRF_NOSWITCH|WRF_NOFIRE)
         HW10 P 0 A_ReFire HW10 P 1 A_WeaponReady(WRF_NOSWITCH|WRF_NOFIRE)
@@ -187,12 +187,18 @@ Actor "HLUzi" : HLWeapon
       ReloadStart:
         HW06 C 0 //A_JumpIfInventory("HalfLifeOpposingForce",1,"ReloadStartShephard")
         HW06 "CFILORUX[" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
-        HW07 "ADGJMPSVY\" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
+        HW07 ADGJM 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
+        HW07 P 0 A_PlaySound("halflife/uzi_reload1")
+        HW07 "PSVY\" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
         HW08 "BEHKNQTWZ]" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
-        HW09 "CFILORUX[" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
+        HW09 CFILO 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
+        HW09 P 0 A_PlaySound("halflife/uzi_reload2")
+        HW09 "PRUX[" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
         HW0A "ADGJMPSVY\" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
         HW0B "BEHKNQTWZ]" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
-        HW0C "CFILORUX[" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
+        HW0C CFI 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
+        HW0C L 0 A_PlaySound("halflife/uzi_reload3")
+        HW0C "LORUX[" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
         HW0D "ADGJMPSVY\" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
         HW0E A 0 A_JumpIfInventory("SamsaraReloadMode",2,"ReloadAmmo")
       ReloadFinish:
@@ -378,11 +384,11 @@ actor SamsaraHalfLifeUziAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupAttackCoop")
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupAttackCoop")
       PickupAttackDM:
-        TNT1 A 0 A_FireCustomMissile("HLUziBullet",random(-25,25)/10.0,false,5,3,0,random(-25,25)/10.0)
+        TNT1 A 0 A_FireCustomMissile("HLUziBullet",random(-15,15)/10.0,false,5,5,0,random(-15,15)/10.0)
         goto PickupFinish
 
       PickupAttackCoop:
-        TNT1 A 0 A_FireCustomMissile("HLUziBulletCoop",random(-25,25)/10.0,false,5,3,0,random(-25,25)/10.0)
+        TNT1 A 0 A_FireCustomMissile("HLUziBulletCoop",random(-15,15)/10.0,false,5,5,0,random(-15,15)/10.0)
         goto PickupFinish
 
       // Finishing stuff

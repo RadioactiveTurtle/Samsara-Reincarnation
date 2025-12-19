@@ -1,6 +1,7 @@
 Actor "HLUzi" : HLWeapon
 {
     Inventory.PickupMessage "You got the Uzi!"
+    Inventory.Icon "HLCMPUZI"
     Weapon.SlotNumber 4
     Weapon.SlotPriority 1
     Weapon.SelectionOrder 2300
@@ -94,7 +95,7 @@ Actor "HLUzi" : HLWeapon
         goto Super::Select
 
       Ready: // our "Select" state
-        HW11 G 0 //A_JumpIfInventory("HalfLifeOpposingForce",1,"ReadyShephard")
+        TNT1 A 0 //A_JumpIfInventory("HalfLifeOpposingForce",1,"ReadyShephard")
         HW11 "GIKMOQSUWY[]" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
         HW12 "BDFHJLNPRTVXZ\" 1 A_WeaponReady(WRF_NOBOB|WRF_NOFIRE)
         goto ReadyActual

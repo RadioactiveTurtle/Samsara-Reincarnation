@@ -425,6 +425,7 @@ actor SamsaraHalfLifeUziPrimaryAttackHandler : Trigger
         stop
     }
 }
+*/
 
 actor HLUziCounter : Ammo
 {
@@ -433,6 +434,7 @@ actor HLUziCounter : Ammo
     +IGNORESKILL
 }
 
+/*
 Actor HLUziBullet : HLBullet {
     +THRUGHOST
     Damage (0)

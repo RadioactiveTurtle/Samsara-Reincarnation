@@ -371,6 +371,7 @@ HEV/Crossbow HEV_SLT8
 HEV/Sniper nosoundforyoubitch
 HEV/Longjump HEV_SLT0
 $alias HEV/Barnacle HEV/Hornet
+HEV/Uzi nosoundforyoubitch
 
 $random HEV/Hazard { HEV/Detection0 HEV/Detection1 HEV/Detection2 HEV/Detection4 HEV/Detection5 }
 HEV/Detection0 HEV_DET0

@@ -542,6 +542,7 @@ str ClassPickupSounds[2][CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT] =
                 {"halflife/weaponpickup", "halflife/weaponpickup"},
                 {"halflife/weaponpickup", "halflife/weaponpickup"},
                 {"halflife/egon_pickup", "halflife/egon_pickup"},
+                {"halflife/weaponpickup"},
             },
             {
                 {"halflife/weaponpickup", "halflife/weaponpickup"},
@@ -553,6 +554,7 @@ str ClassPickupSounds[2][CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT] =
                 {"halflife/weaponpickup", "halflife/weaponpickup"},
                 {"halflife/weaponpickup", "halflife/weaponpickup"},
                 {"halflife/egon_pickup", "halflife/egon_pickup"},
+                {"halflife/weaponpickup"},
             },
         },
         {{

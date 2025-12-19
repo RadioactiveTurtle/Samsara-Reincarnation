@@ -5615,6 +5615,20 @@ str ClassPickupMessages[CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT][MSGCOUNT]
                     "Fires green rings of instagib death.",
                 },
             },
+            {
+                {
+                    "9mm fully automatic weapon acquired.",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                },
+            },
         },
         {
             {
@@ -5813,6 +5827,20 @@ str ClassPickupMessages[CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT][MSGCOUNT]
                     "With this, I can finally see the world.",
                     "The G-Man probably shouldn't have let you keep this thing.",
                     "Fires green rings of instagib death.",
+                },
+            },
+            {
+                {
+                    "Uzi",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
                 },
             },
         },
@@ -10371,4 +10399,4 @@ str MiscPickupMessages[MISCPICKUPCOUNT][LOADOUTCOUNT][MSGCOUNT] =
     }},
 };
 
-// jesus fucking christ, 10370 lines
+// jesus fucking christ, 10400 lines

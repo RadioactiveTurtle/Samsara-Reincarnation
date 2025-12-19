@@ -906,7 +906,7 @@ str HLWeaponGraphics[2][10][10] =
 {
 	{
 		{ "HPKUP00", "HPKUP22", "HPKUP16", "", "", "", "", "", "", "" },
-		{ "HPKUP01", "HPKUP02", "HPKUP17", "", "", "", "", "", "", "" },
+		{ "HPKUP01", "HPKUP02", "HPKUP17", "HPKUP03", "", "", "", "", "", "" },
 		{ "HPKUP03", "HPKUP04", "HPKUP09", "", "", "", "", "", "", "" },
 		{ "HPKUP10", "HPKUP11", "HPKUP12", "HPKUP13", "", "", "", "", "", "" },
 		{ "HPKUP05", "HPKUP08", "", "", "", "", "", "", "", "" },
@@ -918,7 +918,7 @@ str HLWeaponGraphics[2][10][10] =
 	},
 	{
 		{ "OPFSL00", "OPFSL22", "OPFSL16", "", "", "", "", "", "", "" },
-		{ "OPFSL01", "OPFSL02", "OPFSL17", "", "", "", "", "", "", "" },
+		{ "OPFSL01", "OPFSL02", "OPFSL17", "OPFSL03", "", "", "", "", "", "" },
 		{ "OPFSL03", "OPFSL04", "OPFSL09", "", "", "", "", "", "", "" },
 		{ "OPFSL10", "OPFSL11", "OPFSL12", "OPFSL13", "", "", "", "", "", "" },
 		{ "OPFSL05", "OPFSL08", "", "", "", "", "", "", "", "" },
@@ -2823,6 +2823,7 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("HLDeagleLaserActivated", 1);
 			TakeInventory("HLDeagleLaserMemory", 1);
 			TakeInventory("MP5", 1);
+			TakeInventory("HLUzi", 1);
 			TakeInventory(" RPG ", 1);
 			TakeInventory("SamsaraHalfLifeRPGLaserActivated", 1);
 			TakeInventory("SamsaraHalfLifeRPGNotLoaded", 1);
@@ -2862,6 +2863,7 @@ Script "Samsara_ResetInventory" (void)
 			GiveInventory("HLPythonCounter", 6);
 			GiveInventory("HLDeagleCounter", 7);
 			GiveInventory("HLMP5Counter", 50);
+			GiveInventory("HLUziCounter", 32);
 			GiveInventory("HLRPGCounter", 1);
 			GiveInventory("HLSporeCounter", 10);
 			GiveInventory("HLSAWCounter", 100);
@@ -7468,6 +7470,21 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
             }
 
             if (result == 1 && startmode == 0 && !hasweapon) { ACS_NamedExecuteAlways("HL2685", 0, 20); }
+            break;
+
+          case SLOT_MINIGUN:
+            hasweapon = CheckInventory("HLUzi");
+
+            if (!hasweapon)
+            {
+                GiveInventory("HLUzi", 1);
+                result = 1;
+            } else if (CheckInventory("Clip") < GetAmmoCapacity("Clip") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                GiveInventory("HLUzi", 1);
+                result = 1;
+            }
+
+            if (result == 1 && startmode == 0 && !hasweapon) { ACS_NamedExecuteAlways("HL2685", 0, 24); }
             break;
         }
         break;

@@ -6898,13 +6898,13 @@ StatusBar Normal, ForceScaled
             } else IsSelected "Desert Eagle", MP5 {
                 InInventory SamsaraReloadMode, 2 { DrawNumber 3, HLLFONT, Green, Ammo1, 28, 176; }
                 else { DrawNumber 3, HLLFONT, Green, Ammo2, 28, 176; }
-            } else IsSelected " RPG ", "Spore Launcher" {
+            } else IsSelected HLUzi, " RPG " {
                 InInventory SamsaraReloadMode, 2 { DrawNumber 3, HLLFONT, Green, Ammo1, 28, 176; }
                 else { DrawNumber 3, HLLFONT, Green, Ammo2, 28, 176; }
-            } else IsSelected "M249 Squad Automatic Weapon", "HL Crossbow" {
+            } else IsSelected "Spore Launcher", "M249 Squad Automatic Weapon" {
                 InInventory SamsaraReloadMode, 2 { DrawNumber 3, HLLFONT, Green, Ammo1, 28, 176; }
                 else { DrawNumber 3, HLLFONT, Green, Ammo2, 28, 176; }
-            } else IsSelected "M40A1 Sniper Rifle" {
+            } else IsSelected "HL Crossbow", "M40A1 Sniper Rifle" {
                 InInventory SamsaraReloadMode, 2 { DrawNumber 3, HLLFONT, Green, Ammo1, 28, 176; }
                 else { DrawNumber 3, HLLFONT, Green, Ammo2, 28, 176; }
             }
@@ -7175,13 +7175,13 @@ StatusBar Normal, ForceScaled
             } else IsSelected "Desert Eagle", MP5 {
                 InInventory SamsaraReloadMode, 2 { DrawNumber 3, HLLFONT, Untranslated, Ammo1, 28, 178; }
                 else { DrawNumber 3, HLLFONT, Untranslated, Ammo2, 28, 178; }
-            } else IsSelected " RPG ", "Spore Launcher" {
+            } else IsSelected HLUzi, " RPG " {
                 InInventory SamsaraReloadMode, 2 { DrawNumber 3, HLLFONT, Untranslated, Ammo1, 28, 178; }
                 else { DrawNumber 3, HLLFONT, Untranslated, Ammo2, 28, 178; }
-            } else IsSelected "M249 Squad Automatic Weapon", "HL Crossbow" {
+            } else IsSelected "Spore Launcher", "M249 Squad Automatic Weapon" {
                 InInventory SamsaraReloadMode, 2 { DrawNumber 3, HLLFONT, Untranslated, Ammo1, 28, 178; }
                 else { DrawNumber 3, HLLFONT, Untranslated, Ammo2, 28, 178; }
-            } else IsSelected "M40A1 Sniper Rifle" {
+            } else IsSelected "HL Crossbow", "M40A1 Sniper Rifle" {
                 InInventory SamsaraReloadMode, 2 { DrawNumber 3, HLLFONT, Untranslated, Ammo1, 28, 178; }
                 else { DrawNumber 3, HLLFONT, Untranslated, Ammo2, 28, 178; }
             }

@@ -412,6 +412,7 @@ str ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
         {" RPG ",           "",           "",           "ForceCheck", ""}, // can give multiple weapons that use the same ammo type, uses script for proper ammo calculations
         {"Gauss Cannon",    "",           "",           "ForceCheck", ""}, // can give multiple weapons that use the same ammo type, uses script for proper ammo calculations
         {"E.G.O.N.",        "",           "",           "ForceCheck", ""}, // can give multiple weapons that use the same ammo type, uses script for proper ammo calculations
+        {"HLUzi",           "Clip",       "",           "",           ""},
     },
     { // Shadow Warrior
         {"SWFists",           "",           "", "",               ""},
@@ -806,10 +807,10 @@ str ClassHotKeyWeapon[CLASSCOUNT][MAXMODES][SLOTCOUNT + UNIQUECOUNT][LOADOUTCOUN
     }},
     {
         {
-            {"Crowbar", "Combat Knife"}, {"Hornetgun", "Shock Roach"}, {"9mm Pistol"}, {"Assault Shotgun"}, {".357 Python", "Desert Eagle"}, {"MP5"}, {" RPG ", "Spore Launcher"}, {"Gauss Cannon", "M249 Squad Automatic Weapon"}, {"E.G.O.N.", "Displacer Cannon"}, {"HL Squeaks", "Mk 2 Grenades"}, {"HL Crossbow", "M40A1 Sniper Rifle"}, {"", "HLOPBarnacle"},
+            {"Crowbar", "Combat Knife"}, {"Hornetgun", "Shock Roach"}, {"9mm Pistol"}, {"Assault Shotgun"}, {".357 Python", "Desert Eagle"}, {"MP5"}, {" RPG ", "Spore Launcher"}, {"Gauss Cannon", "M249 Squad Automatic Weapon"}, {"E.G.O.N.", "Displacer Cannon"}, {"HL Squeaks", "Mk 2 Grenades"}, {"HL Crossbow", "M40A1 Sniper Rifle"}, {"", "HLOPBarnacle"}, {"HLUzi"},
         },
         {
-            {"Crowbar", "Combat Knife"}, {"Hornetgun", "Shock Roach"}, {"9mm Pistol"}, {"Assault Shotgun"}, {".357 Python", "Desert Eagle"}, {"MP5"}, {" RPG ", "Spore Launcher"}, {"Gauss Cannon", "M249 Squad Automatic Weapon"}, {"E.G.O.N.", "Displacer Cannon"}, {"HL Squeaks", "Mk 2 Grenades"}, {"HL Crossbow", "M40A1 Sniper Rifle"}, {"", "HLOPBarnacle"},
+            {"Crowbar", "Combat Knife"}, {"Hornetgun", "Shock Roach"}, {"9mm Pistol"}, {"Assault Shotgun"}, {".357 Python", "Desert Eagle"}, {"MP5"}, {" RPG ", "Spore Launcher"}, {"Gauss Cannon", "M249 Squad Automatic Weapon"}, {"E.G.O.N.", "Displacer Cannon"}, {"HL Squeaks", "Mk 2 Grenades"}, {"HL Crossbow", "M40A1 Sniper Rifle"}, {"", "HLOPBarnacle"}, {"HLUzi"},
         },
     },
     {{
@@ -1384,7 +1385,7 @@ str OriginalHotKeyWeapon[CLASSCOUNT][MAXMODES][ORIGINALCOUNT][ORIGINALCOUNT] =
 	{ //Half Life
 		{
 			{ "Crowbar", "Combat Knife", "HLOPBarnacle", "", "", "", "", "", "", "" },
-			{ "9mm Pistol", ".357 Python", "Desert Eagle", "", "", "", "", "", "", "" },
+			{ "9mm Pistol", ".357 Python", "Desert Eagle", "HLUzi", "", "", "", "", "", "" },
 			{ "MP5", "Assault Shotgun", "HL Crossbow", "", "", "", "", "", "", "" },
 			{ " RPG ", "Gauss Cannon", "E.G.O.N.", "Hornetgun", "", "", "", "", "", "" },
 			{ "Mk 2 Grenades", "HL Squeaks", "", "", "", "", "", "", "", "" },
@@ -1396,7 +1397,7 @@ str OriginalHotKeyWeapon[CLASSCOUNT][MAXMODES][ORIGINALCOUNT][ORIGINALCOUNT] =
 		},
 		{
 			{ "Crowbar", "Combat Knife", "HLOPBarnacle", "", "", "", "", "", "", "" },
-			{ "9mm Pistol", ".357 Python", "Desert Eagle", "", "", "", "", "", "", "" },
+			{ "9mm Pistol", ".357 Python", "Desert Eagle", "HLUzi", "", "", "", "", "", "" },
 			{ "MP5", "Assault Shotgun", "HL Crossbow", "", "", "", "", "", "", "" },
 			{ " RPG ", "Gauss Cannon", "E.G.O.N.", "Hornetgun", "", "", "", "", "", "" },
 			{ "Mk 2 Grenades", "HL Squeaks", "", "", "", "", "", "", "", "" },

@@ -183,34 +183,37 @@ Actor HLUzi : HLWeapon
       ReloadStart:
         HW06 C 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"ReloadStartShephard")
         HW06 "CFILORUX[" 1 A_WeaponReady(WRF_NOFIRE)
-        HW07 ADGJM 1 A_WeaponReady(WRF_NOFIRE)
-        HW07 P 0 A_PlaySound("halflife/uzi_reload1")
-        HW07 "PSVY\" 1 A_WeaponReady(WRF_NOFIRE)
+        HW07 ADG 1 A_WeaponReady(WRF_NOFIRE)
+        HW07 J 0 A_PlaySound("halflife/uzi_reload1")
+        HW07 "JMPSVY\" 1 A_WeaponReady(WRF_NOFIRE)
         HW08 "BEHKNQTWZ]" 1 A_WeaponReady(WRF_NOFIRE)
-        HW09 CFILO 1 A_WeaponReady(WRF_NOFIRE)
-        HW09 P 0 A_PlaySound("halflife/uzi_reload2")
-        HW09 "PRUX[" 1 A_WeaponReady(WRF_NOFIRE)
-        HW0A "ADGJMPSVY\" 1 A_WeaponReady(WRF_NOFIRE)
+        HW09 CF 1 A_WeaponReady(WRF_NOFIRE)
+        HW09 I 0 A_PlaySound("halflife/uzi_reload2")
+        HW09 "ILOPRUX[" 1 A_WeaponReady(WRF_NOFIRE)
+        HW0A AD 1 A_WeaponReady(WRF_NOFIRE)
+        HW0A G 0 A_PlaySound("halflife/uzi_reload3")
+        HW0A "GJMPSVY\" 1 A_WeaponReady(WRF_NOFIRE)
         HW0B "BEHKNQTWZ]" 1 A_WeaponReady(WRF_NOFIRE)
-        HW0C CFI 1 A_WeaponReady(WRF_NOFIRE)
-        HW0C L 0 A_PlaySound("halflife/uzi_reload3")
-        HW0C "LORUX[" 1 A_WeaponReady(WRF_NOFIRE)
+        HW0C C 1 A_WeaponReady(WRF_NOFIRE)
+        HW0C F 0 A_PlaySound("halflife/uzi_reload4")
+        HW0C "FILORUX[" 1 A_WeaponReady(WRF_NOFIRE)
         HW0D "ADGJMPSVY\" 1 A_WeaponReady(WRF_NOFIRE)
-        HW0E A 0 A_JumpIfInventory("SamsaraReloadMode",2,"ReloadAmmo")
+        HW0E AB 1 A_WeaponReady(WRF_NOFIRE)
+        HW00 A 0 A_JumpIfInventory("SamsaraReloadMode",2,"ReloadAmmo")
       ReloadFinish:
-        HW0E AB 1 A_WeaponReady
+        HW00 A 0
         goto ReadyActual
 
       ReloadAmmo:
-        HW0E A 0 A_JumpIfInventory("HLUziCounter",0,"ReloadFinish")
-        HW0E A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",0,2)
-        HW0E A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
-        HW0E A 0 A_JumpIfInventory("Clip",1,1)
+        HW00 A 0 A_JumpIfInventory("HLUziCounter",0,"ReloadFinish")
+        HW00 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",0,2)
+        HW00 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
+        HW00 A 0 A_JumpIfInventory("Clip",1,1)
         goto ReloadFinish
-        HW0E A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",0,2)
-        HW0E A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
-        HW0E A 0 A_TakeInventory("Clip",1)
-        HW0E A 0 A_GiveInventory("HLUziCounter")
+        HW00 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",0,2)
+        HW00 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
+        HW00 A 0 A_TakeInventory("Clip",1)
+        HW00 A 0 A_GiveInventory("HLUziCounter")
         loop
 
       // Adrian Shephard
@@ -284,34 +287,37 @@ Actor HLUzi : HLWeapon
 
       ReloadStartShephard:
         0P06 "CFILORUX[" 1 A_WeaponReady(WRF_NOFIRE)
-        0P07 ADGJM 1 A_WeaponReady(WRF_NOFIRE)
-        0P07 P 0 A_PlaySound("halflife/uzi_reload1")
-        0P07 "PSVY\" 1 A_WeaponReady(WRF_NOFIRE)
+        0P07 ADG 1 A_WeaponReady(WRF_NOFIRE)
+        0P07 J 0 A_PlaySound("halflife/uzi_reload1")
+        0P07 "JMPSVY\" 1 A_WeaponReady(WRF_NOFIRE)
         0P08 "BEHKNQTWZ]" 1 A_WeaponReady(WRF_NOFIRE)
-        0P09 CFILO 1 A_WeaponReady(WRF_NOFIRE)
-        0P09 P 0 A_PlaySound("halflife/uzi_reload2")
-        0P09 "PRUX[" 1 A_WeaponReady(WRF_NOFIRE)
-        0P0A "ADGJMPSVY\" 1 A_WeaponReady(WRF_NOFIRE)
+        0P09 CF 1 A_WeaponReady(WRF_NOFIRE)
+        0P09 I 0 A_PlaySound("halflife/uzi_reload2")
+        0P09 "ILOPRUX[" 1 A_WeaponReady(WRF_NOFIRE)
+        0P0A AD 1 A_WeaponReady(WRF_NOFIRE)
+        0P0A G 0 A_PlaySound("halflife/uzi_reload3")
+        0P0A "GJMPSVY\" 1 A_WeaponReady(WRF_NOFIRE)
         0P0B "BEHKNQTWZ]" 1 A_WeaponReady(WRF_NOFIRE)
-        0P0C CFI 1 A_WeaponReady(WRF_NOFIRE)
-        0P0C L 0 A_PlaySound("halflife/uzi_reload3")
-        0P0C "LORUX[" 1 A_WeaponReady(WRF_NOFIRE)
+        0P0C C 1 A_WeaponReady(WRF_NOFIRE)
+        0P0C F 0 A_PlaySound("halflife/uzi_reload4")
+        0P0C "FILORUX[" 1 A_WeaponReady(WRF_NOFIRE)
         0P0D "ADGJMPSVY\" 1 A_WeaponReady(WRF_NOFIRE)
-        0P0E A 0 A_JumpIfInventory("SamsaraReloadMode",2,"ReloadAmmoShephard")
+        0P0E AB 1 A_WeaponReady(WRF_NOFIRE)
+        0P00 A 0 A_JumpIfInventory("SamsaraReloadMode",2,"ReloadAmmoShephard")
       ReloadFinishShephard:
-        0P0E AB 1 A_WeaponReady
+        0P00 A 0
         goto ReadyActual
 
       ReloadAmmoShephard:
-        0P0E A 0 A_JumpIfInventory("HLUziCounter",0,"ReloadFinishShephard")
-        0P0E A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",0,2)
-        0P0E A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
-        0P0E A 0 A_JumpIfInventory("Clip",1,1)
+        0P00 A 0 A_JumpIfInventory("HLUziCounter",0,"ReloadFinishShephard")
+        0P00 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",0,2)
+        0P00 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
+        0P00 A 0 A_JumpIfInventory("Clip",1,1)
         goto ReloadFinishShephard
-        0P0E A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",0,2)
-        0P0E A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
-        0P0E A 0 A_TakeInventory("Clip",1)
-        0P0E A 0 A_GiveInventory("HLUziCounter")
+        0P00 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",0,2)
+        0P00 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
+        0P00 A 0 A_TakeInventory("Clip",1)
+        0P00 A 0 A_GiveInventory("HLUziCounter")
         loop
     }
 }

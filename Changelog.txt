@@ -391,6 +391,7 @@ JC Denton (Deus Ex):
 Strife: Quest for the Sigil:
 
 * Fixed the blue acolytes not using the additional gibs and blood splatters when gibbed by Strife weapons.
+* Fixed a frame lasting longer than normal for gibbed reavers.
 + The environmental suit's fire immunity now takes all fire-based damage types into account instead of just Fire.
 
 -Settings-

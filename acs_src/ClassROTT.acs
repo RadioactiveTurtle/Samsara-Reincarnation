@@ -628,6 +628,7 @@ SCRIPT "RoTT452" (void) CLIENTSIDE //452
     }   
 }
 
+/*
 Script "RoTT453" (void)
 {
 	int rechargeTimer;
@@ -645,6 +646,7 @@ Script "RoTT453" (void)
 		Delay(35);
 	}
 }
+*/
 
 Script "RoTT456" (void) Clientside //456
 {

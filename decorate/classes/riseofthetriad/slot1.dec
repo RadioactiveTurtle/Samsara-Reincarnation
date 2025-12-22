@@ -136,9 +136,9 @@ actor SamsaraROTTBazookaAttackHandler : Trigger
 
 actor RottMissiles : Ammo
 {
-    Inventory.MaxAmount 100
-    Ammo.BackpackAmount 5 // skills with different AmmoFactor values and sv_doubleammo can still give extra regardless of +IGNORESKILL
-    Ammo.BackpackMaxAmount 200
+    Inventory.MaxAmount 50
+    Ammo.BackpackAmount 3 // skills with different AmmoFactor values and sv_doubleammo can still give extra regardless of +IGNORESKILL
+    Ammo.BackpackMaxAmount 100
     Inventory.Icon "AMSMA0"
     Tag "Bazooka Missiles"
     +IGNORESKILL

@@ -178,6 +178,7 @@ Rise of the Triad:
 - The Excalibat and dark staff no longer regenerate their ammo.
 - Split missile ammo capacity has been lowered to 25 (without backpack)/50 (with backpack) (decreased from 100 (without backpack)/200 (with backpack)).
 - The split missile now gives 5 split missiles on pickup (decreased from 10).
+* Fixed the dark staff secondary being able to refire when picking up God Mode.
 ! The dark staff is now removed from the player's inventory when depleted.
 - Ammo expansion packs now give 3 bazooka missiles (decreased from 5).
 - Hexen Ammo 1/2 pickups now give 3 heat seeker missiles (decreased from 5).

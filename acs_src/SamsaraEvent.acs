@@ -2424,7 +2424,10 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 
                 if (!CheckWeapon("Excalibat") && CheckInventory("SamsaraROTTExcalibatInvulning")) { GiveInventory("SamsaraROTTExcalibatInvulnTaker", 1); }
 
-                if (CheckInventory("God Hand") && !CheckWeapon("God Hand") && !CheckInventory("PowerGodProtection")) { TakeInventory("God Hand", 1); }
+                if (!CheckInventory("SamsaraHasInfiniteAmmo"))
+                {
+                    if (CheckInventory("Dark Staff") && !CheckWeapon("Dark Staff") && !CheckInventory("DSEnergy")) { TakeInventory("Dark Staff", 1); }
+                }
 
 				if (CheckInventory("SamsaraROTTDarkStaffSecondaryFiringSoundCheck") && !CheckWeapon("Dark Staff"))
 				{
@@ -2432,6 +2435,8 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 
 					SetInventory("SamsaraROTTDarkStaffSecondaryFiringSoundCheck", 0);
 				}
+
+                if (CheckInventory("God Hand") && !CheckWeapon("God Hand") && !CheckInventory("PowerGodProtection")) { TakeInventory("God Hand", 1); }
 
 				rottmode = GetUserCVar(pln, "samsara_cl_rottmode");
 

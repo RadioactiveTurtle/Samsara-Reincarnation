@@ -5754,6 +5754,7 @@ Actor SamsaraMonsterReincMaulotaur : Minotaur
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -6116,6 +6117,7 @@ Actor SamsaraMonsterReincDsparil1 : Sorcerer1
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -6471,6 +6473,7 @@ Actor SamsaraMonsterReincDsparil2 : Sorcerer2
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -8759,6 +8762,7 @@ Actor SamsaraMonsterReincDragon : Dragon
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -12573,6 +12577,7 @@ Actor SamsaraMonsterReincFighterBoss : FighterBoss
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -12935,6 +12940,7 @@ Actor SamsaraMonsterReincClericBoss : ClericBoss
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -13297,6 +13303,7 @@ Actor SamsaraMonsterReincMageBoss : MageBoss
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -13659,6 +13666,7 @@ Actor SamsaraMonsterReincHeresiarch : Heresiarch
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -14021,6 +14029,7 @@ Actor SamsaraMonsterReincKorax : Korax
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -17695,6 +17704,7 @@ Actor SamsaraMonsterReincMacil : Macil2
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -18065,6 +18075,7 @@ Actor SamsaraMonsterReincStrifeBishop : StrifeBishop
 	DamageFactor "MarathonFusion", 2.0
 	DamageFactor "Tesla", 2.0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -18404,6 +18415,7 @@ Actor SamsaraMonsterReincLoremaster : Loremaster
 	DamageFactor "MarathonFusion", 2.0
 	DamageFactor "Tesla", 2.0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -18743,6 +18755,7 @@ Actor SamsaraMonsterReincProgrammer : Programmer
 	DamageFactor "MarathonFusion", 2.0
 	DamageFactor "Tesla", 2.0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -21104,6 +21117,7 @@ Actor SamsaraMonsterReincInquisitor : Inquisitor
 	DamageFactor "MarathonFusion", 2.0
 	DamageFactor "Tesla", 2.0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -22448,6 +22462,7 @@ Actor SamsaraMonsterReincAlienSpectre : AlienSpectre1
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0
@@ -23137,6 +23152,7 @@ Actor SamsaraMonsterReincEntityBoss : EntityBoss
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0
@@ -23453,6 +23469,7 @@ Actor SamsaraMonsterReincSubEntity : EntitySecond
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0
@@ -23773,6 +23790,7 @@ Actor SamsaraMonsterReincSamsaraSpectre1 : AlienSpectre1
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0
@@ -24093,6 +24111,7 @@ Actor SamsaraMonsterReincSamsaraSpectre2 : AlienSpectre2
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0
@@ -24413,6 +24432,7 @@ Actor SamsaraMonsterReincSamsaraSpectre3 : AlienSpectre3
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0
@@ -24733,6 +24753,7 @@ Actor SamsaraMonsterReincSamsaraSpectre4 : AlienSpectre4
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0
@@ -25053,6 +25074,7 @@ Actor SamsaraMonsterReincSamsaraSpectre5 : AlienSpectre5
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
+	DamageFactor "RottFire", 0.33
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0

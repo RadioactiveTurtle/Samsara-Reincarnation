@@ -25,6 +25,7 @@ actor SpiderMastermind2 : SamsaraMonsterCyberneticBoss replaces SpiderMastermind
 	Obituary "$OB_SPIDER"
 	Tag "Spider Mastermind"
 	Species "SamsaraSpiderMastermind"
+	DamageFactor "RottFire", 0.1
 	States
 	{
 	Spawn:

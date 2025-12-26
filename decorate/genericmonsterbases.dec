@@ -1019,6 +1019,7 @@ Actor SamsaraMonsterHumanoidBoss
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -2290,6 +2291,7 @@ Actor SamsaraMonsterDemonicBoss
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -3559,6 +3561,7 @@ Actor SamsaraMonsterAlienBoss
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -4832,6 +4835,7 @@ Actor SamsaraMonsterCyberneticBoss
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -6101,6 +6105,7 @@ Actor SamsaraMonsterBeastBoss
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -6972,6 +6977,7 @@ Actor SamsaraMonsterRoboticBoss
 	DamageFactor "Tesla", 2.0
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -7668,6 +7674,7 @@ Actor SamsaraMonsterGhostBoss
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0
@@ -8490,6 +8497,7 @@ Actor SamsaraMonsterFlemoidBoss
 	DamageFactor "Slime", 0.0
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
@@ -9087,6 +9095,7 @@ Actor SamsaraMonsterGenericBoss
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0

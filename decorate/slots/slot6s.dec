@@ -116,7 +116,7 @@ actor SamsaraSlotSixSkulltagNoStay : SamsaraSlotSixSkulltagPickup
     States
     {
       Spawn:
-        WEPG F 0 Bright // NEEDS NEW SPRITE
+        WEPG F 0 Bright NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 42) // NEEDS NEW SPRITE
         goto SpawnGameModeCheck
 
       PickupDefault:

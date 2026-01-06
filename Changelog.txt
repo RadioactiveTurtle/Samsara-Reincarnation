@@ -94,6 +94,7 @@ Fred Chexter (Chex Quest):
 Corvus (Heretic):
 
 ! The hellstaff now deals 3-48 damage in multiples of 3 (changed from 5-40 in multiples of 5).
++ The Tempest Wand from the remaster has been added as the slot 6S weapon! However, due to the lack of documentation for how the weapon internally worked in the remaster, the weapon behavior is different, working more like a conventional railgun in Samsara.
 ! Aligned offsets of hybrid unique sprites with other hybrid sprites.
 
 Wolfenstein 3D:

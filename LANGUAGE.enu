@@ -90,6 +90,7 @@ SAMSARA_CORVUS_OB_SLOT3 = "%k turned %o into an ethereal pincushion.";
 SAMSARA_CORVUS_OB_SLOT4 = "%k clawed %o wide open.";
 SAMSARA_CORVUS_OB_SLOT5 = "%k gave %o the bird.";
 SAMSARA_CORVUS_OB_SLOT6 = "%k sent %o to the depths of Hell.";
+SAMSARA_CORVUS_OB_SLOT6S = "%k split %o apart.";
 SAMSARA_CORVUS_OB_SLOT7 = "%k gave %o a shocking revelation.";
 SAMSARA_CORVUS_OB_UNIQUE1 = "%k brought %o a grim fate.";
 SAMSARA_CORVUS_OB_UNIQUE2 = "%k threw eggs at %o's face.";

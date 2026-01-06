@@ -42,7 +42,7 @@ actor CorvusTempestWand : Weapon
         TNT1 A 0 A_AlertMonsters
 		TNT1 A 0 ACS_NamedExecuteWithResult("HereticTriggerCloneAttack")
         GWND F 4 Bright A_PlaySound("heretic/tempestfire",CHAN_WEAPON)
-        GWND H 4 Bright A_GiveInventory("SamsaraHereticTempestRodAttackHandler")
+        GWND H 4 Bright A_GiveInventory("SamsaraHereticTempestWandAttackHandler")
         GWND G 4 Bright
         GWND F 6
         GWND E 12
@@ -57,11 +57,8 @@ actor CorvusTempestWand : Weapon
         TNT1 A 0 A_AlertMonsters
 		TNT1 A 0 ACS_NamedExecuteWithResult("HereticTriggerCloneAttack")
         GWND E 10 Bright A_PlaySound("heretic/tempestcharge",CHAN_WEAPON)
-        GWND F 5 Bright
-        GWND G 5 Bright
-        GWND H 5 Bright
-        GWND I 5 Bright
-        GWND J 5 Bright A_GiveInventory("SamsaraHereticTempestRodPoweredAttackHandler")
+        GWND FGHI 5 Bright
+        GWND J 5 Bright A_GiveInventory("SamsaraHereticTempestWandPoweredAttackHandler")
         GWND G 5 Bright
         TNT1 A 0 A_CheckReload // normal switch if we have less than 5 cells. otherwise, do the alternate switch check
         TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
@@ -80,7 +77,7 @@ actor CorvusTempestWand : Weapon
 
 // Unpowered
 
-actor SamsaraHereticTempestRodAttackHandler : Trigger
+actor SamsaraHereticTempestWandAttackHandler : Trigger
 {
     States
     {
@@ -145,7 +142,7 @@ actor CorvusTempestWandPuffCoop : CorvusTempestWandPuff
 
 // Powered
 
-actor SamsaraHereticTempestRodPoweredAttackHandler : Trigger
+actor SamsaraHereticTempestWandPoweredAttackHandler : Trigger
 {
     States
     {

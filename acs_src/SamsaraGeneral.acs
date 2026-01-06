@@ -2244,6 +2244,7 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("Dragon Claw", INTMAX);
 			TakeInventory("Phoenix Rod", INTMAX);
 			TakeInventory("Hellstaff", INTMAX);
+			TakeInventory("CorvusTempestWand", INTMAX);
 			TakeInventory("DSparilStaff", INTMAX);
 			TakeInventory("DSparilStaffMinion", INTMAX);
 			TakeInventory("Grim Ballista", INTMAX);

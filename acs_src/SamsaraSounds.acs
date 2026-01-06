@@ -73,6 +73,9 @@ str ClassPickupSounds[2][CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT] =
             {"heretic/weaponget"},
             {"heretic/weaponget"},
             {"heretic/weaponget"},
+            {""},
+            {""},
+            {"heretic/weaponget"},
         }},
         {
             {
@@ -818,6 +821,9 @@ str ClassPickupSounds[2][CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT] =
             {"heretic/ammoget"},
             {"heretic/ammoget"},
             {"heretic/ammoget"},
+            {"heretic/ammoget"},
+            {""},
+            {""},
             {"heretic/ammoget"},
         }},
         {

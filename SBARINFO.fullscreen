@@ -6065,6 +6065,8 @@ StatusBar Fullscreen, ForceScaled
                     InInventory GotWeapon6 || " RailGun " { DrawImage "STYSNUM6", 176, 10; }
                 } else InInventory ChexClass {
                     InInventory GotWeapon6 || "Gigazorcher 2100" { DrawImage "STYSNUM6", 176, 10; }
+                } else InInventory CorvusClass {
+                    InInventory GotWeapon6 || CorvusTempestWand { DrawImage "STYSNUM6", 176, 10; }
                 } else InInventory MarathonClass {
                     InInventory GotWeapon6 || "SPNKR-25 Auto Cannon" { DrawImage "STYSNUM6", 176, 10; }
                 } else InInventory QuakeClass {
@@ -6146,6 +6148,7 @@ StatusBar Fullscreen, ForceScaled
 
                 IsSelected " RailGun " { DrawImage "STY3NUM6", 176, 10; }
                 IsSelected "Gigazorcher 2100" { DrawImage "STY3NUM6", 176, 10; }
+                IsSelected CorvusTempestWand { DrawImage "STY3NUM6", 176, 10; }
                 IsSelected "SPNKR-25 Auto Cannon" { DrawImage "STY3NUM6", 176, 10; }
                 IsSelected "Rocket Powered Impaler" { DrawImage "STY3NUM6", 176, 10; }
                 IsSelected BloodFlamethrower { DrawImage "STY3NUM6", 176, 10; }

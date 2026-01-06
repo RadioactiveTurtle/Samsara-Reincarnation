@@ -123,7 +123,7 @@ $rolloff ghostscream4 64 640
 
 heretic/tempestfire				SWNFIR
 heretic/tempestcharge			SWNCHG
-heretic/tempestexplosion		SWNPOW
+heretic/tempestbomb				SWNPOW
 
 wizardfriend/sight				wizsitx
 wizardfriend/attack				wizatkx

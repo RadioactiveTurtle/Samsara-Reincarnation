@@ -410,6 +410,11 @@ JC Denton (Deus Ex):
 
 -Games-
 
+Legacy of Rust/WadFusion:
+
+* Fixed the mindweaver not leaving bullet decals.
+* Fixed the Tyrant going to the wrong See state meant for giving boss taunt tokens to the player.
+
 Strife: Quest for the Sigil:
 
 * Fixed the blue acolytes not using the additional gibs and blood splatters when gibbed by Strife weapons.

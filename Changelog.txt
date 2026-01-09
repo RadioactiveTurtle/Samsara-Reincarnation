@@ -140,7 +140,6 @@ Duke Nukem 3D:
 
 -Duke Nukem (Original/Life's a Beach)-
 
-! Updated offset and weapon outlines for Duke's hybrid pickup sprites.
 - Pipebombs/pineapples now have a splash radius of 210 map units (decreased from 250).
 + Added hybrid pickup sprites for the Uber Soak'em.
 ! The M16 sprites have been extended, and a new pickup sprite has been added.
@@ -154,6 +153,10 @@ Duke Nukem 3D:
 -Duke Nukem (Duke Nukem 64)-
 
 * Fixed the pain and shrinking animations not showing properly.
+
+-All-
+
+! Updated offset and weapon outlines for Duke's hybrid pickup sprites.
 
 Security Officer (Marathon):
 

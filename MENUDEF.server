@@ -110,9 +110,9 @@ OptionMenu "SamsaraServerSideOptions"
     Option "Skulltag Weapons Replace Slots",    "samsara_skulltagreplace", "YesNo"
     StaticText ""
     StaticText "Item Options", 1
-    Option "Random Item Spawn Rate",                "samsara_randomitems",                       "MiscCharactersOptions"
-    Option "Random Item Extras",                    "samsara_randomitemextras",                  "YesNo"
-    Option "Random Item Pool",                      "samsara_randomitempool",                    "RandomItemsOptions"
+    Option "Random Item Spawn Rate", "samsara_randomitems",      "MiscCharactersOptions"
+    Option "Random Item Extras",     "samsara_randomitemextras", "YesNo"
+    Option "Random Item Pool",       "samsara_randomitempool",   "RandomItemsOptions"
     StaticText ""
     StaticText "Random Character Spawn Options", 1
     Option "Enable Duke Nukem 3D",      "samsara_misccharspawn_duke3d",   "MiscCharDukeMode"

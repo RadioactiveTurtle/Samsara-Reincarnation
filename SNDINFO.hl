@@ -83,9 +83,13 @@ HW20SHO1 HW20SHO1
 $random halflife/python_shoot { HW20SHO0 HW20SHO1 }
 
 // * Shotgun
-halflife/shotgun_shoot	HW30SHO0
-halflife/shotgun_boom	HW30SHO1
-halflife/shotgun_pump	HW30PUMP
+halflife/shotgun_shoot	"Sounds/HalfLife/weapons/HW30SHO0.ogg"
+halflife/shotgun_boom	"Sounds/HalfLife/weapons/HW30SHO1.ogg"
+halflife/shotgun_pump	"Sounds/HalfLife/weapons/HW30PUMP.ogg"
+
+halflifeHD/shotgun_shoot	"Sounds/HalfLife/weapons/HW30SHO0_HD.wav"
+halflifeHD/shotgun_boom		"Sounds/HalfLife/weapons/HW30SHO1_HD.wav"
+halflifeHD/shotgun_pump		"Sounds/HalfLife/weapons/HW30PUMP_HD.wav"
 
 HW30CAS0 HW30CAS0
 HW30CAS1 HW30CAS1
@@ -97,10 +101,15 @@ HW30REL1 HW30REL1
 $random halflife/shotgun_reload { HW30REL0 HW30REL1 }
 
 // * MP5
-HW40SHO0 HW40SHO0
-HW40SHO1 HW40SHO1
-HW40SHO2 HW40SHO2
+HW40SHO0 "Sounds/HalfLife/weapons/HW40SHO0.ogg"
+HW40SHO1 "Sounds/HalfLife/weapons/HW40SHO1.ogg"
+HW40SHO2 "Sounds/HalfLife/weapons/HW40SHO2.ogg"
 $random halflife/mp5_shoot { HW40SHO0 HW40SHO1 HW40SHO2 }
+
+HW40SHO0HD "Sounds/HalfLife/weapons/HW40SHO0_HD.wav"
+HW40SHO1HD "Sounds/HalfLife/weapons/HW40SHO1_HD.wav"
+HW40SHO2HD "Sounds/HalfLife/weapons/HW40SHO2_HD.wav"
+$random halflifeHD/mp5_shoot { HW40SHO0HD HW40SHO1HD HW40SHO2HD }
 
 HW40GRE0 HW40GRE0
 HW40GRE1 HW40GRE1

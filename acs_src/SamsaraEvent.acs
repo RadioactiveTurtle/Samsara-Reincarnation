@@ -2851,6 +2851,8 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 				if (!CheckInventory("PowerWTSpellFlyHack")) { TakeInventory("PowerWTSpellFly", 1); } // hexen
 				break;
 			case CLASS_HALFLIFE:
+                SetInventory("SamsaraAlternateSoundToken", GetUserCVar(pln, "samsara_cl_halflifesounds"));
+
 				if (CheckInventory("HLGaussCharged") && !CheckWeapon("Gauss Cannon"))
 				{
 					StopSound(0, CHAN_WEAPON);

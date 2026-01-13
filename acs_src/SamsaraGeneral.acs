@@ -12728,6 +12728,7 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_quake1sounds", 0);
 		SetCVar("samsara_cl_rottsounds", false);
 		SetCVar("samsara_cl_rebelmoonrisingsounds", false);
+		SetCVar("samsara_cl_halflifesounds", false);
 		SetCVar("samsara_cl_quake2sounds", false);
 		SetCVar("samsara_cl_goldeneyesounds", false);
 		SetCVar("samsara_cl_unrealsounds", false);
@@ -12892,6 +12893,7 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_quake1sounds", 0);
 		SetCVar("samsara_cl_rottsounds", false);
 		SetCVar("samsara_cl_rebelmoonrisingsounds", false);
+		SetCVar("samsara_cl_halflifesounds", false);
 		SetCVar("samsara_cl_quake2sounds", false);
 		SetCVar("samsara_cl_goldeneyesounds", false);
 		SetCVar("samsara_cl_unrealsounds", false);
@@ -13056,6 +13058,7 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_quake1sounds", 0);
 		SetCVar("samsara_cl_rottsounds", false);
 		SetCVar("samsara_cl_rebelmoonrisingsounds", false);
+		SetCVar("samsara_cl_halflifesounds", false);
 		SetCVar("samsara_cl_quake2sounds", false);
 		SetCVar("samsara_cl_goldeneyesounds", false);
 		SetCVar("samsara_cl_unrealsounds", false);
@@ -13221,6 +13224,7 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_quake1sounds", 0);
 		SetCVar("samsara_cl_rottsounds", false);
 		SetCVar("samsara_cl_rebelmoonrisingsounds", false);
+		SetCVar("samsara_cl_halflifesounds", false);
 		SetCVar("samsara_cl_quake2sounds", false);
 		SetCVar("samsara_cl_goldeneyesounds", false);
 		SetCVar("samsara_cl_unrealsounds", false);
@@ -13385,6 +13389,7 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_quake1sounds", 0);
 		SetCVar("samsara_cl_rottsounds", false);
 		SetCVar("samsara_cl_rebelmoonrisingsounds", true);
+		SetCVar("samsara_cl_halflifesounds", false);
 		SetCVar("samsara_cl_quake2sounds", true);
 		SetCVar("samsara_cl_goldeneyesounds", false);
 		SetCVar("samsara_cl_unrealsounds", true);

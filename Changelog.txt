@@ -426,6 +426,7 @@ Strife: Quest for the Sigil:
 
 -Settings-
 
++ samsara_cl_halflifesounds, which determines the weapon sounds for the Half-Life characters. It can be found in the "Samsara Clientside Options" menu, under "Alternative Weapon Sounds", with the label "Half-Life Sounds".
 ! Bloody hell effects will no longer spawn from enemies killed by the Massacre damage type (used for the massacre/"kill monsters" cheat, as well as D'Sparil (second phase)'s death sequence).
 ! The "Brutal" bloody hell setting has been renamed to "Chunky".
 * Fixed item replacement settings not taking effect on non-unique equipment pickups (3 to 6S) spawned by the Pinata Party mode.

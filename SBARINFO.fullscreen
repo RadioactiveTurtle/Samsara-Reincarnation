@@ -5674,7 +5674,7 @@ StatusBar Fullscreen, ForceScaled
                     InInventory UsingDualPistols { DrawImage "STY2NUM1", 126, 10; }
                 }
                 IsSelected Mjolnir { DrawImage "STY2NUM1", 126, 10; }
-                IsSelected Bazooka { DrawImage "STY2NUM1", 126, 10; }
+                IsSelected "Double Pistols" { DrawImage "STY2NUM1", 126, 10; }
                 IsSelected "Auto Charge Pistol"
                 {
                     InInventory BlakeSuperAutoCharge { DrawImage "STY2NUM1", 126, 10; }
@@ -5757,7 +5757,7 @@ StatusBar Fullscreen, ForceScaled
                 IsSelected "  Shotgun  " { DrawImage "STY2NUM2", 136, 10; }
                 IsSelected "WSTE-M5 Combat Shotgun" { DrawImage "STY2NUM2", 136, 10; }
                 IsSelected "Double Shotgun" { DrawImage "STY2NUM2", 136, 10; } // Need to change
-                IsSelected "Double Pistols" { DrawImage "STY2NUM2", 136, 10; }
+                IsSelected MP40 { DrawImage "STY2NUM2", 136, 10; }
                 IsSelected "Slow Fire Protector" { DrawImage "STY2NUM2", 136, 10; }
                 IsSelected Flaregun { DrawImage "STY2NUM2", 136, 10; }
                 IsSelected "  Crossbow  ", "  Crossbow Poison  " { DrawImage "STY2NUM2", 136, 10; }
@@ -5918,7 +5918,7 @@ StatusBar Fullscreen, ForceScaled
                 IsSelected "Chaingun Cannon", Duke3D_M16 { DrawImage "STY2NUM4", 156, 10; }
                 IsSelected "MA-75B Assault Rifle" { DrawImage "STY2NUM4", 156, 10; }
                 IsSelected Nailgun, "Nailgun DOE" { DrawImage "STY2NUM4", 156, 10; } // Need to change
-                IsSelected MP40 { DrawImage "STY2NUM4", 156, 10; }
+                IsSelected Bazooka { DrawImage "STY2NUM4", 156, 10; }
                 IsSelected "Rapid Assault Weapon" { DrawImage "STY2NUM4", 156, 10; }
                 IsSelected Tommygun { DrawImage "STY2NUM4", 156, 10; }
                 IsSelected "Assault Gun" { DrawImage "STY2NUM4", 156, 10; }

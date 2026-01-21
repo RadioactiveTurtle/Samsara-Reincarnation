@@ -182,10 +182,10 @@ SAMSARA_RANGER_OB_UNIQUE = "%k tazed %o with the Laser Cannon.";
 
 SAMSARA_ROTT_OB_FALLBACKMELEE = "%k cut %o down with a knife.";
 SAMSARA_ROTT_OB_FALLBACKRANGED = "%k one-tapped %o with the pistol.";
-SAMSARA_ROTT_OB_SLOT1 = "%k bazooka'd %o.";
-SAMSARA_ROTT_OB_SLOT2 = "%k showed %o that two pistols are better than one.";
+SAMSARA_ROTT_OB_SLOT1 = "%k showed %o that two pistols are better than one.";
+SAMSARA_ROTT_OB_SLOT2 = "%k bulletwhored %o.";
 SAMSARA_ROTT_OB_SLOT3 = "%k launched a heat seeking missile at %o.";
-SAMSARA_ROTT_OB_SLOT4 = "%k bulletwhored %o.";
+SAMSARA_ROTT_OB_SLOT4 = "%k bazooka'd %o.";
 SAMSARA_ROTT_OB_SLOT4S = "%k went full Rambo on %o.";
 SAMSARA_ROTT_OB_SLOT5 = "%k firebombed %o home into ludicrous gibs.";
 SAMSARA_ROTT_OB_SLOT5S_1 = "%k gave %o a heap of buckshot from the Doomstick.";

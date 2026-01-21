@@ -2500,17 +2500,17 @@ Script "Samsara_ResetInventory" (void)
 			break;
 
 		case CLASS_ROTT:
-			TakeInventory("HeatSeeker", INTMAX);
 			TakeInventory("Double Pistols", INTMAX);
-			TakeInventory("Bazooka", INTMAX);
 			TakeInventory("MP40", INTMAX);
+			TakeInventory("HeatSeeker", INTMAX);
+			TakeInventory("Bazooka", INTMAX);
 			TakeInventory("RoTTM60", INTMAX);
 			TakeInventory(" Firebomb ", INTMAX);
 			TakeInventory("Doomstick", INTMAX);
 			TakeInventory("DrunkMissiles", INTMAX);
 			TakeInventory("FlameWall", INTMAX);
-			TakeInventory("Split Missile", INTMAX);
 			TakeInventory("Excalibat", INTMAX);
+			TakeInventory("Split Missile", INTMAX);
 			TakeInventory("Dark Staff", INTMAX);
             SetInventory("SamsaraROTTDarkStaffSecondaryFiredCount", 0);
 			TakeInventory("God Hand", INTMAX);
@@ -6580,24 +6580,24 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
             result = -1;
             break;
 
-          case SLOT_SHOTGUN:
+          case SLOT_CHAINSAW:
             if (!CheckInventory("Double Pistols"))
             {
                 GiveInventory("Double Pistols", 1);
                 result = 1;
-            } else if (CheckInventory("HSMissiles") < GetAmmoCapacity("HSMissiles") && (dropped >= 1 || startmode != 0 || !weaponstay)) { // subsequents give heat seeker ammo
-                GiveInventory("HSMissiles", 10 / tossedammo);
+            } else if (CheckInventory("RottMissiles") < GetAmmoCapacity("RottMissiles") && (dropped >= 1 || startmode != 0 || !weaponstay)) { // subsequents give bazooka ammo
+                GiveInventory("RottMissiles", 10 / tossedammo);
                 result = 1;
             }
             break;
 
-          case SLOT_CHAINGUN:
+          case SLOT_SHOTGUN:
             if (!CheckInventory("MP40"))
             {
                 GiveInventory("MP40", 1);
                 result = 1;
-            } else if (CheckInventory("RottMissiles") < GetAmmoCapacity("RottMissiles") && (dropped >= 1 || startmode != 0 || !weaponstay)) { // subsequents give bazooka ammo
-                GiveInventory("RottMissiles", 6 / tossedammo);
+            } else if (CheckInventory("HSMissiles") < GetAmmoCapacity("HSMissiles") && (dropped >= 1 || startmode != 0 || !weaponstay)) { // subsequents give heat seeker ammo
+                GiveInventory("HSMissiles", 6 / tossedammo);
                 result = 1;
             }
             break;

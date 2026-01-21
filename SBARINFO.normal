@@ -3721,26 +3721,26 @@ StatusBar Normal, ForceScaled
             InInventory GotWeapon0
             {
                 DrawImage "RTTWF1N", 28, 14;
-                DrawImage "RTTWPN4", 19, 26;
+                DrawImage "RTTWPN1", 19, 26;
             }
 
-            IsSelected Bazooka
+            IsSelected "Double Pistols"
             {
                 DrawImage "RTTWF1Y", 28, 14;
-                DrawImage "RTTWPY4", 19, 26;
+                DrawImage "RTTWPY1", 19, 26;
             }
 
             // Slot 2
             InInventory GotWeapon2
             {
                 DrawImage "RTTWF2N", 70, 14;
-                DrawImage "RTTWPN1", 62, 26;
+                DrawImage "RTTWPN3", 62, 26;
             }
 
-            IsSelected "Double Pistols"
+            IsSelected MP40
             {
                 DrawImage "RTTWF2Y", 70, 14;
-                DrawImage "RTTWPY1", 62, 26;
+                DrawImage "RTTWPY3", 62, 26;
             }
 
             // Slot 3
@@ -3760,13 +3760,13 @@ StatusBar Normal, ForceScaled
             InInventory GotWeapon4
             {
                 DrawImage "RTTWF4N", 155, 14;
-                DrawImage "RTTWPN3", 150, 26;
+                DrawImage "RTTWPN4", 150, 26;
             }
 
-            IsSelected MP40
+            IsSelected Bazooka
             {
                 DrawImage "RTTWF4Y", 155, 14;
-                DrawImage "RTTWPY3", 150, 26;
+                DrawImage "RTTWPY4", 150, 26;
             }
 
             // Slot 5

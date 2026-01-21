@@ -180,6 +180,9 @@ Rise of the Triad:
 -All-
 
 * Fixed the landing attack taking effect when dead.
+! The double pistols have been moved from a slot 2 weapon to a slot 1 weapon. Subsequent pickups also now give 10 bazooka missiles instead of 10 heat seeker missiles.
+! The MP40 has been moved from a slot 4 weapon to a slot 2 weapon. Subsequent pickups also now give 6 heat seeker missiles instead of 6 bazooka missiles.
+! The bazooka has been moved from a slot 1 weapon to a slot 4 weapon.
 - Bazooka ammo capacity is now 50 (without backpack)/100 (with backpack) (decreased from 100 (without backpack)/200 (with backpack)).
 - The M60 now deals 10 damage (decreased from 15).
 - The Doomstick's secondary attack now deals 10 damage per pellet in PVE (decreased from 15).

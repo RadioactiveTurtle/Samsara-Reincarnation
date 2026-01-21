@@ -52,7 +52,7 @@ actor SamsaraSlotFourPickup : SamsaraSlotPickup replaces Chaingun
       Duke64guy:            PDWP E 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Marathon:             RIFL A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Quake:                QNLG Z 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
-      Rott:                 PM40 A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      Rott:                 PBAZ A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Blake:                BWP4 A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       AOG:                  BWP3 A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Caleb:                TOMP A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop

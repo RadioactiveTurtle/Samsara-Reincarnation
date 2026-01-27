@@ -163,6 +163,8 @@ Security Officer (Marathon):
 + The KKV-7 SMG Flechette bullets now do 8-12 damage in PVE outside of water (increased from 8-10).
 + The fusion pistol secondary fire bolts now deal 105-125 damage (increased from 90-120).
 + When fired underwater, the fusion pistol now deals only the amount of splash damage the original attacks did to Security Officer as self-damage in the Marathon games.
+! The Talon Ceramic Combat Blade is now selected through weapon slot 0 instead of weapon slot 1.
+! The Tech.50 Pacifier is now selected through weapon slot 9 instead of weapon slot 1.
 
 Ranger (Quake I):
 

@@ -561,8 +561,6 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
             SetInventory("SamsaraCurrentTeamIndicator", 0);
         }
 
-        SetInventory("SamsaraSkulltagWeaponsAreEnabled", GetCVar("samsara_skulltagspawn") >= 1);
-
         SetInventory("SamsaraReverseDualWieldFiring", GetUserCVar(pln, "samsara_cl_dualwieldswap"));
 
         SetInventory("SamsaraQuietFootsteps", !GetUserCVar(pln, "samsara_cl_footstepsounds") && !GetCVar("samsara_forcefootstepsounds"));
@@ -5837,6 +5835,10 @@ script "SamsaraGameplayModCrap" (int respawning)
 		SetCvar("samsara_moddedgame", true);
 		HandleBuffCVars();
 
+		SetInventory("SamsaraIsPlayingInZandronum", !isZDoom());
+
+		SetInventory("SamsaraSofterInvulnColormapIsEnabled", GetUserCVar(pln, "samsara_cl_softerinvulncolormap"));
+
         for (i = 1; i <= 100; i++)
         {
             str actortotake = StrParam(s:"SAMSARAPATCH_CUSTOMWEAPON_NAME", d:i);
@@ -5868,12 +5870,17 @@ script "SamsaraGameplayModCrap" (int respawning)
             }
         }
 
+        i = JumpZFromHeight(32 + GetCVar("samsara_jumpmod"), GetActorProperty(0, APROP_Gravity));
+
 		// Hexen requires an increased jumping height
-		if (isZDoom() && GetCvar("samsara_currentgame") == GAME_HEXEN && samsaraClassNum() != CLASS_HEXEN) { GiveInventory("SamsaraIncreasedJumpHeightForHexen", 1); }
+		if (isZDoom() && GetCvar("samsara_currentgame") == GAME_HEXEN) { GiveInventory("SamsaraIncreasedJumpHeightForHexen", 1); }
 		else { TakeInventory("SamsaraIncreasedJumpHeightForHexen", 0x7FFFFFFF); }
 
 		// Strife requires a decreased step height
 		if (GetCvar("samsara_currentgame") == GAME_STRIFE) { SetActorProperty(0, APROP_MaxStepHeight, 16.0); }
+
+        if (CheckInventory("PowerHighJump1") && !GetCVar("LockHighJumpHeightChanges")) { SetActorProperty(0, APROP_JumpZ, max(FixedMul(i, FixedDiv(GetUserCVar(pln, "HighJumpRuneHeight"), 8.0)), 0)); } // multi runes compatibility
+        else { SetActorProperty(0, APROP_JumpZ, max(i, 0)); }
 
 		Delay(1);
 	}

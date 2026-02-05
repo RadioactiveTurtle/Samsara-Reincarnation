@@ -426,6 +426,10 @@ Legacy of Rust/WadFusion:
 * Fixed the mindweaver not leaving bullet decals.
 * Fixed the Tyrant going to the wrong See state meant for giving boss taunt tokens to the player.
 
+Doom 64 CE:
+
++ The realm of Doom 64 CE has opened up to the Wheel! Note that support is currently exclusive to GZDoom only.
+
 Strife: Quest for the Sigil:
 
 * Fixed the blue acolytes not using the additional gibs and blood splatters when gibbed by Strife weapons.

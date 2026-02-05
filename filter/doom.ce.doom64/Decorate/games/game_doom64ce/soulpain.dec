@@ -547,7 +547,7 @@ actor D64PainElemental_Samsara_ShrinkEffect : D64PainElemental_Samsara
 }
 
 // I'm not gonna bother porting over the Stalker functions to Decorate,
-// so we'll also borrow from ReMixer (pls don't sue me vappy)
+// so we'll also borrow from ReMixer (pls don't sue me popsoap)
 Actor D64Stalker_Samsara : D64LostSoul_Samsara replaces D64Stalker
 {
 	Health 200

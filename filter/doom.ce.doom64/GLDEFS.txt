@@ -81,6 +81,37 @@ object D64Archvile_Samsara
     frame VILE\ { light ARCHRES }
 }
 
+object D64Stalker_Samsara
+{
+	frame STLKD { light STALKER }
+	frame STLKE { light STALKER }
+	frame STLKF { light STALKER }
+	frame STLKG { light STALKER }
+	frame STLKH { light STALKER_X1 }
+	frame STLKI { light STALKER_X2 }
+	frame STLKJ { light STALKER_X3 }
+	frame STLKK { light STALKER_X4 }
+	frame STLKL { light STALKER_X5 }
+}
+
+object D64InvisibleStalker_Samsara
+{
+	frame STLKD { light STALKER }
+	frame STLKE { light STALKER }
+	frame STLKF { light STALKER }
+	frame STLKG { light STALKER }
+	frame STLKH { light STALKER_X1 }
+	frame STLKI { light STALKER_X2 }
+	frame STLKJ { light STALKER_X3 }
+	frame STLKK { light STALKER_X4 }
+	frame STLKL { light STALKER_X5 }
+}
+
+object D64Nightcrawler_Samsara
+{
+	frame BSGIE { light ROCKET }
+}
+
 object D64BulletPuffThruGhost
 {
 	frame PUFFA { light BPUFF1 }
@@ -172,6 +203,25 @@ object D64FatShot2
 	frame MANFG { light TRACER_X4 }
 	frame MANFH { light TRACER_X5 }
 	frame MANFI { light TRACER_X5 }
+}
+
+object D64RevenantTracer_Samsara
+{
+	frame TRCRA { light TRACER }
+	frame TRCRB { light TRACER }
+	frame TRCRC { light TRACER_X1 }
+	frame TRCRD { light TRACER_X2 }
+	frame TRCRE { light TRACER_X3 }
+	frame TRCRF { light TRACER_X3 }
+	frame TRCRG { light TRACER_X4 }
+	frame TRCRH { light TRACER_X5 }
+	frame TRCRI { light TRACER_X5 }
+	frame RBXPA { light TRACER_X1 }
+    frame RBXPB { light TRACER_X1 }
+    frame RBXPC { light TRACER_X2 }
+	frame RBXPD { light TRACER_X2 }
+	frame RBXPE { light TRACER_X3 }
+	frame RBXPF { light TRACER_X3 }
 }
 
 object D64WeakRevenantTracer_Samsara

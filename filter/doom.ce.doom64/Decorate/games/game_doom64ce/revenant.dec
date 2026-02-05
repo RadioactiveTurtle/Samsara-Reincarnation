@@ -432,3 +432,5 @@ actor D64WeakRevenantTracer_Samsara : D64WeakRevenantTracer
 	-THRUGHOST
 	DamageType "DoomTheseGuysAreTheBest"
 }
+
+actor D64RevenantTracer_Samsara : D64RevenantTracer replaces D64RevenantTracer { SpawnID 156 }

@@ -968,6 +968,7 @@ Actor D64AcidDemon_Samsara : D64Demon_Samsara replaces D64AcidDemon
 	Obituary "$OB_ACIDDEMON"
 	Tag "Acid Demon"
 	BloodColor "00 80 00"
+	SpawnID 215
 	States
 	{
 	Spawn:

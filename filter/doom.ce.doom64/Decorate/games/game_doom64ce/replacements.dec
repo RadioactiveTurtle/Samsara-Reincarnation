@@ -1,4 +1,5 @@
 actor D64Pistol_Samsara : Ammo1Small replaces D64Pistol { SpawnID 157 }
+actor D64RocketLauncher_Samsara : RandomSpawner replaces D64RocketLauncher { DropItem "SamsaraSlotFivePickup" } // needed for MAP29
 actor D64LaserRifle_Samsara : RandomSpawner replaces D64LaserRifle { DropItem "SamsaraSlotSevenPickup" SpawnID 168 }
 actor D64HellPotion_Samsara : HealPack0Dump replaces D64HellPotion { SpawnID 221 }
 actor D64Radar_Samsara : SamsaraAllmap replaces D64Radar { SpawnID 220 }

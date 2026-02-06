@@ -11838,7 +11838,8 @@ script "Samsara_SpawnSlotSkulltag" (int slot, int toss)
 {
     if (CheckInventory("SamsaraSlotSkulltagSpawnChecked") || CheckInventory("SamsaraItemReplaced")) { terminate; }
 
-	int newTid = UniqueTid();
+	int origTID = ActivatorTID();
+	int newTID = UniqueTID();
 	int skulltagSpawned = 0;
 	str slotweapon;
 	switch(slot)
@@ -11852,11 +11853,11 @@ script "Samsara_SpawnSlotSkulltag" (int slot, int toss)
 	if(random(1,100) <= (GetCvar("samsara_skulltagspawn")))
 	{
 		skulltagSpawned = 1;
-		SpawnSpotFacingForced(slotweapon,0,newTid);
-		SetActorFlag(newTid, "DROPPED", false);
+		SpawnSpotFacingForced(slotweapon,0,newTID);
+		SetActorFlag(newTID, "DROPPED", false);
 	}
 
-	SetActorProperty(newTid,APROP_Dropped,GetActorProperty(0,APROP_Dropped));
+	SetActorProperty(newTID,APROP_Dropped,GetActorProperty(0,APROP_Dropped));
 
     GiveInventory("SamsaraSlotSkulltagSpawnChecked", 1);
 
@@ -11868,10 +11869,10 @@ script "Samsara_SpawnSlotSkulltag" (int slot, int toss)
 		}
 		else
 		{
-			if(toss) SetActorVelocity(newTid,random(-4.0,4.0),random(-4.0,4.0),0,0,0);
+			if(toss) SetActorVelocity(newTID,random(-4.0,4.0),random(-4.0,4.0),0,0,0);
 		}
 
-		Thing_ChangeTid(newTid,0);
+		Thing_ChangeTID(newTID,origTID);
 	}
 }
 
@@ -11881,6 +11882,7 @@ script "Samsara_SpawnSlotSkulltag" (int slot, int toss)
 
 script "Samsara_SpawnSlotDropped" (int slot, int droptype, int standing)
 {
+    int origTID = ActivatorTID();
     int newTID = UniqueTID();
     str slotweapon = "Placeholder";
 
@@ -11954,7 +11956,7 @@ script "Samsara_SpawnSlotDropped" (int slot, int droptype, int standing)
 
     GiveInventory("SamsaraCountItemDisabler", 1); // precautionary
     Thing_Remove(0);
-    Thing_ChangeTid(newTID, 0);
+    Thing_ChangeTid(newTID, origTID);
 }
 
 //======================================================================================================================
@@ -12429,6 +12431,7 @@ script "Samsara_SwitchableObject" (int type)
         Thing_Remove(0);
     } else {
         str itemActor = itemReplacements[replacer - 1][0];
+        int origTID = ActivatorTID();
         int itemTID = UniqueTID();
 
         bool canCountItem = !StrCmp(itemReplacements[replacer - 1][2], "CanCountItem") || (!StrCmp(itemReplacements[replacer - 1][2], "CanCountItemNotHexen") && GetCVar("samsara_currentgame") != GAME_HEXEN);
@@ -12463,7 +12466,7 @@ script "Samsara_SwitchableObject" (int type)
 
         GiveInventory("SamsaraCountItemDisabler", 1); // precautionary
         Thing_Remove(0);
-        Thing_ChangeTID(itemTID, 0);
+        Thing_ChangeTID(itemTID, origTID);
     }
 }
 

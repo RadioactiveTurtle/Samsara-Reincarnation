@@ -134,6 +134,7 @@ actor DoomguyPlayer : SamsaraPlayerPawnNormalRedBlood
 	Player.StartItem " Pistol ", 1
 	Player.StartItem " Fist ", 1
 	Player.StartItem "DoomguyClass", 1
+	Player.StartItem "SamsaraDoomguyInDoom64CE", 1
 	Player.StartItem "IsSamsaraClass", 1
 	Player.StartItem "SamsaraTipsChecker", 1
 	Player.StartItem "Clip", 50
@@ -164,7 +165,7 @@ actor DoomguyPlayer : SamsaraPlayerPawnNormalRedBlood
 	DamageFactor "SWFlame2Coop", 0.0
 	DamageFactor "SWFlameCoop", 0.0
 	DamageFactor "DynamiteCoop", 0.0
-	Player.ColorRange 209, 224
+	Player.ColorRange 112, 127
 	States
 	{
 		Spawn:

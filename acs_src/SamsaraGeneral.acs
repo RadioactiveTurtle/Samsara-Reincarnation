@@ -2179,7 +2179,7 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("Pyro Cannon", INTMAX);
 			TakeInventory(" BFG10K ", INTMAX);
 			TakeInventory("PowerStrength", 1);
-			TakeInventory("SamsaraDoom64UnmakerArtifact", INTMAX);
+			if (!CheckInventory("SamsaraDoomguyInDoom64CE")) { TakeInventory("SamsaraDoom64UnmakerArtifact", INTMAX); }
 			TakeInventory("Homing Rocket Launcher", INTMAX);
 			TakeInventory("Plasma Repeater", INTMAX);
 			TakeInventory("SamsaraDoomguyStrWeaponPowerItem", INTMAX);
@@ -3620,7 +3620,7 @@ script "Samsara_FillInventory" (void)
 		default: break;
 
 		case CLASS_DOOM:
-			GiveInventory("SamsaraDoom64UnmakerArtifact",3);
+			if (!CheckInventory("SamsaraDoomguyInDoom64CE")) { GiveInventory("SamsaraDoom64UnmakerArtifact",3); }
 			GiveInventory("DGStrHasAutoShotgun",1);
 			GiveInventory("DGHasChaingun",1);
 			GiveInventory("DGStrHasFlamethrower",1);
@@ -9885,7 +9885,7 @@ script "Samsara_GiveCustomUnique" (int unum, int startmode)
                 if (unum == SLOT_UNIQUE1 || startmode == 0 || startmode == 1 || startmode == 3) // do not give again if giving all uniques on spawn
                 {
                     GiveInventory("DoomguyBerserker", 1);
-                    GiveInventory("SamsaraDoom64UnmakerArtifact", 1);
+                    if (!CheckInventory("SamsaraDoomguyInDoom64CE")) { GiveInventory("SamsaraDoom64UnmakerArtifact", 1); }
                     result = 1;
                 }
 
@@ -9927,7 +9927,7 @@ script "Samsara_GiveCustomUnique" (int unum, int startmode)
                 if (unum == SLOT_UNIQUE1 || startmode == 0 || startmode == 1 || startmode == 3) // do not give again if giving all uniques on spawn
                 {
                     GiveInventory("DoomguyBerserker", 1);
-                    GiveInventory("SamsaraDoom64UnmakerArtifact", 1);
+                    if (!CheckInventory("SamsaraDoomguyInDoom64CE")) { GiveInventory("SamsaraDoom64UnmakerArtifact", 1); }
                     result = 1;
                 }
 
@@ -9950,7 +9950,7 @@ script "Samsara_GiveCustomUnique" (int unum, int startmode)
                         break;
                     }
 
-                    if (startmode == 0 && hasweapon < 3)
+                    if (startmode == 0 && hasweapon < 3 && !CheckInventory("SamsaraDoomguyInDoom64CE"))
                     {
                         SetInventory("SamsaraMiscPickupDisplayExtraChoice1", 2 + hasweapon);
                         SetInventory("SamsaraMiscPickupDisplayExtraLoadout1", 0);
@@ -9970,7 +9970,7 @@ script "Samsara_GiveCustomUnique" (int unum, int startmode)
 
               case SLOT_UNIQUE1:
                 GiveInventory("DoomguyBerserker", 1);
-                GiveInventory("SamsaraDoom64UnmakerArtifact", 1);
+                if (!CheckInventory("SamsaraDoomguyInDoom64CE")) { GiveInventory("SamsaraDoom64UnmakerArtifact", 1); }
                 result = 1;
 
                 if (!CheckInventory("Homing Rocket Launcher"))
@@ -10012,7 +10012,7 @@ script "Samsara_GiveCustomUnique" (int unum, int startmode)
                 if (startmode == 0 || startmode == 1 || startmode == 3) // do not give again if giving all uniques on spawn
                 {
                     GiveInventory("DoomguyBerserker", 1);
-                    GiveInventory("SamsaraDoom64UnmakerArtifact", 1);
+                    if (!CheckInventory("SamsaraDoomguyInDoom64CE")) { GiveInventory("SamsaraDoom64UnmakerArtifact", 1); }
                     result = 1;
                 }
 
@@ -10056,7 +10056,7 @@ script "Samsara_GiveCustomUnique" (int unum, int startmode)
                 if (startmode == 0 || startmode == 1 || startmode == 3) // do not give again if giving all uniques on spawn
                 {
                     GiveInventory("DoomguyBerserker", 1);
-                    GiveInventory("SamsaraDoom64UnmakerArtifact", 1);
+                    if (!CheckInventory("SamsaraDoomguyInDoom64CE")) { GiveInventory("SamsaraDoom64UnmakerArtifact", 1); }
                     result = 1;
                 }
 

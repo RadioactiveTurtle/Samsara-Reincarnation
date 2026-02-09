@@ -269,7 +269,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 	case CLASS_DOOM:
 		if (!CheckInventory("SamsaraDoom64StartingUnmakerArtifactsGiven"))
 		{
-			if (GetCVar("samsara_unmakerartifacts") > 0) { SetInventory("SamsaraDoom64UnmakerArtifact", GetCVar("samsara_unmakerartifacts")); }
+			if (GetCVar("samsara_unmakerartifacts") > 0 && !CheckInventory("SamsaraDoomguyInDoom64CE")) { SetInventory("SamsaraDoom64UnmakerArtifact", GetCVar("samsara_unmakerartifacts")); }
 			SetInventory("SamsaraDoom64StartingUnmakerArtifactsGiven", 1);
 		}
 
@@ -570,6 +570,8 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 		switch (samsaraClassNum())
 		{
 			case CLASS_DOOM:
+                if (CheckInventory("SamsaraDoomguyInDoom64CE")) { SetInventory("SamsaraDoom64UnmakerArtifact", CheckInventory("UnmakerUpgrade1Icon") + CheckInventory("UnmakerUpgrade2Icon") + CheckInventory("UnmakerUpgrade3Icon")); }
+
 				if (CheckInventory("SamsaraDoomguyStrRailgunScope") && !CheckWeapon(" RailGun ")) { SetInventory("SamsaraDoomguyStrRailgunScope", 0); }
 
 				if (CheckInventory("SamsaraDoomguyStrChaingunFiringSoundCheck") && !CheckWeapon(" Chaingun "))

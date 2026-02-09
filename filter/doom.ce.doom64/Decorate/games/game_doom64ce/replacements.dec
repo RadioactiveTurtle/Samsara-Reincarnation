@@ -40,6 +40,7 @@ actor D64UnmakerUpgrade1_Samsara : CustomInventory replaces D64UnmakerUpgrade1
 	Inventory.PickupSound "misc/d_pkup"
 	Inventory.MaxAmount 1
 	Tag "$CC_ARTIFACT1"
+	+ALWAYSPICKUP
 	+DONTGIB
 	+COUNTITEM
 	+MOVEWITHSECTOR
@@ -49,8 +50,14 @@ actor D64UnmakerUpgrade1_Samsara : CustomInventory replaces D64UnmakerUpgrade1
 		ART1 ABCDEDCB 4 Bright
 		Loop
 	Pickup:
-		TNT1 A 0 A_GiveInventory("UnmakerUpgrade1Icon", 1)
+		TNT1 A 0 A_JumpIfInventory("UnmakerUpgrade1Icon",1,"PickupFail")
+		TNT1 A 0 A_GiveInventory("UnmakerUpgrades")
+		TNT1 A 0 A_GiveInventory("SamsaraDoom64UnmakerArtifact")
+		TNT1 A 0 A_GiveInventory("UnmakerUpgrade1Icon")
 		Stop
+	PickupFail:
+		TNT1 A 0
+		Fail
 	}
 }
 
@@ -63,6 +70,7 @@ actor D64UnmakerUpgrade2_Samsara : CustomInventory replaces D64UnmakerUpgrade2
 	Inventory.PickupSound "misc/d_pkup"
 	Inventory.MaxAmount 1
 	Tag "$CC_ARTIFACT2"
+	+ALWAYSPICKUP
 	+DONTGIB
 	+COUNTITEM
 	+MOVEWITHSECTOR
@@ -72,8 +80,14 @@ actor D64UnmakerUpgrade2_Samsara : CustomInventory replaces D64UnmakerUpgrade2
 		ART2 ABCDEDCB 4 Bright
 		Loop
 	Pickup:
-		TNT1 A 0 A_GiveInventory("UnmakerUpgrade2Icon", 1)
+		TNT1 A 0 A_JumpIfInventory("UnmakerUpgrade2Icon",1,"PickupFail")
+		TNT1 A 0 A_GiveInventory("UnmakerUpgrades")
+		TNT1 A 0 A_GiveInventory("SamsaraDoom64UnmakerArtifact")
+		TNT1 A 0 A_GiveInventory("UnmakerUpgrade2Icon")
 		Stop
+	PickupFail:
+		TNT1 A 0
+		Fail
 	}
 }
 
@@ -86,6 +100,7 @@ actor D64UnmakerUpgrade3_Samsara : CustomInventory replaces D64UnmakerUpgrade3
 	Inventory.PickupSound "misc/d_pkup"
 	Inventory.MaxAmount 1
 	Tag "$CC_ARTIFACT3"
+	+ALWAYSPICKUP
 	+DONTGIB
 	+COUNTITEM
 	+MOVEWITHSECTOR
@@ -95,8 +110,14 @@ actor D64UnmakerUpgrade3_Samsara : CustomInventory replaces D64UnmakerUpgrade3
 		ART3 ABCDEDCB 4 Bright
 		Loop
 	Pickup:
-		TNT1 A 0 A_GiveInventory("UnmakerUpgrade3Icon", 1)
+		TNT1 A 0 A_JumpIfInventory("UnmakerUpgrade3Icon",1,"PickupFail")
+		TNT1 A 0 A_GiveInventory("UnmakerUpgrades")
+		TNT1 A 0 A_GiveInventory("SamsaraDoom64UnmakerArtifact")
+		TNT1 A 0 A_GiveInventory("UnmakerUpgrade3Icon")
 		Stop
+	PickupFail:
+		TNT1 A 0
+		Fail
 	}
 }
 

@@ -56,5 +56,17 @@ class SamsaraDoom64CEPostProcessor : LevelPostProcessor
 		{
 			AddThing(254, (-160.0, -736.0, 0.0));
 		}
+		// This fixes the rocket boxes not appearing after picking up
+		// the rocket launcher in MAP25
+		if(mapname == "MAP25")
+		{
+			AddThing(255, (448.0, -896.0, 0.0));
+		}
+		// Some classes are too slow to make the jump to the blue key
+		// in LOST05, so the platform with it was lowered.
+		if(mapname == "LOST05")
+		{
+			OffsetSectorPlane(289, Sector.floor, -32);
+		}
 	}
 }

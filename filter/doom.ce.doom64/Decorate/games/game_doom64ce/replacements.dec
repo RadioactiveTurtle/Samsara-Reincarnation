@@ -27,6 +27,26 @@ actor D64MAP22Hack : CustomInventory 254
 	}
 }
 
+actor D64MAP25Hack : CustomInventory 255
+{
+	Game Doom
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.QUIET
+	Inventory.PickupMessage ""
+	Inventory.PickupSound ""
+	States
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Pickup:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("TouchTrigger", 0, 6, 0, 0)
+		Stop
+	}
+}
+
+actor D64Soulsphere_Samsara : SuperHealth replaces D64Soulsphere { SpawnID 25 }
 actor D64HellPotion_Samsara : HealPack0Dump replaces D64HellPotion { SpawnID 221 }
 actor D64Radar_Samsara : SamsaraAllmap replaces D64Radar { SpawnID 220 }
 actor D64UnseerSphere_Samsara : SamsaraFullInvisibility replaces D64UnseerSphere {}

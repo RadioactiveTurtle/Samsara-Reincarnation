@@ -647,3 +647,9 @@ Actor SamsaraPlayerXDeathSoundTrigger : Trigger
 // Hero OST stuff
 
 Actor SamsaraOST_IgnoreTarget : Boolean {}
+
+// Dummy HUD stuff
+
+Actor SamsaraDoom64UnmakerArtifact1Icon : Boolean {}
+Actor SamsaraDoom64UnmakerArtifact2Icon : Boolean {}
+Actor SamsaraDoom64UnmakerArtifact3Icon : Boolean {}

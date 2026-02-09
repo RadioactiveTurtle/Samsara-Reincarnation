@@ -162,13 +162,35 @@ StatusBar Fullscreen, ForceScaled
                 DrawSelectedInventory AlwaysShowCounter, DM65HUDF, 290, 22, 293, 30, Untranslated;
 
                 // Unmaker artifacts
-                InInventory SamsaraDoom64UnmakerArtifact
+                InInventory SamsaraDoomguyInDoom64CE
                 {
-                    InInventory SamsaraDoom64UnmakerArtifact, 3 { DrawImage "DM64UAR3", 290, 48; }
-                    else InInventory SamsaraDoom64UnmakerArtifact, 2 { DrawImage "DM64UAR2", 290, 48; }
-                    else { DrawImage "DM64UAR1", 290, 48; }
+                    InInventory SamsaraDoom64UnmakerArtifact1Icon { DrawImage "DM64UAR1", 290, 48; }
 
-                    DrawNumber 3, DM65HUDF, Untranslated, SamsaraDoom64UnmakerArtifact, 293, 56;
+                    InInventory SamsaraDoom64UnmakerArtifact2Icon
+                    {
+                        InInventory SamsaraDoom64UnmakerArtifact1Icon { DrawImage "DM64UAR2", 290, 74; }
+                        else { DrawImage "DM64UAR2", 290, 48; }
+                    }
+
+                    InInventory SamsaraDoom64UnmakerArtifact3Icon
+                    {
+                        InInventory SamsaraDoom64UnmakerArtifact2Icon
+                        {
+                            InInventory SamsaraDoom64UnmakerArtifact1Icon { DrawImage "DM64UAR3", 290, 100; }
+                            else { DrawImage "DM64UAR3", 290, 74; }
+                        }
+                        else InInventory SamsaraDoom64UnmakerArtifact1Icon { DrawImage "DM64UAR3", 290, 74; }
+                        else { DrawImage "DM64UAR3", 290, 48; }
+                    }
+                } else {
+                    InInventory SamsaraDoom64UnmakerArtifact
+                    {
+                        InInventory SamsaraDoom64UnmakerArtifact, 3 { DrawImage "DM64UAR3", 290, 48; }
+                        else InInventory SamsaraDoom64UnmakerArtifact, 2 { DrawImage "DM64UAR2", 290, 48; }
+                        else { DrawImage "DM64UAR1", 290, 48; }
+
+                        DrawNumber 3, DM65HUDF, Untranslated, SamsaraDoom64UnmakerArtifact, 293, 56;
+                    }
                 }
 
                 // Equipment
@@ -6500,13 +6522,35 @@ StatusBar Fullscreen, ForceScaled
                 InInventory DoomClassMode, 2 {} // Stronghold
                 else InInventory DoomClassMode, 1 // Doom 64
                 {
-                    InInventory SamsaraDoom64UnmakerArtifact
+                    InInventory SamsaraDoomguyInDoom64CE
                     {
-                        InInventory SamsaraDoom64UnmakerArtifact, 3 { DrawImage "DM64UAR3", 290, 48; }
-                        else InInventory SamsaraDoom64UnmakerArtifact, 2 { DrawImage "DM64UAR2", 290, 48; }
-                        else { DrawImage "DM64UAR1", 290, 48; }
+                        InInventory SamsaraDoom64UnmakerArtifact1Icon { DrawImage "DM64UAR1", 290, 48; }
 
-                        DrawNumber 3, HUDFONT_DOOM, Untranslated, SamsaraDoom64UnmakerArtifact, 293, 56;
+                        InInventory SamsaraDoom64UnmakerArtifact2Icon
+                        {
+                            InInventory SamsaraDoom64UnmakerArtifact1Icon { DrawImage "DM64UAR2", 290, 74; }
+                            else { DrawImage "DM64UAR2", 290, 48; }
+                        }
+
+                        InInventory SamsaraDoom64UnmakerArtifact3Icon
+                        {
+                            InInventory SamsaraDoom64UnmakerArtifact2Icon
+                            {
+                                InInventory SamsaraDoom64UnmakerArtifact1Icon { DrawImage "DM64UAR3", 290, 100; }
+                                else { DrawImage "DM64UAR3", 290, 74; }
+                            }
+                            else InInventory SamsaraDoom64UnmakerArtifact1Icon { DrawImage "DM64UAR3", 290, 74; }
+                            else { DrawImage "DM64UAR3", 290, 48; }
+                        }
+                    } else {
+                        InInventory SamsaraDoom64UnmakerArtifact
+                        {
+                            InInventory SamsaraDoom64UnmakerArtifact, 3 { DrawImage "DM64UAR3", 290, 48; }
+                            else InInventory SamsaraDoom64UnmakerArtifact, 2 { DrawImage "DM64UAR2", 290, 48; }
+                            else { DrawImage "DM64UAR1", 290, 48; }
+
+                            DrawNumber 3, HUDFONT_DOOM, Untranslated, SamsaraDoom64UnmakerArtifact, 293, 56;
+                        }
                     }
                 }
             }

@@ -54,6 +54,7 @@ actor D64UnmakerUpgrade1_Samsara : CustomInventory replaces D64UnmakerUpgrade1
 		TNT1 A 0 A_GiveInventory("UnmakerUpgrades")
 		TNT1 A 0 A_GiveInventory("SamsaraDoom64UnmakerArtifact")
 		TNT1 A 0 A_GiveInventory("UnmakerUpgrade1Icon")
+		TNT1 A 0 A_GiveInventory("SamsaraDoom64UnmakerArtifact1Icon")
 		Stop
 	PickupFail:
 		TNT1 A 0
@@ -84,6 +85,7 @@ actor D64UnmakerUpgrade2_Samsara : CustomInventory replaces D64UnmakerUpgrade2
 		TNT1 A 0 A_GiveInventory("UnmakerUpgrades")
 		TNT1 A 0 A_GiveInventory("SamsaraDoom64UnmakerArtifact")
 		TNT1 A 0 A_GiveInventory("UnmakerUpgrade2Icon")
+		TNT1 A 0 A_GiveInventory("SamsaraDoom64UnmakerArtifact2Icon")
 		Stop
 	PickupFail:
 		TNT1 A 0
@@ -114,6 +116,7 @@ actor D64UnmakerUpgrade3_Samsara : CustomInventory replaces D64UnmakerUpgrade3
 		TNT1 A 0 A_GiveInventory("UnmakerUpgrades")
 		TNT1 A 0 A_GiveInventory("SamsaraDoom64UnmakerArtifact")
 		TNT1 A 0 A_GiveInventory("UnmakerUpgrade3Icon")
+		TNT1 A 0 A_GiveInventory("SamsaraDoom64UnmakerArtifact3Icon")
 		Stop
 	PickupFail:
 		TNT1 A 0

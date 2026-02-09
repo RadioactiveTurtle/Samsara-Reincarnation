@@ -570,7 +570,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 		switch (samsaraClassNum())
 		{
 			case CLASS_DOOM:
-                if (CheckInventory("SamsaraDoomguyInDoom64CE")) { SetInventory("SamsaraDoom64UnmakerArtifact", CheckInventory("UnmakerUpgrade1Icon") + CheckInventory("UnmakerUpgrade2Icon") + CheckInventory("UnmakerUpgrade3Icon")); }
+                if (CheckInventory("SamsaraDoomguyInDoom64CE")) { SetInventory("SamsaraDoom64UnmakerArtifact", CheckInventory("UnmakerUpgrades")); }
 
 				if (CheckInventory("SamsaraDoomguyStrRailgunScope") && !CheckWeapon(" RailGun ")) { SetInventory("SamsaraDoomguyStrRailgunScope", 0); }
 
@@ -4769,6 +4769,10 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
         if (previousvalue == -1) { previousvalue = 0; } // just in case
 
         SetInventory("SamsaraIsPlayingInZandronum", !isZDoom());
+
+        SetInventory("SamsaraDoom64UnmakerArtifact1Icon", CheckInventory("UnmakerUpgrade1Icon"));
+        SetInventory("SamsaraDoom64UnmakerArtifact2Icon", CheckInventory("UnmakerUpgrade2Icon"));
+        SetInventory("SamsaraDoom64UnmakerArtifact3Icon", CheckInventory("UnmakerUpgrade3Icon"));
 
         SetInventory("SamsaraUsingVerticalSpread", IsZDoom() && GetUserCVar(pln, "vertspread") && !GetCVar("sv_novertspread"));
 

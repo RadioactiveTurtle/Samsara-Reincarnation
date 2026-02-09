@@ -36,6 +36,21 @@ object D64SpiderMastermind
 	frame SPIDH { light SPIDATK }
 }
 
+object D64UnmakerUpgrade1_Samsara
+{
+	frame ART1 { light UPGRADE1 }
+}
+
+object D64UnmakerUpgrade2_Samsara
+{
+	frame ART2 { light UPGRADE2 }
+}
+
+object D64UnmakerUpgrade3_Samsara
+{
+	frame ART3 { light UPGRADE3 }
+}
+
 object D64UnmakerUpgrade4_Samsara
 {
 	frame POW4 { light UPGRADE4 }

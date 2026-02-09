@@ -29,12 +29,76 @@ actor D64MAP22Hack : CustomInventory 254
 
 actor D64HellPotion_Samsara : HealPack0Dump replaces D64HellPotion { SpawnID 221 }
 actor D64Radar_Samsara : SamsaraAllmap replaces D64Radar { SpawnID 220 }
-actor D64UnmakerUpgrade1_Samsara : MegaPack replaces D64UnmakerUpgrade1 {}
-actor D64UnmakerUpgrade2_Samsara : MegaPack replaces D64UnmakerUpgrade2 { SpawnID 163 }
-actor D64UnmakerUpgrade3_Samsara : MegaPack replaces D64UnmakerUpgrade3 { SpawnID 164 }
-actor D64UnmakerUpgrade5_Samsara : MegaPack replaces D64UnmakerUpgrade5 {}
 actor D64UnseerSphere_Samsara : SamsaraFullInvisibility replaces D64UnseerSphere {}
 actor D64DoomsdaySphere_Samsara : InvulnPowerup replaces D64DoomsdaySphere {}
+
+actor D64UnmakerUpgrade1_Samsara : CustomInventory replaces D64UnmakerUpgrade1
+{
+	Radius 20
+	Height 16
+	Inventory.PickupMessage "$GOTARTIFACT1"
+	Inventory.PickupSound "misc/d_pkup"
+	Inventory.MaxAmount 1
+	Tag "$CC_ARTIFACT1"
+	+DONTGIB
+	+COUNTITEM
+	+MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		ART1 ABCDEDCB 4 Bright
+		Loop
+	Pickup:
+		TNT1 A 0 A_GiveInventory("UnmakerUpgrade1Icon", 1)
+		Stop
+	}
+}
+
+actor D64UnmakerUpgrade2_Samsara : CustomInventory replaces D64UnmakerUpgrade2
+{
+	Radius 20
+	Height 16
+	SpawnID 163
+	Inventory.PickupMessage "$GOTARTIFACT2"
+	Inventory.PickupSound "misc/d_pkup"
+	Inventory.MaxAmount 1
+	Tag "$CC_ARTIFACT2"
+	+DONTGIB
+	+COUNTITEM
+	+MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		ART2 ABCDEDCB 4 Bright
+		Loop
+	Pickup:
+		TNT1 A 0 A_GiveInventory("UnmakerUpgrade2Icon", 1)
+		Stop
+	}
+}
+
+actor D64UnmakerUpgrade3_Samsara : CustomInventory replaces D64UnmakerUpgrade3
+{
+	Radius 20
+	Height 16
+	SpawnID 164
+	Inventory.PickupMessage "$GOTARTIFACT3"
+	Inventory.PickupSound "misc/d_pkup"
+	Inventory.MaxAmount 1
+	Tag "$CC_ARTIFACT3"
+	+DONTGIB
+	+COUNTITEM
+	+MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		ART3 ABCDEDCB 4 Bright
+		Loop
+	Pickup:
+		TNT1 A 0 A_GiveInventory("UnmakerUpgrade3Icon", 1)
+		Stop
+	}
+}
 
 actor D64UnmakerUpgrade4_Samsara : CustomInventory replaces D64UnmakerUpgrade4
 {
@@ -61,3 +125,5 @@ actor D64UnmakerUpgrade4_Samsara : CustomInventory replaces D64UnmakerUpgrade4
 		Fail
 	}
 }
+
+actor D64UnmakerUpgrade5_Samsara : MegaPack replaces D64UnmakerUpgrade5 {}

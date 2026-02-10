@@ -46,6 +46,120 @@ actor D64MAP25Hack : CustomInventory 255
 	}
 }
 
+actor D64REC04Hack : CustomInventory 256
+{
+	Game Doom
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.QUIET
+	Inventory.PickupMessage ""
+	Inventory.PickupSound ""
+	States
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Pickup:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("TouchTrigger", 0, 8, 0, 0)
+		Stop
+	}
+}
+
+actor D64REC05Hack : CustomInventory 257
+{
+	Game Doom
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.QUIET
+	Inventory.PickupMessage ""
+	Inventory.PickupSound ""
+	States
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Pickup:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("TouchTrigger", 0, 10, 0, 0)
+		Stop
+	}
+}
+
+actor D64REC06Hack : CustomInventory 258
+{
+	Game Doom
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.QUIET
+	Inventory.PickupMessage ""
+	Inventory.PickupSound ""
+	States
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Pickup:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("TouchTrigger", 0, 360, 0, 0)
+		Stop
+	}
+}
+
+actor D64REC07Hack : CustomInventory 259
+{
+	Game Doom
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.QUIET
+	Inventory.PickupMessage ""
+	Inventory.PickupSound ""
+	States
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Pickup:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("TouchTrigger", 0, 22, 0, 0)
+		Stop
+	}
+}
+
+actor D64REC08Hack : CustomInventory 260
+{
+	Game Doom
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.QUIET
+	Inventory.PickupMessage ""
+	Inventory.PickupSound ""
+	States
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Pickup:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("TouchTrigger", 0, 33, 0, 0)
+		Stop
+	}
+}
+
+actor D64REC09Hack : CustomInventory 261
+{
+	Game Doom
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.QUIET
+	Inventory.PickupMessage ""
+	Inventory.PickupSound ""
+	States
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Pickup:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("TouchTrigger", 0, 36, 0, 0)
+		Stop
+	}
+}
+
 actor D64Soulsphere_Samsara : SuperHealth replaces D64Soulsphere { SpawnID 25 }
 actor D64HellPotion_Samsara : HealPack0Dump replaces D64HellPotion { SpawnID 221 }
 actor D64Radar_Samsara : SamsaraAllmap replaces D64Radar { SpawnID 220 }

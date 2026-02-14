@@ -422,6 +422,10 @@ JC Denton (Deus Ex):
 
 -Games-
 
+Doom:
+
+* Fixed the pain elemental using the wrong sprite when hit by Duke's mighty boot.
+
 Legacy of Rust/WadFusion:
 
 * Fixed the mindweaver not leaving bullet decals.

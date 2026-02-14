@@ -426,20 +426,20 @@ Doom:
 
 * Fixed the pain elemental using the wrong sprite when hit by Duke's mighty boot.
 
-Legacy of Rust/WadFusion:
-
-* Fixed the mindweaver not leaving bullet decals.
-* Fixed the Tyrant going to the wrong See state meant for giving boss taunt tokens to the player.
-
-Doom 64 CE:
-
-+ The realm of Doom 64 CE has opened up to the Wheel! Note that support is currently exclusive to GZDoom only.
-
 Strife: Quest for the Sigil:
 
 * Fixed the blue acolytes not using the additional gibs and blood splatters when gibbed by Strife weapons.
 * Fixed a frame lasting longer than normal for gibbed reavers.
 + The environmental suit's fire immunity now takes all fire-based damage types into account instead of just Fire.
+
+Doom 64 CE:
+
++ The realm of Doom 64 CE has opened up to the Wheel! Note that support is currently exclusive to GZDoom only.
+
+Legacy of Rust/WadFusion:
+
+* Fixed the mindweaver not leaving bullet decals.
+* Fixed the Tyrant going to the wrong See state meant for giving boss taunt tokens to the player.
 
 -Settings-
 

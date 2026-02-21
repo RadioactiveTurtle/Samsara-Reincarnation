@@ -5893,6 +5893,8 @@ StatusBar Fullscreen, ForceScaled
                     }
                 } else InInventory RottClass {
                     InInventory GotWeapon4 || RoTTM60 { DrawImage "STYSNUM4", 156, 10; }
+                } else InInventory BlakeClass {
+                    InInventory GotWeapon4 || "Gatling Fusion Devastator" { DrawImage "STYSNUM4", 156, 10; }
                 } else InInventory CalebClass {
                     InInventory GotWeapon4 || BloodGreaseGun { DrawImage "STYSNUM4", 156, 10; }
                 } else InInventory EradClass {
@@ -5980,6 +5982,7 @@ StatusBar Fullscreen, ForceScaled
                 IsSelected "  Dual Chainguns  " { DrawImage "STY3NUM4", 156, 10; }
                 IsSelected "Golden Desert Eagle" { DrawImage "STY3NUM4", 156, 10; }
                 IsSelected RoTTM60 { DrawImage "STY3NUM4", 156, 10; }
+                IsSelected "Gatling Fusion Devastator" { DrawImage "STY3NUM4", 156, 10; }
                 IsSelected BloodGreaseGun { DrawImage "STY3NUM4", 156, 10; }
                 IsSelected EradEnergywhip, EradNitrofogger { DrawImage "STY3NUM4", 156, 10; }
                 IsSelected EradFlamethrower { DrawImage "STY3NUM4", 156, 10; }

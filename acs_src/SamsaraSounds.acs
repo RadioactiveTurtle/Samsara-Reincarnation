@@ -321,6 +321,7 @@ str ClassPickupSounds[2][CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT] =
                 {"Bstone/wep4get"},
                 {"Bstone/wep5get"},
                 {"Bstone/wep4get"},
+                {"Bstone/wep5get"},
             },
             {
                 {"Bstone/wep1get"},
@@ -332,6 +333,7 @@ str ClassPickupSounds[2][CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT] =
                 {"Bstone/wep4get"},
                 {"Bstone/wep5get"},
                 {"Bstone/wep4get"},
+                {"Bstone/wep5get"},
             },
         },
         {{
@@ -1070,8 +1072,10 @@ str ClassPickupSounds[2][CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT] =
                 {"Bstone/ammoget"},
                 {"Bstone/ammoget"},
                 {"Bstone/ammoget"},
+                {"Bstone/ammoget"},
             },
             {
+                {"Bstone/ammoget"},
                 {"Bstone/ammoget"},
                 {"Bstone/ammoget"},
                 {"Bstone/ammoget"},

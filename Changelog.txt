@@ -205,6 +205,11 @@ Rise of the Triad:
 - God Mode can no longer damage bosses or actors with the +SPECTRAL flag.
 * Fixed Dog Mode not being properly counted towards invulnerability checks.
 
+Blake Stone (Blake Stone):
+
++ Originally planned as a new slot 6 weapon during Samsara Reincarnation's development (which would've moved and removed some equipment in the process), the Gatling Fusion Devastator has been added as the slot 4S weapon!
+! The Ammo Recharge Pack now gives ammo for vanilla Doom and Chex Quest weapons if they are selected, since custom maps can use ACS to give and/or select them.
+
 Caleb (Blood):
 
 ! In Strife, the Guns Akimbo is now distributed through an inventory item regardless of the "Blood: Guns Akimbo Behavior" setting.

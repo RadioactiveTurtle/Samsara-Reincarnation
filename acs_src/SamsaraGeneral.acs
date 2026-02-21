@@ -2530,7 +2530,7 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("Slow Fire Protector", INTMAX);
 			TakeInventory("Heavy Assault Weapon", INTMAX);
 			TakeInventory("Rapid Assault Weapon", INTMAX);
-			//TakeInventory("Gatling Fusion Devastator", INTMAX);
+			TakeInventory("Gatling Fusion Devastator", INTMAX);
 			TakeInventory("Plasma Discharge Unit", INTMAX);
 			TakeInventory("Dual Neutron Disruptor", INTMAX);
 			TakeInventory("Anti-Plasma Cannon", INTMAX);

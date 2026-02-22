@@ -95,6 +95,7 @@ Corvus (Heretic):
 
 ! The hellstaff now deals 3-48 damage in multiples of 3 (changed from 5-40 in multiples of 5).
 + The tempest wand from Heretic + Hexen's Faith Renewed episode has been added as the slot 6S weapon! However, due to the lack of documentation for how the weapon internally worked in Heretic + Hexen, the weapon behavior is different, working more like a conventional railgun in Samsara.
+! Ally wizards' projectiles now have +BLOODSPLATTER outside of Heretic and Hexen.
 ! Aligned offsets of hybrid unique sprites with other hybrid sprites.
 
 Wolfenstein 3D:
@@ -340,6 +341,7 @@ Grondoval (Witchaven):
 + The pike axe's melee attacks now have 192 range (increased from 64).
 + The pike axe's weak melee attack now deals 120-190 damage (increased from 60-95).
 + The pike axe's strong melee attack now deals 220-320 damage (increased from 110-160).
+* Fixed the pike axe's melee attacks not hitting ghosts.
 + The pike axe's projectiles now deal 200 damage in PVP (increased from 100), and 300-480 damage in PVE (increased from 100-160).
 + The pike axe's projectiles now move at speed 36 in PVP (increased from 30), and speed 48 in PVE (increased from 40).
 + The pike axe's projectiles now have a weak form of homing in PVP.

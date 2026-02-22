@@ -636,6 +636,7 @@ actor FWizardFX2 : WizardFX1
 {
     DamageType "HereWizard"
     Species "Player"
+    +BLOODSPLATTER
     +THRUGHOST
     +THRUSPECIES
 }

@@ -179,6 +179,7 @@ actor CorvusTempestWandBomb
     Speed 15
     ReactionTime 3
     Projectile
+    +BLOODSPLATTER
     +WINDTHRUST
     +NOTELEPORT
     +FORCERADIUSDMG

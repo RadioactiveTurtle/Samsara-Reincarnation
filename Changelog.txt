@@ -229,7 +229,7 @@ Eradicator:
 
 -Eleena Brynstaarl-
 
-+ The claw now deals 12-24 damage in increments of 4 (increased from 9-18 damage in increments of 3).
++ The claw now deals 36-72 damage in increments of 12 (increased from 27-54 damage in increments of 9).
 + The ripper disc now deals 10-18 damage (increased from 10-15).
 + The arachnicator now deals 60 direct damage (increased from 75).
 - The arachnicator now deals 160 splash damage (decreased from 175).
@@ -246,7 +246,7 @@ Eradicator:
 
 -Kamchak-
 
-+ The fist now deals 12-24 damage in increments of 4 (increased from 9-18 damage in increments of 3).
++ The fist now deals 36-72 damage in increments of 12 (increased from 27-54 damage in increments of 9).
 + The roving mine now deals 60 direct damage (increased from 75).
 - The roving mine now deals 160 splash damage (decreased from 175).
 + The roving mine now deals its splash damage across 80 map units (increased from 55).
@@ -263,7 +263,7 @@ Eradicator:
 
 -Dan Blaze-
 
-+ The pickaxe now deals 12-24 damage in increments of 4 (increased from 9-18 damage in increments of 3).
++ The pickaxe now deals 36-72 damage in increments of 12 (increased from 27-54 damage in increments of 9).
 + The mini-tank detonator now deals 60 direct damage (increased from 75).
 - The mini-tank detonator now deals 160 splash damage (decreased from 175).
 + The mini-tank detonator now deals its splash damage across 80 map units (increased from 55).
@@ -278,7 +278,7 @@ Eradicator:
 
 -Alliance Commando-
 
-+ The boot now deals 12-24 damage in increments of 4 (increased from 9-18 damage in increments of 3).
++ The boot now deals 36-72 damage in increments of 12 (increased from 27-54 damage in increments of 9).
 
 -All-
 

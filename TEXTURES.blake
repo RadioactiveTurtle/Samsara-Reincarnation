@@ -621,6 +621,14 @@ Sprite "BRIFE0", 64, 64
 	Patch "SPR00736", 10, 0
 }
 
+Sprite "BRIFG0", 64, 64
+{
+	XScale 0.500
+	YScale 0.500
+	Offset -48, -15
+	Patch "SPR00987", 11, 0
+}
+
 Sprite "SRF5A0", 64, 64
 {
 	XScale 0.500

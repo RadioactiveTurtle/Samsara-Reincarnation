@@ -161,7 +161,7 @@ actor PhoenixShot2 : PhoenixShot
 {
     Species "Player"
     +THRUSPECIES
-	Damage (10*random(1,20)
+	Damage (10*random(1,20))
 }
 
 // Powered

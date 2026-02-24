@@ -350,7 +350,7 @@ actor DukeExplosiveShotgunPuffSP : DukeExplosiveShotgunPuff
    }
 }
 
-Actor DukeExplosiveShotgunPuffCoopI : DukeExplosiveShotgunPuffSP
+Actor DukeExplosiveShotgunPuffCoop : DukeExplosiveShotgunPuffSP
 {
 	Species "Player"
 	+THRUSPECIES
@@ -358,6 +358,7 @@ Actor DukeExplosiveShotgunPuffCoopI : DukeExplosiveShotgunPuffSP
 	+DONTHARMSPECIES
 	+DONTHARMCLASS
 }
+
 Actor DukeExplosiveShotgunPuffCoopImproved : DukeExplosiveShotgunPuffCoop
 {
 	Species "Player"

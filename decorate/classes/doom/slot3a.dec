@@ -440,6 +440,7 @@ actor SamsaraDoomguySuperShotgunOpenSoundPlayer : Trigger
       PickupPSX:
         TNT1 A 0 A_PlaySound("doom64guy/sshoto",CHAN_WEAPON)
         stop
+
       PickupPerkristan:
         TNT1 A 0 A_PlaySound("doomguy/perkristan/sshoto",CHAN_WEAPON)
         stop
@@ -460,6 +461,7 @@ actor SamsaraDoomguySuperShotgunLoadSoundPlayer : Trigger
       PickupPSX:
         TNT1 A 0 A_PlaySound("doom64guy/sshotl",CHAN_WEAPON)
         stop
+
       PickupPerkristan:
         TNT1 A 0 A_PlaySound("doomguy/perkristan/sshotl",CHAN_WEAPON)
         stop
@@ -521,7 +523,6 @@ actor SamsaraDoomguy64SuperShotgunAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupAttackImprovedCoop")
       PickupAttackImprovedDM:
         TNT1 A 0 A_FireBullets(11.2,7.1,20,random(2,3)*5,"Doom64BulletPuffPlayerThruGhost",FBF_NORANDOM|FBF_NOFLASH)
-
         goto PickupFinish
 
       PickupAttackImprovedCoop:

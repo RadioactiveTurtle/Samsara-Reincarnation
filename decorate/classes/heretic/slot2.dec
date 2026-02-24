@@ -220,9 +220,7 @@ actor SamsaraHereticMaceAttackHandler2 : Trigger
         stop	
       PickupAttackCoopImproved:
         TNT1 A 0 A_FireCustomMissile("MaceFX2CoopImproved",0,false,0,2,0,10)
-		stop
-		stop
-
+        stop
     }
 }
 

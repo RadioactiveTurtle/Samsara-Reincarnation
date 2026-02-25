@@ -82,13 +82,15 @@ Fred Chexter (Chex Quest):
 Corvus (Heretic):
 
 ! The hellstaff now deals 3-48 damage in multiples of 3 (changed from 5-40 in multiples of 5).
++ The Staff of D'Sparil lightning bolt now does 240 splash damage (increased from 200) with a radius of 192 (increased from 128).
+
 
 Wolfenstein 3D:
 
 -B.J. Blazkowicz (Original/Lost Episodes)-
 
 + Added hybrid pickup sprites for the Lost Episodes Mauser rifle and Spear of Destiny.
-+ The flamethrower now deals 10-40 damage in multiples of 10 (increased from 8-32 in multiples of 8).
++ The flamethrower now deals 12-48 damage in multiples of 12 (increased from 8-32 in multiples of 8).
 
 -B.J. Blazkowicz (Castle Totenkopf SDL)-
 
@@ -126,7 +128,10 @@ Duke Nukem 3D:
 Security Officer (Marathon):
 
 + The KKV-7 SMG Flechette bullets now do 8-12 damage in PVE outside of water (increased from 8-10).
-+ The fusion pistol secondary fire bolts now deal 105-125 damage (increased from 90-120).
++ The fusion pistol secondary fire bolts now deal 42-56 damage (increased from 40-50).
++ The fusion pistol secondary fire bolts now deal 105-140 damage (increased from 90-120).
++with improved balance active, The fusion pistol secondary fire bolts now deal 45-60 damage (increased from 40-50).
++with improved balance active, The fusion pistol secondary fire bolts now deal 120-160 damage (increased from 90-120).
 + When fired underwater, the fusion pistol now deals only the amount of splash damage the original attacks did to Security Officer as self-damage in the Marathon games.
 
 Ranger (Quake I):
@@ -215,7 +220,7 @@ Eradicator:
 + The missile launcher secondary projectiles now deal 144 splash damage across 128 map units (increased from 140 splash damage across 120 map units).
 - The death sphere now has a ReactionTime of 28 (decreased from 36), meaning it lasts roughly 12 seconds (decreased from roughly 15.4).
 - In PVP, the death sphere now deals 300-350 splash damage across 192 map units (decreased from 650-800 splash damage across 211 map units).
-- In PVE, the death sphere's three A_Explode calls now deal 100-200 splash damage across 192 map units (decreased from 142-284 splash damage in multiples of 142 across 211 map units).
+- In PVE, the death sphere's three A_Explode calls now deal 128-256 splash damage across 192 map units (decreased from 142-284 splash damage in multiples of 142 across 211 map units).
 
 LDF Commando (Rebel Moon Rising):
 
@@ -231,7 +236,7 @@ Kyle Katarn (Star Wars: Dark Forces):
 + The Fusion Cutter primary fast firing animation tics have been decreased (from 6 to 5 passing refire, 7 to 6 failing refire).
 - The Fusion Cutter secondary fire now takes 4 rounds of Ammo 2 to fire (increased from 2), in reference to taking 8 cells to fire in the original game for 4 cells worth of damage.
 - The Fusion Cutter bolts and Wookie Bowcaster cluster bolts now move at speed 40 (decreased from 45).
-+ The Fusion Cutter bolts now deal 45 damage (increased from 25-45, average 35).
++ The Fusion Cutter bolts now deal 50 damage (increased from 25-45, average 35).
 - The Imperial Repeater Gun bolts now move at speed 75 (decreased from 120).
 ! The Imperial Repeater Gun bolts now deal 25 damage in PVP (changed from 18-26 in increments of 2, average 22).
 + The Imperial Repeater Gun bolts now deal 30 damage in PVE (increased from 22-30 in increments of 2, average 26).
@@ -249,7 +254,7 @@ Kyle Katarn (Star Wars: Dark Forces):
 - The Concussion Rifle's tracers now hit for 30 splash damage (decreased from 39-51).
 + The Czerka Adventurer now deals 120 damage (increased from 75-80 in PVP and 110-120 in PVE).
 - The Assault Cannon primary normal firing animation tics have been increased (from 7 to 8 passing refire, 9 to 10 failing refire).
-+ The Assault Cannon's primary projectile now deals 120 damage (increased from 90-110, average 100).
++ The Assault Cannon's primary projectile now deals 135 damage (increased from 90-110, average 100).
 - The Assault Cannon's secondary projectile now deals 120 direct damage (decreased from 192-256 in increments of 64, average 240)
 + The Assault Cannon's secondary projectile now deals 600 splash damage (increased from 500), and up to 60 of that damage is dealt back to Katarn. Not harmless in melee, but usable now.
 ! The Wookie Bowcaster's main projectile now deals 260 direct damage (changed from 240-275).
@@ -1826,6 +1831,7 @@ JC Denton (Deus Ex):
 + When leveling up skills, excess skill points are now carried over to the next level instead of being reset to nothing.
 ! The bioelectrical energy display in the fullscreen HUD is shown differently.
 * Fixed weapons not having icons in the alternate HUD.
+- th 10mm pistol now deals base d=unlevelled damage of 18 (decreased from 28)
 ! Most weapon reload animations are now fixed to the Advanced skill animations instead of being tied to the current weapon skill. The assault shotgun, flamethrower, Majestic 12 plasma rifle, and LAW's reload animations are fixed to the Proficient skill animations.
 ! The combat knife's attack animations are now fixed to the Proficient skill animations instead of being tied to the current weapon skill.
 ! The mini-crossbow and Dragon's Tooth Sword's attack animations are now fixed to the Trained skill animations instead of being tied to the current weapon skill.

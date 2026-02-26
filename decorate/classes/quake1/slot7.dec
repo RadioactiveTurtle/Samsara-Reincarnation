@@ -330,7 +330,7 @@ actor LGDischargeCoop : LGDischarge
 
 ACTOR LGBeamProjectile : MjolnirProjectile
 {
-    Damage (30)
+    Damage (45)
     Speed 256
     -RIPPER
     +NODAMAGETHRUST
@@ -346,7 +346,7 @@ ACTOR LGBeamProjectile : MjolnirProjectile
 ACTOR LGBeamProjectileCoop : LGBeamProjectile { Damage (40) +THRUSPECIES +MTHRUSPECIES Species "Player" }
 ACTOR LGBeamProjectile2 : LGBeamProjectile
 {
-    Damage (40)
+    Damage (45)
     States
     {
         Spawn:

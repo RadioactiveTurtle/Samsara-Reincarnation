@@ -258,4 +258,5 @@ actor EnforcerShotCoop : EnforcerShot
 {
     Species "Player"
     +THRUSPECIES
+    Damage (random(28, 42)
 }

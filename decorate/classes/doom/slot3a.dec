@@ -520,11 +520,11 @@ actor SamsaraDoomguy64SuperShotgunAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupAttackImprovedCoop")
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupAttackImprovedCoop")
       PickupAttackImprovedDM:
-        TNT1 A 0 A_FireBullets(11.2,7.1,20,random(2,3)*5,"Doom64BulletPuffPlayerThruGhost",FBF_NORANDOM|FBF_NOFLASH)
+        TNT1 A 0 A_FireBullets(11.2,7.1,20,random(2,4)*4,"Doom64BulletPuffPlayerThruGhost",FBF_NORANDOM|FBF_NOFLASH)
         goto PickupFinish
 
       PickupAttackImprovedCoop:
-        TNT1 A 0 A_FireBullets(11.2,7.1,20,random(2,3)*5,"Doom64BulletPuffPlayerThruGhost_Coop",FBF_NORANDOM|FBF_NOFLASH)
+        TNT1 A 0 A_FireBullets(11.2,7.1,20,random(2,4)*4,"Doom64BulletPuffPlayerThruGhost_Coop",FBF_NORANDOM|FBF_NOFLASH)
         goto PickupFinish
 
       // Finishing stuff

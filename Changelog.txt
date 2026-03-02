@@ -78,14 +78,14 @@ Fred Chexter (Chex Quest):
 * Fixed the LAZ Device projectile and tracers not having lights when "Chex Quest: LAZ Device Mode" is set to "Classic".
 ! The Liquid Zorcher puff now has lights.
 * Fixed lights being called incorrectly for the Chain-Lightning Zorcher projectile.
++ Each of the lingering Explosions from the LAZ Device after the main blast has its damage doubled and radius increased by 32.
 
 Corvus (Heretic):
 
-+with Improved Balance active, the Dragon Claw now deals 4-48 in increments of 4 (increased from 4-32 in multiples of 4
++ with Improved Balance active, the Dragon Claw now deals 4-48 in increments of 4 (increased from 4-32 in multiples of 4
 ! The hellstaff now deals 4-52 damage in multiples of 4 (changed from 5-40 in multiples of 5).
 + The Staff of D'Sparil lightning bolt now does 240 splash damage (increased from 200) with a radius of 192 (increased from 128).
 + The Staff of D'Sparil lightning bolt now has +FORCERADIUSDMG to make it more powerful its primary use cases as an ultimate weapon against boss monsters.
-+ Each of the lingering Explosions from the LAZ Device after the main blast has its damage doubled and radius increased by 32.
 
 
 Wolfenstein 3D:
@@ -93,7 +93,7 @@ Wolfenstein 3D:
 -B.J. Blazkowicz (Original/Lost Episodes)-
 
 + Added hybrid pickup sprites for the Lost Episodes Mauser rifle and Spear of Destiny.
-+ The flamethrower now deals 12-48 damage in multiples of 12 (increased from 8-32 in multiples of 8).
++ The flamethrower now deals 10-40 damage in multiples of 10 (increased from 8-32 in multiples of 8).
 
 -B.J. Blazkowicz (Castle Totenkopf SDL)-
 
@@ -124,11 +124,11 @@ Duke Nukem 3D:
 -Duke Nukem (Original/Life's a Beach)-
 
 - Pipebombs now have a splash radius of 210 map units (decreased from 250).
-+ with improved balance active, The shotgun now fire 7 pellets of 12 damage each (increased from 10 damage each).
++ with improved balance active, The shotgun now fires 7 pellets of 12 damage each (increased from 10 damage each).
 ! The M16 sprites have been extended, and a new pickup sprite has been added.
 - The RPG's explosion now deals 70 splash damage (decreased from 140), with the total being 210 on a direct hit (decreased from 280).
 - The RPG's explosion now has a splash radius of 140 (decreased from 178).
-+ the Freezethower's projectiles do 24 damage per dhot (increased from 22).
++ the Freezethower's projectiles do 24 damage per shot (increased from 22).
 
 Security Officer (Marathon):
 
@@ -136,7 +136,7 @@ Security Officer (Marathon):
 + The fusion pistol secondary fire bolts now deal 42-56 damage (increased from 40-50).
 + The fusion pistol secondary fire bolts now deal 104-140 damage (increased from 90-120).
 + with improved balance active, The fusion pistol secondary fire bolts now deal 45-60 damage (increased from 40-50).
-+ with improved balance active, The fusion pistol secondary fire bolts now deal 120-160 damage (increased from 90-120).
++ with improved balance active, The fusion pistol secondary fire bolts now deal 120-150 damage (increased from 90-120).
 + with improved balance active, The MA-75B assault rifle bullets deal 10-16 damage (increased from 9-15).
 + When fired underwater, the fusion pistol now deals only the amount of splash damage the original attacks did to Security Officer as self-damage in the Marathon games.
 
@@ -146,10 +146,10 @@ Ranger (Quake I):
 + with improved balance active and in coop, the Nailgun now deals 12 damage (increased from 10), and Lava nails do 18 (increased from 15).
 + Each cluster tiny grenade now deals 51 splash damage in PVP and 64 splash damage in PVE (increased from 50).
 - Multi rockets now deal 64 splash damage in PVP and 80 splash damage in PVE (decreased from 100). This is because it adds up to doing twice as much damage as a primary shot over four multi rockets.
-- The thunderbolt (lightning mode) now deals 45damage in PVE (decreased from 50).
-- The thunderbolt (plasma mode)'s lightning bolts now deal 45samage (decreased from 50).
+- The thunderbolt (lightning mode) now deals 45 damage in PVE (decreased from 50).
+- The thunderbolt (plasma mode)'s lightning bolts now deal 45 damage (decreased from 50).
 - Ranger now gets 2 rounds of Ammo 3 from medium Ammo 2 pickups (decreased from 3) and 3 rounds of Ammo 3 from large Ammo 2 pickups (decreased from 4).
-- Ranger now receives the normal amount of Ammo 3 rounds from ammo pickups instead of getting more rounds.
+- Ranger now receives the normal amount of Ammo 3 rounds from ammo 3  pickups instead of getting more rounds.
 + with improved balance active, The double-barreled shotgun fires 16 pellets of 5 damage each (increased from 14)
 
 Rise of the Triad:
@@ -158,9 +158,13 @@ Rise of the Triad:
 
 * Fixed the landing attack taking effect when dead.
 * Fixed Dog Mode not being properly counted towards invulnerability checks.
++ with improved balance active, the MP-40 does 11 damage per bullet (increased from 10).
 
 Strifeguy (Strife):
-
++ the Electric crossbow bolts now do 40-80 damage in increments of 10 (increased from 20-80 in multiples of 20).
++ the Poison crossbow bolts now do 100 explosive damage in a radius of 16 (increased from a radius of 8). This should make the extra poison damage more consistent.
+! mini-missles now do 64 explosion damage in a radius of 96vuits (changed from 96 damage in a radius of 64)
++ the Assault Rifle now deala 5-15 damage in multiples of 5 per bullet (increased from 4-12 in multiples of 4).
 - High explosive grenades no longer have +FORCERADIUSDMG, because the projectile didn't have that flag in Strife while some enemies had +NORADIUSDMG, meaning it's an intended weakness.
 
 Eradicator:
@@ -227,7 +231,7 @@ Eradicator:
 + The missile launcher primary projectiles now deal 80 direct damage (increased from 75), as well as 128 splash damage across 128 map units (increased from 120 splash damage across 120 map units).
 + The missile launcher secondary projectiles now deal 144 splash damage across 128 map units (increased from 140 splash damage across 120 map units).
 - The death sphere now has a ReactionTime of 28 (decreased from 36), meaning it lasts roughly 12 seconds (decreased from roughly 15.4).
-- In PVP, the death sphere now deals 300-350 splash damage across 192 map units (decreased from 650-800 splash damage across 211 map units).
+- In PVP, the death sphere now deals 384-512 splash damage across 192 map units (decreased from 650-800 splash damage across 211 map units).
 - In PVE, the death sphere's three A_Explode calls now deal 128-256 splash damage across 192 map units (decreased from 142-284 splash damage in multiples of 142 across 211 map units).
 
 LDF Commando (Rebel Moon Rising):
@@ -1293,9 +1297,12 @@ Eradicator:
 * Fixed homing behavior of the missile launcher secondary.
 ! The death sphere now has new weapon sprites.
 - The death sphere now deals less damage overall, especially against tankier enemies.
-! Instead of adding alternate fires that take twice the ammo, the weapon enhancement chip now replaces the primary fires with the alternate fires (with the exception of the missile launcher, so as to still make unguided missiles possible) at no extra ammo cost.
+exception of the missile launcher, so as to still make unguided missiles possible) at no extra ammo cost.
 * Fixed the megasphere pickup message to show the correct amounts.
 * Fixed the death taunt not respecting the taunt cooldown.
+- In PVP, the death sphere now deals 384-512 splash damage across 211 map units (decreased from 650-800 splash damage)
+- In PVP, the death sphere now deals 384-512 splash damage across 192 map units (decreased from 650-800 splash damage).
+- In PVE, the death sphere's three A_Explode calls now deal 128-256 splash damage across 211 map units (decreased from 142-284 splash damage in multiples of 142).
 
 Space Seal (Corridor 7):
 

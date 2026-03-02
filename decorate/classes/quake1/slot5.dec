@@ -280,8 +280,6 @@ actor QuakeRocketCoopImproved : QuakeRocketCoop
     }
 }
 
-}
-
 actor QuakeRocketCoopQuad: QuakeRocketQuad
 {
     +THRUSPECIES
@@ -354,7 +352,6 @@ actor QuakeRocketCoopSoundRereleaseImproved : QuakeRocketCoopSoundRerelease
     }
 }
 
-}
 actor QuakeRocketCoopQuadSoundRerelease : QuakeRocketQuadSoundRerelease
 {
     +THRUSPECIES
@@ -371,6 +368,7 @@ actor QuakeRocketCoopQuadSoundRerelease : QuakeRocketQuadSoundRerelease
     }
 }
 actor QuakeRocketCoopQuadSoundRereleaseImproved : QuakeRocketCoopQuadSoundRerelease
+{
     States
     {
       Death:
@@ -380,6 +378,7 @@ actor QuakeRocketCoopQuadSoundRereleaseImproved : QuakeRocketCoopQuadSoundRerele
         TNT1 A 1 A_SpawnItemEx("QuakeExplosionSoundRerelease")
         stop
     }
+}
 
 actor QuakeRocketCoopQuadSoundRereleaseImprove : QuakeRocketCoopQuadSoundRerelease
 {
@@ -394,7 +393,6 @@ actor QuakeRocketCoopQuadSoundRereleaseImprove : QuakeRocketCoopQuadSoundRerelea
     }
 }
 
-}
 actor QuakeRocketSoundDMC : QuakeRocket
 {
     States
@@ -439,6 +437,7 @@ actor QuakeRocketCoopSoundDMC : QuakeRocketSoundDMC
     }
 }
 actor QuakeRocketCoopSoundDMCImproved: QuakeRocketCoopSoundDMC
+{
     States
     {
       Death:
@@ -448,6 +447,7 @@ actor QuakeRocketCoopSoundDMCImproved: QuakeRocketCoopSoundDMC
         TNT1 A 1 A_SpawnItemEx("QuakeExplosionSoundDMC")
         stop
     }
+}
 
 actor QuakeRocketCoopQuadSoundDMC : QuakeRocketQuadSoundDMC
 {
@@ -475,7 +475,6 @@ actor QuakeRocketCoopQuadSoundDMCImproved : QuakeRocketCoopQuadSoundDMC
         TNT1 A 1 A_SpawnItemEx("QuakeExplosionSoundDMC")
         stop
     }
-}
 }
 
 // Multi rockets
@@ -751,8 +750,6 @@ actor QuakeClusterRkCoopImproved: QuakeClusterRkCoop
     }
 }
 
-}
-
 actor QuadClusterRocket: QuakeClusterRocket
 {
     DamageType "NotQuadded"
@@ -785,7 +782,7 @@ actor QuadClusterRkCoop: QuadClusterRocket
 }
 actor QuadClusterRkCoopImproved : QuadClusterRkCoop
 {
-Damage (88)
+    Damage (88)
     States
     {
       Death:
@@ -837,7 +834,6 @@ actor QuakeClusterRkCoopSoundRereleaseImproved: QuakeClusterRkCoopSoundRerelease
     }
 }
 
-}
 actor QuadClusterRocketSoundRerelease : QuakeClusterRocketSoundRerelease
 {
     DamageType "NotQuadded"
@@ -912,6 +908,8 @@ actor QuakeClusterRkCoopSoundDMC : QuakeClusterRocketSoundDMC
         TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosionSoundDMC")
         stop
     }
+}
+
 actor QuakeClusterRkCoopSoundDMCImproved : QuakeClusterRocketSoundDMC
 {
     +THRUSPECIES

@@ -265,7 +265,7 @@ actor MarathonSMGBulletCoop : MarathonSMGBullet
 }
 
 actor MarathonSMGBulletOverwater : MarathonSMGBulletCoop { Damage (random(8,12)) }
-actor MarathonSMGBulletOverwaterImproved  MarathonSMGBulletOverwater { Damage (random(9,15)) }
+actor MarathonSMGBulletOverwaterImproved : MarathonSMGBulletOverwater { Damage (random(9,15)) }
 actor FlechetteCasingSpawner : SamsaraMarathonCasingSpawner
 {
     States

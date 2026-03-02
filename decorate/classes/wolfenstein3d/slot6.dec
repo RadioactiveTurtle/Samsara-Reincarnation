@@ -242,7 +242,7 @@ actor SamsaraTotenkopfChaingunAttackHandler : Trigger
 
 actor Totenkopf_Tracer_Chaingun : Totenkopf_Tracer 
 { 
-	Damage (10 * random(1,4)))
+	Damage (10 * random(1,4))
 	DamageType "TotenkopfChaingun" 
 	Speed 8
 	States

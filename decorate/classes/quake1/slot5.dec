@@ -104,7 +104,12 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         goto PickupFinish
 
       PickupAttackNormalOriginalCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNormalOriginalCoopImproved")
+
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoop",0,false)
+        goto PickupFinish
+      PickupAttackNormalOriginalCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopImproved",0,false)
         goto PickupFinish
 
       // Rerelease sounds
@@ -116,7 +121,12 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         goto PickupFinish
 
       PickupAttackNormalRereleaseCoop:
-        TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopSoundRerelease",0,false)
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNormalRereleaseCoopImproved")
+
+        TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopSoundRereleaseImproved",0,false)
+        goto PickupFinish
+      PickupAttackNormalRereleaseCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopSoundRereleaseImproved",0,false)
         goto PickupFinish
 
       // Deathmatch Classic sounds
@@ -128,7 +138,12 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         goto PickupFinish
 
       PickupAttackNormalDMCCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNormalDMCCoopImproved")
+
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopSoundDMC",0,false)
+        goto PickupFinish
+      PickupAttackNormalDMCCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopSoundDMCImproved",0,false)
         goto PickupFinish
 
       // Quad
@@ -146,6 +161,9 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
       PickupAttackQuadOriginalCoop:
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuad",0,false)
         goto PickupFinish
+      PickupAttackQuadOriginalCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuadImproved",0,false)
+        goto PickupFinish
 
       // Rerelease sounds
       PickupAttackQuadRerelease:
@@ -156,7 +174,11 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         goto PickupFinish
 
       PickupAttackQuadRereleaseCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackQuadRereleaseCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuadSoundRerelease",0,false)
+        goto PickupFinish
+      PickupAttackQuadRereleaseCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuadSoundRereleaseImproved",0,false)
         goto PickupFinish
 
       // Deathmatch Classic sounds
@@ -168,7 +190,12 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         goto PickupFinish
 
       PickupAttackQuadDMCCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackQuadDMCCoopImproved")
+
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuadSoundDMC",0,false)
+        goto PickupFinish
+      PickupAttackQuadDMCCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuadSoundDMCImproved",0,false)
         goto PickupFinish
 
       // Finishing stuff
@@ -225,7 +252,6 @@ actor QuakeRocketQuad: QuakeRocket
         stop
     }
 }
-
 actor QuakeRocketCoop: QuakeRocket
 {
     +THRUSPECIES
@@ -240,6 +266,20 @@ actor QuakeRocketCoop: QuakeRocket
         TNT1 A 1 A_SpawnItemEx("QuakeExplosion")
         stop
     }
+}
+actor QuakeRocketCoopImproved : QuakeRocketCoop
+{
+    States
+    {
+      Death:
+        TNT1 A 0 A_Explode(96,128,0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(96,128)
+        TNT1 A 1 A_SpawnItemEx("QuakeExplosion")
+        stop
+    }
+}
+
 }
 
 actor QuakeRocketCoopQuad: QuakeRocketQuad
@@ -290,7 +330,7 @@ actor QuakeRocketCoopSoundRerelease : QuakeRocketSoundRerelease
 {
     +THRUSPECIES
     Species "Player"
-	Damage (45) // [ijon] used to be 25, but demons were surviving with *one health*
+	Damage (44) // [ijon] used to be 25, but demons were surviving with *one health*
     States
     {
       Death:
@@ -301,7 +341,20 @@ actor QuakeRocketCoopSoundRerelease : QuakeRocketSoundRerelease
         stop
     }
 }
+actor QuakeRocketCoopSoundRereleaseImproved : QuakeRocketCoopSoundRerelease
+{
+    States
+    {
+      Death:
+		TNT1 A 0 A_Explode(96,128,0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(96,128)
+        TNT1 A 1 A_SpawnItemEx("QuakeExplosionSoundRerelease")
+        stop
+    }
+}
 
+}
 actor QuakeRocketCoopQuadSoundRerelease : QuakeRocketQuadSoundRerelease
 {
     +THRUSPECIES
@@ -317,7 +370,31 @@ actor QuakeRocketCoopQuadSoundRerelease : QuakeRocketQuadSoundRerelease
         stop
     }
 }
+actor QuakeRocketCoopQuadSoundRereleaseImproved : QuakeRocketCoopQuadSoundRerelease
+    States
+    {
+      Death:
+        TNT1 A 0 A_Explode(384,128,0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(384,128)
+        TNT1 A 1 A_SpawnItemEx("QuakeExplosionSoundRerelease")
+        stop
+    }
 
+actor QuakeRocketCoopQuadSoundRereleaseImprove : QuakeRocketCoopQuadSoundRerelease
+{
+    States
+    {
+      Death:
+        TNT1 A 0 A_Explode(384,128,0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(384,128)
+        TNT1 A 1 A_SpawnItemEx("QuakeExplosionSoundRerelease")
+        stop
+    }
+}
+
+}
 actor QuakeRocketSoundDMC : QuakeRocket
 {
     States
@@ -361,12 +438,22 @@ actor QuakeRocketCoopSoundDMC : QuakeRocketSoundDMC
         stop
     }
 }
+actor QuakeRocketCoopSoundDMCImproved: QuakeRocketCoopSoundDMC
+    States
+    {
+      Death:
+		TNT1 A 0 A_Explode(96,128,0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(96,128)
+        TNT1 A 1 A_SpawnItemEx("QuakeExplosionSoundDMC")
+        stop
+    }
 
 actor QuakeRocketCoopQuadSoundDMC : QuakeRocketQuadSoundDMC
 {
     +THRUSPECIES
     Species "Player"
-	Damage (180)
+	Damage (176)
     States
     {
       Death:
@@ -376,6 +463,19 @@ actor QuakeRocketCoopQuadSoundDMC : QuakeRocketQuadSoundDMC
         TNT1 A 1 A_SpawnItemEx("QuakeExplosionSoundDMC")
         stop
     }
+}
+actor QuakeRocketCoopQuadSoundDMCImproved : QuakeRocketCoopQuadSoundDMC
+{
+   States
+    {
+      Death:
+        TNT1 A 0 A_Explode(384,128,0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(384,128)
+        TNT1 A 1 A_SpawnItemEx("QuakeExplosionSoundDMC")
+        stop
+    }
+}
 }
 
 // Multi rockets
@@ -470,6 +570,12 @@ actor SamsaraQuakeRocketLauncherMultiAttackHandler : Trigger
         TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoop",2,false)
         TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoop",4,false)
         goto PickupFinish
+      PickupAttackNormalOriginalCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopImproved",-4,false)
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopImproved",-2,false)
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopImproved",2,false)
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopImproved",4,false)
+        goto PickupFinish
 
       // Rerelease sounds
       PickupAttackNormalRerelease:
@@ -488,6 +594,12 @@ actor SamsaraQuakeRocketLauncherMultiAttackHandler : Trigger
         TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundRerelease",2,false)
         TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundRerelease",4,false)
         goto PickupFinish
+      PickupAttackNormalRereleaseCoop:
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundRerelease",-4,false)
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundRerelease",-2,false)
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundRerelease",2,false)
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundRerelease",4,false)
+        goto PickupFinish
 
       // Deathmatch Classic sounds
       PickupAttackNormalDMC:
@@ -500,6 +612,12 @@ actor SamsaraQuakeRocketLauncherMultiAttackHandler : Trigger
         TNT1 A 0 A_FireCustomMissile("QuakeClusterRocketSoundDMC",4,false)
         goto PickupFinish
 
+      PickupAttackNormalDMCCoop:
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundDMC",-4,false)
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundDMC",-2,false)
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundDMC",2,false)
+        TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundDMC",4,false)
+        goto PickupFinish
       PickupAttackNormalDMCCoop:
         TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundDMC",-4,false)
         TNT1 A 0 A_FireCustomMissile("QuakeClusterRkCoopSoundDMC",-2,false)
@@ -529,6 +647,13 @@ actor SamsaraQuakeRocketLauncherMultiAttackHandler : Trigger
         TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoop",4,false)
         goto PickupFinish
 
+      PickupAttackQuadOriginalCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopImproved",-4,false)
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopImproved",-2,false)
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopImproved",2,false)
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopImproved",4,false)
+        goto PickupFinish
+
       // Rerelease sounds
       PickupAttackQuadRerelease:
         TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupAttackQuadRereleaseCoop")
@@ -545,6 +670,12 @@ actor SamsaraQuakeRocketLauncherMultiAttackHandler : Trigger
         TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundRerelease",-2,false)
         TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundRerelease",2,false)
         TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundRerelease",4,false)
+        goto PickupFinish
+      PickupAttackQuadRereleaseCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundRereleaseImproved",-4,false)
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundRereleaseImproved",-2,false)
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundRereleaseImproved",2,false)
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundRereleaseImproved",4,false)
         goto PickupFinish
 
       // Deathmatch Classic sounds
@@ -563,6 +694,12 @@ actor SamsaraQuakeRocketLauncherMultiAttackHandler : Trigger
         TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundDMC",-2,false)
         TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundDMC",2,false)
         TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundDMC",4,false)
+        goto PickupFinish
+      PickupAttackQuadDMCCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundDMCImproved",-4,false)
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundDMCImproved",-2,false)
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundDMCImproved",2,false)
+        TNT1 A 0 A_FireCustomMissile("QuadClusterRkCoopSoundDMCImproved",4,false)
         goto PickupFinish
 
       // Finishing stuff
@@ -590,7 +727,7 @@ actor QuakeClusterRkCoop: QuakeClusterRocket
 {
     +THRUSPECIES
     Species "Player"
-    Damage (5)
+    Damage (22)
     States
     {
       Death:
@@ -600,6 +737,20 @@ actor QuakeClusterRkCoop: QuakeClusterRocket
         TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosion")
         stop
     }
+}
+actor QuakeClusterRkCoopImproved: QuakeClusterRkCoop
+{
+    States
+    {
+      Death:
+        TNT1 A 0 A_Explode(48, 91, 0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(48, 91)
+        TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosion")
+        stop
+    }
+}
+
 }
 
 actor QuadClusterRocket: QuakeClusterRocket
@@ -621,7 +772,7 @@ actor QuadClusterRkCoop: QuadClusterRocket
 {
     +THRUSPECIES
     Species "Player"
-    Damage (20)
+    Damage (88)
     States
     {
       Death:
@@ -632,7 +783,19 @@ actor QuadClusterRkCoop: QuadClusterRocket
         stop
     }
 }
-
+actor QuadClusterRkCoopImproved : QuadClusterRkCoop
+{
+Damage (88)
+    States
+    {
+      Death:
+        TNT1 A 0 A_Explode(192, 96, 0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(192, 96)
+        TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosion")
+        stop
+    }
+}
 actor QuakeClusterRocketSoundRerelease : QuakeClusterRocket
 {
     States
@@ -650,7 +813,7 @@ actor QuakeClusterRkCoopSoundRerelease : QuakeClusterRocketSoundRerelease
 {
     +THRUSPECIES
     Species "Player"
-    Damage (5)
+    Damage (22)
     States
     {
       Death:
@@ -661,7 +824,20 @@ actor QuakeClusterRkCoopSoundRerelease : QuakeClusterRocketSoundRerelease
         stop
     }
 }
+actor QuakeClusterRkCoopSoundRereleaseImproved: QuakeClusterRkCoopSoundRerelease
+{
+    States
+    {
+      Death:
+        TNT1 A 0 A_Explode(48, 96, 0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(48, 96)
+        TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosionSoundRerelease")
+        stop
+    }
+}
 
+}
 actor QuadClusterRocketSoundRerelease : QuakeClusterRocketSoundRerelease
 {
     DamageType "NotQuadded"
@@ -688,6 +864,22 @@ actor QuadClusterRkCoopSoundRerelease : QuadClusterRocketSoundRerelease
         TNT1 A 0 A_Explode(160, 91, 0)
         TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
         TNT1 A 0 A_Explode(160, 91)
+        TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosionSoundRerelease")
+        stop
+    }
+}
+
+actor QuadClusterRkCoopSoundRereleaseImproved : QuadClusterRocketSoundRerelease
+{
+    +THRUSPECIES
+    Species "Player"
+    Damage (20)
+    States
+    {
+      Death:
+        TNT1 A 0 A_Explode(192, 96, 0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(192, 96)
         TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosionSoundRerelease")
         stop
     }
@@ -720,6 +912,20 @@ actor QuakeClusterRkCoopSoundDMC : QuakeClusterRocketSoundDMC
         TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosionSoundDMC")
         stop
     }
+actor QuakeClusterRkCoopSoundDMCImproved : QuakeClusterRocketSoundDMC
+{
+    +THRUSPECIES
+    Species "Player"
+    Damage (22)
+    States
+    {
+      Death:
+        TNT1 A 0 A_Explode(40, 91, 0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(40, 91)
+        TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosionSoundDMC")
+        stop
+    }
 }
 
 actor QuadClusterRocketSoundDMC : QuakeClusterRocketSoundDMC
@@ -741,7 +947,7 @@ actor QuadClusterRkCoopSoundDMC : QuadClusterRocketSoundDMC
 {
     +THRUSPECIES
     Species "Player"
-    Damage (20)
+    Damage (88)
     States
     {
       Death:
@@ -751,4 +957,19 @@ actor QuadClusterRkCoopSoundDMC : QuadClusterRocketSoundDMC
         TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosionSoundDMC")
         stop
     }
+}
+
+actor QuadClusterRkCoopSoundDMCImproved : QuadClusterRkCoopSoundDMC
+{
+    Damage (88)
+    States
+    {
+      Death:
+        TNT1 A 0 A_Explode(192, 96, 0)
+        TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",1)
+        TNT1 A 0 A_Explode(192, 96)
+        TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosionSoundDMC")
+        stop
+    }
+
 }

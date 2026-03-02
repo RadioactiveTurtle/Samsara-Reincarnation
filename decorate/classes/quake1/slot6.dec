@@ -142,7 +142,11 @@ actor SamsaraQuakeSuperNailgunNormalAttackHandler : SamsaraQuakeNailgunNormalAtt
         goto PickupFinishSNG
 
       PickupAttackSNGOriginalCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackSNGOriginalCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeSuperNailCoop",0,false)
+        goto PickupFinishSNG
+	  PickupAttackSNGOriginalCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeSuperNailCoopImproved",0,false)
         goto PickupFinishSNG
 
       // Rerelease sounds
@@ -156,7 +160,11 @@ actor SamsaraQuakeSuperNailgunNormalAttackHandler : SamsaraQuakeNailgunNormalAtt
         goto PickupFinishSNG
 
       PickupAttackSNGRereleaseCoop:
-        TNT1 A 0 A_FireCustomMissile("QuakeSuperNailCoopSoundRerelease",0,false)
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackSNGRereleaseCoopImproved")
+        TNT1 A 0 A_FireCustomMissile("PickupAttackSNGRereleaseCoopImproved",0,false)
+        goto PickupFinishSNG
+      PickupAttackSNGRereleaseCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeSuperNailCoopSoundRereleaseImproved",0,false)
         goto PickupFinishSNG
 
       // Deathmatch Classic sounds
@@ -170,6 +178,10 @@ actor SamsaraQuakeSuperNailgunNormalAttackHandler : SamsaraQuakeNailgunNormalAtt
         goto PickupFinishSNG
 
       PickupAttackSNGDMCCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackSNGDMCCoopImproved")
+        TNT1 A 0 A_FireCustomMissile("QuakeSuperNailCoopSoundDMC",0,false)
+        goto PickupFinishSNG
+      PickupAttackSNGDMCCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeSuperNailCoopSoundDMC",0,false)
         goto PickupFinishSNG
 
@@ -216,6 +228,11 @@ actor QuakeSuperNailCoop: QuakeSuperNail
     Species "Player"
     Damage (20)
 }
+actor QuakeSuperNailCoopImproved: QuakeSuperNailCoop
+{
+    Damage (24)
+
+}
 
 actor QuakeSuperNailSoundRerelease : QuakeSuperNail
 {
@@ -234,6 +251,10 @@ actor QuakeSuperNailCoopSoundRerelease : QuakeSuperNailSoundRerelease
     Species "Player"
     Damage (20)
 }
+actor QuakeSuperNailCoopSoundRereleaseImproved : QuakeSuperNailSoundRerelease
+{
+    Damage (24)
+}
 
 actor QuakeSuperNailSoundDMC : QuakeSuperNail
 {
@@ -251,6 +272,10 @@ actor QuakeSuperNailCoopSoundDMC : QuakeSuperNailSoundDMC
     +THRUSPECIES
     Species "Player"
     Damage (20)
+}
+actor QuakeSuperNailCoopSoundDMCImproved : QuakeSuperNailSoundDMC
+{
+    Damage (24)
 }
 
 // Lava nails
@@ -375,8 +400,14 @@ actor SamsaraQuakeSuperNailgunLavaAttackHandler : SamsaraQuakeNailgunLavaAttackH
         TNT1 A 0 A_FireCustomMissile("QuakeSLNail",0,false)
         goto PickupFinishSNG
 
+
       PickupAttackSNGOriginalCoop:
-        TNT1 A 0 A_FireCustomMissile("QuakeSLNailCoop",0,false)
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackSNGOriginalCoopImproved")
+
+        TNT1 A 0 A_FireCustomMissile("QuakeSLNailCoopImproved",0,false)
+        goto PickupFinishSNG
+      PickupAttackSNGOriginalCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeSLNailCoopImproved",0,false)
         goto PickupFinishSNG
 
       // Rerelease sounds
@@ -390,7 +421,12 @@ actor SamsaraQuakeSuperNailgunLavaAttackHandler : SamsaraQuakeNailgunLavaAttackH
         goto PickupFinishSNG
 
       PickupAttackSNGRereleaseCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackSNGRereleaseCoopImproved")
+
         TNT1 A 0 A_FireCustomMissile("QuakeSLNailCoopSoundRerelease",0,false)
+        goto PickupFinishSNG
+      PickupAttackSNGRereleaseCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeSLNailCoopSoundRereleaseImproved",0,false)
         goto PickupFinishSNG
 
       // Deathmatch Classic sounds
@@ -403,8 +439,13 @@ actor SamsaraQuakeSuperNailgunLavaAttackHandler : SamsaraQuakeNailgunLavaAttackH
         TNT1 A 0 A_FireCustomMissile("QuakeSLNailSoundDMC",0,false)
         goto PickupFinishSNG
 
+
       PickupAttackSNGDMCCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackSNGRereleaseCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeSLNailCoopSoundDMC",0,false)
+        goto PickupFinishSNG
+      PickupAttackSNGDMCCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeSLNailCoopSoundDMCImproved",0,false)
         goto PickupFinishSNG
 
       // Finishing stuff
@@ -450,6 +491,12 @@ actor QuakeSLNailCoop: QuakeSLNail
     Species "Player"
     Damage (30)
 }
+actor QuakeSLNailCoopImproved: QuakeSLNail
+{
+    +THRUSPECIES
+    Species "Player"
+    Damage (36)
+}
 
 actor QuakeSLNailSoundRerelease : QuakeSLNail
 {
@@ -468,6 +515,12 @@ actor QuakeSLNailCoopSoundRerelease : QuakeSLNailSoundRerelease
     Species "Player"
     Damage (30)
 }
+actor QuakeSLNailCoopSoundRereleaseImproved : QuakeSLNailSoundRerelease
+{
+    +THRUSPECIES
+    Species "Player"
+    Damage (32)
+}
 
 actor QuakeSLNailSoundDMC : QuakeSLNail
 {
@@ -485,4 +538,10 @@ actor QuakeSLNailCoopSoundDMC : QuakeSLNailSoundDMC
     +THRUSPECIES
     Species "Player"
     Damage (30)
+}
+actor QuakeSLNailCoopSoundDMCImproved : QuakeSLNailSoundDMC
+{
+    +THRUSPECIES
+    Species "Player"
+    Damage (36)
 }

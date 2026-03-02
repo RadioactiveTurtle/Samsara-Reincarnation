@@ -132,25 +132,28 @@ Duke Nukem 3D:
 
 Security Officer (Marathon):
 
-+ The KKV-7 SMG Flechette bullets now do 8-12 damage in PVE outside of water (increased from 8-10).
++ The KKV-7 SMG Flechette bullets now do 8-12 damage in PVE outside of water (increased from 8-10). with improved balance active, they do 9-15.
++ with improved balance active and in coop, the WSTE-M5 shotgun pellets do 9-15 damage (increased from 10-12).
 + The fusion pistol secondary fire bolts now deal 42-56 damage (increased from 40-50).
 + The fusion pistol secondary fire bolts now deal 104-140 damage (increased from 90-120).
 + with improved balance active, The fusion pistol secondary fire bolts now deal 45-60 damage (increased from 40-50).
 + with improved balance active, The fusion pistol secondary fire bolts now deal 120-150 damage (increased from 90-120).
 + with improved balance active, The MA-75B assault rifle bullets deal 10-16 damage (increased from 9-15).
 + When fired underwater, the fusion pistol now deals only the amount of splash damage the original attacks did to Security Officer as self-damage in the Marathon games.
++ the main beams from the WMC Level 1/2/3 primary fire now deal 210-280 damage (increased from 150-200).
 
 Ranger (Quake I):
 
-- The grenade launcher and rocket launcher now deal 160 splash damage in PVE (decreased from 192).
+- with improved balance NOT active, The grenade launcher and rocket launcher now deal 160 splash damage in PVE (decreased from 192). With Improved balance, it's still 192.
 + with improved balance active and in coop, the Nailgun now deals 12 damage (increased from 10), and Lava nails do 18 (increased from 15).
++ with improved balance active and in coop, the uper Nailgun now deals 24 damage (increased from 20), and Super Lava nails do 32 (increased from 30).
 + Each cluster tiny grenade now deals 51 splash damage in PVP and 64 splash damage in PVE (increased from 50).
-- Multi rockets now deal 64 splash damage in PVP and 80 splash damage in PVE (decreased from 100). This is because it adds up to doing twice as much damage as a primary shot over four multi rockets.
+- with improved balance NOT active, Multi rockets now deal 64 splash damage in PVP and 80 splash damage in PVE (decreased from 100). This is because it adds up to doing twice as much damage as a primary shot over four multi rockets. With improved balance, it's 96 damage with a radius of 96 (increased from 91).
 - The thunderbolt (lightning mode) now deals 45 damage in PVE (decreased from 50).
 - The thunderbolt (plasma mode)'s lightning bolts now deal 45 damage (decreased from 50).
 - Ranger now gets 2 rounds of Ammo 3 from medium Ammo 2 pickups (decreased from 3) and 3 rounds of Ammo 3 from large Ammo 2 pickups (decreased from 4).
 - Ranger now receives the normal amount of Ammo 3 rounds from ammo 3  pickups instead of getting more rounds.
-+ with improved balance active, The double-barreled shotgun fires 16 pellets of 5 damage each (increased from 14)
++ with improved balance active, The double-barreled shotgun fires 16 pellets of 5 damage each (increased from 14).
 
 Rise of the Triad:
 

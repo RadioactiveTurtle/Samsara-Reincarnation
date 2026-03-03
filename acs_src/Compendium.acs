@@ -72,7 +72,7 @@ str HeroInformation[CLASSCOUNT][MAXMODES][25][3] =
 			
 			{ "Traits", "...And I Feel Mighty: Doomguy holds the Super Shotgun, one of the most devastating shotguns in the game as well as the BFG9000, one of the strongest ultimate weapons giving him quite the firepower. It's very hard for most other classes to match or exceed the damage on those 2 in their own weapons tier.
 			\n\nTo Hell With Respect!: Doomguy is the most unchanged in his function and his abilities. Playing with him is just like playing Doom II, so show these newcomers who they better call granddaddy.
-			\n\nA Touch Of Hellish Fantasy: Doom always had inspirations from D&D, from monster designs and even gameplay, Doomguy's damage is factored with a roll, though it's skewd towards the higher end.", ""},
+			\n\nA Touch Of Hellish Fantasy: Doom always had inspirations from D&D, from monster designs and even gameplay, Doomguy's damage is factored with a roll, though it's skewed towards the higher end.", ""},
 			
 			{ "Changes", "- The Berserk operates off the Chainsaw as well as the Fist, allowing Doomguy to have a DPS alternative rather than focusing on only Burst.
 			\n	^- : When in Berserk, the Chainsaw deals 7-70 damage every 3 tics.
@@ -199,7 +199,7 @@ str HeroInformation[CLASSCOUNT][MAXMODES][25][3] =
 			\n\n- All three Hexen classes are now selectable, rather than having Parias use nearly all the games' weapons. This means the classes now have a lot of weapons that weren't actually in Hexen, but care was taken to ensure they are similar to weapons that would have appeared in Hexen had the number of weapons per class match Doom more closely.
 			\n\n- The Mace of Contrition no longer alerts monsters.
 			\n\n- The Firestorm's surrounding fireballs do more damage, having their A_Explode increased from radius 20/explosive damage 20 to 64/32, so as to match the power of the Plasma Rifle.
-			\n\n- The Serpent Staff's poison bolts were reduced in damage from 5-40 to 4-16 per shot, so as to match Chaingun power.
+			\n\n- The Serpent Staff's poison bolts were reduced in damage from 5-40 to 5-30 per shot, so as to match Chaingun power.
 			\n\n- The heal of the Serpent Staff's melee has been increased and quickened, and can now heal for beyond 100 health, so as to give it an extra use.
 			\n\n- The Wraithverge takes 20 of each ammo now, rather than 17, to match the costliness of other ultimate weapons.
 			\n\n- The Wraithverge's rate of fire has been slightly decreased by adding a 20-tic hang time at the end, to match the slow rate of fire of other ultimate weapons.
@@ -218,7 +218,7 @@ str HeroInformation[CLASSCOUNT][MAXMODES][25][3] =
 			\n\n- All three Hexen classes are now selectable, rather than having Parias use nearly all the games' weapons. This means the classes now have a lot of weapons that weren't actually in Hexen, but care was taken to ensure they are similar to weapons that would have appeared in Hexen had the number of weapons per class match Doom more closely.
 			\n\n- The Mace of Contrition no longer alerts monsters.
 			\n\n- The Firestorm's surrounding fireballs do more damage, having their A_Explode increased from radius 20/explosive damage 20 to 64/32, so as to match the power of the Plasma Rifle.
-			\n\n- The Serpent Staff's poison bolts were reduced in damage from 5-40 to 4-16 per shot, so as to match Chaingun power.
+			\n\n- The Serpent Staff's poison bolts were reduced in damage from 5-30 to 4-16 per shot, so as to match Chaingun power.
 			\n\n- The heal of the Serpent Staff's melee has been increased and quickened, and can now heal for beyond 100 health, so as to give it an extra use.
 			\n\n- The Wraithverge takes 20 of each ammo now, rather than 17, to match the costliness of other ultimate weapons.
 			\n\n- The Wraithverge's rate of fire has been slightly decreased by adding a 20-tic hang time at the end, to match the slow rate of fire of other ultimate weapons.
@@ -281,7 +281,7 @@ str HeroInformation[CLASSCOUNT][MAXMODES][25][3] =
 			\n\n- The Explosive Shotgun has been brutally nerfed. It is now a separate weapon, rather than an ugprade for the shotgun, its spread is much wider, its cocking has been drastically lengthened, and its power diminished.
 			\n\n- The Mighty Boot works much different, due to Zandronum's/ZDoom's inability to have alt-fire used alongside primary fire in a way that works with Netplay. Rather than being used alongside weapons for extra oomph, now it puts some distance between an enemy and user.
 			\n\n- The Freezethrower shots no longer halve damage when bouncing off walls, due to engine limitations.
-			\n\n- The Freezethrower's shots do 22 damage rather than 20 damage, due to its slightly slower RoF compared to the Plasma Rifle.
+			\n\n- The Freezethrower's shots do 24 damage rather than 20 damage, due to its slightly slower RoF compared to the Plasma Rifle.
 			\n\n- The Pipebomb's first, second, and third bounce are not a fixed height/amount, due to how ZDoom handles bouncing.
 			\n\n- The Pipebomb's three counts of bounce include walls, due to how ZDoom handles bouncing.", ""},
 		},
@@ -300,7 +300,7 @@ str HeroInformation[CLASSCOUNT][MAXMODES][25][3] =
 			\n\n- The Explosive Shotgun has been brutally nerfed. It is now a separate weapon, rather than an ugprade for the shotgun, its spread is much wider, its cocking has been drastically lengthened, and its power diminished.
 			\n\n- The Mighty Sandle works much different, due to Zandronum's/ZDoom's inability to have alt-fire used alongside primary fire in a way that works with Netplay. Rather than being used alongside weapons for extra oomph, now it puts some distance between an enemy and user.
 			\n\n- The Ice Crusher shots no longer halve damage when bouncing off walls, due to engine limitations.
-			\n\n- The Ice Crusher's shots do 22 damage rather than 20 damage, due to its slightly slower RoF compared to the Plasma Rifle.
+			\n\n- The Ice Crusher's shots do 24 damage rather than 20 damage, due to its slightly slower RoF compared to the Plasma Rifle.
 			\n\n- The Pineapple's first, second, and third bounce are not a fixed height/amount, due to how ZDoom handles bouncing.
 			\n\n- The Pineapple's three counts of bounce include walls, due to how ZDoom handles bouncing.", ""},
 		},
@@ -319,7 +319,7 @@ str HeroInformation[CLASSCOUNT][MAXMODES][25][3] =
 			\n\n- The Explosive Shotgun has been brutally nerfed. It is now a separate weapon, rather than an ugprade for the shotgun, its spread is much wider, its cocking has been drastically lengthened, and its power diminished.
 			\n\n- The Mighty Boot works much different, due to Zandronum's/ZDoom's inability to have alt-fire used alongside primary fire in a way that works with Netplay. Rather than being used alongside weapons for extra oomph, now it puts some distance between an enemy and user.
 			\n\n- The Freezethrower shots no longer halve damage when bouncing off walls, due to engine limitations.
-			\n\n- The Freezethrower's shots do 22 damage rather than 20 damage, due to its slightly slower RoF compared to the Plasma Rifle.
+			\n\n- The Freezethrower's shots do 24 damage rather than 20 damage, due to its slightly slower RoF compared to the Plasma Rifle.
 			\n\n- The Pipebomb's first, second, and third bounce are not a fixed height/amount, due to how ZDoom handles bouncing.
 			\n\n- The Pipebomb's three counts of bounce include walls, due to how ZDoom handles bouncing.", ""},
 		}
@@ -366,7 +366,6 @@ str HeroInformation[CLASSCOUNT][MAXMODES][25][3] =
 			\n\n- The nails and rockets originally travelled at the same speed. Here, nails have been increased to speed 75.
 			\n\n- Lava Nails, Multi-Grenades, Multi-Rockets, and Plasma Cells were handled a bit differently. There were no alt-fires, much less that swapped between weapons, and the ammo pickups were separate.
 			\n\n- The Double Barreled Shotgun's, Nailgun's, and Laser Cannon's animations are slightly smoother.
-//			\n\n- The Shotgun and Double-Barreled Shotgun's damages are random by 1d3, while Quake's damage values were completely static. Turns out people are getting upset for using fake bullets. Whoops.
 			\n\n- The trail behind the Nails and Lava Nails has been made a LOT more obvious, so enemies can see it more easily in DM.
 			\n\n- The Rocket Powered Impaler doesn't work like in Abyss of Pandemonium, but instead functions like an explosive hitscan weapon that always fires accurately.
 			\n\n- Ranger is fully 3D unlike in earlier samsara builds, giving him a more nostalgic visual feeling to him.", ""},
@@ -3166,7 +3165,7 @@ str CVarOptionsandInfo[3][MAXOPTIONS][2] =
 		{ "Custom Gravity", "Some classes have their own custom gravity matching their games like the Security Officer. This option can disable the feature and make them use the same style of gravity as Doom's." },
 		{ "Force Weapon Recoil", "The 'Weapon Recoil' clientside option allows players to disable vertical weapon recoil, but this setting can force it on. Note that if freelook is disabled in the server, this setting will not work as weapon recoil will be entirely disabled. Highly recommended for competitive gamemodes to prevent players from gaining an advantage." },
 		{ "Proximity Explosive Behavior", "Certain weapons like Caleb's Proximity Detonator have a special property for their projectiles to activate with enemies that get close to them, but not for the player depending on this setting. The default setting, 'Ignores Owners' will make it so players won't trigger their own proximity explosives unless an enemy is nearby. The other setting, 'Activates For Owners', has the explosives activate whenever the player gets close by." },
-		{ "Weapon Balance", "This option determines whether the overall damage and fire rate of the weapons for the original eight classes should be vanilla or rebalanced. The rebalanced values work best for cooperative gamemodes with ReMixer loaded, and the vanilla values are highly recommended for stock Reincarnation or competitive gamemodes." },
+		{ "Weapon Balance", "This option determines whether the overall damage and fire rate of the weapons for the older classes should be vanilla or rebalanced. The rebalanced values work best for cooperative gamemodes with ReMixer loaded, and the vanilla values are highly recommended for stock Reincarnation or competitive gamemodes." },
 		{ "Item Replacement Options", "This submenu has options that determine if an item such as the Partial Invisibility or the Light Amplification should be replaced with a different item or powerup such as Slot III Equipment or prevented from spawning altogether. There are also settings that determine the percentage of the replacement occurring." },
 		{ "Character Ban and Multiplier Options", "Is a certain class too overpowered or underpowered? Do you want everyone but Space Seal allowed on your server? These options can not only alter the damage given and taken for a class and/or any of its alt-classes, but if desired, they can be banned entirely from the server. The settings affect everyone using the class, so if Doomguy was given buffs, then every Doomguy player will receive buffs as well. The modifiers work on a scale, so for example, setting the Security Officer's defense modifier to '2x' will make him take half as much damage, while setting Eleena's damage multiplier to '2x' will make her deal twice as much damage. There are also multiplier settings that apply to every class, so you could have everyone deal twice as much damage instead of a particular class.\n\n\cjThe options for the damage multipliers are:\n\cm-99.9%\n\cm-99%\n\cm-90%\n\cm-75%\n\cm-66.6%\n\cm-50%\n\cm-33.3%\n\cm-25%\n\cm-20%\n\cm-10%\n\cm+0%\n\cm+10%\n\cm+20%\n\cm+25%\n\cm+33.3%\n\cm+50%\n\cm+66.6%\n\cm+75%\n\cm2x\n\cm3x\n\cm4x\n\cm5x\n\cm6x\n\cm7x\n\cm8x\n\cm9x\n\cm10x\n\cm25x\n\cm50x\n\cm100x\n\cm10000x\n\n\cjThe options for the defense multipliers are:\n\cm-10x\n\cm-4x\n\cm-2x\n\cm-66.6%\n\cm-50%\n\cm-33.3%\n\cm-25%\n\cm-20%\n\cm-10%\n\cm-5%\n\cm+0%\n\cm+5%\n\cm+10%\n\cm+20%\n\cm+25%\n\cm+33.3%\n\cm+50%\n\cm+66.6%\n\cm+75%\n\cm+90%\n\cm2x\n\cm2.4x\n\cm2.8x\n\cm3.2x\n\cm3.6x\n\cm4x\n\cm6x\n\cm8x\n\cm10x\n\cm20x\n\cm100x" },
 		{ "Character Equipment Loadout Options", "This submenu contains options that control whether the equipment for certain characters like Gordon Freeman should be user-defined or locked to a specific choice. These options have no effect if \"All Loadout Equipment\" is enabled." },

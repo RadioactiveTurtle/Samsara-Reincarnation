@@ -60,9 +60,19 @@ actor SamsaraCorridor7VulcanAttackHandler : Trigger
         stop
 
       PickupAttackCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackCoopImproved")
         TNT1 A 0 A_FireBullets(2,2,3,random(6,16),"BlankPuffThruGhostCoop",FBF_NORANDOM|FBF_NOFLASH)
-        TNT1 A 0 A_FireBullets(2,2,3,random(5,9),"BlankPuffThruGhostBloodlessCoop",FBF_NORANDOM|FBF_NOFLASH,256)
+        TNT1 A 0 A_FireBullets(2,2,1,random(5,9),"BlankPuffThruGhostBloodlessCoop",FBF_NORANDOM|FBF_NOFLASH,256)
+        TNT1 A 0 A_FireBullets(2,2,1,random(5,9),"BlankPuffThruGhostBloodlessCoop",FBF_NORANDOM|FBF_NOFLASH,192)
+        TNT1 A 0 A_FireBullets(2,2,1,random(5,9),"BlankPuffThruGhostBloodlessCoop",FBF_NORANDOM|FBF_NOFLASH,128)
         TNT1 A 0 A_FireBullets(2,2,3,random(2,6),"BlankPuffThruGhostBloodlessCoop",FBF_NORANDOM|FBF_NOFLASH,64)
+        stop
+      PickupAttackCoopImproved:
+        TNT1 A 0 A_FireBullets(2,2,3,random(9,15),"BlankPuffThruGhostCoop",FBF_NORANDOM|FBF_NOFLASH)
+        TNT1 A 0 A_FireBullets(2,2,1,random(8,10),"BlankPuffThruGhostBloodlessCoop",FBF_NORANDOM|FBF_NOFLASH,256)
+        TNT1 A 0 A_FireBullets(2,2,1,random(8,10),"BlankPuffThruGhostBloodlessCoop",FBF_NORANDOM|FBF_NOFLASH,192)
+        TNT1 A 0 A_FireBullets(2,2,1,random(8,10),"BlankPuffThruGhostBloodlessCoop",FBF_NORANDOM|FBF_NOFLASH,128)
+        TNT1 A 0 A_FireBullets(2,2,3,random(4,8),"BlankPuffThruGhostBloodlessCoop",FBF_NORANDOM|FBF_NOFLASH,64)
         stop
     }
 }

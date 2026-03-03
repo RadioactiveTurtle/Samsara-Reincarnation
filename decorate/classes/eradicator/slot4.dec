@@ -163,7 +163,11 @@ actor SamsaraEradicatorDeathDartEnhancedAttackHandler1 : Trigger
         stop
 
       PickupAttackCoop:
+	    TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackCoopImproved")
         TNT1 A 0 A_FireCustomMissile("CoopImpalingDart",frandom(-1,0),false,-6,0,0,frandom(-0.5,0.5))
+        stop
+      PickupAttackCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("CoopImpalingDartImproved",frandom(-1,0),false,-6,0,0,frandom(-0.5,0.5))
         stop
     }
 }
@@ -187,7 +191,11 @@ actor SamsaraEradicatorDeathDartEnhancedAttackHandler2 : Trigger
         stop
 
       PickupAttackCoop:
+  	    TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackCoopImproved")
         TNT1 A 0 A_FireCustomMissile("CoopImpalingDart",0,false,0,0,0,frandom(-0.5,0.5))
+        stop
+      PickupAttackCoopImproved:
+       TNT1 A 0 A_FireCustomMissile("CoopImpalingDartImproved",0,false,0,0,0,frandom(-0.5,0.5))
         stop
     }
 }
@@ -213,7 +221,11 @@ actor SamsaraEradicatorDeathDartEnhancedAttackHandler3 : Trigger
         stop
 
       PickupAttackCoop:
+ 	    TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackCoopImproved")
         TNT1 A 0 A_FireCustomMissile("CoopImpalingDart",frandom(0,1),false,6,0,0,frandom(-0.5,0.5))
+        stop
+      PickupAttackCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("CoopImpalingDartImproved",frandom(0,1),false,6,0,0,frandom(-0.5,0.5))
         stop
     }
 }
@@ -253,4 +265,9 @@ actor CoopImpalingDart : ImpalingDart
 {
     Species "Player"
     +THRUSPECIES
+}
+
+actor CoopImpalingDartImproved : CoopImpalingDart
+{
+	Damage (10)
 }

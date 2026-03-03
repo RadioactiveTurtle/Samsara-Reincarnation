@@ -151,10 +151,17 @@ Actor SamsaraBloodRevolverAttackHandler : Trigger
 		Pickup:
             TNT1 A 0 A_PlaySound("weapons/bloodpistol",CHAN_WEAPON)
 			TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupAttackCoop")
+
 			TNT1 A 0 A_FireBullets(2.6, 1.6, -1, 12, "SamsaraZBBulletPuff", FBF_NORANDOM|FBF_NOFLASH)
 			Stop
 		PickupAttackCoop:
+			TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackCoopImproved")
+
 			TNT1 A 0 A_FireBullets(2.6, 1.6, -1, 12, "SamsaraZBBulletPuffCoop", FBF_NORANDOM|FBF_NOFLASH)
 			Stop
+		PickupAttackCoopImproved:
+			TNT1 A 0 A_FireBullets(2.6, 1.6, -1, 14, "SamsaraZBBulletPuffCoop", FBF_NORANDOM|FBF_NOFLASH)
+			Stop
+
 	}
 }

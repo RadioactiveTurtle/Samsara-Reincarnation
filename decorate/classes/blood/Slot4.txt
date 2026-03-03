@@ -432,7 +432,11 @@ Actor SamsaraBloodTommyGunAkimboAttackHandler : Trigger
 			TNT1 A 0 A_FireBullets(6.6,2,2,7,"SamsaraZBBulletPuff", FBF_NORANDOM|FBF_NOFLASH)
 			Stop
 		PickupAttackCoop:
-			TNT1 A 0 A_FireBullets(6.6,2,2,9,"SamsaraZBBulletPuffCoop", FBF_NORANDOM|FBF_NOFLASH)
+		    TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackCoopImproved")
+			TNT1 A 0 A_FireBullets(6.6,2,2,10,"SamsaraZBBulletPuffCoop", FBF_NORANDOM|FBF_NOFLASH)
+			Stop
+		PickupAttackCoopImproved:
+			TNT1 A 0 A_FireBullets(6.6,2,2,10,"SamsaraZBBulletPuffCoop", FBF_NORANDOM|FBF_NOFLASH)
 			Stop
 	}
 }
@@ -454,9 +458,15 @@ Actor SamsaraBloodTommyGunAkimboAltAttackHandler : Trigger
 			TNT1 A 0 A_FireBullets((CallACS("CalebAltSpreadAngle") >> 16) + frandom(-1.6, 1.6),frandom(-0.8, 0.8),-1,7,"SamsaraZBBulletPuff", FBF_EXPLICITANGLE|FBF_NORANDOM|FBF_NOFLASH)
 			Goto PickupTakeSpread
 		PickupAttackCoop:
+		    TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackCoopImproved")
 			TNT1 A 0 A_FireBullets((CallACS("CalebAltSpreadAngle") >> 16) + frandom(-1.6, 1.6),frandom(-0.8, 0.8),-1,9,"SamsaraZBBulletPuffCoop", FBF_EXPLICITANGLE|FBF_NORANDOM|FBF_NOFLASH)
 			TNT1 A 0 A_FireBullets((CallACS("CalebAltSpreadAngle") >> 16) + frandom(-1.6, 1.6),frandom(-0.8, 0.8),-1,9,"SamsaraZBBulletPuffCoop", FBF_EXPLICITANGLE|FBF_NORANDOM|FBF_NOFLASH)
 			Goto PickupTakeSpread
+		PickupAttackCoopImproved:
+			TNT1 A 0 A_FireBullets((CallACS("CalebAltSpreadAngle") >> 16) + frandom(-1.6, 1.6),frandom(-0.8, 0.8),-1,10,"SamsaraZBBulletPuffCoop", FBF_EXPLICITANGLE|FBF_NORANDOM|FBF_NOFLASH)
+			TNT1 A 0 A_FireBullets((CallACS("CalebAltSpreadAngle") >> 16) + frandom(-1.6, 1.6),frandom(-0.8, 0.8),-1,10,"SamsaraZBBulletPuffCoop", FBF_EXPLICITANGLE|FBF_NORANDOM|FBF_NOFLASH)
+			Stop
+
 		PickupTakeSpread:
 			TNT1 A 0 A_TakeInventory("CalebAltSpreadCounter", 13)
 			Stop

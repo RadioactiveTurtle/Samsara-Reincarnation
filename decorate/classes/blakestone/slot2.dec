@@ -11,7 +11,7 @@ actor "Slow Fire Protector" : SamsaraBStoneWeapon
     Tag "Slow Fire Protector"
     States
     {
-      Spawn:PickupAttackCoopImprovedPickupAttackCoopImproved
+      Spawn:
         BWP2 A -1
         stop
 

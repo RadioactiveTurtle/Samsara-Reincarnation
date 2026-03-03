@@ -544,10 +544,10 @@ actor Goldeneye_PhantomTracer : Goldeneye_BulletTracerThruGhost
     States
     {
       XDeath:
-        TNT1 A 0 A_SetUserVar("user_damage",16)
+        TNT1 A 0 A_SetUserVar("user_damage",14)
         goto Super::XDeath
 	  Crash:
-        TNT1 A 0 A_SetUserVar("user_damage",16)
+        TNT1 A 0 A_SetUserVar("user_damage",14)
         goto Super::Crash
     }
 }
@@ -563,10 +563,10 @@ actor Goldeneye_PhantomTracerSoundSource : Goldeneye_BulletTracerThruGhostSoundS
     States
     {
       XDeath:
-        TNT1 A 0 A_SetUserVar("user_damage",16)
+        TNT1 A 0 A_SetUserVar("user_damage",14)
         goto Super::XDeath
 	  Crash:
-        TNT1 A 0 A_SetUserVar("user_damage",16)
+        TNT1 A 0 A_SetUserVar("user_damage",14)
         goto Super::Crash
     }
 }

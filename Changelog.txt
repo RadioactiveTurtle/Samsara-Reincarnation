@@ -70,6 +70,7 @@ Doom:
 - Mine ammo has also been reduced; big ammo 3 pickups only give 1 mine instead of 2.
 
 Fred Chexter (Chex Quest):
+
 * Fixed fallback and non-+THRUGHOST zorch puffs not having lights in PVE.
 * Fixed +THRUGHOST zorch puffs not having lights at all.
 * Fixed the super large zorcher projectiles not having lights in PVP.
@@ -164,6 +165,7 @@ Rise of the Triad:
 + with improved balance active, the MP-40 does 11 damage per bullet (increased from 10).
 
 Strifeguy (Strife):
+
 + the Electric crossbow bolts now do 40-80 damage in increments of 10 (increased from 20-80 in multiples of 20).
 + the Poison crossbow bolts now do 100 explosive damage in a radius of 16 (increased from a radius of 8). This should make the extra poison damage more consistent.
 ! mini-missles now do 64 explosion damage in a radius of 96vuits (changed from 96 damage in a radius of 64)
@@ -314,6 +316,8 @@ GoldenEye 007:
 
 -James Bond (GoldenEye 007)-
 
+- The AR33 now deals 12 damage (decreased from 14).
+- The Phantom now deals 14 damage (decreased from 16).
 - Golden bullets are now given only if James Bond has the Golden Gun or Gold PP7 Special Issue.
 
 -James Bond (Goldfinger 64)-

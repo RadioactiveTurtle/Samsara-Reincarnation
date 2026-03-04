@@ -774,7 +774,7 @@ Actor RTCW_RiflePineappleProjectileSoundET : RTCW_PineappleProjectile
 			RW00 AAAA 0 A_SpawnItemEx("RTCW_PanzerfaustSmokeExplosion",0,0,0,frandom(-0.5,0.5),frandom(-0.5,0.5),1)
 			RW00 AAAA 0 A_SpawnItemEx("RTCW_ExplosionSmokeDebris")
 			RW00 A 0 A_GiveInventory("RTCW_BlazkoWeaponAlert",1,AAPTR_Target)
-			RW00 A 0 A_Explode(375,120,XF_HURTSOURCE,1,0) // 80 is too small // [tv50] values may need adjustment. hand detonation was 200,300
+			RW00 A 0 A_Explode(375,120,XF_HURTSOURCE,1,0) // 80 is too small
 			RW00 A 0 A_SpawnItemEx("RTCW_GrenadeExplosionSoundET")
 			Stop
 	}
@@ -800,7 +800,7 @@ Actor RTCW_RiflePineappleProjectileCoopSoundET : RTCW_PineappleProjectileCoop
 			RW00 AAAA 0 A_SpawnItemEx("RTCW_PanzerfaustSmokeExplosion",0,0,0,frandom(-0.5,0.5),frandom(-0.5,0.5),1)
 			RW00 AAAA 0 A_SpawnItemEx("RTCW_ExplosionSmokeDebris")
 			RW00 A 0 A_GiveInventory("RTCW_BlazkoWeaponAlert",1,AAPTR_Target)
-			RW00 A 0 A_Explode(375,120,XF_HURTSOURCE,1,0) // 80 is too small // [tv50] values may need adjustment. hand detonation was 200,300
+			RW00 A 0 A_Explode(375,120,XF_HURTSOURCE,1,0) // 80 is too small
 			RW00 A 0 A_SpawnItemEx("RTCW_GrenadeExplosionSoundET")
 			Stop
 	}

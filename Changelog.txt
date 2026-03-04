@@ -502,8 +502,17 @@ Prisoner 849 (Unreal):
 
 B.J. Blazkowicz (Return to Castle Wolfenstein):
 
-- The Panzerfaust rocket now does 200 direct damage (decreased from 250).
+- The Luger and MP40 now deal 13 damage (decreased from 15).
+- Stick grenades and K43 grenades now do 160 splash damage (decreased from 200).
++ Stick grenades and K43 grenades now deal their splash damage across 160 map units (increased from 150).
+- The Mauser rifle now does 150 damage when scoped (decreased from 200).
+- The FG42 paratroop rifle now does 30 damage (decreased from 40).
+- The StG44 now does 15 damage (decreased from 20).
+- The Panzerfaust rocket now does 160 direct damage (decreased from 250).
 - The Panzerfaust rocket now does 250 splash damage (decreased from 300).
++ The Panzerfaust rocket now deals its splash damage across 128 map units (increased from 120).
+- The Venom gun now does 16 damage (decreased from 24).
+- The mobile MG42 now does 14 damage (decreased from 18).
 - Headshot damage is now a 2x multiplier (decreased from 3x).
 - Headshots no longer deal additional damage towards monsters that have 1000 or more health.
 

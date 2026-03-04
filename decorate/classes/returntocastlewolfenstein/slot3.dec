@@ -465,10 +465,10 @@ Actor RTCW_MauserTracerSoundConsole : RTCW_TracerSoundConsole
 	{
 		Crash:
 		Death:
-			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 200, 1),8,!XF_HURTSOURCE,0,8)
+			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 150, 1),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 		XDeath:
-			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 200, 1),8,!XF_HURTSOURCE,0,8)
+			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 150, 1),8,!XF_HURTSOURCE,0,8)
 			Goto Super::XDeath
 	}
 }
@@ -496,10 +496,10 @@ Actor RTCW_MauserTracerSoundET : RTCW_TracerSoundET
 	{
 		Crash:
 		Death:
-			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 200, 2),8,!XF_HURTSOURCE,0,8)
+			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 150, 2),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 		XDeath:
-			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 200, 2),8,!XF_HURTSOURCE,0,8)
+			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 150, 2),8,!XF_HURTSOURCE,0,8)
 			Goto Super::XDeath
 	}
 }

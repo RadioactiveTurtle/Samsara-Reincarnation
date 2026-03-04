@@ -485,10 +485,14 @@ GoldenEye 007:
 - The throwing knives no longer deal additional headshot damage.
 - The US AR33 assault rifle now deals 12 damage (decreased from 14).
 - The Phantom now deals 14 damage (decreased from 16).
+- The Moonraker laser now deals 25 damage (decreased from 33).
 - Golden bullets are now given only if James Bond has the Golden Gun or Gold PP7 Special Issue.
 
 -James Bond (Goldfinger 64)-
 
+- The AK47 and both Thompsons now deal 12 damage (decreased from 15).
+- The M1 Carbine now deals 45 damage (decreased from 50).
+- The portable laser now deals 25 damage (decreased from 33).
 ! The M14's Compendium description has been changed.
 - Golden bullets are now given only if James Bond has the Golden Magnum.
 

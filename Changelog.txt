@@ -317,6 +317,35 @@ Eradicator:
 - In PVP, the death sphere now deals 384-512 splash damage (decreased from 650-800).
 - In PVE, the death sphere's three A_Explode calls now deal 128-256 splash damage in multiples of 128 (decreased from 142-284 splash damage in multiples of 142).
 
+Space Seal (Corridor 7):
+
++ The taser's long range bullet now deals 8-20 damage (vanilla) or 12-20 damage (improved; PVE only) (increased from 7-20).
++ In PVP or PVE (vanilla), the taser's medium range bullet now deals 4-10 damage (increased from 3-10).
+- With improved weapon balance, the taser's medium range bullet now deals 2-5 damage in PVE (decreased from 3-10).
++ With improved weapon balance, the taser now fires two extra bullets in PVE, the first one dealing 2-5 damage at a maximum range of 192 map units, and the second one dealing 4-10 damage at a maximum range of 128 map units.
++ In PVP or PVE (vanilla), the taser's short range bullet now deals 8-20 damage (increased from 6-20).
+- With improved weapon balance, the taser's short range bullet now deals 4-10 damage in PVE (decreased from 6-20).
++ The M-24's long range bullet now deals 6-18 damage (increased from 5-18 in PVP and 4-18 in PVE).
++ The M-24's medium and short range bullets now deal 3-10 damage in PVE (increased from 2-9).
++ In PVP or PVE (vanilla), the M-343's long range bullets now deal 6-16 damage (increased from 5-16).
+! With improved weapon balance, the M-343's long range bullets now deal 9-15 damage in PVE (changed from 5-16).
+- The M-343's medium range bullets now deal 5-9 damage in PVP (decreased from 5-10).
++ The M-343's medium range bullets now deal 5-9 damage (vanilla) or 8-10 damage (improved) in PVE (increased from 3-8).
+- Two of the M-343's medium range bullets in PVE now have a maximum range of 192 map units and 128 map units, respectively (decreased from 256).
++ In PVP or PVE (vanilla), the M-343's short range bullets now deal 2-6 damage (increased from 1-6 in PVP and 1-4 in PVE).
++ With improved weapon balance, the M-343's short range bullets now deal 4-8 damage in PVE (increased from 1-4).
++ The Ithaca Stakeout Assault Shotgun now deals 2-22 damage per bullet in PVP (increased from 2-20), and 3-35 damage per bullet in PVE (vanilla) (increased from 2-35).
+! With improved weapon balance, the Ithaca Stakeout Assault Shotgun now deals 4-32 damage per bullet in PVE (changed from 2-35).
++ The alien dual blaster's long range bullet now deals 4-16 damage (increased from 3-16).
+- The alien dual blaster's medium range bullet now deals 2-8 damage in PVP (decreased from 3-8).
++ The alien dual blaster's medium and short range bullets now deal 2-8 damage in PVE (increased from 1-8).
++ With improved weapon balance, the alien dual blaster now fires two extra bullets in PVE, the first one dealing 2-8 damage at a maximum range of 192 map units, and the second one dealing 2-8 damage at a maximum range of 128 map units.
+! The alien dual blaster's short range bullet now deals 2-8 damage in PVP (changed from 1-9).
++ The alien assault cannon's long range bullets now deal 6-12 damage (increased from 6-11).
++ The alien assault cannon's medium range bullets now deal 4-8 damage (increased from 4-6 in PVP and 3-6 in PVE).
++ The alien assault cannon's short range bullets now deal 2-8 damage (increased from 1-8).
+- The alien disintegrator now calls 10 tracers in PVE (decreased from 16).
+
 LDF Commando (Rebel Moon Rising):
 
 ! The Subestron arm has been moved from an extra slot 7 weapon to a slot 6S weapon.

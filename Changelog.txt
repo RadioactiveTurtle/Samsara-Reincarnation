@@ -315,7 +315,7 @@ Eradicator:
 + The missile launcher secondary projectiles now deal 144 splash damage across 128 map units (increased from 140 splash damage across 120 map units).
 - The death sphere now has a ReactionTime of 28 (decreased from 36), meaning it lasts roughly 12 seconds (decreased from roughly 15.4).
 - In PVP, the death sphere now deals 384-512 splash damage (decreased from 650-800).
-- In PVE, the death sphere's three A_Explode calls now deal 128-256 splash damage in multiples of 128 (decreased from 142-284 splash damage in multiples of 142).
+- In PVE, the death sphere's three A_Explode calls now deal 128-256 splash damage in multiples of 128 (decreased from 142-284 in multiples of 142).
 
 Space Seal (Corridor 7):
 
@@ -438,6 +438,23 @@ Half-Life:
 + The Uzi from Sven Co-op 3.0 has been added as the slot 4S weapon! However, due to the size of the converted model, the ability to dual wield is currently not available.
 - The RPG now deals 240 splash damage (decreased from 300).
 - Headshots no longer deal additional damage towards monsters that have 1000 or more health.
+
+CyberMage (CyberMage):
+
+- The Darklight Foil's damage is now dealt in increments of 6 (decreased from increments of 12).
++ The Darklight Foil now has a maximum range of 112 map units (PVP) or 128 map units (PVE) (increased from a shared 100).
++ The fusion gun now deals 56-72 damage (increased from 40-56).
++ The blast rifle's projectiles now move at speed 160 (increased from 100).
+- The blast rifle's puffs now deal 8 splash damage across 32 map units (decreased from 24 splash damage across 40 map units).
++ The SMG now deals 12 damage in PVE (increased from 10).
++ The bombardier now deals 40-50 direct damage (increased from 20-30).
++ The bombardier now deals 128 splash damage across 128 map units (increased from 100 splash damage across 104 map units).
++ The heavy blaster MG now deals 25-35 damage (increased from 21-35).
++ The plasma obliterator's small blue plasma projectile now deals 22-176 damage in multiples of 22 (increased from 20-160 in multiples of 20).
++ The plasma obliterator's small purple plasma projectile now deals 23-184 damage in multiples of 23 (increased from 21-168 in multiples of 21).
++ The plasma obliterator's large plasma projectile now deals up to 256 direct damage in PVP (increased from 128).
++ The plasma obliterator's large plasma projectile now deals 36-288 direct damage in multiples of 36 in PVE (increased from 32-128 in multiples of 32).
++ The plasma obliterator's large plasma projectile now deals its splash damage across 128 map units (increased from 96).
 
 Bitterman (Quake II):
 

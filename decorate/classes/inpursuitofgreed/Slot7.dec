@@ -50,6 +50,7 @@ Actor " Super Plasma Annihilator " : Weapon
 		Goto Ready
 	DoFire1:
 		GW70 A 19 bright A_PlayWeaponSound("greed/superplasma")
+		TNT1 A 0 bright A_JumpIfInventory("SPModeOn",1,"CoopFire1")
 		TNT1 A 0 bright A_JumpIfInventory("CoopModeOn",1,"CoopFire1")
 		GW70 B 1 bright 
 		GW70 B 0 bright A_FireCustomMissile("PGClipSuperPlasmaBall",0,1,0,0)
@@ -110,6 +111,7 @@ Actor " Super Plasma Annihilator " : Weapon
 		Goto Ready
 	DoFire2:
 		GW70 A 19 bright A_PlayWeaponSound("greed/superplasma")
+		TNT1 A 0 bright A_JumpIfInventory("SPModeOn",1,"CoopFire2")
 		TNT1 A 0 bright A_JumpIfInventory("CoopModeOn",1,"CoopFire2")
 		GW70 B 1 bright 
 		GW70 B 0 bright A_FireCustomMissile("PGShellSuperPlasmaBall",0,1,0,0)
@@ -146,6 +148,7 @@ Actor " Super Plasma Annihilator " : Weapon
 		Goto Ready
 	DoFire3:
 		GW70 A 19 bright A_PlayWeaponSound("greed/superplasma")
+		TNT1 A 0 bright A_JumpIfInventory("SPModeOn",1,"CoopFire3")
 		TNT1 A 0 bright A_JumpIfInventory("CoopModeOn",1,"CoopFire3")
 		GW70 B 1 bright 
 		GW70 B 0 bright A_FireCustomMissile("PGRocketSuperPlasmaBall",0,1,0,0)
@@ -182,6 +185,7 @@ Actor " Super Plasma Annihilator " : Weapon
 		Goto Ready
 	DoFire4:
 		GW70 A 19 bright A_PlayWeaponSound("greed/superplasma")
+		TNT1 A 0 bright A_JumpIfInventory("SPModeOn",1,"CoopFire4")
 		TNT1 A 0 bright A_JumpIfInventory("CoopModeOn",1,"CoopFire4")
 		GW70 B 1 bright 
 		GW70 B 0 bright A_FireCustomMissile("PGCellSuperPlasmaBall",0,1,0,0)

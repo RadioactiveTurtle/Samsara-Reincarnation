@@ -430,7 +430,8 @@ actor IPOGTimeBombItem : CustomInventory
         IBOM X 1 Bright
         Loop
       Use:
-        TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"UseCoop")    
+        TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"UseCoop")
+        TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"UseCoop")
       UseComp:
         TNT1 A 0 A_FireCustomMissile("IPOGTimeBomb",0,0,0,-40,0,0)
         Stop

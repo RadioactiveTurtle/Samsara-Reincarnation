@@ -232,6 +232,10 @@ Blake Stone (Blake Stone):
 
 Caleb (Blood):
 
+- The life leech primary projectiles now do 6-12 direct damage in PVE if "Blood: Life Leech Drain" is enabled (decreased from 7-14).
+- The life leech primary projectiles now do 10 splash damage in PVE if "Blood: Life Leech Drain" is enabled (decreased from 15).
++ The life leech secondary projectiles now do 10-20 damage in PVP (increased from 10-19), and 20-40 damage in PVE if "Blood: Life Leech Drain" is disabled (increased from 20-39).
+- The life leech secondary projectiles now do 20-30 damage in PVE if "Blood: Life Leech Drain" is enabled (decreased from 20-39).
 ! In Strife, the Guns Akimbo is now distributed through an inventory item regardless of the "Blood: Guns Akimbo Behavior" setting.
 ! If the player has a Guns Akimbo inventory item, and "Blood: Guns Akimbo Behavior" is set to "Toggle", it will now give quad damage on use instead of switching between single and dual wielding.
 - The Guns Akimbo's effect (instant use version only) no longer carries over between levels in a hub, since Strife now handles giving it differently.
@@ -241,7 +245,7 @@ Strifeguy (Strife):
 
 * Fixed Blackbird talking earlier than intended when playing Strife in GZDoom.
 + The crossbow (electric bolts) now does 40-80 damage in increments of 10 (increased from 20-80 in multiples of 20).
-+ The crossbow (poison bolts) now does 100-200 direct damage in increments of 50 (increased from 50-200 in increments of 50).
++ The crossbow (poison bolts) now does 100-200 direct damage in increments of 50 (increased from 50-200 in multiples of 50).
 + The crossbow (poison bolts) now does its extra poison damage across 16 map units (increased from 10). This should make it more consistent.
 - The mini missile launcher now deals 64 splash damage (decreased from 96).
 + The mini missile launcher now deals its splash damage across 96 map units (increased from 64).
@@ -502,7 +506,7 @@ Prisoner 849 (Unreal):
 
 B.J. Blazkowicz (Return to Castle Wolfenstein):
 
-- The Luger and MP40 now deal 13 damage (decreased from 15).
+- The Luger and MP40 now do 13 damage (decreased from 15).
 - Stick grenades and K43 grenades now do 160 splash damage (decreased from 200).
 + Stick grenades and K43 grenades now deal their splash damage across 160 map units (increased from 150).
 - The Mauser rifle now does 150 damage when scoped (decreased from 200).

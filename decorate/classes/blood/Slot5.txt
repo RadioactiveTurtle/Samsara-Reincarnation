@@ -48,11 +48,8 @@ actor NapalmLauncher : CalebWeapon
 		TNT1 A 0 A_PlaySound("Napalm/Fire",CHAN_WEAPON)
 		TNT1 A 0 A_AlertMonsters
 		TNT1 A 0 A_GunFlash
-		TNT1 A 0 A_JumpIfInventory("DMModeOn",1,"DMFire")
+		TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"CoopFire")
 		TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"CoopFire")
-		TNT1 A 0 A_FireCustomMissile("BloodNapalmRocket",0+random(-1,1),1,5,3+random(-1,1))
-		Goto FireEnd
-	DMFire:
 		TNT1 A 0 A_FireCustomMissile("BloodNapalmRocketDM",0+random(-1,1),1,5,3+random(-1,1))
 		Goto FireEnd
 	CoopFire:
@@ -94,11 +91,8 @@ actor NapalmLauncher : CalebWeapon
 		TNT1 A 0 A_PlaySound("Napalm/Fire",CHAN_WEAPON)
 		TNT1 A 0 A_AlertMonsters
 		TNT1 A 0 A_GunFlash("AkimboFlash1")
-		TNT1 A 0 A_JumpIfInventory("DMModeOn", 1, "AkimboRightFireDM")
-		TNT1 A 0 A_JumpIfInventory("CoopModeOn", 1, "AkimboRightFireCoop")
-		TNT1 A 0 A_FireCustomMissile("BloodNapalmRocket",0+random(-1,1),1,10,-5+random(-1,1))
-		Goto AkimboFireContinue
-	AkimboRightFireDM:
+		TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"AkimboRightFireCoop")
+		TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"AkimboRightFireCoop")
 		TNT1 A 0 A_FireCustomMissile("BloodNapalmRocketDM",0+random(-1,1),1,10,-5+random(-1,1))
 		Goto AkimboFireContinue
 	AkimboRightFireCoop:
@@ -111,11 +105,8 @@ actor NapalmLauncher : CalebWeapon
 		TNT1 A 0 A_PlaySound("Napalm/Fire",CHAN_WEAPON)
 		TNT1 A 0 A_AlertMonsters
 		TNT1 A 0 A_GunFlash("AkimboFlash2")
-		TNT1 A 0 A_JumpIfInventory("DMModeOn", 1, "AkimboLeftFireDM")
-		TNT1 A 0 A_JumpIfInventory("CoopModeOn", 1, "AkimboLeftFireCoop")
-		TNT1 A 0 A_FireCustomMissile("BloodNapalmRocket",0+random(-1,1),1,-10,-5+random(-1,1))
-		Goto AkimboFireEnd
-	AkimboLeftFireDM:
+		TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"AkimboLeftFireCoop")
+		TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"AkimboLeftFireCoop")
 		TNT1 A 0 A_FireCustomMissile("BloodNapalmRocketDM",0+random(-1,1),1,-10,-5+random(-1,1))
 		Goto AkimboFireEnd
 	AkimboLeftFireCoop:
@@ -126,8 +117,8 @@ actor NapalmLauncher : CalebWeapon
 		TNT1 A 0 A_PlaySound("Napalm/AltFire",CHAN_WEAPON)
 		TNT1 A 0 A_AlertMonsters
 		TNT1 A 0 A_GunFlash("AkimboFlash1")
-		TNT1 A 0 A_JumpIfInventory("SPModeOn", 1, "AkimboRightAltFireCoop")
-		TNT1 A 0 A_JumpIfInventory("CoopModeOn", 1, "AkimboRightAltFireCoop")
+		TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"AkimboRightAltFireCoop")
+		TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"AkimboRightAltFireCoop")
 		TNT1 A 0 A_FireCustomMissile("BloodNapalmRocketAlt1",0+random(-1,1),1,10,-5+random(-1,1))
 		Goto AkimboAltFireContinue
 	AkimboRightAltFireCoop:
@@ -140,8 +131,8 @@ actor NapalmLauncher : CalebWeapon
 		TNT1 A 0 A_PlaySound("Napalm/AltFire",CHAN_WEAPON)
 		TNT1 A 0 A_AlertMonsters
 		TNT1 A 0 A_GunFlash("AkimboFlash2")
-		TNT1 A 0 A_JumpIfInventory("SPModeOn", 1, "AkimboLeftAltFireCoop")
-		TNT1 A 0 A_JumpIfInventory("CoopModeOn", 1, "AkimboLeftAltFireCoop")
+		TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"AkimboLeftAltFireCoop")
+		TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"AkimboLeftAltFireCoop")
 		TNT1 A 0 A_FireCustomMissile("BloodNapalmRocketAlt1",0+random(-1,1),1,-10,-5+random(-1,1))
 		Goto AkimboFireEnd
 	AkimboLeftAltFireCoop:

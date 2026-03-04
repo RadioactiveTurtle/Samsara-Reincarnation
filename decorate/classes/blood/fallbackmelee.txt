@@ -29,6 +29,7 @@ Actor Pitchfork : CalebWeapon
 		Goto Super::SelectLoop
 	Fire:
 		PITC AGBE 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
+		TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"CoopFire")
 		TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"CoopFire")
 		TNT1 A 0 A_FireCustomMissile("PitchforkMissile", -12, 0)
 		TNT1 A 0 A_FireCustomMissile("PitchforkMissile", -4, 0)

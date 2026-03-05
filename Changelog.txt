@@ -164,9 +164,9 @@ Duke Nukem 3D:
 - Pipebombs/pineapples now have a splash radius of 210 map units (decreased from 250).
 + With improved weapon balance, the shotgun/Super Soak'em's pellets now deal 12 damage each in PVE (increased from 10 damage each).
 + Added hybrid pickup sprites for the Uber Soak'em.
-+ The explosive shotgun/Uber Soak'em's pellets now deal 9 direct damage (PVP), 10 direct damage (PVE; vanilla), or 8 direct damage (PVE; improved) (increased from 6).
-- With vanilla weapon balance, the explosive shotgun/Uber Soak'em's pellets now deal 28 splash damage in PVE (decreased from 35).
-+ The explosive shotgun/Uber Soak'em's pellets now deal their splash damage across 96 map units in PVP (increased from 64).
++ The explosive shotgun/Uber Soak'em's puffs now deal 9 direct damage (PVP), 10 direct damage (PVE; vanilla), or 8 direct damage (PVE; improved) (increased from 6).
+- With vanilla weapon balance, the explosive shotgun/Uber Soak'em's puffs now deal 28 splash damage in PVE (decreased from 35).
++ The explosive shotgun/Uber Soak'em's puffs now deal their splash damage across 96 map units in PVP (increased from 64).
 ! The M16 sprites have been extended, and a new pickup sprite has been added.
 + The M16 now gives 40 rounds of Ammo 1 on pickup (increased from 30).
 + The M16 now holds 40 rounds before needing to reload (increased from 30).
@@ -208,6 +208,7 @@ Ranger (Quake I):
 + With improved weapon balance, multi rockets now deal their splash damage across 96 map units in PVE (increased from 91).
 + With improved weapon balance, the super nailgun's normal nails now deal 24 damage in PVE (increased from 20), and its super lava nails now do 36 damage in PVE (increased from 30).
 ! The rocket powered impaler now has a sprite for the Compendium and the alternate HUD.
+* Fixed the thunderbolt hybrid pickup not being bright.
 + The thunderbolt (lightning mode) now deals 45 damage in PVP (increased from 30).
 - The thunderbolt (lightning mode) now deals 45 damage in PVE (decreased from 50).
 - The thunderbolt (plasma mode)'s lightning bolts now deal 45 damage (decreased from 50).

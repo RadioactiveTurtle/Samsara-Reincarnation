@@ -376,6 +376,7 @@ actor SamsaraMarathonRifleSecondaryAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackCoopImproved")
         TNT1 A 0 A_FireCustomMissile("MarathonGrenadeCoop",0,false,0,6,0,4)
         goto PickupFinish
+
       PickupAttackCoopImproved:
         TNT1 A 0 A_FireCustomMissile("MarathonGrenadeCoopImproved",0,false,0,6,0,4)
         goto PickupFinish
@@ -417,11 +418,9 @@ actor MarathonARBulletCoop : MarathonARBullet
     Species "Player"
     +THRUSPECIES
 }
-actor MarathonARBulletCoopImproved : MarathonARBulletCoop
-{
-    Damage (random(10,16))
 
-}
+actor MarathonARBulletCoopImproved : MarathonARBulletCoop { Damage (random(10,16)) }
+
 actor 32mmCasingSpawner : SamsaraMarathonCasingSpawner
 {
     States
@@ -511,6 +510,7 @@ actor MarathonGrenadeCoopImproved : MarathonGrenadeCoop
         goto DeathFinish
     }
 }
+
 actor MarathonGrenadeSmoke
 {
     Radius 1

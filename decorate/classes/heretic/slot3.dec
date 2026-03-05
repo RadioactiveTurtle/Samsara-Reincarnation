@@ -143,6 +143,7 @@ actor CrossbowFX12 : CrossbowFX1
         stop
     }
 }
+
 actor CrossbowFX12Improved: CrossbowFX12
 {
 	Damage 14
@@ -193,10 +194,9 @@ actor CrossbowFX32 : CrossbowFX3
         stop
     }
 }
-actor CrossbowFX32Improved : CrossbowFX32
-{
-	Damage 5
-}
+
+actor CrossbowFX32Improved : CrossbowFX32 { Damage 5 }
+
 // Powered
 
 actor SamsaraHereticCrossbowPoweredAttackHandler : Trigger

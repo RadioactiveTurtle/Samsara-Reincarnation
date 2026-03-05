@@ -102,8 +102,8 @@ Fred Chexter (Chex Quest):
 Corvus (Heretic):
 
 + With improved weapon balance, the firemace (unpowered)'s larger projectile now deals 6-48 damage in multiples of 6 in PVE (increased from 4-32 in multiples of 4).
-+ With improved weapon balance, the ethereal crossbow (unpowered)'s main projectile now moves at speed 40 (increased from 30), and it also now does 14-112 damage in multiples of 14 (increased from 12-96 in multiples of 12).
-+ With improved weapon balance, the ethereal crossbow (unpowered)'s side projectiles now do 5-40 damage in multiples of 5 (increased from 4-32 in multiples of 4).
++ With improved weapon balance, the ethereal crossbow (unpowered)'s main projectile in PVE now moves at speed 40 (increased from 30), and it also now does 14-112 damage in multiples of 14 (increased from 12-96 in multiples of 12).
++ With improved weapon balance, the ethereal crossbow (unpowered)'s side projectiles now do 5-40 damage in multiples of 5 in PVE (increased from 4-32 in multiples of 4).
 - With vanilla weapon balance, the dragon claw (unpowered) now deals 4-32 damage in multiples of 4 in PVE (decreased from 4-11 multiplied between 1 and 3).
 + With improved weapon balance, the dragon claw (unpowered) now deals 4-48 damage in multiples of 4 in PVE (increased from 4-11 multiplied between 1 and 3).
 ! The phoenix rod (unpowered) now deals 10-200 direct damage in multiples of 10 in PVE (changed from 20-160 in multiples of 20).
@@ -134,6 +134,9 @@ Hexen I:
 -Parias (Reincarnation)-
 
 ! Updated crusader's longbow pickup sprite to use blue fletchings on arrows.
++ With improved weapon balance, the bishop's shortsword's strong melee attack now deals 13-39 damage in multiples of 13 per puff in PVE (increased from 10-30 in multiples of 10).
++ With improved weapon balance, the bishop's shortsword's strong projectiles now deal 10 damage in PVE (increased from 8).
++ In PVE, the serpent staff's projectiles now deal 6-30 damage in multiples of 6 (vanilla) or 5-35 damage in multiples of 5 (improved) (increased from 5-25).
 
 -Parias (Classic)-
 
@@ -141,6 +144,7 @@ Hexen I:
 
 -Daedolon-
 
+- In PVP or PVE (vanilla), the blight shock's projectiles now deal 1-6 direct damage (decreased from 1-8).
 + The Bloodscourge now has its special ripper properties from Hexen, meaning that it rips all enemies that are not boss monsters. This also applies to Classic Parias' Bloodscourge.
 - The Bloodscourge now only deals 4-32 direct damage in multiples of 4 (decreased from 16-128 in multiples of 16), to compensate for ripping all enemies that aren't bosses.
 + The Bloodscourge now forces half of its splash damage, to make it capable of killing bosses like it could in the original Hexen.
@@ -159,10 +163,10 @@ Duke Nukem 3D:
 
 - Pipebombs/pineapples now have a splash radius of 210 map units (decreased from 250).
 + With improved weapon balance, the shotgun/Super Soak'em's pellets now deal 12 damage each in PVE (increased from 10 damage each).
++ Added hybrid pickup sprites for the Uber Soak'em.
 + The explosive shotgun/Uber Soak'em's pellets now deal 9 direct damage (PVP), 10 direct damage (PVE; vanilla), or 8 direct damage (PVE; improved) (increased from 6).
 - With vanilla weapon balance, the explosive shotgun/Uber Soak'em's pellets now deal 28 splash damage in PVE (decreased from 35).
 + The explosive shotgun/Uber Soak'em's pellets now deal their splash damage across 96 map units in PVP (increased from 64).
-+ Added hybrid pickup sprites for the Uber Soak'em.
 ! The M16 sprites have been extended, and a new pickup sprite has been added.
 + The M16 now gives 40 rounds of Ammo 1 on pickup (increased from 30).
 + The M16 now holds 40 rounds before needing to reload (increased from 30).

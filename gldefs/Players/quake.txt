@@ -41,12 +41,22 @@ object QuakeLavaNailCoop
 	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
 }
 
+object QuakeLavaNailCoopImproved
+{
+	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
+}
+
 object QuakeSLNail
 {
 	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
 }
 
 object QuakeSLNailCoop
+{
+	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
+}
+
+object QuakeSLNailCoopImproved
 {
 	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
 }
@@ -61,12 +71,22 @@ object QuakeLavaNailCoopSoundRerelease
 	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
 }
 
+object QuakeLavaNailCoopSoundRereleaseImproved
+{
+	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
+}
+
 object QuakeSLNailSoundRerelease
 {
 	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
 }
 
 object QuakeSLNailCoopSoundRerelease
+{
+	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
+}
+
+object QuakeSLNailCoopSoundRereleaseImproved
 {
 	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
 }
@@ -81,12 +101,22 @@ object QuakeLavaNailCoopSoundDMC
 	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
 }
 
+object QuakeLavaNailCoopSoundDMCImproved
+{
+	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
+}
+
 object QuakeSLNailSoundDMC
 {
 	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
 }
 
 object QuakeSLNailCoopSoundDMC
+{
+	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
+}
+
+object QuakeSLNailCoopSoundDMCImproved
 {
 	frame QKNL { light QUAKE_1_LAVA_NAIL_X1 }
 }

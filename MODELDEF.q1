@@ -611,6 +611,17 @@ Model QuakeNailCoop
    FrameIndex QKNL A 0 0
 }
 
+Model QuakeNailCoopImproved
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "Nail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
 Model QuakeLavaNail
 {
    Path "models"
@@ -623,6 +634,17 @@ Model QuakeLavaNail
 }
 
 Model QuakeLavaNailCoop
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "LavaNail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
+Model QuakeLavaNailCoopImproved
 {
    Path "models"
    Model 0 "Nail.md3"
@@ -655,6 +677,17 @@ Model QuakeNailCoopSoundRerelease
    FrameIndex QKNL A 0 0
 }
 
+Model QuakeNailCoopSoundRereleaseImproved
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "Nail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
 Model QuakeLavaNailSoundRerelease
 {
    Path "models"
@@ -667,6 +700,17 @@ Model QuakeLavaNailSoundRerelease
 }
 
 Model QuakeLavaNailCoopSoundRerelease
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "LavaNail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
+Model QuakeLavaNailCoopSoundRereleaseImproved
 {
    Path "models"
    Model 0 "Nail.md3"
@@ -699,6 +743,17 @@ Model QuakeNailCoopSoundDMC
    FrameIndex QKNL A 0 0
 }
 
+Model QuakeNailCoopSoundDMCImproved
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "Nail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
 Model QuakeLavaNailSoundDMC
 {
    Path "models"
@@ -711,6 +766,17 @@ Model QuakeLavaNailSoundDMC
 }
 
 Model QuakeLavaNailCoopSoundDMC
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "LavaNail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
+Model QuakeLavaNailCoopSoundDMCImproved
 {
    Path "models"
    Model 0 "Nail.md3"
@@ -794,6 +860,17 @@ Model QuakeSuperNailCoop
    FrameIndex QKNL A 0 0
 }
 
+Model QuakeSuperNailCoopImproved
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "Nail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
 Model QuakeSLNail
 {
    Path "models"
@@ -806,6 +883,17 @@ Model QuakeSLNail
 }
 
 Model QuakeSLNailCoop
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "LavaNail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
+Model QuakeSLNailCoopImproved
 {
    Path "models"
    Model 0 "Nail.md3"
@@ -838,6 +926,17 @@ Model QuakeSuperNailCoopSoundRerelease
    FrameIndex QKNL A 0 0
 }
 
+Model QuakeSuperNailCoopSoundRereleaseImproved
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "Nail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
 Model QuakeSLNailSoundRerelease
 {
    Path "models"
@@ -850,6 +949,17 @@ Model QuakeSLNailSoundRerelease
 }
 
 Model QuakeSLNailCoopSoundRerelease
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "LavaNail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
+Model QuakeSLNailCoopSoundRereleaseImproved
 {
    Path "models"
    Model 0 "Nail.md3"
@@ -882,6 +992,17 @@ Model QuakeSuperNailCoopSoundDMC
    FrameIndex QKNL A 0 0
 }
 
+Model QuakeSuperNailCoopSoundDMCImproved
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "Nail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
 Model QuakeSLNailSoundDMC
 {
    Path "models"
@@ -894,6 +1015,17 @@ Model QuakeSLNailSoundDMC
 }
 
 Model QuakeSLNailCoopSoundDMC
+{
+   Path "models"
+   Model 0 "Nail.md3"
+   Skin 0 "LavaNail.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.0 1.0 1.0
+
+   FrameIndex QKNL A 0 0
+}
+
+Model QuakeSLNailCoopSoundDMCImproved
 {
    Path "models"
    Model 0 "Nail.md3"
@@ -1085,6 +1217,28 @@ Model QuakeGrenadeCoop
    FrameIndex QGRN L 0 11
 }
 
+Model QuakeGrenadeCoopImproved
+{
+   Path "models"
+   Model 0 "Grenade.md3"
+   Skin 0 "Grenade.pcx"
+   Scale 1.0 1.0 1.0
+   NOINTERPOLATION
+
+   FrameIndex QGRN A 0 0
+   FrameIndex QGRN B 0 1
+   FrameIndex QGRN C 0 2
+   FrameIndex QGRN D 0 3
+   FrameIndex QGRN E 0 4
+   FrameIndex QGRN F 0 5
+   FrameIndex QGRN G 0 6
+   FrameIndex QGRN H 0 7
+   FrameIndex QGRN I 0 8
+   FrameIndex QGRN J 0 9
+   FrameIndex QGRN K 0 10
+   FrameIndex QGRN L 0 11
+}
+
 Model QuakeGrenadeQuad
 {
    Path "models"
@@ -1108,6 +1262,28 @@ Model QuakeGrenadeQuad
 }
 
 Model QuakeGrenadeCoopQuad
+{
+   Path "models"
+   Model 0 "Grenade.md3"
+   Skin 0 "Grenade.pcx"
+   Scale 1.0 1.0 1.0
+   NOINTERPOLATION
+
+   FrameIndex QGRN A 0 0
+   FrameIndex QGRN B 0 1
+   FrameIndex QGRN C 0 2
+   FrameIndex QGRN D 0 3
+   FrameIndex QGRN E 0 4
+   FrameIndex QGRN F 0 5
+   FrameIndex QGRN G 0 6
+   FrameIndex QGRN H 0 7
+   FrameIndex QGRN I 0 8
+   FrameIndex QGRN J 0 9
+   FrameIndex QGRN K 0 10
+   FrameIndex QGRN L 0 11
+}
+
+Model QuakeGrenadeCoopQuadImproved
 {
    Path "models"
    Model 0 "Grenade.md3"
@@ -1333,6 +1509,28 @@ Model QuakeGrenadeCoopSoundRerelease
    FrameIndex QGRN L 0 11
 }
 
+Model QuakeGrenadeCoopSoundRereleaseImproved
+{
+   Path "models"
+   Model 0 "Grenade.md3"
+   Skin 0 "Grenade.pcx"
+   Scale 1.0 1.0 1.0
+   NOINTERPOLATION
+
+   FrameIndex QGRN A 0 0
+   FrameIndex QGRN B 0 1
+   FrameIndex QGRN C 0 2
+   FrameIndex QGRN D 0 3
+   FrameIndex QGRN E 0 4
+   FrameIndex QGRN F 0 5
+   FrameIndex QGRN G 0 6
+   FrameIndex QGRN H 0 7
+   FrameIndex QGRN I 0 8
+   FrameIndex QGRN J 0 9
+   FrameIndex QGRN K 0 10
+   FrameIndex QGRN L 0 11
+}
+
 Model QuakeGrenadeQuadSoundRerelease
 {
    Path "models"
@@ -1356,6 +1554,28 @@ Model QuakeGrenadeQuadSoundRerelease
 }
 
 Model QuakeGrenadeCoopQuadSoundRerelease
+{
+   Path "models"
+   Model 0 "Grenade.md3"
+   Skin 0 "Grenade.pcx"
+   Scale 1.0 1.0 1.0
+   NOINTERPOLATION
+
+   FrameIndex QGRN A 0 0
+   FrameIndex QGRN B 0 1
+   FrameIndex QGRN C 0 2
+   FrameIndex QGRN D 0 3
+   FrameIndex QGRN E 0 4
+   FrameIndex QGRN F 0 5
+   FrameIndex QGRN G 0 6
+   FrameIndex QGRN H 0 7
+   FrameIndex QGRN I 0 8
+   FrameIndex QGRN J 0 9
+   FrameIndex QGRN K 0 10
+   FrameIndex QGRN L 0 11
+}
+
+Model QuakeGrenadeCoopQuadSoundRereleaseImproved
 {
    Path "models"
    Model 0 "Grenade.md3"
@@ -1582,6 +1802,28 @@ Model QuakeGrenadeCoopSoundDMC
    FrameIndex QGRN L 0 11
 }
 
+Model QuakeGrenadeCoopSoundDMCImproved
+{
+   Path "models"
+   Model 0 "Grenade.md3"
+   Skin 0 "Grenade.pcx"
+   Scale 1.0 1.0 1.0
+   NOINTERPOLATION
+
+   FrameIndex QGRN A 0 0
+   FrameIndex QGRN B 0 1
+   FrameIndex QGRN C 0 2
+   FrameIndex QGRN D 0 3
+   FrameIndex QGRN E 0 4
+   FrameIndex QGRN F 0 5
+   FrameIndex QGRN G 0 6
+   FrameIndex QGRN H 0 7
+   FrameIndex QGRN I 0 8
+   FrameIndex QGRN J 0 9
+   FrameIndex QGRN K 0 10
+   FrameIndex QGRN L 0 11
+}
+
 Model QuakeGrenadeQuadSoundDMC
 {
    Path "models"
@@ -1605,6 +1847,28 @@ Model QuakeGrenadeQuadSoundDMC
 }
 
 Model QuakeGrenadeCoopQuadSoundDMC
+{
+   Path "models"
+   Model 0 "Grenade.md3"
+   Skin 0 "Grenade.pcx"
+   Scale 1.0 1.0 1.0
+   NOINTERPOLATION
+
+   FrameIndex QGRN A 0 0
+   FrameIndex QGRN B 0 1
+   FrameIndex QGRN C 0 2
+   FrameIndex QGRN D 0 3
+   FrameIndex QGRN E 0 4
+   FrameIndex QGRN F 0 5
+   FrameIndex QGRN G 0 6
+   FrameIndex QGRN H 0 7
+   FrameIndex QGRN I 0 8
+   FrameIndex QGRN J 0 9
+   FrameIndex QGRN K 0 10
+   FrameIndex QGRN L 0 11
+}
+
+Model QuakeGrenadeCoopQuadSoundDMCImproved
 {
    Path "models"
    Model 0 "Grenade.md3"
@@ -1776,6 +2040,17 @@ Model QuakeRocketCoop
    FrameIndex QRKT A 0 0
 }
 
+Model QuakeRocketCoopImproved
+{
+   Path "models"
+   Model 0 "Missile.md3"
+   Skin 0 "Missile.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
 Model QuakeRocketQuad
 {
    Path "models"
@@ -1788,6 +2063,17 @@ Model QuakeRocketQuad
 }
 
 Model QuakeRocketCoopQuad
+{
+   Path "models"
+   Model 0 "Missile.md3"
+   Skin 0 "Missile.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
+Model QuakeRocketCoopQuadImproved
 {
    Path "models"
    Model 0 "Missile.md3"
@@ -1820,6 +2106,17 @@ Model QuakeClusterRkCoop
    FrameIndex QRKT A 0 0
 }
 
+Model QuakeClusterRkCoopImproved
+{
+   Path "models"
+   Model 0 "MultiRock.md2"
+   Skin 0 "MultiRock.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
 Model QuadClusterRocket
 {
    Path "models"
@@ -1832,6 +2129,17 @@ Model QuadClusterRocket
 }
 
 Model QuadClusterRkCoop
+{
+   Path "models"
+   Model 0 "MultiRock.md2"
+   Skin 0 "MultiRock.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
+Model QuadClusterRkCoopImproved
 {
    Path "models"
    Model 0 "MultiRock.md2"
@@ -1864,6 +2172,17 @@ Model QuakeRocketCoopSoundRerelease
    FrameIndex QRKT A 0 0
 }
 
+Model QuakeRocketCoopSoundRereleaseImproved
+{
+   Path "models"
+   Model 0 "Missile.md3"
+   Skin 0 "Missile.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
 Model QuakeRocketQuadSoundRerelease
 {
    Path "models"
@@ -1876,6 +2195,17 @@ Model QuakeRocketQuadSoundRerelease
 }
 
 Model QuakeRocketCoopQuadSoundRerelease
+{
+   Path "models"
+   Model 0 "Missile.md3"
+   Skin 0 "Missile.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
+Model QuakeRocketCoopQuadSoundRereleaseImproved
 {
    Path "models"
    Model 0 "Missile.md3"
@@ -1908,6 +2238,17 @@ Model QuakeClusterRkCoopSoundRerelease
    FrameIndex QRKT A 0 0
 }
 
+Model QuakeClusterRkCoopSoundRereleaseImproved
+{
+   Path "models"
+   Model 0 "MultiRock.md2"
+   Skin 0 "MultiRock.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
 Model QuadClusterRocketSoundRerelease
 {
    Path "models"
@@ -1920,6 +2261,17 @@ Model QuadClusterRocketSoundRerelease
 }
 
 Model QuadClusterRkCoopSoundRerelease
+{
+   Path "models"
+   Model 0 "MultiRock.md2"
+   Skin 0 "MultiRock.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
+Model QuadClusterRkCoopSoundRereleaseImproved
 {
    Path "models"
    Model 0 "MultiRock.md2"
@@ -1952,6 +2304,17 @@ Model QuakeRocketCoopSoundDMC
    FrameIndex QRKT A 0 0
 }
 
+Model QuakeRocketCoopSoundDMCImproved
+{
+   Path "models"
+   Model 0 "Missile.md3"
+   Skin 0 "Missile.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
 Model QuakeRocketQuadSoundDMC
 {
    Path "models"
@@ -1964,6 +2327,17 @@ Model QuakeRocketQuadSoundDMC
 }
 
 Model QuakeRocketCoopQuadSoundDMC
+{
+   Path "models"
+   Model 0 "Missile.md3"
+   Skin 0 "Missile.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
+Model QuakeRocketCoopQuadSoundDMCImproved
 {
    Path "models"
    Model 0 "Missile.md3"
@@ -1996,6 +2370,17 @@ Model QuakeClusterRkCoopSoundDMC
    FrameIndex QRKT A 0 0
 }
 
+Model QuakeClusterRkCoopSoundDMCImproved
+{
+   Path "models"
+   Model 0 "MultiRock.md2"
+   Skin 0 "MultiRock.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
 Model QuadClusterRocketSoundDMC
 {
    Path "models"
@@ -2008,6 +2393,17 @@ Model QuadClusterRocketSoundDMC
 }
 
 Model QuadClusterRkCoopSoundDMC
+{
+   Path "models"
+   Model 0 "MultiRock.md2"
+   Skin 0 "MultiRock.pcx"
+   PITCHFROMMOMENTUM
+   Scale 1.5 1.5 1.5
+
+   FrameIndex QRKT A 0 0
+}
+
+Model QuadClusterRkCoopSoundDMCImproved
 {
    Path "models"
    Model 0 "MultiRock.md2"

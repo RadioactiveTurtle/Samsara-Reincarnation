@@ -107,6 +107,7 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNormalOriginalCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoop",0,false)
         goto PickupFinish
+
       PickupAttackNormalOriginalCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopImproved",0,false)
         goto PickupFinish
@@ -123,6 +124,7 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNormalRereleaseCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopSoundRerelease",0,false)
         goto PickupFinish
+
       PickupAttackNormalRereleaseCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopSoundRereleaseImproved",0,false)
         goto PickupFinish
@@ -139,6 +141,7 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNormalDMCCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopSoundDMC",0,false)
         goto PickupFinish
+
       PickupAttackNormalDMCCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopSoundDMCImproved",0,false)
         goto PickupFinish
@@ -159,6 +162,7 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackQuadOriginalCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuad",0,false)
         goto PickupFinish
+
       PickupAttackQuadOriginalCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuadImproved",0,false)
         goto PickupFinish
@@ -175,6 +179,7 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackQuadRereleaseCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuadSoundRerelease",0,false)
         goto PickupFinish
+
       PickupAttackQuadRereleaseCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuadSoundRereleaseImproved",0,false)
         goto PickupFinish
@@ -191,6 +196,7 @@ actor SamsaraQuakeRocketLauncherNormalAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackQuadDMCCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuadSoundDMC",0,false)
         goto PickupFinish
+
       PickupAttackQuadDMCCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeRocketCoopQuadSoundDMCImproved",0,false)
         goto PickupFinish
@@ -249,11 +255,12 @@ actor QuakeRocketQuad: QuakeRocket
         stop
     }
 }
+
 actor QuakeRocketCoop: QuakeRocket
 {
     +THRUSPECIES
     Species "Player"
-	Damage (45) // [ijon] used to be 25, but demons were surviving with *one health*
+	Damage (44) // [ijon] used to be 25, but demons were surviving with *one health*
     States
     {
       Death:
@@ -264,6 +271,7 @@ actor QuakeRocketCoop: QuakeRocket
         stop
     }
 }
+
 actor QuakeRocketCoopImproved : QuakeRocketCoop
 {
     States
@@ -281,7 +289,7 @@ actor QuakeRocketCoopQuad: QuakeRocketQuad
 {
     +THRUSPECIES
     Species "Player"
-	Damage (180)
+	Damage (176)
     States
     {
       Death:
@@ -349,6 +357,7 @@ actor QuakeRocketCoopSoundRerelease : QuakeRocketSoundRerelease
         stop
     }
 }
+
 actor QuakeRocketCoopSoundRereleaseImproved : QuakeRocketCoopSoundRerelease
 {
     States
@@ -366,7 +375,7 @@ actor QuakeRocketCoopQuadSoundRerelease : QuakeRocketQuadSoundRerelease
 {
     +THRUSPECIES
     Species "Player"
-	Damage (180)
+	Damage (176)
     States
     {
       Death:
@@ -377,6 +386,7 @@ actor QuakeRocketCoopQuadSoundRerelease : QuakeRocketQuadSoundRerelease
         stop
     }
 }
+
 actor QuakeRocketCoopQuadSoundRereleaseImproved : QuakeRocketCoopQuadSoundRerelease
 {
     States
@@ -422,7 +432,7 @@ actor QuakeRocketCoopSoundDMC : QuakeRocketSoundDMC
 {
     +THRUSPECIES
     Species "Player"
-	Damage (45) // [ijon] used to be 25, but demons were surviving with *one health*
+	Damage (44) // [ijon] used to be 25, but demons were surviving with *one health*
     States
     {
       Death:
@@ -433,6 +443,7 @@ actor QuakeRocketCoopSoundDMC : QuakeRocketSoundDMC
         stop
     }
 }
+
 actor QuakeRocketCoopSoundDMCImproved: QuakeRocketCoopSoundDMC
 {
     States
@@ -461,6 +472,7 @@ actor QuakeRocketCoopQuadSoundDMC : QuakeRocketQuadSoundDMC
         stop
     }
 }
+
 actor QuakeRocketCoopQuadSoundDMCImproved : QuakeRocketCoopQuadSoundDMC
 {
    States
@@ -740,6 +752,7 @@ actor QuakeClusterRkCoop: QuakeClusterRocket
         stop
     }
 }
+
 actor QuakeClusterRkCoopImproved: QuakeClusterRkCoop
 {
     States
@@ -783,9 +796,9 @@ actor QuadClusterRkCoop: QuadClusterRocket
         stop
     }
 }
+
 actor QuadClusterRkCoopImproved : QuadClusterRkCoop
 {
-    Damage (88)
     States
     {
       Death:
@@ -796,6 +809,7 @@ actor QuadClusterRkCoopImproved : QuadClusterRkCoop
         stop
     }
 }
+
 actor QuakeClusterRocketSoundRerelease : QuakeClusterRocket
 {
     States
@@ -824,6 +838,7 @@ actor QuakeClusterRkCoopSoundRerelease : QuakeClusterRocketSoundRerelease
         stop
     }
 }
+
 actor QuakeClusterRkCoopSoundRereleaseImproved: QuakeClusterRkCoopSoundRerelease
 {
     States
@@ -856,7 +871,7 @@ actor QuadClusterRkCoopSoundRerelease : QuadClusterRocketSoundRerelease
 {
     +THRUSPECIES
     Species "Player"
-    Damage (20)
+    Damage (88)
     States
     {
       Death:
@@ -868,11 +883,8 @@ actor QuadClusterRkCoopSoundRerelease : QuadClusterRocketSoundRerelease
     }
 }
 
-actor QuadClusterRkCoopSoundRereleaseImproved : QuadClusterRocketSoundRerelease
+actor QuadClusterRkCoopSoundRereleaseImproved : QuadClusterRkCoopSoundRerelease
 {
-    +THRUSPECIES
-    Species "Player"
-    Damage (20)
     States
     {
       Death:
@@ -901,7 +913,7 @@ actor QuakeClusterRkCoopSoundDMC : QuakeClusterRocketSoundDMC
 {
     +THRUSPECIES
     Species "Player"
-    Damage (5)
+    Damage (22)
     States
     {
       Death:
@@ -913,11 +925,8 @@ actor QuakeClusterRkCoopSoundDMC : QuakeClusterRocketSoundDMC
     }
 }
 
-actor QuakeClusterRkCoopSoundDMCImproved : QuakeClusterRocketSoundDMC
+actor QuakeClusterRkCoopSoundDMCImproved : QuakeClusterRkCoopSoundDMC
 {
-    +THRUSPECIES
-    Species "Player"
-    Damage (22)
     States
     {
       Death:
@@ -972,5 +981,4 @@ actor QuadClusterRkCoopSoundDMCImproved : QuadClusterRkCoopSoundDMC
         TNT1 A 1 A_SpawnItemEx("QuakeTinyExplosionSoundDMC")
         stop
     }
-
 }

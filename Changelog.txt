@@ -204,9 +204,12 @@ Security Officer (Marathon):
 Ranger (Quake I):
 
 + With improved weapon balance, the double-barreled shotgun now fires 16 pellets in PVE (increased from 14).
-- With vanilla weapon balance, the grenade launcher and rocket launcher now deal 160 splash damage in PVE (decreased from 192).
+- With improved weapon balance, the grenade launcher's normal grenades now deal 30 direct damage in PVE (decreased from 45).
+- With vanilla weapon balance, the grenade launcher's normal grenades and rocket launcher's normal rockets now deal 160 splash damage in PVE (decreased from 192).
 + Each cluster tiny grenade now deals 51 splash damage in PVP and 64 splash damage in PVE (increased from 50).
 + With improved weapon balance, the nailgun's normal nails now deal 12 damage in PVE (increased from 10), and its lava nails now do 18 damage in PVE (increased from 15).
+- The rocket launcher's normal rockets now deal 44 direct damage in PVE (decreased from 45).
++ The rocket launcher's multi rockets now deal 22 direct damage in PVE (increased from 5).
 - Multi rockets now deal 64 splash damage (PVP only), 80 splash damage (vanilla; PVE only), or 96 splash damage (improved; PVE only) (decreased from 100). This is because it adds up to doing twice as much damage as a primary shot over four multi rockets.
 + With improved weapon balance, multi rockets now deal their splash damage across 96 map units in PVE (increased from 91).
 + With improved weapon balance, the super nailgun's normal nails now deal 24 damage in PVE (increased from 20), and its super lava nails now do 36 damage in PVE (increased from 30).

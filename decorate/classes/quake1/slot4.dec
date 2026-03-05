@@ -200,7 +200,8 @@ actor SamsaraQuakeNailgunNormalAttackHandler : Trigger // this is also used for 
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGRightOriginalCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeNailCoop",0,false,3)
         goto PickupFinishNGRight
-	  PickupAttackNGRightOriginalCoopImproved:
+
+      PickupAttackNGRightOriginalCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeNailCoopImproved",0,false,3)
         goto PickupFinishNGRight
 
@@ -208,15 +209,16 @@ actor SamsaraQuakeNailgunNormalAttackHandler : Trigger // this is also used for 
       PickupAttackNGRightRerelease:
         TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupAttackNGRightRereleaseCoop")
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupAttackNGRightRereleaseCoop")
-     PickupAttackNGRightRereleaseDM:
+      PickupAttackNGRightRereleaseDM:
         TNT1 A 0 A_FireCustomMissile("QuakeNailSoundRerelease",0,false,3)
         goto PickupFinishNGRight
 
       PickupAttackNGRightRereleaseCoop:
-         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGRightRereleaseCoopImproved")
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGRightRereleaseCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeNailCoopSoundRerelease",0,false,3)
         goto PickupFinishNGRight
-	  PickupAttackNGRightRereleaseCoopImproved:
+
+      PickupAttackNGRightRereleaseCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeNailCoopSoundRereleaseImproved",0,false,3)
         goto PickupFinishNGRight
 
@@ -229,7 +231,11 @@ actor SamsaraQuakeNailgunNormalAttackHandler : Trigger // this is also used for 
         goto PickupFinishNGRight
 
       PickupAttackNGRightDMCCoop:
-         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGRightRereleaseCoopImproved")
+         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGRightDMCCoopImproved")
+        TNT1 A 0 A_FireCustomMissile("QuakeNailCoopSoundDMC",0,false,3)
+        goto PickupFinishNGRight
+
+      PickupAttackNGRightDMCCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeNailCoopSoundDMCImproved",0,false,3)
         goto PickupFinishNGRight
 
@@ -247,6 +253,9 @@ actor SamsaraQuakeNailgunNormalAttackHandler : Trigger // this is also used for 
 
       PickupAttackNGLeftOriginalCoop:
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGLeftOriginalCoopImproved")
+        TNT1 A 0 A_FireCustomMissile("QuakeNailCoop",0,false,-3)
+        goto PickupFinishNGLeft
+
       PickupAttackNGLeftOriginalCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeNailCoopImproved",0,false,-3)
         goto PickupFinishNGLeft
@@ -263,8 +272,9 @@ actor SamsaraQuakeNailgunNormalAttackHandler : Trigger // this is also used for 
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGLeftRereleaseCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeNailCoopSoundRerelease",0,false,-3)
         goto PickupFinishNGLeft
+
       PickupAttackNGLeftRereleaseCoopImproved:
-        TNT1 A 0 A_FireCustomMissile("QuakeNailCoopSoundRerelease",0,false,-3)
+        TNT1 A 0 A_FireCustomMissile("QuakeNailCoopSoundRereleaseImproved",0,false,-3)
         goto PickupFinishNGLeft
 
       // Deathmatch Classic sounds
@@ -277,11 +287,11 @@ actor SamsaraQuakeNailgunNormalAttackHandler : Trigger // this is also used for 
 
       PickupAttackNGLeftDMCCoop:
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGLeftDMCCoopImproved")
-
         TNT1 A 0 A_FireCustomMissile("QuakeNailCoopSoundDMC",0,false,-3)
         goto PickupFinishNGLeft
+
       PickupAttackNGLeftDMCCoopImproved:
-        TNT1 A 0 A_FireCustomMissile("QuakeNailCoopSoundDMC",0,false,-3)
+        TNT1 A 0 A_FireCustomMissile("QuakeNailCoopSoundDMCImproved",0,false,-3)
         goto PickupFinishNGLeft
 
       // Finishing stuff
@@ -392,10 +402,8 @@ actor QuakeNailCoop: QuakeNail
     Species "Player"
     Damage (10)
 }
-actor QuakeNailCoopImproved: QuakeNailCoop
-{
-    Damage (12)
-}
+
+actor QuakeNailCoopImproved: QuakeNailCoop { Damage (12) }
 
 actor QuakeNailSoundRerelease : QuakeNail
 {
@@ -414,12 +422,8 @@ actor QuakeNailCoopSoundRerelease : QuakeNailSoundRerelease
     Species "Player"
     Damage (10)
 }
-actor QuakeNailCoopSoundRereleaseImproved : QuakeNailSoundRerelease
-{
-    +THRUSPECIES
-    Species "Player"
-    Damage (12)
-}
+
+actor QuakeNailCoopSoundRereleaseImproved : QuakeNailCoopSoundRerelease { Damage (12) }
 
 actor QuakeNailSoundDMC : QuakeNail
 {
@@ -438,12 +442,8 @@ actor QuakeNailCoopSoundDMC : QuakeNailSoundDMC
     Species "Player"
     Damage (10)
 }
-actor QuakeNailCoopSoundDMCImproved : QuakeNailSoundDMC
-{
-    +THRUSPECIES
-    Species "Player"
-    Damage (12)
-}
+
+actor QuakeNailCoopSoundDMCImproved : QuakeNailCoopSoundDMC { Damage (12) }
 
 actor NailBounce
 {
@@ -656,6 +656,7 @@ actor SamsaraQuakeNailgunLavaAttackHandler : Trigger // this is also used for th
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGRightOriginalCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoop",0,false,3)
         goto PickupFinishNGRight
+
       PickupAttackNGRightOriginalCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopImproved",0,false,3)
         goto PickupFinishNGRight
@@ -670,9 +671,9 @@ actor SamsaraQuakeNailgunLavaAttackHandler : Trigger // this is also used for th
 
       PickupAttackNGRightRereleaseCoop:
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGRightRereleaseCoopImproved")
-
         TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopSoundRerelease",0,false,3)
         goto PickupFinishNGRight
+
       PickupAttackNGRightRereleaseCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopSoundRereleaseImproved",0,false,3)
         goto PickupFinishNGRight
@@ -686,11 +687,12 @@ actor SamsaraQuakeNailgunLavaAttackHandler : Trigger // this is also used for th
         goto PickupFinishNGRight
 
       PickupAttackNGRightDMCCoop:
-        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGRightOriginalCoopImproved")
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGRightDMCCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopSoundDMC",0,false,3)
         goto PickupFinishNGRight
-	  PickupAttackNGRightOriginalCoopImproved:
-        TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopSoundDMC",0,false,3)
+
+      PickupAttackNGRightDMCCoopImproved:
+        TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopSoundDMCImproved",0,false,3)
         goto PickupFinishNGRight
 
       // Left
@@ -706,10 +708,12 @@ actor SamsaraQuakeNailgunLavaAttackHandler : Trigger // this is also used for th
         goto PickupFinishNGLeft
 
       PickupAttackNGLeftOriginalCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGLeftOriginalCoopImproved")
         TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoop",0,false,-3)
         goto PickupFinishNGLeft
+
       PickupAttackNGLeftOriginalCoopImproved:
-        TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoop",0,false,-3)
+        TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopImproved",0,false,-3)
         goto PickupFinishNGLeft
 
       // Rerelease sounds
@@ -722,8 +726,9 @@ actor SamsaraQuakeNailgunLavaAttackHandler : Trigger // this is also used for th
 
       PickupAttackNGLeftRereleaseCoop:
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGLeftRereleaseCoopImproved")
-		TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopSoundRerelease",0,false,-3)
+        TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopSoundRerelease",0,false,-3)
         goto PickupFinishNGLeft
+
       PickupAttackNGLeftRereleaseCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopSoundRereleaseImproved",0,false,-3)
         goto PickupFinishNGLeft
@@ -738,9 +743,9 @@ actor SamsaraQuakeNailgunLavaAttackHandler : Trigger // this is also used for th
 
       PickupAttackNGLeftDMCCoop:
         TNT1 A 0 A_JumpIfInventory("SamsaraImprovedBalance",1,"PickupAttackNGLeftDMCCoopImproved")
-
         TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopSoundDMC",0,false,-3)
         goto PickupFinishNGLeft
+
       PickupAttackNGLeftDMCCoopImproved:
         TNT1 A 0 A_FireCustomMissile("QuakeLavaNailCoopSoundDMCImproved",0,false,-3)
         goto PickupFinishNGLeft
@@ -822,16 +827,12 @@ actor QuakeLavaNail: QuakeNail
 
 actor QuakeLavaNailCoop: QuakeLavaNail
 {
+    +THRUSPECIES
+    Species "Player"
     Damage (15)
-    +THRUSPECIES
-    Species "Player"
 }
-actor QuakeLavaNailCoopImproved: QuakeLavaNail
-{
-    Damage (18)
-    +THRUSPECIES
-    Species "Player"
-}
+
+actor QuakeLavaNailCoopImproved: QuakeLavaNailCoop { Damage (18) }
 
 actor QuakeLavaNailSoundRerelease : QuakeLavaNail
 {
@@ -846,17 +847,12 @@ actor QuakeLavaNailSoundRerelease : QuakeLavaNail
 
 actor QuakeLavaNailCoopSoundRerelease : QuakeLavaNailSoundRerelease
 {
-    Damage (15)
     +THRUSPECIES
     Species "Player"
+    Damage (15)
 }
 
-actor QuakeLavaNailCoopSoundRereleaseImproved : QuakeLavaNailSoundRerelease
-{
-    Damage (16)
-    +THRUSPECIES
-    Species "Player"
-}
+actor QuakeLavaNailCoopSoundRereleaseImproved : QuakeLavaNailCoopSoundRerelease { Damage (18) }
 
 actor QuakeLavaNailSoundDMC : QuakeLavaNail
 {
@@ -871,16 +867,12 @@ actor QuakeLavaNailSoundDMC : QuakeLavaNail
 
 actor QuakeLavaNailCoopSoundDMC : QuakeLavaNailSoundDMC
 {
+    +THRUSPECIES
+    Species "Player"
     Damage (15)
-    +THRUSPECIES
-    Species "Player"
 }
-actor QuakeLavaNailCoopSoundDMCImproved : QuakeLavaNailSoundDMC
-{
-    Damage (16)
-    +THRUSPECIES
-    Species "Player"
-}
+
+actor QuakeLavaNailCoopSoundDMCImproved : QuakeLavaNailCoopSoundDMC { Damage (18) }
 
 actor QLTrail1
 {

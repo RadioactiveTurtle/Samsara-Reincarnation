@@ -526,7 +526,7 @@ actor Duke64ExplosiveShotgunPuff : BulletPuffSettingless
 	Crash:
 	   TNT1 A 0
 	   TNT1 A 1 A_PlaySound("duke/xshotgunxplod")
-	   TNT1 A 0 A_Explode((175),128) // Seven x 20 = 140 damage. 140+35 = 175 damage total.
+	   TNT1 A 0 A_Explode(175,128) // Seven x 20 = 140 damage. 140+35 = 175 damage total.
 	   TNT1 A 0 A_SpawnItemEx("Duke64ExplosiveShotgunSmoke")
 	   DKSX ABCDEFGH 2 BRIGHT
 	   DKSX IJKLMNOPQ 2 BRIGHT

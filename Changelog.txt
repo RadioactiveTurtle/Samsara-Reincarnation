@@ -290,6 +290,15 @@ Rise of the Triad:
 
 Blake Stone (Blake Stone):
 
++ The Auto Charge Pistol's short range bullet in PVP now has a maximum range of 128 map units (increased from 120).
+- With vanilla weapon balance, the Auto Charge Pistol's medium range bullet in PVE now deals 8-24 damage in multiples of 8 unupgraded (decreased from 16-48 in multiples of 16), and 10-30 damage in multiples of 10 upgraded (decreased from 20-60 in multiples of 20).
++ With vanilla weapon balance, the Auto Charge Pistol now fires an extra bullet in PVE that deals 8-24 damage in multiples of 8 (unupgraded) or 10-30 damage in multiples of 10 (upgraded) at a maximum range of 128 map units.
+- With vanilla weapon balance, the Slow Fire Protector's medium range bullet in PVE now deals 4-12 damage in multiples of 4 (decreased from 16-48 in multiples of 16).
++ With vanilla weapon balance, the Slow Fire Protector now fires an extra bullet in PVE that deals 4-12 damage in multiples of 4 at a maximum range of 128 map units.
+- With vanilla weapon balance, the Heavy Assault Weapon's medium range bullet in PVE now deals 4-12 damage in multiples of 4 (decreased from 16-48 in multiples of 16).
++ With vanilla weapon balance, the Heavy Assault Weapon now fires three extra bullets in PVE that deal 4-12 damage in multiples of 4 while having a maximum range of 192 map units, 128 map units, and 64 map units, respectively.
+- With vanilla weapon balance, the Rapid Assault Weapon's medium range bullet in PVE now deals 2-6 damage in multiples of 2 (decreased from 12-36 in multiples of 12).
++ With vanilla weapon balance, the Rapid Assault Weapon now fires five extra bullets in PVE that deal 2-6 damage in multiples of 2 while having a maximum range of 384 map units, 320 map units, 192 map units, 128 map units, and 64 map units, respectively.
 + Originally planned as a new slot 6 weapon during Samsara Reincarnation's development (which would've moved and removed some equipment in the process), the Gatling Fusion Devastator has been added as the slot 4S weapon!
 ! The Ammo Recharge Pack now gives ammo for vanilla Doom and Chex Quest weapons if they are selected, since custom maps can use ACS to give and/or select them.
 

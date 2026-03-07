@@ -72,7 +72,12 @@ actor JadePuff
     States
     {
       Spawn:
-        H116 IJKLMNO 2 Bright
+        H116 IJ 2 Bright Light("CJADEWANDPUFF_X1")
+        H116 K 2 Bright Light("CJADEWANDPUFF_X2")
+        H116 L 2 Bright Light("CJADEWANDPUFF_X3")
+        H116 M 2 Bright Light("CJADEWANDPUFF_X4")
+        H116 N 2 Bright Light("CJADEWANDPUFF_X5")
+        H116 O 2 Bright Light("CJADEWANDPUFF_X6")
         stop
     }
 }
@@ -159,6 +164,16 @@ actor MageWandMissile2 : MageWandMissile
     +BLOODSPLATTER
     +NOBOSSRIP
     -SPAWNSOUNDSOURCE
+    States
+    {
+      Death:
+        MWND E 4 Bright Light("MWAND_X1")
+        MWND F 3 Bright Light("MWAND_X2")
+        MWND G 4 Bright Light("MWAND_X3")
+        MWND H 3 Bright Light("MWAND_X4")
+        MWND I 4 Bright
+        stop
+    }
 }
 
 actor MageWandMissile3 : MageWandMissile2

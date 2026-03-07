@@ -113,15 +113,13 @@ actor MageStaffFX3Classic : MageStaffFX3
     States
     {
       Spawn:
-        MSP2 ABCD 2 Bright
+        MSP2 ABCD 2 Bright Light("BSBALL")
         loop
 
       Death:
-        MSP2 E 4 Bright A_SetTranslucent(1,1)
-        MSP2 F 5 Bright A_Explode(140,192,0) // was 80 damage
-        MSP2 GH 5 Bright
-        MSP2 I 4 Bright
-        stop
+        MSP2 E 4 Bright Light("BSBALL_X1") A_SetTranslucent(1,1)
+        MSP2 F 5 Bright Light("BSBALL_X2") A_Explode(140,192,0) // was 80 damage
+        goto DeathFinish
     }
 }
 

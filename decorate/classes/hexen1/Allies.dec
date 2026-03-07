@@ -317,16 +317,21 @@ ACTOR FSwordMissile2_Ally : FSwordMissile
 	DamageType "C7MineBoom"
 	States
 	{
-	 Death:
-		FSFX D 4 Bright
-		FSFX E 3 Bright A_FSwordFlames
-		FSFX F 4 Bright A_Explode(64, 128, !XF_HURTSOURCE)
-		FSFX G 3 Bright
-		FSFX H 4 Bright
-		FSFX I 3 Bright
-		FSFX J 4 Bright
-		FSFX KLM 3 Bright
-		Stop
+      Spawn:
+        FSFX ABC 3 Bright Light("SWORDSHOT")
+        loop
+
+      Death:
+        FSFX D 4 Bright Light("SWORDSHOT_X1")
+        FSFX E 3 Bright Light("SWORDSHOT_X2") A_FSwordFlames
+        FSFX F 4 Bright Light("SWORDSHOT_X2") A_Explode(64,128,0)
+        FSFX G 3 Bright Light("SWORDSHOT_X2")
+        FSFX H 4 Bright Light("SWORDSHOT_X3")
+        FSFX I 3 Bright Light("SWORDSHOT_X3")
+        FSFX J 4 Bright Light("SWORDSHOT_X4")
+        FSFX KL 3 Bright Light("SWORDSHOT_X5")
+        FSFX M 3 Bright
+        stop
 	}
 }
 
@@ -681,19 +686,24 @@ Actor HammerMissile2_Ally {
 	DamageType "C7MineBoom" 	
 	States
 	{
-	Spawn:
-		FHFX A 2 Bright
-		FHFX B 2 Bright A_PlaySound("FighterHammerContinuous")
-		FHFX CDEFGH 2 Bright
-		Loop
-	Death:
-		FHFX I 3 Bright A_SetTranslucent(1, 1)
-		FHFX J 3 Bright
-		FHFX K 3 Bright A_Explode(128, 128, 0)
-		FHFX LM 3 Bright
-		FHFX N 3
-		FHFX OPQR 3 Bright
-		Stop
+      Spawn:
+        FHFX A 2 Bright Light("THROWHAMMER")
+        FHFX B 2 Bright Light("THROWHAMMER") A_PlaySound("FighterHammerContinuous")
+        FHFX CDEFGH 2 Bright Light("THROWHAMMER")
+        loop
+
+      Death:
+        FHFX I 3 Bright Light("THROWHAMMER_X1") A_SetTranslucent(1,1)
+        FHFX J 3 Bright Light("THROWHAMMER_X2")
+        TNT1 A 0 A_Explode(128,128,0)
+      DeathFinish:
+        FHFX K 3 Bright Light("THROWHAMMER_X3")
+        FHFX LM 3 Bright Light("THROWHAMMER_X4")
+        FHFX N 3 Light("THROWHAMMER_X4")
+        FHFX OP 3 Bright Light("THROWHAMMER_X4")
+        FHFX Q 3 Bright Light("THROWHAMMER_X5")
+        FHFX R 3 Bright Light("THROWHAMMER_X6")
+        stop
 	}
 }	
 
@@ -734,7 +744,22 @@ Actor FighterAllyAxeAttack : FastProjectile {
 }
 
 Actor AxePuff_Ally : AxePuff { +MTHRUSPECIES SeeSound "" ActiveSound "" AttackSound "" }
-Actor AxePuff_Ally_2 : AxePuffGlow { +MTHRUSPECIES SeeSound "" ActiveSound "" AttackSound "" }
+
+Actor AxePuff_Ally_2 : AxePuffGlow
+{
+    +MTHRUSPECIES
+    SeeSound ""
+    ActiveSound ""
+    AttackSound ""
+    States
+    {
+      Spawn:
+        FAXE RS 4 Bright Light("CAXEPUFF1")
+        FAXE TU 4 Bright Light("CAXEPUFF2")
+        FAXE VWX 4 Bright Light("CAXEPUFF3")
+        stop
+    }
+}
 
 ACTOR ClericAlly {
 	Health 100

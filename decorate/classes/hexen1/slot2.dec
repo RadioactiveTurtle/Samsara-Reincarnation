@@ -92,12 +92,14 @@ actor HexenShockArrow
     States
     {
       Spawn:
-        H115 A 1 Bright A_SpawnItemEx("HexenElectroTrail")
+        H115 A 1 Bright Light("MWAND_X1") A_SpawnItemEx("HexenElectroTrail")
         loop
 
       Death:
-        FAXE R 4 Bright A_AlertMonsters
-        FAXE STUVWX 4 Bright
+        FAXE R 4 Bright Light("CAXEPUFF1") A_AlertMonsters
+        FAXE S 4 Bright Light("CAXEPUFF1")
+        FAXE TV 4 Bright Light("CAXEPUFF2")
+        FAXE VWX 4 Bright Light("CAXEPUFF3")
         stop
     }
 }
@@ -331,6 +333,23 @@ actor FrostMissileDM : FrostMissile
     Obituary "$SAMSARA_HEXEN_OB_SLOT2"
     +BLOODSPLATTER
     +THRUGHOST
+    States
+    {
+      Spawn:
+        SHRD A 2 Bright Light("MFROSTSHARD")
+        SHRD A 3 Bright Light("MFROSTSHARD") A_ShedShard
+        SHRD B 3 Bright Light("MFROSTSHARD")
+        SHRD C 3 Bright Light("MFROSTSHARD")
+        loop
+
+      Death:
+        SHEX A 5 Bright Light("MFROSTSHARD_X1")
+        SHEX B 5 Bright Light("MFROSTSHARD_X2")
+        SHEX C 5 Bright Light("MFROSTSHARD_X3")
+        SHEX D 5 Bright Light("MFROSTSHARD_X4")
+        SHEX E 5 Bright
+        stop
+    }
 }
 
 actor FrostMissileDM2 : FrostMissileDM { Speed 23 }
@@ -345,6 +364,23 @@ actor FrostMissile2 : FrostMissile
     +BLOODSPLATTER
     +THRUGHOST
     +THRUSPECIES
+    States
+    {
+      Spawn:
+        SHRD A 2 Bright Light("MFROSTSHARD")
+        SHRD A 3 Bright Light("MFROSTSHARD") A_ShedShard
+        SHRD B 3 Bright Light("MFROSTSHARD")
+        SHRD C 3 Bright Light("MFROSTSHARD")
+        loop
+
+      Death:
+        SHEX A 5 Bright Light("MFROSTSHARD_X1")
+        SHEX B 5 Bright Light("MFROSTSHARD_X2")
+        SHEX C 5 Bright Light("MFROSTSHARD_X3")
+        SHEX D 5 Bright Light("MFROSTSHARD_X4")
+        SHEX E 5 Bright
+        stop
+    }
 }
 
 actor FrostMissileEnemy : FrostMissile // dark side version
@@ -353,6 +389,23 @@ actor FrostMissileEnemy : FrostMissile // dark side version
     Obituary "$SAMSARA_HEXEN_OB_SLOT2"
     +BLOODSPLATTER
     +THRUGHOST
+    States
+    {
+      Spawn:
+        SHRD A 2 Bright Light("MFROSTSHARD")
+        SHRD A 3 Bright Light("MFROSTSHARD") A_ShedShard
+        SHRD B 3 Bright Light("MFROSTSHARD")
+        SHRD C 3 Bright Light("MFROSTSHARD")
+        loop
+
+      Death:
+        SHEX A 5 Bright Light("MFROSTSHARD_X1")
+        SHEX B 5 Bright Light("MFROSTSHARD_X2")
+        SHEX C 5 Bright Light("MFROSTSHARD_X3")
+        SHEX D 5 Bright Light("MFROSTSHARD_X4")
+        SHEX E 5 Bright
+        stop
+    }
 }
 
 actor FrostMissile2_1 : FrostMissileDM
@@ -690,7 +743,9 @@ actor HexenSpearPuffGlow : AxePuffGlow
     {
       Spawn:
       Crash:
-        H101 TUVWXYZ 4 Bright
+        H101 TU 4 Bright Light("CSPEARPUFF1")
+        H101 VW 4 Bright Light("CSPEARPUFF2")
+        H101 XYZ 4 Bright Light("CSPEARPUFF3")
         stop
 
       Melee:
@@ -811,11 +866,12 @@ actor Hexen_FSpearFX2 : Hexen_FSpearFX1
     States
     {
       Spawn:
-        H101 S 1 Bright A_SpawnItemEx("Hexen_FSpearFX4",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+        H101 S 1 Bright Light("CSPEARPROJECTILE1") A_SpawnItemEx("Hexen_FSpearFX4",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
         loop
 
       Death:
         TNT1 A 0 A_AlertMonsters
+      DeathFinish:
         TNT1 A 1 A_SpawnItemEx("Hexen_FSpearFX5Spawner",0,0,0,0,0,0,0,SXF_CLIENTSIDE)
         stop
     }
@@ -832,8 +888,7 @@ actor Hexen_FSpearFX2Enemy : Hexen_FSpearFX2
     States
     {
       Death:
-        TNT1 A 1 A_SpawnItemEx("Hexen_FSpearFX5Spawner",0,0,0,0,0,0,0,SXF_CLIENTSIDE)
-        stop
+        goto DeathFinish
     }
 }
 
@@ -855,9 +910,12 @@ actor Hexen_FSpearFX5Spawner
     States
     {
       Spawn:
-        TNT1 A 0
+        TNT1 A 0 Light("CSPEARPROJECTILE2")
         TNT1 AAAAAAAAA 0 A_SpawnItemEx("Hexen_FSpearFX5",0,0,2,frandom(-4,4),frandom(-4,4),random(-2,6),0,SXF_NOCHECKPOSITION|SXF_CLIENTSIDE)
-        TNT1 A 1
+        TNT1 A 2 Light("CSPEARPROJECTILE2")
+        TNT1 B 2 Light("CSPEARPROJECTILE3")
+        TNT1 C 2 Light("CSPEARPROJECTILE4")
+        TNT1 D 2 Light("CSPEARPROJECTILE5")
         stop
     }
 }

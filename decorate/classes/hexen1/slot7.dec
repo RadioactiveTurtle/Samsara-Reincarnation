@@ -472,15 +472,17 @@ actor MageStaffFX3 : MageStaffFX2 //Needed for special mage staff ripper that ri
     States
     {
       Spawn:
-        MSP2 ABCD 2 Bright A_MStaffTrack
+        MSP2 ABCD 2 Bright Light("BSBALL") A_MStaffTrack
         loop
 
       Death:
-        MSP2 E 4 Bright A_SetTranslucent(1,1)
+        MSP2 E 4 Bright Light("BSBALL_X1") A_SetTranslucent(1,1)
         TNT1 A 0 A_Explode(80,192,0)
         TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",true)
-        MSP2 F 5 Bright A_Explode(80,192,0) // total was 80 damage
-        MSP2 GH 5 Bright
+        MSP2 F 5 Bright Light("BSBALL_X2") A_Explode(80,192,0) // total was 80 damage
+      DeathFinish:
+        MSP2 G 5 Bright Light("BSBALL_X3")
+        MSP2 H 5 Bright Light("BSBALL_X4")
         MSP2 I 4 Bright
         stop
     }
@@ -828,7 +830,7 @@ actor FSwordPuffGlow : AxePuff
     States
     {
       Spawn:
-        FSFX D 0 Bright
+        FSFX D 0 Bright Light("SWORDSHOT_X1")
       XDeath:
         TNT1 A 0 A_JumpIfInventory("SamsaraHexenQuietusMeleeAmmoTaken",1,"Crash",AAPTR_TARGET)
         TNT1 A 0 A_TakeInventory("Clip",7,0,AAPTR_TARGET)
@@ -838,16 +840,17 @@ actor FSwordPuffGlow : AxePuff
 
       Crash:
         TNT1 A 0 A_GiveInventory("SamsaraHexenQuietusMeleePuffSpawned",1,AAPTR_TARGET)
-        FSFX D 4 Bright A_ChangeFlag("NOTIMEFREEZE",false)
+        FSFX D 4 Bright Light("SWORDSHOT_X1") A_ChangeFlag("NOTIMEFREEZE",false)
         TNT1 A 0 A_Jump(256,1,2,3,4)
         TNT1 AAAA 0 A_SpawnItemEx("FSwordFlame",random(-8,8),random(-8,8),random(-4,4))
-        FSFX E 3 Bright
-        FSFX F 4 Bright
-        FSFX G 3 Bright
-        FSFX H 4 Bright
-        FSFX I 3 Bright
-        FSFX J 4 Bright
-        FSFX KLM 3 Bright
+        FSFX E 3 Bright Light("SWORDSHOT_X2")
+        FSFX F 4 Bright Light("SWORDSHOT_X2")
+        FSFX G 3 Bright Light("SWORDSHOT_X2")
+        FSFX H 4 Bright Light("SWORDSHOT_X3")
+        FSFX I 3 Bright Light("SWORDSHOT_X3")
+        FSFX J 4 Bright Light("SWORDSHOT_X4")
+        FSFX KL 3 Bright Light("SWORDSHOT_X5")
+        FSFX M 3 Bright
         stop
     }
 }
@@ -859,7 +862,7 @@ actor FSwordPuffGlowInfinite : FSwordPuffGlow
     States
     {
       Spawn:
-        FSFX D 0 Bright
+        FSFX D 0 Bright Light("SWORDSHOT_X1")
       XDeath:
         goto Crash
     }
@@ -917,15 +920,20 @@ actor FSwordMissile3 : FSwordMissile
     +BLOODSPLATTER
     States
     {
+      Spawn:
+        FSFX ABC 3 Bright Light("SWORDSHOT")
+        loop
+
       Death:
-        FSFX D 4 Bright
-        FSFX E 3 Bright A_FSwordFlames
-        FSFX F 4 Bright A_Explode(96,128,0) // was 64 damage
-        FSFX G 3 Bright
-        FSFX H 4 Bright
-        FSFX I 3 Bright
-        FSFX J 4 Bright
-        FSFX KLM 3 Bright
+        FSFX D 4 Bright Light("SWORDSHOT_X1")
+        FSFX E 3 Bright Light("SWORDSHOT_X2") A_FSwordFlames
+        FSFX F 4 Bright Light("SWORDSHOT_X2") A_Explode(96,128,0) // was 64 damage
+        FSFX G 3 Bright Light("SWORDSHOT_X2")
+        FSFX H 4 Bright Light("SWORDSHOT_X3")
+        FSFX I 3 Bright Light("SWORDSHOT_X3")
+        FSFX J 4 Bright Light("SWORDSHOT_X4")
+        FSFX KL 3 Bright Light("SWORDSHOT_X5")
+        FSFX M 3 Bright
         stop
     }
 }

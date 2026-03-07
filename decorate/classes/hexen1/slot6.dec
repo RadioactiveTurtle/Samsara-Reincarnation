@@ -84,16 +84,18 @@ actor CFlameMissileDM : CFlameMissile
 
       Death:
         CFFX A 1 Bright A_CFlamePuff
-        CFFX ABC 3 Bright
-        CFFX D 4 Bright
-        CFFX E 3 Bright
-        CFFX F 4 Bright
-        CFFX G 3 Bright
-        CFFX H 4 Bright
-        CFFX I 3 Bright
-        CFFX J 4 Bright
-        CFFX K 3 Bright
-        CFFX L 4 Bright
+        CFFX A 3 Bright
+        CFFX B 3 Bright Light("CFLAME1")
+        CFFX C 3 Bright Light("CFLAME2")
+        CFFX D 4 Bright Light("CFLAME2")
+        CFFX E 3 Bright Light("CFLAME2")
+        CFFX F 4 Bright Light("CFLAME2")
+        CFFX G 3 Bright Light("CFLAME2")
+        CFFX H 4 Bright Light("CFLAME2")
+        CFFX I 3 Bright Light("CFLAME2")
+        CFFX J 4 Bright Light("CFLAME3")
+        CFFX K 3 Bright Light("CFLAME4")
+        CFFX L 4 Bright Light("CFLAME5")
         CFFX M 3 Bright
         stop
 
@@ -285,26 +287,47 @@ actor LightningCeilingDM : LightningCeiling
     MissileType "LightningZapDM"
     +BLOODSPLATTER
     +NODAMAGETHRUST
-    /*States
+    States
     {
+      // spread rune fires unreplaced versions of the side projectiles no matter what; use this current naming scheme for the time being
       Spawn:
-        HMLF A 2 Bright A_LightningZap
-        HMLF BCD 2 Bright A_LightningClip
+        MLFX A 2 Bright Light("MAGELIGHT") A_LightningZap
+        MLFX BCD 2 Bright Light("MAGELIGHT") A_LightningClip
         loop
 
       Death:
-        HML2 A 2 Bright A_LightningRemove
-        HML2 BCDEKLM 3 Bright
+        MLF2 A 2 Bright Light("MAGELIGHT") A_LightningRemove
+        MLF2 BCDEKLM 3 Bright Light("MAGELIGHT")
+        ACLO E 35
+        MLF2 NO 3 Bright Light("MAGELIGHT")
+        MLF2 P 4 Bright Light("MAGELIGHT")
+        MLF2 QP 3 Bright Light("MAGELIGHT")
+        MLF2 Q 4 Bright Light("MAGELIGHT")
+        MLF2 POP 3 Bright Light("MAGELIGHT")
+        MLF2 P 1 Bright Light("MAGELIGHT") A_HideThing
+        ACLO E 1050
+        stop
+
+/*
+      Spawn:
+        HMLF A 2 Bright Light("MAGELIGHT") A_LightningZap
+        HMLF BCD 2 Bright Light("MAGELIGHT") A_LightningClip
+        loop
+
+      Death:
+        HML2 A 2 Bright Light("MAGELIGHT") A_LightningRemove
+        HML2 BCDEKLM 3 Bright Light("MAGELIGHT")
         TNT1 A 35
-        HML2 NO 3 Bright
-        HML2 P 4 Bright
-        HML2 QP 3 Bright
-        HML2 Q 4 Bright
-        HML2 POP 3 Bright
-        HML2 P 1 Bright A_HideThing
+        HML2 NO 3 Bright Light("MAGELIGHT")
+        HML2 P 4 Bright Light("MAGELIGHT")
+        HML2 QP 3 Bright Light("MAGELIGHT")
+        HML2 Q 4 Bright Light("MAGELIGHT")
+        HML2 POP 3 Bright Light("MAGELIGHT")
+        HML2 P 1 Bright Light("MAGELIGHT") A_HideThing
         TNT1 A 1050
         stop
-    }*/
+*/
+    }
 }
 
 actor LightningFloorDM : LightningFloor
@@ -314,26 +337,47 @@ actor LightningFloorDM : LightningFloor
     MissileType "LightningZapDM"
     +BLOODSPLATTER
     +NODAMAGETHRUST
-    /*States
+    States
     {
+      // spread rune fires unreplaced versions of the side projectiles no matter what; use this current naming scheme for the time being
       Spawn:
-        HMLF E 2 Bright A_LightningZap
-        HMLF FGH 2 Bright A_LightningClip
+        MLFX E 2 Bright Light("MAGELIGHT") A_LightningZap
+        MLFX FGH 2 Bright Light("MAGELIGHT") A_LightningClip
         loop
 
       Death:
-        HML2 F 2 Bright A_LightningRemove
-        HML2 GHIJKLM 3 Bright
+        MLF2 F 2 Bright Light("MAGELIGHT") A_LightningRemove
+        MLF2 GHIJKLM 3 Bright Light("MAGELIGHT")
+        ACLO E 20
+        MLF2 NO 3 Bright Light("MAGELIGHT")
+        MLF2 P 4 Bright Light("MAGELIGHT")
+        MLF2 QP 3 Bright Light("MAGELIGHT")
+        MLF2 Q 4 Bright Light("MAGELIGHT") A_LastZap
+        MLF2 POP 3 Bright Light("MAGELIGHT")
+        MLF2 P 1 Bright Light("MAGELIGHT") A_HideThing
+        ACLO E 1050
+        stop
+
+/*
+      Spawn:
+        HMLF E 2 Bright Light("MAGELIGHT") A_LightningZap
+        HMLF FGH 2 Bright Light("MAGELIGHT") A_LightningClip
+        loop
+
+      Death:
+        HML2 F 2 Bright Light("MAGELIGHT") A_LightningRemove
+        HML2 GHIJKLM 3 Bright Light("MAGELIGHT")
         TNT1 A 20
-        HML2 NO 3 Bright
-        HML2 P 4 Bright
-        HML2 QP 3 Bright
-        HML2 Q 4 Bright A_LastZap
-        HML2 POP 3 Bright
-        HML2 P 1 Bright A_HideThing
+        HML2 NO 3 Bright Light("MAGELIGHT")
+        HML2 P 4 Bright Light("MAGELIGHT")
+        HML2 QP 3 Bright Light("MAGELIGHT")
+        HML2 Q 4 Bright Light("MAGELIGHT") A_LastZap
+        HML2 POP 3 Bright Light("MAGELIGHT")
+        HML2 P 1 Bright Light("MAGELIGHT") A_HideThing
         TNT1 A 1050
         stop
-    }*/
+*/
+    }
 }
 
 actor LightningZapDM : LightningZap
@@ -341,16 +385,27 @@ actor LightningZapDM : LightningZap
     DamageType "Electric"
     +BLOODSPLATTER
     +NODAMAGETHRUST
-    /*States
+    States
     {
+      // spread rune fires unreplaced versions of the side projectiles no matter what; use this current naming scheme for the time being
       Spawn:
-        HMLF IJKLM 2 Bright A_ZapMimic
+        MLFX IJKLM 2 Bright Light("MAGELIGHT") A_ZapMimic
         loop
 
       Death:
-        HMLF NOPQRSTU 2 Bright
+        MLFX NOPQRSTU 2 Bright Light("MAGELIGHT")
         stop
-    }*/
+
+/*
+      Spawn:
+        HMLF IJKLM 2 Bright Light("MAGELIGHT") A_ZapMimic
+        loop
+
+      Death:
+        HMLF NOPQRSTU 2 Bright Light("MAGELIGHT")
+        stop
+*/
+    }
 }
 
 actor LightningCeiling2 : LightningCeilingDM
@@ -605,7 +660,7 @@ actor HexenGauntletPlasmaSpark : GauntletPuff1
       Spawn:
       Melee:
       XDeath:
-        H105 P 0 Bright NoDelay A_JumpIfInventory("SamsaraHexenQuickspellGauntletsMeleeAmmoTaken",1,"Crash",AAPTR_TARGET)
+        H105 P 0 Bright Light("FGAUNTLETPLASMASPARK_X1") NoDelay A_JumpIfInventory("SamsaraHexenQuickspellGauntletsMeleeAmmoTaken",1,"Crash",AAPTR_TARGET)
         TNT1 A 0 A_JumpIfInventory("SamsaraHexenQuickspellGauntletsMeleeHitCount",0,2,AAPTR_TARGET)
         TNT1 A 0 A_GiveInventory("SamsaraHexenQuickspellGauntletsMeleeHitCount",1,AAPTR_TARGET)
         goto AmmoTaken
@@ -618,8 +673,9 @@ actor HexenGauntletPlasmaSpark : GauntletPuff1
         goto Crash
 
       Crash:
-        H105 P 12 Bright A_ChangeFlag("NOTIMEFREEZE",false)
-        H105 QR 12 Bright
+        H105 P 12 Bright Light("FGAUNTLETPLASMASPARK_X1") A_ChangeFlag("NOTIMEFREEZE",false)
+        H105 Q 12 Bright Light("FGAUNTLETPLASMASPARK_X1")
+        H105 R 12 Bright Light("FGAUNTLETPLASMASPARK_X2")
         stop
     }
 }
@@ -713,12 +769,15 @@ actor HexenGauntletPlasma
     States
     {
       Spawn:
-        H105 MNO 3 Bright A_SpawnItemEx("HexenGauntletPlasmaSparkInfinite",0,0,0,random(-2,2),random(-2,2),random(1,2))
+        H105 MNO 3 Bright Light("FGAUNTLETPLASMA") A_SpawnItemEx("HexenGauntletPlasmaSparkInfinite",0,0,0,random(-2,2),random(-2,2),random(1,2))
         loop
 
       Death:
-        H105 S 5 Bright A_Explode(15,112,0)
-        H105 TUVWX 5 Bright
+        H105 S 5 Bright Light("FGAUNTLETPLASMA_X1") A_Explode(15,112,0)
+        H105 T 5 Bright Light("FGAUNTLETPLASMA_X2")
+        H105 U 5 Bright Light("FGAUNTLETPLASMA_X3")
+        H105 V 5 Bright Light("FGAUNTLETPLASMA_X4")
+        H105 WX 5 Bright Light("FGAUNTLETPLASMA_X5")
         stop
     }
 }

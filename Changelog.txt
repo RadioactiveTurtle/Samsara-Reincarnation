@@ -165,13 +165,17 @@ Hexen I:
 + The Bloodscourge now has its special ripper properties from Hexen, meaning that it rips all enemies that are not boss monsters. This also applies to Classic Parias' Bloodscourge.
 - The Bloodscourge now only deals 4-32 direct damage in multiples of 4 (decreased from 16-128 in multiples of 16), to compensate for ripping all enemies that aren't bosses.
 + The Bloodscourge now forces half of its splash damage, to make it capable of killing bosses like it could in the original Hexen.
+* Fixed the ally version of the Bloodscourge's projectiles not having lights.
 
 -Baratus-
 
+* Fixed lights being called incorrectly for the Javelin of Zeal strong projectile death.
+* Fixed the Dark Side version of the Javelin of Zeal strong projectile not having a light.
 - Timon's Axe's weak attack now does 35-50 damage at the furthest range of 144 map units in PVE (decreased from 52-80).
 + Timon's Axe's weak attack can now do up to 60-90 damage at the closest range of 64 map units in PVE (increased from 55-83 at the closest range of 84 map units).
 - Timon's Axe's strong attack now does 80-130 damage at the furtheset range of 144 map units in PVE (decreased from 123-198).
 + Timon's Axe's strong attack can now do up to 135-210 damage at the closest range of 64 map units in PVE (increased from 133-208 at the closest range of 84 map units).
+* Fixed the ally version of Timon's Axe's strong attack, the Hammer of Retribution's projectile, and the Quietus' projectiles not having lights.
 + The Hammer of Retribution's projectile now deals 20-160 direct damage in multiples of 20 (increased from 10-80 in multiples of 10).
 
 -All-

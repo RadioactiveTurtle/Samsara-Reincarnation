@@ -532,7 +532,7 @@ actor BloodScepterBallDeath
     {
       Spawn:
         H108 GHIJKL 3 Bright Light("BLOODSCEPTERBALL")
-        H108 L 2 Light("BLOODSCEPTERBALL") Bright A_FadeOut(0.05)
+        H108 L 2 Bright Light("BLOODSCEPTERBALL") A_FadeOut(0.05)
         wait
     }
 }

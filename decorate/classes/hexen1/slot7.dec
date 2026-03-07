@@ -479,8 +479,9 @@ actor MageStaffFX3 : MageStaffFX2 //Needed for special mage staff ripper that ri
         MSP2 E 4 Bright Light("BSBALL_X1") A_SetTranslucent(1,1)
         TNT1 A 0 A_Explode(80,192,0)
         TNT1 A 0 A_ChangeFlag("FORCERADIUSDMG",true)
-        MSP2 F 5 Bright Light("BSBALL_X2") A_Explode(80,192,0) // total was 80 damage
+        TNT1 A 0 A_Explode(80,192,0) // total was 80 damage
       DeathFinish:
+        MSP2 F 5 Bright Light("BSBALL_X2")
         MSP2 G 5 Bright Light("BSBALL_X3")
         MSP2 H 5 Bright Light("BSBALL_X4")
         MSP2 I 4 Bright

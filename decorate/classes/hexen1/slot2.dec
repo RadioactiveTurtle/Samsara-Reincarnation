@@ -98,7 +98,7 @@ actor HexenShockArrow
       Death:
         FAXE R 4 Bright Light("CAXEPUFF1") A_AlertMonsters
         FAXE S 4 Bright Light("CAXEPUFF1")
-        FAXE TV 4 Bright Light("CAXEPUFF2")
+        FAXE TU 4 Bright Light("CAXEPUFF2")
         FAXE VWX 4 Bright Light("CAXEPUFF3")
         stop
     }

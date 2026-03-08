@@ -193,7 +193,7 @@ Actor Q3LightningBeam : FastProjectile
 	Height 4
 	Radius 2
 	Speed 256
-	Damage (8)
+	Damage (6)
 	Decal "Q3LightningImpact"
 	DamageType "Q3Lightning"
 	+BLOODLESSIMPACT
@@ -241,7 +241,7 @@ Actor Q3LightningBeam : FastProjectile
 
 Actor Q3LightningBeamCoop : Q3LightningBeam { +THRUSPECIES Species "Player" }
 
-Actor Q3LightningBeamDM : Q3LightningBeam { Damage (6) }
+Actor Q3LightningBeamDM : Q3LightningBeam { Damage (5) }
 
 Actor Q3LightningBeamSoundTeamArena : Q3LightningBeam
 {

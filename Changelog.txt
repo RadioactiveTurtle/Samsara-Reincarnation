@@ -623,8 +623,13 @@ B.J. Blazkowicz (Return to Castle Wolfenstein):
 
 Sarge (Quake III Arena):
 
-- The rocket launcher now does 80 direct damage in PVE (decreased from 100).
-+ The rocket launcher now does 128 splash damage within a radius of 128 map units in PVE (increased from 100 splash damage across 100 map units).
+- in PVP, The Nailgun nails now do 12 damage per nail (decreased from 20). It's still 20 in PVE modes.
+- The Lightning Gun now deals 6 damage per lightning zap in PVE and 5 damage per zap in PVP modes(decreased from 8 in PVE and 6 in PVP).
++ The Plasma Gun bolts now deal their splash damage across 56 units (increased from 14).
+- The BFG10K now takes 5 cells to fire (increased from 3).
++ The BFG10K blasts now deal their splash damage across 160 units (increased from 100).
+
++ The rocket launcher now does splash damage within a radius of 150 map units in PVE (increased from 100 map units).
 + The rocket launcher now deals half self-damage to the player.
 
 JC Denton (Deus Ex):

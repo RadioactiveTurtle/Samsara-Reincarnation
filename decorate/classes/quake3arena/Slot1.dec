@@ -149,7 +149,8 @@ Actor Q3Grenade
 		DeathExplode:
 		XDeath:
 			TNT1 A 0 A_PlaySound("Quake3/GrenadeLauncher/Explode",CHAN_VOICE)
-			TNT1 A 0 A_Explode(100,100)
+			TNT1 A 0 A_Explode(50,100,0)
+			TNT1 A 0 A_Explode(50,100)
 			TNT1 A 0 A_SpawnItemEx("Q3GrenadeBoom")
 			TNT1 A 0 A_JumpIf(abs(z - floorz) <= 4, "HitFloor")
 			TNT1 A 1 A_CheckCeiling("HitCeiling")

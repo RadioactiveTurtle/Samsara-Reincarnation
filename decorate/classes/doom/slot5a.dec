@@ -388,16 +388,17 @@ actor Doom64Rocket : Rocket
 	States
 	{
 	Spawn:
-		64MI AA 2 bright A_SpawnItemEx("Doom64RocketSmokeTrail")
+		64MI AA 2 Bright Light("ROCKET64") A_SpawnItemEx("Doom64RocketSmokeTrail")
 		Loop
 
 	Death:
         TNT1 A 0 A_Explode
 	DeathFinish:
-		64MI B 8 Bright
-		64MI C 6 Bright A_FadeOut(0.2)
-		64MI D 3 Bright A_FadeOut(0.2)
-		64MI EF 3 Bright A_FadeOut(0.2)
+		64MI B 8 Bright Light("ROCKET64_X1")
+		64MI C 6 Bright Light("ROCKET64_X2") A_FadeOut(0.2)
+		64MI D 3 Bright Light("ROCKET64_X3") A_FadeOut(0.2)
+		64MI E 3 Bright Light("ROCKET64_X4") A_FadeOut(0.2)
+		64MI F 3 Bright Light("ROCKET64_X5") A_FadeOut(0.2)
 		Stop
 	}
 }

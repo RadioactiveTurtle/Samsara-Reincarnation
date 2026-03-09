@@ -526,11 +526,15 @@ actor Doom64PlasmaBall : PlasmaBall
 	States
 	{
 	Spawn:
-		64PB AB 3 bright
+		64PB AB 3 Bright Light("PLASMA64BALL")
 		loop
 
 	Death:
-		64PB CDEFGH 2 bright
+		64PB C 2 Bright Light("PLASMA64_X1")
+		64PB DE 2 Bright Light("PLASMA64_X2")
+		64PB F 2 Bright Light("PLASMA64_X3")
+		64PB G 2 Bright Light("PLASMA64_X4")
+		64PB H 2 Bright Light("PLASMA64_X5")
 		stop
 	}
 }

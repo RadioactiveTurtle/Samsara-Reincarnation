@@ -5,7 +5,7 @@ object Doom_AI
 
 object Doom64_AI
 {
-	frame DGUYM { light DOOMZOMBIEATK }
+	frame DGUYM { light ZOMBIEATK_64 }
 }
 
 object DoomStronghold_AI

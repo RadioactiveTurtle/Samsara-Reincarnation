@@ -1,75 +1,3 @@
-object Doom64BulletPuff
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64BulletPuff_Coop
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64BulletPuffThruGhost
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64BulletPuffThruGhost_Coop
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64BulletPuffPlayer
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64BulletPuffPlayer_Coop
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64BulletPuffPlayerThruGhost
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64BulletPuffPlayerThruGhost_Coop
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64BulletPuffPlayerPistol
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64BulletPuffPlayerPistol_Coop
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64RailPuff
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
-object Doom64RailPuff_Coop
-{
-	frame 64PFA { light DOOMBPUFF1 }
-	frame 64PFB { light DOOMBPUFF2 }
-}
-
 pointlight ROCKET64
 {
 	color 1.0 0.7 0.0
@@ -113,50 +41,6 @@ flickerlight ROCKET64_X5
 	size 96
 	secondarySize 104
 	chance 0.3
-}
-
-object Doom64Rocket
-{
-	frame 64MIA { light ROCKET64  }
-
-	frame 64MIB { light ROCKET64_X1 }
-	frame 64MIC { light ROCKET64_X2 }
-	frame 64MID { light ROCKET64_X3 }
-	frame 64MIE { light ROCKET64_X4 }
-	frame 64MIF { light ROCKET64_X5 }
-}
-
-object Doom64Rocket2
-{
-	frame 64MIA { light ROCKET64  }
-
-	frame 64MIB { light ROCKET64_X1 }
-	frame 64MIC { light ROCKET64_X2 }
-	frame 64MID { light ROCKET64_X3 }
-	frame 64MIE { light ROCKET64_X4 }
-	frame 64MIF { light ROCKET64_X5 }
-}
-
-object Doom64RocketImproved
-{
-	frame 64MIA { light ROCKET64  }
-
-	frame 64MIB { light ROCKET64_X1 }
-	frame 64MIC { light ROCKET64_X2 }
-	frame 64MID { light ROCKET64_X3 }
-	frame 64MIE { light ROCKET64_X4 }
-	frame 64MIF { light ROCKET64_X5 }
-}
-
-object Doom64RocketImproved2
-{
-	frame 64MIA { light ROCKET64  }
-
-	frame 64MIB { light ROCKET64_X1 }
-	frame 64MIC { light ROCKET64_X2 }
-	frame 64MID { light ROCKET64_X3 }
-	frame 64MIE { light ROCKET64_X4 }
-	frame 64MIF { light ROCKET64_X5 }
 }
 
 pointlight PLASMA64BALL
@@ -205,104 +89,6 @@ flickerlight PLASMA64_X5
 	chance 0.4
 }
 
-object Doom64PlasmaBall
-{
-	frame 64PBA { light PLASMA64BALL }
-	frame 64PBB { light PLASMA64BALL }
-
-	frame 64PBC { light PLASMA64_X1 }
-	frame 64PBD { light PLASMA64_X2 }
-	frame 64PBE { light PLASMA64_X2 }
-	frame 64PBF { light PLASMA64_X3 }
-	frame 64PBG { light PLASMA64_X4 }
-	frame 64PBH { light PLASMA64_X5 }
-}
-
-object Doom64PlasmaBall2
-{
-	frame 64PBA { light PLASMA64BALL }
-	frame 64PBB { light PLASMA64BALL }
-
-	frame 64PBC { light PLASMA64_X1 }
-	frame 64PBD { light PLASMA64_X2 }
-	frame 64PBE { light PLASMA64_X2 }
-	frame 64PBF { light PLASMA64_X3 }
-	frame 64PBG { light PLASMA64_X4 }
-	frame 64PBH { light PLASMA64_X5 }
-}
-
-object Doom64BFGBall
-{
-	frame 64BBA { light DOOMBFGBALL }
-	frame 64BBB { light DOOMBFGBALL }
-
-	frame 64BBC { light DOOMBFGBALL_X1 }
-	frame 64BBD { light DOOMBFGBALL_X2 }
-	frame 64BBE { light DOOMBFGBALL_X3 }
-	frame 64BBF { light DOOMBFGBALL_X1 }
-	frame 64BBG { light DOOMBFGBALL_X4 }
-	frame 64BBH { light DOOMBFGBALL_X5 }
-}
-
-object Doom64BFGBall2
-{
-	frame 64BBA { light DOOMBFGBALL }
-	frame 64BBB { light DOOMBFGBALL }
-
-	frame 64BBC { light DOOMBFGBALL_X1 }
-	frame 64BBD { light DOOMBFGBALL_X2 }
-	frame 64BBE { light DOOMBFGBALL_X3 }
-	frame 64BBF { light DOOMBFGBALL_X1 }
-	frame 64BBG { light DOOMBFGBALL_X4 }
-	frame 64BBH { light DOOMBFGBALL_X5 }
-}
-
-object Doom64BFGBallImproved
-{
-	frame 64BBA { light DOOMBFGBALL }
-	frame 64BBB { light DOOMBFGBALL }
-
-	frame 64BBC { light DOOMBFGBALL_X1 }
-	frame 64BBD { light DOOMBFGBALL_X2 }
-	frame 64BBE { light DOOMBFGBALL_X3 }
-	frame 64BBF { light DOOMBFGBALL_X1 }
-	frame 64BBG { light DOOMBFGBALL_X4 }
-	frame 64BBH { light DOOMBFGBALL_X5 }
-}
-
-object Doom64BFGBallImproved2
-{
-	frame 64BBA { light DOOMBFGBALL }
-	frame 64BBB { light DOOMBFGBALL }
-
-	frame 64BBC { light DOOMBFGBALL_X1 }
-	frame 64BBD { light DOOMBFGBALL_X2 }
-	frame 64BBE { light DOOMBFGBALL_X3 }
-	frame 64BBF { light DOOMBFGBALL_X1 }
-	frame 64BBG { light DOOMBFGBALL_X4 }
-	frame 64BBH { light DOOMBFGBALL_X5 }
-}
-
-object Doom64BFGSplash
-{
-	frame 64B2A { light DOOMBFGBALL	}
-	frame 64B2B { light DOOMBFGBALL_X1 }
-	frame 64B2C { light DOOMBFGBALL_X2 }
-	frame 64B2D { light DOOMBFGBALL_X3 }
-	frame 64B2E { light DOOMBFGBALL_X4 }
-	frame 64B2F { light DOOMBFGBALL_X5 }
-}
-
-object Doom64BFGSplashCoop
-{
-	frame 64B2A { light DOOMBFGBALL	}
-	frame 64B2B { light DOOMBFGBALL_X1 }
-	frame 64B2C { light DOOMBFGBALL_X2 }
-	frame 64B2D { light DOOMBFGBALL_X3 }
-	frame 64B2E { light DOOMBFGBALL_X4 }
-	frame 64B2F { light DOOMBFGBALL_X5 }
-}
-
 pointlight UNMAKERSHOT
 {
 	color 1.0 0.0 0.0
@@ -317,13 +103,13 @@ flickerlight UNMAKERSHOT_X
 	chance 0.4
 }
 
-pointlight IMPBALL64
+pointlight IMPBALL_64
 {
 	color 1.0 0.6 0.0
 	size 64
 }
 
-flickerlight IMPBALL64_X1
+flickerlight IMPBALL_64_X1
 {
 	color 0.7 0.4 0.0
 	size 80
@@ -331,7 +117,7 @@ flickerlight IMPBALL64_X1
 	chance 0.25
 }
 
-flickerlight IMPBALL64_X2
+flickerlight IMPBALL_64_X2
 {
 	color 0.5 0.3 0.0
 	size 96
@@ -339,7 +125,7 @@ flickerlight IMPBALL64_X2
 	chance 0.25
 }
 
-flickerlight IMPBALL64_X3
+flickerlight IMPBALL_64_X3
 {
 	color 0.4 0.2 0.0
 	size 112
@@ -347,7 +133,7 @@ flickerlight IMPBALL64_X3
 	chance 0.25
 }
 
-flickerlight IMPBALL64_X4
+flickerlight IMPBALL_64_X4
 {
 	color 0.3 0.2 0.0
 	size 112
@@ -355,7 +141,7 @@ flickerlight IMPBALL64_X4
 	chance 0.25
 }
 
-flickerlight IMPBALL64_X5
+flickerlight IMPBALL_64_X5
 {
 	color 0.2 0.1 0.0
 	size 112
@@ -363,7 +149,7 @@ flickerlight IMPBALL64_X5
 	chance 0.25
 }
 
-flickerlight IMPBALL64_X6
+flickerlight IMPBALL_64_X6
 {
 	color 0.1 0.0 0.0
 	size 112
@@ -371,21 +157,16 @@ flickerlight IMPBALL64_X6
 	chance 0.25
 }
 
-object FriendlyDoomImp64Ball
+flickerlight2 ZOMBIEATK_64
 {
-	frame 64TPA { light IMPBALL64  }
-	frame 64TPB { light IMPBALL64  }
-	frame 64TPC { light IMPBALL64  }
-
-	frame 64TPD { light IMPBALL64_X1 }
-	frame 64TPE { light IMPBALL64_X2 }
-	frame 64TPF { light IMPBALL64_X3 }
-	frame 64TPG { light IMPBALL64_X4 }
-	frame 64TPH { light IMPBALL64_X5 }
-	frame 64TPI { light IMPBALL64_X6 }
+	color 1.0 0.8658 0.6747
+	size 48
+	secondarySize 56
+	interval 1
+	offset 0 48 0
 }
 
 object DoomguyPlayer
 {
-	frame DGUYM { light DOOMZOMBIEATK }
+	frame DGUYM { light ZOMBIEATK_64 }
 }

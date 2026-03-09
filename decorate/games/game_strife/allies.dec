@@ -1020,11 +1020,16 @@ actor FriendlyDoomImp64Ball : DoomImpBall2
 	States
 	{
 	Spawn:
-		64TP ABC 5 bright
-		Loop
+		64TP ABC 5 Bright Light("IMPBALL_64")
+		loop
 	Death:
-		64TP DEFGHI 1 bright
-		Stop
+		64TP D 1 Bright Light("IMPBALL_64_X1")
+		64TP E 1 Bright Light("IMPBALL_64_X2")
+		64TP F 1 Bright Light("IMPBALL_64_X3")
+		64TP G 1 Bright Light("IMPBALL_64_X4")
+		64TP H 1 Bright Light("IMPBALL_64_X5")
+		64TP I 1 Bright Light("IMPBALL_64_X6")
+		stop
 	}
 }
 

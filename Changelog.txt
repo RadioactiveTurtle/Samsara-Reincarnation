@@ -266,6 +266,7 @@ Rise of the Triad:
 * Fixed the landing attack taking effect when dead.
 + With improved weapon balance, the pistol now does 15 damage in PVE (increased from 13).
 ! The double pistols have been moved from a slot 2 weapon to a slot 1 weapon. Subsequent pickups also now give 10 bazooka missiles instead of 10 heat seeker missiles.
++ With improved weapon balance, the double pistols now does 15 damage in PVE (increased from 13).
 ! The MP40 has been moved from a slot 4 weapon to a slot 2 weapon. Subsequent pickups also now give 6 heat seeker missiles instead of 6 bazooka missiles.
 + With improved weapon balance, the MP40 now does 12 damage in PVE (increased from 10).
 + The seeking behavior of heat seeker missiles has been slightly improved.

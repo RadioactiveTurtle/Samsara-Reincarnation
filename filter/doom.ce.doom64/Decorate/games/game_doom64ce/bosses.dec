@@ -15,8 +15,9 @@ actor D64SpiderMastermind_Samsara : SamsaraMonsterCyberneticBoss replaces Spider
 	+DONTMORPH
 	+BOSSDEATH
 	+DONTRIP
+    +DOHARMSPECIES // making up for the limitation where we have to use projectiles
 	SeeSound "spider/sight"
-	AttackSound "shotguy/attack"
+	AttackSound "spider/attack"
 	PainSound "spider/pain"
 	DeathSound "spider/death"
 	ActiveSound "spider/active"
@@ -224,6 +225,7 @@ actor D64SpiderMastermindLaser : Doom64UnmakerAbsolutionLaser
     Speed 90
     Damage 3
     DamageType "Normal"
+    SeeSound "spider/attack"
     Obituary "$OB_SPIDER"
 }
 

@@ -64,7 +64,7 @@ actor SamsaraHexenMaceOfContritionAttackHandler : Trigger
         stop
 
       PickupHitOtherDMSpread:
-        TNT1 A 0 A_CustomPunch(random(25,40)*3,true,0,"HammerPuff")
+        TNT1 AAA 0 A_CustomPunch(random(25,40),true,0,"HammerPuff")
         stop
 
       PickupHitOtherCoop:
@@ -73,7 +73,7 @@ actor SamsaraHexenMaceOfContritionAttackHandler : Trigger
         stop
 
       PickupHitOtherCoopSpread:
-        TNT1 A 0 A_CustomPunch(random(25,40)*3,true,0,"HammerPuffCoop")
+        TNT1 AAA 0 A_CustomPunch(random(25,40),true,0,"HammerPuffCoop")
         stop
 
       // Hit an actor
@@ -86,7 +86,7 @@ actor SamsaraHexenMaceOfContritionAttackHandler : Trigger
         stop
 
       PickupHitActorDMSpread:
-        TNT1 A 0 A_CustomPunch(random(25,40)*3,true,0,"HammerPuff",128)
+        TNT1 AAA 0 A_CustomPunch(random(25,40),true,0,"HammerPuff",128)
         stop
 
       PickupHitActorCoop:
@@ -95,7 +95,7 @@ actor SamsaraHexenMaceOfContritionAttackHandler : Trigger
         stop
 
       PickupHitActorCoopSpread:
-        TNT1 A 0 A_CustomPunch(random(25,40)*3,true,0,"HammerPuffCoop",128)
+        TNT1 AAAA 0 A_CustomPunch(random(25,40),true,0,"HammerPuffCoop",128)
         stop
     }
 }
@@ -183,7 +183,7 @@ actor SamsaraHexenSpikedGauntletsAttackHandler : Trigger
         goto PickupFinishHitOther
 
       PickupHitOtherDMSpread:
-        TNT1 A 0 A_CustomPunch(random(40,55)*3,true,0,"PunchPuff")
+        TNT1 AAA 0 A_CustomPunch(random(40,55),true,0,"PunchPuff")
         goto PickupFinishHitOther
 
       PickupHitOtherCoop:
@@ -192,7 +192,7 @@ actor SamsaraHexenSpikedGauntletsAttackHandler : Trigger
         goto PickupFinishHitOther
 
       PickupHitOtherCoopSpread:
-        TNT1 A 0 A_CustomPunch(random(40,55)*3,true,0,"PunchPuffCoop")
+        TNT1 AAA 0 A_CustomPunch(random(40,55),true,0,"PunchPuffCoop")
         goto PickupFinishHitOther
 
       // Hit an actor
@@ -208,7 +208,7 @@ actor SamsaraHexenSpikedGauntletsAttackHandler : Trigger
         goto PickupFinishHitActor
 
       PickupHitActorNormalDMSpread:
-        TNT1 A 0 A_CustomPunch(random(40,55)*3,true,0,"PunchPuff",128)
+        TNT1 AAA 0 A_CustomPunch(random(40,55),true,0,"PunchPuff",128)
         goto PickupFinishHitActor
 
       PickupHitActorNormalCoop:
@@ -217,7 +217,7 @@ actor SamsaraHexenSpikedGauntletsAttackHandler : Trigger
         goto PickupFinishHitActor
 
       PickupHitActorNormalCoopSpread:
-        TNT1 A 0 A_CustomPunch(random(40,55)*3,true,0,"PunchPuffCoop",128)
+        TNT1 AAA 0 A_CustomPunch(random(40,55),true,0,"PunchPuffCoop",128)
         goto PickupFinishHitActor
 
       // Strong
@@ -227,20 +227,20 @@ actor SamsaraHexenSpikedGauntletsAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupHitActorStrongCoop")
       PickupHitActorStrongDM:
         TNT1 A 0 A_JumpIfInventory("SamsaraHasSpread",1,"PickupHitActorStrongDMSpread")
-        TNT1 A 0 A_CustomPunch(random(40,55)*2,true,0,"HammerPuff",128)
+        TNT1 AAA 0 A_CustomPunch(random(40,55),true,0,"HammerPuff",128)
         goto PickupFinishHitActor
 
       PickupHitActorStrongDMSpread:
-        TNT1 A 0 A_CustomPunch((random(40,55)*2)*3,true,0,"HammerPuff",128)
+        TNT1 AAAAAA 0 A_CustomPunch((random(40,55)),true,0,"HammerPuff",128)
         goto PickupFinishHitActor
 
       PickupHitActorStrongCoop:
         TNT1 A 0 A_JumpIfInventory("SamsaraHasSpread",1,"PickupHitActorStrongCoopSpread")
-        TNT1 A 0 A_CustomPunch(random(40,55)*2,true,0,"HammerPuffCoop",128)
+        TNT1 AA 0 A_CustomPunch(random(40,55),true,0,"HammerPuffCoop",128)
         goto PickupFinishHitActor
 
       PickupHitActorStrongCoopSpread:
-        TNT1 A 0 A_CustomPunch((random(40,55)*2)*3,true,0,"HammerPuffCoop",128)
+        TNT1 AAAAAA 0 A_CustomPunch((random(40,55),true,0,"HammerPuffCoop",128)
         goto PickupFinishHitActor
 
       // Finishing stuff

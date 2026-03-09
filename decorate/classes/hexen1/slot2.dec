@@ -303,7 +303,7 @@ actor FrostMissileMelee : FastProjectile
     Radius 6
     Height 6
     Speed 20
-    Damage (random(70,95)) // Previously 90-115
+    Damage (random(90,115)) // Previously 90-115
     DamageType "HexenIce"
     +BLOODLESSIMPACT
     States
@@ -328,7 +328,7 @@ actor FrostMissileMeleeCoop : FrostMissileMelee
 
 actor FrostMissileDM : FrostMissile
 {
-    Damage (random(1,4))
+    Damage (random(1,6))
     DamageType "HexenIce"
     Obituary "$SAMSARA_HEXEN_OB_SLOT2"
     +BLOODSPLATTER

@@ -154,17 +154,19 @@ Hexen I:
 + With improved weapon balance, the bishop's shortsword's strong melee attack now deals 13-39 damage in multiples of 13 per puff in PVE (increased from 10-30 in multiples of 10).
 + With improved weapon balance, the bishop's shortsword's strong projectiles now deal 10 damage in PVE (increased from 8).
 + In PVE, the serpent staff's projectiles now deal 6-30 damage in multiples of 6 (vanilla) or 5-35 damage in multiples of 5 (improved) (increased from 5-25).
-- The Wraithverge now takes 20 rounds of both Ammo 1 and 30 rounds of Ammo 4 to fire (increased from 25 rounds of both ammo 1 and ammo 4).
-and 4
+- The Wraithverge now takes 30 rounds of Ammo 4 to fire (increased from 20 rounds of Ammo 4). Ammo 1 use is still 20.
++ To make up for the increased Ammo 4 cost, the Wraithverge now gives 35 rounds of Ammo 4 on pickup (increased from 25). The amount of Ammo 1 it gives is still 25.
+
 -Parias (Classic)-
 
 - The Bloodscourge now only deals 7-56 direct damage in multiples of 7 (decreased from 14-112 in multiples of 14), to compensate for ripping all enemies that aren't bosses (see Daedolon's section).
 
 -Daedolon-
 
++ The frost shards' melee attack now deals 90-115 damage (increased from 70-95).
++ The frost shards' frost crystals now do 1-6 damage in PVP (increased from 1-4).
 - In PVP or PVE (vanilla), the blight shock's projectiles now deal 1-6 direct damage (decreased from 1-8).
- + The Frost Shards' melee attack now deals 90-115 damage increased from 70-95).
-- in PVP, The Frost Shards' frost crystals now do 1-6 damage (increased from 1-4).
++ The Bloodscourge's projectiles now home in more aggressively.
 + The Bloodscourge now has its special ripper properties from Hexen, meaning that it rips all enemies that are not boss monsters. This also applies to Classic Parias' Bloodscourge.
 - The Bloodscourge now only deals 8-64 direct damage in multiples of 8 (decreased from 16-128 in multiples of 16), to compensate for ripping all enemies that aren't bosses.
 + The Bloodscourge now forces half of its splash damage, to make it capable of killing bosses like it could in the original Hexen.
@@ -179,10 +181,14 @@ and 4
 - Timon's Axe's strong attack now does 80-130 damage at the furthest range of 144 map units in PVE (decreased from 123-198).
 + Timon's Axe's strong attack can now do up to 135-210 damage at the closest range of 64 map units in PVE (increased from 133-208 at the closest range of 84 map units).
 * Fixed the ally version of Timon's Axe's strong attack, the Hammer of Retribution's projectile, and the Quietus' projectiles not having lights.
++ The Hammer of Retribution's melee attack now has a maximum range of 144 map units (increased from 96).
++ The Hammer of Retribution's melee attack now deals 90-170 damage in PVE (increased from 60-113).
 + The Hammer of Retribution's projectile now deals 20-160 direct damage in multiples of 20 (increased from 10-80 in multiples of 10).
-- in PVE, the hammer of retribution's melee attack now deals 90-270 damage (increased from 60-113).
-+ in PVE, the quietus' melee attack now has a maximum range of 192 map units (increased from 128).
-the Quietus' projectiles now do their splash damage in a radius of 192 map units (increased from 128). 
++ The Quietus' melee attack now has a maximum range of 192 map units in PVE (increased from 128).
++ The Quietus' weak melee attack now deals 60-100 damage per puff in PVP, and 45-75 damage per puff in PVE (increased from 30-50).
++ The Quietus' strong melee attack now deals 240-400 damage per puff (increased from 120-200).
++ The Quietus' projectiles now do their splash damage in a radius of 192 map units (increased from 128). 
++ The Quietus' projectiles now force splash damage against enemies.
 
 -All-
 

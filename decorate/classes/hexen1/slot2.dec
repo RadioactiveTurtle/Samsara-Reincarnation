@@ -383,6 +383,27 @@ actor FrostMissile2 : FrostMissile
     }
 }
 
+actor FrostMissile2_2 : FrostMissileDM2
+{
+    Damage (random(1,4))
+    Species "Player"
+    +THRUSPECIES
+}
+
+actor FrostMissile2_3 : FrostMissileDM3
+{
+    Damage (random(1,4))
+    Species "Player"
+    +THRUSPECIES
+}
+
+actor FrostMissile2_4 : FrostMissileDM4
+{
+    Damage (random(1,4))
+    Species "Player"
+    +THRUSPECIES
+}
+
 actor FrostMissileEnemy : FrostMissile // dark side version
 {
     DamageType "HexenIce"
@@ -408,29 +429,9 @@ actor FrostMissileEnemy : FrostMissile // dark side version
     }
 }
 
-actor FrostMissile2_1 : FrostMissileDM
-{
-    Species "Player"
-    +THRUSPECIES
-}
-
-actor FrostMissile2_2 : FrostMissileDM2
-{
-    Species "Player"
-    +THRUSPECIES
-}
-
-actor FrostMissile2_3 : FrostMissileDM3
-{
-    Species "Player"
-    +THRUSPECIES
-}
-
-actor FrostMissile2_4 : FrostMissileDM4
-{
-    Species "Player"
-    +THRUSPECIES
-}
+actor FrostMissileEnemy_2 : FrostMissileDM2 { Damage (random(1,4)) }
+actor FrostMissileEnemy_3 : FrostMissileDM3 { Damage (random(1,4)) }
+actor FrostMissileEnemy_4 : FrostMissileDM4 { Damage (random(1,4)) }
 
 // Baratus
 

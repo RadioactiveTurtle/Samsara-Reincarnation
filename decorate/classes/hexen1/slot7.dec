@@ -129,8 +129,8 @@ actor SamsaraHexenWraithvergeAttackHandler : Trigger
       // Attack stuff
       PickupAttack:
         TNT1 A 0 A_PlaySound("HolySymbolFire",CHAN_WEAPON)
-        TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupAttackCoop")
-        TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupAttackCoop")
+        /*TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupAttackCoop")
+        TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupAttackCoop")*/
       PickupAttackDM:
         TNT1 A 0 A_FireCustomMissile("HolySpiritDM",0,false)
         TNT1 A 0 A_FireCustomMissile("HolySpiritDM2",0,false)
@@ -138,9 +138,9 @@ actor SamsaraHexenWraithvergeAttackHandler : Trigger
         TNT1 A 0 A_FireCustomMissile("HolySpiritDM4",0,false)
         goto PickupFinish
 
-      PickupAttackCoop:
-        TNT1 A 0 A_FireCustomMissile("HolyMissile_Coop",0,false)
-        goto PickupFinish
+      /*PickupAttackCoop:
+        TNT1 A 0
+        goto PickupFinish*/
 
       // Finishing stuff
       PickupFinish:
@@ -156,17 +156,6 @@ actor HolyMissile_Coop : HolyMissile replaces HolyMissile
     Species "Player"
     +BLOODSPLATTER
     +THRUSPECIES
-    States
-    {
-      Spawn:
-        SPIR PPPP 3 bright A_SpawnItemEx("HolyMissilePuff2")
-      Death:
-        TNT1 A 0 A_CustomMissile("HolySpirit2",0,0,-67.5,6)
-        TNT1 A 0 A_CustomMissile("HolySpirit2",0,0,-22.5,6)
-        TNT1 A 0 A_CustomMissile("HolySpirit2",0,0,22.5,6)
-        SPIR P 1 bright A_CustomMissile("HolySpirit2",0,0,67.5,6)
-        stop
-    }
 }
 
 actor HolyMissilePuff2: HolyMissilePuff replaces HolyMissilePuff
@@ -177,92 +166,44 @@ actor HolyMissilePuff2: HolyMissilePuff replaces HolyMissilePuff
 
 actor HolySpirit2 : HolySpirit replaces HolySpirit
 {
-    Health 105
-    Speed 15
-    Radius 10
-    Height 6
-    Damage 0 // 3
-    Projectile
-    +RIPPER
-    +THRUACTORS
-    +SEEKERMISSILE
-    +FOILINVUL
-    +SKYEXPLODE
-    +NOEXPLODEFLOOR
-    +CANBLAST
-    +EXTREMEDEATH
-    +BRIGHT
-    +FORCERADIUSDMG
-    //+STRIFEDAMAGE
-    +NODAMAGETHRUST
-    +HEXENBOUNCE
-    +EXPLODEONWATER
-    +LOOKALLAROUND
-    BounceFactor 0.9
-    WallBounceFactor 0.9
-    RenderStyle Translucent
-    Alpha 0.5
-    DeathSound "SpiritDie"
-    Obituary "$SAMSARA_HEXEN_OB_SLOT7"
+    Speed 15 // Previously 12
     DamageType "Wraithverge"
-	Species "Player"
-	+THRUSPECIES
-	States
-	{
-    Spawn: // tic 1 (don't execute anything here, as per engine behaviour)
-      SPIR A 1
-    SpawnRestart1: // tic 2
-      SPIR A 1 A_Explode(3*random(1,8),16,0)
-    SpawnRestart2: // tic 3
-	  TNT1 A 0 A_GiveInventory("SamsaraHexenWraithvergeGhostTimer")
-	  TNT1 A 0 A_JumpIfInventory("SamsaraHexenWraithvergeGhostTimer",0,"Death")
-	  TNT1 A 0 A_SpawnItemEx("HolyMissilePuff2",0,0,-6,0,0,0,0,128)
-      TNT1 A 0 A_Weave(random(0,4),random(0,4),2,1)
-      TNT1 A 0 A_SeekerMissile(10,random(10,35),1)
-      SPIR A 1 A_Explode(3*random(1,8),16,0)
-    SpawnRestart3: // tic 4
-      SPIR A 1 A_Explode(3*random(1,8),16,0)
-    SpawnRestart4: // tic 5
-	  TNT1 A 0 A_GiveInventory("SamsaraHexenWraithvergeGhostTimer")
-	  TNT1 A 0 A_JumpIfInventory("SamsaraHexenWraithvergeGhostTimer",0,"Death")
-	  TNT1 A 0 A_SpawnItemEx("HolyMissilePuff2",0,0,-6,0,0,0,0,128)
-      TNT1 A 0 A_Weave(random(0,4),random(0,4),2,1)
-      TNT1 A 0 A_SeekerMissile(10,random(10,35),1)
-      SPIR B 1 A_Explode(3*random(1,8),16,0)
-    SpawnRestart5: // tic 6
-      SPIR B 1 A_Explode(3*random(1,8),16,0)
-    SpawnRestart6: // tic 7
-	  TNT1 A 0 A_GiveInventory("SamsaraHexenWraithvergeGhostTimer")
-	  TNT1 A 0 A_JumpIfInventory("SamsaraHexenWraithvergeGhostTimer",0,"Death")
-	  TNT1 A 0 A_SpawnItemEx("HolyMissilePuff2",0,0,-6,0,0,0,0,128)
-      TNT1 A 0 A_Weave(random(0,4),random(0,4),2,1)
-      TNT1 A 0 A_SeekerMissile(10,random(10,35),1)
-      TNT1 A 0 A_Explode(3*random(1,8),16,0)
-      TNT1 A 0 A_JumpIfTargetInLos("SetNoclip",180,JLOSF_PROJECTILE)
-	  TNT1 A 0 A_ChangeFlag("NOCLIP",0)
-      SPIR B 1 A_Jump(20,"Scream")
-    SpawnRestart7: // tic 8
-      SPIR B 1 A_Explode(3*random(1,8),16,0)
-    SpawnRestart8: // non-restricted tic 1
-	  TNT1 A 0 A_GiveInventory("SamsaraHexenWraithvergeGhostTimer")
-	  TNT1 A 0 A_JumpIfInventory("SamsaraHexenWraithvergeGhostTimer",0,"Death")
-	  TNT1 A 0 A_SpawnItemEx("HolyMissilePuff2",0,0,-6,0,0,0,0,128)
-      TNT1 A 0 A_Weave(random(0,4),random(0,4),2,1)
-      TNT1 A 0 A_SeekerMissile(10,random(10,35),1)
-      SPIR A 1 A_Explode(3*random(1,8),16,0)
-      goto SpawnRestart1
-    Scream:
-      SPIR B 1 A_PlaySound("SpiritActive",2)
-      goto SpawnRestart7
-	SetNoclip:
-	  TNT1 A 0 A_ChangeFlag("NOCLIP",1)
-      SPIR B 1 A_Jump(20,"Scream")
-	  goto SpawnRestart7
-    Death:
-      SPIR D 4 A_ScaleVelocity(0.25)
-      SPIR E 4 A_Scream
-      SPIR FGHI 4
-      stop
+    Alpha 0.5
+    Species "Player"
+    +BLOODSPLATTER
+    +FORCERADIUSDMG
+    +THRUSPECIES
+    States
+    {
+      Spawn:
+        SPIR A 2 Bright A_CHolySeek
+        goto Spawn2
+
+      Spawn1:
+        TNT1 A 0 A_ChangeFlag("PAINLESS",false)
+        TNT1 A 0 A_Explode(random(1,8),64,0)
+        TNT1 A 0 A_SpawnItemEx("HolyMissilePuff2",0,0,-6,0,0,0,0,SXF_CLIENTSIDE) //ThrustThing(angle*256/360,4,0,0)
+        SPIR A 2 Bright A_CHolySeek
+      Spawn2:
+        TNT1 A 0 A_ChangeFlag("PAINLESS",true)
+        TNT1 A 0 A_Explode(random(1,8),64,0)
+        TNT1 A 0 A_SpawnItemEx("HolyMissilePuff2",0,0,-6,0,0,0,0,SXF_CLIENTSIDE) //ThrustThing(angle*256/360,4,0,0)
+        SPIR A 2 Bright A_CHolySeek
+      Spawn3:
+        TNT1 A 0 A_Explode(random(1,8),64,0)
+        TNT1 A 0 A_SpawnItemEx("HolyMissilePuff2",0,0,-6,0,0,0,0,SXF_CLIENTSIDE) //ThrustThing(angle*256/360,4,0,0)
+        SPIR B 2 Bright A_CHolySeek
+      Spawn4:
+        TNT1 A 0 A_Explode(random(1,8),64,0)
+        TNT1 A 0 A_SpawnItemEx("HolyMissilePuff2",0,0,-6,0,0,0,0,SXF_CLIENTSIDE) //ThrustThing(angle*256/360,4,0,0)
+        SPIR B 2 Bright A_CHolyCheckScream
+        goto Spawn1
+
+      Death:
+        SPIR D 4 Bright
+        SPIR E 4 Bright A_Scream
+        SPIR FGHI 4 Bright
+        stop
     }
 }
 

@@ -29,6 +29,7 @@ Doom:
 * Fixed the shrinking animation not showing properly.
 - With improved weapon balance, the pistol now deals 8-16 damage in increments of 4 (decreased from 14-22 in increments of 2).
 ! With improved weapon balance, the shotgun now deals 8-16 damage in increments of 4 per pellet (changed from 7-21 in multiples of 7).
+! One of the tics for the super shotgun has been moved to before the attack is called.
 + With improved weapon balance, the first ten pellets from the super shotgun now deal 8-16 damage in increments of 4 (increased from 5-15 in multiples of 5).
 ! With improved weapon balance, the remaining ten pellets from the super shotgun now deal 8-16 damage in increments of 4 (changed from 7-21 in multiples of 7).
 - With improved weapon balance, the chaingun and minigun now deal 8-16 damage in increments of 4 (decreased from 12-18 in increments of 2).

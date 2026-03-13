@@ -306,6 +306,7 @@ actor FrostMissileMelee : FastProjectile
     Damage (random(90,115)) // Previously 90-115
     DamageType "HexenIce"
     +BLOODLESSIMPACT
+    +NOTIMEFREEZE
     States
     {
       Spawn:

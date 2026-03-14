@@ -313,8 +313,10 @@ ACTOR FSwordMissile2_Ally : FSwordMissile
 {
 	SPECIES "Player"
     +BLOODSPLATTER
+    +FORCERADIUSDMG
 	+THRUSPECIES
 	DamageType "C7MineBoom"
+    Decal "SwordLightning"
 	States
 	{
       Spawn:

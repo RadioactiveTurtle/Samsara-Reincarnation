@@ -623,6 +623,10 @@ Petton Everhail (Catacomb 3D):
 ! In Strife, the Rings are now distributed through inventory items.
 - The Rings' effects no longer carry over between levels in a hub, since Strife now handles giving them differently.
 
+Daniel Garner (Painkiller):
+
+* Fixed enemies with the flemoid monster base not spawning souls when killed.
+
 Prisoner 849 (Unreal):
 
 - Headshots no longer deal additional damage towards monsters that have 1000 or more health.

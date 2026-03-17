@@ -8033,7 +8033,7 @@ Actor SamsaraMonsterFlemoid
 			"####" "#" 0 A_ChangeFlag("NOBLOOD",true)
 			"####" "#" 0 A_StopSound(CHAN_BODY)
 			"####" "#" 0 A_PlaySound("Painkiller/Freezer/Freeze",CHAN_BODY)
-			"####" "#" 0 ACS_NamedExecuteAlways("Painkiller_Freeze2",0,1)
+			"####" "#" 0 ACS_NamedExecuteAlways("Painkiller_Freeze3",0,1)
 		PainkillerIceLoop:
 			"####" "#" 2
 			Loop
@@ -8415,7 +8415,7 @@ Actor SamsaraMonsterFlemoid
 		Death.PainkillerShuriken:
 		Death.PainkillerDemon:
 		Death.PainkillerStake:
-			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill2")
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill3")
 			TNT1 A -1 A_Jump(256,"Death")
 			Wait
 		Death.DeusExMelee:
@@ -17646,6 +17646,12 @@ Actor SamsaraDropItemKeenDie
 // Harmony
 // The Harmony enemies will need the Duke3D gib states
 // for their special blood color.
+
+// The Adventures of Square
+// Eyescreamer - SamsaraMonsterFlemoid
+// Elite Oozi Jerk - SamsaraMonsterFlemoid
+// The Jetpack Jerk will need the Robotic damagefactors.
+// The Destructinator will need the Robotic boss damagefactors.
 
 // Doom 64 CE
 // Acid Demon - SamsaraMonsterDemonicTotalGib

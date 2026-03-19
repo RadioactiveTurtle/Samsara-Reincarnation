@@ -102,4 +102,4 @@ actor QuadcannonVO_Samsara : SamsaraSlotThree_Square replaces QuadcannonVO { }
 actor PaintCannonVO_Samsara : SamsaraSlotFourSkulltag_Square replaces PaintCannonVO { }
 actor HellShellLauncherVO_Samsara : SamsaraSlotFive_Square replaces HellShellLauncherVO { }
 actor SceptreVO_Samsara : SamsaraSlotSix_Square replaces SceptreVO { }
-Actor SamsaraBioSuit_Square2 : BioSuit replaces EnviroSpawner { }
+Actor SamsaraBioSuit_Square2 : BioSuit replaces EnviroSpawner { Inventory.RespawnTics 175 +INVENTORY.ALWAYSRESPAWN }

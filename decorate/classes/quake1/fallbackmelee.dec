@@ -10,6 +10,10 @@ actor "Axe" : SamsaraQuakeWeapon
     +WIMPY_WEAPON
     States
     {
+      Spawn:
+        QAXE Z -1
+        stop
+	
       Ready:
         QAXE A 1 A_WeaponReady
         loop

@@ -121,22 +121,21 @@ actor WolfenFire
     Radius 12
     Height 8
     Speed 35 // Normal Doom plasma speed is 25
-    Damage (10*Random(1,4)) // Typical Plasma Rifle damage is 5-40
+    Damage (10*random(1,4)) // Typical Plasma Rifle damage is 5-40
     Projectile
     +RANDOMIZE
 	+NOEXTREMEDEATH
-    +BRIGHT
     DamageType "WolfenFlamethrower"
     SeeSound "wolfen/flamethrower"
     Obituary "$SAMSARA_WOLFEN_OB_SLOT6"
     States
     {
       Spawn:
-        WFLB AB 6 bright
+        WFLB AB 6 Bright Light("BJROCKETEXPSHIT_")
         loop
 
       Death:
-        WFLB CDE 6 bright
+        WFLB CDE 6 Bright Light("BJROCKETEXPSHIT_")
         stop
     }
 }

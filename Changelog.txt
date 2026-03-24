@@ -158,7 +158,7 @@ Hexen I:
 -Parias (Reincarnation)-
 
 ! Updated crusader's longbow pickup sprite to use blue fletchings on arrows.
-+ With improved weapon balance, the crusader's longbow's projectiles now deal 24-192 damage in multiples of 25 (increased from 21-168).
++ With improved weapon balance, the crusader's longbow's projectiles now deal 24-192 damage in multiples of 24 (increased from 21-168 in multiples of 21).
 + With improved weapon balance, the bishop's shortsword's strong melee attack now deals 13-39 damage in multiples of 13 per puff in PVE (increased from 10-30 in multiples of 10).
 + With improved weapon balance, the bishop's shortsword's strong projectiles now deal 10 damage in PVE (increased from 8).
 + In PVE, the serpent staff's projectiles now deal 6-30 damage in multiples of 6 (vanilla) or 5-35 damage in multiples of 5 (improved) (increased from 5-25).

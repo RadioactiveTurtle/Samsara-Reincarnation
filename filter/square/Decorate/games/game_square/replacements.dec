@@ -25,10 +25,12 @@ Actor SamsaraMegaPack_Square2 : MegaPack replaces SillySphereNotItem { }
 
 Actor BadCircoolAid_Samsara replaces BadCircoolAid
 {
+    +NOTIMEFREEZE // allow the scripts to process during time freeze
+    +THRUACTORS // not a pickup, but just in case
     States
     {
       Spawn:
-        TNT1 AA 0 NoDelay A_DropItem("HealPack1")
+        TNT1 AA 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SpawnItem", 1, 1, 0)
         stop
     }
 }

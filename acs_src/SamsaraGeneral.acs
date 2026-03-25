@@ -11832,6 +11832,22 @@ Script "Samsara_SpawnSlot" (int slot, int toss)
 	Thing_ChangeTid(newTid,0);
 }
 
+Script "Samsara_SpawnItem" (int item, int toss, int cancountitem)
+{
+	int newTid = UniqueTid();
+	str itemtospawn;
+    bool countitemeligible = false;
+	switch(item)
+	{
+		case 1: itemtospawn = "HealPack1"; break;
+	}
+	SpawnSpotFacingForced(itemtospawn,0,newTid);
+    if (cancountitem && countitemeligible) { GiveActorInventory(newTid, "SamsaraCountItemEnabler", 1); }
+	SetActorProperty(newTid,APROP_Dropped,GetActorProperty(0,APROP_Dropped));
+	if(toss) SetActorVelocity(newTid,random(-4.0,4.0),random(-4.0,4.0),0,0,0);
+	Thing_ChangeTid(newTid,0);
+}
+
 //======================================================================================================================
 //											Optional Skulltag pickups for slots
 //======================================================================================================================

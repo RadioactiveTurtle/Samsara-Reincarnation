@@ -303,10 +303,12 @@ Rise of the Triad:
 - Drunk missile ammo capacity is now 50 (without backpack)/100 (with backpack) (decreased from 60 (without backpack)/120 (with backpack)).
 + The drunk missile launcher now deals 32 splash damage (increased from 30).
 + The drunk missile launcher now deals its splash damage across 48 map units (increased from 40).
-- The flamewall's flames now deal 0.5x damage to bosses.
-- The Excalibat and dark staff no longer regenerate their ammo.
+! The split missile have been moved from a unique pickup to a slot 6s weapon.
 - Split missile ammo capacity is now 25 (without backpack)/50 (with backpack) (decreased from 100 (without backpack)/200 (with backpack)).
 - The split missile now gives 5 split missiles on pickup (decreased from 10).
+- The flamewall's flames now deal 0.5x damage to bosses.
+! The Excalibat is now selected through weapon slot 8 instead of weapon slot 0.
+- The Excalibat and dark staff no longer regenerate their ammo.
 * Fixed the dark staff secondary being able to refire when picking up God Mode.
 ! The dark staff is now removed from the player's inventory when depleted.
 - Ammo expansion packs now give 3 bazooka missiles (decreased from 5).

@@ -35,7 +35,7 @@ actor SamsaraUniquePickup2 : SamsaraUniquePickup1
       Dukeguy:          DKSR R 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       BeachDukeguy:     DKSR W 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Marathon:         AWPN B 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
-      Rott:             PSPL A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      Rott:             PKE_ A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Caleb:            AKIM B 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HalfLife:         HWU0 A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HalfLifeLoadout1: OWU0 A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop

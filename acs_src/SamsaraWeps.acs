@@ -48,7 +48,7 @@ str ClassUniques[CLASSCOUNT][CHOICECOUNT_U] =
     {"DukePortJetpack",               "DukeJetpackFuel",    "Shrinker",                     "ShrinkerAmmo",     "Expander",                "ExpanderAmmo"},
     {"Alien Weapon",                  "UnknownAmmo",        " Alien Weapon ",               "UnknownAmmo2",     "",                        ""},
     {"Laser Cannon",                  "Cell",               "",                             "",                 "",                        ""},
-    {"Excalibat",                     "BMissiles",          "Split Missile",                "SMissiles",        "Dark Staff",              "DSEnergy"},
+    {"Excalibat",                     "BMissiles",          "Dark Staff",                   "DSEnergy",         "",                        ""},
     {"BlakeRefill",                   "",                   "",                             "",                 "",                        ""},
     {"VoodooDoll",                    "Voodoo",             "SamsaraBloodGunsAkimboPickup", "",                 "Spraycan",                "SprayCanAmmo"},
     {"Upgrades",                      "",                   "",                             "",                 "",                        ""},
@@ -86,7 +86,7 @@ int UniqueMaxes[CLASSCOUNT][CHOICECOUNT_U] =
     {1,  100, 1,  0,  1, 0},
     {1,  50,  1,  50, 0, 0},
     {1,  0,   0,  0,  0, 0},
-    {1,  0,   1,  0,  1, 0},
+    {1,  0,   1,  0,  0, 0},
     {3,  0,   0,  0,  0, 0},
     {1,  100, 0,  0,  1, 0},
     {0,  0,   0,  0,  0, 0},
@@ -124,7 +124,7 @@ int UniqueCounts[CLASSCOUNT][CHOICECOUNT_U] =
     {-1, -1, -1, 0,  -1, 0},
     {-1, -1, -1, -1, -1, -1},
     {-1, 0,  -1, -1, -1, -1},
-    {-1, 0,  -1, 0,  -1, 0},
+    {-1, 0,  -1, 0,  -1, -1},
     {-1, 0,  -1, -1, -1, -1},
     {-1, -1, -1, -1, -1, 0},
     {-1, -1, -1, -1, -1, -1},
@@ -277,6 +277,7 @@ str ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
         {"FlameWall",      "FWMissiles",   "", "",           ""},
         {"RoTTM60",        "",             "", "ForceCheck", ""},
         {"Doomstick",      "DMMissiles",   "", "",           ""},
+        {"Split Missile",  "SMissiles",    "", "",           ""},
     },
     { // Blake Stone
         {"Auto Charge Pistol",        "",           "", "", ""},
@@ -734,19 +735,19 @@ str ClassHotKeyWeapon[CLASSCOUNT][MAXMODES][SLOTCOUNT + UNIQUECOUNT][LOADOUTCOUN
     }},
     {
         {
-            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {"Split Missile"}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"},
+            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {""}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
         },
         {
-            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {"Split Missile"}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"},
+            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {""}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
         },
         {
-            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {"Split Missile"}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"},
+            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {""}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
         },
         {
-            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {"Split Missile"}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"},
+            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {""}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
         },
         {
-            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {"Split Missile"}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"},
+            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {""}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
         },
     },
     {

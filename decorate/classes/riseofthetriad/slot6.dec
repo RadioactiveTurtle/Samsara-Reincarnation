@@ -3,6 +3,7 @@ actor DrunkMissiles : SamsaraROTTWeapon
     Inventory.PickupMessage "You recovered a Drunk Missile!"
     Weapon.UpSound "gen/wepswitch"
     Weapon.SlotNumber 6
+    Weapon.SlotPriority 0
     Weapon.SelectionOrder 900
     Weapon.AmmoType "DMissiles"
     Weapon.AmmoGive 10

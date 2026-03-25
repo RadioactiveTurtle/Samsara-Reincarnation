@@ -8,7 +8,7 @@ actor Excalibat : SamsaraROTTWeapon
     Inventory.PickupMessage "You picked up the Excalibat."
     Inventory.PickupSound "excalibat/pu"
     Weapon.UpSound "gen/wepswitch"
-    Weapon.SlotNumber 0
+    Weapon.SlotNumber 8
     Weapon.SelectionOrder 1000
     Weapon.Kickback 175
     Weapon.AmmoType "BMissiles"

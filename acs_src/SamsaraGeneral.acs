@@ -2510,9 +2510,9 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory(" Firebomb ", INTMAX);
 			TakeInventory("Doomstick", INTMAX);
 			TakeInventory("DrunkMissiles", INTMAX);
+			TakeInventory("Split Missile", INTMAX);
 			TakeInventory("FlameWall", INTMAX);
 			TakeInventory("Excalibat", INTMAX);
-			TakeInventory("Split Missile", INTMAX);
 			TakeInventory("Dark Staff", INTMAX);
             SetInventory("SamsaraROTTDarkStaffSecondaryFiredCount", 0);
 			TakeInventory("God Hand", INTMAX);

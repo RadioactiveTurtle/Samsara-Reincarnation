@@ -735,19 +735,19 @@ str ClassHotKeyWeapon[CLASSCOUNT][MAXMODES][SLOTCOUNT + UNIQUECOUNT][LOADOUTCOUN
     }},
     {
         {
-            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {""}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
+            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {"Dark Staff"}, {""}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
         },
         {
-            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {""}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
+            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {"Dark Staff"}, {""}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
         },
         {
-            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {""}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
+            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {"Dark Staff"}, {""}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
         },
         {
-            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {""}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
+            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {"Dark Staff"}, {""}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
         },
         {
-            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {""}, {"Dark Staff"}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
+            {"RottKnife"}, {"Double Pistols"}, {"RPistol"}, {"MP40"}, {"HeatSeeker"}, {"Bazooka"}, {" Firebomb "}, {"DrunkMissiles"}, {"FlameWall"}, {"Excalibat"}, {"Dark Staff"}, {""}, {"RoTTM60"}, {"Doomstick"}, {"Split Missile"},
         },
     },
     {

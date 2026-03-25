@@ -157,7 +157,7 @@ SCRIPT "RoTT452" (void) CLIENTSIDE //452
     				HudMessage(s:"A"; HUDMSG_NOTWITHFULLMAP, rottstartid+11372, 0, 55.1,   5.1, 0.1);
 			    }
 
-    			if (CheckInventory("GotWeapon6"))
+    			if (CheckInventory("GotWeapon6") || CheckInventory("Split Missile"))
 	    		{
 		    		SetHudSize(320, 240, 1);
 			    	SetFont("STYSNUM6");
@@ -308,6 +308,13 @@ SCRIPT "RoTT452" (void) CLIENTSIDE //452
 				SetHudSize(480, 360, 1);
 				SetFont("AMSMO0");
 				HudMessage(s:"A"; 0, rottstartid+11576, -1, 490.0  , 360.1, 0.1);
+
+                if (CheckInventory("ExpandedHud") && GetCVar("screenblocks") == 11)
+                {
+                    SetHudSize(320, 240, 1);
+                    SetFont("STY3NUM6");
+                    HudMessage(s:"A"; HUDMSG_NOTWITHFULLMAP, rottstartid+11371, 0, 65.1 ,  5.1, 0.1);
+                }
 			}
 
 			if (CheckWeapon("FlameWall"))

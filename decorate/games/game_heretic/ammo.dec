@@ -1,15 +1,25 @@
-actor HereticAmmoDump : RandomSpawner replaces MaceAmmo
+actor HereticAmmoDump replaces MaceAmmo
 {
-	DropItem "HereticAmmo1Small"
-	DropItem "HereticAmmo2Small"
-	DropItem "HereticAmmo3Small"
-	DropItem "HereticAmmo4Small"
+    States
+    {
+      Spawn:
+        TNT1 A 0 NoDelay A_DropItem("HereticAmmo1Small")
+        TNT1 A 0 A_DropItem("HereticAmmo2Small")
+        TNT1 A 0 A_DropItem("HereticAmmo3Small")
+        TNT1 A 0 A_DropItem("HereticAmmo4Small")
+        stop
+    }
 }
 
-actor HereticAmmoDump2 : RandomSpawner replaces MaceHefty
+actor HereticAmmoDump2 replaces MaceHefty
 {
-	DropItem "HereticAmmo1Big"
-	DropItem "HereticAmmo2Big"
-	DropItem "HereticAmmo3Big"
-	DropItem "HereticAmmo4Big"
+    States
+    {
+      Spawn:
+        TNT1 A 0 NoDelay A_DropItem("HereticAmmo1Big")
+        TNT1 A 0 A_DropItem("HereticAmmo2Big")
+        TNT1 A 0 A_DropItem("HereticAmmo3Big")
+        TNT1 A 0 A_DropItem("HereticAmmo4Big")
+        stop
+    }
 }

@@ -687,6 +687,7 @@ Doom:
 Heretic:
 
 * Fixed the undead warriors' projectiles not leaving decals.
++ Firemace ammo pickups now spawn all ammo types instead of one random ammo type, as they did in very early Samsara versions.
 
 Strife: Quest for the Sigil:
 

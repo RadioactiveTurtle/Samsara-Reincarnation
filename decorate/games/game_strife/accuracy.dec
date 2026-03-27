@@ -634,7 +634,7 @@ actor HalfLifeStrifeUnique1 : Trigger
       PickupLoadout1First:
         TNT1 A 0 A_GiveInventory("Mk 2 Grenades")
         TNT1 A 0 A_GiveInventory("RocketAmmo",3)
-        stop
+        goto PickupFirstFinish
 
       PickupLoadout1Fill:
         TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 2)

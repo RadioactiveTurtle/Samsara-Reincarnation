@@ -71,7 +71,7 @@ str AccuracyUniques[CLASSCOUNT][UNIQUECOUNT] =
     {"DukeStrifeUnique1",             "DukeStrifeUnique2",           "DukeStrifeUnique3"},
     {"MarathonStrifeUnique1",         "MarathonStrifeUnique2",       ""},
     {"RangerStrifeUnique",            "",                            ""},
-    {"ROTTStrifeUnique1",             "ROTTStrifeUnique2",           "ROTTStrifeUnique3"},
+    {"ROTTStrifeUnique1",             "ROTTStrifeUnique2",           ""},
     {"BlakeRefill",                   "",                            ""},
     {"VoodooDoll",                    "CalebStrifeUnique2",          "CalebStrifeUnique3"},
     {"StrifeguyStrifeUnique",         "",                            ""},
@@ -724,12 +724,26 @@ str AccuracyMessages[CLASSCOUNT][MAXMODES][UNIQUECOUNT][LOADOUTCOUNT][MSGCOUNT] 
                 "",
             }},
             {{
-                "You snagged a Split Missile!",
-                "Whoa, look, it just split into two! And so will you.",
-                "Two at a time, ladies, I got one for you both.",
-                "Magical splitting of rockets... Doomguy's all jelly over this!",
+                "You wield the Dark Staff!",
                 "",
                 "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            }},
+        },
+        {
+            {{
+                "You picked up the Excalibat.",
+                "Baseball time!",
+                "Here, catch!",
+                "I'm off to a field run.",
+                "Whoa, this bat is as old as El Oscuro!",
+                "They'll have a heckuva year if their chest holds out!",
                 "",
                 "",
                 "",
@@ -762,18 +776,6 @@ str AccuracyMessages[CLASSCOUNT][MAXMODES][UNIQUECOUNT][LOADOUTCOUNT][MSGCOUNT] 
                 "",
             }},
             {{
-                "You snagged a Split Missile!",
-                "Whoa, look, it just split into two! And so will you.",
-                "Two at a time, ladies, I got one for you both.",
-                "Magical splitting of rockets... Doomguy's all jelly over this!",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-            }},
-            {{
                 "You wield the Dark Staff!",
                 "",
                 "",
@@ -800,18 +802,6 @@ str AccuracyMessages[CLASSCOUNT][MAXMODES][UNIQUECOUNT][LOADOUTCOUNT][MSGCOUNT] 
                 "",
             }},
             {{
-                "You snagged a Split Missile!",
-                "Whoa, look, it just split into two! And so will you.",
-                "Two at a time, ladies, I got one for you both.",
-                "Magical splitting of rockets... Doomguy's all jelly over this!",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-            }},
-            {{
                 "You wield the Dark Staff!",
                 "",
                 "",
@@ -832,56 +822,6 @@ str AccuracyMessages[CLASSCOUNT][MAXMODES][UNIQUECOUNT][LOADOUTCOUNT][MSGCOUNT] 
                 "I'm off to a field run.",
                 "Whoa, this bat is as old as El Oscuro!",
                 "They'll have a heckuva year if their chest holds out!",
-                "",
-                "",
-                "",
-                "",
-            }},
-            {{
-                "You snagged a Split Missile!",
-                "Whoa, look, it just split into two! And so will you.",
-                "Two at a time, ladies, I got one for you both.",
-                "Magical splitting of rockets... Doomguy's all jelly over this!",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-            }},
-            {{
-                "You wield the Dark Staff!",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-            }},
-        },
-        {
-            {{
-                "You picked up the Excalibat.",
-                "Baseball time!",
-                "Here, catch!",
-                "I'm off to a field run.",
-                "Whoa, this bat is as old as El Oscuro!",
-                "They'll have a heckuva year if their chest holds out!",
-                "",
-                "",
-                "",
-                "",
-            }},
-            {{
-                "You snagged a Split Missile!",
-                "Whoa, look, it just split into two! And so will you.",
-                "Two at a time, ladies, I got one for you both.",
-                "Magical splitting of rockets... Doomguy's all jelly over this!",
-                "",
-                "",
                 "",
                 "",
                 "",
@@ -2317,44 +2257,39 @@ script "SamsaraStrifeAccuracyAmmoFiller" (int ammotype)
         break;
 
       case 8:
-        ammoname = "SMissiles";
-        ammoamount = ((maxCell * hasBackPack) + increasingCell) / 3;
-        break;
-
-      case 9:
         ammoname = "DSEnergy";
         ammoamount = (maxCell + increasingCell) / 30;
         break;
 
       // Caleb
-      case 10:
+      case 9:
         ammoname = "SprayCanAmmo";
         ammoamount = ((maxCell * hasBackPack) / 48) * 48;
         break;
 
       // B.J. Blazkowicz (Return To Castle Wolfenstein)
-      case 11:
+      case 10:
         ammoname = "RTCW_AlliedAmmo1";
         ammoamount = (maxClip * hasBackPack) / 2;
         break;
 
-      case 12:
+      case 11:
         ammoname = "RTCW_AlliedAmmo2";
         ammoamount = (maxShell * hasBackPack) / 2;
         break;
 
-      case 13:
+      case 12:
         ammoname = "RTCW_AlliedAmmo3";
         ammoamount = (maxRocket * hasBackPack) / 2;
         break;
 
       // Sarge
-      case 14:
+      case 13:
         ammoname = "Q3ChaingunAmmo";
         ammoamount = (maxClip * hasBackPack / 2) * 3;
         break;
 
-      case 15:
+      case 14:
         ammoname = "Q3GrenadeLauncherAmmo";
         ammoamount = (maxRocket * hasBackPack / 2) * 3;
         break;

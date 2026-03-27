@@ -458,27 +458,12 @@ actor ROTTStrifeUnique2 : Trigger
     States
     {
       Pickup:
-        TNT1 A 0 A_JumpIfInventory("Split Missile",1,"PickupFill")
-        TNT1 A 0 A_GiveInventory("Split Missile")
-        stop
-
-      PickupFill:
-        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 8)
-        stop
-    }
-}
-
-actor ROTTStrifeUnique3 : Trigger
-{
-    States
-    {
-      Pickup:
         TNT1 A 0 A_JumpIfInventory("Dark Staff",1,"PickupFill")
         TNT1 A 0 A_GiveInventory("Dark Staff")
         stop
 
       PickupFill:
-        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 9)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 8)
         stop
     }
 }
@@ -508,7 +493,7 @@ actor CalebStrifeUnique3 : Trigger
         stop
 
       PickupFill:
-        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 10)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 9)
         stop
     }
 }
@@ -1293,7 +1278,7 @@ actor RTCWStrifeUnique2 : Trigger
         stop
 
       PickupFill:
-        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 12)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 11)
         stop
     }
 }
@@ -1308,9 +1293,9 @@ actor RTCWStrifeUnique3 : Trigger
         stop
 
       PickupFill:
-        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 13)
-        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 11)
         TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 12)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 10)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 11)
         stop
     }
 }
@@ -1325,7 +1310,7 @@ actor Quake3StrifeUnique1 : Trigger
         stop
 
       PickupFill:
-        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 14)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 13)
         stop
     }
 }
@@ -1355,7 +1340,7 @@ actor Quake3StrifeUnique3 : Trigger
         stop
 
       PickupFill:
-        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 15)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraStrifeAccuracyAmmoFiller", 14)
         stop
     }
 }

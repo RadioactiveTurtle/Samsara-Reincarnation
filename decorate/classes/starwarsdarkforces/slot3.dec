@@ -232,7 +232,7 @@ actor fusion_shot
     Scale 1.2
     Obituary "%k cut down %o with the Jeron Fusion Cutter."
     +DONTREFLECT
-    //+FOILINVUL //???
+    +FOILINVUL
     +HITTRACER
     +NOEXTREMEDEATH
     +PIERCEARMOR
@@ -257,7 +257,6 @@ actor fusion_shot
 actor fusion_shot2 : fusion_shot
 {
     Species "Player"
-    +FOILINVUL
     +THRUSPECIES
 }
 

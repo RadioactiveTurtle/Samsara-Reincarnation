@@ -744,6 +744,7 @@ The Adventures of Square:
 * Fixed random characters that can be interacted with not having their USESPECIAL flag cleared on death.
 ! The ally cell phone is no longer granted with keyboard cheats if allies are disabled.
 ! The Christmas snow effect now spawns at 2048 map units around players and the snow density is halved.
+! New pickup messages have been added for the megasphere when playing with the Marathon and None armor modes.
 * Fixed *gasp not playing when acquiring invulnerability underwater while out of oxygen.
 ! The map revealer item now has a new pickup sound.
 

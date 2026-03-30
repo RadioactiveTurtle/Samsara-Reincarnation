@@ -92,8 +92,12 @@ actor StrifeMaulerPuff : MaulerPuff replaces MaulerPuff
     States
     {
       Spawn:
-        MPUF AB 5
-        SPW1 ABCDE 4
+        MPUF AB 5 Light("MPUFFG")
+        SPW1 A 4 Light("MPUFF1")
+        SPW1 B 4 Light("MPUFF2")
+        SPW1 C 4 Light("MPUFF3")
+        SPW1 D 4 Light("MPUFF4")
+        SPW1 E 4 Light("MPUFF5")
         stop
     }
 }
@@ -369,15 +373,18 @@ actor StrifeMaulerTorpedo : MaulerTorpedo replaces MaulerTorpedo
     States
     {
       Spawn:
-        MTRP ABCD 4 Bright
+        MTRP ABCD 4 Bright Light("MTORPEDO")
         loop
 
       Death:
-        MTHT AB 8 Bright
+        MTHT A 8 Bright Light("MTORP_X1")
+        MTHT B 8 Bright Light("MTORP_X2")
       DeathWave:
         TNT1 AA 0 A_MaulerTorpedoWave
       DeathFinish:
-        MTHT CDE 8 Bright
+        MTHT C 8 Bright Light("MTORP_X3")
+        MTHT D 8 Bright Light("MTORP_X4")
+        MTHT E 8 Bright Light("MTORP_X5")
         stop
     }
 }
@@ -389,7 +396,8 @@ actor StrifeMaulerTorpedo2 : StrifeMaulerTorpedo
     States
     {
       Death:
-        MTHT AB 8 Bright
+        MTHT A 8 Bright Light("MTORP_X1")
+        MTHT B 8 Bright Light("MTORP_X2")
         TNT1 A 0 A_JumpIf(ceilingz < z + 13, 1)
         goto DeathWave
         TNT1 A 0 A_GiveInventory("SamsaraStrifeMaulerTorpedoHitCeiling")
@@ -419,9 +427,10 @@ actor StrifeTorpedoWave : MaulerTorpedoWave replaces MaulerTorpedoWave
     States
     {
       Spawn:
-        MTWV AB 9 Bright
+        MTWV A 9 Bright Light("MWAVE_X1")
+        MTWV B 9 Bright Light("MWAVE_X2")
       Death:
-        MTWV C 9 Bright
+        MTWV C 9 Bright Light("MWAVE_X3")
         stop
     }
 }

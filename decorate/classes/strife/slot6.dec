@@ -142,6 +142,22 @@ actor StrifeFlameMissile : FlameMissile
     -BLOODSPLATTER
     -STRIFEDAMAGE
     +WINDTHRUST
+    States
+    {
+      Spawn:
+        FRBL AB 3 Bright Light("FLMMISSILE")
+        FRBL C 3 Bright Light("FLMMISSILE") A_Countdown
+        loop
+
+      Death:
+        FRBL D 5 Bright Light("FLMMSL_X1") A_FlameDie
+        FRBL E 5 Bright Light("FLMMSL_X2")
+        FRBL F 5 Bright Light("FLMMSL_X3")
+        FRBL G 5 Bright Light("FLMMSL_X4")
+        FRBL H 5 Bright Light("FLMMSL_X5")
+        FRBL I 5 Bright Light("FLMMSL_X6")
+        stop
+    }
 }
 
 actor StrifeFlameMissile20 : StrifeFlameMissile { Speed 26 }

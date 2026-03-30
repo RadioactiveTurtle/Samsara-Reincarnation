@@ -73,7 +73,6 @@ actor DisintEffectRoundHuge : DisintEffectRound
 
 ACTOR StrifeTeleportFog
 {
-	+BRIGHT
 	+NOBLOCKMAP
 	+NOTELEPORT
 	+NOGRAVITY
@@ -81,10 +80,18 @@ ACTOR StrifeTeleportFog
 	States
 	{
 	Spawn:
-	 STFG A 0
-	 STFG A 6 A_PlaySound("strife/beaconteleport", CHAN_5)
-	 STFG BCDEFEDCB 6
-	 Stop
+	 STFG A 0 Bright Light("STRIFEBEACONFOG1")
+	 STFG A 6 Bright Light("STRIFEBEACONFOG1") A_PlaySound("strife/beaconteleport",CHAN_5)
+	 STFG B 6 Bright Light("STRIFEBEACONFOG2")
+	 STFG C 6 Bright Light("STRIFEBEACONFOG3")
+	 STFG D 6 Bright Light("STRIFEBEACONFOG4")
+	 STFG E 6 Bright Light("STRIFEBEACONFOG5")
+	 STFG F 6 Bright Light("STRIFEBEACONFOG6")
+	 STFG E 6 Bright Light("STRIFEBEACONFOG5")
+	 STFG D 6 Bright Light("STRIFEBEACONFOG4")
+	 STFG C 6 Bright Light("STRIFEBEACONFOG3")
+	 STFG B 6 Bright Light("STRIFEBEACONFOG2")
+	 stop
   }
 }
 

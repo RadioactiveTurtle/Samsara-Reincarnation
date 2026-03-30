@@ -180,10 +180,17 @@ actor StrifeElectricBolt : ElectricBolt
         loop
 
       Death:
-        ZAP1 A 3 Bright A_AlertMonsters
-        ZAP1 BCDEFE 3 Bright
-        ZAP1 DCB 2 Bright
-        ZAP1 A 1 Bright
+        ZAP1 A 3 Bright Light("ARROWZAP1") A_AlertMonsters
+        ZAP1 B 3 Bright Light("ARROWZAP2")
+        ZAP1 C 3 Bright Light("ARROWZAP3")
+        ZAP1 D 3 Bright Light("ARROWZAP4")
+        ZAP1 E 3 Bright Light("ARROWZAP5")
+        ZAP1 F 3 Bright Light("ARROWZAP6")
+        ZAP1 E 3 Bright Light("ARROWZAP5")
+        ZAP1 D 2 Bright Light("ARROWZAP4")
+        ZAP1 C 2 Bright Light("ARROWZAP3")
+        ZAP1 B 2 Bright Light("ARROWZAP2")
+        ZAP1 A 1 Bright Light("ARROWZAP1")
         stop
     }
 }

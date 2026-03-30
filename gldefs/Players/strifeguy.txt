@@ -87,70 +87,6 @@ flickerlight SPUFF11
 	chance 0.8
 }
 
-object StrifeBulletPuff
-{
-	frame SPFFA { light SPUFF1 }
-	frame SPFFB { light SPUFF2 }
-	frame SPFFC { light SPUFF3 }
-
-	frame SPW3A { light SPUFF4 }
-	frame SPW3B { light SPUFF5 }
-	frame SPW3C { light SPUFF6 }
-	frame SPW3D { light SPUFF7 }
-	frame SPW3E { light SPUFF8 }
-	frame SPW3F { light SPUFF9 }
-	frame SPW3G { light SPUFF10 }
-	frame SPW3H { light SPUFF11 }
-}
-
-object StrifeBulletPuff2
-{
-	frame SPFFA { light SPUFF1 }
-	frame SPFFB { light SPUFF2 }
-	frame SPFFC { light SPUFF3 }
-
-	frame SPW3A { light SPUFF4 }
-	frame SPW3B { light SPUFF5 }
-	frame SPW3C { light SPUFF6 }
-	frame SPW3D { light SPUFF7 }
-	frame SPW3E { light SPUFF8 }
-	frame SPW3F { light SPUFF9 }
-	frame SPW3G { light SPUFF10 }
-	frame SPW3H { light SPUFF11 }
-}
-
-object StrifeBulletPuffCoop
-{
-	frame SPFFA { light SPUFF1 }
-	frame SPFFB { light SPUFF2 }
-	frame SPFFC { light SPUFF3 }
-
-	frame SPW3A { light SPUFF4 }
-	frame SPW3B { light SPUFF5 }
-	frame SPW3C { light SPUFF6 }
-	frame SPW3D { light SPUFF7 }
-	frame SPW3E { light SPUFF8 }
-	frame SPW3F { light SPUFF9 }
-	frame SPW3G { light SPUFF10 }
-	frame SPW3H { light SPUFF11 }
-}
-
-object StrifeBulletPuff2Coop
-{
-	frame SPFFA { light SPUFF1 }
-	frame SPFFB { light SPUFF2 }
-	frame SPFFC { light SPUFF3 }
-
-	frame SPW3A { light SPUFF4 }
-	frame SPW3B { light SPUFF5 }
-	frame SPW3C { light SPUFF6 }
-	frame SPW3D { light SPUFF7 }
-	frame SPW3E { light SPUFF8 }
-	frame SPW3F { light SPUFF9 }
-	frame SPW3G { light SPUFF10 }
-	frame SPW3H { light SPUFF11 }
-}
-
 flickerlight SSPARK1
 {
 	color 0.5 0.5 1.0
@@ -189,42 +125,6 @@ flickerlight SSPARK5
 	size 4
 	secondarysize 6
 	chance 0.8
-}
-
-object PunchDaggerPuff
-{
-	frame SPW3A { light SPUFF4 }
-	frame SPW3B { light SPUFF5 }
-	frame SPW3C { light SPUFF6 }
-	frame SPW3D { light SPUFF7 }
-	frame SPW3E { light SPUFF8 }
-	frame SPW3F { light SPUFF9 }
-	frame SPW3G { light SPUFF10 }
-	frame SPW3H { light SPUFF11 }
-
-	frame SPW2A { light SSPARK1 }
-	frame SPW2B { light SSPARK2 }
-	frame SPW2C { light SSPARK3 }
-	frame SPW2D { light SSPARK4 }
-	frame SPW2E { light SSPARK5 }
-}
-
-object PunchDaggerPuffCoop
-{
-	frame SPW3A { light SPUFF4 }
-	frame SPW3B { light SPUFF5 }
-	frame SPW3C { light SPUFF6 }
-	frame SPW3D { light SPUFF7 }
-	frame SPW3E { light SPUFF8 }
-	frame SPW3F { light SPUFF9 }
-	frame SPW3G { light SPUFF10 }
-	frame SPW3H { light SPUFF11 }
-
-	frame SPW2A { light SSPARK1 }
-	frame SPW2B { light SSPARK2 }
-	frame SPW2C { light SSPARK3 }
-	frame SPW2D { light SSPARK4 }
-	frame SPW2E { light SSPARK5 }
 }
 
 // Arrow
@@ -274,26 +174,6 @@ flickerlight ARROWZAP6
 	size 40
 	secondarysize 42
 	chance 0.4
-}
-
-object StrifeElectricBolt
-{
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeElectricBolt2
-{
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
 }
 
 // Missile
@@ -360,32 +240,6 @@ flickerlight MISSILE_X7
 	chance 0.3
 }
 
-object StrifeMiniMissile
-{
-	frame MICRA { light MISSILE }
-
-	frame SMISA { light MISSILE_X1 }
-	frame SMISB { light MISSILE_X2 }
-	frame SMISC { light MISSILE_X3 }
-	frame SMISD { light MISSILE_X4 }
-	frame SMISE { light MISSILE_X5 }
-	frame SMISF { light MISSILE_X6 }
-	frame SMISG { light MISSILE_X7 }
-}
-
-object StrifeMiniMissile2
-{
-	frame MICRA { light MISSILE }
-
-	frame SMISA { light MISSILE_X1 }
-	frame SMISB { light MISSILE_X2 }
-	frame SMISC { light MISSILE_X3 }
-	frame SMISD { light MISSILE_X4 }
-	frame SMISE { light MISSILE_X5 }
-	frame SMISF { light MISSILE_X6 }
-	frame SMISG { light MISSILE_X7 }
-}
-
 // Flame
 pointlight FLMMISSILE
 {
@@ -421,174 +275,6 @@ pointlight FLMMSL_X5
 {
 	color 0.2 0.14 0.0
 	size 16
-}
-
-object StrifeFlameMissile
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissile20
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissile40
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissile60
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissile80
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissile100
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissileCoop
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissileCoop20
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissileCoop40
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissileCoop60
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissileCoop80
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
-}
-
-object StrifeFlameMissileCoop100
-{
-	frame FRBLA { light FLMMISSILE }
-	frame FRBLB { light FLMMISSILE }
-	frame FRBLC { light FLMMISSILE }
-
-	frame FRBLD { light FLMMSL_X1 }
-	frame FRBLE { light FLMMSL_X2 }
-	frame FRBLF { light FLMMSL_X3 }
-	frame FRBLG { light FLMMSL_X4 }
-	frame FRBLH { light FLMMSL_X5 }
-	frame FRBLI { light FLMMSL_X6 }
 }
 
 // Mauler
@@ -640,28 +326,6 @@ flickerlight MPUFF5
 	chance 0.8
 }
 
-object StrifeMaulerPuff
-{
-	frame MPUFA { light MPUFFG }
-	frame MPUFB { light MPUFFG }
-	frame SPW1A { light MPUFF1 }
-	frame SPW1B { light MPUFF2 }
-	frame SPW1C { light MPUFF3 }
-	frame SPW1D { light MPUFF4 }
-	frame SPW1E { light MPUFF5 }
-}
-
-object StrifeMaulerPuffCoop
-{
-	frame MPUFA { light MPUFFG }
-	frame MPUFB { light MPUFFG }
-	frame SPW1A { light MPUFF1 }
-	frame SPW1B { light MPUFF2 }
-	frame SPW1C { light MPUFF3 }
-	frame SPW1D { light MPUFF4 }
-	frame SPW1E { light MPUFF5 }
-}
-
 pointlight MTORPEDO
 {
 	color 0.0 1.0 0.0
@@ -708,34 +372,6 @@ flickerlight MTORP_X5
 	chance 0.3
 }
 
-object StrifeMaulerTorpedo
-{
-	frame MTRPA { light MTORPEDO }
-	frame MTRPB { light MTORPEDO }
-	frame MTRPC { light MTORPEDO }
-	frame MTRPD { light MTORPEDO }
-
-	frame MTHTA { light MTORP_X1 }
-	frame MTHTB { light MTORP_X2 }
-	frame MTHTC { light MTORP_X3 }
-	frame MTHTD { light MTORP_X4 }
-	frame MTHTE { light MTORP_X5 }
-}
-
-object StrifeMaulerTorpedo2
-{
-	frame MTRPA { light MTORPEDO }
-	frame MTRPB { light MTORPEDO }
-	frame MTRPC { light MTORPEDO }
-	frame MTRPD { light MTORPEDO }
-
-	frame MTHTA { light MTORP_X1 }
-	frame MTHTB { light MTORP_X2 }
-	frame MTHTC { light MTORP_X3 }
-	frame MTHTD { light MTORP_X4 }
-	frame MTHTE { light MTORP_X5 }
-}
-
 flickerlight MWAVE_X1
 {
 	color 0.0 1.0 0.0
@@ -758,20 +394,6 @@ flickerlight MWAVE_X3
 	size 24
 	secondarysize 32
 	chance 0.3
-}
-
-object StrifeTorpedoWave
-{
-	frame MTWVA { light MWAVE_X1 }
-	frame MTWVB { light MWAVE_X2 }
-	frame MTWVC { light MWAVE_X3 }
-}
-
-object StrifeTorpedoWave2
-{
-	frame MTWVA { light MWAVE_X1 }
-	frame MTWVB { light MWAVE_X2 }
-	frame MTWVC { light MWAVE_X3 }
 }
 
 // High Explosive Grenade
@@ -898,62 +520,6 @@ flickerlight HEGRENADE_X4
 	offset 0 64 0
 }
 
-object SamsaraStrifeBeaconBang
-{
-	frame SBNGB { light POWCRYS_X2 }
-	frame SBNGC { light POWCRYS_X3 }
-	frame SBNGD { light POWCRYS_X4 }
-	frame SBNGE { light POWCRYS_X5 }
-	frame SBNGF { light POWCRYS_X6 }
-	frame SBNGG { light POWCRYS_X7 }
-	frame SBNGH { light POWCRYS_X8 }
-	frame SBNGI { light POWCRYS_X9 }
-	frame SBNGJ { light POWCRYS_X10 }
-
-	frame SBNGK { light HEGRENADE_X1 }
-	frame SBNGL { light HEGRENADE_X2 }
-	frame SBNGM { light HEGRENADE_X3 }
-	frame SBNGN { light HEGRENADE_X4 }
-}
-
-object StrifeHEGrenade
-{
-	frame SBNGA { light POWCRYS_X1 }
-	frame SBNGB { light POWCRYS_X2 }
-	frame SBNGC { light POWCRYS_X3 }
-	frame SBNGD { light POWCRYS_X4 }
-	frame SBNGE { light POWCRYS_X5 }
-	frame SBNGF { light POWCRYS_X6 }
-	frame SBNGG { light POWCRYS_X7 }
-	frame SBNGH { light POWCRYS_X8 }
-	frame SBNGI { light POWCRYS_X9 }
-	frame SBNGJ { light POWCRYS_X10 }
-
-	frame SBNGK { light HEGRENADE_X1 }
-	frame SBNGL { light HEGRENADE_X2 }
-	frame SBNGM { light HEGRENADE_X3 }
-	frame SBNGN { light HEGRENADE_X4 }
-}
-
-object StrifeHEGrenade2
-{
-	frame SBNGA { light POWCRYS_X1 }
-	frame SBNGB { light POWCRYS_X2 }
-	frame SBNGC { light POWCRYS_X3 }
-	frame SBNGD { light POWCRYS_X4 }
-	frame SBNGE { light POWCRYS_X5 }
-	frame SBNGF { light POWCRYS_X6 }
-	frame SBNGG { light POWCRYS_X7 }
-	frame SBNGH { light POWCRYS_X8 }
-	frame SBNGI { light POWCRYS_X9 }
-	frame SBNGJ { light POWCRYS_X10 }
-
-	frame SBNGK { light HEGRENADE_X1 }
-	frame SBNGL { light HEGRENADE_X2 }
-	frame SBNGM { light HEGRENADE_X3 }
-	frame SBNGN { light HEGRENADE_X4 }
-}
-
 // Phosphorous Fire Grenade
 flickerlight PHFIRE_FX1
 {
@@ -1043,105 +609,6 @@ flickerlight PHFIRE_FX11
 	chance 0.3
 }
 
-object DMPhosFire
-{
-	frame SGFWA { light PHFIRE_FX1 }
-	frame SGFWB { light PHFIRE_FX2 }
-	frame SGFWC { light PHFIRE_FX3 }
-	frame SGFWD { light PHFIRE_FX4 }
-	frame SGFWE { light PHFIRE_FX5 }
-	frame SGFWF { light PHFIRE_FX6 }
-	frame SGFWG { light PHFIRE_FX7 }
-	frame SGFWH { light PHFIRE_FX8 }
-	frame SGFWI { light PHFIRE_FX9 }
-	frame SGFWJ { light PHFIRE_FX10 }
-	frame SGFWK { light PHFIRE_FX11 }
-}
-
-object DMPhosFire2
-{
-	frame SGFWA { light PHFIRE_FX1 }
-	frame SGFWB { light PHFIRE_FX2 }
-	frame SGFWC { light PHFIRE_FX3 }
-	frame SGFWD { light PHFIRE_FX4 }
-	frame SGFWE { light PHFIRE_FX5 }
-	frame SGFWF { light PHFIRE_FX6 }
-	frame SGFWG { light PHFIRE_FX7 }
-	frame SGFWH { light PHFIRE_FX8 }
-	frame SGFWI { light PHFIRE_FX9 }
-	frame SGFWJ { light PHFIRE_FX10 }
-	frame SGFWK { light PHFIRE_FX11 }
-}
-
-object SPPhosFire
-{
-	frame SGFWA { light PHFIRE_FX1 }
-	frame SGFWB { light PHFIRE_FX2 }
-	frame SGFWC { light PHFIRE_FX3 }
-	frame SGFWD { light PHFIRE_FX4 }
-	frame SGFWE { light PHFIRE_FX5 }
-	frame SGFWF { light PHFIRE_FX6 }
-	frame SGFWG { light PHFIRE_FX7 }
-	frame SGFWH { light PHFIRE_FX8 }
-	frame SGFWI { light PHFIRE_FX9 }
-	frame SGFWJ { light PHFIRE_FX10 }
-	frame SGFWK { light PHFIRE_FX11 }
-}
-
-object SPPhosFire2
-{
-	frame SGFWA { light PHFIRE_FX1 }
-	frame SGFWB { light PHFIRE_FX2 }
-	frame SGFWC { light PHFIRE_FX3 }
-	frame SGFWD { light PHFIRE_FX4 }
-	frame SGFWE { light PHFIRE_FX5 }
-	frame SGFWF { light PHFIRE_FX6 }
-	frame SGFWG { light PHFIRE_FX7 }
-	frame SGFWH { light PHFIRE_FX8 }
-	frame SGFWI { light PHFIRE_FX9 }
-	frame SGFWJ { light PHFIRE_FX10 }
-	frame SGFWK { light PHFIRE_FX11 }
-}
-
-object CoopPhosFire
-{
-	frame SGFWA { light PHFIRE_FX1 }
-	frame SGFWB { light PHFIRE_FX2 }
-	frame SGFWC { light PHFIRE_FX3 }
-	frame SGFWD { light PHFIRE_FX4 }
-	frame SGFWE { light PHFIRE_FX5 }
-	frame SGFWF { light PHFIRE_FX6 }
-	frame SGFWG { light PHFIRE_FX7 }
-	frame SGFWH { light PHFIRE_FX8 }
-	frame SGFWI { light PHFIRE_FX9 }
-	frame SGFWJ { light PHFIRE_FX10 }
-	frame SGFWK { light PHFIRE_FX11 }
-}
-
-object CoopPhosFire2
-{
-	frame SGFWA { light PHFIRE_FX1 }
-	frame SGFWB { light PHFIRE_FX2 }
-	frame SGFWC { light PHFIRE_FX3 }
-	frame SGFWD { light PHFIRE_FX4 }
-	frame SGFWE { light PHFIRE_FX5 }
-	frame SGFWF { light PHFIRE_FX6 }
-	frame SGFWG { light PHFIRE_FX7 }
-	frame SGFWH { light PHFIRE_FX8 }
-	frame SGFWI { light PHFIRE_FX9 }
-	frame SGFWJ { light PHFIRE_FX10 }
-	frame SGFWK { light PHFIRE_FX11 }
-}
-
-// Fire Droplet
-object StrifeFireDroplet
-{
-	frame SFOTA { light PHFIRE_FX8 }
-	frame SFOTB { light PHFIRE_FX9 }
-	frame SFOTC { light PHFIRE_FX10 }
-	frame SFOTD { light PHFIRE_FX11 }
-}
-
 // Lightning
 flickerlight ZAPBALL1
 {
@@ -1191,203 +658,6 @@ flickerlight LGNTAIL
 	chance 0.8
 }
 
-object StrifeSpectralLightningBall1
-{
-	frame ZOT3  { light ZAPBALL1 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningBall1_C
-{
-	frame ZOT3  { light ZAPBALL1 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningBigBall
-{
-	frame ZAP7 { light ZAPBALL2 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningBigBall_C
-{
-	frame ZAP7 { light ZAPBALL2 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningH1
-{
-	frame ZAP6  { light LIGHTNING1 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningH1_C
-{
-	frame ZAP6  { light LIGHTNING1 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningH3
-{
-	frame ZAP6 { light LIGHTNING1 }
-	
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningH3_C
-{
-	frame ZAP6 { light LIGHTNING1 }
-	
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningHTail
-{
-	frame ZAP6 { light LGNTAIL }
-}
-
-object StrifeSpectralLightningV1
-{
-	frame ZOT1  { light LIGHTNING1 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningV1_C
-{
-	frame ZOT1  { light LIGHTNING1 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningV2
-{
-	frame ZOT1  { light LIGHTNING1 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSpectralLightningV2_C
-{
-	frame ZOT1  { light LIGHTNING1 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSigilLightningSpot
-{
-	frame ZAP5 { light LIGHT_SPT }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSigilLightningSpot_C
-{
-	frame ZAP5 { light LIGHT_SPT }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSigilLightningBigV1
-{
-	frame ZOT2 { light LIGHTNING2 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
-object StrifeSigilLightningBigV1_C
-{
-	frame ZOT2 { light LIGHTNING2 }
-
-	frame ZAP1A { light ARROWZAP1 }
-	frame ZAP1B { light ARROWZAP2 }
-	frame ZAP1C { light ARROWZAP3 }
-	frame ZAP1D { light ARROWZAP4 }
-	frame ZAP1E { light ARROWZAP5 }
-	frame ZAP1F { light ARROWZAP6 }
-}
-
 // Strife Player
 flickerlight2 HUMNDATK
 {
@@ -1398,7 +668,7 @@ flickerlight2 HUMNDATK
 	offset 0 40 0
 }
 
-object StrifeGuyPlayer
+object StrifeguyPlayer
 {
 	frame SGUYF { light HUMNDATK }
 
@@ -1541,14 +811,4 @@ pointlight STRIFEBEACONFOG6
 	color 0.5 0.5 0.25
 	size 72
 	offset 0 40 0
-}
-
-object StrifeTeleportFog
-{
-	frame STFGA { light STRIFEBEACONFOG1 }
-	frame STFGB { light STRIFEBEACONFOG2 }
-	frame STFGC { light STRIFEBEACONFOG3 }
-	frame STFGD { light STRIFEBEACONFOG4 }
-	frame STFGE { light STRIFEBEACONFOG5 }
-	frame STFGF { light STRIFEBEACONFOG6 }
 }

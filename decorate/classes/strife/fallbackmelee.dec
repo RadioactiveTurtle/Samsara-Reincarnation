@@ -562,7 +562,14 @@ actor PunchDaggerPuff : StrifeSpark
     States
     {
       Spawn:
-        SPW3 ABCDEFGH 3
+        SPW3 A 3 Light("SPUFF4")
+        SPW3 B 3 Light("SPUFF5")
+        SPW3 C 3 Light("SPUFF6")
+        SPW3 D 3 Light("SPUFF7")
+        SPW3 E 3 Light("SPUFF8")
+        SPW3 F 3 Light("SPUFF9")
+        SPW3 G 3 Light("SPUFF10")
+        SPW3 H 3 Light("SPUFF11")
         stop
 
       Melee:
@@ -574,8 +581,10 @@ actor PunchDaggerPuff : StrifeSpark
         stop
 
       Crash:
-        SPW2 A 4 A_GiveInventory("SamsaraStrifePunchDaggerHitWallSoundPlayer",1,AAPTR_TARGET)
-        SPW2 BCD 4
+        SPW2 A 4 Light("SSPARK1") A_GiveInventory("SamsaraStrifePunchDaggerHitWallSoundPlayer",1,AAPTR_TARGET)
+        SPW2 B 4 Light("SSPARK2")
+        SPW2 C 4 Light("SSPARK3")
+        SPW2 D 4 Light("SSPARK4")
         stop
     }
 }

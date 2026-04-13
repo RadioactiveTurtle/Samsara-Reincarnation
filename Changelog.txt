@@ -22,6 +22,10 @@ Security Officer (Marathon):
 
 * Fixed the Talon Ceramic Combat Blade melee puff not having lights.
 
+-Settings-
+
+! The "Boss Monologues" setting has caused some issues when ReMixer's "Performance Mode" setting is enabled, so the former has been forcibly disabled in that scenario for the time being.
+
 ----------------------------------------------------------------------------
 ----------------------Reincarnation 2.2.1 Public Beta-----------------------
 ----------------------------------------------------------------------------

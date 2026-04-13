@@ -1,6 +1,6 @@
 script "SamsaraBossMonologue" (int bossmonologueshit, int mixershit, int iosshit) //204
 {
-    if (GetCVar("samsara_nomonologues") || CheckInventory("SamsaraBossMonologueInitialized") || isDead(0) || isInvasion()) // don't do the monologue if Spawn state is called more than once, dead, or playing invasion
+    if (GetCVar("samsara_nomonologues") || CheckInventory("SamsaraBossMonologueInitialized") || isDead(0) || isInvasion() || (GetCVar("samsara_mixerloaded") && GetCVar("mm_performancemode"))) // don't do the monologue if Spawn state is called more than once, dead, or playing invasion. also disabled when mixer's performance mode setting is on as a temporary fix
     {
         GiveInventory("SamsaraBossMonologueInitialized", 1); // mainly for samsara_nomonologues
         terminate;

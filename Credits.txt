@@ -45,7 +45,7 @@ Credits:
 - XBolt (for the Compendium entries for the Chex Quest enemies & weapons, http://gallery.xboltz.net/)
 - DBThanatos & Major Cooke (for the DBThanatos blood setting)
 - NoOne (for Blood Weapons Mod, where Blood Grease Gun, Flamethrower, and Naturom Demonto behavior was derived from)
-- Dzierzan (for the Blood Grease Gun, Flamethrower, and Naturom Demonto HUD sprites and voxel pickups; Dzierzan, MaxED, and fgsfds made the widescreen sprites for the Powerslave knife)
+- Dzierzan (for the Blood Grease Gun, Flamethrower, and Naturom Demonto HUD sprites and voxel pickups, as well as the high-quality LOR weapon sounds; Dzierzan, MaxED, and fgsfds made the widescreen sprites for the Powerslave knife)
 - Captain J (for the Grease Gun HUD sprites)
 - TheRailgunner (for the Grease Gun pickup sprites)
 - Jordan James (for the RoTT M60 model to use a base)

@@ -854,15 +854,28 @@ actor SamsaraDoomguyIncineratorAttackHandler : Trigger
 
       // Attack stuff
       PickupAttack:
-        TNT1 A 0 A_PlaySound("doomguy/incinerator/fire",CHAN_WEAPON) // not using existing sound entries; randomization handled via SNDINFO instead
         TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupAttackCoop")
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupAttackCoop")
+        TNT1 A 0 A_JumpIfInventory("SamsaraAlternateSoundToken",2,"PickupAttackDMSoundPerkristan")
       PickupAttackDM:
+		TNT1 A 0 A_PlaySound("doomguy/incinerator/fire",CHAN_WEAPON) // not using existing sound entries; randomization handled via SNDINFO instead
         TNT1 A 0 A_FireCustomMissile("SamsaraDoomguyIncineratorFlame",0,false)
         stop
 
+      PickupAttackDMSoundPerkristan:
+		TNT1 A 0 A_PlaySound("doomguy/perkristan/incinerator/fire",CHAN_WEAPON)
+        TNT1 A 0 A_FireCustomMissile("SamsaraDoomguyIncineratorFlameSoundPerkristan",0,false)
+        stop
+
       PickupAttackCoop:
+        TNT1 A 0 A_JumpIfInventory("SamsaraAlternateSoundToken",2,"PickupAttackCoopSoundPerkristan")
+		TNT1 A 0 A_PlaySound("doomguy/incinerator/fire",CHAN_WEAPON)
         TNT1 A 0 A_FireCustomMissile("SamsaraDoomguyIncineratorFlameCoop",0,false)
+        stop
+
+      PickupAttackCoopSoundPerkristan:
+		TNT1 A 0 A_PlaySound("doomguy/perkristan/incinerator/fire",CHAN_WEAPON)
+        TNT1 A 0 A_FireCustomMissile("SamsaraDoomguyIncineratorFlameCoopSoundPerkristan",0,false)
         stop
     }
 }
@@ -923,6 +936,56 @@ actor SamsaraDoomguyIncineratorFlame
 }
 
 actor SamsaraDoomguyIncineratorFlameCoop : SamsaraDoomguyIncineratorFlame
+{
+    Species "Player"
+    +THRUSPECIES
+}
+
+actor SamsaraDoomguyIncineratorFlameSoundPerkristan : SamsaraDoomguyIncineratorFlame
+{
+	States
+	{
+      Spawn:
+        TNT1 A 1
+        DIFL A 2 Bright Light("DOOMARCHFIRE1")
+        DIFL B 2 Bright Light("DOOMARCHFIRE2") A_PlaySound("doomguy/perkristan/incinerator/burn")
+        DIFL C 2 Bright Light("DOOMARCHFIRE3")
+        DIFL D 2 Bright Light("DOOMARCHFIRE4")
+        DIFL E 2 Bright Light("DOOMARCHFIRE5")
+        DIFL F 2 Bright Light("DOOMARCHFIRE6")
+        DIFL G 2 Bright Light("DOOMARCHFIRE7")
+        DIFL H 2 Bright Light("DOOMARCHFIRE8")
+        stop
+
+      Death:
+        TNT1 A 0 A_PlaySound("doomguy/perkristan/incinerator/hot")
+        DIFL I 2 Bright Light("DOOMARCHFIRE1") A_Explode(5,64)
+        DIFL J 2 Bright Light("DOOMARCHFIRE2")
+        DIFL I 2 Bright Light("DOOMARCHFIRE1")
+        DIFL J 2 Bright Light("DOOMARCHFIRE2") A_Explode(5,64)
+        DIFL K 2 Bright Light("DOOMARCHFIRE3")
+        DIFL J 2 Bright Light("DOOMARCHFIRE2")
+        DIFL K 2 Bright Light("DOOMARCHFIRE3") A_Explode(5,64)
+        DIFL L 2 Bright Light("DOOMARCHFIRE4")
+        DIFL K 2 Bright Light("DOOMARCHFIRE3") A_PlaySound("doomguy/perkristan/incinerator/hot3")
+        DIFL L 2 Bright Light("DOOMARCHFIRE4") A_Explode(5,64)
+        DIFL M 2 Bright Light("DOOMARCHFIRE5")
+        DIFL L 2 Bright Light("DOOMARCHFIRE4")
+        DIFL M 2 Bright Light("DOOMARCHFIRE5") A_Explode(5,64)
+        DIFL N 2 Bright Light("DOOMARCHFIRE6")
+        DIFL M 2 Bright Light("DOOMARCHFIRE5")
+        DIFL N 2 Bright Light("DOOMARCHFIRE6") A_Explode(5,64)
+        DIFL O 2 Bright Light("DOOMARCHFIRE7")
+        DIFL N 2 Bright Light("DOOMARCHFIRE6")
+        DIFL O 2 Bright Light("DOOMARCHFIRE7")
+        DIFL P 2 Bright Light("DOOMARCHFIRE8")
+        DIFL O 2 Bright Light("DOOMARCHFIRE7")
+        DIFL P 2 Bright Light("DOOMARCHFIRE8")
+        stop
+	}
+}
+
+actor SamsaraDoomguyIncineratorFlameCoopSoundPerkristan : SamsaraDoomguyIncineratorFlameSoundPerkristan
 {
     Species "Player"
     +THRUSPECIES

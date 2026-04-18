@@ -12,6 +12,12 @@
 
 -Characters-
 
+Doom:
+
+-Doomguy (Original)-
+
++ Added Perkristan altsounds for the railgun and the Legacy of Rust loadout weapons.
+
 Hexen I:
 
 -Parias (Reincarnation)-

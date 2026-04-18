@@ -2290,6 +2290,7 @@ actor SamsaraDoomguyCalamityBladeProjectileCoop : SamsaraDoomguyCalamityBladePro
 }
 
 actor SamsaraDoomguyCalamityBladeProjectileSoundPerkristan : SamsaraDoomguyCalamityBladeProjectile { DeathSound "doomguy/perkristan/calamityblade/explode" }
+
 actor SamsaraDoomguyCalamityBladeProjectileCoopSoundPerkristan : SamsaraDoomguyCalamityBladeProjectileSoundPerkristan
 {
     Species "Player"

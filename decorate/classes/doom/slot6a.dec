@@ -898,7 +898,9 @@ actor SamsaraDoomguyIncineratorFlame
       Spawn:
         TNT1 A 1
         DIFL A 2 Bright Light("DOOMARCHFIRE1")
-        DIFL B 2 Bright Light("DOOMARCHFIRE2") A_PlaySound("doomguy/incinerator/burn")
+        TNT1 A 0 A_PlaySound("doomguy/incinerator/burn")
+      SpawnFinish:
+        DIFL B 2 Bright Light("DOOMARCHFIRE2")
         DIFL C 2 Bright Light("DOOMARCHFIRE3")
         DIFL D 2 Bright Light("DOOMARCHFIRE4")
         DIFL E 2 Bright Light("DOOMARCHFIRE5")
@@ -917,7 +919,9 @@ actor SamsaraDoomguyIncineratorFlame
         DIFL J 2 Bright Light("DOOMARCHFIRE2")
         DIFL K 2 Bright Light("DOOMARCHFIRE3") A_Explode(5,64)
         DIFL L 2 Bright Light("DOOMARCHFIRE4")
-        DIFL K 2 Bright Light("DOOMARCHFIRE3") A_PlaySound("doomguy/incinerator/hot3")
+        TNT1 A 0 A_PlaySound("doomguy/incinerator/hot3")
+      DeathFinish:
+        DIFL K 2 Bright Light("DOOMARCHFIRE3")
         DIFL L 2 Bright Light("DOOMARCHFIRE4") A_Explode(5,64)
         DIFL M 2 Bright Light("DOOMARCHFIRE5")
         DIFL L 2 Bright Light("DOOMARCHFIRE4")
@@ -948,14 +952,8 @@ actor SamsaraDoomguyIncineratorFlameSoundPerkristan : SamsaraDoomguyIncineratorF
       Spawn:
         TNT1 A 1
         DIFL A 2 Bright Light("DOOMARCHFIRE1")
-        DIFL B 2 Bright Light("DOOMARCHFIRE2") A_PlaySound("doomguy/perkristan/incinerator/burn")
-        DIFL C 2 Bright Light("DOOMARCHFIRE3")
-        DIFL D 2 Bright Light("DOOMARCHFIRE4")
-        DIFL E 2 Bright Light("DOOMARCHFIRE5")
-        DIFL F 2 Bright Light("DOOMARCHFIRE6")
-        DIFL G 2 Bright Light("DOOMARCHFIRE7")
-        DIFL H 2 Bright Light("DOOMARCHFIRE8")
-        stop
+        TNT1 A 0 A_PlaySound("doomguy/perkristan/incinerator/burn")
+        goto SpawnFinish
 
       Death:
         TNT1 A 0 A_PlaySound("doomguy/perkristan/incinerator/hot")
@@ -967,21 +965,8 @@ actor SamsaraDoomguyIncineratorFlameSoundPerkristan : SamsaraDoomguyIncineratorF
         DIFL J 2 Bright Light("DOOMARCHFIRE2")
         DIFL K 2 Bright Light("DOOMARCHFIRE3") A_Explode(5,64)
         DIFL L 2 Bright Light("DOOMARCHFIRE4")
-        DIFL K 2 Bright Light("DOOMARCHFIRE3") A_PlaySound("doomguy/perkristan/incinerator/hot3")
-        DIFL L 2 Bright Light("DOOMARCHFIRE4") A_Explode(5,64)
-        DIFL M 2 Bright Light("DOOMARCHFIRE5")
-        DIFL L 2 Bright Light("DOOMARCHFIRE4")
-        DIFL M 2 Bright Light("DOOMARCHFIRE5") A_Explode(5,64)
-        DIFL N 2 Bright Light("DOOMARCHFIRE6")
-        DIFL M 2 Bright Light("DOOMARCHFIRE5")
-        DIFL N 2 Bright Light("DOOMARCHFIRE6") A_Explode(5,64)
-        DIFL O 2 Bright Light("DOOMARCHFIRE7")
-        DIFL N 2 Bright Light("DOOMARCHFIRE6")
-        DIFL O 2 Bright Light("DOOMARCHFIRE7")
-        DIFL P 2 Bright Light("DOOMARCHFIRE8")
-        DIFL O 2 Bright Light("DOOMARCHFIRE7")
-        DIFL P 2 Bright Light("DOOMARCHFIRE8")
-        stop
+        TNT1 A 0 A_PlaySound("doomguy/perkristan/incinerator/hot3")
+        goto DeathFinish
 	}
 }
 

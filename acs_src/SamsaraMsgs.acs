@@ -1603,7 +1603,7 @@ str ClassPickupMessages[CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT][MSGCOUNT]
                 "They say to apply heat to sore muscles. Not this much, though.",
                 "Burninate!",
                 "Isn't the Fire Spell usually the first one you get?",
-                "Not ideal for for Birthday candles.",
+                "Not ideal for birthday candles.",
                 "Those Centaurs won't be talking shit now!",
                 "Melts your enemy.",
                 "Reach out and touch somebody.",
@@ -1629,7 +1629,7 @@ str ClassPickupMessages[CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT][MSGCOUNT]
                 "I am a walking Tome of Power!",
                 "This thing will blast out all of your blood!",
                 "Careful, it bites!",
-                "There's Abattoires with less blood than this thing shoots.",
+                "There's abattoirs with less blood than this thing shoots.",
                 "I'm here to donate blood.",
                 "Did you know this staff can guess your blood type perfectly? Yeah, hold still a sec!",
                 "Is there a Norse or Celtic equivalent to Vampires?",
@@ -1750,7 +1750,7 @@ str ClassPickupMessages[CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT][MSGCOUNT]
                 "How many of these things can you fit in your loincloth?",
                 "Reach out and touch somebody.",
                 "Bananas. Now in \cgDEATH\c- flavor.",
-                "Suprisingly Aerodynamic.",
+                "Surprisingly aerodynamic.",
                 "What? Were you expecting a gun?",
                 "Many a salmon have been caught with this.",
                 "This dude has the throwing arm of a mf!",
@@ -10519,4 +10519,4 @@ str MiscPickupMessages[MISCPICKUPCOUNT][LOADOUTCOUNT][MSGCOUNT] =
     }},
 };
 
-// jesus fucking christ, 10440 lines
+// jesus fucking christ, 10520 lines

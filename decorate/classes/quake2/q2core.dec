@@ -625,6 +625,8 @@ actor SamsaraQuake2QuadDamageCooldownStored : Boolean {}
 
 actor Q2QuadDamage : CustomInventory
 {
+    Inventory.PickupMessage "Quad Damage"
+    Inventory.PickupSound "Q2Misc/Pickup"
     Inventory.UseSound ""
     Inventory.Icon "Q2IHD1"
     Inventory.MaxAmount 1

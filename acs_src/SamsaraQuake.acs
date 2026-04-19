@@ -516,12 +516,11 @@ script "SamsaraQPowers" (int startTime, int respawning) //636 -- SAMSARA_QPOWERS
 
                 if (regenTimer % 35 == 0 && !isDead(0))
                 {
-                    healthMax = 200;
-
-                    if (getMaxHealth(0) > 200) { healthMax = getMaxHealth(0); }
+                    healthMax = getMaxHealth(0);
 
                     if (GetCVar("samsara_nohealthcap")) { healthMax = INTMAX; }
                     else if (healthMax < 250 && CheckInventory("SamsaraHasProsperity")) { healthMax = 250; }
+                    else if (healthMax < 200) { healthMax = 200; }
 
                     if (health >= 100) { giveHealthMax(5, healthMax); }
                     else if (health + 10 >= 100)

@@ -498,7 +498,6 @@ script "SamsaraPickupMessages" (int item, int subitem, int message) CLIENTSIDE
               case 12: itemtemp = "SAMSARA_HEALPACK3_HEXEN2_1"; break;
               case 13: itemtemp = "SAMSARA_HEALPACK3_HEXEN2_2"; break;
               case 14: itemtemp = "SAMSARA_HEALPACK3_CATACOMB"; break;
-              case 15: itemtemp = "SAMSARA_HEALPACK3_QUAKE3"; break;
             }
             break;
 
@@ -530,6 +529,9 @@ script "SamsaraPickupMessages" (int item, int subitem, int message) CLIENTSIDE
               case 13: itemtemp = "SAMSARA_MEGAPACK_ERADICATOR"; break;
               case 14: itemtemp = "SAMSARA_MEGAPACK3_ERADICATOR"; break;
               case 15: itemtemp = "SAMSARA_MEGAPACK5_ERADICATOR"; break;
+              case 16: itemtemp = "SAMSARA_MEGAPACK_QUAKE3"; break;
+              case 17: itemtemp = "SAMSARA_MEGAPACK3_QUAKE3"; break;
+              case 18: itemtemp = "SAMSARA_MEGAPACK5_QUAKE3"; break;
             }
             break;
 

@@ -1447,9 +1447,9 @@ actor SuperHealth : SamsaraHealthPickup
         goto PickupSuccess
 
       PickupDisplayQuake3:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 0, 7, 15)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 0, 7, 0)
         TNT1 A 0 A_GiveInventory("SamsaraSuperHealthPickupBlend")
-        TNT1 A 0 ACS_NamedExecuteAlways("Q3_Announcer", 0, 4) //A_PlaySound("Quake3/Items/Regeneration",CHAN_ITEM)
+        TNT1 A 0 A_PlaySound("Quake3/Items/MegaHealth",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraPickupAnnouncerSounds", 0)
         goto PickupSuccess
 
@@ -1504,7 +1504,7 @@ actor SuperHealth : SamsaraHealthPickup
 
       PickupSuccessQuake1:
         TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 22), "PickupSuccessQuake1Infinite")
-        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraMegaHealth", 100, 1, 175)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraMegaHealth", 100, 250, 1, 175)
         stop
 
       PickupSuccessQuake1Infinite:
@@ -1597,8 +1597,12 @@ actor SuperHealth : SamsaraHealthPickup
         stop
 
       PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Q3RegenerationDummy")
+        TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 22), "PickupSuccessQuake3Infinite")
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraMegaHealth", 100, 200, 1, 175)
         stop
+
+      PickupSuccessQuake3Infinite:
+        goto PickupSuccessDefault
 
       PickupSuccessDeusEx:
         TNT1 A 0 A_GiveInventory("DeusEx_AugmentationBioEnergyCell")
@@ -1776,7 +1780,7 @@ actor SamsaraSuperHealthInventory : CustomInventory
 
       UseSuccessHexen2:
         TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 22), "UseSuccessHexen2Infinite")
-        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraMegaHealth", 100, 1, 175)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraMegaHealth", 100, 250, 1, 175)
         goto UseFinish
 
       UseSuccessHexen2Infinite:
@@ -1911,6 +1915,7 @@ actor MegaPack : SamsaraHealthPickup
         TNT1 A 0 A_JumpIfInventory("MarathonClass",1,"PickupDisplayNormalMarathon")
         TNT1 A 0 A_JumpIfInventory("QuakeClass",1,"PickupDisplayNormalQuake1")
         TNT1 A 0 A_JumpIfInventory("EradClass",1,"PickupDisplayNormalEradicator")
+        TNT1 A 0 A_JumpIfInventory("Q3Class",1,"PickupDisplayNormalQuake3")
         TNT1 A 0 A_Jump(256,"PickupDisplayNormalDefault") // for inheriting actors
         goto PickupDisplayNormalDefault
 
@@ -1961,11 +1966,19 @@ actor MegaPack : SamsaraHealthPickup
         TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraPickupAnnouncerSounds", 1)
         goto PickupSuccess
 
+      PickupDisplayNormalQuake3:
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 0, 9, 16)
+        TNT1 A 0 A_GiveInventory("SamsaraSuperHealthPickupBlend")
+        TNT1 A 0 ACS_NamedExecuteAlways("Q3_Announcer", 0, 4) //A_PlaySound("Quake3/Items/Regeneration",CHAN_ITEM)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraPickupAnnouncerSounds", 1)
+        goto PickupSuccess
+
       PickupDisplayMarathon:
         TNT1 A 0 A_JumpIfInventory("CorvusClass",1,"PickupDisplayMarathonHeretic")
         TNT1 A 0 A_JumpIfInventory("MarathonClass",1,"PickupDisplayMarathonMarathon")
         TNT1 A 0 A_JumpIfInventory("QuakeClass",1,"PickupDisplayMarathonQuake1")
         TNT1 A 0 A_JumpIfInventory("EradClass",1,"PickupDisplayMarathonEradicator")
+        TNT1 A 0 A_JumpIfInventory("Q3Class",1,"PickupDisplayMarathonQuake3")
         TNT1 A 0 A_Jump(256,"PickupDisplayMarathonDefault") // for inheriting actors
         goto PickupDisplayMarathonDefault
 
@@ -2012,11 +2025,19 @@ actor MegaPack : SamsaraHealthPickup
         TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraPickupAnnouncerSounds", 1)
         goto PickupSuccess
 
+      PickupDisplayMarathonQuake3:
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 0, 9, 17)
+        TNT1 A 0 A_GiveInventory("SamsaraSuperHealthPickupBlend")
+        TNT1 A 0 ACS_NamedExecuteAlways("Q3_Announcer", 0, 4) //A_PlaySound("Quake3/Items/Regeneration",CHAN_ITEM)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraPickupAnnouncerSounds", 1)
+        goto PickupSuccess
+
       PickupDisplayNone:
         TNT1 A 0 A_JumpIfInventory("CorvusClass",1,"PickupDisplayNoneHeretic")
         TNT1 A 0 A_JumpIfInventory("MarathonClass",1,"PickupDisplayNoneMarathon")
         TNT1 A 0 A_JumpIfInventory("QuakeClass",1,"PickupDisplayNoneQuake1")
         TNT1 A 0 A_JumpIfInventory("EradClass",1,"PickupDisplayNoneEradicator")
+        TNT1 A 0 A_JumpIfInventory("Q3Class",1,"PickupDisplayNoneQuake3")
         TNT1 A 0 A_Jump(256,"PickupDisplayNoneDefault") // for inheriting actors
         goto PickupDisplayNoneDefault
 
@@ -2063,6 +2084,13 @@ actor MegaPack : SamsaraHealthPickup
         TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraPickupAnnouncerSounds", 1)
         goto PickupSuccess
 
+      PickupDisplayNoneQuake3:
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 0, 9, 18)
+        TNT1 A 0 A_GiveInventory("SamsaraSuperHealthPickupBlend")
+        TNT1 A 0 ACS_NamedExecuteAlways("Q3_Announcer", 0, 4) //A_PlaySound("Quake3/Items/Regeneration",CHAN_ITEM)
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraPickupAnnouncerSounds", 1)
+        goto PickupSuccess
+
       PickupSuccess:
         TNT1 A 0 A_JumpIfInventory("CorvusClass",1,"PickupSuccessHeretic")
         TNT1 A 0 A_JumpIfInventory("DukeClass",1,"PickupSuccessDuke")
@@ -2070,6 +2098,7 @@ actor MegaPack : SamsaraHealthPickup
         TNT1 A 0 A_JumpIfInventory("QuakeClass",1,"PickupSuccessQuake1")
         TNT1 A 0 A_JumpIfInventory("EradClass",1,"PickupSuccessEradicator")
         TNT1 A 0 A_JumpIfInventory("DisruptorClass",1,"PickupSuccessDisruptor")
+        TNT1 A 0 A_JumpIfInventory("Q3Class",1,"PickupSuccessQuake3")
         TNT1 A 0 A_JumpIfInventory("DeusExClass",1,"PickupSuccessDeusEx")
         TNT1 A 0 A_Jump(256,"PickupSuccessDefault") // for inheriting actors
         goto PickupSuccessDefault
@@ -2116,6 +2145,11 @@ actor MegaPack : SamsaraHealthPickup
         TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraPlayerHealer", 200, 200)
         TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraArmorAdjust", 11)
         TNT1 A 0 A_GiveInventory("DisruptorPSIEnergy",100)
+        stop
+
+      PickupSuccessQuake3:
+        TNT1 A 0 A_GiveInventory("Q3RegenerationDummy")
+        TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraArmorAdjust", 11)
         stop
 
       PickupSuccessDeusEx:

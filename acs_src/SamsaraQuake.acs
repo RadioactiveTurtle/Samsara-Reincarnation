@@ -1,13 +1,18 @@
 // Scripts placed here due to the presence of UnloadingNow
 
-script "SamsaraMegaHealth" (int hpcount, int hpPerSec, int delayTics) //259 -- SAMSARA_MEGAHEALTH // used by quake 1, quake 2, and hexen 2
+script "SamsaraMegaHealth" (int hpcount, int hpcountmax, int hpPerSec, int delayTics) //259 -- SAMSARA_MEGAHEALTH // used by the three quakes and hexen 2
 {
     int hpGiven = GetActorProperty(0, APROP_Health);
     int startHealth = hpGiven;
     int hpCap = getMaxHealth(0);
 
     if (GetCVar("samsara_nohealthcap")) { hpCap = INTMAX; }
-    else if (hpCap < 250) { hpCap = 250; }
+    else
+    {
+        if (hpcountmax < 250 && CheckInventory("SamsaraHasProsperity")) { hpcountmax = 250; }
+
+        if (hpCap < hpcountmax) { hpCap = hpcountmax; }
+    }
 
     SetActorProperty(0, APROP_Health, min(hpGiven + hpcount, hpCap));
     hpGiven = GetActorProperty(0, APROP_Health) - hpGiven;
@@ -18,7 +23,7 @@ script "SamsaraMegaHealth" (int hpcount, int hpPerSec, int delayTics) //259 -- S
 
     while (1)
     {
-        if (CheckInventory("QuakeRegenTimer") || CheckInventory("SamsaraHasProsperity") || GetCVar("sv_degeneration"))
+        if (CheckInventory("QuakeRegenTimer") || CheckInventory("PowerQ3RegenerationDummy") || CheckInventory("SamsaraHasProsperity") || GetCVar("sv_degeneration"))
         {
             Delay(1);
             continue;

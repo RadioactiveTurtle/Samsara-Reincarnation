@@ -3252,6 +3252,8 @@ Script "Samsara_ResetInventory" (void)
 			break;
 
 		case CLASS_PAINKILLER:
+			TakeInventory("Painkiller_SilverSlot1", INTMAX);
+			TakeInventory("Painkiller_SilverSlot2", INTMAX);
 			TakeInventory("Painkiller_SoulCatcher", INTMAX);
 			//TakeInventory("Painkiller_SoulKeeper", INTMAX);
 			TakeInventory("Painkiller_GoldMagnet", INTMAX);
@@ -3267,6 +3269,9 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("Painkiller_ArmorRegeneration", INTMAX);
 			TakeInventory("Painkiller_Fear", INTMAX);
 			TakeInventory("Painkiller_666Ammo", INTMAX);
+			TakeInventory("Painkiller_GoldSlot1", INTMAX);
+			TakeInventory("Painkiller_GoldSlot2", INTMAX);
+			TakeInventory("Painkiller_GoldSlot3", INTMAX);
 			TakeInventory("Painkiller_Speed", INTMAX);
 			TakeInventory("Painkiller_Dexterity", INTMAX);
 			TakeInventory("Painkiller_Fury", INTMAX);

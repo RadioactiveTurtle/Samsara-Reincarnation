@@ -332,7 +332,7 @@ script "PistolStart" ENTER
 {
     int pistolstart = GetCVar("samsara_pistolstart");
 
-	if (pistolstart >= 1 && (GameType () != GAME_TITLE_MAP))
+	if (pistolstart >= 1 && (GameType () == GAME_SINGLE_PLAYER || GameType () == GAME_NET_COOPERATIVE))
 	{
 		// We can't do pistol starts in Hexen or Strife
 		if(GetCvar("samsara_currentgame") == 8 || GetCvar("samsara_currentgame") == 16)

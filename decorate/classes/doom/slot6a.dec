@@ -698,7 +698,6 @@ actor SamsaraDoomguyStrPowerPlasmaBall : SamsaraDoomguyStrPlasmaBall
 	Height 14
 	Speed 30
 	Damage 9
-	DamageType "DoomDamageTypePlasmaNoSelfDamage"
 	Alpha 1
 	Scale 0.8
 	+SEEKERMISSILE
@@ -710,9 +709,9 @@ actor SamsaraDoomguyStrPowerPlasmaBall : SamsaraDoomguyStrPlasmaBall
 		loop
 
 	Death:
-		TNT1 A 0 A_GiveToTarget("SamsaraDoomguyNoSelfDamage")
+		TNT1 A 0 A_GiveInventory("SamsaraDoomguyNoSelfDamage",1,AAPTR_TARGET)
 		TNT1 A 0 A_Explode(40,80)
-		TNT1 A 0 A_TakeFromTarget("PowerSamsaraDoomguyNoSelfDamage")
+		TNT1 A 0 A_TakeInventory("PowerSamsaraDoomguyNoSelfDamage",1,0,AAPTR_TARGET)
 	DeathFinish:
 		DPLE F 4 Bright Light("POWERPLASMA_X1")
 		DPLE GH 4 Bright Light("POWERPLASMA_X2")

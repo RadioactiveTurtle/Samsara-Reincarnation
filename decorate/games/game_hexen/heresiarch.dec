@@ -19,7 +19,6 @@ actor Heresiarch2 : SamsaraMonsterReincHeresiarch replaces Heresiarch
 	DamageFactor "Wraithverge", 1.1
 	DamageFactor "Normal", 1.1
 	DamageFactor "DoomDamageType", 1.1
-	DamageFactor "DoomDamageTypeNoSelfDamage", 1.1
 	DamageFactor "DoomDamageTypeStunner", 1.1
 	DamageFactor "DragonClaw", 1.4
 	DamageFactor "Mace", 1.1
@@ -45,9 +44,7 @@ actor Heresiarch2 : SamsaraMonsterReincHeresiarch replaces Heresiarch
 	DamageFactor "MarathonFusion", 1.1
 	DamageFactor "DoomPlasma", 1.1
 	DamageFactor "DoomDamageTypePlasma", 1.1
-	DamageFactor "DoomDamageTypePlasmaNoSelfDamage", 1.1
 	DamageFactor "DoomDamageTypeRepeater", 1.1
-	DamageFactor "DoomDamageTypeRepeaterNoSelfDamage", 1.1
 	DamageFactor "CorvusCrossbow", 1.1
 	DamageFactor "CorvusHellstaff", 1.1
 	DamageFactor "CorvusHellstaffTomed", 0.2

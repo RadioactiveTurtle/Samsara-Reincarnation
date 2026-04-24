@@ -12,7 +12,6 @@ actor Serpent2 : SamsaraMonsterReincSerpent replaces Serpent
 	DamageFactor "Wraithverge", 1.2
 	DamageFactor "Normal", 1.15
 	DamageFactor "DoomDamageType", 1.15
-	DamageFactor "DoomDamageTypeNoSelfDamage", 1.15
 	DamageFactor "DoomDamageTypeStunner", 1.15
 	DamageFactor "DragonClaw", 1.45
 	DamageFactor "Mace", 1.15
@@ -20,7 +19,6 @@ actor Serpent2 : SamsaraMonsterReincSerpent replaces Serpent
 	DamageFactor "PhasingZorch", 1.15
 	DamageFactor "BFG", 1.15
 	DamageFactor "DoomDamageTypeBFG", 1.15
-	DamageFactor "DoomDamageTypeBFGNoSelfDamage", 1.15
 	DamageFactor "BFGSpray", 1.15
 	DamageFactor "DoomDamageTypeDevastator", 1.15
 	DamageFactor "Fire", 1.15
@@ -40,9 +38,7 @@ actor Serpent2 : SamsaraMonsterReincSerpent replaces Serpent
 	DamageFactor "MarathonFusion", 1.15
 	DamageFactor "DoomPlasma", 1.15
 	DamageFactor "DoomDamageTypePlasma", 1.15
-	DamageFactor "DoomDamageTypePlasmaNoSelfDamage", 1.15
 	DamageFactor "DoomDamageTypeRepeater", 1.15
-	DamageFactor "DoomDamageTypeRepeaterNoSelfDamage", 1.15
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "CorvusHellstaff", 1.15
 	DamageFactor "CorvusHellstaffTomed", 1.15
@@ -127,7 +123,6 @@ actor SerpentLeader2 : SamsaraMonsterReincSerpentLeader replaces SerpentLeader
 	DamageFactor "Wraithverge", 1.2
 	DamageFactor "Normal", 1.15
 	DamageFactor "DoomDamageType", 1.15
-	DamageFactor "DoomDamageTypeNoSelfDamage", 1.15
 	DamageFactor "DoomDamageTypeStunner", 1.15
 	DamageFactor "DragonClaw", 1.45
 	DamageFactor "Mace", 1.15
@@ -135,7 +130,6 @@ actor SerpentLeader2 : SamsaraMonsterReincSerpentLeader replaces SerpentLeader
 	DamageFactor "PhasingZorch", 1.15
 	DamageFactor "BFG", 1.15
 	DamageFactor "DoomDamageTypeBFG", 1.15
-	DamageFactor "DoomDamageTypeBFGNoSelfDamage", 1.15
 	DamageFactor "BFGSpray", 1.15
 	DamageFactor "DoomDamageTypeDevastator", 1.15
 	DamageFactor "Fire", 1.15
@@ -155,9 +149,7 @@ actor SerpentLeader2 : SamsaraMonsterReincSerpentLeader replaces SerpentLeader
 	DamageFactor "MarathonFusion", 1.15
 	DamageFactor "DoomPlasma", 1.15
 	DamageFactor "DoomDamageTypePlasma", 1.15
-	DamageFactor "DoomDamageTypePlasmaNoSelfDamage", 1.15
 	DamageFactor "DoomDamageTypeRepeater", 1.15
-	DamageFactor "DoomDamageTypeRepeaterNoSelfDamage", 1.15
 	DamageFactor "CorvusCrossbow", 1.15
 	DamageFactor "CorvusHellstaff", 1.15
 	DamageFactor "CorvusHellstaffTomed", 1.15

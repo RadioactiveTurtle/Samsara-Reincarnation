@@ -187,7 +187,6 @@ actor DeusEx_Augmentation_ProtectionBase : PowerProtection
 {
     // Ballistic damage types
     DamageFactor "Normal", 1
-    DamageFactor "DoomDamageTypeNoSelfDamage", 1
     DamageFactor "DoomDamageTypeFist", 1
     DamageFactor "RottBullet", 1
     DamageFactor "PunchDagger", 1
@@ -284,13 +283,10 @@ actor DeusEx_Augmentation_ProtectionBase : PowerProtection
     DamageFactor "DoomDamageTypeFire", 1
     DamageFactor "DoomDamageTypeExplosive", 1
     DamageFactor "DoomDamageTypePlasma", 1
-    DamageFactor "DoomDamageTypePlasmaNoSelfDamage", 1
     DamageFactor "DoomDamageTypeStunner", 1
     DamageFactor "DoomDamageTypeBFG", 1
-    DamageFactor "DoomDamageTypeBFGNoSelfDamage", 1
     DamageFactor "DoomDamageTypeFireExplosive", 1
     DamageFactor "DoomDamageTypeRepeater", 1
-    DamageFactor "DoomDamageTypeRepeaterNoSelfDamage", 1
     DamageFactor "RottExplosive", 1
     DamageFactor "Flame", 1
     DamageFactor "Fire", 1
@@ -410,7 +406,6 @@ actor DeusEx_Augmentation_ProtectionBase : PowerProtection
 Actor DeusEx_Augmentation_BallisticProtection1 : DeusEx_Augmentation_ProtectionBase
 {
     DamageFactor "Normal", 0.8
-    DamageFactor "DoomDamageTypeNoSelfDamage", 0.8
     DamageFactor "DoomDamageTypeFist", 0.8
     DamageFactor "RottBullet", 0.8
     DamageFactor "PunchDagger", 0.8
@@ -471,7 +466,6 @@ Actor DeusEx_Augmentation_BallisticProtection1 : DeusEx_Augmentation_ProtectionB
 Actor DeusEx_Augmentation_BallisticProtection2 : DeusEx_Augmentation_ProtectionBase
 {
     DamageFactor "Normal", 0.65
-    DamageFactor "DoomDamageTypeNoSelfDamage", 0.65
     DamageFactor "DoomDamageTypeFist", 0.65
     DamageFactor "RottBullet", 0.65
     DamageFactor "PunchDagger", 0.65
@@ -532,7 +526,6 @@ Actor DeusEx_Augmentation_BallisticProtection2 : DeusEx_Augmentation_ProtectionB
 Actor DeusEx_Augmentation_BallisticProtection3 : DeusEx_Augmentation_ProtectionBase
 {
     DamageFactor "Normal", 0.5
-    DamageFactor "DoomDamageTypeNoSelfDamage", 0.5
     DamageFactor "DoomDamageTypeFist", 0.5
     DamageFactor "RottBullet", 0.5
     DamageFactor "PunchDagger", 0.5
@@ -593,7 +586,6 @@ Actor DeusEx_Augmentation_BallisticProtection3 : DeusEx_Augmentation_ProtectionB
 Actor DeusEx_Augmentation_BallisticProtection4 : DeusEx_Augmentation_ProtectionBase
 {
     DamageFactor "Normal", 0.35
-    DamageFactor "DoomDamageTypeNoSelfDamage", 0.35
     DamageFactor "DoomDamageTypeFist", 0.35
     DamageFactor "RottBullet", 0.35
     DamageFactor "PunchDagger", 0.35
@@ -834,13 +826,10 @@ Actor DeusEx_Augmentation_EnergyShield1 : DeusEx_Augmentation_ProtectionBase
     DamageFactor "DoomDamageTypeFire", 0.8
     DamageFactor "DoomDamageTypeExplosive", 0.8
     DamageFactor "DoomDamageTypePlasma", 0.8
-    DamageFactor "DoomDamageTypePlasmaNoSelfDamage", 0.8
     DamageFactor "DoomDamageTypeStunner", 0.8
     DamageFactor "DoomDamageTypeBFG", 0.8
-    DamageFactor "DoomDamageTypeBFGNoSelfDamage", 0.8
     DamageFactor "DoomDamageTypeFireExplosive", 0.8
     DamageFactor "DoomDamageTypeRepeater", 0.8
-    DamageFactor "DoomDamageTypeRepeaterNoSelfDamage", 0.8
     DamageFactor "RottExplosive", 0.8
     DamageFactor "Flame", 0.8
     DamageFactor "Fire", 0.8
@@ -966,13 +955,10 @@ Actor DeusEx_Augmentation_EnergyShield2 : DeusEx_Augmentation_ProtectionBase
     DamageFactor "DoomDamageTypeFire", 0.65
     DamageFactor "DoomDamageTypeExplosive", 0.65
     DamageFactor "DoomDamageTypePlasma", 0.65
-    DamageFactor "DoomDamageTypePlasmaNoSelfDamage", 0.65
     DamageFactor "DoomDamageTypeStunner", 0.65
     DamageFactor "DoomDamageTypeBFG", 0.65
-    DamageFactor "DoomDamageTypeBFGNoSelfDamage", 0.65
     DamageFactor "DoomDamageTypeFireExplosive", 0.65
     DamageFactor "DoomDamageTypeRepeater", 0.65
-    DamageFactor "DoomDamageTypeRepeaterNoSelfDamage", 0.65
     DamageFactor "RottExplosive", 0.65
     DamageFactor "Flame", 0.65
     DamageFactor "Fire", 0.65
@@ -1098,13 +1084,10 @@ Actor DeusEx_Augmentation_EnergyShield3 : DeusEx_Augmentation_ProtectionBase
     DamageFactor "DoomDamageTypeFire", 0.5
     DamageFactor "DoomDamageTypeExplosive", 0.5
     DamageFactor "DoomDamageTypePlasma", 0.5
-    DamageFactor "DoomDamageTypePlasmaNoSelfDamage", 0.5
     DamageFactor "DoomDamageTypeStunner", 0.5
     DamageFactor "DoomDamageTypeBFG", 0.5
-    DamageFactor "DoomDamageTypeBFGNoSelfDamage", 0.5
     DamageFactor "DoomDamageTypeFireExplosive", 0.5
     DamageFactor "DoomDamageTypeRepeater", 0.5
-    DamageFactor "DoomDamageTypeRepeaterNoSelfDamage", 0.5
     DamageFactor "RottExplosive", 0.5
     DamageFactor "Flame", 0.5
     DamageFactor "Fire", 0.5
@@ -1230,13 +1213,10 @@ Actor DeusEx_Augmentation_EnergyShield4 : DeusEx_Augmentation_ProtectionBase
     DamageFactor "DoomDamageTypeFire", 0.35
     DamageFactor "DoomDamageTypeExplosive", 0.35
     DamageFactor "DoomDamageTypePlasma", 0.35
-    DamageFactor "DoomDamageTypePlasmaNoSelfDamage", 0.35
     DamageFactor "DoomDamageTypeStunner", 0.35
     DamageFactor "DoomDamageTypeBFG", 0.35
-    DamageFactor "DoomDamageTypeBFGNoSelfDamage", 0.35
     DamageFactor "DoomDamageTypeFireExplosive", 0.35
     DamageFactor "DoomDamageTypeRepeater", 0.35
-    DamageFactor "DoomDamageTypeRepeaterNoSelfDamage", 0.35
     DamageFactor "RottExplosive", 0.35
     DamageFactor "Flame", 0.35
     DamageFactor "Fire", 0.35

@@ -28,6 +28,10 @@ Security Officer (Marathon):
 
 * Fixed the Talon Ceramic Combat Blade melee puff not having lights.
 
+Ranger (Quake I):
+
+! Splash damage from Ranger's own explosives now thrusts him away further to help with his rocket jumping game while keeping the damage amounts unchanged.
+
 Caleb (Blood):
 
 ! Renamed some actor names to avoid name conflicts with other mods.

@@ -10,6 +10,7 @@ actor "Mjolnir" : SamsaraQuakeWeapon
     Tag "Mjolnir"
     +MELEEWEAPON
     +NOAUTOAIM
+    +NOAUTOFIRE
     States
     {
       Spawn:

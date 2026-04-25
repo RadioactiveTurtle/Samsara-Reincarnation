@@ -17,6 +17,7 @@ actor "Thunderbolt" : SamsaraQuakeWeapon
     Tag "Thunderbolt (Lightning Mode)"
     +BFG
     +NOAUTOAIM
+    +NOAUTOFIRE
     States
     {
       Spawn:

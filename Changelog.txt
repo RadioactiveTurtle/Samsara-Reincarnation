@@ -267,7 +267,7 @@ Hexen I:
 * Fixed the ally version of Timon's Axe's strong attack, the Hammer of Retribution's projectile, and the Quietus' projectiles not having lights.
 + The Hammer of Retribution's melee attack now has a maximum range of 144 map units (increased from 96).
 + The Hammer of Retribution's melee attack now deals 90-170 damage in PVE (increased from 60-113).
-+ The Hammer of Retribution's projectile now deals 20-160 direct damage in multiples of 20 (increased from 10-80 in multiples of 10).
++ The Hammer of Retribution's projectile now deals 20-160 direct damage in multiples of 20 in PVE (increased from 10-80 in multiples of 10).
 + The Quietus' melee attack now has a maximum range of 192 map units in PVE (increased from 128).
 + The Quietus' weak melee attack now deals 60-100 damage per puff in PVP, and 45-75 damage per puff in PVE (increased from 30-50).
 + The Quietus' strong melee attack now deals 240-400 damage per puff (increased from 120-200).

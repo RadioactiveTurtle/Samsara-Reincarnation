@@ -18,6 +18,12 @@ Doom:
 
 + Added Perkristan altsounds for the railgun and the Legacy of Rust loadout weapons.
 
+Wolfenstein 3D:
+
+-B.J. Blazkowicz (Original/Lost Episodes)-
+
+! The ammo crate's Compendium entry has been updated to make mention of bullet weapons in general.
+
 Hexen I:
 
 -Parias (Reincarnation)-
@@ -36,6 +42,10 @@ Ranger (Quake I):
 Caleb (Blood):
 
 ! Renamed some actor names to avoid name conflicts with other mods.
+
+Strifeguy (Strife):
+
+* Fixed the burn death sound playing later than intended.
 
 In Pursuit of Greed:
 

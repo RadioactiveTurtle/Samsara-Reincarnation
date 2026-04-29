@@ -15252,7 +15252,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_nodemonmorph", false);
 		SetCVar("samsara_notarotcardlimit", false);
 		SetCVar("samsara_nopainkillercorpseremoval", false);
-		SetCVar("samsara_descentflight", 2);
+		SetCVar("samsara_descentflight", 1);
 		SetCVar("samsara_deusexmovementpenalty", false);
 
 		// Serverside Ability Options

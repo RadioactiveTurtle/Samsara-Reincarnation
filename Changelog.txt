@@ -80,6 +80,20 @@ Sarge (Quake III Arena):
 - Health gained from regeneration is now subject to decay.
 ! Sarge's quad damage powerup is now affected by the "Quake Quad Damage Behavior" setting.
 
+-Games-
+
+Doom:
+
+* Fixed spectres not having OptFuzzy rendering on ZorchRaise.
+
+Hacx: Twitch 'n Kill:
+
+* Fixed stealth buzzers not having OptFuzzy rendering on ZorchRaise.
+
+PSX Doom CE/PSX Final Doom CE:
+
+* Fixed nightmare spectres not having Subtract rendering on ZorchRaise.
+
 -Settings-
 
 ! The "Boss Monologues" setting has caused some issues when ReMixer's "Performance Mode" setting is enabled, so the former has been forcibly disabled in that scenario for the time being.

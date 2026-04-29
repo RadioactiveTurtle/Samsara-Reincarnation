@@ -17224,3 +17224,5 @@ script "SamsaraSemiAuto" (int offhand)
 
     SetInventory(offhand ? "SamsaraFiringFullAuto2" : "SamsaraFiringFullAuto", 0);
 }
+
+script "SamsaraSetRenderStyle" (int styletype) { SetActorProperty(0, APROP_RenderStyle, styletype); }

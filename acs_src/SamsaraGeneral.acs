@@ -13607,7 +13607,6 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_banmorphovum", false);
 		SetCVar("samsara_extralifeteleport", true);
 		SetCVar("samsara_fullradiusdmg", false);
-		SetCVar("samsara_permaquad", false);
 		SetCVar("samsara_vanillaquake", false);
 		SetCVar("samsara_banrottgodmode", false);
 		SetCVar("samsara_lifeleechdrain", true);
@@ -13628,6 +13627,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_forcerecoil", false);
 		SetCVar("samsara_proximitybehavior", true);
 		SetCVar("samsara_weaponbalance", 0);
+		SetCVar("samsara_permaquad", false);
 
 		// Item Replacement Options
 		SetCVar("samsara_replace_backpack", 0);
@@ -14014,7 +14014,6 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_banmorphovum", false);
 		SetCVar("samsara_extralifeteleport", true);
 		SetCVar("samsara_fullradiusdmg", false);
-		SetCVar("samsara_permaquad", false);
 		SetCVar("samsara_vanillaquake", false);
 		SetCVar("samsara_banrottgodmode", false);
 		SetCVar("samsara_lifeleechdrain", true);
@@ -14035,6 +14034,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_forcerecoil", false);
 		SetCVar("samsara_proximitybehavior", false);
 		SetCVar("samsara_weaponbalance", 0);
+		SetCVar("samsara_permaquad", false);
 
 		// Item Replacement Options
 		SetCVar("samsara_replace_backpack", 0);
@@ -14421,7 +14421,6 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_banmorphovum", true);
 		SetCVar("samsara_extralifeteleport", true);
 		SetCVar("samsara_fullradiusdmg", true);
-		SetCVar("samsara_permaquad", true);
 		SetCVar("samsara_vanillaquake", false);
 		SetCVar("samsara_banrottgodmode", false);
 		SetCVar("samsara_lifeleechdrain", true);
@@ -14442,6 +14441,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_forcerecoil", false);
 		SetCVar("samsara_proximitybehavior", false);
 		SetCVar("samsara_weaponbalance", 1);
+		SetCVar("samsara_permaquad", true);
 
 		// Item Replacement Options
 		SetCVar("samsara_replace_backpack", 0);
@@ -14829,7 +14829,6 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_banmorphovum", false);
 		SetCVar("samsara_extralifeteleport", true);
 		SetCVar("samsara_fullradiusdmg", true);
-		SetCVar("samsara_permaquad", true);
 		SetCVar("samsara_vanillaquake", false);
 		SetCVar("samsara_banrottgodmode", true);
 		SetCVar("samsara_lifeleechdrain", true);
@@ -14850,6 +14849,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_forcerecoil", false);
 		SetCVar("samsara_proximitybehavior", true);
 		SetCVar("samsara_weaponbalance", 2);
+		SetCVar("samsara_permaquad", true);
 
 		// Item Replacement Options
 		SetCVar("samsara_replace_backpack", 0);
@@ -15242,7 +15242,6 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_banmorphovum", isZDoom() ? false : true);
 		SetCVar("samsara_extralifeteleport", true);
 		SetCVar("samsara_fullradiusdmg", true);
-		SetCVar("samsara_permaquad", true);
 		SetCVar("samsara_vanillaquake", false);
 		SetCVar("samsara_banrottgodmode", false);
 		SetCVar("samsara_lifeleechdrain", true);
@@ -15263,6 +15262,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_forcerecoil", false);
 		SetCVar("samsara_proximitybehavior", false);
 		SetCVar("samsara_weaponbalance", 2);
+		SetCVar("samsara_permaquad", true);
 
 		// Item Replacement Options
 		SetCVar("samsara_replace_backpack", 0);

@@ -37,8 +37,8 @@ Security Officer (Marathon):
 Ranger (Quake I):
 
 ! The Mjolnir and thunderbolt now have +NOAUTOFIRE to prevent accidental discharges and the latter's use of the plasma mode's explosive projectile when running out of ammo for other weapons.
-+ The Mjolnir now gives 160 rounds of Ammo 4 on pickup.
-- The Mjolnir now uses 20 rounds of Ammo 4 for each use of its lightning attack.
++ The Mjolnir now gives 80 rounds of Ammo 4 on pickup.
+- The Mjolnir now uses 10 rounds of Ammo 4 for each use of its lightning attack.
 ! Splash damage from Ranger's own explosives now thrusts him away further to help with his rocket jumping game while keeping the damage amounts unchanged.
 
 Caleb (Blood):
@@ -53,11 +53,13 @@ In Pursuit of Greed:
 
 -All-
 
+! Compendium descriptions have been added for the altclass fallback melee and fallback ranged weapons.
 + The gatling gun has been added as the slot 4S weapon!
 ! The IPOG blood splatters are no longer affected by the "Gib Persistence" setting, and now disappear after 150 tics.
 
 Bitterman (Quake II):
 
+! The chainfist, phalanx particle cannon, plasma beam, and trap now have sprites for the Compendium and the alternate HUD.
 ! Bitterman's quad damage powerup is now affected by the "Quake Quad Damage Behavior" setting.
 
 Petton Everhail (Catacomb 3D):

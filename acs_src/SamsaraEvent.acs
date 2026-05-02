@@ -2401,6 +2401,13 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                                                                          CheckWeapon("Super Nailgun") || CheckWeapon("Super Nailgun DOE") ||
                                                                          CheckWeapon("Thunderbolt") || CheckWeapon("Thunderbolt DOE"));
 
+                if (CheckInventory("SamsaraQuakeGauntletFiringSoundCheck") && !CheckWeapon("Gauntlet"))
+                {
+                    StopSound(0, CHAN_WEAPON);
+
+                    SetInventory("SamsaraQuakeGauntletFiringSoundCheck", 0);
+                }
+
                 if (!CheckWeapon("Thunderbolt"))
                 {
                     if (CheckInventory("SamsaraQuakeThunderboltLightningFiringSoundCheck"))

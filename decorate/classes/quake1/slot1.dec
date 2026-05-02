@@ -618,8 +618,8 @@ actor "Gauntlet" : SamsaraQuakeWeapon
         QGNT D 1 Bright Offset(0,33)
         QGNT A 1 Bright Offset(0,32)
       FireFinish:
-        QGNT G 0 A_ReFire
-        QGNT G 0 A_GiveInventory("SamsaraQuakeGauntletFiringSoundStopper")
+        QGNT B 0 A_ReFire
+        QGNT B 0 A_GiveInventory("SamsaraQuakeGauntletFiringSoundStopper")
         QGNT B 1 Bright A_WeaponReady
         QGNT CDEFGHIJK 1 A_WeaponReady
         goto Ready

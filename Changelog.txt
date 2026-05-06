@@ -51,6 +51,7 @@ Duke Nukem 3D:
 Security Officer (Marathon):
 
 * Fixed the Talon Ceramic Combat Blade melee puff not having lights.
+* Fixed thrown Talon Ceramic Combat Blades multiplying on hitting specific corners of map geometry in GZDoom.
 
 Ranger (Quake I):
 

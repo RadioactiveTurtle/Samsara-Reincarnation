@@ -1,3 +1,5 @@
+actor SamsaraMarathonTCCBAlreadyDropped : Boolean {}
+
 actor "Talon Ceramic Combat Blade" : SamsaraMarathonWeapon
 {
     Weapon.SlotNumber 0
@@ -224,7 +226,10 @@ actor TCCBThrown
       Death:
       Crash:
         TNT1 A 0 A_StopSound(CHAN_VOICE)
-        TNT1 A 1 A_DropItem("TCCBPickup")
+        TNT1 A 0 A_JumpIfInventory("SamsaraMarathonTCCBAlreadyDropped",1,"DeathFinish")
+        TNT1 A 0 A_DropItem("TCCBPickup")
+      DeathFinish:
+        TNT1 A 1 A_GiveInventory("SamsaraMarathonTCCBAlreadyDropped")
         stop
     }
 }
@@ -242,8 +247,9 @@ actor TCCBThrownInfinite : TCCBThrown
       Death:
       Crash:
         TNT1 A 0 A_StopSound(CHAN_VOICE)
-        TNT1 A 1 A_DropItem("TCCBPickupInfinite")
-        stop
+        TNT1 A 0 A_JumpIfInventory("SamsaraMarathonTCCBAlreadyDropped",1,"DeathFinish")
+        TNT1 A 0 A_DropItem("TCCBPickupInfinite")
+        goto DeathFinish
     }
 }
 

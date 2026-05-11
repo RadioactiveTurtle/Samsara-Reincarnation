@@ -56,7 +56,7 @@ Security Officer (Marathon):
 
 Ranger (Quake I):
 
-* Fixed the axe, shotgun weapons, super nailgun (normal nails), and laser cannon using an explosive damage type.
+* Fixed the axe, Mjolnir (melee), shotgun weapons, super nailgun (normal nails), and laser cannon using an explosive damage type.
 * Fixed the Hexen monsters not taking more damage from the axe and single-barreled shotgun.
 ! The Mjolnir and thunderbolt now have +NOAUTOFIRE to prevent accidental discharges and the latter's use of the plasma mode's explosive projectile when running out of ammo for other weapons.
 + The Mjolnir now gives 80 rounds of Ammo 4 on pickup.

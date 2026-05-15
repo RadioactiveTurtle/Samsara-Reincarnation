@@ -61,7 +61,7 @@ actor LostSoul2 : SamsaraMonsterReincLostSoul replaces LostSoul
 		SKUL JK 6
 		Stop
 
-		// SamsaraMonsterGhost states
+		// SamsaraMonsterReincLostSoul states
 		Death.ZorchPistol:
 		Death.Zorch:
 		Death.ZorchKamikaze:

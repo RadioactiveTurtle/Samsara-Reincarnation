@@ -6202,7 +6202,7 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
               case SLOT_CHAINGUN:
                 hasweapon = CheckInventory("Chaingun Cannon") || CheckInventory("Duke3D_M16");
 
-                if (loadoutchoice <= 0 || completeloadout) // Chaingun Cannon
+                if (loadoutchoice <= 0 || completeloadout) // Chaingun Cannon/Water Repeater
                 {
                     if (!hasweapon)
                     {

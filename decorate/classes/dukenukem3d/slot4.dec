@@ -2,7 +2,7 @@
 
 actor SamsaraDukeLoadoutSlot4 : Boolean {}
 
-// Chaingun Cannon
+// Chaingun Cannon/Water Repeater
 
 actor SamsaraDukeHasSlot4 : Boolean {}
 actor DukeRipperFiringSequence : Counter { Inventory.MaxAmount 2 }

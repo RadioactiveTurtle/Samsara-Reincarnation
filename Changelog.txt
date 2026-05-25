@@ -53,6 +53,7 @@ Hexen I:
 
 -All-
 
+* Fixed some sprite name conflicts with the players.
 ! The icon of the defender now shows an icon when active.
 
 Duke Nukem 3D:

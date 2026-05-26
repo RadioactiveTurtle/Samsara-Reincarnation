@@ -659,8 +659,8 @@ Actor SamsaraPlayerPawnNormalRedBlood : PlayerPawn
 			"####" "#" 0 A_SetGravity(1.0)
 			"####" "#" 0 A_SetMass(100)
 		VoodooLoop:
-			"####" "#" 1
-			Loop
+			"####" "#" -1
+			stop
 	}
 }
 

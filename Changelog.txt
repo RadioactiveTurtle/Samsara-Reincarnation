@@ -105,6 +105,10 @@ Bitterman (Quake II):
 ! The chainfist, phalanx particle cannon, plasma beam, and trap now have sprites for the Compendium and the alternate HUD.
 ! Bitterman's quad damage powerup is now affected by the "Quake Quad Damage Behavior" setting.
 
+Demoness (Hexen II):
+
+* Fixed the "Custom Gravity" setting not behaving properly for Demoness.
+
 GoldenEye 007:
 
 -James Bond (GoldenEye 007)-

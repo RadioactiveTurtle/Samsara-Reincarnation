@@ -387,20 +387,26 @@ Script "Hexen2_Hud" (void)
 		}
 		
 		//Demon glide
-		if(CheckInventory("Hexen2Level") >= 6)
+		if (CheckInventory("Hexen2Level") >= 6 && buttons & BT_Jump)
 		{
-			if(buttons & BT_Jump)
-			{
-				GiveInventory("Hexen2DemonessGlide",1);
-				SetActorProperty(0, APROP_Gravity, 0.5);
-			}
-			else
-			{
-				TakeInventory("Hexen2DemonessGlide",1);
-				if (GetCVar("samsara_nocustomgravity")) { SetActorProperty(0, APROP_Gravity, 1.0); }
-				else { SetActorProperty(0, APROP_Gravity, 0.8125); }
-			}
+			GiveInventory("Hexen2DemonessGlide", 1);
+
+			SetActorProperty(0, APROP_Gravity, 0.5);
+
+            if (CheckInventory("ForceSOGravity")) { SetActorProperty(0, APROP_Gravity, 0.15); } // no gravity changes here for now
+		} else {
+			TakeInventory("Hexen2DemonessGlide", 1);
+
+			if (GetCVar("samsara_nocustomgravity")) { SetActorProperty(0, APROP_Gravity, 1.0); }
+			else { SetActorProperty(0, APROP_Gravity, 0.8125); }
+
+            if (CheckInventory("ForceNormalGravity")) { SetActorProperty(0, APROP_Gravity, 1.0); }
+            else if (CheckInventory("ForceSOGravity")) { SetActorProperty(0, APROP_Gravity, 0.15); }
+            else if (CheckInventory("ForceRangerGravity")) { SetActorProperty(0, APROP_Gravity, 0.75); }
+            else if (CheckInventory("ForceEleenaGravity")) { SetActorProperty(0, APROP_Gravity, 0.68); }
+            else if (CheckInventory("ForceDemonessGravity")) { SetActorProperty(0, APROP_Gravity, 0.8125); }
 		}
+
 		if(CheckInventory("Hexen2TomeOfPowerCooldown") && second == 0)
 			TakeInventory("Hexen2TomeOfPowerCooldown",1);
 		

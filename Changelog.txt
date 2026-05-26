@@ -74,6 +74,7 @@ Security Officer (Marathon):
 
 Ranger (Quake I):
 
+* Fixed a missing flag for the fullscreen HUD's mugshot.
 * Fixed the axe, Mjolnir (melee), shotgun weapons, super nailgun (normal nails), and laser cannon using an explosive damage type.
 * Fixed the Hexen monsters not taking more damage from the axe and single-barreled shotgun.
 ! The Mjolnir and thunderbolt now have +NOAUTOFIRE to prevent accidental discharges and the latter's use of the plasma mode's explosive projectile when running out of ammo for other weapons.
@@ -108,6 +109,8 @@ Bitterman (Quake II):
 Demoness (Hexen II):
 
 * Fixed the "Custom Gravity" setting not behaving properly for Demoness.
+* Fixed Demon Glide taking effect when dead.
+* Fixed the Demon Glide sound constantly activating on use; it should only play once the ability takes effect.
 
 GoldenEye 007:
 

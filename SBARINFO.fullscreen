@@ -990,7 +990,7 @@ StatusBar Fullscreen, ForceScaled
                 {
                     InInventory QuakePentagram { DrawImage "RNGGOD0", 1, 176; }
                     else InInventory PowerSamsaraDamageBooster { DrawImage "RNGARNO0", 1, 176; }
-                    else { DrawMugShot 5, disablegrin, disableouch, 1, 176; }
+                    else { DrawMugShot 5, disablegrin, disableouch, disablerampage, 1, 176; }
                 }
             }
 

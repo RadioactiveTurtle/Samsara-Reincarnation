@@ -126,6 +126,7 @@ SAMSARA_HEXEN_OB_SLOT6 = "%k baptized %o in the Firestorm.";
 SAMSARA_HEXEN_OB_SLOT7 = "%k added %o's soul to the Wraithverge.";
 SAMSARA_HEXEN_OB_SLOT7S = "%k set %o's soul ablaze.";
 SAMSARA_HEXEN_OB_SUPPORT = "%k snapped %o's neck with a brutal punch.";
+SAMSARA_HEXEN_OB_UNIQUE3_LOADOUT1 = "%k porkalated %o."; // placeholder
 
 SAMSARA_DUKE_OB_FALLBACKMELEE = "%k put %o out with a snap kick.";
 SAMSARA_DUKE_OB_FALLBACKRANGED_1 = "%k made %o suck on the Glock 17.";
@@ -616,6 +617,9 @@ REMIXER_ALLAMMO_GOLDFINGER = "Found a PPK and some ammo! (10/4/1/20 rounds of Am
 // SAMSARA.C EXTERNALIZATIONS
 CORVUSMORPHOVUMDISABLED1 = "The Morph Ovum is disabled. Sorry.";
 CORVUSMORPHOVUMDISABLED2 = "The Morph Ovum is disabled. Received a Grim Ballista instead.";
+HEXEN1PORKALATORDISABLED1 = "The Porkalator is disabled. Sorry.";
+HEXEN1PORKALATORDISABLED2 = "The Porkalator is disabled. Received a Mystic Ambit Incant instead.";
+HEXEN1PORKALATORDISABLED3 = "The Porkalator is disabled. Received a Disc of Repulsion instead.";
 DUKEDEADMESSAGERESTART = "Press Use To Restart Level";
 DUKEDEADMESSAGERESPAWN = "Press Use To Respawn"; //"Press any button to respawn.";
 MYSTICAMBITINCANTFAIL_CLERIC1 = "You cannot use this unless injured.";

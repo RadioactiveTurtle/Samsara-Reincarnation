@@ -132,7 +132,6 @@ OptionMenu "SamsaraServerSideOptions"
     Option "Doom 64: Unmaker Mode",               "samsara_absolutionunmaker",         "UnmakerModeOptions"
     Option "Chex Quest: LAZ Device Mode",         "samsara_classiclaz",                "ClassicLAZOptions"
     Option "Heretic: Allow Bomb Walls",           "samsara_bombwalls",                 "YesNo"
-    Option "Heretic: Ban Morph Ovum",             "samsara_banmorphovum",              "YesNo"
     Option "Wolfenstein 3D: Extra Life Teleport", "samsara_extralifeteleport",         "OnOff"
     Option "Marathon: Full Radius Explosions",    "samsara_fullradiusdmg",             "OnOff"
     Option "Quake I: Ban DOE Ammo",               "samsara_vanillaquake",              "YesNo"
@@ -156,6 +155,7 @@ OptionMenu "SamsaraServerSideOptions"
     Option "Proximity Explosive Behavior",   "samsara_proximitybehavior", "ProximityBehavior"
     Option "Weapon Balance",                 "samsara_weaponbalance",     "WeaponBalanceOptions"
     Option "Quake Quad Damage Behavior",     "samsara_permaquad",         "QuadBehavior"
+    Option "Ban Morph Items",                "samsara_banmorphovum",      "YesNo"
     StaticText ""
     Submenu "Item Replacement Options", "SamsaraItemReplacementOptions"
     StaticText ""
@@ -826,6 +826,18 @@ OptionMenu "SamsaraServerCharacterEquipmentLoadoutOptions"
     StaticText "Chex Warrior", 1
     Option "Fallback Ranged", "samsara_chex_fallbackranged", "ChexFallbackRangedServerOptions"
     StaticText ""
+    StaticText "Parias (Reincarnation)", 1
+    Option "Unique 3", "samsara_parias_unique3", "Hexen1Unique3ServerOptions"
+    StaticText ""
+    StaticText "Parias (Classic)", 1
+    Option "Unique 3", "samsara_pariasclassic_unique3", "Hexen1Unique3ServerOptions"
+    StaticText ""
+    StaticText "Daedolon", 1
+    Option "Unique 3", "samsara_daedolon_unique3", "Hexen1Unique3ServerOptions"
+    StaticText ""
+    StaticText "Baratus", 1
+    Option "Unique 3", "samsara_baratus_unique3", "Hexen1Unique3ServerOptions"
+    StaticText ""
     StaticText "Duke Nukem (Original)", 1
     Option "Slot 4", "samsara_duke_slot4", "DukeSlot4ServerOptions"
     StaticText ""
@@ -905,6 +917,13 @@ OptionValue "ChexFallbackRangedServerOptions"
     0, "User-Defined"
     1, "Mini-Zorcher"
     2, "Micro-Zorcher"
+}
+
+OptionValue "Hexen1Unique3ServerOptions"
+{
+    0, "User-Defined"
+    1, "Dark Servant"
+    2, "Porkalator"
 }
 
 OptionValue "DukeSlot4ServerOptions"

@@ -1567,22 +1567,22 @@ str ClassUniqueSounds[CLASSCOUNT][MAXMODES][UNIQUECOUNT][LOADOUTCOUNT] =
         {
             {"hexen/artiget"},
             {"hexen/artiget"},
-            {"hexen/artiget"},
+            {"hexen/artiget", "hexen/artiget"},
         },
         {
             {"hexen/artiget"},
             {"hexen/artiget"},
-            {"hexen/artiget"},
+            {"hexen/artiget", "hexen/artiget"},
         },
         {
             {"hexen/artiget"},
             {"hexen/artiget"},
-            {"hexen/artiget"},
+            {"hexen/artiget", "hexen/artiget"},
         },
         {
             {"hexen/artiget"},
             {"hexen/artiget"},
-            {"hexen/artiget"},
+            {"hexen/artiget", "hexen/artiget"},
         },
     },
     {

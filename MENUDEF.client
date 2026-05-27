@@ -458,6 +458,18 @@ OptionMenu "SamsaraClientCharacterEquipmentLoadoutOptions"
     StaticText "Chex Warrior", 1
     Option "Fallback Ranged", "samsara_cl_chex_fallbackranged", "ChexFallbackRangedClientOptions"
     StaticText ""
+    StaticText "Parias (Reincarnation)", 1
+    Option "Unique 3", "samsara_cl_parias_unique3", "Hexen1Unique3ClientOptions"
+    StaticText ""
+    StaticText "Parias (Classic)", 1
+    Option "Unique 3", "samsara_cl_pariasclassic_unique3", "Hexen1Unique3ClientOptions"
+    StaticText ""
+    StaticText "Daedolon", 1
+    Option "Unique 3", "samsara_cl_daedolon_unique3", "Hexen1Unique3ClientOptions"
+    StaticText ""
+    StaticText "Baratus", 1
+    Option "Unique 3", "samsara_cl_baratus_unique3", "Hexen1Unique3ClientOptions"
+    StaticText ""
     StaticText "Duke Nukem (Original)", 1
     Option "Slot 4", "samsara_cl_duke_slot4", "DukeSlot4ClientOptions"
     StaticText ""
@@ -532,6 +544,12 @@ OptionValue "ChexFallbackRangedClientOptions"
 {
     0, "Mini-Zorcher"
     1, "Micro-Zorcher"
+}
+
+OptionValue "Hexen1Unique3ClientOptions"
+{
+    0, "Dark Servant"
+    1, "Porkalator"
 }
 
 OptionValue "DukeSlot4ClientOptions"

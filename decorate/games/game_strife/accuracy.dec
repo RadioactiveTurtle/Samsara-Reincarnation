@@ -236,6 +236,33 @@ actor CorvusStrifeUnique1 : Trigger
     }
 }
 
+actor HexenStrifeUnique3 : Trigger
+{
+    States
+    {
+      Pickup:
+        TNT1 A 0 A_JumpIfInventory("SamsaraHasAllLoadoutEquipment",1,"PickupLoadout0")
+        TNT1 A 0 A_JumpIfInventory("SamsaraHexen1LoadoutUnique3",1,"PickupLoadout1")
+      // Dark Servant
+      PickupLoadout0:
+        TNT1 A 0 A_GiveInventory("SamsaraHexenDarkServant")
+        TNT1 A 0 A_JumpIfInventory("SamsaraHasAllLoadoutEquipment",1,"PickupLoadout1")
+        goto PickupFinish
+
+      // Porkalator
+      PickupLoadout1:
+        TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 45), "PickupFinish")
+        TNT1 A 0 A_GiveInventory("SamsaraHexenPorkalator")
+        goto PickupFinish
+
+      PickupFinish:
+        TNT1 A 0 A_GiveInventory("SamsaraHexen1AcquiredUnique3")
+        TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 45), "PickupStop")
+        TNT1 A 0 A_GiveInventory("SamsaraHexenHasPorkalator")
+        stop
+    }
+}
+
 actor WolfStrifeUnique1 : Trigger
 {
     States

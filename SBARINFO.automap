@@ -1872,7 +1872,15 @@ StatusBar Automap, ForceScaled
                 InInventory SamsaraDiscOfRepulsionCooldown { DrawNumber 3, HEREHUDS, Yellow, SamsaraDiscOfRepulsionCooldown, 150, 191; } // has different text color to avoid confusion between cooldowns
 
                 // Dark Servant - Unique 3
-                InInventory SamsaraDarkServantCooldown { DrawNumber 3, HEREHUDS, DarkBrown, SamsaraDarkServantCooldown, 164, 191; }  // has different text color to avoid confusion between cooldowns
+                InInventory SamsaraHasAllLoadoutEquipment
+                {
+                    InInventory SamsaraDarkServantCooldown { DrawNumber 3, HEREHUDS, DarkBrown, SamsaraDarkServantCooldown, 164, 184; }  // has different text color to avoid confusion between cooldowns
+                }
+                else InInventory SamsaraHexen1LoadoutUnique3 {}
+                else
+                {
+                    InInventory SamsaraDarkServantCooldown { DrawNumber 3, HEREHUDS, DarkBrown, SamsaraDarkServantCooldown, 164, 184; }  // has different text color to avoid confusion between cooldowns
+                }
             }*/
         }
         //else { DrawSelectedInventory AlwaysShowCounter, HEREHUDF2, 290, 22, 293, 30, Red; } // Parias (Reincarnation/Classic)
@@ -2215,10 +2223,22 @@ StatusBar Automap, ForceScaled
             InInventory HexenClassMode, 2 {} // Daedolon/Baratus
             else // Parias (Reincarnation/Classic)
             {
-                InInventory SamsaraDarkServantCooldown // has different text color to avoid confusion between cooldowns
+                InInventory SamsaraHasAllLoadoutEquipment
                 {
-                    InInventory SamsaraDiscOfRepulsionCooldown { DrawNumber 3, HEREHUDS, DarkBrown, SamsaraDarkServantCooldown, 293, 56; }
-                    else { DrawNumber 3, HEREHUDS, DarkBrown, SamsaraDarkServantCooldown, 293, 48; }
+                    InInventory SamsaraDarkServantCooldown // has different text color to avoid confusion between cooldowns
+                    {
+                        InInventory SamsaraDiscOfRepulsionCooldown { DrawNumber 3, HEREHUDS, DarkBrown, SamsaraDarkServantCooldown, 293, 56; }
+                        else { DrawNumber 3, HEREHUDS, DarkBrown, SamsaraDarkServantCooldown, 293, 48; }
+                    }
+                }
+                else InInventory SamsaraHexen1LoadoutUnique3 {} // Porkalator
+                else // Dark Servant
+                {
+                    InInventory SamsaraDarkServantCooldown // has different text color to avoid confusion between cooldowns
+                    {
+                        InInventory SamsaraDiscOfRepulsionCooldown { DrawNumber 3, HEREHUDS, DarkBrown, SamsaraDarkServantCooldown, 293, 56; }
+                        else { DrawNumber 3, HEREHUDS, DarkBrown, SamsaraDarkServantCooldown, 293, 48; }
+                    }
                 }
             }
         }*/
@@ -12182,7 +12202,7 @@ StatusBar Automap, ForceScaled
         }*/
     }
 
-    IsSelected " Beak " //PlayerType ChickenPlayer
+    IsSelected " Beak "//, " Snout " //PlayerType ChickenPlayer
     {
         DrawImage "CHKNBAR", 0, 168;
 

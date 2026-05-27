@@ -6352,15 +6352,33 @@ StatusBar Fullscreen, ForceScaled
                     GameMode Deathmatch, Possession, TeamGame { DrawNumber 3, INDEXFONT, Yellow, SamsaraDiscOfRepulsionCooldown, 293, 48; }
                     else GameMode SinglePlayer, Cooperative, Invasion, Survival { DrawNumber 3, INDEXFONT, Yellow, SamsaraDiscOfRepulsionCooldown, 293, 56; }
                 }
-                InInventory SamsaraDarkServantCooldown // has different text color to avoid confusion between cooldowns
+                InInventory SamsaraHasAllLoadoutEquipment
                 {
-                    InInventory SamsaraDiscOfRepulsionCooldown
+                    InInventory SamsaraDarkServantCooldown // has different text color to avoid confusion between cooldowns
                     {
-                        GameMode Deathmatch, Possession, TeamGame { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 56; }
-                        else GameMode SinglePlayer, Cooperative, Invasion, Survival { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 64; }
-                    } else {
-                        GameMode Deathmatch, Possession, TeamGame { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 48; }
-                        else GameMode SinglePlayer, Cooperative, Invasion, Survival { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 56; }
+                        InInventory SamsaraDiscOfRepulsionCooldown
+                        {
+                            GameMode Deathmatch, Possession, TeamGame { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 56; }
+                            else GameMode SinglePlayer, Cooperative, Invasion, Survival { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 64; }
+                        } else {
+                            GameMode Deathmatch, Possession, TeamGame { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 48; }
+                            else GameMode SinglePlayer, Cooperative, Invasion, Survival { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 56; }
+                        }
+                    }
+                }
+                else InInventory SamsaraHexen1LoadoutUnique3 {} // Porkalator
+                else // Dark Servant
+                {
+                    InInventory SamsaraDarkServantCooldown // has different text color to avoid confusion between cooldowns
+                    {
+                        InInventory SamsaraDiscOfRepulsionCooldown
+                        {
+                            GameMode Deathmatch, Possession, TeamGame { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 56; }
+                            else GameMode SinglePlayer, Cooperative, Invasion, Survival { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 64; }
+                        } else {
+                            GameMode Deathmatch, Possession, TeamGame { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 48; }
+                            else GameMode SinglePlayer, Cooperative, Invasion, Survival { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraDarkServantCooldown, 293, 56; }
+                        }
                     }
                 }
                 InInventory HolodukeCooldown

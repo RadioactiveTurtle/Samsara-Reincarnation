@@ -54,6 +54,7 @@ Hexen I:
 -All-
 
 * Fixed some sprite name conflicts with the players.
++ The porkalator has been added as a loadout choice for the third unique equipment (samsara_cl_[parias/pariasclassic/daedolon/baratus]_unique3 1 (client) or samsara_[parias/pariasclassic/daedolon/baratus]_unique3 2 (server)).
 ! The icon of the defender now shows an icon when active.
 
 Duke Nukem 3D:
@@ -174,6 +175,7 @@ PSX Doom CE/PSX Final Doom CE:
 + samsara_pinatapartyperformance has been added, determining whether enemies should drop containers that reveal their contents when a player gets close enough, much like the Christmas presents with "Christmas Mode" enabled. It can be found in the "Samsara Serverside Options" menu, under "Party Mode Options", with the label "Pinata Party Performance Mode".
 * Fixed "Pistol Start" taking effect in PVP and invasion; having it active in those cases is redundant.
 ! "Quake I: Quad Damage Behavior" has been renamed to "Quake Quad Damage Behavior" and moved to "Serverside Ability Options". The CVar name itself remains unchanged.
+! "Heretic: Ban Morph Ovum" has been renamed to "Ban Morph Items" and moved to "Serverside Ability Options". The CVar name itself remains unchanged.
 
 -Other-
 

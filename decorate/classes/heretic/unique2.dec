@@ -68,9 +68,10 @@ actor SamsaraCorvusEggFX
 actor SamsaraCorvusEggFXCoop : EggFX
 {
     MorphProjectile.Duration 1400
-    MorphProjectile.MorphStyle MRF_ADDSTAMINA|MRF_FULLHEALTH|MRF_UNDOBYTOMEOFPOWER
+    MorphProjectile.MorphStyle MRF_ADDSTAMINA|MRF_FULLHEALTH|MRF_UNDOBYTOMEOFPOWER|MRF_UNDOBYCHAOSDEVICE // allow unmorphing via chaos device like in hexen
     MorphProjectile.MonsterClass "Chicken2"
     Species "Player"
+    +BLOODSPLATTER
     +THRUSPECIES
 }
 

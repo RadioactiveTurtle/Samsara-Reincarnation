@@ -2345,7 +2345,10 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("PortSuperHealth", INTMAX);
 			TakeInventory("PortMysticAmbit", INTMAX);
 			TakeInventory("SamsaraHexenDiscOfRepulsion", INTMAX);
+			TakeInventory("SamsaraHexen1AcquiredUnique3", 1);
 			TakeInventory("SamsaraHexenDarkServant", INTMAX);
+			TakeInventory("SamsaraHexenPorkalator", INTMAX);
+			TakeInventory("SamsaraHexenHasPorkalator", INTMAX);
 			TakeInventory("Serpent Staff", INTMAX);
 			TakeInventory("Blight Shock", INTMAX);
 			TakeInventory("Jotunn's Flail", INTMAX);
@@ -3699,6 +3702,8 @@ script "Samsara_FillInventory" (void)
 			GiveInventory("SamsaraHexenHasSlot7", 1);
 			GiveInventory("SamsaraClassicPariasHasBloodscourge", 1);
 			GiveInventory("SamsaraClassicPariasHasSpikedGauntlet", 1);
+            GiveInventory("SamsaraHexen1AcquiredUnique3", 1);
+			GiveInventory("SamsaraHexenHasPorkalator", 16);
 			TakeInventory("FlechetteCooldown",65536);
 			TakeInventory("Flechette2Cooldown",65536);
 			TakeInventory("Flechette3Cooldown",65536);
@@ -9710,6 +9715,66 @@ script "Samsara_GiveCustomUnique" (int unum, int startmode)
       default:
         break;
 
+      case CLASS_HEXEN:
+        switch (altclasschoice)
+        {
+          default:
+            break;
+
+          case 0: // Parias (Reincarnation)
+            switch (unum)
+            {
+              default:
+                break;
+
+              case SLOT_UNIQUE3:
+                if (startmode != 0) { loadoutchoice = GetCVar("samsara_parias_unique3") > 0 ? GetCVar("samsara_parias_unique3") - 1 : GetUserCVar(pln, "samsara_cl_parias_unique3"); }
+                else { loadoutchoice = CheckInventory("SamsaraHexen1LoadoutUnique3"); }
+                break;
+            }
+            break;
+
+          case 1: // Parias (Classic)
+            switch (unum)
+            {
+              default:
+                break;
+
+              case SLOT_UNIQUE3:
+                if (startmode != 0) { loadoutchoice = GetCVar("samsara_pariasclassic_unique3") > 0 ? GetCVar("samsara_pariasclassic_unique3") - 1 : GetUserCVar(pln, "samsara_cl_pariasclassic_unique3"); }
+                else { loadoutchoice = CheckInventory("SamsaraHexen1LoadoutUnique3"); }
+                break;
+            }
+            break;
+
+          case 2: // Daedolon
+            switch (unum)
+            {
+              default:
+                break;
+
+              case SLOT_UNIQUE3:
+                if (startmode != 0) { loadoutchoice = GetCVar("samsara_daedolon_unique3") > 0 ? GetCVar("samsara_daedolon_unique3") - 1 : GetUserCVar(pln, "samsara_cl_daedolon_unique3"); }
+                else { loadoutchoice = CheckInventory("SamsaraHexen1LoadoutUnique3"); }
+                break;
+            }
+            break;
+
+          case 3: // Baratus
+            switch (unum)
+            {
+              default:
+                break;
+
+              case SLOT_UNIQUE3:
+                if (startmode != 0) { loadoutchoice = GetCVar("samsara_baratus_unique3") > 0 ? GetCVar("samsara_baratus_unique3") - 1 : GetUserCVar(pln, "samsara_cl_baratus_unique3"); }
+                else { loadoutchoice = CheckInventory("SamsaraHexen1LoadoutUnique3"); }
+                break;
+            }
+            break;
+        }
+        break;
+
       case CLASS_HALFLIFE:
         switch (altclasschoice)
         {
@@ -9815,9 +9880,22 @@ script "Samsara_GiveCustomUnique" (int unum, int startmode)
     bool dualgiveboth = startmode <= -1 || dualpickupmode == 3 || (dualpickupmode >= 4 && (!(isSinglePlayer() || isCoop()) || isInvasion()));
 
     // Ban morph ovum handling
-    if (classnum == CLASS_HERETIC && unum == SLOT_UNIQUE2 && !isZDoom() && GetCVar("samsara_banmorphovum"))
+    bool morphitemsbanned = !isZDoom() && GetCVar("samsara_banmorphovum");
+
+    if (classnum == CLASS_HERETIC && unum == SLOT_UNIQUE2 && morphitemsbanned)
     {
         if (startmode == 1 || startmode == 3) { unum = SLOT_UNIQUE1; }
+        else
+        {
+            SetResultValue(result);
+            terminate;
+        }
+    }
+
+    // Ban porkalator handling
+    if (classnum == CLASS_HEXEN && unum == SLOT_UNIQUE3 && morphitemsbanned && loadoutchoice >= 1 && !completeloadout)
+    {
+        if (startmode == 1 || startmode == 3) { unum = SLOT_UNIQUE2; }
         else
         {
             SetResultValue(result);
@@ -10250,10 +10328,31 @@ script "Samsara_GiveCustomUnique" (int unum, int startmode)
             break;
 
           case SLOT_UNIQUE3:
-            if (!CheckInventory("SamsaraHexenDarkServant"))
+            if (loadoutchoice <= 0 || completeloadout) // Dark Servant
             {
-                GiveInventory("SamsaraHexenDarkServant", 1);
-                result = 1;
+                if (!CheckInventory("SamsaraHexenDarkServant"))
+                {
+                    GiveInventory("SamsaraHexenDarkServant", 1);
+                    result = 1;
+                }
+            }
+
+            if (loadoutchoice >= 1 || completeloadout) // Porkalator
+            {
+                if (CheckInventory("SamsaraHexenPorkalator") < 16 && !morphitemsbanned)
+                {
+                    GiveInventory("SamsaraHexenPorkalator", 1);
+                    result = 1;
+                }
+            }
+
+            if (startmode != 0) { result = 1; }
+
+            if (result == 1)
+            {
+                GiveInventory("SamsaraHexen1AcquiredUnique3", 1);
+
+                if (CheckInventory("SamsaraHexenHasPorkalator") < 16 && !morphitemsbanned) { GiveInventory("SamsaraHexenHasPorkalator", 1); }
             }
             break;
         }
@@ -12722,6 +12821,10 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_doomguy_slot6", false);
 		SetCVar("samsara_cl_doomguy_slot7", 0);
 		SetCVar("samsara_cl_chex_fallbackranged", false);
+		SetCVar("samsara_cl_parias_unique3", false);
+		SetCVar("samsara_cl_pariasclassic_unique3", false);
+		SetCVar("samsara_cl_daedolon_unique3", false);
+		SetCVar("samsara_cl_baratus_unique3", false);
 		SetCVar("samsara_cl_duke_slot4", false);
 		SetCVar("samsara_cl_dukelab_slot4", false);
 		SetCVar("samsara_cl_ranger_slot1", false);
@@ -12888,6 +12991,10 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_doomguy_slot6", false);
 		SetCVar("samsara_cl_doomguy_slot7", 0);
 		SetCVar("samsara_cl_chex_fallbackranged", false);
+		SetCVar("samsara_cl_parias_unique3", false);
+		SetCVar("samsara_cl_pariasclassic_unique3", false);
+		SetCVar("samsara_cl_daedolon_unique3", false);
+		SetCVar("samsara_cl_baratus_unique3", false);
 		SetCVar("samsara_cl_duke_slot4", false);
 		SetCVar("samsara_cl_dukelab_slot4", false);
 		SetCVar("samsara_cl_ranger_slot1", false);
@@ -13054,6 +13161,10 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_doomguy_slot6", false);
 		SetCVar("samsara_cl_doomguy_slot7", 0);
 		SetCVar("samsara_cl_chex_fallbackranged", false);
+		SetCVar("samsara_cl_parias_unique3", false);
+		SetCVar("samsara_cl_pariasclassic_unique3", false);
+		SetCVar("samsara_cl_daedolon_unique3", false);
+		SetCVar("samsara_cl_baratus_unique3", false);
 		SetCVar("samsara_cl_duke_slot4", false);
 		SetCVar("samsara_cl_dukelab_slot4", false);
 		SetCVar("samsara_cl_ranger_slot1", false);
@@ -13221,6 +13332,10 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_doomguy_slot6", false);
 		SetCVar("samsara_cl_doomguy_slot7", 0);
 		SetCVar("samsara_cl_chex_fallbackranged", false);
+		SetCVar("samsara_cl_parias_unique3", false);
+		SetCVar("samsara_cl_pariasclassic_unique3", false);
+		SetCVar("samsara_cl_daedolon_unique3", false);
+		SetCVar("samsara_cl_baratus_unique3", false);
 		SetCVar("samsara_cl_duke_slot4", false);
 		SetCVar("samsara_cl_dukelab_slot4", false);
 		SetCVar("samsara_cl_ranger_slot1", false);
@@ -13387,6 +13502,10 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_doomguy_slot6", true);
 		SetCVar("samsara_cl_doomguy_slot7", 2);
 		SetCVar("samsara_cl_chex_fallbackranged", true);
+		SetCVar("samsara_cl_parias_unique3", false);
+		SetCVar("samsara_cl_pariasclassic_unique3", false);
+		SetCVar("samsara_cl_daedolon_unique3", false);
+		SetCVar("samsara_cl_baratus_unique3", false);
 		SetCVar("samsara_cl_duke_slot4", true);
 		SetCVar("samsara_cl_dukelab_slot4", true);
 		SetCVar("samsara_cl_ranger_slot1", false);
@@ -13804,6 +13923,10 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_doomguy_slot6", 0);
 		SetCVar("samsara_doomguy_slot7", 0);
 		SetCVar("samsara_chex_fallbackranged", 0);
+		SetCVar("samsara_parias_unique3", 0);
+		SetCVar("samsara_pariasclassic_unique3", 0);
+		SetCVar("samsara_daedolon_unique3", 0);
+		SetCVar("samsara_baratus_unique3", 0);
 		SetCVar("samsara_duke_slot4", 0);
 		SetCVar("samsara_dukelab_slot4", 0);
 		SetCVar("samsara_ranger_slot1", 0);
@@ -14213,6 +14336,10 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_doomguy_slot6", 0);
 		SetCVar("samsara_doomguy_slot7", 0);
 		SetCVar("samsara_chex_fallbackranged", 0);
+		SetCVar("samsara_parias_unique3", 0);
+		SetCVar("samsara_pariasclassic_unique3", 0);
+		SetCVar("samsara_daedolon_unique3", 0);
+		SetCVar("samsara_baratus_unique3", 0);
 		SetCVar("samsara_duke_slot4", 0);
 		SetCVar("samsara_dukelab_slot4", 0);
 		SetCVar("samsara_ranger_slot1", 0);
@@ -14622,6 +14749,10 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_doomguy_slot6", 0);
 		SetCVar("samsara_doomguy_slot7", 0);
 		SetCVar("samsara_chex_fallbackranged", 0);
+		SetCVar("samsara_parias_unique3", 0);
+		SetCVar("samsara_pariasclassic_unique3", 0);
+		SetCVar("samsara_daedolon_unique3", 0);
+		SetCVar("samsara_baratus_unique3", 0);
 		SetCVar("samsara_duke_slot4", 0);
 		SetCVar("samsara_dukelab_slot4", 0);
 		SetCVar("samsara_ranger_slot1", 0);
@@ -15032,6 +15163,10 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_doomguy_slot6", 0);
 		SetCVar("samsara_doomguy_slot7", 0);
 		SetCVar("samsara_chex_fallbackranged", 0);
+		SetCVar("samsara_parias_unique3", 0);
+		SetCVar("samsara_pariasclassic_unique3", 0);
+		SetCVar("samsara_daedolon_unique3", 0);
+		SetCVar("samsara_baratus_unique3", 0);
 		SetCVar("samsara_duke_slot4", 0);
 		SetCVar("samsara_dukelab_slot4", 0);
 		SetCVar("samsara_ranger_slot1", 0);
@@ -15447,6 +15582,10 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_doomguy_slot6", 0);
 		SetCVar("samsara_doomguy_slot7", 0);
 		SetCVar("samsara_chex_fallbackranged", 0);
+		SetCVar("samsara_parias_unique3", 0);
+		SetCVar("samsara_pariasclassic_unique3", 0);
+		SetCVar("samsara_daedolon_unique3", 0);
+		SetCVar("samsara_baratus_unique3", 0);
 		SetCVar("samsara_duke_slot4", 0);
 		SetCVar("samsara_dukelab_slot4", 0);
 		SetCVar("samsara_ranger_slot1", 0);

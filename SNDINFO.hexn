@@ -64,6 +64,31 @@ $playersound	HexenBaratus	male	*puzzfail		FGTHMM
 $playersound	HexenBaratus	male	*falling		FGTFALL
 $playersound	HexenBaratus	male	*taunt			FGTAUNT
 
+$playeralias	Pig male	*usefail		PigActive1
+$playeralias	Pig male	*puzzfail		PigActive2
+$playeralias	Pig male	*grunt			PigActive1
+$playeralias	Pig male	*land			PigActive2
+$playeralias	Pig male	*jump			PigActive1
+$playeralias	Pig male	*poison			PigActive2
+$playeralias	Pig male	*falling		PigPain
+$playeralias	Pig male	*splat			PigDeath
+$playeralias	Pig male	*pain100		PigPain
+$playeralias	Pig male	*pain75			PigPain
+$playeralias	Pig male	*pain50			PigPain
+$playeralias	Pig male	*pain25			PigPain
+$playeralias	Pig male	*death			PigDeath
+$playeralias	Pig male	*wimpydeath		PigDeath
+$playeralias	Pig male	*crazydeath		PigDeath
+$playeralias	Pig male	*xdeath			PigDeath
+$playeralias	Pig male	*taunt			PigActive1
+$playeralias	Pig male	*evillaugh		PigActive1
+
+PigActive1              pigrunt1
+PigActive2              squeal1
+PigPain                 pigpain2
+PigAttack               bite4
+PigDeath                pigdth2
+
 parias/explode			PABOOM
 parias/death				clrdth
 parias/crazydeath			clrcdth

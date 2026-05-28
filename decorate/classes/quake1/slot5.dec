@@ -509,7 +509,7 @@ actor QuakeRocketCoopQuadSoundDMC : QuakeRocketQuadSoundDMC
 
 actor QuakeRocketCoopQuadSoundDMCImproved : QuakeRocketCoopQuadSoundDMC
 {
-   States
+    States
     {
       Death:
         TNT1 A 0 A_GiveInventory("SamsaraRangerNoSelfDamage",1,AAPTR_TARGET)
@@ -1050,7 +1050,6 @@ actor QuadClusterRkCoopSoundDMC : QuadClusterRocketSoundDMC
 
 actor QuadClusterRkCoopSoundDMCImproved : QuadClusterRkCoopSoundDMC
 {
-    Damage (88)
     States
     {
       Death:

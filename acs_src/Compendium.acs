@@ -8,7 +8,7 @@
 #include "SamsaraDefs.acs"
 
 #DEFINE MAXWEAPONS 32
-#DEFINE MAXOPTIONS 94
+#DEFINE MAXOPTIONS 95
 
 // Label, index, damage, defense, range, attack speed, difficulty, character symbol, small character, game logo, large character, big font, big font color, small font, small font color, background top wall, background bottom wall, background side banner right, background logo, background character symbol, background right banner, selected font color
 str ClassInfo[CLASSCOUNT][MAXMODES][31] = 
@@ -3046,6 +3046,7 @@ str CVarOptionsandInfo[3][MAXOPTIONS][2] =
 		{ "Maxed Armor Items Pickup", "This option determines whether holdable armor items can be picked up and automatically used when the player is maxed out on them." },
 		{ "Footstep Sounds", "Some characters such as JC Denton play footstep sounds when moving. This option toggles whether the player should hear them. Note that the actual footstep behavior is unaffected." },
 		{ "Doom: Berserk Switch", "This option determines whether Doomguy should switch to the fist when picking up a berserk pack. The options are:\n\n\cjOff: \cmThe fist will never be switched to upon picking up a berserk pack.\n\n\cjOn (Without Berserk): \cmThe fist will be switched to upon picking up a berserk pack, but only if a berserk pack was not in effect prior to pickup.\n\n\cjOn (Always): \cmThe fist will always be switched to upon picking up a berserk pack. This is the default setting." },
+		{ "Heretic: Bombs of the Ancients", "These settings allow the player to decide which of Corvus' respective bomb items should be available in the inventory." },
 		{ "Duke Nukem 3D: Legacy Duke Talk", "This setting chooses if Duke's voice lines should come from Samsara Reincarnation or Samsara v0.3666." },
 		{ "Quake I: Explosion Particles", "This option controls how many particles are emitted from Quake explosions. 0 implies the default of 100, and -1 disables them." },
 		{ "Half-Life: Freeman HEV Talk", "This option toggles whether Freeman's HEV or Shephard's PCV should talk or otherwise make a bunch of noises." },
@@ -3154,7 +3155,8 @@ str CVarOptionsandInfo[3][MAXOPTIONS][2] =
 		{ "Random Character Spawn Options", "If random characters are enabled, then these settings will decide what kind of characters are allowed to spawn in the game. A few characters may come from expansion packs or similar games, and as such, they may be chosen independently or combined with their originating games." },
 		{ "Doom 64: Unmaker Mode", "This option determines whether Doom 64 Guy's Unmaker should fire hitscans (as per the original Doom 64) or projectiles (in the style of the Absolution TC)." },
 		{ "Chex Quest: LAZ Device Mode", "The LAZ Device in Chex Quest was just a reskinned BFG, but Samsara spices things up for the LAZ Device to make the Chex Warrior stand out more compared to Doomguy. With this set to 'Modern', the LAZ device will function as a shield that can be held down with the primary fire button, and released to launch the projectile. The projectile's impact does residual damage to nearby enemies, but it doesn't do any BFG tracers like the BFG9000. Setting it to 'Classic' will have it work just like in Chex Quest, with it being a clone of Doom's BFG9000." },
-		{ "Heretic: Allow Bomb Walls", "If this setting is enabled, then Corvus will be able to set as many remote bombs as needed. If one second passes without another remote bomb being placed, he will be able to detonate every remote bomb he has placed." },
+		{ "Heretic: Allow Bombs", "If any of these settings are enabled, then Corvus will be allowed to make use of the Time Bomb of the Ancients, Mine of the Ancients, Eye of the Ancients, or any combination thereof." },
+		{ "Heretic: Allow Remote Bomb Walls", "If this setting is enabled, then Corvus will be able to set as many Mines of the Ancients as needed. If one second passes without another Mine being placed, he will be able to detonate every Mine he has placed." },
 		{ "Wolfenstein 3D: Extra Life Teleport", "This setting determines whether the extra life used by the Original and Lost Episodes versions of B.J. Blazkowicz should teleport them back to the start of the level on use. Note that this setting is always activated in competitive game modes." },
 		{ "Marathon: Full Radius Explosions", "This setting determines whether Security Officer's explosive weapons should deal full damage only at the center (as per Doom) or at any point in the radius (as per Marathon)." },
 		{ "Quake I: Ban DOE Ammo", "If this option is enabled, Ranger's grenade launcher, nailgun, rocket launcher, super nailgun, and thunderbolt will not be allowed to use their respective alternate ammo types from Dissolution of Eternity." },

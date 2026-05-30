@@ -12722,6 +12722,9 @@ script "SamsaraClientSidePresetSelection" (void)
 
 		// Class-Based Player Preferences
 		SetCVar("samsara_cl_berserkswitch", 2);
+		SetCVar("samsara_cl_corvustimebomb", true);
+		SetCVar("samsara_cl_corvusremotebomb", true);
+		SetCVar("samsara_cl_corvusproxybomb", true);
 		SetCVar("samsara_cl_legacydukevoices", true);
 		SetCVar("samsara_cl_expparticles", 0);
 		SetCVar("samsara_cl_hevtalk", true);
@@ -12892,6 +12895,9 @@ script "SamsaraClientSidePresetSelection" (void)
 
 		// Class-Based Player Preferences
 		SetCVar("samsara_cl_berserkswitch", 0);
+		SetCVar("samsara_cl_corvustimebomb", true);
+		SetCVar("samsara_cl_corvusremotebomb", true);
+		SetCVar("samsara_cl_corvusproxybomb", true);
 		SetCVar("samsara_cl_legacydukevoices", true);
 		SetCVar("samsara_cl_expparticles", 0);
 		SetCVar("samsara_cl_hevtalk", false);
@@ -13062,6 +13068,9 @@ script "SamsaraClientSidePresetSelection" (void)
 
 		// Class-Based Player Preferences
 		SetCVar("samsara_cl_berserkswitch", 2);
+		SetCVar("samsara_cl_corvustimebomb", true);
+		SetCVar("samsara_cl_corvusremotebomb", true);
+		SetCVar("samsara_cl_corvusproxybomb", true);
 		SetCVar("samsara_cl_legacydukevoices", false);
 		SetCVar("samsara_cl_expparticles", 0);
 		SetCVar("samsara_cl_hevtalk", false);
@@ -13233,6 +13242,9 @@ script "SamsaraClientSidePresetSelection" (void)
 
 		// Class-Based Player Preferences
 		SetCVar("samsara_cl_berserkswitch", 0);
+		SetCVar("samsara_cl_corvustimebomb", true);
+		SetCVar("samsara_cl_corvusremotebomb", true);
+		SetCVar("samsara_cl_corvusproxybomb", true);
 		SetCVar("samsara_cl_legacydukevoices", true);
 		SetCVar("samsara_cl_expparticles", 0);
 		SetCVar("samsara_cl_hevtalk", false);
@@ -13403,6 +13415,9 @@ script "SamsaraClientSidePresetSelection" (void)
 
 		// Class-Based Player Preferences
 		SetCVar("samsara_cl_berserkswitch", 0);
+		SetCVar("samsara_cl_corvustimebomb", true);
+		SetCVar("samsara_cl_corvusremotebomb", true);
+		SetCVar("samsara_cl_corvusproxybomb", true);
 		SetCVar("samsara_cl_legacydukevoices", false);
 		SetCVar("samsara_cl_expparticles", 0);
 		SetCVar("samsara_cl_hevtalk", true);
@@ -13671,6 +13686,9 @@ script "SamsaraServerSidePresetSelection" (void)
 		// Class-Based Ability Options
 		SetCVar("samsara_absolutionunmaker", false);
 		SetCVar("samsara_classiclaz", false);
+		SetCVar("samsara_allowcurvustimebomb", true);
+		SetCVar("samsara_allowcurvusremotebomb", true);
+		SetCVar("samsara_allowcurvusproxybomb", true);
 		SetCVar("samsara_bombwalls", false);
 		SetCVar("samsara_banmorphovum", false);
 		SetCVar("samsara_extralifeteleport", true);
@@ -14084,6 +14102,9 @@ script "SamsaraServerSidePresetSelection" (void)
 		// Class-Based Ability Options
 		SetCVar("samsara_absolutionunmaker", false);
 		SetCVar("samsara_classiclaz", false);
+		SetCVar("samsara_allowcurvustimebomb", true);
+		SetCVar("samsara_allowcurvusremotebomb", true);
+		SetCVar("samsara_allowcurvusproxybomb", true);
 		SetCVar("samsara_bombwalls", false);
 		SetCVar("samsara_banmorphovum", false);
 		SetCVar("samsara_extralifeteleport", true);
@@ -14497,6 +14518,9 @@ script "SamsaraServerSidePresetSelection" (void)
 		// Class-Based Ability Options
 		SetCVar("samsara_absolutionunmaker", false);
 		SetCVar("samsara_classiclaz", false);
+		SetCVar("samsara_allowcurvustimebomb", true);
+		SetCVar("samsara_allowcurvusremotebomb", true);
+		SetCVar("samsara_allowcurvusproxybomb", true);
 		SetCVar("samsara_bombwalls", false);
 		SetCVar("samsara_banmorphovum", true);
 		SetCVar("samsara_extralifeteleport", true);
@@ -14911,6 +14935,9 @@ script "SamsaraServerSidePresetSelection" (void)
 		// Class-Based Ability Options
 		SetCVar("samsara_absolutionunmaker", false);
 		SetCVar("samsara_classiclaz", false);
+		SetCVar("samsara_allowcurvustimebomb", true);
+		SetCVar("samsara_allowcurvusremotebomb", true);
+		SetCVar("samsara_allowcurvusproxybomb", true);
 		SetCVar("samsara_bombwalls", false);
 		SetCVar("samsara_banmorphovum", false);
 		SetCVar("samsara_extralifeteleport", true);
@@ -15330,6 +15357,9 @@ script "SamsaraServerSidePresetSelection" (void)
 		// Class-Based Ability Options
 		SetCVar("samsara_absolutionunmaker", false);
 		SetCVar("samsara_classiclaz", false);
+		SetCVar("samsara_allowcurvustimebomb", true);
+		SetCVar("samsara_allowcurvusremotebomb", true);
+		SetCVar("samsara_allowcurvusproxybomb", true);
 		SetCVar("samsara_bombwalls", false);
 		SetCVar("samsara_banmorphovum", isZDoom() ? false : true);
 		SetCVar("samsara_extralifeteleport", true);

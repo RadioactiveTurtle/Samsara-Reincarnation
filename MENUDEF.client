@@ -38,6 +38,9 @@ OptionMenu "SamsaraClientOptions"
     StaticText ""
     StaticText "Class-Based Player Preferences", 1
     Option "Doom: Berserk Switch",                    "samsara_cl_berserkswitch",        "BerserkSwitchSetting"
+    Option "Heretic: Time Bomb of the Ancients",      "samsara_cl_corvustimebomb",       "OnOff"
+    Option "Heretic: Mine of the Ancients",           "samsara_cl_corvusremotebomb",     "OnOff"
+    Option "Heretic: Eye of the Ancients",            "samsara_cl_corvusproxybomb",      "OnOff"
     Option "Duke Nukem 3D: Legacy Duke Talk",         "samsara_cl_legacydukevoices",     "DukeVoiceLineSetting"
     Slider "Quake I: Explosion Particles",            "samsara_cl_expparticles",         -1, 200, 5
     Option "Half-Life: Freeman HEV Talk",             "samsara_cl_hevtalk",              "OnOff"

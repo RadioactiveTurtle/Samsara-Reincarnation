@@ -36,6 +36,9 @@ user bool samsara_cl_footstepsounds = true;
 
 // Class-Based Player Preferences
 user int samsara_cl_berserkswitch = 2;
+user bool samsara_cl_corvustimebomb = true;
+user bool samsara_cl_corvusremotebomb = true;
+user bool samsara_cl_corvusproxybomb = true;
 user bool samsara_cl_legacydukevoices = false;
 user int samsara_cl_expparticles = 0;
 server int samsara_zd_expparticles = 0;

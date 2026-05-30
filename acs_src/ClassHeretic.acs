@@ -1,6 +1,17 @@
-script "TomeOfPowerStartCheck" (void)
+script "HereticStartInventoryLoop" (void)
 {
-	if (!isFreeForAll() && !isTeamGame()) { GiveInventory("PortTomeCoOp",1); }
+    int pln = PlayerNumber();
+
+    SetInventory("PortTomeCoOp", isSinglePlayer() || isCoop());
+
+    while (CheckInventory("CorvusClass"))
+    {
+        SetInventory("PermaTimeBomb", GetUserCVar(pln, "samsara_cl_corvustimebomb") && GetCVar("samsara_allowcorvustimebomb"));
+        SetInventory("PermaRemoteBomb", GetUserCVar(pln, "samsara_cl_corvusremotebomb") && GetCVar("samsara_allowcorvusremotebomb"));
+	    SetInventory("PermaProxyBomb", GetUserCVar(pln, "samsara_cl_corvusproxybomb") && GetCVar("samsara_allowcorvusproxybomb"));
+
+        Delay(1);
+    }
 }
 
 script "TomeOfPowerCooldownReduction" (void)

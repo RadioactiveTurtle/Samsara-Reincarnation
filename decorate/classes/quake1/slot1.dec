@@ -575,6 +575,7 @@ actor MjolnirDischargeCoop : MjolnirDischarge
 
 // Chainsaw
 
+actor SamsaraQuakeChainsawReadySoundCheck : Boolean {}
 actor SamsaraQuakeChainsawAttackSilentSound : Boolean {}
 
 actor "Q1Chainsaw" : SamsaraQuakeWeapon
@@ -593,8 +594,13 @@ actor "Q1Chainsaw" : SamsaraQuakeWeapon
         stop
 
       Ready:
-        QSAW A 0 A_PlaySound("quakeweps/saw/revving",CHAN_WEAPON)
-        QSAW ABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE 4 A_WeaponReady //letting the full revving sound play
+        QSAW A 0 A_TakeInventory("SamsaraQuakeChainsawReadySoundCheck")
+        QSAW A 0 A_GiveInventory("SamsaraQuakeChainsawReadySoundPlayer")
+        QSAW A 0 A_JumpIfInventory("SamsaraHasDoubleFiringSpeed",1,2)
+        QSAW A 1 A_WeaponReady
+        QSAW A 0 A_GiveInventory("SamsaraQuakeChainsawReadySoundPlayer") // map change hack (most disgusting one so far)
+        QSAW A 3 A_WeaponReady
+        QSAW BCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE 4 A_WeaponReady //letting the full revving sound play
       ReadyLoop:
         QSAW A 0 A_PlaySound("quakeweps/saw/idle",CHAN_WEAPON)
         QSAW AB 4 A_WeaponReady
@@ -707,6 +713,19 @@ actor SamsaraQuakeChainsawAttackHandler : Trigger
       // Finishing stuff
       PickupFinish:
         TNT1 A 0 A_GiveInventory("SamsaraQuakeChainsawAttackSilentSound")
+        stop
+    }
+}
+
+actor SamsaraQuakeChainsawReadySoundPlayer : Trigger
+{
+    States
+    {
+      // Sound playing stuff
+      Pickup:
+        TNT1 A 0 A_JumpIfInventory("SamsaraQuakeChainsawReadySoundCheck",1,"PickupStop")
+        TNT1 A 0 A_PlaySound("quakeweps/saw/revving",CHAN_WEAPON)
+        TNT1 A 0 A_GiveInventory("SamsaraQuakeChainsawReadySoundCheck")
         stop
     }
 }

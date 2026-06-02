@@ -31,6 +31,10 @@ Fred Chexter (Chex Quest):
 
 ! The bootspoon sounds now play on the player's CHAN_WEAPON sound channel.
 
+Corvus (Heretic):
+
+! The staff now has a sprite for the Compendium and the alternate HUD.
+
 Wolfenstein 3D:
 
 -B.J. Blazkowicz (Original/Lost Episodes)-
@@ -45,7 +49,12 @@ Hexen I:
 
 -Parias (Reincarnation)-
 
+! The mace of contrition now has a sprite for the Compendium and the alternate HUD.
 * Fixed the improved PVE damage values not properly applying to the bishop's shortsword strong projectiles.
+
+-Daedolon-
+
+! The sapphire wand now has a sprite for the Compendium and the alternate HUD.
 
 -Baratus-
 

@@ -9366,7 +9366,7 @@ StatusBar Normal, ForceScaled
                 {
                     DrawImage "007BART2", 0, 0;
 
-                    // Fallback Ranged + Unique 3
+                    // Fallback Ranged
                     InInventory SamsaraGoldfingerLoadoutFallbackRanged, 4 // Walther P38
                     {
                         InInventory Goldfinger_WaltherP38
@@ -9374,35 +9374,30 @@ StatusBar Normal, ForceScaled
                             InInventory Goldeneye_PP7DualToken { DrawImage "GFPSL4DN", 32, 5; }
                             else { DrawImage "GFPSL4N", 32, 5; }
                         }
-                        else InInventory Goldfinger_WatchDetonator { DrawImage "GFU3L0N", 32, 5; }
                     } else InInventory SamsaraGoldfingerLoadoutFallbackRanged, 3 { // Luger P08
                         InInventory Goldfinger_LugerP08
                         {
                             InInventory Goldeneye_PP7DualToken { DrawImage "GFPSL3DN", 32, 5; }
                             else { DrawImage "GFPSL3N", 32, 5; }
                         }
-                        else InInventory Goldfinger_WatchDetonator { DrawImage "GFU3L0N", 32, 5; }
                     } else InInventory SamsaraGoldfingerLoadoutFallbackRanged, 2 { // Colt M1911
                         InInventory Goldfinger_ColtM1911
                         {
                             InInventory Goldeneye_PP7DualToken { DrawImage "GFPSL2DN", 32, 5; }
                             else { DrawImage "GFPSL2N", 32, 5; }
                         }
-                        else InInventory Goldfinger_WatchDetonator { DrawImage "GFU3L0N", 32, 5; }
                     } else InInventory SamsaraGoldfingerLoadoutFallbackRanged, 1 { // Walther PPK/s
                         InInventory Goldfinger_PPK
                         {
                             InInventory Goldeneye_PP7DualToken { DrawImage "GFPSL1DN", 32, 5; }
                             else { DrawImage "GFPSL1N", 32, 5; }
                         }
-                        else InInventory Goldfinger_WatchDetonator { DrawImage "GFU3L0N", 32, 5; }
                     } else { // PPK/s (Silenced)
                         InInventory Goldfinger_PPKSilenced
                         {
                             InInventory Goldeneye_PP7DualToken { DrawImage "GFPSL0DN", 32, 5; }
                             else { DrawImage "GFPSL0N", 32, 5; }
                         }
-                        else InInventory Goldfinger_WatchDetonator { DrawImage "GFU3L0N", 32, 5; }
                     }
 
                     IsSelected Goldfinger_PPKSilenced
@@ -9422,10 +9417,6 @@ StatusBar Normal, ForceScaled
                         InInventory BondDualWieldToken { DrawImage "GFPSL4DY", 32, 5; }
                         else { DrawImage "GFPSL4Y", 32, 5; }
                     }
-                    else IsSelected Goldfinger_WatchDetonator { DrawImage "GFU3L0Y", 32, 5; }
-                    else IsSelected Goldfinger_Limpet { DrawImage "GFU3L0Y1", 32, 5; }
-                    else IsSelected Goldfinger_LandMine { DrawImage "GFU3L0Y2", 32, 5; }
-                    else IsSelected Goldfinger_Claymore { DrawImage "GFU3L0Y3", 32, 5; }
 
                     // Unique 2
                     InInventory SamsaraGoldfingerLoadoutUnique2, 2 // Smith and Wesson Model 36
@@ -9530,6 +9521,38 @@ StatusBar Normal, ForceScaled
                         DrawImage "GFWSEL4Y", 150, 0;
                     }
 
+                    // Slot 4S
+                    InInventory not GotWeapon4
+                    {
+                        InInventory SamsaraGoldfingerLoadoutSlot4S // M1928A Thompson
+                        {
+                            InInventory Goldfinger_Thompson
+                            {
+                                InInventory Goldeneye_PhantomDualToken { DrawImage "GFS4L1DN", 151, 9; }
+                                else { DrawImage "GFS4L1N", 151, 9; }
+                                DrawImage "GFWSEL4N", 150, 0;
+                            }
+                        } else { // Thompson (Drum Mag)
+                            InInventory Goldfinger_ThompsonDrum
+                            {
+                                InInventory Goldeneye_PhantomDualToken { DrawImage "GFS4L0DN", 151, 9; }
+                                else { DrawImage "GFS4L0N", 151, 9; }
+                                DrawImage "GFWSEL4N", 150, 0;
+                            }
+                        }
+                    }
+
+                    IsSelected Goldfinger_ThompsonDrum
+                    {
+                        InInventory BondDualWieldToken { DrawImage "GFS4L0DY", 151, 9; }
+                        else { DrawImage "GFS4L0Y", 151, 9; }
+                        DrawImage "GFWSEL4Y", 150, 0;
+                    } else IsSelected Goldfinger_Thompson {
+                        InInventory BondDualWieldToken { DrawImage "GFS4L1DY", 151, 9; }
+                        else { DrawImage "GFS4L1Y", 151, 9; }
+                        DrawImage "GFWSEL4Y", 150, 0;
+                    }
+
                     // Slot 5
                     InInventory GotWeapon5
                     {
@@ -9545,6 +9568,24 @@ StatusBar Normal, ForceScaled
                         DrawImage "GFWSEL5Y", 176, 0;
                     }
 
+                    // Slot 5S
+                    InInventory not GotWeapon5
+                    {
+                        InInventory Goldfinger_M79
+                        {
+                            InInventory Goldeneye_GrenadeLauncherDualToken { DrawImage "GFS5L0DN", 175, 9; }
+                            else { DrawImage "GFS5L0N", 175, 9; }
+                            DrawImage "GFWSEL5N", 176, 0;
+                        }
+                    }
+
+                    IsSelected Goldfinger_M79
+                    {
+                        InInventory BondDualWieldToken { DrawImage "GFS5L0DY", 175, 9; }
+                        else { DrawImage "GFS5L0Y", 175, 9; }
+                        DrawImage "GFWSEL5Y", 176, 0;
+                    }
+
                     // Slot 6
                     InInventory GotWeapon6
                     {
@@ -9557,6 +9598,38 @@ StatusBar Normal, ForceScaled
                     {
                         InInventory BondDualWieldToken { DrawImage "GFW6L0DY", 198, 9; }
                         else { DrawImage "GFW6L0Y", 198, 9; }
+                        DrawImage "GFWSEL6Y", 195, 0;
+                    }
+
+                    // Slot 6S
+                    InInventory not GotWeapon6
+                    {
+                        InInventory SamsaraGoldfingerLoadoutSlot6S // Karabiner 98k
+                        {
+                            InInventory Goldfinger_Kar98k
+                            {
+                                InInventory Goldeneye_CougarDualToken { DrawImage "GFS6L1DN", 198, 9; }
+                                else { DrawImage "GFS6L1N", 198, 9; }
+                                DrawImage "GFWSEL6N", 195, 0;
+                            }
+                        } else { // M1 Garand
+                            InInventory Goldfinger_M1Garand
+                            {
+                                InInventory Goldeneye_CougarDualToken { DrawImage "GFS6L0DN", 198, 9; }
+                                else { DrawImage "GFS6L0N", 198, 9; }
+                                DrawImage "GFWSEL6N", 195, 0;
+                            }
+                        }
+                    }
+
+                    IsSelected Goldfinger_M1Garand
+                    {
+                        InInventory BondDualWieldToken { DrawImage "GFS6L0DY", 198, 9; }
+                        else { DrawImage "GFS6L0Y", 198, 9; }
+                        DrawImage "GFWSEL6Y", 195, 0;
+                    } else IsSelected Goldfinger_Kar98k {
+                        InInventory BondDualWieldToken { DrawImage "GFS6L1DY", 198, 9; }
+                        else { DrawImage "GFS6L1Y", 198, 9; }
                         DrawImage "GFWSEL6Y", 195, 0;
                     }
 
@@ -9576,17 +9649,30 @@ StatusBar Normal, ForceScaled
                     }
 
                     // Slot 7S
-                    InInventory Goldfinger_M14
+                    InInventory not GotWeapon7
                     {
-                        InInventory Goldeneye_GoldenGunDualToken { DrawImage "GFS7L0DN", 246, 5; }
-                        else { DrawImage "GFS7L0N", 246, 5; }
+                        InInventory Goldfinger_M14
+                        {
+                            InInventory Goldeneye_GoldenGunDualToken { DrawImage "GFS7L0DN", 222, 9; }
+                            else { DrawImage "GFS7L0N", 222, 9; }
+                            DrawImage "GFWSEL7N", 216, 0;
+                        }
                     }
 
                     IsSelected Goldfinger_M14
                     {
-                        InInventory BondDualWieldToken { DrawImage "GFS7L0DY", 246, 5; }
-                        else { DrawImage "GFS7L0Y", 246, 5; }
+                        InInventory BondDualWieldToken { DrawImage "GFS7L0DY", 222, 9; }
+                        else { DrawImage "GFS7L0Y", 222, 9; }
+                        DrawImage "GFWSEL7Y", 216, 0;
                     }
+
+                    // Unique 3
+                    InInventory Goldfinger_WatchDetonator { DrawImage "GFU3L0N", 246, 5; }
+
+                    IsSelected Goldfinger_WatchDetonator { DrawImage "GFU3L0Y", 246, 5; }
+                    else IsSelected Goldfinger_Limpet { DrawImage "GFU3L0Y1", 246, 5; }
+                    else IsSelected Goldfinger_LandMine { DrawImage "GFU3L0Y2", 246, 5; }
+                    else IsSelected Goldfinger_Claymore { DrawImage "GFU3L0Y3", 246, 5; }
 
                     // Unique 1
                     InInventory Goldfinger_AR7
@@ -9866,7 +9952,7 @@ StatusBar Normal, ForceScaled
                 {
                     DrawImage "007BART", 0, 0;
 
-                    // Fallback Ranged + Unique 3
+                    // Fallback Ranged
                     InInventory SamsaraGoldenEyeLoadoutFallbackRanged, 3 // DD44 Dostovei
                     {
                         InInventory Goldeneye_DD44
@@ -9874,32 +9960,24 @@ StatusBar Normal, ForceScaled
                             InInventory Goldeneye_PP7DualToken { DrawImage "GEPSL3DN", 32, 5; }
                             else { DrawImage "GEPSL3N", 32, 5; }
                         }
-                        else InInventory Goldeneye_WatchMagnet || Goldeneye_WatchLaser { DrawImage "GEU3L0N", 32, 5; }
-                        else InInventory Goldeneye_WatchDetonator { DrawImage "GEU3L0N", 32, 5; }
                     } else InInventory SamsaraGoldenEyeLoadoutFallbackRanged, 2 { // PP7 Special Issue
                         InInventory Goldeneye_PP7SpecialIssue
                         {
                             InInventory Goldeneye_PP7DualToken { DrawImage "GEPSL2DN", 32, 5; }
                             else { DrawImage "GEPSL2N", 32, 5; }
                         }
-                        else InInventory Goldeneye_WatchMagnet || Goldeneye_WatchLaser { DrawImage "GEU3L0N", 32, 5; }
-                        else InInventory Goldeneye_WatchDetonator { DrawImage "GEU3L0N", 32, 5; }
                     } else InInventory SamsaraGoldenEyeLoadoutFallbackRanged, 1 { // Klobb
                         InInventory Goldeneye_Klobb
                         {
                             InInventory Goldeneye_PP7DualToken { DrawImage "GEPSL1DN", 32, 5; }
                             else { DrawImage "GEPSL1N", 32, 5; }
                         }
-                        else InInventory Goldeneye_WatchMagnet || Goldeneye_WatchLaser { DrawImage "GEU3L0N", 32, 5; }
-                        else InInventory Goldeneye_WatchDetonator { DrawImage "GEU3L0N", 32, 5; }
                     } else { // PP7 Special Issue (Silenced)
                         InInventory Goldeneye_PP7Silenced
                         {
                             InInventory Goldeneye_PP7DualToken { DrawImage "GEPSL0DN", 32, 5; }
                             else { DrawImage "GEPSL0N", 32, 5; }
                         }
-                        else InInventory Goldeneye_WatchMagnet || Goldeneye_WatchLaser { DrawImage "GEU3L0N", 32, 5; }
-                        else InInventory Goldeneye_WatchDetonator { DrawImage "GEU3L0N", 32, 5; }
                     }
 
                     IsSelected Goldeneye_PP7Silenced
@@ -9916,11 +9994,6 @@ StatusBar Normal, ForceScaled
                         InInventory BondDualWieldToken { DrawImage "GEPSL3DY", 32, 5; }
                         else { DrawImage "GEPSL3Y", 32, 5; }
                     }
-                    else IsSelected Goldeneye_WatchMagnet, Goldeneye_WatchLaser { DrawImage "GEU3L0Y", 32, 5; }
-                    else IsSelected Goldeneye_WatchDetonator { DrawImage "GEU3L0Y", 32, 5; } //why must you make me do this?
-                    else IsSelected Goldeneye_TimedMines { DrawImage "GEU3L0Y1", 32, 5; }
-                    else IsSelected Goldeneye_ProximityMines { DrawImage "GEU3L0Y2", 32, 5; }
-                    else IsSelected Goldeneye_RemoteMines { DrawImage "GEU3L0Y3", 32, 5; }
 
                     // Unique 2
                     InInventory SamsaraGoldenEyeLoadoutUnique2, 2 // D5K Deutsche
@@ -10027,6 +10100,24 @@ StatusBar Normal, ForceScaled
                         DrawImage "GEWSEL4Y", 150, 0;
                     }
 
+                    // Slot 4S
+                    InInventory not GotWeapon4
+                    {
+                        InInventory Goldeneye_Phantom
+                        {
+                            InInventory Goldeneye_PhantomDualToken { DrawImage "GES4L0DN", 151, 9; }
+                            else { DrawImage "GES4L0N", 151, 9; }
+                            DrawImage "GEWSEL4N", 150, 0;
+                        }
+                    }
+
+                    IsSelected Goldeneye_Phantom
+                    {
+                        InInventory BondDualWieldToken { DrawImage "GES4L0DY", 151, 9; }
+                        else { DrawImage "GES4L0Y", 151, 9; }
+                        DrawImage "GEWSEL4Y", 150, 0;
+                    }
+
                     // Slot 5
                     InInventory GotWeapon5
                     {
@@ -10042,6 +10133,24 @@ StatusBar Normal, ForceScaled
                         DrawImage "GEWSEL5Y", 176, 0;
                     }
 
+                    // Slot 5S
+                    InInventory not GotWeapon5
+                    {
+                        InInventory Goldeneye_GrenadeLauncher
+                        {
+                            InInventory Goldeneye_GrenadeLauncherDualToken { DrawImage "GES5L0DN", 175, 9; }
+                            else { DrawImage "GES5L0N", 175, 9; }
+                            DrawImage "GEWSEL5N", 176, 0;
+                        }
+                    }
+
+                    IsSelected Goldeneye_GrenadeLauncher
+                    {
+                        InInventory BondDualWieldToken { DrawImage "GES5L0DY", 175, 9; }
+                        else { DrawImage "GES5L0Y", 175, 9; }
+                        DrawImage "GEWSEL5Y", 176, 0;
+                    }
+
                     // Slot 6
                     InInventory GotWeapon6
                     {
@@ -10054,6 +10163,49 @@ StatusBar Normal, ForceScaled
                     {
                         InInventory BondDualWieldToken { DrawImage "GEW6L0DY", 198, 9; }
                         else { DrawImage "GEW6L0Y", 198, 9; }
+                        DrawImage "GEWSEL6Y", 195, 0;
+                    }
+
+                    // Slot 6S
+                    InInventory not GotWeapon6
+                    {
+                        InInventory SamsaraGoldenEyeLoadoutSlot6S, 2 // Arabah Viper
+                        {
+                            InInventory Goldeneye_ArabahViper
+                            {
+                                InInventory Goldeneye_CougarDualToken { DrawImage "GES6L2DN", 198, 9; }
+                                else { DrawImage "GES6L2N", 198, 9; }
+                                DrawImage "GEWSEL6N", 195, 0;
+                            }
+                        } else InInventory SamsaraGoldenEyeLoadoutSlot6S, 1 { // Silver PP7 Special Issue
+                            InInventory Goldeneye_SilverPP7
+                            {
+                                InInventory Goldeneye_CougarDualToken { DrawImage "GES6L1DN", 198, 9; }
+                                else { DrawImage "GES6L1N", 198, 9; }
+                                DrawImage "GEWSEL6N", 195, 0;
+                            }
+                        } else { // Cougar Magnum
+                            InInventory Goldeneye_Cougar
+                            {
+                                InInventory Goldeneye_CougarDualToken { DrawImage "GES6L0DN", 198, 9; }
+                                else { DrawImage "GES6L0N", 198, 9; }
+                                DrawImage "GEWSEL6N", 195, 0;
+                            }
+                        }
+                    }
+
+                    IsSelected Goldeneye_Cougar
+                    {
+                        InInventory BondDualWieldToken { DrawImage "GES6L0DY", 198, 9; }
+                        else { DrawImage "GES6L0Y", 198, 9; }
+                        DrawImage "GEWSEL6Y", 195, 0;
+                    } else IsSelected Goldeneye_SilverPP7 {
+                        InInventory BondDualWieldToken { DrawImage "GES6L1DY", 198, 9; }
+                        else { DrawImage "GES6L1Y", 198, 9; }
+                        DrawImage "GEWSEL6Y", 195, 0;
+                    } else IsSelected Goldeneye_ArabahViper {
+                        InInventory BondDualWieldToken { DrawImage "GES6L2DY", 198, 9; }
+                        else { DrawImage "GES6L2Y", 198, 9; }
                         DrawImage "GEWSEL6Y", 195, 0;
                     }
 
@@ -10073,17 +10225,32 @@ StatusBar Normal, ForceScaled
                     }
 
                     // Slot 7S
-                    InInventory Goldeneye_GoldenGun
+                    InInventory not GotWeapon7
                     {
-                        InInventory Goldeneye_GoldenGunDualToken { DrawImage "GES7L0DN", 246, 5; }
-                        else { DrawImage "GES7L0N", 246, 5; }
+                        InInventory Goldeneye_GoldenGun
+                        {
+                            InInventory Goldeneye_GoldenGunDualToken { DrawImage "GES7L0DN", 222, 9; }
+                            else { DrawImage "GES7L0N", 222, 9; }
+                            DrawImage "GEWSEL7N", 216, 0;
+                        }
                     }
 
                     IsSelected Goldeneye_GoldenGun
                     {
-                        InInventory BondDualWieldToken { DrawImage "GES7L0DY", 246, 5; }
-                        else { DrawImage "GES7L0Y", 246, 5; }
+                        InInventory BondDualWieldToken { DrawImage "GES7L0DY", 222, 9; }
+                        else { DrawImage "GES7L0Y", 222, 9; }
+                        DrawImage "GEWSEL7Y", 216, 0;
                     }
+
+                    // Unique 3
+                    InInventory Goldeneye_WatchMagnet || Goldeneye_WatchLaser { DrawImage "GEU3L0N", 246, 5; }
+                    else InInventory Goldeneye_WatchDetonator { DrawImage "GEU3L0N", 246, 5; }
+
+                    IsSelected Goldeneye_WatchMagnet, Goldeneye_WatchLaser { DrawImage "GEU3L0Y", 246, 5; }
+                    else IsSelected Goldeneye_WatchDetonator { DrawImage "GEU3L0Y", 246, 5; } //why must you make me do this?
+                    else IsSelected Goldeneye_TimedMines { DrawImage "GEU3L0Y1", 246, 5; }
+                    else IsSelected Goldeneye_ProximityMines { DrawImage "GEU3L0Y2", 246, 5; }
+                    else IsSelected Goldeneye_RemoteMines { DrawImage "GEU3L0Y3", 246, 5; }
 
                     // Unique 1
                     InInventory Goldeneye_SniperRifle

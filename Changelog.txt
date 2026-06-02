@@ -113,6 +113,10 @@ In Pursuit of Greed:
 + The gatling gun has been added as the slot 4S weapon!
 ! The IPOG blood splatters are no longer affected by the "Gib Persistence" setting, and now disappear after 150 tics.
 
+Leonard (Redneck Rampage):
+
+! When running out of alternate ammo, the hunting crossbow will now switch to the previous ammo if there is some remaining. Running out of normal ammo will still switch to another weapon, even with any alternate ammo remaining.
+
 Bitterman (Quake II):
 
 ! The chainfist, phalanx particle cannon, plasma beam, and trap now have sprites for the Compendium and the alternate HUD.

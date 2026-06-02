@@ -183,6 +183,7 @@ Actor " Chicken Crossbow " : Weapon
 	Obituary "%o didn't expect %k's cock... :^)"
 	Inventory.RestrictedTo "Leonard"
 	Tag "Chicken Crossbow"
+    +AMMO_OPTIONAL
 	+WEAPON.EXPLOSIVE
 	+WEAPON.NOALERT
 	States
@@ -233,6 +234,9 @@ Actor " Chicken Crossbow " : Weapon
 			CH_R C 1 A_WeaponReady
 			Loop
 		Fire:
+            TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
+            TNT1 A 0 A_JumpIfInventory("ChickenAmmo",1,1)
+            goto NoAmmoSwitch
 			TNT1 A 0 A_JumpIfInventory("RRDrunkToken", 1, "SetDrunkViewFire")
 			Goto SetSoberViewFire
 			TNT1 A 0 A_AlertMonsters
@@ -280,13 +284,13 @@ Actor " Chicken Crossbow " : Weapon
 			Goto Ready+1
 		SetDrunkViewFire:
 			TNT1 A 0 A_ZoomFactor(0.55)
-			Goto Fire+1
+			Goto Fire+3
 		SetSoberView:
 			TNT1 A 0 A_ZoomFactor(1.0)
 			Goto Ready+1
 		SetSoberViewFire:
 			TNT1 A 0 A_ZoomFactor(1.0)
-			Goto Fire+1
+			Goto Fire+3
 		AltFire:
 			TNT1 A 0 A_JumpIfInventory(" RR Hunting Crossbow ",1,"SelectNormal")
 			TNT1 A 0 A_JumpIfInventory(" RR Dynomite Crossbow ",1,"SelectDynomite")
@@ -301,6 +305,31 @@ Actor " Chicken Crossbow " : Weapon
 			Goto Ready
 			TNT1 A 0 A_SelectWeapon(" RR Dynomite Crossbow ")
 			Goto Deselect
+
+        // "No ammo" switch
+        NoAmmoSwitch:
+            TNT1 A 0 A_ClearReFire
+        NoAmmoSwitchCheckDynomite:
+            TNT1 A 0 A_JumpIfInventory(" RR Dynomite Crossbow ",1,"NoAmmoSwitchToPrevDynomite")
+        NoAmmoSwitchCheckNormal:
+            TNT1 A 0 A_JumpIfInventory(" RR Hunting Crossbow ",1,"NoAmmoSwitchToPrevNormal")
+        NoAmmoSwitchToWeapon:
+            TNT1 A 0 A_SelectWeapon(" .454 Casull Pistol ")
+            goto Deselect
+
+        NoAmmoSwitchToPrevDynomite:
+            TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
+            TNT1 A 0 A_JumpIfInventory("RocketAmmo",1,1)
+            goto NoAmmoSwitchCheckNormal
+            TNT1 A 0 A_SelectWeapon(" RR Dynomite Crossbow ")
+            goto Deselect
+
+        NoAmmoSwitchToPrevNormal:
+            TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
+            TNT1 A 0 A_JumpIfInventory("Shell",1,1)
+            goto NoAmmoSwitchToWeapon
+            TNT1 A 0 A_SelectWeapon(" RR Hunting Crossbow ")
+            goto Deselect
 	}
 }
 

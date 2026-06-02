@@ -282,11 +282,11 @@ actor "Golden Desert Eagle" : DukeWeapon
 
 	OutOfAmmo:
 		DKDG A 0 A_JumpIfInventory("DukeClassMode", 1, "OutOfAmmoLAB")
-		DKDG A 2 A_TakeInventory("DBSHOT",99)
+		DKDG AA 1 A_TakeInventory("DBSHOT",99)
 		goto Nothing
 
 	OutOfAmmoLAB:
-		DLDG A 2 A_TakeInventory("DBSHOT",99)
+		DLDG AA 1 A_TakeInventory("DBSHOT",99)
 		goto Nothing
 
 	Nothing:

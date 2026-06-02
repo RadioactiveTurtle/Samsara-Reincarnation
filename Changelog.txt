@@ -63,6 +63,10 @@ Duke Nukem 3D:
 
 * Fixed second and third unique pickups not giving extra ammo on first pickup when playing PVP in Doom or Chex Quest.
 
+-Duke Nukem (Duke Nukem 64)-
+
+! When running out of alternate ammo, weapons will now switch to normal ammo if there is some remaining. Running out of normal ammo will still switch to another weapon, even with alternate ammo remaining.
+
 Security Officer (Marathon):
 
 ! Damage received from Ranger's Mjolnir (lightning) and thunderbolt now causes a white screen flash.

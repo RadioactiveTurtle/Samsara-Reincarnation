@@ -219,11 +219,11 @@ actor "Explosive Shotgun" : DukeWeapon
 		Goto Super::GiveMoney
 
 	OutOfAmmo:
-		DKXS A 2 A_TakeInventory("DBSHOT",99)
+		DKXS AA 1 A_TakeInventory("DBSHOT",99)
 		goto Nothing
 
 	OutOfAmmoLAB:
-		CKXS A 2 A_TakeInventory("DBSHOT",99)
+		CKXS AA 1 A_TakeInventory("DBSHOT",99)
 		goto Nothing
 
 	Nothing:

@@ -293,25 +293,43 @@ actor RPG : DukeWeapon
 		Goto Super::GiveMoney
 		
 	OutOfAmmo:
-		DKRL A 2 A_TakeInventory("DBSHOT",99)
+		DKRL AA 1 A_TakeInventory("DBSHOT",99)
 		goto Nothing
 
 	OutOfAmmoLAB:
-		DKCL A 2 A_TakeInventory("DBSHOT",99)
+		DKCL AA 1 A_TakeInventory("DBSHOT",99)
 		goto Nothing
 	
 	OutOfAmmo64:
-		D6ML A 2 A_TakeInventory("DBSHOT",99)
+		D6ML AA 1 A_TakeInventory("DBSHOT",99)
 		goto Nothing
 
 	OutOfAmmo64_2:
-		D6ML B 2 A_TakeInventory("DBSHOT",99)
-		goto Nothing
+		D6ML BB 1 A_TakeInventory("DBSHOT",99)
+		goto Nothing64_2
 
 	Nothing:
         TNT1 A 0 A_ClearReFire
         TNT1 A 0 A_SelectWeapon("Glock 17")
         goto Deselect
+
+    Nothing64_2:
+        TNT1 A 0 A_ClearReFire
+        TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"Nothing64_2SwitchToPrev")
+        TNT1 A 0 A_JumpIfInventory("RocketAmmo",1,"Nothing64_2SwitchToPrev")
+        TNT1 A 0 A_SelectWeapon("Glock 17")
+        goto Deselect
+
+    Nothing64_2SwitchToPrev:
+        TNT1 A 0 A_GiveInventory("DBSHOT",60)
+        TNT1 A 0 A_TakeInventory("Duke64UsingHeatSeeking",1)
+        TNT1 A 0 A_PlayWeaponSound("duke64/wepselect")
+        D6MR QRSTUVW 1
+        TNT1 A 1
+        D6MB WVUTSR 1
+        TNT1 A 0 A_TakeInventory("DBSHOT",99)
+        D6MB Q 1
+        stop
 	}
 }
 

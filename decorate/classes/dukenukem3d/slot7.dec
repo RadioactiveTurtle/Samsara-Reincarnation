@@ -1137,7 +1137,7 @@ actor "Devastator Weapon" : DukeWeapon
 		Goto Super::GiveMoney
 
 	OutOfAmmo64:
-		D6PC A 2 A_TakeInventory("DBSHOT",99)
+		D6PC AA 1 A_TakeInventory("DBSHOT",99)
 		goto Nothing
 
 	Nothing:

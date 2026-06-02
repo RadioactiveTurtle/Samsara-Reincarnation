@@ -674,7 +674,7 @@ actor SamsaraQuakeChainsawAttackHandler : Trigger
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupOriginalCoop")
       PickupOriginalDM:
         TNT1 A 0 A_JumpIfInventory("SamsaraHasSpread",1,"PickupOriginalDMSpread")
-        TNT1 A 0 A_CustomPunch(20,true,0,"QuakeChainsawPuff")
+        TNT1 A 0 A_CustomPunch(20,true,0,"QuakeChainsawPuff") // damage was 30
         goto PickupFinish
 
       PickupOriginalDMSpread:

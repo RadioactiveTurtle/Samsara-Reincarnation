@@ -93,55 +93,109 @@ actor Freezethrower : DukeWeapon
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
 		"####" B 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" B 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" B 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
@@ -177,13 +231,25 @@ actor Freezethrower : DukeWeapon
 		"####" H 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" H 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" H 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" H 2 A_WeaponReady
+		"####" H 1 A_WeaponReady
 		"####" H 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" H 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" H 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" H 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" H 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" H 2 A_WeaponReady
+		"####" H 1 A_WeaponReady
+		"####" H 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" H 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" H 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" H 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" H 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" H 1 A_WeaponReady
+		"####" H 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" H 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" H 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" H 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" H 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" H 1 A_WeaponReady
 		"####" G 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" G 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" G 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
@@ -228,55 +294,109 @@ actor Freezethrower : DukeWeapon
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
 		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" A 2 A_WeaponReady
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
+		"####" A 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" A 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" A 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" A 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" A 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" A 1 A_WeaponReady
 		"####" B 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" B 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" B 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
@@ -312,13 +432,25 @@ actor Freezethrower : DukeWeapon
 		"####" H 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" H 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" H 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" H 2 A_WeaponReady
+		"####" H 1 A_WeaponReady
 		"####" H 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" H 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" H 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
 		"####" H 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
 		"####" H 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
-		"####" H 2 A_WeaponReady
+		"####" H 1 A_WeaponReady
+		"####" H 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" H 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" H 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" H 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" H 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" H 1 A_WeaponReady
+		"####" H 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
+		"####" H 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
+		"####" H 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
+		"####" H 0 A_JumpIfInventory("DukeGiveMoney",1,"GiveMoney")
+		"####" H 0 A_JumpIfInventory("DukeStomp", 1, "Stomp")
+		"####" H 1 A_WeaponReady
 		"####" G 0 A_JumpIfInventory("DBSHOT",1,"ReadyA")
 		"####" G 0 A_JumpIfInventory("DukeReady",1,"IntroTaunt")
 		"####" G 0 A_JumpIfInventory("DukeWaiting",0,"WaitingTaunt")
@@ -634,28 +766,55 @@ actor Freezethrower : DukeWeapon
 		
 	OutOfAmmo:
 		TNT1 A 0 A_TakeInventory("DBSHOT",99)
-		FRZG A 2 A_TakeInventory("DBSHOT1",99)
+		FRZG A 1 A_TakeInventory("DBSHOT1",99)
+		TNT1 A 0 A_TakeInventory("DBSHOT",99)
+		FRZG A 1 A_TakeInventory("DBSHOT1",99)
 		goto Nothing
 		
 	OutOfAmmoLAB:
 		TNT1 A 0 A_TakeInventory("DBSHOT",99)
-		FRZG Q 2 A_TakeInventory("DBSHOT1",99)
+		FRZG Q 1 A_TakeInventory("DBSHOT1",99)
+		TNT1 A 0 A_TakeInventory("DBSHOT",99)
+		FRZG Q 1 A_TakeInventory("DBSHOT1",99)
 		goto Nothing
 
 	OutOfAmmo64:
 		TNT1 A 0 A_TakeInventory("DBSHOT",99)
-		D6EX A 2 A_TakeInventory("DBSHOT1",99)
+		D6EX A 1 A_TakeInventory("DBSHOT1",99)
+		TNT1 A 0 A_TakeInventory("DBSHOT",99)
+		D6EX A 1 A_TakeInventory("DBSHOT1",99)
 		goto Nothing
 
 	OutOfAmmo64_2:
 		TNT1 A 0 A_TakeInventory("DBSHOT",99)
-		D6SH A 2 A_TakeInventory("DBSHOT1",99)
-		goto Nothing
+		D6SH A 1 A_TakeInventory("DBSHOT1",99)
+		TNT1 A 0 A_TakeInventory("DBSHOT",99)
+		D6SH A 1 A_TakeInventory("DBSHOT1",99)
+		goto Nothing64_2
 
 	Nothing:
         TNT1 A 0 A_ClearReFire
         TNT1 A 0 A_SelectWeapon("Glock 17")
         goto Deselect
+
+    Nothing64_2:
+        TNT1 A 0 A_ClearReFire
+        TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"Nothing64_2SwitchToPrev")
+        TNT1 A 0 A_JumpIfInventory("Cell",1,"Nothing64_2SwitchToPrev")
+        TNT1 A 0 A_SelectWeapon("Glock 17")
+        goto Deselect
+
+    Nothing64_2SwitchToPrev:
+        TNT1 A 0 A_GiveInventory("DBSHOT",10)
+        TNT1 A 0 A_TakeInventory("Duke64UsingShrinker",1)
+        TNT1 A 0 A_PlayWeaponSound("duke64/wepselect")
+        D6SH STUVWXY 1
+        TNT1 A 1
+        D6EX SRQPO 1
+        TNT1 A 0 A_TakeInventory("DBSHOT",99)
+        TNT1 A 0 A_TakeInventory("DBSHOT1",99)
+        D6EX NM 1
+        stop
 	}
 }
 

@@ -1,4 +1,4 @@
-actor LostSoul2 : SamsaraMonsterReincLostSoul replaces LostSoul
+actor LostSoulTwo : SamsaraMonsterReincLostSoul replaces LostSoul
 {
    	Game Doom
 	SpawnID 110
@@ -554,7 +554,7 @@ actor PainElemental_ShrinkEffect : PainElemental2
 	}
 }
 
-actor BetaSkull2 : LostSoul2 replaces BetaSkull
+actor BetaSkull2 : LostSoulTwo replaces BetaSkull
 {
 	States
 	{

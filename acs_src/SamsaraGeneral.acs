@@ -11882,7 +11882,9 @@ Script "Samsara_SpawnItem" (int item, int toss, int cancountitem)
     bool countitemeligible = false;
 	switch(item)
 	{
-		case 1: itemtospawn = "HealPack1"; break;
+		case 1: itemtospawn = "HealPack0"; break;
+		case 2: itemtospawn = "HealPack1"; break;
+		case 3: itemtospawn = "ArmorScrap"; break;
 	}
 	SpawnSpotFacingForced(itemtospawn,0,newTid);
     if (cancountitem && countitemeligible) { GiveActorInventory(newTid, "SamsaraCountItemEnabler", 1); }

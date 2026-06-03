@@ -71,7 +71,7 @@ actor FriendlyDoomImpBall : DoomImpBall2
 //=================
 // CORVUS: Nitrogolem
 // The best name ever. Suck it, Gez!
-actor FriendlyNitrogolem : MummyLeader2
+actor FriendlyNitrogolem : MummyLeaderTwo
 {
 	Health 100
 	HitObituary "%o was somehow killed by a friendly Nitrogolem."

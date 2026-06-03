@@ -30,7 +30,7 @@ Actor BadCircoolAid_Samsara replaces BadCircoolAid
     States
     {
       Spawn:
-        TNT1 AA 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SpawnItem", 1, 1, 0)
+        TNT1 AA 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SpawnItem", 2, 1, 0)
         stop
     }
 }

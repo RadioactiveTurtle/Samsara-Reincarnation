@@ -1,4 +1,4 @@
-actor Belphegor : BaronOfHell2 5008 // original belphegor inherited from HellKnight, interestingly enough
+actor Belphegor : BaronOfHellTwo 5008 // original belphegor inherited from HellKnight, interestingly enough
 {
 	Game Doom
 	SpawnID 215

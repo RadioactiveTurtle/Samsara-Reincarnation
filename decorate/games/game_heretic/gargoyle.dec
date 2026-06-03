@@ -1,4 +1,4 @@
-actor HereticImp2 : SamsaraMonsterReincHereticImp replaces HereticImp
+actor HereticImpTwo : SamsaraMonsterReincHereticImp replaces HereticImp
 {
 	DamageFactor "CorvusCrossbow", 1.15
 	PainChance "MightyBoot", 255
@@ -212,7 +212,7 @@ actor HereticImp2 : SamsaraMonsterReincHereticImp replaces HereticImp
 	}
 }
 
-actor HereticImp_Shrink : HereticImp2
+actor HereticImp_Shrink : HereticImpTwo
 {
 	+FRIGHTENED
 	+NOTRIGGER
@@ -320,7 +320,7 @@ actor HereticImp_Shrink : HereticImp2
 			"####" "#" 1 A_SetScale(0.9*(user_scalex/65536.0),0.9*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.95*(user_scalex/65536.0),0.95*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(1.0*(user_scalex/65536.0),1.0*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("HereticImp2", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
+			"####" "#" 0 A_SpawnItemEx("HereticImpTwo", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 2 Thing_Remove(0)
@@ -354,7 +354,7 @@ actor HereticImp_Shrink : HereticImp2
 	}
 }
 
-actor HereticImp_ShrinkEffect : HereticImp2
+actor HereticImp_ShrinkEffect : HereticImpTwo
 {
 	-ISMONSTER
 	-COUNTKILL
@@ -748,7 +748,7 @@ actor HereticImpLeader_Shrink : HereticImpLeader2
 	}
 }
 
-actor HereticImpBall2 : HereticImpBall replaces HereticImpBall
+actor HereticImpBallTwo : HereticImpBall replaces HereticImpBall
 {
 	+FIREDAMAGE
 	+THRUGHOST

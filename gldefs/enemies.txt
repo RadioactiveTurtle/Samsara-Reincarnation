@@ -72,7 +72,7 @@ object BaronBall3
 }
 
 // Lost Soul
-object LostSoul2
+object LostSoulTwo
 {
 	frame SKULA { light LOSTSOUL    }
 	frame SKULB { light LOSTSOUL    }
@@ -134,7 +134,7 @@ object RevenantTracerHoming
 }
 
 // Arch-vile
-object Archvile2
+object ArchvileTwo
 {
 	frame VILEH { light ARCHATK1 }
 	frame VILEI { light ARCHATK2 }
@@ -166,7 +166,7 @@ object CyberRocket
 /////////////
 
 // Heretic imp fireball
-object HereticImpBall2
+object HereticImpBallTwo
 {
 	frame FX10A { light HIMPBALL }
 	frame FX10B { light HIMPBALL }
@@ -179,7 +179,7 @@ object HereticImpBall2
 }
 
 // Mummy
-object MummyLeader2
+object MummyLeaderTwo
 {
 	frame MUMMY { light MUMMYATK }
 }
@@ -613,7 +613,7 @@ object SerpentFX2
 }
 
 // Bishop fireball
-object BishopFX2
+object BishopFXTwo
 {
 	frame BPFXA { light BISHOPBALL }
 	frame BPFXB { light BISHOPBALL }

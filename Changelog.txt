@@ -194,6 +194,15 @@ Doom:
 
 * Fixed spectres not having OptFuzzy rendering on ZorchRaise.
 * Fixed the lost soul not having +RETARGETAFTERSLAM in GZDoom.
+! Renamed some actor names to avoid name conflicts with Terra Incognita.
+
+Heretic:
+
+! Renamed some actor names to avoid name conflicts with Terra Incognita.
+
+Hexen: Beyond Heretic:
+
+! Renamed an actor name to avoid name conflicts with Terra Incognita.
 
 Strife: Quest for the Sigil:
 

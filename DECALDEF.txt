@@ -388,7 +388,7 @@ generator SnakeProjB2				SnakeScorch2
 generator HeadFX12					SnakeScorch2
 generator HeadFX32					CacoScorch
 generator Sorcerer2FX3				SorcererLightning
-generator HereticImpBall2			HImpScorch
+generator HereticImpBallTwo			HImpScorch
 generator MummyFX2					MummyScorch
 generator KnightAxe2				AxeScorch
 generator RedAxe2					BloodSmear
@@ -398,7 +398,7 @@ generator SerpentFX2				DoomImpScorch
 generator CentaurFX2				CentaurScorch
 generator Demon1FX2					RevenantScorch
 generator Demon2FX2					Demon2Scorch
-generator BishopFX2					BishopScorch
+generator BishopFXTwo				BishopScorch
 generator WraithFX6					Demon2Scorch
 generator SorcFX12					RevenantScorch
 generator SorcFX42					RevenantScorch

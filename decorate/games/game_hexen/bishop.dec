@@ -241,7 +241,7 @@ actor Bishop2 : SamsaraMonsterReincBishop replaces Bishop
 	}
 }
 
-actor BishopFX2 : BishopFX replaces BishopFX
+actor BishopFXTwo : BishopFX replaces BishopFX
 {
 	DamageType "HexBishop"
 }

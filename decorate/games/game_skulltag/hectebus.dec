@@ -121,8 +121,23 @@ actor Hectebus : Fatso2 5007
    }
 }
 
-actor Hectebus_Shrink : Hectebus
+// redefined for compatibility with certain wads
+actor Hectebus_Shrink : SamsaraMonsterCyberneticTotalGib
 {
+	Radius 48
+	Mass 1000
+	PainChance 80
+	Monster
+	+FLOORCLIP
+	+BOSSDEATH
+	+DONTRIP
+	SeeSound "fatso/sight"
+	PainSound "fatso/pain"
+	DeathSound "fatso/death"
+	ActiveSound "fatso/active"
+	Obituary "$OB_HECTEBUS"
+	Tag "Hectebus"
+	Species "SamsaraMancubus"
 	+FRIGHTENED
 	+NOTRIGGER
 	-SHOOTABLE
@@ -289,8 +304,25 @@ actor Hectebus_Shrink : Hectebus
 	}
 }
 
-actor Hectebus_ShrinkEffect : Hectebus
+actor Hectebus_ShrinkEffect : SamsaraMonsterCyberneticTotalGib
 {
+	Health 600
+	Radius 48
+	Height 64
+	Mass 1000
+	Speed 8
+	PainChance 80
+	Monster
+	+FLOORCLIP
+	+BOSSDEATH
+	+DONTRIP
+	SeeSound "fatso/sight"
+	PainSound "fatso/pain"
+	DeathSound "fatso/death"
+	ActiveSound "fatso/active"
+	Obituary "$OB_HECTEBUS"
+	Tag "Hectebus"
+	Species "SamsaraMancubus"
 	-ISMONSTER
 	-COUNTKILL
 	-SHOOTABLE

@@ -8,7 +8,7 @@ actor StealthArachnotron2 : Arachnotron2 replaces StealthArachnotron
 	PainChance "ShrinkerDMG", 0
 }
 
-actor StealthArchvile2 : Archvile2 replaces StealthArchvile
+actor StealthArchvileTwo : ArchvileTwo replaces StealthArchvile
 {
 	+STEALTH
 	RenderStyle Translucent
@@ -17,7 +17,7 @@ actor StealthArchvile2 : Archvile2 replaces StealthArchvile
 	PainChance "ShrinkerDMG", 0
 }
 
-actor StealthBaron2 : BaronOfHell2 replaces StealthBaron
+actor StealthBaronTwo : BaronOfHellTwo replaces StealthBaron
 {
 	+STEALTH
 	RenderStyle Translucent
@@ -27,7 +27,7 @@ actor StealthBaron2 : BaronOfHell2 replaces StealthBaron
 	PainChance "ShrinkerDMG", 0
 }
 
-actor StealthHellKnight2 : HellKnight2 replaces StealthHellKnight
+actor StealthHellKnightTwo : HellKnightTwo replaces StealthHellKnight
 {
 	+STEALTH
 	RenderStyle Translucent

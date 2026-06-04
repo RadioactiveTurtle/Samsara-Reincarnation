@@ -3602,9 +3602,9 @@ StatusBar Normal, ForceScaled
             }
         }
 
-        InInventory SamsaraIsPlayingInZandronum { DrawImage RuneIcon, 20, 40, Center; }
+        InInventory SamsaraIsPlayingInZandronum { DrawImage RuneIcon, 20, 48, Center; }
 
-        DrawSelectedInventory AlwaysShowCounter, QUAKHUDF, 290, 22, 293, 25, Untranslated;
+        DrawSelectedInventory AlwaysShowCounter, QUAKHUDF, 290, 25, 293, 28, Untranslated;
 
         GameMode TeamGame, CTF, OneFlagCTF, Skulltag, TeamPossession, TeamLMS, Domination
         {
@@ -3750,7 +3750,7 @@ StatusBar Normal, ForceScaled
             }
 
             // Damage Booster
-            InInventory SamsaraQuadDamageCooldownDisplay { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraQuadDamageCooldownDisplay, 293, 48; }
+            InInventory SamsaraQuadDamageCooldownDisplay { DrawNumber 3, INDEXFONT, DarkBrown, SamsaraQuadDamageCooldownDisplay, 293, 51; }
         }
     }
 

@@ -378,7 +378,6 @@ Actor HLUziBullet : HLBullet {
     States
     {
         Crash:
-        Death:
             TNT1 A 0 A_Explode(CallACS("HalfLife_BulletDamage",16),8,!XF_HURTSOURCE,0,8)
             Goto Super::Death
         XDeath:
@@ -393,7 +392,6 @@ Actor HLUziBulletCoop : HLBulletCoop {
     States
     {
         Crash:
-        Death:
             TNT1 A 0 A_Explode(CallACS("HalfLife_BulletDamage",16),8,!XF_HURTSOURCE,0,8)
             Goto Super::Death
         XDeath:

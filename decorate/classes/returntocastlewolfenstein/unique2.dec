@@ -365,7 +365,6 @@ Actor RTCW_ShotgunTracer : RTCW_Tracer
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 14, 0),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 		XDeath:
@@ -382,7 +381,6 @@ Actor RTCW_ShotgunTracerSoundConsole : RTCW_TracerSoundConsole
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 14, 1),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 		XDeath:
@@ -399,7 +397,6 @@ Actor RTCW_ShotgunTracerSoundET : RTCW_TracerSoundET
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 14, 2),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 		XDeath:

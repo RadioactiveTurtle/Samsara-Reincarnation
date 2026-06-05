@@ -139,6 +139,12 @@ Jack Curtis (Disruptor):
 
 ! When running out of alternate ammo, weapons will now switch to another weapon if there is not enough normal ammo.
 
+Half-Life:
+
+-All-
+
+* Fixed bullet damage applying when hitting map geometry.
+
 Leonard (Redneck Rampage):
 
 ! When running out of alternate ammo, the hunting crossbow will now switch to the previous ammo if there is some remaining. Running out of normal ammo will still switch to another weapon, even with any alternate ammo remaining.
@@ -182,6 +188,11 @@ Daniel Garner (Painkiller):
 - The rocket launcher primary now deals 80 direct damage (decreased from 120).
 + The rocket launcher primary now deals 128 splash damage across 128 map units without Weapon Modifier active (increased from 120 splash damage across 102 map units), and 128 splash damage across 160 map units with Weapon Modifier active (increased from 120 splash damage across 153 map units).
 * Fixed gold and silver tarot cards not being properly taken with pistol start enabled.
+
+B.J. Blazkowicz (Return to Castle Wolfenstein):
+
+* Fixed the knife backstab hint not showing up when targeting non-bleeding actors.
+* Fixed bullet damage applying when hitting map geometry.
 
 Sarge (Quake III Arena):
 

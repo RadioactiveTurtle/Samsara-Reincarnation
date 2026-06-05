@@ -390,7 +390,6 @@ Actor RTCW_SnooperTracer : RTCW_Tracer
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 100, 0),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 
@@ -407,7 +406,6 @@ Actor RTCW_SnooperTracerDM : RTCW_Tracer
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 70, 0),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 
@@ -423,7 +421,6 @@ Actor RTCW_SnooperTracerSoundConsole : RTCW_TracerSoundConsole
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 100, 1),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 
@@ -440,7 +437,6 @@ Actor RTCW_SnooperTracerDMSoundConsole : RTCW_TracerSoundConsole
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 70, 1),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 
@@ -456,7 +452,6 @@ Actor RTCW_SnooperTracerSoundET : RTCW_TracerSoundET
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 100, 2),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 
@@ -473,7 +468,6 @@ Actor RTCW_SnooperTracerDMSoundET : RTCW_TracerSoundET
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 70, 2),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 

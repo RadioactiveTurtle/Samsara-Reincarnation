@@ -510,7 +510,6 @@ Actor RTCW_LugerTracer : RTCW_Tracer
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 13, 0),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 
@@ -527,7 +526,6 @@ Actor RTCW_LugerTracerSoundConsole : RTCW_TracerSoundConsole
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 13, 1),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 
@@ -544,7 +542,6 @@ Actor RTCW_LugerTracerSoundET : RTCW_TracerSoundET
 	States
 	{
 		Crash:
-		Death:
 			TNT1 A 0 A_Explode(CallACS("RTCW_BulletDamage", 13, 2),8,!XF_HURTSOURCE,0,8)
 			Goto Super::Death
 

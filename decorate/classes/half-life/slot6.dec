@@ -3568,7 +3568,6 @@ Actor HLSawBullet : HLBullet
     States
     {
         Crash:
-        Death:
             TNT1 A 0 A_Explode(35,8,!XF_HURTSOURCE,0,8)
             Goto Super::Death
         XDeath:
@@ -3586,7 +3585,6 @@ Actor HLSawBulletCoop : HLBulletCoop
     States
     {
         Crash:
-        Death:
             TNT1 A 0 A_Explode(35,8,!XF_HURTSOURCE,0,8)
             Goto Super::Death
         XDeath:

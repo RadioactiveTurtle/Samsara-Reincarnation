@@ -191,6 +191,7 @@ Actor RTCW_KnifeHintPuff
 	States
 	{
 		Spawn:
+		Melee:
 		XDeath:
 			TNT1 A 0 NoDelay A_JumpIf(CallACS("RTCW_KnifeDamage",1)==1,"ShowHint")
 			TNT1 A 2

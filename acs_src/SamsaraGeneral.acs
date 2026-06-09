@@ -17094,6 +17094,8 @@ script "SamsaraPlayerOxygenAdjuster" (int mode, int amount, int playgasp)
     int aircapacity = 35 * 20; // usually the maximum
     int result = 0;
 
+    if (CheckInventory("SamsaraUsingCustomAirSupply")) { aircapacity = CheckInventory("SamsaraCustomAirSupplyMax"); }
+
     if (mode >= 1) // Set current air
     {
         if (amount < 0)

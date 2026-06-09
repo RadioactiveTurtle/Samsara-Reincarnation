@@ -6530,6 +6530,8 @@ script "SamsaraPlayerOxygenFakeInvulnCheck" ENTER
         int pln = PlayerNumber();
         int aircapacity = 35 * 20; // usually the maximum
 
+        if (CheckInventory("SamsaraUsingCustomAirSupply")) { aircapacity = CheckInventory("SamsaraCustomAirSupplyMax"); }
+
         if (CheckInventory("PowerFakeInvulnerable") || CheckInventory("PowerFakeInvulnerableCleric") || CheckInventory("PowerFakeInvulnerableMage") ||
             CheckInventory("PowerFakeInvulnerableFighter") || CheckInventory("QuakePentagram") || CheckInventory("PowerGodProtection") ||
             CheckInventory("PowerDoggyMorph") || CheckInventory("Painkiller_IronWill_Protection") || CheckInventory("PainkillerDemonMorphInvulnerability"))

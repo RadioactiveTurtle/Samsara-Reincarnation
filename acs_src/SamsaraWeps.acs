@@ -252,7 +252,7 @@ str ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
         {"SPNKR-25 Auto Cannon",      "Cell",       "",           "",                ""},
     },
     { // Quake I
-        {"QuakeAxe",                    "",           "", "",           ""},
+        {"QuakeAxe",               "",           "", "",           ""},
         {"Mjolnir",                "",           "", "ForceCheck", ""}, // a loadout weapon uses no ammo type, uses script for proper ammo handling for equipmentstart 2
         {"Single Shotgun",         "",           "", "",           ""},
         {"Double Shotgun",         "Shell",      "", "",           ""},

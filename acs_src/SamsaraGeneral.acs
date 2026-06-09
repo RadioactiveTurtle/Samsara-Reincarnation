@@ -2495,7 +2495,7 @@ Script "Samsara_ResetInventory" (void)
 			GiveInventory("Single Shotgun", 1);
 			GiveInventory("IsSamsaraClass", 1);
 			SetInventory("Shell", 25);
-			GiveInventory("Axe", 1);
+			GiveInventory("QuakeAxe", 1);
 			SetWeapon("Single Shotgun");
 			break;
 

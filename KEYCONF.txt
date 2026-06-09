@@ -222,7 +222,7 @@ addslotdefault 6 "Rocket Powered Impaler"
 addslotdefault 7 "Thunderbolt"
 addslotdefault 7 "Thunderbolt DOE"
 addslotdefault 8 "Laser Cannon"
-addslotdefault 0 "Axe"
+addslotdefault 0 "QuakeAxe"
 
 addslotdefault 1 "RPistol"
 addslotdefault 1 "Double Pistols"

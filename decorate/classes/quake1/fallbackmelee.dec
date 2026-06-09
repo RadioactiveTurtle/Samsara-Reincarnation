@@ -1,6 +1,6 @@
 actor Ranger_AxeSelected : Boolean { Inventory.InterHubAmount 0 }
 
-actor "Axe" : SamsaraQuakeWeapon
+actor "QuakeAxe" : SamsaraQuakeWeapon
 {
     Weapon.SelectionOrder 8
     Weapon.Kickback 100

@@ -321,7 +321,7 @@ Model QuakePlayer
    FrameIndex PLZ9 I 0 102
 }
 
-Model "Axe"
+Model "QuakeAxe"
 {
    Path "models"
    Model 0 "AXE.md3"

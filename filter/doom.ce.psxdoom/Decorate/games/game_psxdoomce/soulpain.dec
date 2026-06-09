@@ -1,4 +1,4 @@
-Actor PsxLostSoul_Samsara : SamsaraMonsterReincLostSoul replaces LostSoul2
+Actor PsxLostSoul_Samsara : SamsaraMonsterReincLostSoul replaces LostSoulTwo
 {
 	Health 60
 	Radius 16

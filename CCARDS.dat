@@ -1,7 +1,7 @@
 // Corruption Cards compatibility for Samsara Reincarnation
 
 monstergroup "Former Human", ZombieMan2, ShotgunGuy2, ChaingunGuy2
-monstergroup "Hell Nobles", HellKnight2, BaronOfHell2
+monstergroup "Hell Nobles", HellKnightTwo, BaronOfHellTwo
 monstergroup "Demon", DoomDemon2, Spectre2
 monstergroup "Golem", Mummy2, MummyGhost2, MummyLeader2, MummyLeaderGhost2
 monstergroup "Knight", Knight2, KnightGhost2

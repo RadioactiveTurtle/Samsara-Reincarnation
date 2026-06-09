@@ -1,4 +1,4 @@
-Actor D64BaronOfHell_Samsara : SamsaraMonsterDemonicTotalGib replaces BaronOfHell2
+Actor D64BaronOfHell_Samsara : SamsaraMonsterDemonicTotalGib replaces BaronOfHellTwo
 {
 	Health 1000
 	Radius 24
@@ -309,7 +309,7 @@ actor D64BaronBall_Samsara : D64BaronBall replaces BaronBall2
 	+THRUGHOST
 }
 
-Actor D64HellKnight_Samsara : SamsaraMonsterDemonicTotalGib replaces HellKnight2
+Actor D64HellKnight_Samsara : SamsaraMonsterDemonicTotalGib replaces HellKnightTwo
 {
 	Health 500
 	Radius 24

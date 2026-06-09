@@ -1,4 +1,4 @@
-Actor D64LostSoul_Samsara : SamsaraMonsterReincLostSoul replaces LostSoul2
+Actor D64LostSoul_Samsara : SamsaraMonsterReincLostSoul replaces LostSoulTwo
 {
 	Health 50
 	Radius 16

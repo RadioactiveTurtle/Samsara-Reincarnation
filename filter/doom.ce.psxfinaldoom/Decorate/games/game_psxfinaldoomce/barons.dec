@@ -1,4 +1,4 @@
-Actor PsxBaronOfHell_Samsara : SamsaraMonsterDemonicTotalGib replaces BaronOfHell2
+Actor PsxBaronOfHell_Samsara : SamsaraMonsterDemonicTotalGib replaces BaronOfHellTwo
 {
 	Health 1000
 	Radius 24
@@ -302,7 +302,7 @@ actor PsxBaronOfHell_Samsara_ShrinkEffect : PsxBaronOfHell_Samsara
 	}
 }
 
-Actor PsxHellKnight_Samsara : SamsaraMonsterDemonicTotalGib replaces HellKnight2
+Actor PsxHellKnight_Samsara : SamsaraMonsterDemonicTotalGib replaces HellKnightTwo
 {
 	Health 500
 	Radius 24

@@ -6532,12 +6532,15 @@ script "SamsaraPlayerOxygenFakeInvulnCheck" ENTER
 
         if (CheckInventory("SamsaraUsingCustomAirSupply")) { aircapacity = CheckInventory("SamsaraCustomAirSupplyMax"); }
 
-        if (CheckInventory("PowerFakeInvulnerable") || CheckInventory("PowerFakeInvulnerableCleric") || CheckInventory("PowerFakeInvulnerableMage") ||
-            CheckInventory("PowerFakeInvulnerableFighter") || CheckInventory("QuakePentagram") || CheckInventory("PowerGodProtection") ||
-            CheckInventory("PowerDoggyMorph") || CheckInventory("Painkiller_IronWill_Protection") || CheckInventory("PainkillerDemonMorphInvulnerability"))
+        if (aircapacity > 0)
         {
-            if (GetAirSupply(pln) <= 0) { PlaySound(0, "*gasp", CHAN_VOICE); }
-            SetAirSupply(pln, aircapacity);
+            if (CheckInventory("PowerFakeInvulnerable") || CheckInventory("PowerFakeInvulnerableCleric") || CheckInventory("PowerFakeInvulnerableMage") ||
+                CheckInventory("PowerFakeInvulnerableFighter") || CheckInventory("QuakePentagram") || CheckInventory("PowerGodProtection") ||
+                CheckInventory("PowerDoggyMorph") || CheckInventory("Painkiller_IronWill_Protection") || CheckInventory("PainkillerDemonMorphInvulnerability"))
+            {
+                if (GetAirSupply(pln) <= 0) { PlaySound(0, "*gasp", CHAN_VOICE); }
+                SetAirSupply(pln, aircapacity);
+            }
         }
 
         Delay(1);

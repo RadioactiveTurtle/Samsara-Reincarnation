@@ -17096,23 +17096,26 @@ script "SamsaraPlayerOxygenAdjuster" (int mode, int amount, int playgasp)
 
     if (CheckInventory("SamsaraUsingCustomAirSupply")) { aircapacity = CheckInventory("SamsaraCustomAirSupplyMax"); }
 
-    if (mode >= 1) // Set current air
+    if (aircapacity > 0)
     {
-        if (amount < 0)
+        if (mode >= 1) // Set current air
         {
-            if (GetAirSupply(pln) < aircapacity)
+            if (amount < 0)
             {
+                if (GetAirSupply(pln) < aircapacity)
+                {
+                    if (playgasp && GetAirSupply(pln) <= 0) { PlaySound(0, "*gasp", CHAN_VOICE); }
+                    SetAirSupply(pln, aircapacity);
+                    result = 1;
+                }
+            } else {
                 if (playgasp && GetAirSupply(pln) <= 0) { PlaySound(0, "*gasp", CHAN_VOICE); }
-                SetAirSupply(pln, aircapacity);
+                SetAirSupply(pln, amount);
                 result = 1;
             }
-        } else {
-            if (playgasp && GetAirSupply(pln) <= 0) { PlaySound(0, "*gasp", CHAN_VOICE); }
-            SetAirSupply(pln, amount);
-            result = 1;
         }
+        else { result = (amount < 0 && GetAirSupply(pln) < aircapacity) || amount >= 0; } // Get current air
     }
-    else { result = (amount < 0 && GetAirSupply(pln) < aircapacity) || amount >= 0; } // Get current air
 
     SetResultValue(result);
 }

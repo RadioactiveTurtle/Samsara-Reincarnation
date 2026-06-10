@@ -1803,6 +1803,11 @@ actor BloodBurningCorpse_NoPain_Green : BloodBurningCorpse_NoPainColor { BloodCo
 actor BloodBurningCorpse_ScreamOnly_Green : BloodBurningCorpse_ScreamOnlyColor { BloodColor "Green" }
 actor BloodBurningCorpse_Silent_Green : BloodBurningCorpse_SilentColor { BloodColor "Green" }
 
+actor BloodBurningCorpse_Generic_DarkGreen : BloodBurningCorpse_GenericColor { BloodColor "DarkGreen" }
+actor BloodBurningCorpse_NoPain_DarkGreen : BloodBurningCorpse_NoPainColor { BloodColor "DarkGreen" }
+actor BloodBurningCorpse_ScreamOnly_DarkGreen : BloodBurningCorpse_ScreamOnlyColor { BloodColor "DarkGreen" }
+actor BloodBurningCorpse_Silent_DarkGreen : BloodBurningCorpse_SilentColor { BloodColor "DarkGreen" }
+
 actor BloodBurningCorpse_Generic_Blue : BloodBurningCorpse_GenericColor { BloodColor "Blue" }
 actor BloodBurningCorpse_NoPain_Blue : BloodBurningCorpse_NoPainColor { BloodColor "Blue" }
 actor BloodBurningCorpse_ScreamOnly_Blue : BloodBurningCorpse_ScreamOnlyColor { BloodColor "Blue" }

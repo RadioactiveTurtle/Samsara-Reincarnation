@@ -15297,7 +15297,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_pinataparty", false);
 		SetCVar("samsara_pinatapartyextras", isZDoom() ? true : false);
 		SetCVar("samsara_pinatapartyperformance", true);
-		SetCVar("samsara_pinatapartychance", 10);
+		SetCVar("samsara_pinatapartychance", 15);
 		SetCVar("samsara_pinatapartybosschance", 100);
 		SetCVar("samsara_sigilmode", false);
 		SetCVar("samsara_allloadoutequipment", false);

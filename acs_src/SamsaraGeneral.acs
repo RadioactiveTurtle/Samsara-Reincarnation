@@ -1759,7 +1759,7 @@ Script "Samsara_KillCount" (int override)
 
         if (canpinata)
         {
-            if (!GetCVar("samsara_merrychristmas") && !GetCVar("samsara_pinatapartyperformance")) { ACS_NamedExecuteAlways("Samsara_PinataHandler", 0, health, GetActorProperty(0, APROP_Radius) >> 16, GetActorProperty(0, APROP_Height) >> 16); }
+            if (!GetCVar("samsara_merrychristmas") && !GetCVar("samsara_pinatapartyperformance")) { ACS_NamedExecuteWithResult("Samsara_PinataHandler", health, GetActorProperty(0, APROP_Radius) >> 16, GetActorProperty(0, APROP_Height) >> 16, 1 + isBoss); }
             else
             {
                 int presentTid = UniqueTid();
@@ -1775,7 +1775,8 @@ Script "Samsara_KillCount" (int override)
                 SetActorProperty(presentTid, APROP_Score, GetActorProperty(0, APROP_Height) >> 16);
                 SetActorProperty(presentTid, APROP_ScaleX, presentScale);
                 SetActorProperty(presentTid, APROP_ScaleY, presentScale);
-                SetActorProperty(presentTid, APROP_Mass, 1 + CheckFlag(0, "FRIENDLY"));
+                SetActorProperty(presentTid, APROP_Mass, 1 + isBoss);
+                if (GetCVar("samsara_merrychristmas") && CheckFlag(0, "FRIENDLY")) { SetActorProperty(presentTid, APROP_Mass, -GetActorProperty(presentTid, APROP_Mass)); }
 
                 Thing_ChangeTid(presentTid, 0);
             }
@@ -13619,12 +13620,17 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_pinatapartyextras", false);
 		SetCVar("samsara_pinatapartyperformance", true);
 		SetCVar("samsara_pinatapartychance", 100);
-		SetCVar("samsara_pinatapartybosschance", 100);
 		SetCVar("samsara_pinatapartyhealthtier1", 0);
 		SetCVar("samsara_pinatapartyhealthtier2", 200);
 		SetCVar("samsara_pinatapartyhealthtier3", 1000);
 		SetCVar("samsara_pinatapartyhealthtier4", 2500);
 		SetCVar("samsara_pinatapartyhealthtier5", 5000);
+		SetCVar("samsara_pinatapartybosschance", 100);
+		SetCVar("samsara_pinatapartybosshealthtier1", 0);
+		SetCVar("samsara_pinatapartybosshealthtier2", 200);
+		SetCVar("samsara_pinatapartybosshealthtier3", 1000);
+		SetCVar("samsara_pinatapartybosshealthtier4", 2500);
+		SetCVar("samsara_pinatapartybosshealthtier5", 5000);
 		SetCVar("samsara_sigilmode", false);
 		SetCVar("samsara_allloadoutequipment", false);
 
@@ -14042,12 +14048,17 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_pinatapartyextras", false);
 		SetCVar("samsara_pinatapartyperformance", true);
 		SetCVar("samsara_pinatapartychance", 100);
-		SetCVar("samsara_pinatapartybosschance", 100);
 		SetCVar("samsara_pinatapartyhealthtier1", 0);
 		SetCVar("samsara_pinatapartyhealthtier2", 200);
 		SetCVar("samsara_pinatapartyhealthtier3", 1000);
 		SetCVar("samsara_pinatapartyhealthtier4", 2500);
 		SetCVar("samsara_pinatapartyhealthtier5", 5000);
+		SetCVar("samsara_pinatapartybosschance", 100);
+		SetCVar("samsara_pinatapartybosshealthtier1", 0);
+		SetCVar("samsara_pinatapartybosshealthtier2", 200);
+		SetCVar("samsara_pinatapartybosshealthtier3", 1000);
+		SetCVar("samsara_pinatapartybosshealthtier4", 2500);
+		SetCVar("samsara_pinatapartybosshealthtier5", 5000);
 		SetCVar("samsara_sigilmode", false);
 		SetCVar("samsara_allloadoutequipment", false);
 
@@ -14465,12 +14476,17 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_pinatapartyextras", false);
 		SetCVar("samsara_pinatapartyperformance", true);
 		SetCVar("samsara_pinatapartychance", 100);
-		SetCVar("samsara_pinatapartybosschance", 100);
 		SetCVar("samsara_pinatapartyhealthtier1", 0);
 		SetCVar("samsara_pinatapartyhealthtier2", 200);
 		SetCVar("samsara_pinatapartyhealthtier3", 1000);
 		SetCVar("samsara_pinatapartyhealthtier4", 2500);
 		SetCVar("samsara_pinatapartyhealthtier5", 5000);
+		SetCVar("samsara_pinatapartybosschance", 100);
+		SetCVar("samsara_pinatapartybosshealthtier1", 0);
+		SetCVar("samsara_pinatapartybosshealthtier2", 200);
+		SetCVar("samsara_pinatapartybosshealthtier3", 1000);
+		SetCVar("samsara_pinatapartybosshealthtier4", 2500);
+		SetCVar("samsara_pinatapartybosshealthtier5", 5000);
 		SetCVar("samsara_sigilmode", false);
 		SetCVar("samsara_allloadoutequipment", false);
 
@@ -14889,12 +14905,17 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_pinatapartyextras", true);
 		SetCVar("samsara_pinatapartyperformance", true);
 		SetCVar("samsara_pinatapartychance", 100);
-		SetCVar("samsara_pinatapartybosschance", 100);
 		SetCVar("samsara_pinatapartyhealthtier1", 0);
 		SetCVar("samsara_pinatapartyhealthtier2", 200);
 		SetCVar("samsara_pinatapartyhealthtier3", 1000);
 		SetCVar("samsara_pinatapartyhealthtier4", 2500);
 		SetCVar("samsara_pinatapartyhealthtier5", 5000);
+		SetCVar("samsara_pinatapartybosschance", 100);
+		SetCVar("samsara_pinatapartybosshealthtier1", 0);
+		SetCVar("samsara_pinatapartybosshealthtier2", 200);
+		SetCVar("samsara_pinatapartybosshealthtier3", 1000);
+		SetCVar("samsara_pinatapartybosshealthtier4", 2500);
+		SetCVar("samsara_pinatapartybosshealthtier5", 5000);
 		SetCVar("samsara_sigilmode", false);
 		SetCVar("samsara_allloadoutequipment", false);
 
@@ -15318,12 +15339,17 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_pinatapartyextras", isZDoom() ? true : false);
 		SetCVar("samsara_pinatapartyperformance", true);
 		SetCVar("samsara_pinatapartychance", 15);
-		SetCVar("samsara_pinatapartybosschance", 100);
 		SetCVar("samsara_pinatapartyhealthtier1", 0);
 		SetCVar("samsara_pinatapartyhealthtier2", 200);
 		SetCVar("samsara_pinatapartyhealthtier3", 1000);
 		SetCVar("samsara_pinatapartyhealthtier4", 2500);
 		SetCVar("samsara_pinatapartyhealthtier5", 5000);
+		SetCVar("samsara_pinatapartybosschance", 100);
+		SetCVar("samsara_pinatapartybosshealthtier1", 0);
+		SetCVar("samsara_pinatapartybosshealthtier2", 200);
+		SetCVar("samsara_pinatapartybosshealthtier3", 1000);
+		SetCVar("samsara_pinatapartybosshealthtier4", 2500);
+		SetCVar("samsara_pinatapartybosshealthtier5", 5000);
 		SetCVar("samsara_sigilmode", false);
 		SetCVar("samsara_allloadoutequipment", false);
 
@@ -15804,33 +15830,34 @@ int PinataItemChances[10][31] =
     },
 };
 
-script "Samsara_PinataHandler" (int health, int radius, int height, int friendly)
+script "Samsara_PinataHandler" (int health, int radius, int height, int actortype)
 {
     if (!GetCVar("samsara_pinataparty")) { terminate; }
 
+    bool boss = actortype <= -2 || actortype >= 2;
     int currentpooltier = 0, currentpoolamount = 0;
     int spawneditems, randomchance, randomitem;
     int newtid = UniqueTID();
     int maxitems = ((height * 4) * (radius * radius)) / 4096;
     bool xmas = GetCVar("samsara_merrychristmas");
-    bool naughty = GetActorProperty(0, APROP_Mass) == 2 && xmas;
+    bool naughty = actortype < 0 && xmas;
 
     if (!naughty)
     {
-        if (health >= GetCVar("samsara_pinatapartyhealthtier5")) // Legendary
+        if (health >= (boss ? GetCVar("samsara_pinatapartybosshealthtier5") : GetCVar("samsara_pinatapartyhealthtier5"))) // Legendary
         {
             currentpooltier = 5;
             currentpoolamount = GetCVar("samsara_pinatapartyextras") ? 14 : 12;
-        } else if (health >= GetCVar("samsara_pinatapartyhealthtier4")) { // Epic
+        } else if (health >= (boss ? GetCVar("samsara_pinatapartybosshealthtier4") : GetCVar("samsara_pinatapartyhealthtier4"))) { // Epic
             currentpooltier = 4;
             currentpoolamount = GetCVar("samsara_pinatapartyextras") ? 31 : 16;
-        } else if (health >= GetCVar("samsara_pinatapartyhealthtier3")) { // Rare
+        } else if (health >= (boss ? GetCVar("samsara_pinatapartybosshealthtier3") : GetCVar("samsara_pinatapartyhealthtier3"))) { // Rare
             currentpooltier = 3;
             currentpoolamount = GetCVar("samsara_pinatapartyextras") ? 28 : 21;
-        } else if (health >= GetCVar("samsara_pinatapartyhealthtier2")) { // Uncommon
+        } else if (health >= (boss ? GetCVar("samsara_pinatapartybosshealthtier2") : GetCVar("samsara_pinatapartyhealthtier2"))) { // Uncommon
             currentpooltier = 2;
             currentpoolamount = GetCVar("samsara_pinatapartyextras") ? 24 : 17;
-        } else if (health >= GetCVar("samsara_pinatapartyhealthtier1")) { // Common
+        } else if (health >= (boss ? GetCVar("samsara_pinatapartybosshealthtier1") : GetCVar("samsara_pinatapartyhealthtier1"))) { // Common
             currentpooltier = 1;
             currentpoolamount = GetCVar("samsara_pinatapartyextras") ? 13 : 9;
         }

@@ -18,9 +18,9 @@ OptionMenu "SamsaraServerSideOptions"
     //Option "Rocket Jumping For Everyone",          "samsara_allcanrj",               "YesNo"
     Option "Duke Talk Soundboard!",                "samsara_dukesoundboard",         "OnOff"
     Option "Duke Expander Mode",                   "samsara_microwavepop",           "MicrowavePopStyle"
-    Slider "Doom 64 Starting Artifacts",           "samsara_unmakerartifacts",       0, 3,     1
-    Slider "Strife Starting Upgrades",             "samsara_strifeupgrades",         0, 10,    1
-    Slider "Painkiller Starting Gold",             "samsara_mp_startingGold",        0, 10000, 500
+    Slider "Doom 64 Starting Artifacts",           "samsara_unmakerartifacts",       0, 3,     1,   0
+    Slider "Strife Starting Upgrades",             "samsara_strifeupgrades",         0, 10,    1,   0
+    Slider "Painkiller Starting Gold",             "samsara_mp_startingGold",        0, 10000, 500, 0
     Option "Deus Ex Starting Skills",              "samsara_deusexstartingskills",   "StartingSkillsOptions"
     Option "Random Character Spawn Rate",          "samsara_randomcharacters",       "MiscCharactersOptions"
     Option "Random Character Spawn Mode",          "samsara_misccharacterspawnmode", "MiscCharactersSpawnMode"
@@ -32,8 +32,8 @@ OptionMenu "SamsaraServerSideOptions"
     StaticText ""
     StaticText "LMS Options", 1
     Option "Use LMS Rules in All Gamemodes", "samsara_lmsrules",           "YesNo"
-    Slider "LMS Starting Extra Health",      "samsara_lmshealth",          0, 400, 5
-    Slider "LMS Starting Armor",             "samsara_lmsarmor",           0, 500, 5
+    Slider "LMS Starting Extra Health",      "samsara_lmshealth",          0, 400, 5, 0
+    Slider "LMS Starting Armor",             "samsara_lmsarmor",           0, 500, 5, 0
     Option "LMS Starting Armor Tier",        "samsara_lmsarmortier",       "LMSArmorTierOptions"
     Option "LMS Unique Equipment",           "samsara_lmsuniques",         "OnOff"
     Option "LMS Fallback Ranged Equipment",  "samsara_lmspistol",          "OnOff"
@@ -53,26 +53,31 @@ OptionMenu "SamsaraServerSideOptions"
     StaticText "Turkey Puncher Options", 1
     Option "Super Turbo Turkey Puncher 3000 Mode", "samsara_superturboturkeypuncher3000", "ChickensOptionsA"
     Option "Turkey Spawn Frequency",               "samsara_superturboturkeyfrequency",   "ChickensOptionsB"
-    Slider "Turkey Puncher Kill Limit",            "samsara_superturboturkeylimit",       0, 250, 5
+    Slider "Turkey Puncher Kill Limit",            "samsara_superturboturkeylimit",       0, 250, 5, 0
     StaticText ""
     StaticText "Party Mode Options", 1
-    Slider "Death Explosion Damage",               "samsara_pdwtak_damage",             0, 8192, 128
-    Slider "Death Explosion Distance",             "samsara_pdwtak_distance",           0, 2048, 32
-    Slider "Death Explosion Full Damage Distance", "samsara_pdwtak_fulldamagedistance", 0, 2048, 32
-    Option "Death Explosion For Monsters",         "samsara_pdwtak_monsters",           "OnOff"
-    Option "Permanent Powered Weapons",            "samsara_permaweaponlevel2",         "OnOff"
-    Option "Pinata Party",                         "samsara_pinataparty",               "OnOff"
-    Option "Pinata Party Extras",                  "samsara_pinatapartyextras",         "OnOff"
-    Option "Pinata Party Performance Mode",        "samsara_pinatapartyperformance",    "OnOff"
-    Slider "Pinata Party Spawn Chance",            "samsara_pinatapartychance",         0, 100,  5
-    Slider "Pinata Party Spawn Chance (Bosses)",   "samsara_pinatapartybosschance",     0, 100,  5
-    Slider "Pinata Party Item Tier 1 Health",      "samsara_pinatapartyhealthtier1",    0, 5000, 10
-    Slider "Pinata Party Item Tier 2 Health",      "samsara_pinatapartyhealthtier2",    0, 5000, 10
-    Slider "Pinata Party Item Tier 3 Health",      "samsara_pinatapartyhealthtier3",    0, 5000, 10
-    Slider "Pinata Party Item Tier 4 Health",      "samsara_pinatapartyhealthtier4",    0, 5000, 10
-    Slider "Pinata Party Item Tier 5 Health",      "samsara_pinatapartyhealthtier5",    0, 5000, 10
-    Option "Sigil For Everyone",                   "samsara_sigilmode",                 "OnOff"
-    Option "All Loadout Equipment",                "samsara_allloadoutequipment",       "OnOff"
+    Slider "Death Explosion Damage",               "samsara_pdwtak_damage",              0, 8192, 128, 0
+    Slider "Death Explosion Distance",             "samsara_pdwtak_distance",            0, 2048, 32,  0
+    Slider "Death Explosion Full Damage Distance", "samsara_pdwtak_fulldamagedistance",  0, 2048, 32,  0
+    Option "Death Explosion For Monsters",         "samsara_pdwtak_monsters",            "OnOff"
+    Option "Permanent Powered Weapons",            "samsara_permaweaponlevel2",          "OnOff"
+    Option "Pinata Party",                         "samsara_pinataparty",                "OnOff"
+    Option "Pinata Party Extras",                  "samsara_pinatapartyextras",          "OnOff"
+    Option "Pinata Party Performance Mode",        "samsara_pinatapartyperformance",     "OnOff"
+    Slider "Pinata Party Spawn Chance",            "samsara_pinatapartychance",          0, 100,  5,   0
+    Slider "Pinata Party Item Tier 1 HP",          "samsara_pinatapartyhealthtier1",     0, 5000, 10,  0
+    Slider "Pinata Party Item Tier 2 HP",          "samsara_pinatapartyhealthtier2",     0, 5000, 10,  0
+    Slider "Pinata Party Item Tier 3 HP",          "samsara_pinatapartyhealthtier3",     0, 5000, 10,  0
+    Slider "Pinata Party Item Tier 4 HP",          "samsara_pinatapartyhealthtier4",     0, 5000, 10,  0
+    Slider "Pinata Party Item Tier 5 HP",          "samsara_pinatapartyhealthtier5",     0, 5000, 10,  0
+    Slider "Pinata Party Spawn Chance (Bosses)",   "samsara_pinatapartybosschance",      0, 100,  5,   0
+    Slider "Pinata Party Item Tier 1 HP (Bosses)", "samsara_pinatapartybosshealthtier1", 0, 5000, 10,  0
+    Slider "Pinata Party Item Tier 2 HP (Bosses)", "samsara_pinatapartybosshealthtier2", 0, 5000, 10,  0
+    Slider "Pinata Party Item Tier 3 HP (Bosses)", "samsara_pinatapartybosshealthtier3", 0, 5000, 10,  0
+    Slider "Pinata Party Item Tier 4 HP (Bosses)", "samsara_pinatapartybosshealthtier4", 0, 5000, 10,  0
+    Slider "Pinata Party Item Tier 5 HP (Bosses)", "samsara_pinatapartybosshealthtier5", 0, 5000, 10,  0
+    Option "Sigil For Everyone",                   "samsara_sigilmode",                  "OnOff"
+    Option "All Loadout Equipment",                "samsara_allloadoutequipment",        "OnOff"
     StaticText ""
     StaticText "Weapon Options", 1
     Option "Ultimate Weapons Stay",             "samsara_permault",            "YesNo"
@@ -103,14 +108,14 @@ OptionMenu "SamsaraServerSideOptions"
     Option "Start with Ammo Expansion Pack", "samsara_backpackstart",        "YesNo"
     StaticText ""
     StaticText "Ammo Options", 1
-    Slider "Max Ammo 1",                          "samsara_max_clip",              10, 1000, 10
-    Slider "Max Ammo 2",                          "samsara_max_shell",             10, 1000, 10
-    Slider "Max Ammo 3",                          "samsara_max_rockets",           10, 1000, 10
-    Slider "Max Ammo 4",                          "samsara_max_cell",              10, 1000, 10
-    Slider "Ammo Multiplier",                     "samsara_ammomultiply",          1,  100,  1
+    Slider "Max Ammo 1",                          "samsara_max_clip",              10, 1000, 10, 0
+    Slider "Max Ammo 2",                          "samsara_max_shell",             10, 1000, 10, 0
+    Slider "Max Ammo 3",                          "samsara_max_rockets",           10, 1000, 10, 0
+    Slider "Max Ammo 4",                          "samsara_max_cell",              10, 1000, 10, 0
+    Slider "Ammo Multiplier",                     "samsara_ammomultiply",          1,  100,  1,  0
     Option "Increasing Ammo Capacities",          "samsara_increasingammo",        "OnOff"
-    Slider "Increasing Ammo Capacity Percentage", "samsara_increasingammopercent", 1,  100,  1
-    Slider "Increasing Ammo Capacity Limit",      "samsara_increasingammolimit",   -1, 100,  5
+    Slider "Increasing Ammo Capacity Percentage", "samsara_increasingammopercent", 1,  100,  1,  0
+    Slider "Increasing Ammo Capacity Limit",      "samsara_increasingammolimit",   -1, 100,  5,  0
     Option "Ammo Cap",                            "samsara_noammocap",             "OffOn"
     StaticText ""
     StaticText "Skulltag Spawn Options", 1
@@ -504,28 +509,28 @@ OptionMenu "SamsaraItemReplacementOptions"
     Option "Replace Slot 7 Equipment",     "samsara_replace_bfg9000",            "SamsaraItemReplacer"
     Option "Replace Slot 7S Equipment",    "samsara_replace_bfg10k",             "SamsaraItemReplacer"
     StaticText ""
-    Slider "Replace Ammo Expansion Pack - Chance",  "samsara_replace_backpack_chance",           1, 100, 5
-    Slider "Replace Map - Chance",                  "samsara_replace_computermap_chance",        1, 100, 5
-    Slider "Replace Unique Equipment - Chance",     "samsara_replace_berserk_chance",            1, 100, 5
-    Slider "Replace Partial Invisibility - Chance", "samsara_replace_blursphere_chance",         1, 100, 5
-    Slider "Replace Invulnerability - Chance",      "samsara_replace_invulnerability_chance",    1, 100, 5
-    Slider "Replace Light Amplification - Chance",  "samsara_replace_lightamplifier_chance",     1, 100, 5
-    Slider "Replace Teleportation - Chance",        "samsara_replace_teleport_chance",           1, 100, 5
-    Slider "Replace Banishment - Chance",           "samsara_replace_banishment_chance",         1, 100, 5
-    Slider "Replace Full Invisibility - Chance",    "samsara_replace_invisibilitysphere_chance", 1, 100, 5
-    Slider "Replace Time Freeze - Chance",          "samsara_replace_timefreeze_chance",         1, 100, 5
-    Slider "Replace Random Powerup - Chance",       "samsara_replace_randompowerup_chance",      1, 100, 5
-    Slider "Replace Slot 1 Equipment - Chance",     "samsara_replace_chainsaw_chance",           1, 100, 5
-    Slider "Replace Slot 2 Equipment - Chance",     "samsara_replace_shotgun_chance",            1, 100, 5
-    Slider "Replace Slot 3 Equipment - Chance",     "samsara_replace_supershotgun_chance",       1, 100, 5
-    Slider "Replace Slot 4 Equipment - Chance",     "samsara_replace_chaingun_chance",           1, 100, 5
-    Slider "Replace Slot 4S Equipment - Chance",    "samsara_replace_minigun_chance",            1, 100, 5
-    Slider "Replace Slot 5 Equipment - Chance",     "samsara_replace_rocketlauncher_chance",     1, 100, 5
-    Slider "Replace Slot 5S Equipment - Chance",    "samsara_replace_grenadelauncher_chance",    1, 100, 5
-    Slider "Replace Slot 6 Equipment - Chance",     "samsara_replace_plasmarifle_chance",        1, 100, 5
-    Slider "Replace Slot 6S Equipment - Chance",    "samsara_replace_railgun_chance",            1, 100, 5	
-    Slider "Replace Slot 7 Equipment - Chance",     "samsara_replace_bfg9000_chance",            1, 100, 5
-    Slider "Replace Slot 7S Equipment - Chance",    "samsara_replace_bfg10k_chance",             1, 100, 5
+    Slider "Replace Ammo Expansion Pack - Chance",  "samsara_replace_backpack_chance",           1, 100, 5, 0
+    Slider "Replace Map - Chance",                  "samsara_replace_computermap_chance",        1, 100, 5, 0
+    Slider "Replace Unique Equipment - Chance",     "samsara_replace_berserk_chance",            1, 100, 5, 0
+    Slider "Replace Partial Invisibility - Chance", "samsara_replace_blursphere_chance",         1, 100, 5, 0
+    Slider "Replace Invulnerability - Chance",      "samsara_replace_invulnerability_chance",    1, 100, 5, 0
+    Slider "Replace Light Amplification - Chance",  "samsara_replace_lightamplifier_chance",     1, 100, 5, 0
+    Slider "Replace Teleportation - Chance",        "samsara_replace_teleport_chance",           1, 100, 5, 0
+    Slider "Replace Banishment - Chance",           "samsara_replace_banishment_chance",         1, 100, 5, 0
+    Slider "Replace Full Invisibility - Chance",    "samsara_replace_invisibilitysphere_chance", 1, 100, 5, 0
+    Slider "Replace Time Freeze - Chance",          "samsara_replace_timefreeze_chance",         1, 100, 5, 0
+    Slider "Replace Random Powerup - Chance",       "samsara_replace_randompowerup_chance",      1, 100, 5, 0
+    Slider "Replace Slot 1 Equipment - Chance",     "samsara_replace_chainsaw_chance",           1, 100, 5, 0
+    Slider "Replace Slot 2 Equipment - Chance",     "samsara_replace_shotgun_chance",            1, 100, 5, 0
+    Slider "Replace Slot 3 Equipment - Chance",     "samsara_replace_supershotgun_chance",       1, 100, 5, 0
+    Slider "Replace Slot 4 Equipment - Chance",     "samsara_replace_chaingun_chance",           1, 100, 5, 0
+    Slider "Replace Slot 4S Equipment - Chance",    "samsara_replace_minigun_chance",            1, 100, 5, 0
+    Slider "Replace Slot 5 Equipment - Chance",     "samsara_replace_rocketlauncher_chance",     1, 100, 5, 0
+    Slider "Replace Slot 5S Equipment - Chance",    "samsara_replace_grenadelauncher_chance",    1, 100, 5, 0
+    Slider "Replace Slot 6 Equipment - Chance",     "samsara_replace_plasmarifle_chance",        1, 100, 5, 0
+    Slider "Replace Slot 6S Equipment - Chance",    "samsara_replace_railgun_chance",            1, 100, 5, 0
+    Slider "Replace Slot 7 Equipment - Chance",     "samsara_replace_bfg9000_chance",            1, 100, 5, 0
+    Slider "Replace Slot 7S Equipment - Chance",    "samsara_replace_bfg10k_chance",             1, 100, 5, 0
 }
 
 OptionValue "SamsaraItemReplacer"

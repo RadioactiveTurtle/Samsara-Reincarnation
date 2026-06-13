@@ -65,17 +65,17 @@ OptionMenu "SamsaraServerSideOptions"
     Option "Pinata Party Extras",                  "samsara_pinatapartyextras",          "OnOff"
     Option "Pinata Party Performance Mode",        "samsara_pinatapartyperformance",     "OnOff"
     Slider "Pinata Party Spawn Chance",            "samsara_pinatapartychance",          0, 100,  5,   0
-    Slider "Pinata Party Item Tier 1 HP",          "samsara_pinatapartyhealthtier1",     0, 5000, 10,  0
-    Slider "Pinata Party Item Tier 2 HP",          "samsara_pinatapartyhealthtier2",     0, 5000, 10,  0
-    Slider "Pinata Party Item Tier 3 HP",          "samsara_pinatapartyhealthtier3",     0, 5000, 10,  0
-    Slider "Pinata Party Item Tier 4 HP",          "samsara_pinatapartyhealthtier4",     0, 5000, 10,  0
-    Slider "Pinata Party Item Tier 5 HP",          "samsara_pinatapartyhealthtier5",     0, 5000, 10,  0
+    Slider "Pinata Party Item Tier 1 HP",          "samsara_pinatapartyhealthtier1",     1, 5000, 10,  0
+    Slider "Pinata Party Item Tier 2 HP",          "samsara_pinatapartyhealthtier2",     1, 5000, 10,  0
+    Slider "Pinata Party Item Tier 3 HP",          "samsara_pinatapartyhealthtier3",     1, 5000, 10,  0
+    Slider "Pinata Party Item Tier 4 HP",          "samsara_pinatapartyhealthtier4",     1, 5000, 10,  0
+    Slider "Pinata Party Item Tier 5 HP",          "samsara_pinatapartyhealthtier5",     1, 5000, 10,  0
     Slider "Pinata Party Spawn Chance (Bosses)",   "samsara_pinatapartybosschance",      0, 100,  5,   0
-    Slider "Pinata Party Item Tier 1 HP (Bosses)", "samsara_pinatapartybosshealthtier1", 0, 5000, 10,  0
-    Slider "Pinata Party Item Tier 2 HP (Bosses)", "samsara_pinatapartybosshealthtier2", 0, 5000, 10,  0
-    Slider "Pinata Party Item Tier 3 HP (Bosses)", "samsara_pinatapartybosshealthtier3", 0, 5000, 10,  0
-    Slider "Pinata Party Item Tier 4 HP (Bosses)", "samsara_pinatapartybosshealthtier4", 0, 5000, 10,  0
-    Slider "Pinata Party Item Tier 5 HP (Bosses)", "samsara_pinatapartybosshealthtier5", 0, 5000, 10,  0
+    Slider "Pinata Party Item Tier 1 HP (Bosses)", "samsara_pinatapartybosshealthtier1", 1, 5000, 10,  0
+    Slider "Pinata Party Item Tier 2 HP (Bosses)", "samsara_pinatapartybosshealthtier2", 1, 5000, 10,  0
+    Slider "Pinata Party Item Tier 3 HP (Bosses)", "samsara_pinatapartybosshealthtier3", 1, 5000, 10,  0
+    Slider "Pinata Party Item Tier 4 HP (Bosses)", "samsara_pinatapartybosshealthtier4", 1, 5000, 10,  0
+    Slider "Pinata Party Item Tier 5 HP (Bosses)", "samsara_pinatapartybosshealthtier5", 1, 5000, 10,  0
     Option "Sigil For Everyone",                   "samsara_sigilmode",                  "OnOff"
     Option "All Loadout Equipment",                "samsara_allloadoutequipment",        "OnOff"
     StaticText ""

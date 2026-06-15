@@ -119,7 +119,7 @@ Rise of the Triad:
 -All-
 
 ! The status bar HUD has been improved and now shows Skulltag weapons.
-! Updated the hybrid pickup sprites for the weapons, sprites done by zax.
+! Updated the hybrid pickup sprites for the weapons (sprites done by zax).
 
 Caleb (Blood):
 
@@ -573,14 +573,14 @@ Rise of the Triad:
 
 * Fixed the landing attack taking effect when dead.
 + With improved weapon balance, the pistol now does 15 damage in PVE (increased from 13).
-! The double pistols have been moved from a slot 2 weapon to a slot 1 weapon. Subsequent pickups also now give 10 bazooka missiles instead of 10 heat seeker missiles. (KNOWN ISSUE: The hybrid pickup sprites have not been updated yet.)
+! The double pistols have been moved from a slot 2 weapon to a slot 1 weapon. Subsequent pickups also now give 10 bazooka missiles instead of 10 heat seeker missiles.
 + With improved weapon balance, the double pistols now does 15 damage in PVE (increased from 13).
-! The MP40 has been moved from a slot 4 weapon to a slot 2 weapon. Subsequent pickups also now give 6 heat seeker missiles instead of 6 bazooka missiles. (KNOWN ISSUE: The hybrid pickup sprites have not been updated yet.)
+! The MP40 has been moved from a slot 4 weapon to a slot 2 weapon. Subsequent pickups also now give 6 heat seeker missiles instead of 6 bazooka missiles.
 + With improved weapon balance, the MP40 now does 12 damage in PVE (increased from 10).
 + The seeking behavior of heat seeker missiles has been slightly improved.
 - The heat seeker now deals 48 splash damage (decreased from 50).
 + The heat seeker and bazooka now deal their splash damage across 64 map units (increased from 48).
-! The bazooka has been moved from a slot 1 weapon to a slot 4 weapon. (KNOWN ISSUE: The hybrid pickup sprites have not been updated yet.)
+! The bazooka has been moved from a slot 1 weapon to a slot 4 weapon.
 - Bazooka ammo capacity is now 50 (without backpack)/100 (with backpack) (decreased from 100 (without backpack)/200 (with backpack)).
 + The bazooka now deals 56 splash damage (increased from 55).
 - The M60 now deals 10 damage (decreased from 15).
@@ -588,7 +588,7 @@ Rise of the Triad:
 - Drunk missile ammo capacity is now 50 (without backpack)/100 (with backpack) (decreased from 60 (without backpack)/120 (with backpack)).
 + The drunk missile launcher now deals 32 splash damage (increased from 30).
 + The drunk missile launcher now deals its splash damage across 48 map units (increased from 40).
-! The split missile has been moved from the second unique weapon to a slot 6S weapon. (KNOWN ISSUE: The hybrid pickup sprites have not been updated yet. This also applies to the unique pickup hybrid sprites.)
+! The split missile has been moved from the second unique weapon to a slot 6S weapon.
 - Split missile ammo capacity is now 25 (without backpack)/50 (with backpack) (decreased from 100 (without backpack)/200 (with backpack)).
 - The split missile now gives 5 split missiles on pickup (decreased from 10).
 - The flamewall's flames now deal 0.5x damage to bosses.

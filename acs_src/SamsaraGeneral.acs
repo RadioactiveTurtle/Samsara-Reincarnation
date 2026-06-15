@@ -4276,7 +4276,7 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
         }
         break;
 
-      case CLASS_QUAKE:
+      case CLASS_BITTERMAN:
         switch (slot)
         {
           default:

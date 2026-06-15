@@ -1,4 +1,5 @@
 // Token
+
 actor SamsaraQuake2LoadoutSlot7S : Boolean {}
 
 // Trap
@@ -273,7 +274,7 @@ actor Q2TrapProjectile
     BounceType "Doom"
     BounceFactor 0.4
     WallBounceFactor 0.3
-	//SelfObituary "%o was sucked into %p own trap."
+    //SelfObituary "%o was sucked into %p own trap."
     +BLOODLESSIMPACT
     +DONTREFLECT
     -NOGRAVITY
@@ -535,72 +536,72 @@ actor SamsaraQuake2DisruptorFireSoundPlayer : Trigger
 
 Actor Q2Disruptor_Proj : Q2Rocket
 {
-	Speed 20
-	Damage (20)
-	DamageType "BittermanTrap"
-	DeathSound "Q2Weapons/DisruptorImpact"
-	Decal ""
-	+SEEKERMISSILE
-	+EXTREMEDEATH
-	+PAINLESS
-	var int user_radius;
-	var int user_offsetz;
-	var int user_angle;
-	States
-	{
-	Spawn:
-		NULL A 0 A_SeekerMissile(5, 15)
-		NULL AAA 0 A_SpawnItemEx("Q2DisruptorTrail",random2(5),0,random2(5),0,0,frandom(0.1,0.5),random(0,359),0,128)
-		NULL A 1 Bright Light("Q2DISPROJ") A_PlaySound("Q2Weapons/DisruptorIdle",CHAN_VOICE,0.8,1)
-		Loop
-	Death:
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
-		TNT1 A 0 A_SpawnItemEx("DisruptorProjectileImpact")
-		Stop
-	XDeath:
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
-		TNT1 A 0 A_SpawnItemEx("DisruptorProjectileImpact")
-		TNT1 A 0 A_SetUserVar("user_radius", CallACS("StickyLocation",1))
-		TNT1 A 0 A_SetUserVar("user_offsetz", CallACS("StickyLocation",2))
-		TNT1 A 0 A_SetUserVar("user_angle", CallACS("StickyLocation",3))
-		TNT1 A 0 A_Warp(AAPTR_TRACER,user_radius >> 16,0,abs(user_offsetz),user_angle+180,WARPF_NOCHECKPOSITION|WARPF_COPYINTERPOLATION)
-		TNT1 A 0 A_RadiusThrust(150,15,RTF_NOIMPACTDAMAGE)
-		TNT1 A 5 A_SpawnItemEx("Q2Disruptor_Proj_DamageExplosion")
-		TNT1 A 0 A_JumpIf(CallACS("StickyLocation",4) == 1, "Vanish")
-		TNT1 A 0 A_Warp(AAPTR_TRACER,user_radius >> 16,0,abs(user_offsetz),user_angle+180,WARPF_NOCHECKPOSITION|WARPF_COPYINTERPOLATION)
-		TNT1 A 0 A_RadiusThrust(150,15,RTF_NOIMPACTDAMAGE)
-		TNT1 A 5 A_SpawnItemEx("Q2Disruptor_Proj_DamageExplosion")
-		TNT1 A 0 A_JumpIf(CallACS("StickyLocation",4) == 1, "Vanish")
-		TNT1 A 0 A_Warp(AAPTR_TRACER,user_radius >> 16,0,abs(user_offsetz),user_angle+180,WARPF_NOCHECKPOSITION|WARPF_COPYINTERPOLATION)
-		TNT1 A 0 A_RadiusThrust(150,15,RTF_NOIMPACTDAMAGE)
-		TNT1 A 5 A_SpawnItemEx("Q2Disruptor_Proj_DamageExplosion")
-		Stop
-	Vanish:
-		TNT1 A 5
-		Stop
-	}
+    Speed 20
+    Damage (20)
+    DamageType "BittermanTrap"
+    DeathSound "Q2Weapons/DisruptorImpact"
+    Decal ""
+    +SEEKERMISSILE
+    +EXTREMEDEATH
+    +PAINLESS
+    var int user_radius;
+    var int user_offsetz;
+    var int user_angle;
+    States
+    {
+    Spawn:
+        NULL A 0 A_SeekerMissile(5, 15)
+        NULL AAA 0 A_SpawnItemEx("Q2DisruptorTrail",random2(5),0,random2(5),0,0,frandom(0.1,0.5),random(0,359),0,128)
+        NULL A 1 Bright Light("Q2DISPROJ") A_PlaySound("Q2Weapons/DisruptorIdle",CHAN_VOICE,0.8,1)
+        Loop
+    Death:
+        TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
+        TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
+        TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
+        TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
+        TNT1 A 0 A_SpawnItemEx("DisruptorProjectileImpact")
+        Stop
+    XDeath:
+        TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
+        TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
+        TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
+        TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("DisruptorExplosionParticle",0,0,0,random(-4,4),random(-4,4),random(-4,4),random(0,359))
+        TNT1 A 0 A_SpawnItemEx("DisruptorProjectileImpact")
+        TNT1 A 0 A_SetUserVar("user_radius", CallACS("StickyLocation",1))
+        TNT1 A 0 A_SetUserVar("user_offsetz", CallACS("StickyLocation",2))
+        TNT1 A 0 A_SetUserVar("user_angle", CallACS("StickyLocation",3))
+        TNT1 A 0 A_Warp(AAPTR_TRACER,user_radius >> 16,0,abs(user_offsetz),user_angle+180,WARPF_NOCHECKPOSITION|WARPF_COPYINTERPOLATION)
+        TNT1 A 0 A_RadiusThrust(150,15,RTF_NOIMPACTDAMAGE)
+        TNT1 A 5 A_SpawnItemEx("Q2Disruptor_Proj_DamageExplosion")
+        TNT1 A 0 A_JumpIf(CallACS("StickyLocation",4) == 1, "Vanish")
+        TNT1 A 0 A_Warp(AAPTR_TRACER,user_radius >> 16,0,abs(user_offsetz),user_angle+180,WARPF_NOCHECKPOSITION|WARPF_COPYINTERPOLATION)
+        TNT1 A 0 A_RadiusThrust(150,15,RTF_NOIMPACTDAMAGE)
+        TNT1 A 5 A_SpawnItemEx("Q2Disruptor_Proj_DamageExplosion")
+        TNT1 A 0 A_JumpIf(CallACS("StickyLocation",4) == 1, "Vanish")
+        TNT1 A 0 A_Warp(AAPTR_TRACER,user_radius >> 16,0,abs(user_offsetz),user_angle+180,WARPF_NOCHECKPOSITION|WARPF_COPYINTERPOLATION)
+        TNT1 A 0 A_RadiusThrust(150,15,RTF_NOIMPACTDAMAGE)
+        TNT1 A 5 A_SpawnItemEx("Q2Disruptor_Proj_DamageExplosion")
+        Stop
+    Vanish:
+        TNT1 A 5
+        Stop
+    }
 }
 
 Actor Q2Disruptor_Proj_DamageExplosion
 {
-	DamageType "BittermanTrap"
-	+NOINTERACTION
-	+FORCERADIUSDMG
-	+PAINLESS
-	+EXTREMEDEATH
-	States
-	{
-		Spawn:
-			TNT1 AAAAAAAAAAAAA 0 NoDelay A_SpawnItemEx("DisruptorParticle",frandom(0,12),0,frandom(-8,15),frandom(0,0.5),0,frandom(-1,-0.1),random(0,359))
-			TNT1 A 0 A_Explode(70,10,0)
-			Stop
-	}
+    DamageType "BittermanTrap"
+    +NOINTERACTION
+    +FORCERADIUSDMG
+    +PAINLESS
+    +EXTREMEDEATH
+    States
+    {
+        Spawn:
+            TNT1 AAAAAAAAAAAAA 0 NoDelay A_SpawnItemEx("DisruptorParticle",frandom(0,12),0,frandom(-8,15),frandom(0,0.5),0,frandom(-1,-0.1),random(0,359))
+            TNT1 A 0 A_Explode(70,10,0)
+            Stop
+    }
 }
 
 actor Q2Disruptor_ProjCoop : Q2Disruptor_Proj

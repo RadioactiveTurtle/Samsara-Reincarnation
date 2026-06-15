@@ -8580,7 +8580,8 @@ StatusBar Normal, ForceScaled
         else IsSelected Q2GrenadeLauncher { DrawImage "Q2AMM2", 150, 176; }
         else IsSelected Q2HyperBlaster, Q2PlasmaBeam { DrawImage "Q2AMM3", 150, 176; }
         else IsSelected Q2BFG10K, Q2Trap { DrawImage "Q2AMM3", 150, 176; }
-        else IsSelected Q2IonRipper, Q2Railgun { DrawImage "Q2AMM3", 150, 176; }
+        else IsSelected Q2Disruptor, Q2IonRipper { DrawImage "Q2AMM3", 150, 176; }
+        else IsSelected Q2Railgun { DrawImage "Q2AMM3", 150, 176; }
         else IsSelected Q2ETFRifle { DrawImage "Q2AMM4", 150, 176; }
 
         // Doom keys
@@ -8814,15 +8815,27 @@ StatusBar Normal, ForceScaled
             // Slot 7S
             InInventory not GotWeapon7
             {
-                InInventory Q2Trap
+                InInventory SamsaraQuake2LoadoutSlot7S // Disruptor
                 {
-                    DrawImage "Q2WPSN7", 209, 0;
-                    DrawImage "Q2SMFNT7", 217, 27;
+                    InInventory Q2Disruptor
+                    {
+                        DrawImage "Q2WPSN7", 209, 0;
+                        DrawImage "Q2SMFNT7", 217, 27;
+                    }
+                } else { // Trap
+                    InInventory Q2Trap
+                    {
+                        DrawImage "Q2WPSN7", 209, 0;
+                        DrawImage "Q2SMFNT7", 217, 27;
+                    }
                 }
             }
 
             IsSelected Q2Trap
             {
+                DrawImage "Q2WPSY7", 209, 0;
+                DrawImage "Q2YLFNT7", 217, 27;
+            } else IsSelected Q2Disruptor {
                 DrawImage "Q2WPSY7", 209, 0;
                 DrawImage "Q2YLFNT7", 217, 27;
             }

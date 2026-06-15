@@ -1118,7 +1118,8 @@ StatusBar Fullscreen, ForceScaled
             else IsSelected Q2GrenadeLauncher { DrawImage "Q2AMM2", 150, 176; }
             else IsSelected Q2HyperBlaster, Q2PlasmaBeam { DrawImage "Q2AMM3", 150, 176; }
             else IsSelected Q2BFG10K, Q2Trap { DrawImage "Q2AMM3", 150, 176; }
-            else IsSelected Q2IonRipper, Q2Railgun { DrawImage "Q2AMM3", 150, 176; }
+            else IsSelected Q2Disruptor, Q2IonRipper { DrawImage "Q2AMM3", 150, 176; }
+            else IsSelected Q2Railgun { DrawImage "Q2AMM3", 150, 176; }
             else IsSelected Q2ETFRifle { DrawImage "Q2AMM4", 150, 176; }
 
             // Equipment
@@ -1162,10 +1163,11 @@ StatusBar Fullscreen, ForceScaled
 
                 // Slot 7 + Slot 7S
                 InInventory GotWeapon7 || Q2Trap { DrawImage "STYSNUM7", 186, 10; }
+                else InInventory Q2Disruptor { DrawImage "STYSNUM7", 186, 10; }
 
                 IsSelected Q2BFG10K { DrawImage "STY2NUM7", 186, 10; }
 
-                IsSelected Q2Trap { DrawImage "STY3NUM7", 186, 10; }
+                IsSelected Q2Trap, Q2Disruptor { DrawImage "STY3NUM7", 186, 10; }
 
                 // Damage Booster
                 InInventory not PowerQ2QuadDamage
@@ -6256,6 +6258,7 @@ StatusBar Fullscreen, ForceScaled
                         InInventory GotWeapon7 || GotNuke { DrawImage "STYSNUM7", 186, 10; }
                     } else InInventory BittermanClass {
                         InInventory GotWeapon7 || Q2Trap { DrawImage "STYSNUM7", 186, 10; }
+                        else InInventory Q2Disruptor { DrawImage "STYSNUM7", 186, 10; }
                     } else InInventory BondClass {
                         InInventory Goldeneye_PlayerAltClassToken // Goldfinger 64
                         {
@@ -6336,7 +6339,7 @@ StatusBar Fullscreen, ForceScaled
                 IsSelected " Bloodscourge " { DrawImage "STY3NUM7", 186, 10; }
                 IsSelected BloodNaturomDemonto { DrawImage "STY3NUM7", 186, 10; }
                 IsSelected "Wookie Bowcaster" { DrawImage "STY3NUM7", 186, 10; }
-                IsSelected Q2Trap { DrawImage "STY3NUM7", 186, 10; }
+                IsSelected Q2Trap, Q2Disruptor { DrawImage "STY3NUM7", 186, 10; }
                 IsSelected Goldeneye_GoldenGun { DrawImage "STY3NUM7", 186, 10; }
                 IsSelected Goldfinger_M14 { DrawImage "STY3NUM7", 186, 10; }
                 IsSelected Unreal_QuadShot { DrawImage "STY3NUM7", 186, 10; }

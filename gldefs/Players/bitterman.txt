@@ -130,3 +130,5 @@ BrightMap Texture "Models/Quake2/Phalanx/v_phalanx.png" { Map "Brightmaps/Classe
 BrightMap Texture "Models/Quake2/Trap/g_trap.png" { Map "Brightmaps/Classes/Quake2/gtrapbm.png" }
 BrightMap Texture "Models/Quake2/Trap/z_trap.png" { Map "Brightmaps/Classes/Quake2/gtrapbm.png" }
 BrightMap Texture "Models/Quake2/Trap/v_trap.png" { Map "Brightmaps/Classes/Quake2/vtrapbm.png" }
+BrightMap Texture "Models/Quake2/Disruptor/g_dist.png" { Map "Brightmaps/Classes/Quake2/gdistbm.png" }
+BrightMap Texture "Models/Quake2/Disruptor/v_dist.png" { Map "Brightmaps/Classes/Quake2/vdistbm.png" }

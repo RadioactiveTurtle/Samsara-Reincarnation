@@ -8819,7 +8819,7 @@ StatusBar Automap, ForceScaled
                 {
                     InInventory Q2Disruptor
                     {
-                        DrawImage "Q2WPSN7", 209, 0;
+                        DrawImage "Q2WPSN71", 209, 0;
                         DrawImage "Q2SMFNT7", 217, 27;
                     }
                 } else { // Trap
@@ -8836,7 +8836,7 @@ StatusBar Automap, ForceScaled
                 DrawImage "Q2WPSY7", 209, 0;
                 DrawImage "Q2YLFNT7", 217, 27;
             } else IsSelected Q2Disruptor {
-                DrawImage "Q2WPSY7", 209, 0;
+                DrawImage "Q2WPSY71", 209, 0;
                 DrawImage "Q2YLFNT7", 217, 27;
             }
 

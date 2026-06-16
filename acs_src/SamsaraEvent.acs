@@ -171,7 +171,6 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
     int morphset;
     int respawnhealth = 100;
     bool hasfist = false, haspistol = false; // netplay hack to stop dummy weapons being given on map change
-    bool vanillaquake; // moved for loadout
     str storedammopriname = "Placeholder", storedammosecname = "Placeholder";
     int storedammopri = 0, storedammosec = 0;
 
@@ -2575,7 +2574,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 			case CLASS_QUAKE:
                 SetInventory("SamsaraAlternateSoundToken", GetUserCVar(pln, "samsara_cl_quake1sounds"));
 
-                vanillaquake = GetCVar("samsara_vanillaquake");
+                bool vanillaquake = GetCVar("samsara_vanillaquake");
 
 				SetInventory("Grenade Launcher DOE", CheckInventory("Grenade Launcher") && !vanillaquake);
 				SetInventory("Nailgun DOE", CheckInventory("Nailgun") && !vanillaquake);

@@ -47,6 +47,7 @@ wolfen/flameget				bjwpngtf
 wolfen/spearget				bjwpngts
 wolfen/lifeget				bjlifget
 wolfen/ammocrateget	bjwpngta
+wolfen/lightningget	bjwpngtf
 wolfen/slurpie				bjslurp
 wolfen/chicken				bjchikn
 wolfen/spearready			bjsprrdy // Original sound by as3sfxr
@@ -56,6 +57,7 @@ wolfen/spearexplode1		bjsprex1 // Original sound by as3sfxr
 wolfen/spearexplode2		bjsprex2 // Original sound by as3sfxr
 wolfen/spearstab			bjsprstb // Original sound by as3sfxr
 wolfen/rifle			    bjrifle
+wolfen/lightning			tsspark1
 $limit  wolfen/machinegun	 		0
 $limit  wolfen/chaingun		 		0
 $limit  wolfen/flamethrower	 		0

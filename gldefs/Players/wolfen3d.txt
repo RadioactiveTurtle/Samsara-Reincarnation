@@ -97,3 +97,11 @@ flickerlight SPEARBALL_X5
 	secondarySize 56
 	chance 0.3
 }
+
+flickerlight BJLIGHTNING
+{
+	color 0.24 0.9 0.9
+	size 15
+	secondarysize 20
+	chance 0.5
+}

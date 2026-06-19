@@ -612,7 +612,8 @@ StatusBar Fullscreen, ForceScaled
                     //Ammo 3
                     IsSelected " Rocket Launcher " { DrawImage "JAGAMMO3", 295, 158; }
                     //Ammo 4
-                    IsSelected " Flamethrower ", "Spear of Destiny" {  DrawImage "JAGAMMO4", 295, 158; }
+                    IsSelected " Flamethrower ", Wolf3DLightningGun {  DrawImage "JAGAMMO4", 295, 158; }
+                    IsSelected "Spear of Destiny" {  DrawImage "JAGAMMO4", 295, 158; }
                 }
 
                 // Frags
@@ -697,9 +698,11 @@ StatusBar Fullscreen, ForceScaled
                     IsSelected " Rocket Launcher " { DrawImage "STY2NUM5", 166, 10; }
 
                     // Slot 6
-                    InInventory GotWeapon6 { DrawImage "STYSNUM6", 176, 10; }
+                    InInventory GotWeapon6 || Wolf3DLightningGun { DrawImage "STYSNUM6", 176, 10; }
 
                     IsSelected " Flamethrower " { DrawImage "STY2NUM6", 176, 10; }
+
+                    IsSelected Wolf3DLightningGun { DrawImage "STY3NUM6", 176, 10; }
 
                     // Slot 7
                     InInventory GotWeapon7 { DrawImage "STYSNUM7", 186, 10; }
@@ -6129,6 +6132,13 @@ StatusBar Fullscreen, ForceScaled
                     InInventory GotWeapon6 || "Gigazorcher 2100" { DrawImage "STYSNUM6", 176, 10; }
                 } else InInventory CorvusClass {
                     InInventory GotWeapon6 || CorvusTempestWand { DrawImage "STYSNUM6", 176, 10; }
+                } else InInventory WolfenClass {
+                    InInventory WolfenClassMode, 2 // Castle Totenkopf SDL
+                    {
+                        InInventory GotWeapon6 { DrawImage "STYSNUM6", 176, 10; }
+                    } else { // Original/Lost Episodes
+                        InInventory GotWeapon6 || Wolf3DLightningGun { DrawImage "STYSNUM6", 176, 10; }
+                    }
                 } else InInventory MarathonClass {
                     InInventory GotWeapon6 || "SPNKR-25 Auto Cannon" { DrawImage "STYSNUM6", 176, 10; }
                 } else InInventory QuakeClass {
@@ -6213,6 +6223,7 @@ StatusBar Fullscreen, ForceScaled
                 IsSelected " RailGun " { DrawImage "STY3NUM6", 176, 10; }
                 IsSelected "Gigazorcher 2100" { DrawImage "STY3NUM6", 176, 10; }
                 IsSelected CorvusTempestWand { DrawImage "STY3NUM6", 176, 10; }
+                IsSelected Wolf3DLightningGun { DrawImage "STY3NUM6", 176, 10; }
                 IsSelected "SPNKR-25 Auto Cannon" { DrawImage "STY3NUM6", 176, 10; }
                 IsSelected "Rocket Powered Impaler" { DrawImage "STY3NUM6", 176, 10; }
                 IsSelected "Split Missile" { DrawImage "STY3NUM6", 176, 10; }

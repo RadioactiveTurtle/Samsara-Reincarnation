@@ -1358,16 +1358,32 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                                 SetInventory(" Rocket Launcher ", 0);
                             }
 
-                            if (CheckInventory(" Flamethrower "))
+                            if (CheckInventory("Wolfen_IHaveSlot6"))
                             {
                                 storedammopriname = "Cell", storedammopri = CheckInventory(storedammopriname);
                                 SetInventory("Totenkopf_Chaingun", 1);
                                 SetInventory(storedammopriname, storedammopri);
 
                                 if (CheckWeapon(" Flamethrower ")) { SetWeapon("Totenkopf_Chaingun"); }
-
-                                SetInventory(" Flamethrower ", 0);
                             }
+
+                            if (CheckInventory("Wolfen_IHaveLightningGun"))
+                            {
+                                storedammopriname = "Cell", storedammopri = CheckInventory(storedammopriname);
+                                SetInventory("Totenkopf_Chaingun", 1);
+                                SetInventory(storedammopriname, storedammopri);
+
+                                if (CheckWeapon("Wolf3DLightningGun")) { SetWeapon("Totenkopf_Chaingun"); }
+                            }
+
+                            if (CheckInventory(" Flamethrower ") || CheckInventory("Wolf3DLightningGun"))
+                            {
+                                if (CheckWeapon(" Flamethrower ") || CheckWeapon("Wolf3DLightningGun")) { SetWeapon("Totenkopf_Chaingun"); }
+                            }
+
+                            SetInventory(" Flamethrower ", 0);
+
+                            SetInventory("Wolf3DLightningGun", 0);
 
                             if (CheckInventory("Spear of Destiny"))
                             {
@@ -1412,6 +1428,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                             SetInventory("GotWeapon0", CheckInventory("Wolfen_IHaveSlot1"));
                             SetInventory("GotWeapon2", CheckInventory("Wolfen_IHaveSlot2") || CheckInventory("Totenkopf_IHaveScope"));
                             SetInventory("GotWeapon4", CheckInventory("Wolfen_IHaveSlot4") || CheckInventory("Wolfen_IHaveDualChainguns"));
+                            SetInventory("GotWeapon6", CheckInventory("Wolfen_IHaveSlot6") || CheckInventory("Wolfen_IHaveLightningGun"));
 
                             SetActorProperty(0, APROP_SoundClass, "TotenkopfPlayer");
 						}
@@ -1520,16 +1537,27 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                                 SetInventory("Totenkopf_Panzerschreck", 0);
                             }
 
-                            if (CheckInventory("Totenkopf_Chaingun"))
+                            if (CheckInventory("Wolfen_IHaveLightningGun"))
+                            {
+                                storedammopriname = "Cell", storedammopri = CheckInventory(storedammopriname);
+                                SetInventory("Wolf3DLightningGun", 1);
+                                SetInventory(storedammopriname, storedammopri);
+                            }
+
+                            if (CheckInventory("Wolfen_IHaveSlot6"))
                             {
                                 storedammopriname = "Cell", storedammopri = CheckInventory(storedammopriname);
                                 SetInventory(" Flamethrower ", 1);
                                 SetInventory(storedammopriname, storedammopri);
 
                                 if (CheckWeapon("Totenkopf_Chaingun")) { SetWeapon(" Flamethrower "); }
+                            } else {
+                                if (CheckWeapon(" Flamethrower ") || CheckWeapon("Totenkopf_Chaingun")) { SetWeapon("Wolf3DLightningGun"); }
 
-                                SetInventory("Totenkopf_Chaingun", 0);
+                                SetInventory(" Flamethrower ", 0);
                             }
+
+                            SetInventory("Totenkopf_Chaingun", 0);
 
                             if (CheckInventory("Totenkopf_Flakgun"))
                             {
@@ -1570,6 +1598,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                             SetInventory("GotWeapon0", CheckInventory("Wolfen_IHaveSlot1"));
                             SetInventory("GotWeapon2", CheckInventory("Wolfen_IHaveSlot2"));
                             SetInventory("GotWeapon4", CheckInventory("Wolfen_IHaveSlot4"));
+                            SetInventory("GotWeapon6", CheckInventory("Wolfen_IHaveSlot6"));
 
                             SetActorProperty(0, APROP_SoundClass, "WolfenPlayer");
 						}

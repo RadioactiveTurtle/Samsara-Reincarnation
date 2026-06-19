@@ -209,6 +209,8 @@ str ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
         {" Flamethrower ",          "Cell",       "", "ForceCheck", ""},
         {"Spear of Destiny",        "Cell",       "", "ForceCheck", ""},
         {"  Dual Chainguns  ",      "Clip",       "", "ForceCheck", ""},
+        {"",                        "",           "", "",           ""},
+        {"Wolf3DLightningGun",      "Cell",       "", "ForceCheck", ""},
     },
     { // Hexen I
         {"Mace of Contrition",  "",     "",     "ForceCheck", ""},
@@ -694,10 +696,10 @@ str ClassHotKeyWeapon[CLASSCOUNT][MAXMODES][SLOTCOUNT + UNIQUECOUNT][LOADOUTCOUN
     }},
     {
         {
-            {"Knife"}, {""}, {"Luger"}, {"Machine Gun"}, {"Mauser Rifle"}, {"  Chaingun  "}, {" Rocket Launcher "}, {" Flamethrower "}, {"Spear of Destiny"}, {""}, {"WolfenAmmoCrate"}, {""}, {"  Dual Chainguns  "},
+            {"Knife"}, {""}, {"Luger"}, {"Machine Gun"}, {"Mauser Rifle"}, {"  Chaingun  "}, {" Rocket Launcher "}, {" Flamethrower "}, {"Spear of Destiny"}, {""}, {"WolfenAmmoCrate"}, {""}, {"  Dual Chainguns  "}, {""}, {"Wolf3DLightningGun"},
         },
         {
-            {"Knife"}, {""}, {"Luger"}, {"Machine Gun"}, {"Mauser Rifle"}, {"  Chaingun  "}, {" Rocket Launcher "}, {" Flamethrower "}, {"Spear of Destiny"}, {""}, {"WolfenAmmoCrateLost"}, {""}, {"  Dual Chainguns  "},
+            {"Knife"}, {""}, {"Luger"}, {"Machine Gun"}, {"Mauser Rifle"}, {"  Chaingun  "}, {" Rocket Launcher "}, {" Flamethrower "}, {"Spear of Destiny"}, {""}, {"WolfenAmmoCrateLost"}, {""}, {"  Dual Chainguns  "}, {""}, {"Wolf3DLightningGun"},
         },
         {
             {"Totenkopf_Knife"}, {"Totenkopf_Mauser"}, {"Totenkopf_Pistol"}, {"Totenkopf_Kar98k"}, {"Totenkopf_STG44"}, {"Totenkopf_MP40"}, {"Totenkopf_Panzerschreck"}, {"Totenkopf_Chaingun"}, {"Totenkopf_Flakgun"}, {"Totenkopf_Flamethrower"}, {"Totenkopf_MG42"}, {"Totenkopf_Sniper"},
@@ -946,7 +948,7 @@ str OriginalHotKeyWeapon[CLASSCOUNT][MAXMODES][ORIGINALCOUNT][ORIGINALCOUNT] =
 			{ " Flamethrower ", "", "", "", "", "", "", "", "", "" },
 			{ "Spear of Destiny", "", "", "", "", "", "", "", "" },
 			{ "Mauser Rifle", "", "", "", "", "", "", "", "", "" },
-			{ "", "", "", "", "", "", "", "", "", "" },
+			{ "Wolf3DLightningGun", "", "", "", "", "", "", "", "", "" },
 			{ "", "", "", "", "", "", "", "", "", "" },
 		},
 		{
@@ -958,7 +960,7 @@ str OriginalHotKeyWeapon[CLASSCOUNT][MAXMODES][ORIGINALCOUNT][ORIGINALCOUNT] =
 			{ " Flamethrower ", "", "", "", "", "", "", "", "", "" },
 			{ "Spear of Destiny", "", "", "", "", "", "", "", "" },
 			{ "Mauser Rifle", "", "", "", "", "", "", "", "", "" },
-			{ "", "", "", "", "", "", "", "", "", "" },
+			{ "Wolf3DLightningGun", "", "", "", "", "", "", "", "", "" },
 			{ "", "", "", "", "", "", "", "", "", "" },
 		},
 		{

@@ -2301,6 +2301,9 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("Totenkopf_Panzerschreck", INTMAX);
 			TakeInventory(" Flamethrower ", INTMAX);
 			TakeInventory("Totenkopf_Chaingun", INTMAX);
+			SetInventory("Wolfen_IHaveSlot6", 0);
+			TakeInventory("Wolf3DLightningGun", INTMAX);
+			SetInventory("Wolfen_IHaveLightningGun", 0);
 			TakeInventory("Spear of Destiny", INTMAX);
 			TakeInventory("Totenkopf_Flakgun", INTMAX);
 			TakeInventory("WolfExtraLife", INTMAX);
@@ -3682,6 +3685,8 @@ script "Samsara_FillInventory" (void)
 			GiveInventory("Wolfen_IHaveSlot4",1);
 			GiveInventory("Totenkopf_IHaveDualMP40s",1);
 			GiveInventory("Wolfen_IHaveDualChainguns",1);
+			GiveInventory("Wolfen_IHaveSlot6",1);
+			GiveInventory("Wolfen_IHaveLightningGun",1);
 			GiveInventory("Wolfen_IHaveExtraLife",9);
 			GiveInventory("Totenkopf_IHaveFlamethrower",1);
 			if (CheckInventory("WolfenClassMode") == 1) { GiveInventory("WolfenAmmoCrateLost", 9); }
@@ -5394,6 +5399,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                     GiveInventory(" Flamethrower ", 1);
                     result = 1;
                 }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("Wolfen_IHaveSlot6", 1); }
                 break;
 
               case SLOT_BFG9000:
@@ -5482,6 +5491,21 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 }
 
                 if (settimer) { SetInventory("Totenkopf_MP40LastPickupTime", Timer() + dualpickuptimer); }
+                break;
+
+              case SLOT_RAILGUN:
+                if (!CheckInventory("Wolf3DLightningGun"))
+                {
+                    GiveInventory("Wolf3DLightningGun", 1);
+                    result = 1;
+                } else if (CheckInventory("Cell") < GetAmmoCapacity("Cell") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                    GiveInventory("Wolf3DLightningGun", 1);
+                    result = 1;
+                }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("Wolfen_IHaveLightningGun", 1); }
                 break;
             }
             break;
@@ -5708,6 +5732,7 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 break;
 
               case SLOT_PLASMARIFLE:
+              case SLOT_RAILGUN:
                 if (!CheckInventory("Totenkopf_Chaingun"))
                 {
                     GiveInventory("Totenkopf_Chaingun", 1);
@@ -5715,6 +5740,23 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 } else if (CheckInventory("Cell") < GetAmmoCapacity("Cell") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
                     GiveInventory("Totenkopf_Chaingun", 1);
                     result = 1;
+                }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1)
+                {
+                    switch (slot)
+                    {
+                      case SLOT_PLASMARIFLE:
+                        GiveInventory("Wolfen_IHaveSlot6", 1);
+                        break;
+
+                      case SLOT_RAILGUN:
+                        GiveInventory("Wolfen_IHaveLightningGun", 1);
+                        GiveInventory("GotWeapon6", 1);
+                        break;
+                    }
                 }
                 break;
 

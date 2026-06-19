@@ -46,6 +46,7 @@ Wolfenstein 3D:
 -B.J. Blazkowicz (Original/Lost Episodes)-
 
 ! The rocket launcher now uses the Explosive damage type for its splash damage.
++ The lightning gun has been added as the slot 6S weapon!
 ! The ammo crate's Compendium entry has been updated to make mention of bullet weapons in general.
 
 -B.J. Blazkowicz (Castle Totenkopf SDL)-

@@ -1779,14 +1779,14 @@ StatusBar Normal, ForceScaled
                     else { DrawImage "WPWOLF3Y", 115, 11; } // Original
                 }
 
-                // Slot 4
-                InInventory GotWeapon4
+                // Slot 4 + Slot 4S
+                InInventory GotWeapon4 || "  Dual Chainguns  "
                 {
                     InInventory WolfenClassMode, 1 { DrawImage "WPWLF24N", 148, 11; } // Lost Episodes
                     else { DrawImage "WPWOLF4N", 148, 11; } // Original
                 }
 
-                IsSelected "  Chaingun  "
+                IsSelected "  Chaingun  ", "  Dual Chainguns  "
                 {
                     DrawImage "WEPSELW4", 155, 2;
                     InInventory WolfenClassMode, 1 { DrawImage "WPWLF24Y", 148, 11; } // Lost Episodes
@@ -1815,6 +1815,23 @@ StatusBar Normal, ForceScaled
                 }
 
                 IsSelected " Flamethrower "
+                {
+                    DrawImage "WEPSELW6", 221, 2;
+                    InInventory WolfenClassMode, 1 { DrawImage "WPWLF26Y", 214, 11; } // Lost Episodes
+                    else { DrawImage "WPWOLF6Y", 214, 11; } // Original
+                }
+
+                // Slot 6S
+                InInventory not GotWeapon6
+                {
+                    InInventory Wolf3DLightningGun
+                    {
+                        InInventory WolfenClassMode, 1 { DrawImage "WPWLF26N", 214, 11; } // Lost Episodes
+                        else { DrawImage "WPWOLF6N", 214, 11; } // Original
+                    }
+                }
+
+                IsSelected Wolf3DLightningGun
                 {
                     DrawImage "WEPSELW6", 221, 2;
                     InInventory WolfenClassMode, 1 { DrawImage "WPWLF26Y", 214, 11; } // Lost Episodes

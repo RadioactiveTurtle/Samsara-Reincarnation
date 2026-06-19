@@ -78,6 +78,7 @@ Credits:
 - FreeDoom Team (for the MDWTAK sprites and sounds)
 - Nihilism Unlimited (for making Zerstörer - Testament of the Destroyer, which is where the Quake I chainsaw loadout weapon comes from)
 - Arcane Dimensions Team (for making Arcane Dimensions, which is where the Quake I widowmaker loadout weapon comes from)
+- BeardedDoomguy (for the Wolfenstein 3D (original version) lightning gun sprites)
 
 Special Thanks:
 - Hiragamer : for his amazing work on HUDs and every art related stuff, and beign a great support too :D

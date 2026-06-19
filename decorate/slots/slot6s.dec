@@ -41,7 +41,7 @@ actor SamsaraSlotSixSkulltagPickup : SamsaraSlotSixPickup replaces RailGun
       Chexguy:      PLAC B 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Heretic:      WGWN B 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Wolfguy:      WLGP A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
-      LostWolfguy:  WLGP A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop // NEEDS NEW SPRITE
+      LostWolfguy:  WLGP B 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Marathon:     MATC H 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Quake:        QSNG Z 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Rott:         PSPL A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
@@ -63,8 +63,8 @@ actor SamsaraSlotSixSkulltagPickup : SamsaraSlotSixPickup replaces RailGun
       DoomStrFull:      WRAL C 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       ChexFull:         PLAC D 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HereticFull:      PHST B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop // NEEDS NEW SPRITE
-      WolfFull:         PFLT B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop // NEEDS NEW SPRITE
-      LostWolfFull:     PFLT D 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop // NEEDS NEW SPRITE
+      WolfFull:         WLGP D 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      LostWolfFull:     WLGP F 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       MarathonFull:     MATC J 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       QuakeFull:        PSNG B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       RottFull:         PWE0 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
@@ -86,8 +86,8 @@ actor SamsaraSlotSixSkulltagPickup : SamsaraSlotSixPickup replaces RailGun
       DoomStrEmpty:      WRAL B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       ChexEmpty:         PLAC C 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HereticEmpty:      PHST A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop // NEEDS NEW SPRITE
-      WolfEmpty:         PFLT A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop // NEEDS NEW SPRITE
-      LostWolfEmpty:     PFLT C 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop // NEEDS NEW SPRITE
+      WolfEmpty:         WLGP C 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      LostWolfEmpty:     WLGP E 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       MarathonEmpty:     MATC I 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       QuakeEmpty:        PSNG A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       RottEmpty:         PWE0 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop

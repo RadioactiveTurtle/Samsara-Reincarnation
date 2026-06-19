@@ -1826,16 +1826,16 @@ StatusBar Automap, ForceScaled
                 {
                     InInventory Wolf3DLightningGun
                     {
-                        InInventory WolfenClassMode, 1 { DrawImage "WPWLF26N", 214, 11; } // Lost Episodes
-                        else { DrawImage "WPWOLF6N", 214, 11; } // Original
+                        InInventory WolfenClassMode, 1 { DrawImage "WPWF26NS", 214, 11; } // Lost Episodes
+                        else { DrawImage "WPWLF6NS", 214, 11; } // Original
                     }
                 }
 
                 IsSelected Wolf3DLightningGun
                 {
                     DrawImage "WEPSELW6", 221, 2;
-                    InInventory WolfenClassMode, 1 { DrawImage "WPWLF26Y", 214, 11; } // Lost Episodes
-                    else { DrawImage "WPWOLF6Y", 214, 11; } // Original
+                    InInventory WolfenClassMode, 1 { DrawImage "WPWF26YS", 214, 11; } // Lost Episodes
+                    else { DrawImage "WPWLF6YS", 214, 11; } // Original
                 }
 
                 // Slot 7

@@ -427,8 +427,9 @@ actor Q2Disruptor : Q2Weapon
 
       Deselect:
         Q2DS K 3 A_JumpIfHealthLower(1,"DeselectInstant")
-        Q2DS LMNO 3
-        TNT1 A 8
+        Q2DS LMN 3
+        Q2DS O 0
+        TNT1 A 11
       DeselectInstant:
         TNT1 A 0
         goto Super::DeselectInstant

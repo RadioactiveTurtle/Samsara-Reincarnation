@@ -108,6 +108,7 @@ actor SamsaraWolfenExtraLifeEffectHandler : Trigger
         TNT1 A 0 A_TakeInventory("GotWeapon6")
         TNT1 A 0 A_TakeInventory(" Flamethrower ")
         TNT1 A 0 A_TakeInventory("Totenkopf_Chaingun")
+        TNT1 A 0 A_TakeInventory("Wolfen_IHaveSlot6")
         TNT1 A 0 A_TakeInventory("Wolf3DLightningGun")
         TNT1 A 0 A_TakeInventory("Wolfen_IHaveLightningGun")
         TNT1 A 0 A_TakeInventory("GotWeapon7")

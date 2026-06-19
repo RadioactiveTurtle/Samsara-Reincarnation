@@ -255,6 +255,7 @@ actor DeusEx_Augmentation_ProtectionBase : PowerProtection
     DamageFactor "Spectral", 1
     DamageFactor "ElectricBolt", 1
     DamageFactor "TimonsAxe", 1
+    DamageFactor "WolfenElectric", 1
     DamageFactor "QuakeElectric", 1
     DamageFactor "Tesla", 1
     DamageFactor "Hexen2Electric", 1
@@ -665,6 +666,7 @@ Actor DeusEx_Augmentation_EMPProtection1 : DeusEx_Augmentation_ProtectionBase
     DamageFactor "Spectral", 0.8
     DamageFactor "ElectricBolt", 0.8
     DamageFactor "TimonsAxe", 0.8
+    DamageFactor "WolfenElectric", 0.8
     DamageFactor "QuakeElectric", 0.8
     DamageFactor "Tesla", 0.8
     DamageFactor "Hexen2Electric", 0.8
@@ -686,6 +688,7 @@ Actor DeusEx_Augmentation_EMPProtection2 : DeusEx_Augmentation_ProtectionBase
     DamageFactor "Spectral", 0.65
     DamageFactor "ElectricBolt", 0.65
     DamageFactor "TimonsAxe", 0.65
+    DamageFactor "WolfenElectric", 0.65
     DamageFactor "QuakeElectric", 0.65
     DamageFactor "Tesla", 0.65
     DamageFactor "Hexen2Electric", 0.65
@@ -707,6 +710,7 @@ Actor DeusEx_Augmentation_EMPProtection3 : DeusEx_Augmentation_ProtectionBase
     DamageFactor "Spectral", 0.5
     DamageFactor "ElectricBolt", 0.5
     DamageFactor "TimonsAxe", 0.5
+    DamageFactor "WolfenElectric", 0.5
     DamageFactor "QuakeElectric", 0.5
     DamageFactor "Tesla", 0.5
     DamageFactor "Hexen2Electric", 0.5
@@ -728,6 +732,7 @@ Actor DeusEx_Augmentation_EMPProtection4 : DeusEx_Augmentation_ProtectionBase
     DamageFactor "Spectral", 0.35
     DamageFactor "ElectricBolt", 0.35
     DamageFactor "TimonsAxe", 0.35
+    DamageFactor "WolfenElectric", 0.35
     DamageFactor "QuakeElectric", 0.35
     DamageFactor "Tesla", 0.35
     DamageFactor "Hexen2Electric", 0.35

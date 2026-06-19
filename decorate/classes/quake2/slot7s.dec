@@ -430,9 +430,7 @@ actor Q2Disruptor : Q2Weapon
         Q2DS LMN 3
         Q2DS O 0
         TNT1 A 11
-      DeselectInstant:
-        TNT1 A 0
-        goto Super::DeselectInstant
+        goto DeselectInstant
 
       Ready: // our "Select" state
         TNT1 A 0 A_TakeInventory("Q2WeaponIndex")

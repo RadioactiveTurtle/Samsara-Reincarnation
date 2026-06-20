@@ -2924,6 +2924,99 @@ Model SamsaraSlotOneDrop
    FrameIndex PMJL B 0 0
 }
 
+Model SamsaraSlotOnePickup
+{
+   Path "models"
+   Model 0 "g_saw.md3"
+   Skin 0 "g_saw.pcx"
+   ROTATING
+   Offset 0 0 4
+   Scale 1.25 1.25 1.25
+
+   FrameIndex QSAW Z 0 0
+
+   Model 1 "slots/hybrid.md2"
+   Skin 1 "slots/slot1y.png"
+   Scale 0.8 0.8 0.8
+   Offset 0 0 0
+
+   FrameIndex PQSW A 0 0
+   FrameIndex PQSW A 1 0
+}
+
+Model SamsaraSlotOnePickup
+{
+   Path "models"
+   Model 0 "slots/hybrid.md2"
+   Skin 0 "slots/slot1n.png"
+   ROTATING
+   Scale 0.8 0.8 0.8
+
+   FrameIndex PQSW B 0 0
+}
+
+Model SamsaraSlotOneNoStay
+{
+   Path "models"
+   Model 0 "g_saw.md3"
+   Skin 0 "g_saw.pcx"
+   ROTATING
+   Offset 0 0 4
+   Scale 1.25 1.25 1.25
+
+   FrameIndex QSAW Z 0 0
+
+   Model 1 "slots/hybrid.md2"
+   Skin 1 "slots/slot1y.png"
+   Scale 0.8 0.8 0.8
+   Offset 0 0 0
+
+   FrameIndex PQSW A 0 0
+   FrameIndex PQSW A 1 0
+}
+
+Model SamsaraSlotOneNoStay
+{
+   Path "models"
+   Model 0 "slots/hybrid.md2"
+   Skin 0 "slots/slot1n.png"
+   ROTATING
+   Scale 0.8 0.8 0.8
+
+   FrameIndex PQSW B 0 0
+}
+
+Model SamsaraSlotOneDrop
+{
+   Path "models"
+   Model 0 "g_saw.md3"
+   Skin 0 "g_saw.pcx"
+   ROTATING
+   Offset 0 0 4
+   Scale 1.25 1.25 1.25
+
+   FrameIndex QSAW Z 0 0
+
+   Model 1 "slots/hybrid.md2"
+   Skin 1 "slots/slot1y.png"
+   Scale 0.8 0.8 0.8
+   Offset 0 0 0
+
+   FrameIndex PQSW A 0 0
+   FrameIndex PQSW A 1 0
+}
+
+Model SamsaraSlotOneDrop
+{
+   Path "models"
+   Model 0 "slots/hybrid.md2"
+   Skin 0 "slots/slot1n.png"
+   ROTATING
+   Scale 0.8 0.8 0.8
+
+   FrameIndex PQSW B 0 0
+}
+
 Model SamsaraSlotTwoPickup
 {
    Path "models"
@@ -3105,6 +3198,99 @@ Model SamsaraSlotThreeDrop
    Scale 0.8 0.8 0.8
 
    FrameIndex PGRL B 0 0
+}
+
+Model SamsaraSlotThreePickup
+{
+   Path "models"
+   Model 0 "g_shot3.md3"
+   Skin 0 "g_shot3.pcx"
+   ROTATING
+   Offset 0 0 8
+   Scale 0.8 0.8 0.8
+
+   FrameIndex QWID Z 0 0
+
+   Model 1 "slots/hybrid.md2"
+   Skin 1 "slots/slot3y.png"
+   Offset 0 0 0
+   Scale 0.8 0.8 0.8
+
+   FrameIndex PQWI A 0 0
+   FrameIndex PQWI A 1 0
+}
+
+Model SamsaraSlotThreePickup
+{
+   Path "models"
+   Model 0 "slots/hybrid.md2"
+   Skin 0 "slots/slot3n.png"
+   ROTATING
+   Scale 0.8 0.8 0.8
+
+   FrameIndex PQWI B 0 0
+}
+
+Model SamsaraSlotThreeNoStay
+{
+   Path "models"
+   Model 0 "g_shot3.md3"
+   Skin 0 "g_shot3.pcx"
+   ROTATING
+   Offset 0 0 8
+   Scale 0.8 0.8 0.8
+
+   FrameIndex QWID Z 0 0
+
+   Model 1 "slots/hybrid.md2"
+   Skin 1 "slots/slot3y.png"
+   Offset 0 0 0
+   Scale 0.8 0.8 0.8
+
+   FrameIndex PQWI A 0 0
+   FrameIndex PQWI A 1 0
+}
+
+Model SamsaraSlotThreeNoStay
+{
+   Path "models"
+   Model 0 "slots/hybrid.md2"
+   Skin 0 "slots/slot3n.png"
+   ROTATING
+   Scale 0.8 0.8 0.8
+
+   FrameIndex PQWI B 0 0
+}
+
+Model SamsaraSlotThreeDrop
+{
+   Path "models"
+   Model 0 "g_shot3.md3"
+   Skin 0 "g_shot3.pcx"
+   ROTATING
+   Offset 0 0 8
+   Scale 0.8 0.8 0.8
+
+   FrameIndex QWID Z 0 0
+
+   Model 1 "slots/hybrid.md2"
+   Skin 1 "slots/slot3y.png"
+   Offset 0 0 0
+   Scale 0.8 0.8 0.8
+
+   FrameIndex PQWI A 0 0
+   FrameIndex PQWI A 1 0
+}
+
+Model SamsaraSlotThreeDrop
+{
+   Path "models"
+   Model 0 "slots/hybrid.md2"
+   Skin 0 "slots/slot3n.png"
+   ROTATING
+   Scale 0.8 0.8 0.8
+
+   FrameIndex PQWI B 0 0
 }
 
 Model SamsaraSlotFourPickup

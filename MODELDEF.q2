@@ -4243,6 +4243,102 @@ Model SamsaraSlotSevenSkulltagDrop
 
 	FrameIndex Q2WP C 0 0
 }
+Model SamsaraSlotSevenSkulltagPickup
+{
+	Path "Models/Quake2/Disruptor"
+	Model 0 "g_dist.md2"
+	Skin 0 "g_dist.png"
+	Scale 1.25 1.25 1.25
+	Offset 0 0 5
+	ROTATING
+
+	FrameIndex Q2W1 A 0 0
+	FrameIndex Q2W1 A 1 0
+
+	Path "Models/Slots"
+	Model 1 "hybrid.md2"
+	Skin 1 "slot7y.png"
+	Scale 0.8 0.8 0.8
+	Offset 0 0 0
+
+	FrameIndex Q2W1 B 0 0
+	FrameIndex Q2W1 B 1 0
+}
+Model SamsaraSlotSevenSkulltagPickup
+{
+	Path "models"
+	Model 0 "slots/hybrid.md2"
+	Skin 0 "slots/slot7n.png"
+	ROTATING
+	Rotation-Vector 0 1 0
+	Scale 0.8 0.8 0.8
+
+	FrameIndex Q2W1 C 0 0
+}
+Model SamsaraSlotSevenSkulltagNoStay
+{
+	Path "Models/Quake2/Disruptor"
+	Model 0 "g_dist.md2"
+	Skin 0 "g_dist.png"
+	Scale 1.25 1.25 1.25
+	Offset 0 0 5
+	ROTATING
+
+	FrameIndex Q2W1 A 0 0
+	FrameIndex Q2W1 A 1 0
+
+	Path "Models/Slots"
+	Model 1 "hybrid.md2"
+	Skin 1 "slot7y.png"
+	Scale 0.8 0.8 0.8
+	Offset 0 0 0
+
+	FrameIndex Q2W1 B 0 0
+	FrameIndex Q2W1 B 1 0
+}
+Model SamsaraSlotSevenSkulltagNoStay
+{
+	Path "models"
+	Model 0 "slots/hybrid.md2"
+	Skin 0 "slots/slot7n.png"
+	ROTATING
+	Rotation-Vector 0 1 0
+	Scale 0.8 0.8 0.8
+
+	FrameIndex Q2W1 C 0 0
+}
+Model SamsaraSlotSevenSkulltagDrop
+{
+	Path "Models/Quake2/Disruptor"
+	Model 0 "g_dist.md2"
+	Skin 0 "g_dist.png"
+	Scale 1.25 1.25 1.25
+	Offset 0 0 5
+	ROTATING
+
+	FrameIndex Q2W1 A 0 0
+	FrameIndex Q2W1 A 1 0
+
+	Path "Models/Slots"
+	Model 1 "hybrid.md2"
+	Skin 1 "slot7y.png"
+	Scale 0.8 0.8 0.8
+	Offset 0 0 0
+
+	FrameIndex Q2W1 B 0 0
+	FrameIndex Q2W1 B 1 0
+}
+Model SamsaraSlotSevenSkulltagDrop
+{
+	Path "models"
+	Model 0 "slots/hybrid.md2"
+	Skin 0 "slots/slot7n.png"
+	ROTATING
+	Rotation-Vector 0 1 0
+	Scale 0.8 0.8 0.8
+
+	FrameIndex Q2W1 C 0 0
+}
 Model SamsaraUniquePickup1
 {
 	Path "Models/Quake2/GrenadeLauncher"

@@ -40,6 +40,7 @@ Corvus (Heretic):
 
 ! The status bar HUD now shows the tempest wand.
 ! The staff now has a sprite for the Compendium and the alternate HUD.
++ The tempest wand now has hybrid pickup sprites.
 
 Wolfenstein 3D:
 
@@ -130,6 +131,12 @@ Rise of the Triad:
 ! The status bar HUD has been improved and now shows Skulltag weapons.
 ! Updated the hybrid pickup sprites for the weapons (sprites done by zax).
 
+Blake Stone (Blake Stone):
+
++ The Gatling Fusion Devastator now has actual pickup sprites.
+! The Gatling Fusion Devastator's Planet Strike sprites have been slightly redone, and it now has Aliens of Gold sprites.
++ To accommodate for the Gatling Fusion Devastator's slightly redone animation, it now takes 3 tics before the attack is called (decreased from 6), and 6 tics failing refire (decreased from 12; total amount decreased from 24 to 15 if not held, and from 18 to 12 if held).
+
 Caleb (Blood):
 
 ! Renamed some actor names to avoid name conflicts with other mods.
@@ -142,6 +149,10 @@ Strifeguy (Strife):
 * Fixed some sprite name conflicts with the grenade launcher and mauler.
 * Fixed the mauler (scatter mode) not animating correctly after firing.
 ! When having less than 30 rounds of Ammo 4 for the mauler's torpedo mode, the mauler will now switch to the scatter mode if there is at least 10 rounds remaining.
+
+LDF Commando (Rebel Moon Rising):
+
+! The Subestron arm and DEWY Mark II Plasma Cannon have had their hybrid pickup graphics split to accommodate for the former's new slot placement.
 
 In Pursuit of Greed:
 
@@ -264,6 +275,7 @@ PSX Doom CE/PSX Final Doom CE:
 -Settings-
 
 ! Decimals are no longer shown in the menu options.
++ Skulltag equipment now has pickup sprites for the "Pickup Graphics" option's "Old-Style" mode.
 * Non-unique loadout and altclass equipment now show the proper pickup graphics when the player has them in their inventory while "Pickup Graphics" is set to "Hybrid".
 + samsara_cl_corvus[time/remote/proxy]bomb has been added, which allows players to decide which of Corvus' respective bomb items should be available in the inventory to allow slightly better inventory management. They can be found in the "Samsara Clientside Options" menu, under "Class-Based Player Preferences", with the labels "Heretic: [Time Bomb/Mine/Eye] of the Ancients".
 ! "Half-Life: Freeman HEV Talk" has been renamed to "Half-Life: HEV/PCV Audio". The CVar name itself remains unchanged.
@@ -637,7 +649,7 @@ Blake Stone (Blake Stone):
 + With improved weapon balance, the Rapid Assault Weapon's long range bullet in PVE now deals 8-24 damage in multiples of 8 (increased from 6-18 in multiples of 6).
 - With improved weapon balance, the Rapid Assault Weapon's medium range bullet in PVE now deals 4-12 damage in multiples of 4 (decreased from 12-36 in multiples of 12).
 + With improved weapon balance, the Rapid Assault Weapon now fires four extra bullets in PVE that deal 4-12 damage in multiples of 4 while having a maximum range of 384 map units, 192 map units, 128 map units, and 64 map units, respectively.
-+ Originally planned as a new slot 6 weapon during Samsara Reincarnation's development (which would've moved and removed some equipment in the process), the Gatling Fusion Devastator has been added as the slot 4S weapon! (KNOWN ISSUE: The Aliens of Gold version currently has no sprites, using Wolfenstein 3D's chaingun sprites as a placeholder.)
++ Originally planned as a new slot 6 weapon during Samsara Reincarnation's development (which would've moved and removed some equipment in the process), the Gatling Fusion Devastator has been added as the slot 4S weapon!
 ! The Ammo Recharge Pack now gives ammo for vanilla Doom and Chex Quest weapons if they are selected, since custom maps can use ACS to give and/or select them.
 
 Caleb (Blood):

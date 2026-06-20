@@ -64,8 +64,8 @@ actor "Gatling Fusion Devastator" : SamsaraBStoneWeapon
       Hold2PSSmooth:
         BGFD D 2 Bright A_GiveInventory("SamsaraBStoneGatlingFusionDevastatorAttackHandler")
         BGFD G 1 Bright
-		BGFD E 4 A_ReFire
-		BGFD B 2
+        BGFD E 4 A_ReFire
+        BGFD B 2
         goto Ready
 
       // Aliens Of Gold

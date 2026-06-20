@@ -26,7 +26,7 @@ actor SamsaraSlotFourPickup : SamsaraSlotPickup replaces Chaingun
         loop
 
       // Old-Style
-      NoGuy:        WEPG D 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      NoGuy: WEPG D 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
 
       // Class-Specific
       Doomguy:              WCGN A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop

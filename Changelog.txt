@@ -86,6 +86,7 @@ Duke Nukem 3D:
 
 -Duke Nukem (Original/Life's a Beach)-
 
+* Fixed the Golden Desert Eagle/Silver Beach Seagull using the M16's pickup graphics when switching from the Duke Nukem 64 altclass while the M16 is the current loadout weapon.
 * Fixed second and third unique pickups not giving extra ammo on first pickup when playing PVP in Doom or Chex Quest.
 
 -Duke Nukem (Duke Nukem 64)-

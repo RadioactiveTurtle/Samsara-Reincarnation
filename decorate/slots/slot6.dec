@@ -26,7 +26,7 @@ actor SamsaraSlotSixPickup : SamsaraSlotPickup replaces PlasmaRifle
         loop
 
       // Old-Style
-      NoGuy:        WEPG F 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      NoGuy: WEPG F 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
 
       // Class-Specific
       Doomguy:          WPLS A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop

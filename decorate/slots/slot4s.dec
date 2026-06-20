@@ -80,7 +80,7 @@ actor SamsaraSlotFourSkulltagPickup : SamsaraSlotFourPickup replaces Minigun
       EradFull:               ER11 J 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       EradKamchakFull:        ER09 I 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       EradDanFull:            ER09 I 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
-      EradMarineFull:         ER09 I 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      EradMarineFull:         goto EradDanFull
       KatarnFull:             KD19 X 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       POGreedFull:            PPG4 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop // NEEDS NEW SPRITE
       HalfLifeFull:           PHL4 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
@@ -109,7 +109,7 @@ actor SamsaraSlotFourSkulltagPickup : SamsaraSlotFourPickup replaces Minigun
       EradEmpty:               ER11 I 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       EradKamchakEmpty:        ER10 H 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       EradDanEmpty:            ER09 H 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
-      EradMarineEmpty:         ER09 H 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      EradMarineEmpty:         goto EradDanEmpty
       KatarnEmpty:             KD19 Y 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       POGreedEmpty:            PPG4 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop // NEEDS NEW SPRITE
       HalfLifeEmpty:           PHL4 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop

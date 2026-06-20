@@ -2640,6 +2640,7 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("EradEnergywhip", INTMAX);
 			TakeInventory("EradNitrofogger", INTMAX);
 			TakeInventory("EradFlamethrower", INTMAX);
+			TakeInventory("SamsaraEradicatorHasSlot4S", INTMAX);
 			TakeInventory("    Missile Launcher    ", INTMAX);
 			TakeInventory("Eleena Smoke Bomb", INTMAX);
 			TakeInventory("Napalm Charge", INTMAX);
@@ -2990,6 +2991,7 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("Q2BFG10K", INTMAX);
 			TakeInventory("Q2Trap", INTMAX);
 			TakeInventory("Q2Disruptor", INTMAX);
+			TakeInventory("SamsaraQuake2HasSlot7S", INTMAX);
 			TakeInventory("Q2Railgun", INTMAX);
 			TakeInventory("Q2IonRipper", INTMAX);
 			TakeInventory("Q2GrenadeLauncher", INTMAX);
@@ -3066,12 +3068,14 @@ Script "Samsara_ResetInventory" (void)
             SetInventory("SamsaraGoldfingerThompsonSingleSkipFire", 0);
             SetInventory("SamsaraGoldfingerThompsonDualSkipFire", 0);
 			TakeInventory("Goldeneye_PhantomDualToken", INTMAX);
+			TakeInventory("SamsaraGoldenEyeHasSlot4S", INTMAX);
 			TakeInventory("Goldeneye_RocketLauncher", INTMAX);
 			TakeInventory("Goldfinger_SuperBazooka", INTMAX);
 			TakeInventory("Goldeneye_RocketLauncherDualToken", INTMAX);
 			TakeInventory("Goldeneye_GrenadeLauncher", INTMAX);
 			TakeInventory("Goldfinger_M79", INTMAX);
 			TakeInventory("Goldeneye_GrenadeLauncherDualToken", INTMAX);
+			TakeInventory("SamsaraGoldenEyeHasSlot5S", INTMAX);
 			TakeInventory("Goldeneye_RCP90", INTMAX);
             SetInventory("SamsaraGoldenEyeRCP90SingleSkipFire", 0);
             SetInventory("SamsaraGoldenEyeRCP90DualSkipFire", 0);
@@ -3083,6 +3087,7 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("Goldfinger_M1Garand", INTMAX);
 			TakeInventory("Goldfinger_Kar98k", INTMAX);
 			TakeInventory("Goldeneye_CougarDualToken", INTMAX);
+			TakeInventory("SamsaraGoldenEyeHasSlot6S", INTMAX);
 			TakeInventory("Goldeneye_Moonraker", INTMAX);
 			TakeInventory("Goldfinger_Laser", INTMAX);
 			TakeInventory("Goldeneye_LaserDualToken", INTMAX);
@@ -3091,6 +3096,7 @@ Script "Samsara_ResetInventory" (void)
             SetInventory("SamsaraGoldfingerM14SingleSkipFire", 0);
             SetInventory("SamsaraGoldfingerM14DualSkipFire", 0);
 			TakeInventory("Goldeneye_GoldenGunDualToken", INTMAX);
+			TakeInventory("SamsaraGoldenEyeHasSlot7S", INTMAX);
 			TakeInventory("Goldeneye_SniperRifle", INTMAX);
 			SetInventory("SamsaraGoldenEyeSniperRifleConsumeAmmo", 0);
 			TakeInventory("Goldfinger_AR7", INTMAX);
@@ -3793,6 +3799,7 @@ script "Samsara_FillInventory" (void)
 
 		case CLASS_ERAD:
 			if (!GetCVar("samsara_banallies")) { GiveInventory("AllyCellphone",1); }
+            GiveInventory("SamsaraEradicatorHasSlot4S", 1);
 			break;
 
 		case CLASS_RMR:
@@ -3851,6 +3858,7 @@ script "Samsara_FillInventory" (void)
 			break;
 
 		case CLASS_BITTERMAN:
+            GiveInventory("SamsaraQuake2HasSlot7S", 1);
 			GiveInventory("Q2QuadDamage",1);
 			GiveInventory("Q2DualFireDamage",2);
 			GiveInventory("Q2DoubleDamage",2);
@@ -3876,12 +3884,16 @@ script "Samsara_FillInventory" (void)
 			GiveInventory("Goldeneye_AutoShotgunDualToken",1);
 			GiveInventory("Goldeneye_AR33DualToken",1);
 			GiveInventory("Goldeneye_PhantomDualToken",1);
+            GiveInventory("SamsaraGoldenEyeHasSlot4S", 1);
 			GiveInventory("Goldeneye_RocketLauncherDualToken",1);
 			GiveInventory("Goldeneye_GrenadeLauncherDualToken",1);
+            GiveInventory("SamsaraGoldenEyeHasSlot5S", 1);
 			GiveInventory("Goldeneye_RCP90DualToken",1);
 			GiveInventory("Goldeneye_CougarDualToken",1);
+            GiveInventory("SamsaraGoldenEyeHasSlot6S", 1);
 			GiveInventory("Goldeneye_LaserDualToken",1);
 			GiveInventory("Goldeneye_GoldenGunDualToken",1);
+            GiveInventory("SamsaraGoldenEyeHasSlot7S", 1);
 			GiveInventory("Goldeneye_SniperDualToken",1);
 			GiveInventory("Goldeneye_D5KDualToken",1);
 			GiveInventory("Goldeneye_GoldPP7",1);
@@ -7056,6 +7068,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                     GiveInventory("EradEnergywhip", 1);
                     result = 1;
                 }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraEradicatorHasSlot4S", 1); }
                 break;
             }
             break;
@@ -7109,6 +7125,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                     GiveInventory("EradNitrofogger", 1);
                     result = 1;
                 }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraEradicatorHasSlot4S", 1); }
                 break;
             }
             break;
@@ -7162,6 +7182,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                     GiveInventory("EradFlamethrower", 1);
                     result = 1;
                 }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraEradicatorHasSlot4S", 1); }
                 break;
             }
             break;
@@ -7215,6 +7239,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                     GiveInventory("EradFlamethrower", 1);
                     result = 1;
                 }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraEradicatorHasSlot4S", 1); }
                 break;
             }
             break;
@@ -7744,6 +7772,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
 
                 if (startmode <= -1 || startmode >= 2) { GiveInventory("Cell", GetAmmoCapacity("Cell")); }
             }
+
+            if (startmode != 0) { result = 1; }
+
+            if (result == 1) { GiveInventory("SamsaraQuake2HasSlot7S", 1); }
             break;
         }
         break;
@@ -8397,6 +8429,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 }
 
                 if (settimer) { SetInventory("Goldeneye_PhantomLastPickupTime", Timer() + dualpickuptimer); }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraGoldenEyeHasSlot4S", 1); }
                 break;
 
               case SLOT_GRENADELAUNCHER:
@@ -8460,6 +8496,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 }
 
                 if (settimer) { SetInventory("Goldeneye_GrenadeLauncherLastPickupTime", Timer() + dualpickuptimer); }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraGoldenEyeHasSlot5S", 1); }
                 break;
 
               case SLOT_RAILGUN:
@@ -8643,6 +8683,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 }
 
                 if (settimer) { SetInventory("Goldeneye_CougarLastPickupTime", Timer() + dualpickuptimer); }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraGoldenEyeHasSlot6S", 1); }
                 break;
 
               case SLOT_BFG10K:
@@ -8709,6 +8753,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 }
 
                 if (settimer) { SetInventory("Goldeneye_GoldenGunLastPickupTime", Timer() + dualpickuptimer); }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraGoldenEyeHasSlot7S", 1); }
                 break;
             }
             break;
@@ -9408,6 +9456,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 }
 
                 if (settimer) { SetInventory("Goldeneye_PhantomLastPickupTime", Timer() + dualpickuptimer); }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraGoldenEyeHasSlot4S", 1); }
                 break;
 
               case SLOT_GRENADELAUNCHER:
@@ -9471,6 +9523,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 }
 
                 if (settimer) { SetInventory("Goldeneye_GrenadeLauncherLastPickupTime", Timer() + dualpickuptimer); }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraGoldenEyeHasSlot5S", 1); }
                 break;
 
               case SLOT_RAILGUN:
@@ -9598,6 +9654,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 }
 
                 if (settimer) { SetInventory("Goldeneye_CougarLastPickupTime", Timer() + dualpickuptimer); }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraGoldenEyeHasSlot6S", 1); }
                 break;
 
               case SLOT_BFG10K:
@@ -9664,6 +9724,10 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 }
 
                 if (settimer) { SetInventory("Goldeneye_GoldenGunLastPickupTime", Timer() + dualpickuptimer); }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1) { GiveInventory("SamsaraGoldenEyeHasSlot7S", 1); }
                 break;
             }
             break;

@@ -1,5 +1,6 @@
 // Tokens
 
+actor SamsaraGoldenEyeHasSlot6S : Boolean {}
 actor Goldeneye_CougarPickedUpX : MapCoordinate {}
 actor Goldeneye_CougarPickedUpY : MapCoordinate {}
 actor Goldeneye_CougarPickedUpZ : MapCoordinate {}

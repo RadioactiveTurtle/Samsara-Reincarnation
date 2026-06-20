@@ -80,15 +80,16 @@ function int _giveclassweapon(int class, int slot, int ammoMode, int dropped, in
 	return !!success;
 }
 
-function bool HasClassWeapon(int class, int slot, int ignorechecks)
+function bool HasClassWeapon(int class, int slot, int ignorechecks, int checkdisplaytoken)
 {
     if (class == -1) { return false; }
 
     int weapon = ClassWeapons[class][slot][S_WEP];
     int checkitem = ClassWeapons[class][slot][S_CHECKITEM];
     int failitem = ClassWeapons[class][slot][S_CHECKFAILITEM];
+    int displayitem = ClassWeapons[class][slot][S_CHECKDISPLAYITEM];
 
-    int hasWep, hasItem, hasFail;
+    int hasWep, hasItem, hasFail, hasDisplay;
 
     if (!StrLen(weapon))
     {
@@ -101,11 +102,19 @@ function bool HasClassWeapon(int class, int slot, int ignorechecks)
         else { return false; }
     }
 
-    hasWep  = CheckInventory(weapon);
-    hasItem = StrLen(checkitem) && CheckInventory(checkitem);
-    hasFail = StrLen(failitem) && CheckInventory(failitem);
+    hasWep     = CheckInventory(weapon);
+    hasItem    = StrLen(checkitem) && CheckInventory(checkitem);
+    hasFail    = StrLen(failitem) && CheckInventory(failitem);
+    hasDisplay = StrLen(displayitem) && CheckInventory(displayitem);
 
-    if (ignorechecks) { return hasWep; }
+    if (ignorechecks)
+    {
+        if (checkdisplaytoken) { return hasWep || hasDisplay; }
+
+        return hasWep;
+    }
+
+    if (checkdisplaytoken) { return hasWep || hasItem || hasFail || hasDisplay; }
 
     return hasWep || hasItem || hasFail;
 }
@@ -539,7 +548,7 @@ function int ConvertClassWeapons(int classnum)
 
 		for (j = 0; j < SLOTCOUNT; j++)
 		{
-			if (HasClassWeapon(i, j, 1))
+			if (HasClassWeapon(i, j, 1, 0))
 			{
 				TakeInventory(ClassWeapons[i][j][S_WEP], INTMAX);
 				if (classnum != -1) { GiveClassWeapon(classnum, j, 1, 0); }

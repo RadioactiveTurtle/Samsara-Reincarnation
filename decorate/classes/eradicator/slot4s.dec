@@ -1,3 +1,7 @@
+// Token
+
+actor SamsaraEradicatorHasSlot4S : Boolean {}
+
 // Eleena Brynstaarl
 
 actor SamsaraEradicatorEnergyWhipFiringSoundCheck : Boolean {}

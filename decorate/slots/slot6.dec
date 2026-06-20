@@ -115,9 +115,9 @@ actor SamsaraSlotSixPickup : SamsaraSlotPickup replaces PlasmaRifle
       CalebFull:            CWP6 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       StrifeFull:           SWP6 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       EradFull:             ERPS M 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
-      EradKamchakFull:      goto EradFull
-      EradDanFull:          goto EradFull
-      EradMarineFull:       goto EradFull
+      EradKamchakFull:      ERPS M 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      EradDanFull:          ERPS M 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      EradMarineFull:       goto EradKamchakFull
       C7Full:               7AL2 C 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       RMRFull:              RMZ6 L 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       KatarnFull:           PDF6 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
@@ -167,9 +167,9 @@ actor SamsaraSlotSixPickup : SamsaraSlotPickup replaces PlasmaRifle
       CalebEmpty:            CWP6 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       StrifeEmpty:           SWP6 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       EradEmpty:             ERPS E 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
-      EradKamchakEmpty:      goto EradEmpty
-      EradDanEmpty:          goto EradEmpty
-      EradMarineEmpty:       goto EradEmpty
+      EradKamchakEmpty:      ERPS E 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      EradDanEmpty:          ERPS E 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      EradMarineEmpty:       goto EradKamchakEmpty
       C7Empty:               7AL2 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       RMREmpty:              RMZ6 M 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       KatarnEmpty:           PDF6 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop

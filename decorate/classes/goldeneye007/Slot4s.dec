@@ -1,3 +1,4 @@
+actor SamsaraGoldenEyeHasSlot4S : Boolean {}
 actor Goldeneye_PhantomPickedUpX : MapCoordinate {}
 actor Goldeneye_PhantomPickedUpY : MapCoordinate {}
 actor Goldeneye_PhantomPickedUpZ : MapCoordinate {}

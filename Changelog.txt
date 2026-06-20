@@ -263,6 +263,7 @@ PSX Doom CE/PSX Final Doom CE:
 -Settings-
 
 ! Decimals are no longer shown in the menu options.
+* Non-unique loadout and altclass equipment now show the proper pickup graphics when the player has them in their inventory while "Pickup Graphics" is set to "Hybrid".
 + samsara_cl_corvus[time/remote/proxy]bomb has been added, which allows players to decide which of Corvus' respective bomb items should be available in the inventory to allow slightly better inventory management. They can be found in the "Samsara Clientside Options" menu, under "Class-Based Player Preferences", with the labels "Heretic: [Time Bomb/Mine/Eye] of the Ancients".
 ! "Half-Life: Freeman HEV Talk" has been renamed to "Half-Life: HEV/PCV Audio". The CVar name itself remains unchanged.
 * The HEV/PCV audio was being stored when "Half-Life: HEV/PCV Audio" is disabled, and then being played when enabling that setting. This should be fixed now.

@@ -113,9 +113,9 @@ actor SamsaraSlotThreePickup : SamsaraSlotPickup replaces SuperShotgun
       CalebFull:              CWP3 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       StrifeFull:             SWP3 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       EradFull:               ERPS K 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
-      EradKamchakFull:        goto EradFull
-      EradDanFull:            goto EradFull
-      EradMarineFull:         goto EradFull
+      EradKamchakFull:        ERPS K 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      EradDanFull:            ERPS K 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      EradMarineFull:         goto EradDanFull
       C7Full:                 7SG2 C 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       RMRFull:                RMZ6 F 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       KatarnFull:             PDF3 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
@@ -167,9 +167,9 @@ actor SamsaraSlotThreePickup : SamsaraSlotPickup replaces SuperShotgun
       CalebEmpty:              CWP3 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       StrifeEmpty:             SWP3 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       EradEmpty:               ERPS C 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
-      EradKamchakEmpty:        goto EradEmpty
-      EradDanEmpty:            goto EradEmpty
-      EradMarineEmpty:         goto EradEmpty
+      EradKamchakEmpty:        ERPS C 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      EradDanEmpty:            ERPS C 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      EradMarineEmpty:         goto EradDanEmpty
       C7Empty:                 7SG2 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       RMREmpty:                RMZ6 G 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       KatarnEmpty:             PDF3 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop

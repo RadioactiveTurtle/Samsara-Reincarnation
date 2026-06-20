@@ -2357,6 +2357,7 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory(" Bloodscourge ", INTMAX);
 			TakeInventory("Spiked Gauntlet", INTMAX);
 			SetInventory("SamsaraHexenHasSlot7", 0);
+			SetInventory("SamsaraClassicPariasHasSlot7", 0);
 			SetInventory("SamsaraClassicPariasHasBloodscourge", 0);
 			SetInventory("SamsaraClassicPariasHasSpikedGauntlet", 0);
 			TakeInventory("Ice Fang", INTMAX);
@@ -2415,6 +2416,7 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("Chaingun Cannon", INTMAX);
 			TakeInventory("Duke3D_M16", INTMAX);
 			SetInventory("SamsaraDukeHasSlot4", 0);
+			SetInventory("SamsaraDuke64HasSlot4", 0);
 			TakeInventory("Golden Desert Eagle", INTMAX);
             SetInventory("SamsaraDukeHasGoldenDesertEagle", 0);
 			TakeInventory("RPG", INTMAX);
@@ -3715,6 +3717,7 @@ script "Samsara_FillInventory" (void)
 			if (!GetCVar("samsara_banallies")) { GiveInventory("AllyCellphone",1); }
             SetInventory("SamsaraHexenHasLMSPistolDisabled", 0);
 			GiveInventory("SamsaraHexenHasSlot7", 1);
+			GiveInventory("SamsaraClassicPariasHasSlot7", 1);
 			GiveInventory("SamsaraClassicPariasHasBloodscourge", 1);
 			GiveInventory("SamsaraClassicPariasHasSpikedGauntlet", 1);
             GiveInventory("SamsaraHexen1AcquiredUnique3", 1);
@@ -3751,6 +3754,7 @@ script "Samsara_FillInventory" (void)
 			GiveInventory("DukeHasShrinker", 999);
 			GiveInventory("DukeHasExpander", 999);
 			SetInventory("SamsaraDukeHasSlot4", 1);
+			SetInventory("SamsaraDuke64HasSlot4", 1);
 			GiveInventory("SamsaraDukeHasGoldenDesertEagle", 999);
 			break;
 
@@ -5948,7 +5952,7 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                     switch (slot)
                     {
                       case SLOT_BFG9000:
-                        GiveInventory("SamsaraHexenHasSlot7", 1);
+                        GiveInventory("SamsaraClassicPariasHasSlot7", 1);
                         break;
 
                       case SLOT_BFG10K:
@@ -5956,6 +5960,8 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                         GiveInventory("GotWeapon7", 1);
                         break;
                     }
+
+                    GiveInventory("SamsaraHexenHasSlot7", 1);
                 }
                 break;
             }
@@ -6063,7 +6069,11 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
 
                 if (startmode != 0) { result = 1; }
 
-                if (result == 1) { GiveInventory("SamsaraHexenHasSlot7", 1); }
+                if (result == 1)
+                {
+                    GiveInventory("SamsaraHexenHasSlot7", 1);
+                    GiveInventory("SamsaraClassicPariasHasSlot7", 1);
+                }
                 break;
 
               case SLOT_BFG10K:
@@ -6078,7 +6088,11 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
 
                 if (startmode != 0) { result = 1; }
 
-                if (result == 1) { GiveInventory("SamsaraClassicPariasHasBloodscourge", 1); }
+                if (result == 1)
+                {
+                    GiveInventory("SamsaraHexenHasSlot7", 1);
+                    GiveInventory("SamsaraClassicPariasHasBloodscourge", 1);
+                }
                 break;
             }
             break;
@@ -6191,7 +6205,7 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                     switch (slot)
                     {
                       case SLOT_BFG9000:
-                        GiveInventory("SamsaraHexenHasSlot7", 1);
+                        GiveInventory("SamsaraClassicPariasHasSlot7", 1);
                         break;
 
                       case SLOT_BFG10K:
@@ -6199,6 +6213,8 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                         GiveInventory("GotWeapon7", 1);
                         break;
                     }
+
+                    GiveInventory("SamsaraHexenHasSlot7", 1);
                 }
                 break;
             }
@@ -6312,7 +6328,7 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                     switch (slot)
                     {
                       case SLOT_BFG9000:
-                        GiveInventory("SamsaraHexenHasSlot7", 1);
+                        GiveInventory("SamsaraClassicPariasHasSlot7", 1);
                         break;
 
                       case SLOT_BFG10K:
@@ -6320,6 +6336,8 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                         GiveInventory("GotWeapon7", 1);
                         break;
                     }
+
+                    GiveInventory("SamsaraHexenHasSlot7", 1);
                 }
                 break;
             }
@@ -6377,7 +6395,11 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
 
                 if (startmode != 0) { result = 1; }
 
-                if (result == 1) { GiveInventory("SamsaraDukeHasSlot4", 1); }
+                if (result == 1)
+                {
+                    GiveInventory("SamsaraDukeHasSlot4", 1);
+                    GiveInventory("SamsaraDuke64HasSlot4", 1);
+                }
                 break;
 
               case SLOT_MINIGUN:
@@ -6395,7 +6417,11 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
 
                 if (startmode != 0) { result = 1; }
 
-                if (result == 1) { GiveInventory("SamsaraDukeHasGoldenDesertEagle", 1); }
+                if (result == 1)
+                {
+                    GiveInventory("SamsaraDukeHasGoldenDesertEagle", 1);
+                    GiveInventory("SamsaraDuke64HasSlot4", 1);
+                }
                 break;
             }
             break;
@@ -6459,6 +6485,8 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                         GiveInventory("GotWeapon4", 1);
                         break;
                     }
+
+                    GiveInventory("SamsaraDuke64HasSlot4", 1);
                 }
                 break;
 

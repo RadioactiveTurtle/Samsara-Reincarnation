@@ -1782,7 +1782,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                                 SetInventory(storedammosecname, storedammosec);
                             }
 
-                            if (CheckInventory("SamsaraHexenHasSlot7"))
+                            if (CheckInventory("SamsaraClassicPariasHasSlot7"))
                             {
                                 storedammopriname = "Clip", storedammopri = CheckInventory(storedammopriname);
                                 storedammosecname = "Cell", storedammosec = CheckInventory(storedammosecname);
@@ -1802,7 +1802,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 
                             if (CheckInventory("SamsaraClassicPariasHasSpikedGauntlet")) { SetInventory("Spiked Gauntlet", 1); }
 
-                            SetInventory("GotWeapon7", CheckInventory("SamsaraHexenHasSlot7"));
+                            SetInventory("GotWeapon7", CheckInventory("SamsaraClassicPariasHasSlot7"));
 						}
 						else if(hexmode == 2)
 						{
@@ -1912,7 +1912,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                                 if (CheckWeapon("Wraithverge") || CheckWeapon("Quietus")) { SetWeapon("Bloodscourge"); }
                             }
 
-                            if (CheckInventory("SamsaraClassicPariasHasBloodscourge"))
+                            if (CheckInventory("SamsaraClassicPariasHasBloodscourge") && CheckInventory("SamsaraHexenHasSlot7"))
                             {
                                 storedammopriname = "Clip", storedammopri = CheckInventory(storedammopriname);
                                 storedammosecname = "Cell", storedammosec = CheckInventory(storedammosecname);
@@ -1940,7 +1940,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 
                             SetInventory("Spiked Gauntlet", 0);
 
-                            SetInventory("GotWeapon7", CheckInventory("SamsaraHexenHasSlot7") || CheckInventory("SamsaraClassicPariasHasBloodscourge"));
+                            SetInventory("GotWeapon7", CheckInventory("SamsaraHexenHasSlot7"));
 						}
 						else if(hexmode == 3)
 						{
@@ -2080,7 +2080,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                                 if (CheckWeapon("Wraithverge") || CheckWeapon("Bloodscourge")) { SetWeapon("Quietus"); }
                             }
 
-                            if (CheckInventory("SamsaraClassicPariasHasBloodscourge"))
+                            if (CheckInventory("SamsaraClassicPariasHasBloodscourge") && CheckInventory("SamsaraHexenHasSlot7"))
                             {
                                 storedammopriname = "Clip", storedammopri = CheckInventory(storedammopriname);
                                 storedammosecname = "Cell", storedammosec = CheckInventory(storedammosecname);
@@ -2108,7 +2108,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 
                             SetInventory("Spiked Gauntlet", 0);
 
-                            SetInventory("GotWeapon7", CheckInventory("SamsaraHexenHasSlot7") || CheckInventory("SamsaraClassicPariasHasBloodscourge"));
+                            SetInventory("GotWeapon7", CheckInventory("SamsaraHexenHasSlot7"));
 						}
 					}
 					else
@@ -2252,7 +2252,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                             if (CheckWeapon("Bloodscourge") || CheckWeapon("Quietus")) { SetWeapon("Wraithverge"); }
                         }
 
-                        if (CheckInventory("SamsaraClassicPariasHasBloodscourge"))
+                        if (CheckInventory("SamsaraClassicPariasHasBloodscourge") && CheckInventory("SamsaraHexenHasSlot7"))
                         {
                             storedammopriname = "Clip", storedammopri = CheckInventory(storedammopriname);
                             storedammosecname = "Cell", storedammosec = CheckInventory(storedammosecname);
@@ -2280,7 +2280,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 
                         SetInventory("Spiked Gauntlet", 0);
 
-                        SetInventory("GotWeapon7", CheckInventory("SamsaraHexenHasSlot7") || CheckInventory("SamsaraClassicPariasHasBloodscourge"));
+                        SetInventory("GotWeapon7", CheckInventory("SamsaraHexenHasSlot7"));
 					}
 					previousvalue = hexmode;
 				}
@@ -2365,24 +2365,21 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 						SetInventory("DukeClassMode", dukemode);
 						if(dukemode == 1)
 						{
-							if(CheckInventory("SamsaraDukeHasGoldenDesertEagle"))
-							{
-								GiveInventory("Golden Desert Eagle", 1);
-							}
+                            if (CheckInventory("SamsaraDukeHasGoldenDesertEagle")) { GiveInventory("Golden Desert Eagle", 1); }
 
-							if(CheckInventory("DukeHasShrinker"))
-							{
+                            if (CheckInventory("DukeHasShrinker"))
+                            {
                                 storedammopriname = "ShrinkerAmmo", storedammopri = CheckInventory(storedammopriname);
                                 SetInventory("Shrinker", 1);
                                 SetInventory(storedammopriname, storedammopri);
-							}
+                            }
 
-							if(CheckInventory("DukeHasExpander"))
-							{
+                            if (CheckInventory("DukeHasExpander"))
+                            {
                                 storedammopriname = "ExpanderAmmo", storedammopri = CheckInventory(storedammopriname);
                                 SetInventory("Expander", 1);
                                 SetInventory(storedammopriname, storedammopri);
-							}
+                            }
 
                             if (CheckInventory("DukePortJetpack64")) { GiveInventory("DukePortJetpack", 1); }
 
@@ -2411,7 +2408,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 						}
 						else if(dukemode == 2)
 						{
-							if(CheckInventory("SamsaraDukeHasGoldenDesertEagle"))
+							if(CheckInventory("SamsaraDuke64HasSlot4"))
 							{
                                 SetInventory("GotWeapon4", 1);
                                 SetInventory("Chaingun Cannon", 1);
@@ -2454,24 +2451,21 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 						}
 						else
 						{
-							if(CheckInventory("SamsaraDukeHasGoldenDesertEagle"))
-							{
-								GiveInventory("Golden Desert Eagle", 1);
-							}
+                            if (CheckInventory("SamsaraDukeHasGoldenDesertEagle")) { GiveInventory("Golden Desert Eagle", 1); }
 
-							if(CheckInventory("DukeHasShrinker"))
-							{
+                            if (CheckInventory("DukeHasShrinker"))
+                            {
                                 storedammopriname = "ShrinkerAmmo", storedammopri = CheckInventory(storedammopriname);
                                 SetInventory("Shrinker", 1);
                                 SetInventory(storedammopriname, storedammopri);
-							}
+                            }
 
-							if(CheckInventory("DukeHasExpander"))
-							{
+                            if (CheckInventory("DukeHasExpander"))
+                            {
                                 storedammopriname = "ExpanderAmmo", storedammopri = CheckInventory(storedammopriname);
                                 SetInventory("Expander", 1);
                                 SetInventory(storedammopriname, storedammopri);
-							}
+                            }
 
                             if (CheckInventory("DukePortJetpack64")) { GiveInventory("DukePortJetpack", 1); }
 

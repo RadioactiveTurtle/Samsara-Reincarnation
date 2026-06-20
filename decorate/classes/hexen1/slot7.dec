@@ -1,6 +1,7 @@
 // Tokens
 
 actor SamsaraHexenHasSlot7 : Boolean {}
+actor SamsaraClassicPariasHasSlot7 : Boolean {}
 actor SamsaraHexenWeaponPaletteBlendCounter : Counter { Inventory.MaxAmount 3 }
 
 // Parias (Reincarnation/Classic)

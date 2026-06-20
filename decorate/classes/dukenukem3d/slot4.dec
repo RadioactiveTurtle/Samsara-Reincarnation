@@ -5,6 +5,7 @@ actor SamsaraDukeLoadoutSlot4 : Boolean {}
 // Chaingun Cannon/Water Repeater
 
 actor SamsaraDukeHasSlot4 : Boolean {}
+actor SamsaraDuke64HasSlot4 : Boolean {}
 actor DukeRipperFiringSequence : Counter { Inventory.MaxAmount 2 }
 actor SamsaraDuke64SMGsFireFrameCounter : Counter { Inventory.MaxAmount 3 }
 actor SamsaraDuke64SMGsAttackSuccess : Boolean {}

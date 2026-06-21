@@ -27,6 +27,7 @@ Doom:
 
 -Doomguy (Stronghold)-
 
+! Updated the chaingun (powered)'s smooth firing animation.
 * Fixed first and second unique pickups not giving extra ammo on first pickup when playing PVP in Doom or Chex Quest.
 
 -All-

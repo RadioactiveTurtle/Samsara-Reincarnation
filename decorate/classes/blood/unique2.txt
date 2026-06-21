@@ -73,7 +73,7 @@ actor SamsaraBloodGunsAkimboInventory : CustomInventory
         goto UseContinue
 
       UseContinue:
-        TNT1 A 0 A_JumpIf(CallACS("SamsaraPowerupTimerActiveChecker", 15, 0), "UseFail")
+        TNT1 A 0 A_JumpIf(CallACS("SamsaraPowerupTimerActiveChecker", 16, 0), "UseFail")
         TNT1 A 0 A_PlaySound("Caleb/Powerup",CHAN_ITEM)
         TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 59) == 2, "UseFinishCooldown")
       UseFinish:
@@ -88,7 +88,7 @@ actor SamsaraBloodGunsAkimboInventory : CustomInventory
         fail
 
       UseToggle:
-        TNT1 A 0 A_JumpIf(CallACS("SamsaraPowerupTimerActiveChecker", 15, 1), "UseFail")
+        TNT1 A 0 A_JumpIf(CallACS("SamsaraPowerupTimerActiveChecker", 16, 1), "UseFail")
         TNT1 A 0 A_PlaySound("Caleb/Powerup",CHAN_ITEM)
         TNT1 A 0 A_GiveInventory("SamsaraPowerBloodGunsAkimboQuadDamageGiver")
         stop
@@ -98,7 +98,7 @@ actor SamsaraBloodGunsAkimboInventory : CustomInventory
         fail
 
       UseFailCooldown:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraClientDecorate", 0, 17, 8)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraClientDecorate", 0, 17, 9)
         fail
     }
 }

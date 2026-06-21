@@ -65,7 +65,7 @@ actor DFSuperCharge : CustomInventory
         stop
 
       UseFailPPW:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraClientDecorate", 0, 18, 3)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraClientDecorate", 0, 18, 4)
         fail
     }
 }

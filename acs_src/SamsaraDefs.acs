@@ -112,7 +112,7 @@
 #define SPEED_FORWARD       15
 #define SPEED_SIDE          13
 
-#define UNLOADCOUNT 135
+#define UNLOADCOUNT 136
 #define DEATHREMOVECOUNT 10
 
 #define P_COUNT 2
@@ -413,7 +413,7 @@ int UnloadRemove[UNLOADCOUNT] =
     "SamsaraQuake2QuadDamageCooldown", "SamsaraQuake2QuadDamageCooldownDisplay",
     "SamsaraQuake2QuadDamageCooldownStored", "PowerQ3RegenerationDummy",
     "SamsaraQuake3QuadDamageCooldown", "SamsaraQuake3QuadDamageCooldownDisplay",
-    "SamsaraQuakeChainsawReadySoundCheck"
+    "SamsaraQuakeChainsawReadySoundCheck", "SamsaraHexenTomeOfPowerCooldown"
 };
 
 int DeathRemove[DEATHREMOVECOUNT] =

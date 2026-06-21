@@ -24,7 +24,7 @@ actor SamsaraHexenDiscOfRepulsion : CustomInventory
         fail
 
       UseFailCooldown:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraClientDecorate", 0, 17, 4)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraClientDecorate", 0, 17, 5)
         fail
     }
 }

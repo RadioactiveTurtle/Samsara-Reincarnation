@@ -50,7 +50,7 @@ actor QuadDamageItem : CustomInventory
         fail
 
       NoU:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraClientDecorate", 0, 17, 7)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraClientDecorate", 0, 17, 8)
         fail
     }
 }

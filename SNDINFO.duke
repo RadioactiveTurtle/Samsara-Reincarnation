@@ -78,6 +78,10 @@ duke/expanderfire   DKEXSHOT
 duke/expand   		DKEXPAND
 duke/teleport		DKTPCORN
 duke/thud			DUKETHUD
+duke/x3000idle			sounds/Duke/DKX3IDLE.ogg
+duke/x3000loop		sounds/Duke/DKX3LOOP.ogg
+duke/x3000fire			sounds/Duke/DKX3FIRE.ogg
+$limit duke/x3000idle        1
 
 $limit duke/explosion 0
 $rolloff duke/explosion 1024 4096

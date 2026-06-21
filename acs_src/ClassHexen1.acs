@@ -1,3 +1,13 @@
+script "SamsaraHexenTomeOfPowerCooldown" (void) //207
+{
+    if (CheckInventory("SamsaraHexenTomeOfPowerCooldown") > 0)
+    {
+        delay(35);
+        TakeInventory("SamsaraHexenTomeOfPowerCooldown",1);
+        restart;
+    }
+}
+
 script "DiscOfRepulsionCooldown" (void) //207
 {
     if (CheckInventory("SamsaraDiscOfRepulsionCooldown") > 0)

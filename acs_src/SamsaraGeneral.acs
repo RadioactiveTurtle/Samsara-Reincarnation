@@ -719,16 +719,17 @@ script "SamsaraClientDecorate" (int which, int a1, int a2) clientside //212 -- S
 		break;
 
     case 17:
-        if (a1 >= 13) { Print(l:"QUAD3COOLDOWN"); }
-        else if (a1 == 12) { Print(l:"HOURGLASSCOOLDOWN"); }
-        else if (a1 == 11) { Print(l:"HEXEN2TOMECOOLDOWN"); }
-        else if (a1 == 10) { Print(l:"QUAD2COOLDOWN"); }
-        else if (a1 == 9) { Print(l:"BEACONCOOLDOWN"); }
-        else if (a1 == 8) { Print(l:"GUNSAKIMBOCOOLDOWN"); }
-        else if (a1 == 7) { Print(l:"QUADCOOLDOWN"); }
-        else if (a1 == 6) { Print(l:"HOLOCOOLDOWN"); }
-        else if (a1 == 5) { Print(l:"DSCOOLDOWN"); }
-        else if (a1 == 4) { Print(l:"DORCOOLDOWN"); }
+        if (a1 >= 14) { Print(l:"QUAD3COOLDOWN"); }
+        else if (a1 == 13) { Print(l:"HOURGLASSCOOLDOWN"); }
+        else if (a1 == 12) { Print(l:"HEXEN2TOMECOOLDOWN"); }
+        else if (a1 == 11) { Print(l:"QUAD2COOLDOWN"); }
+        else if (a1 == 10) { Print(l:"BEACONCOOLDOWN"); }
+        else if (a1 == 9) { Print(l:"GUNSAKIMBOCOOLDOWN"); }
+        else if (a1 == 8) { Print(l:"QUADCOOLDOWN"); }
+        else if (a1 == 7) { Print(l:"HOLOCOOLDOWN"); }
+        else if (a1 == 6) { Print(l:"DSCOOLDOWN"); }
+        else if (a1 == 5) { Print(l:"DORCOOLDOWN"); }
+        else if (a1 == 4) { Print(l:"HEXEN1TOMECOOLDOWN"); }
         else if (a1 == 3) { Print(l:"FLECCOOLDOWNFIGHTER"); }
         else if (a1 == 2) { Print(l:"FLECCOOLDOWNMAGE"); }
         else if (a1 == 1) { Print(l:"FLECCOOLDOWNCLERIC"); }
@@ -736,9 +737,10 @@ script "SamsaraClientDecorate" (int which, int a1, int a2) clientside //212 -- S
         break;
 
     case 18:
-        if (a1 >= 4) { Print(l:"HEXEN2TOMEPPW"); }
-        else if (a1 == 3) { Print(l:"DFSUPERCHARGEPPW"); }
-        else if (a1 == 2) { Print(l:"ENHANCEMENTCHIPPPW"); }
+        if (a1 >= 5) { Print(l:"HEXEN2TOMEPPW"); }
+        else if (a1 == 4) { Print(l:"DFSUPERCHARGEPPW"); }
+        else if (a1 == 3) { Print(l:"ENHANCEMENTCHIPPPW"); }
+        else if (a1 == 2) { Print(l:"HEXEN1TOMEPPW"); }
         else if (a1 == 1) { Print(l:"TOMEPPW"); }
         else { Print(l:"STRWEAPONPOWERUPKITPPW"); }
         break;
@@ -2345,12 +2347,13 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("PortFlechette3", INTMAX);
 			TakeInventory("PortQuartzFlask", INTMAX);
 			TakeInventory("PortSuperHealth", INTMAX);
-			TakeInventory("PortMysticAmbit", INTMAX);
+			TakeInventory("SamsaraHexenTomeOfPower", INTMAX);
 			TakeInventory("SamsaraHexenDiscOfRepulsion", INTMAX);
 			TakeInventory("SamsaraHexen1AcquiredUnique3", 1);
 			TakeInventory("SamsaraHexenDarkServant", INTMAX);
 			TakeInventory("SamsaraHexenPorkalator", INTMAX);
 			TakeInventory("SamsaraHexenHasPorkalator", INTMAX);
+			TakeInventory("PortMysticAmbit", INTMAX);
 			TakeInventory("Serpent Staff", INTMAX);
 			TakeInventory("Blight Shock", INTMAX);
 			TakeInventory("Jotunn's Flail", INTMAX);
@@ -3725,8 +3728,10 @@ script "Samsara_FillInventory" (void)
 			TakeInventory("FlechetteCooldown",65536);
 			TakeInventory("Flechette2Cooldown",65536);
 			TakeInventory("Flechette3Cooldown",65536);
+			TakeInventory("SamsaraHexenTomeOfPowerCooldown",65536);
 			TakeInventory("SamsaraDiscOfRepulsionCooldown",65536);
 			TakeInventory("SamsaraDarkServantCooldown",65536);
+			GiveInventory("PortMysticAmbit",16);
 			GiveInventory("PortQuartzFlask",16);
 			GiveInventory("PortSuperHealth",5);
 			GiveInventory("PortKraterOfMight",3);
@@ -17648,8 +17653,16 @@ script "SamsaraPowerupTimerActiveChecker" (int category, int powerup)
         }
         break;
 
-      // Caleb Powerups
+      // Hexen I Characters Powerups
       case 15:
+        switch (powerup)
+        {
+          case 0: powerupname = "PowerSamsaraHexenWeaponLevel2"; break;
+        }
+        break;
+
+      // Caleb Powerups
+      case 16:
         switch (powerup)
         {
           case 0: powerupname = "PowerSamsaraBloodGunsAkimbo"; break;
@@ -17658,7 +17671,7 @@ script "SamsaraPowerupTimerActiveChecker" (int category, int powerup)
         break;
 
       // Eradicator Characters Powerups
-      case 16:
+      case 17:
         switch (powerup)
         {
           case 0: powerupname = "PowerEradEnWP"; break;
@@ -17666,7 +17679,7 @@ script "SamsaraPowerupTimerActiveChecker" (int category, int powerup)
         break;
 
       // LDF Commando Powerups
-      case 17:
+      case 18:
         switch (powerup)
         {
           case 0: powerupname = "PowerRMRFlyAbilityHack"; break;
@@ -17674,7 +17687,7 @@ script "SamsaraPowerupTimerActiveChecker" (int category, int powerup)
         break;
 
       // A.V.C. Team Members Powerups
-      case 18:
+      case 19:
         switch (powerup)
         {
           case 0: powerupname = "PowerIPOGCharge"; break;
@@ -17683,7 +17696,7 @@ script "SamsaraPowerupTimerActiveChecker" (int category, int powerup)
         break;
 
       // Bitterman Powerups
-      case 19:
+      case 20:
         switch (powerup)
         {
           case 0: powerupname = "PowerQ2QuadDamage"; break;
@@ -17691,7 +17704,7 @@ script "SamsaraPowerupTimerActiveChecker" (int category, int powerup)
         break;
 
       // Demoness Powerups
-      case 20:
+      case 21:
         switch (powerup)
         {
           case 0: powerupname = "PowerHexen2WeaponLevel2"; break;
@@ -17699,7 +17712,7 @@ script "SamsaraPowerupTimerActiveChecker" (int category, int powerup)
         break;
 
       // Petton Everhail Powerups
-      case 21:
+      case 22:
         switch (powerup)
         {
           case 0: powerupname = "PowerCatacomb_FireRing"; break;
@@ -17711,7 +17724,7 @@ script "SamsaraPowerupTimerActiveChecker" (int category, int powerup)
         break;
 
       // Sarge Powerups
-      case 22:
+      case 23:
         switch (powerup)
         {
           case 0: powerupname = "PowerQ3QuadDamageFactor"; break;

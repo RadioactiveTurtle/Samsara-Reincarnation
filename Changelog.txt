@@ -17,11 +17,13 @@ Doom:
 -Doomguy (Original)-
 
 ! The status bar HUD now shows Skulltag weapons.
+* Fixed the shotgun and super shotgun's smooth firing animations not calling a player state change or lighting up rooms.
 + Added Perkristan altsounds for the Legacy of Rust loadout weapons and the railgun.
 
 -Doomguy (Doom 64)-
 
 ! The status bar HUD now shows Skulltag weapons.
+* Fixed some of the chaingun's flash sprites not being called correctly.
 
 -Doomguy (Stronghold)-
 

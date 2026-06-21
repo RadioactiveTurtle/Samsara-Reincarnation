@@ -249,9 +249,9 @@ ACTOR " Minigun " : Weapon
 		goto Select
 
 	FireStr:
-		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"FireStrSmooth")
 		TNT1 A 0 A_JumpIfInventory("PowerSamsaraDoomguyStrWeaponPower",1,"FireStrPowered")
 		TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"FireStrPowered")
+		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"FireStrSmooth")
 		TNT1 A 0 A_GunFlash("FlashStr")
 		DMNG C 2 A_GiveInventory("SamsaraDoomguyStrMinigunAttackHandler")
 		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"FireStr2Attack")
@@ -265,7 +265,6 @@ ACTOR " Minigun " : Weapon
 	FireStrFinish:
 		TNT1 A 0 A_ReFire
 	FireStrFinishAnim:
-		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"FireStrFinishAnimSmooth")
 		DMNG C 2 A_GiveInventory("SamsaraDoomguyStrMinigunFiringEndSoundPlayer")
 		DMNG D 2
 		DMNG CD 4
@@ -274,14 +273,12 @@ ACTOR " Minigun " : Weapon
 		goto Ready
 		
 	FireStrSmooth:
-		TNT1 A 0 A_JumpIfInventory("PowerSamsaraDoomguyStrWeaponPower",1,"FireStrPowered")
-		TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"FireStrPowered")
 		TNT1 A 0 A_GunFlash("FlashStrSmooth")
 		DMNG C 1 A_GiveInventory("SamsaraDoomguyStrMinigunAttackHandler")
 		DMNG E 1
 		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"FireStr2AttackSmooth")
 		TNT1 A 0 A_JumpIfInventory("Clip",1,"FireStr2AttackSmooth")
-		goto FireStr2
+		goto FireStr2Smooth
 
 	FireStr2AttackSmooth:
 		TNT1 A 0 A_GunFlash("FlashStr2Smooth")
@@ -335,36 +332,63 @@ ACTOR " Minigun " : Weapon
 	FireStrPowered:
 		TNT1 A 0 A_TakeInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount") // reset
 	FireStrPoweredLoop:
+		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"FireStrPoweredLoopSmooth")
+	FireStrPoweredLoopVanilla:
 		TNT1 A 0 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount")
-		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"FireStrPoweredLoop1Attack")
-		TNT1 A 0 A_JumpIfInventory("Clip",1,"FireStrPoweredLoop1Attack")
-		goto FireStrPoweredLoop1
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"FireStrPoweredLoop1AttackVanilla")
+		TNT1 A 0 A_JumpIfInventory("Clip",1,"FireStrPoweredLoop1AttackVanilla")
+		goto FireStrPoweredLoop1Vanilla
 
-	FireStrPoweredLoop1Attack:
+	FireStrPoweredLoop1AttackVanilla:
 		TNT1 A 0 A_GunFlash("FlashStrPowered")
-	FireStrPoweredLoop1:
+	FireStrPoweredLoop1Vanilla:
 		TNT1 A 0 A_TakeInventory("SamsaraTakingAmmo")
 		DMNG C 1 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredPrimaryAttackHandler")
-		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"FireStrPoweredLoop2Attack")
-		TNT1 A 0 A_JumpIfInventory("Clip",1,"FireStrPoweredLoop2Attack")
-		goto FireStrPoweredLoop2
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"FireStrPoweredLoop2AttackVanilla")
+		TNT1 A 0 A_JumpIfInventory("Clip",1,"FireStrPoweredLoop2AttackVanilla")
+		goto FireStrPoweredLoop2Vanilla
 
-	FireStrPoweredLoop2Attack:
+	FireStrPoweredLoop2AttackVanilla:
 		TNT1 A 0 A_GunFlash("FlashStrPowered2")
-	FireStrPoweredLoop2:
+	FireStrPoweredLoop2Vanilla:
 		TNT1 A 0 A_GiveInventory("SamsaraTakingAmmo")
 		DMNG D 1 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredPrimaryAttackHandler")
-		TNT1 A 0 A_JumpIfInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount",0,"FireStrPoweredFinish")
-		goto FireStrPoweredLoop
+		TNT1 A 0 A_JumpIfInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount",0,"FireStrPoweredFinishVanilla")
+		goto FireStrPoweredLoopVanilla
 
-	FireStrPoweredFinish:
+	FireStrPoweredFinishVanilla:
 		TNT1 A 0 A_ReFire
-	FireStrPoweredFinishAnim:
-		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"FireStrPoweredFinishAnimSmooth")
+	FireStrPoweredFinishAnimVanilla:
 		DMNG C 2 A_GiveInventory("SamsaraDoomguyStrMinigunFiringPoweredEndSoundPlayer")
 		DMNG D 2
 		DMNG CD 4 //Extremely shortened refire delay
 		goto Ready
+
+	FireStrPoweredLoopSmooth:
+		TNT1 A 0 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount")
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"FireStrPoweredLoop1AttackSmooth")
+		TNT1 A 0 A_JumpIfInventory("Clip",1,"FireStrPoweredLoop1AttackSmooth")
+		goto FireStrPoweredLoop1Smooth
+
+	FireStrPoweredLoop1AttackSmooth:
+		TNT1 A 0 A_GunFlash("FlashStrPowered")
+	FireStrPoweredLoop1Smooth:
+		TNT1 A 0 A_TakeInventory("SamsaraTakingAmmo")
+		DMNG C 1 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredPrimaryAttackHandler")
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"FireStrPoweredLoop2AttackSmooth")
+		TNT1 A 0 A_JumpIfInventory("Clip",1,"FireStrPoweredLoop2AttackSmooth")
+		goto FireStrPoweredLoop2Smooth
+
+	FireStrPoweredLoop2AttackSmooth:
+		TNT1 A 0 A_GunFlash("FlashStrPowered2")
+	FireStrPoweredLoop2Smooth:
+		TNT1 A 0 A_GiveInventory("SamsaraTakingAmmo")
+		DMNG D 1 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredPrimaryAttackHandler")
+		TNT1 A 0 A_JumpIfInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount",0,"FireStrPoweredFinishSmooth")
+		goto FireStrPoweredLoopSmooth
+
+	FireStrPoweredFinishSmooth:
+		TNT1 A 0 A_ReFire
 	FireStrPoweredFinishAnimSmooth: //no smooth powered fire because it fires really fast
 		DMNG C 1 A_GiveInventory("SamsaraDoomguyStrMinigunFiringPoweredEndSoundPlayer")
 		DMNG E 1
@@ -376,37 +400,70 @@ ACTOR " Minigun " : Weapon
 	AltFire:
 		TNT1 A 0 A_TakeInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount") // reset
 	AltFireLoop:
+		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"AltFireLoopSmooth")
+	AltFireLoopVanilla:
 		TNT1 A 0 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount")
-		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"AltFireLoop1Attack")
-		TNT1 A 0 A_JumpIfInventory("Clip",1,"AltFireLoop1Attack")
-		goto AltFireLoop1
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"AltFireLoop1AttackVanilla")
+		TNT1 A 0 A_JumpIfInventory("Clip",1,"AltFireLoop1AttackVanilla")
+		goto AltFireLoop1Vanilla
 
-	AltFireLoop1Attack:
+	AltFireLoop1AttackVanilla:
 		TNT1 A 0 A_GunFlash("FlashStrPowered")
-	AltFireLoop1:
+	AltFireLoop1Vanilla:
 		DMNG C 1 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredSecondaryAttackHandler")
-		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"AltFireLoop2Attack")
-		TNT1 A 0 A_JumpIfInventory("Clip",1,"AltFireLoop2Attack")
-		goto AltFireLoop2
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"AltFireLoop2AttackVanilla")
+		TNT1 A 0 A_JumpIfInventory("Clip",1,"AltFireLoop2AttackVanilla")
+		goto AltFireLoop2Vanilla
 
-	AltFireLoop2Attack:
+	AltFireLoop2AttackVanilla:
 		TNT1 A 0 A_GunFlash("FlashStrPowered2")
-	AltFireLoop2:
+	AltFireLoop2Vanilla:
 		DMNG D 1 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredSecondaryAttackHandler")
-		TNT1 A 0 A_JumpIfInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount",0,"AltFireFinish")
-		goto AltFireLoop
+		TNT1 A 0 A_JumpIfInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount",0,"AltFireFinishVanilla")
+		goto AltFireLoopVanilla
 
-	AltFireFinish:
-		TNT1 A 0 A_JumpIfInventory("PowerSamsaraDoomguyStrWeaponPower",1,"AltFireFinishReFire")
-		TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"AltFireFinishReFire")
+	AltFireFinishVanilla:
+		TNT1 A 0 A_JumpIfInventory("PowerSamsaraDoomguyStrWeaponPower",1,"AltFireFinishReFireVanilla")
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"AltFireFinishReFireVanilla")
 		TNT1 A 0 A_CheckReload
 		goto FireStrFinishAnim
 
-	AltFireFinishReFire:
-		//TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"AltFireFinishReFireSmooth")
+	AltFireFinishReFireVanilla:
 		TNT1 A 0 A_JumpIfInventory("DoomClassMode",2,"FireStrFinish")
 		TNT1 A 0 A_CheckReload
 		goto FireStrFinishAnim
+
+	AltFireLoopSmooth:
+		TNT1 A 0 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount")
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"AltFireLoop1AttackSmooth")
+		TNT1 A 0 A_JumpIfInventory("Clip",1,"AltFireLoop1AttackSmooth")
+		goto AltFireLoop1Smooth
+
+	AltFireLoop1AttackSmooth:
+		TNT1 A 0 A_GunFlash("FlashStrPowered")
+	AltFireLoop1Smooth:
+		DMNG C 1 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredSecondaryAttackHandler")
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"AltFireLoop2AttackSmooth")
+		TNT1 A 0 A_JumpIfInventory("Clip",1,"AltFireLoop2AttackSmooth")
+		goto AltFireLoop2Smooth
+
+	AltFireLoop2AttackSmooth:
+		TNT1 A 0 A_GunFlash("FlashStrPowered2")
+	AltFireLoop2Smooth:
+		DMNG D 1 A_GiveInventory("SamsaraDoomguyStrMinigunPoweredSecondaryAttackHandler")
+		TNT1 A 0 A_JumpIfInventory("SamsaraDoomguyStrMinigunPoweredAttackAmount",0,"AltFireFinishSmooth")
+		goto AltFireLoopSmooth
+
+	AltFireFinishSmooth:
+		TNT1 A 0 A_JumpIfInventory("PowerSamsaraDoomguyStrWeaponPower",1,"AltFireFinishReFireSmooth")
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"AltFireFinishReFireSmooth")
+		TNT1 A 0 A_CheckReload
+		goto FireStrFinishAnimSmooth
+
+	AltFireFinishReFireSmooth:
+		TNT1 A 0 A_JumpIfInventory("DoomClassMode",2,"FireStrFinishSmooth")
+		TNT1 A 0 A_CheckReload
+		goto FireStrFinishAnimSmooth
 */
 
 	FlashStrPowered:

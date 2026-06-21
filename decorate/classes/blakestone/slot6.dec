@@ -45,8 +45,6 @@ actor "Dual Neutron Disruptor" : SamsaraBStoneWeapon
         goto Hold2PS
 
       Hold2PS:
-        TNT1 A 0 A_JumpIfInventory("BlakeAOGToken",1,"HoldAOG")
-        TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"Hold2PSSmooth")
         DRIF D 4 Bright A_GiveInventory("SamsaraBStoneDualNeutronDisruptorAttackHandler")
         DRIF E 3 A_ReFire
         DRIF B 3
@@ -91,7 +89,6 @@ actor "Dual Neutron Disruptor" : SamsaraBStoneWeapon
         goto Hold2AOG
 
       Hold2AOG:
-        TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"Hold2AOGSmooth")
         DRIF I 4 Bright A_GiveInventory("SamsaraBStoneDualNeutronDisruptorAttackHandler")
         DRIF J 3 A_ReFire
         DRIF G 3

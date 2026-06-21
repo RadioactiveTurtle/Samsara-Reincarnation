@@ -60,7 +60,6 @@ actor "  Chaingun  " : InstantSwitchWeapon
         goto Hold2Original
 
       Hold2Original:
-		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"Hold2OriginalSmooth")
         WCHN D 3 Bright A_GiveInventory("SamsaraWolfenChaingunAttackHandler")
         WCHN E 2 A_ReFire
         goto Ready
@@ -111,7 +110,6 @@ actor "  Chaingun  " : InstantSwitchWeapon
         goto Hold2Lost
 
       Hold2Lost:
-		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"Hold2LostSmooth")
         WCHN I 3 Bright A_GiveInventory("SamsaraWolfenLostChaingunAttackHandler")
         WCHN J 2 A_ReFire
         goto Ready
@@ -121,9 +119,9 @@ actor "  Chaingun  " : InstantSwitchWeapon
 		9382 Z 1 Bright
         TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,2)
         TNT1 A 0 A_JumpIfInventory("Clip",1,1)
-        goto Hold2Lost
+        goto Hold2LostSmooth
         TNT1 A 0 A_GunFlash
-        goto Hold2Lost
+        goto Hold2LostSmooth
 
       Hold2LostSmooth:
         WCHN I 2 Bright A_GiveInventory("SamsaraWolfenLostChaingunAttackHandler")

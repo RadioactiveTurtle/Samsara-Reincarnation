@@ -167,14 +167,23 @@ actor " Chaingun " : Weapon
 		goto Fire64Finish
 		
 	Fire64Finish:
+        TNT1 A 0 A_JumpIfInventory("DoomClassMode",2,2)
+        TNT1 A 0 A_JumpIfInventory("DoomClassMode",1,2)
+		TNT1 A 0 A_ReFire
+		goto Ready
+		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,2)
 		TNT1 A 0 A_ReFire("Fire64Vanilla3Attack")
+		goto Ready
+		TNT1 A 0 A_ReFire("Fire64Smooth3Attack")
 		goto Ready
 	
 	Fire64Vanilla3Attack:
 		TNT1 A 0 A_GunFlash("Flash64")
 	Fire64Vanilla3:
 		64CG A 4 offset(2, 35) A_GiveInventory("SamsaraDoomguy64ChaingunAttackHandler")
-		goto Fire64Vanilla4Attack
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"Fire64Vanilla4Attack")
+		TNT1 A 0 A_JumpIfInventory("Clip",1,"Fire64Vanilla4Attack")
+		goto Fire64Vanilla4
 		
 	Fire64Vanilla4Attack:
 		TNT1 A 0 A_GunFlash("Flash64_2")
@@ -195,17 +204,15 @@ actor " Chaingun " : Weapon
 	Fire64Smooth2:
 		64CG C 2 offset(0, 33) A_GiveInventory("SamsaraDoomguy64ChaingunAttackHandler")
 		64CG D 1 offset(1, 34)
-		goto Fire64FinishSmooth
-	
-	Fire64FinishSmooth:
-		TNT1 A 0 A_ReFire("Fire64Smooth3Attack")
-		goto Ready
+		goto Fire64Finish
 
 	Fire64Smooth3Attack:
 		TNT1 A 0 A_GunFlash("Flash64")
 	Fire64Smooth3:
 		64CG A 2 offset(2, 35) A_GiveInventory("SamsaraDoomguy64ChaingunAttackHandler")
 		64CG B 2 offset(1, 34)
+		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"Fire64Smooth4Attack")
+		TNT1 A 0 A_JumpIfInventory("Clip",1,"Fire64Smooth4Attack")
 		goto Fire64Smooth4
 		
 	Fire64Smooth4Attack:
@@ -350,9 +357,9 @@ actor " Chaingun " : Weapon
 	FireStrPowered:
 		TNT1 A 0 A_TakeInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount") // reset
 	FireStrPoweredLoop:
-		TNT1 A 0 A_GiveInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount")
 		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"FireStrPoweredLoopSmooth")
 	FireStrPoweredLoopVanilla:
+		TNT1 A 0 A_GiveInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount")
 		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"FireStrPoweredLoopVanilla1Attack")
 		TNT1 A 0 A_JumpIfInventory("Clip",1,"FireStrPoweredLoopVanilla1Attack")
 		goto FireStrPoweredLoopVanilla1
@@ -374,9 +381,10 @@ actor " Chaingun " : Weapon
 		DCHG L 1 Bright A_GiveInventory("SamsaraDoomguyStrChaingunPoweredPrimaryAttackHandler")
 		DCHG M 1 Bright
 		TNT1 A 0 A_JumpIfInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount",0,"FireStrFinish")
-		goto FireStrPoweredLoop
+		goto FireStrPoweredLoopVanilla
 
 	FireStrPoweredLoopSmooth:
+		TNT1 A 0 A_GiveInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount")
 		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"FireStrPoweredLoopSmooth1Attack")
 		TNT1 A 0 A_JumpIfInventory("Clip",1,"FireStrPoweredLoopSmooth1Attack")
 		goto FireStrPoweredLoopSmooth1
@@ -400,15 +408,15 @@ actor " Chaingun " : Weapon
 		//DCHG P 1 Bright offset(0,35)
 		DCHG K 1 Bright offset(0,32)
 		TNT1 A 0 A_JumpIfInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount",0,"FireStrFinish")
-		goto FireStrPoweredLoop
+		goto FireStrPoweredLoopSmooth
 
 /*
 	AltFire:
 		TNT1 A 0 A_TakeInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount") // reset
 	AltFireLoop:
-		TNT1 A 0 A_GiveInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount")
 		TNT1 A 0 A_JumpIfInventory("SamsaraUsingSmoothAnims",1,"AltFireLoopSmooth")
 	AltFireLoopVanilla:
+		TNT1 A 0 A_GiveInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount")
 		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"AltFireLoopVanilla1Attack")
 		TNT1 A 0 A_JumpIfInventory("Clip",1,"AltFireLoopVanilla1Attack")
 		goto AltFireLoopVanilla1
@@ -428,9 +436,10 @@ actor " Chaingun " : Weapon
 		DCHG L 2 Bright A_GiveInventory("SamsaraDoomguyStrChaingunPoweredSecondaryAttackHandler")
 		DCHG M 1 Bright
 		TNT1 A 0 A_JumpIfInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount",0,"AltFireFinish")
-		goto AltFireLoop
+		goto AltFireLoopVanilla
 
 	AltFireLoopSmooth:
+		TNT1 A 0 A_GiveInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount")
 		TNT1 A 0 A_JumpIfInventory("SamsaraHasInfiniteAmmo",1,"AltFireLoopSmooth1Attack")
 		TNT1 A 0 A_JumpIfInventory("Clip",1,"AltFireLoopSmooth1Attack")
 		goto AltFireLoopSmooth1
@@ -452,7 +461,7 @@ actor " Chaingun " : Weapon
 		DCHG P 1 Bright offset(0,35)
 		DCHG K 1 Bright offset(0,32)
 		TNT1 A 0 A_JumpIfInventory("SamsaraDoomguyStrChaingunPoweredAttackAmount",0,"AltFireFinish")
-		goto AltFireLoop
+		goto AltFireLoopSmooth
 
 	AltFireFinish:
 		TNT1 A 0 A_JumpIfInventory("PowerSamsaraDoomguyStrWeaponPower",1,"AltFireFinishReFire")

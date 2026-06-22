@@ -2529,7 +2529,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 					previousvalue = dukemode;
 				}
 
-                if (CheckInventory("DukeClassMode") == 1)
+                if (dukemode == 1)
                 {
                     loadoutmode = GetCVar("samsara_dukelab_slot4") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_dukelab_slot4") - 1 : GetUserCVar(pln, "samsara_cl_dukelab_slot4");
 
@@ -2537,7 +2537,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                     else if (loadoutmode < 0) { loadoutmode = 0; }
 
                     SetInventory("SamsaraDukeLoadoutSlot4", loadoutmode);
-                } else if (!CheckInventory("DukeClassMode")) {
+                } else if (dukemode <= 0) {
                     loadoutmode = GetCVar("samsara_duke_slot4") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_duke_slot4") - 1 : GetUserCVar(pln, "samsara_cl_duke_slot4");
 
                     if (loadoutmode > 1) { loadoutmode = 1; }
@@ -3300,7 +3300,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 					previousvalue = halflifemode;
 				}
 
-                if (CheckInventory("HalfLifeOpposingForce"))
+                if (halflifemode)
                 {
                     loadoutmode = GetCVar("samsara_shephard_fallbackmelee") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_shephard_fallbackmelee") - 1 : GetUserCVar(pln, "samsara_cl_shephard_fallbackmelee");
 

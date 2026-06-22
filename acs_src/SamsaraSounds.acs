@@ -225,6 +225,9 @@ str ClassPickupSounds[2][CLASSCOUNT][MAXMODES][SLOTCOUNT][LOADOUTCOUNT] =
                 {"duke64/wepselect"},
                 {"duke64/wepselect"},
                 {"duke64/wepselect"},
+				{""},
+				{""},
+                {"duke64/wepselect"},
             },
         },
         {{

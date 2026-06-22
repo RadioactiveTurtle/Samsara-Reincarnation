@@ -1,3 +1,5 @@
+actor SamsaraDukeHasSlot7 : Boolean {}
+actor SamsaraDuke64HasSlot7 : Boolean {}
 actor DevastatorSide: Boolean {}
 actor Duke64HoldFlash : Boolean {}
 actor Duke64PlasmaCharge : Counter { Inventory.MaxAmount 150 }

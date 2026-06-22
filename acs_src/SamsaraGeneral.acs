@@ -2427,6 +2427,10 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("RPG", INTMAX);
 			TakeInventory("Freezethrower", INTMAX);
 			TakeInventory("Devastator Weapon", INTMAX);
+			SetInventory("SamsaraDukeHasSlot7", 0);
+			SetInventory("SamsaraDuke64HasSlot7", 0);
+			TakeInventory("Duke3D_X3000", INTMAX);
+            SetInventory("SamsaraDukeHasX3000", 0);
 			TakeInventory("Shrinker", INTMAX);
 			TakeInventory("DukeHasShrinker", INTMAX);
 			TakeInventory("Expander", INTMAX);
@@ -3762,7 +3766,10 @@ script "Samsara_FillInventory" (void)
 			GiveInventory("DukeHasExpander", 999);
 			SetInventory("SamsaraDukeHasSlot4", 1);
 			SetInventory("SamsaraDuke64HasSlot4", 1);
-			GiveInventory("SamsaraDukeHasGoldenDesertEagle", 999);
+			SetInventory("SamsaraDukeHasGoldenDesertEagle", 1);
+			SetInventory("SamsaraDukeHasSlot7", 1);
+			SetInventory("SamsaraDuke64HasSlot7", 1);
+			SetInventory("SamsaraDukeHasX3000", 1);
 			break;
 
 		case CLASS_MARATHON:
@@ -6483,6 +6490,44 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                     GiveInventory("SamsaraDuke64HasSlot4", 1);
                 }
                 break;
+
+              case SLOT_BFG9000:
+                if (!CheckInventory("Devastator Weapon"))
+                {
+                    GiveInventory("Devastator Weapon", 1);
+                    result = 1;
+                } else if (CheckInventory("Cell") < GetAmmoCapacity("Cell") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                    GiveInventory("Devastator Weapon", 1);
+                    result = 1;
+                }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1)
+                {
+                    GiveInventory("SamsaraDukeHasSlot7", 1);
+                    GiveInventory("SamsaraDuke64HasSlot7", 1);
+                }
+                break;
+
+              case SLOT_BFG10K:
+                if (!CheckInventory("Duke3D_X3000"))
+                {
+                    GiveInventory("Duke3D_X3000", 1);
+                    result = 1;
+                } else if (CheckInventory("Cell") < GetAmmoCapacity("Cell") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                    GiveInventory("Duke3D_X3000", 1);
+                    result = 1;
+                }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1)
+                {
+                    GiveInventory("SamsaraDukeHasX3000", 1);
+                    GiveInventory("SamsaraDuke64HasSlot7", 1);
+                }
+                break;
             }
             break;
 
@@ -6574,6 +6619,37 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
                 }
 
                 if (startmode <= -1 && GetCVar("samsara_lmsuniques")) { GiveInventory("Duke64ShrinkerAmmo", GetAmmoCapacity("Duke64ShrinkerAmmo")); }
+                break;
+
+              case SLOT_BFG9000:
+              case SLOT_BFG10K:
+                if (!CheckInventory("Devastator Weapon"))
+                {
+                    GiveInventory("Devastator Weapon", 1);
+                    result = 1;
+                } else if (CheckInventory("Cell") < GetAmmoCapacity("Cell") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                    GiveInventory("Devastator Weapon", 1);
+                    result = 1;
+                }
+
+                if (startmode != 0) { result = 1; }
+
+                if (result == 1)
+                {
+                    switch (slot)
+                    {
+                      case SLOT_BFG9000:
+                        GiveInventory("SamsaraDukeHasSlot7", 1);
+                        break;
+
+                      case SLOT_BFG10K:
+                        GiveInventory("SamsaraDukeHasX3000", 1);
+                        GiveInventory("GotWeapon7", 1);
+                        break;
+                    }
+
+                    GiveInventory("SamsaraDuke64HasSlot7", 1);
+                }
                 break;
             }
             break;

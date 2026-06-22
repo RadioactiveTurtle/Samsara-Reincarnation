@@ -149,6 +149,7 @@ Blake Stone (Blake Stone):
 Caleb (Blood):
 
 ! Renamed some actor names to avoid name conflicts with other mods.
+! The Naturom Demonto sprites have been improved.
 
 Strifeguy (Strife):
 

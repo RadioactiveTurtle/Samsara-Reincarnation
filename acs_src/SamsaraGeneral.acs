@@ -2341,6 +2341,7 @@ Script "Samsara_ResetInventory" (void)
 
 		case CLASS_HEXEN:
 			TakeInventory("SamsaraHexenSpikedGauntletsHitCounter", INTMAX);
+			TakeInventory("SamsaraHexenSpikedGauntletHand", INTMAX);
             SetInventory("SamsaraHexenHasLMSPistolDisabled", 0);
 			TakeInventory("PortFlechette", INTMAX);
 			TakeInventory("PortFlechette2", INTMAX);

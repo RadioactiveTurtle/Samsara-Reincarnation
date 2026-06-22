@@ -7,6 +7,8 @@ actor SamsaraDuke64PlasmaCannonChargedFlashTargetHack : Boolean {}
 
 actor "Devastator Weapon" : DukeWeapon
 {
+	Weapon.SlotNumber 7
+	Weapon.SlotPriority 0
 	Weapon.SelectionOrder 2800
 	Weapon.AmmoUse 2
 	Weapon.AmmoGive 30 // Originally 15, increased because of the double ammo usage.

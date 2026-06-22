@@ -3036,6 +3036,24 @@ StatusBar Automap, ForceScaled
                     else { DrawImage "WPDUKE7Y", 215, 11; } // Original
                 }
 
+                // Slot 7S
+                InInventory not GotWeapon7
+                {
+                    InInventory Duke3D_X3000
+                    {
+                        DrawImage "DN8DFNT7", 224, 3;
+                        InInventory DukeClassMode, 1 { DrawImage "WPDUK27N", 215, 11; } // Life's A Beach
+                        else { DrawImage "WPDUKE7N", 215, 11; } // Original
+                    }
+                }
+
+                IsSelected Duke3D_X3000
+                {
+                    DrawImage "DN9DFNT7", 224, 3;
+                    InInventory DukeClassMode, 1 { DrawImage "WPDUK27Y", 215, 11; } // Life's A Beach
+                    else { DrawImage "WPDUKE7Y", 215, 11; } // Original
+                }
+
                 // Unique 2
                 InInventory Shrinker
                 {

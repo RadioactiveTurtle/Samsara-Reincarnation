@@ -2146,8 +2146,8 @@ StatusBar Automap, ForceScaled
                 {
                     DrawImage "WEPSELG3", 120, 2;
 
-                    InInventory SamsaraHexen1ClericLoadoutSlot3 { DrawImage "WPHEXC3N", 115, 12; }
-                    else { DrawImage "WPHEXC3N", 115, 12; }
+                    InInventory SamsaraHexen1ClericLoadoutSlot3 { DrawImage "WPHEXC3N", 115, 12; } // Wand of Embers
+                    else { DrawImage "WPHEXC3N", 115, 12; } // Bishop's Shortsword
                 }
 
                 IsSelected "Bishop's Shortsword"

@@ -32,6 +32,7 @@ actor "Mace of Contrition" : SamsaraHexenWeapon
         loop
 
       Fire:
+		CMCE A 0 A_JumpIfInventory("PowerSamsaraHexenWeaponLevel2",1,"FirePowered")
         CMCE B 2 Offset(60,20)
         CMCE B 1 Offset(30,33)
         CMCE B 2 Offset(8,45)
@@ -48,6 +49,27 @@ actor "Mace of Contrition" : SamsaraHexenWeapon
         CMCE A 2 Offset(8,50)
         CMCE A 1 Offset(8,45)
         goto Ready
+		
+	  FirePowered:
+		CMCE B 0 A_Jump(128,"FirePowered2")
+		CMCE B 2 Offset(60,20)
+        CMCE B 1 Offset(30,33)
+        CMCE CDE 1 Offset(8,45)
+        CMCE E 1 Offset(-11,58) A_GiveInventory("SamsaraHexenMaceOfContritionAttackHandler")
+        CMCE F 1 Offset(8,45)
+        CMCE F 1 Offset(-20,96)
+        CMCE F 4 Offset(-33,160)
+        CMCE A 2 Offset(8,75) A_ReFire
+        CMCE A 1 Offset(8,65)
+        CMCE A 1 Offset(8,55)
+        CMCE A 1 Offset(8,45)
+        goto Ready
+		
+	  FirePowered2:
+		CMCE GHI 2
+		CMCE J 0 A_GiveInventory("SamsaraHexenMaceOfContritionAttackHandler")
+		CMCE JK 2
+		Goto Ready
     }
 }
 
@@ -109,6 +131,7 @@ actor HammerPuffCoop : HammerPuff { +MTHRUSPECIES }
 // Baratus
 
 actor SamsaraHexenSpikedGauntletsHitCounter : Counter { Inventory.MaxAmount 2 }
+actor SamsaraHexenSpikedGauntletHand : TemporaryBoolean { }
 
 actor "Spiked Gauntlets" : SamsaraHexenWeapon
 {
@@ -143,6 +166,7 @@ actor "Spiked Gauntlets" : SamsaraHexenWeapon
         loop
 
       Fire:
+		FPCH A 0 A_JumpIfInventory("PowerSamsaraHexenWeaponLevel2",1,"FirePowered")
         FPCH B 5 Offset(5,40)
         FPCH C 4 Offset(5,40)
         TNT1 A 0 A_JumpIfInventory("SamsaraHexenSpikedGauntletsHitCounter",0,"FireStrong")
@@ -166,6 +190,58 @@ actor "Spiked Gauntlets" : SamsaraHexenWeapon
         FPCH E 1 Offset(55,90)
         FPCH E 1 Offset(65,100)
         FPCH E 10 Offset(0,150)
+        goto Ready
+		
+	  FirePowered:
+		FPCH B 0 A_JumpIfInventory("SamsaraHexenSpikedGauntletHand",1,"FirePoweredL")
+	  FirePoweredR:
+		FPCH B 0 A_GiveInventory("SamsaraHexenSpikedGauntletHand")
+		FPCH B 3 Offset(5,40)
+        FPCH C 2 Offset(10,40)
+        TNT1 A 0 A_JumpIfInventory("SamsaraHexenSpikedGauntletsHitCounter",0,"FireStrongR")
+      FirePoweredRNormal:
+        TNT1 A 0 A_GiveInventory("SamsaraHexenSpikedGauntletsAttackHandler")
+      FirePoweredRFinish:
+        FPCH D 2 Offset(15,40)
+		FPCH C 2 Offset(10,40)
+        FPCH B 3 Offset(5,40) A_ReFire
+        goto Ready
+		
+	  FireStrongR:
+        TNT1 A 0 A_JumpIfCloser(129,1)
+        goto FirePoweredRNormal
+        TNT1 A 0 A_GiveInventory("SamsaraHexenSpikedGauntletsAttackHandler")
+      FireStrongFinishR:
+        FPCH DE 2 Offset(5,40)
+        FPCH E 1 Offset(25,60)
+        FPCH E 1 Offset(45,80)
+        FPCH E 1 Offset(65,100)
+        FPCH E 5 Offset(0,150)
+        goto Ready
+		
+	  FirePoweredL:
+		FPCH G 0 A_TakeInventory("SamsaraHexenSpikedGauntletHand")
+		FPCH G 3 Offset(-5,40)
+        FPCH H 2 Offset(-10,40)
+        TNT1 A 0 A_JumpIfInventory("SamsaraHexenSpikedGauntletsHitCounter",0,"FireStrongL")
+      FirePoweredLNormal:
+        TNT1 A 0 A_GiveInventory("SamsaraHexenSpikedGauntletsAttackHandler")
+      FirePoweredLFinish:
+        FPCH I 2 Offset(-15,40)
+		FPCH H 2 Offset(-10,40)
+        FPCH G 3 Offset(-5,40) A_ReFire
+        goto Ready
+		
+	  FireStrongL:
+        TNT1 A 0 A_JumpIfCloser(129,1)
+        goto FirePoweredLNormal
+        TNT1 A 0 A_GiveInventory("SamsaraHexenSpikedGauntletsAttackHandler")
+      FireStrongFinishL:
+        FPCH IJ 2 Offset(5,40)
+        FPCH J 1 Offset(25,60)
+        FPCH J 1 Offset(45,80)
+        FPCH J 1 Offset(65,100)
+        FPCH J 5 Offset(0,150)
         goto Ready
     }
 }

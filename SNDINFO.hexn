@@ -159,6 +159,8 @@ Hexen/BishopSword/Swing	CLRSWRDS
 Hexen/BishopSword/SwingHoly	CLRSWRDH
 Hexen/FrostFang/Fire		sounds/Hexen/CFSTFFIR2.mp3
 Hexen/FrostFang/Hit		sounds/Hexen/CFSTFHIT2.mp3
+Hexen/Rocks				sounds/Hexen/ROCKS
+Hexen/RockBreak				sounds/Hexen/POTBRK1
 
 hexen/weaponget         sample11
 hexen/artiget           artget1

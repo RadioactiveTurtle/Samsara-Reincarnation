@@ -636,7 +636,7 @@ actor Duke3D_M16 : DukeWeapon
 	Weapon.AmmoGive1 0
 	Weapon.AmmoType2 "Clip"
 	//Weapon.AmmoGive2 40
-	Obituary "$SAMSARA_DUKE_OB_SLOT4"
+	Obituary "$SAMSARA_DUKE_OB_SLOT4_LOADOUT1"
 	Inventory.Pickupmessage "You got the M16!"
 	Inventory.PickupSound "duke/weaponget"
 	weapon.upsound ""

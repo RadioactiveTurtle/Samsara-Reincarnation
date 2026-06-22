@@ -866,34 +866,6 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 					previousvalue = doommode;
 				}
 
-                loadoutmode = GetCVar("samsara_doomguy_fallbackranged") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_doomguy_fallbackranged") - 1 : GetUserCVar(pln, "samsara_cl_doomguy_fallbackranged");
-
-                if (loadoutmode > 1) { loadoutmode = 1; }
-                else if (loadoutmode < 0) { loadoutmode = 0; }
-
-                SetInventory("SamsaraDoomOriginalLoadoutFallbackRanged", loadoutmode);
-
-                loadoutmode = GetCVar("samsara_doomguy_slot4") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_doomguy_slot4") - 1 : GetUserCVar(pln, "samsara_cl_doomguy_slot4");
-
-                if (loadoutmode > 1) { loadoutmode = 1; }
-                else if (loadoutmode < 0) { loadoutmode = 0; }
-
-                SetInventory("SamsaraDoomOriginalLoadoutSlot4", loadoutmode);
-
-                loadoutmode = GetCVar("samsara_doomguy_slot6") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_doomguy_slot6") - 1 : GetUserCVar(pln, "samsara_cl_doomguy_slot6");
-
-                if (loadoutmode > 1) { loadoutmode = 1; }
-                else if (loadoutmode < 0) { loadoutmode = 0; }
-
-                SetInventory("SamsaraDoomOriginalLoadoutSlot6", loadoutmode);
-
-                loadoutmode = GetCVar("samsara_doomguy_slot7") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_doomguy_slot7") - 1 : GetUserCVar(pln, "samsara_cl_doomguy_slot7");
-
-                if (loadoutmode > 2) { loadoutmode = 2; }
-                else if (loadoutmode < 0) { loadoutmode = 0; }
-
-                SetInventory("SamsaraDoomOriginalLoadoutSlot7", loadoutmode);
-
                 if (doommode >= 1)
                 {
                     if (loadoutPrevValue[pln][SLOT_PISTOL] != 0)
@@ -969,6 +941,34 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                         SetInventory("Calamity Blade", 0);
                     }
                 } else {
+                    loadoutmode = GetCVar("samsara_doomguy_fallbackranged") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_doomguy_fallbackranged") - 1 : GetUserCVar(pln, "samsara_cl_doomguy_fallbackranged");
+
+                    if (loadoutmode > 1) { loadoutmode = 1; }
+                    else if (loadoutmode < 0) { loadoutmode = 0; }
+
+                    SetInventory("SamsaraDoomOriginalLoadoutFallbackRanged", loadoutmode);
+
+                    loadoutmode = GetCVar("samsara_doomguy_slot4") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_doomguy_slot4") - 1 : GetUserCVar(pln, "samsara_cl_doomguy_slot4");
+
+                    if (loadoutmode > 1) { loadoutmode = 1; }
+                    else if (loadoutmode < 0) { loadoutmode = 0; }
+
+                    SetInventory("SamsaraDoomOriginalLoadoutSlot4", loadoutmode);
+
+                    loadoutmode = GetCVar("samsara_doomguy_slot6") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_doomguy_slot6") - 1 : GetUserCVar(pln, "samsara_cl_doomguy_slot6");
+
+                    if (loadoutmode > 1) { loadoutmode = 1; }
+                    else if (loadoutmode < 0) { loadoutmode = 0; }
+
+                    SetInventory("SamsaraDoomOriginalLoadoutSlot6", loadoutmode);
+
+                    loadoutmode = GetCVar("samsara_doomguy_slot7") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_doomguy_slot7") - 1 : GetUserCVar(pln, "samsara_cl_doomguy_slot7");
+
+                    if (loadoutmode > 2) { loadoutmode = 2; }
+                    else if (loadoutmode < 0) { loadoutmode = 0; }
+
+                    SetInventory("SamsaraDoomOriginalLoadoutSlot7", loadoutmode);
+
                     if (loadoutPrevValue[pln][SLOT_PISTOL] != CheckInventory("SamsaraDoomOriginalLoadoutFallbackRanged"))
                     {
                         ACS_NamedExecuteAlways("SAMSARA_CLIENT_CLASSLOADOUT", 0, SLOT_PISTOL, CheckInventory("SamsaraDoomOriginalLoadoutFallbackRanged"), pln);
@@ -1148,7 +1148,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
             else if (loadoutmode < 0) { loadoutmode = 0; }
 
             SetInventory("SamsaraChexLoadoutFallbackRanged", loadoutmode);
-            
+
             if (loadoutPrevValue[pln][SLOT_PISTOL] != CheckInventory("SamsaraChexLoadoutFallbackRanged"))
             {
                 ACS_NamedExecuteAlways("SAMSARA_CLIENT_CLASSLOADOUT", 0, SLOT_PISTOL, CheckInventory("SamsaraChexLoadoutFallbackRanged"), pln);
@@ -1687,15 +1687,18 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                                 SetInventory("Javelin of Zeal", 0);
                             }
 
-                            if (CheckInventory("Bishop's Shortsword") || CheckInventory("Fire Blast"))
+                            if (CheckInventory("Bishop's Shortsword") || CheckInventory("Wand of Embers") || CheckInventory("Fire Blast"))
                             {
-                                storedammopriname = "Clip", storedammopri = CheckInventory(storedammopriname);
                                 SetInventory("Timon's Axe", 1);
-                                SetInventory(storedammopriname, storedammopri);
 
-                                if (CheckWeapon("Bishop's Shortsword") || CheckWeapon("Fire Blast")) { SetWeapon("Timon's Axe"); }
+                                if (CheckWeapon("Bishop's Shortsword") || CheckWeapon("Wand of Embers") || CheckWeapon("Fire Blast") || CheckInventory("SamsaraAltClassWeaponSwitchHackSlot3"))
+                                {
+                                    SetWeapon("Timon's Axe");
+                                    SetInventory("SamsaraAltClassWeaponSwitchHackSlot3", 0);
+                                }
 
                                 SetInventory("Bishop's Shortsword", 0);
+                                SetInventory("Wand of Embers", 0);
                                 SetInventory("Fire Blast", 0);
                             }
 
@@ -1815,15 +1818,18 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                                 SetInventory("Javelin of Zeal", 0);
                             }
 
-                            if (CheckInventory("Bishop's Shortsword") || CheckInventory("Timon's Axe"))
+                            if (CheckInventory("Bishop's Shortsword") || CheckInventory("Wand of Embers") || CheckInventory("Timon's Axe"))
                             {
-                                storedammopriname = "Clip", storedammopri = CheckInventory(storedammopriname);
                                 SetInventory("Fire Blast", 1);
-                                SetInventory(storedammopriname, storedammopri);
 
-                                if (CheckWeapon("Bishop's Shortsword") || CheckWeapon("Timon's Axe")) { SetWeapon("Fire Blast"); }
+                                if (CheckWeapon("Bishop's Shortsword") || CheckWeapon("Wand of Embers") || CheckWeapon("Timon's Axe") || CheckInventory("SamsaraAltClassWeaponSwitchHackSlot3"))
+                                {
+                                    SetWeapon("Fire Blast");
+                                    SetInventory("SamsaraAltClassWeaponSwitchHackSlot3", 0);
+                                }
 
                                 SetInventory("Bishop's Shortsword", 0);
+                                SetInventory("Wand of Embers", 0);
                                 SetInventory("Timon's Axe", 0);
                             }
 
@@ -1967,15 +1973,18 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                                 SetInventory("Frost Shards", 0);
                             }
 
-                            if (CheckInventory("Bishop's Shortsword") || CheckInventory("Fire Blast"))
+                            if (CheckInventory("Bishop's Shortsword") || CheckInventory("Wand of Embers") || CheckInventory("Fire Blast"))
                             {
-                                storedammopriname = "Clip", storedammopri = CheckInventory(storedammopriname);
                                 SetInventory("Timon's Axe", 1);
-                                SetInventory(storedammopriname, storedammopri);
 
-                                if (CheckWeapon("Bishop's Shortsword") || CheckWeapon("Fire Blast")) { SetWeapon("Timon's Axe"); }
+                                if (CheckWeapon("Bishop's Shortsword") || CheckWeapon("Wand of Embers") || CheckWeapon("Fire Blast") || CheckInventory("SamsaraAltClassWeaponSwitchHackSlot3"))
+                                {
+                                    SetWeapon("Timon's Axe");
+                                    SetInventory("SamsaraAltClassWeaponSwitchHackSlot3", 0);
+                                }
 
                                 SetInventory("Bishop's Shortsword", 0);
+                                SetInventory("Wand of Embers", 0);
                                 SetInventory("Fire Blast", 0);
                             }
 
@@ -2125,11 +2134,14 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 
                         if (CheckInventory("Fire Blast") || CheckInventory("Timon's Axe"))
                         {
-                            storedammopriname = "Clip", storedammopri = CheckInventory(storedammopriname);
-                            SetInventory("Bishop's Shortsword", 1);
-                            SetInventory(storedammopriname, storedammopri);
+                            if (!CheckInventory("SamsaraHexen1ClericLoadoutSlot3") || CheckInventory("SamsaraHasAllLoadoutEquipment")) { SetInventory("Bishop's Shortsword", 1); }
+                            if (CheckInventory("SamsaraHexen1ClericLoadoutSlot3") || CheckInventory("SamsaraHasAllLoadoutEquipment")) { SetInventory("Wand of Embers", 1); }
 
-                            if (CheckWeapon("Fire Blast") || CheckWeapon("Timon's Axe")) { SetWeapon("Bishop's Shortsword"); }
+                            if (CheckWeapon("Fire Blast") || CheckWeapon("Timon's Axe"))
+                            {
+                                if (CheckInventory("SamsaraHasAllLoadoutEquipment")) { SetWeapon("Bishop's Shortsword"); }
+                                else { GiveInventory("SamsaraAltClassWeaponSwitchHackSlot3", 1); }
+                            }
 
                             SetInventory("Fire Blast", 0);
                             SetInventory("Timon's Axe", 0);
@@ -2199,7 +2211,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 					previousvalue = hexmode;
 				}
 
-                if (CheckInventory("HexenClassMode") >= 3)
+                if (hexmode >= 3)
                 {
                     loadoutmode = GetCVar("samsara_baratus_unique3") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_baratus_unique3") - 1 : GetUserCVar(pln, "samsara_cl_baratus_unique3");
 
@@ -2207,14 +2219,14 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                     else if (loadoutmode < 0) { loadoutmode = 0; }
 
                     SetInventory("SamsaraHexen1LoadoutUnique3", loadoutmode);
-                } else if (CheckInventory("HexenClassMode") == 2) {
+                } else if (hexmode == 2) {
                     loadoutmode = GetCVar("samsara_daedolon_unique3") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_daedolon_unique3") - 1 : GetUserCVar(pln, "samsara_cl_daedolon_unique3");
 
                     if (loadoutmode > 1) { loadoutmode = 1; }
                     else if (loadoutmode < 0) { loadoutmode = 0; }
 
                     SetInventory("SamsaraHexen1LoadoutUnique3", loadoutmode);
-                } else if (CheckInventory("HexenClassMode") == 1) {
+                } else if (hexmode == 1) {
                     loadoutmode = GetCVar("samsara_pariasclassic_unique3") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_pariasclassic_unique3") - 1 : GetUserCVar(pln, "samsara_cl_pariasclassic_unique3");
 
                     if (loadoutmode > 1) { loadoutmode = 1; }
@@ -2222,6 +2234,13 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 
                     SetInventory("SamsaraHexen1LoadoutUnique3", loadoutmode);
                 } else {
+                    loadoutmode = GetCVar("samsara_parias_slot3") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_parias_slot3") - 1 : GetUserCVar(pln, "samsara_cl_parias_slot3");
+
+                    if (loadoutmode > 1) { loadoutmode = 1; }
+                    else if (loadoutmode < 0) { loadoutmode = 0; }
+
+                    SetInventory("SamsaraHexen1ClericLoadoutSlot3", loadoutmode);
+
                     loadoutmode = GetCVar("samsara_parias_unique3") > 0 && !CheckInventory("SamsaraHasAllLoadoutEquipment") ? GetCVar("samsara_parias_unique3") - 1 : GetUserCVar(pln, "samsara_cl_parias_unique3");
 
                     if (loadoutmode > 1) { loadoutmode = 1; }
@@ -2230,10 +2249,60 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                     SetInventory("SamsaraHexen1LoadoutUnique3", loadoutmode);
                 }
 
+                if (hexmode >= 1)
+                {
+                    if (loadoutPrevValue[pln][SLOT_SUPERSHOTGUN] != 0)
+                    {
+                        ACS_NamedExecuteAlways("SAMSARA_CLIENT_CLASSLOADOUT", 0, SLOT_SUPERSHOTGUN, 0, pln);
+                        loadoutPrevValue[pln][SLOT_SUPERSHOTGUN] = 0;
+                    }
+                } else {
+                    if (loadoutPrevValue[pln][SLOT_SUPERSHOTGUN] != CheckInventory("SamsaraHexen1ClericLoadoutSlot3"))
+                    {
+                        ACS_NamedExecuteAlways("SAMSARA_CLIENT_CLASSLOADOUT", 0, SLOT_SUPERSHOTGUN, CheckInventory("SamsaraHexen1ClericLoadoutSlot3"), pln);
+                        loadoutPrevValue[pln][SLOT_SUPERSHOTGUN] = CheckInventory("SamsaraHexen1ClericLoadoutSlot3");
+                    }
+                }
+
                 if (loadoutPrevValue[pln][SLOTCOUNT - 1 - SLOT_UNIQUE3] != CheckInventory("SamsaraHexen1LoadoutUnique3"))
                 {
                     ACS_NamedExecuteAlways("SAMSARA_CLIENT_CLASSLOADOUT", 0, SLOTCOUNT - 1 - SLOT_UNIQUE3, CheckInventory("SamsaraHexen1LoadoutUnique3"), pln);
                     loadoutPrevValue[pln][SLOTCOUNT - 1 - SLOT_UNIQUE3] = CheckInventory("SamsaraHexen1LoadoutUnique3");
+                }
+
+                if (hexmode <= 0)
+                {
+                    if (CheckInventory("Bishop's Shortsword") || CheckInventory("Wand of Embers"))
+                    {
+                        if (CheckInventory("SamsaraHasAllLoadoutEquipment"))
+                        {
+                            SetInventory("Bishop's Shortsword", 1);
+                            SetInventory("Wand of Embers", 1);
+                        } else {
+                            if (!CheckInventory("SamsaraHexen1ClericLoadoutSlot3"))
+                            {
+                                SetInventory("Bishop's Shortsword", 1);
+
+                                if (CheckWeapon("Wand of Embers") || CheckInventory("SamsaraAltClassWeaponSwitchHackSlot3"))
+                                {
+                                    SetWeapon("Bishop's Shortsword");
+                                    SetInventory("SamsaraAltClassWeaponSwitchHackSlot3", 0);
+                                }
+
+                                SetInventory("Wand of Embers", 0);
+                            } else if (CheckInventory("SamsaraHexen1ClericLoadoutSlot3")) {
+                                SetInventory("Wand of Embers", 1);
+
+                                if (CheckWeapon("Bishop's Shortsword") || CheckInventory("SamsaraAltClassWeaponSwitchHackSlot3"))
+                                {
+                                    SetWeapon("Wand of Embers");
+                                    SetInventory("SamsaraAltClassWeaponSwitchHackSlot3", 0);
+                                }
+
+                                SetInventory("Bishop's Shortsword", 0);
+                            }
+                        }
+                    }
                 }
 
                 if (CheckInventory("SamsaraHexen1AcquiredUnique3"))
@@ -2569,7 +2638,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                 else if (loadoutmode < 0) { loadoutmode = 0; }
 
                 SetInventory("SamsaraQuake1LoadoutSlot3", loadoutmode);
-            
+
                 if (loadoutPrevValue[pln][SLOT_CHAINSAW] != CheckInventory("SamsaraQuake1LoadoutSlot1"))
                 {
                     ACS_NamedExecuteAlways("SAMSARA_CLIENT_CLASSLOADOUT", 0, SLOT_CHAINSAW, CheckInventory("SamsaraQuake1LoadoutSlot1"), pln);
@@ -3765,7 +3834,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                 else if (loadoutmode < 0) { loadoutmode = 0; }
 
                 SetInventory("SamsaraQuake2LoadoutSlot7S", loadoutmode);
-            
+
                 if (loadoutPrevValue[pln][SLOT_BFG10K] != CheckInventory("SamsaraQuake2LoadoutSlot7S"))
                 {
                     ACS_NamedExecuteAlways("SAMSARA_CLIENT_CLASSLOADOUT", 0, SLOT_BFG10K, CheckInventory("SamsaraQuake2LoadoutSlot7S"), pln);

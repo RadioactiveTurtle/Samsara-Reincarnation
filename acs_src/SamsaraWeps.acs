@@ -218,7 +218,7 @@ str ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
         {"PortFlechette",       "",     "",     "ForceCheck", "", "GotWeapon0"},
         {"Jade Wand",           "",     "",     "ForceCheck", "", ""},
         {"Crusader's Longbow",  "Clip", "",     "ForceCheck", "", "GotWeapon2"},
-        {"Bishop's Shortsword", "Clip", "",     "ForceCheck", "", "GotWeapon3"},
+        {"Bishop's Shortsword", "",     "",     "ForceCheck", "", "GotWeapon3"}, // can give multiple weapons that use the same ammo type, uses script for proper ammo calculations
         {"Serpent Staff",       "Clip", "",     "ForceCheck", "", "GotWeapon4"},
         {"Ice Fang",            "Cell", "",     "ForceCheck", "", "GotWeapon5"},
         {"Firestorm",           "Cell", "",     "ForceCheck", "", "GotWeapon6"},
@@ -711,7 +711,7 @@ str ClassHotKeyWeapon[CLASSCOUNT][MAXMODES][SLOTCOUNT + UNIQUECOUNT][LOADOUTCOUN
     },
     {
         {
-            {"Mace of Contrition"}, {"PortFlechette"}, {"Jade Wand"}, {"Crusader's Longbow"}, {"Bishop's Shortsword"}, {"Serpent Staff"}, {"Ice Fang"}, {"Firestorm"}, {"Wraithverge"}, {"SamsaraHexenTomeOfPower"}, {"SamsaraHexenDiscOfRepulsion"}, {"SamsaraHexenDarkServant", "SamsaraHexenPorkalator"},
+            {"Mace of Contrition"}, {"PortFlechette"}, {"Jade Wand"}, {"Crusader's Longbow"}, {"Bishop's Shortsword", "Wand of Embers"}, {"Serpent Staff"}, {"Ice Fang"}, {"Firestorm"}, {"Wraithverge"}, {"SamsaraHexenTomeOfPower"}, {"SamsaraHexenDiscOfRepulsion"}, {"SamsaraHexenDarkServant", "SamsaraHexenPorkalator"},
         },
         {
             {"Mace of Contrition"}, {"PortFlechette"}, {"Sapphire Wand"}, {"Frost Shards"}, {"Timon's Axe"}, {"Serpent Staff"}, {"Hammer of Retribution"}, {"Firestorm"}, {"Wraithverge"}, {"SamsaraHexenTomeOfPower"}, {"SamsaraHexenDiscOfRepulsion"}, {"SamsaraHexenDarkServant", "SamsaraHexenPorkalator"}, {""}, {""}, {""}, {" Bloodscourge "},
@@ -987,7 +987,7 @@ str OriginalHotKeyWeapon[CLASSCOUNT][MAXMODES][ORIGINALCOUNT][ORIGINALCOUNT] =
 			{ "Firestorm", "", "", "", "", "", "", "", "", "" },
 			{ "Wraithverge", "", "", "", "", "", "", "", "", "" },
 			{ "Crusader's Longbow", "", "", "", "", "", "", "", "", "" },
-			{ "Bishop's Shortsword", "", "", "", "", "", "", "", "", "" },
+			{ "Bishop's Shortsword", "Wand of Embers", "", "", "", "", "", "", "", "" },
 			{ "Ice Fang", "", "", "", "", "", "", "", "", "" },
 			{ "", "", "", "", "", "", "", "", "", "" },
 			{ "", "", "", "", "", "", "", "", "", "" },

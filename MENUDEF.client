@@ -462,6 +462,7 @@ OptionMenu "SamsaraClientCharacterEquipmentLoadoutOptions"
     Option "Fallback Ranged", "samsara_cl_chex_fallbackranged", "ChexFallbackRangedClientOptions"
     StaticText ""
     StaticText "Parias (Reincarnation)", 1
+    Option "Slot 3",   "samsara_cl_parias_slot3",   "Hexen1ClericSlot3ClientOptions"
     Option "Unique 3", "samsara_cl_parias_unique3", "Hexen1Unique3ClientOptions"
     StaticText ""
     StaticText "Parias (Classic)", 1
@@ -551,6 +552,12 @@ OptionValue "ChexFallbackRangedClientOptions"
 {
     0, "Mini-Zorcher"
     1, "Micro-Zorcher"
+}
+
+OptionValue "Hexen1ClericSlot3ClientOptions"
+{
+    0, "Bishop's Shortsword"
+    1, "Wand of Embers"
 }
 
 OptionValue "Hexen1Unique3ClientOptions"

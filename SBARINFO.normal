@@ -2145,11 +2145,16 @@ StatusBar Normal, ForceScaled
                 InInventory GotWeapon3
                 {
                     DrawImage "WEPSELG3", 120, 2;
-                    DrawImage "WPHEXC3N", 115, 12;
+
+                    InInventory SamsaraHexen1ClericLoadoutSlot3 { DrawImage "WPHEXC3N", 115, 12; }
+                    else { DrawImage "WPHEXC3N", 115, 12; }
                 }
 
                 IsSelected "Bishop's Shortsword"
                 {
+                    DrawImage "WEPSELZ3", 120, 2;
+                    DrawImage "WPHEXC3Y", 115, 12;
+                } else IsSelected "Wand of Embers" {
                     DrawImage "WEPSELZ3", 120, 2;
                     DrawImage "WPHEXC3Y", 115, 12;
                 }

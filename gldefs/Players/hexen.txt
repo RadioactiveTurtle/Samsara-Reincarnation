@@ -528,6 +528,51 @@ pointlight CBISHOPSWORD_X5
 	size 45
 }
 
+// Wand of Embers
+pointlight CEMBERWANDBALL1
+{
+    color 1.0 0.2 0.0
+    size 32
+}
+
+pointlight CEMBERWANDBALL2
+{
+    color 1.0 0.4 0.0
+    size 48
+}
+
+pointlight CEMBERWANDBALL3
+{
+    color 1.0 0.4 0.0
+    size 40
+}
+
+pointlight CEMBERWANDBALL4
+{
+    color 0.8 0.3 0.0
+    size 32
+}
+
+pointlight CEMBERWANDBALL5
+{
+    color 0.6 0.2 0.0
+    size 24
+}
+
+pointlight CEMBERWANDBALL6
+{
+    color 0.5 0.1 0.0
+    size 16
+}
+
+flickerlight CEMBERWANDGEM
+{
+    color 1.0 0.6 0.0
+    size 8
+    secondarySize 12
+    chance 0.05
+}
+
 // Cleric Serpent Staff ball
 pointlight CSTAFFBALL
 {

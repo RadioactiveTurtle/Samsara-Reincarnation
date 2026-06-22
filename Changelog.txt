@@ -68,6 +68,7 @@ Hexen I:
 ! Renamed some actor names and sound files to avoid name conflicts with other mods.
 ! The mace of contrition now has a sprite for the Compendium and the alternate HUD.
 * Fixed the improved PVE damage values not properly applying to the bishop's shortsword strong projectiles.
++ Originally intended to be Parias' slot 3 during Samsara Reincarnation's development, the wand of embers has been added as a loadout choice for the slot 3 equipment (samsara_cl_parias_slot3 1 (client) or samsara_parias_slot3 2 (server)).
 
 -Parias (Classic)-
 
@@ -95,6 +96,7 @@ Duke Nukem 3D:
 -Duke Nukem (Original/Life's a Beach)-
 
 * Fixed the Golden Desert Eagle/Silver Beach Seagull using the M16's pickup graphics when switching from the Duke Nukem 64 altclass while the M16 is the current loadout weapon.
++ The X-3000 from Duke Nukem: Manhattan Project has been added as the slot 7S weapon!
 * Fixed second and third unique pickups not giving extra ammo on first pickup when playing PVP in Doom or Chex Quest.
 
 -Duke Nukem (Duke Nukem 64)-

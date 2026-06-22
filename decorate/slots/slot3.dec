@@ -40,6 +40,7 @@ actor SamsaraSlotThreePickup : SamsaraSlotPickup replaces SuperShotgun
       LostWolfguy:        WRFL R 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Totenkopf:          TK05 F 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       Hexen:              H119 H 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      HexenLoadout1:      H119 Q 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenClassic:       WFAX A 35 A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenMage:          H113 XYZ 8 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenFighter:       goto HexenClassic
@@ -98,6 +99,7 @@ actor SamsaraSlotThreePickup : SamsaraSlotPickup replaces SuperShotgun
       LostWolfFull:           PWMG F 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       TotenkopfFull:          TK05 H 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenFull:              HCS3 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      HexenFullLoadout1:      HCS3 D 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenClassicFull:       PAXE B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenMageFull:          HMS3 B 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenFighterFull:       goto HexenClassicFull
@@ -152,6 +154,7 @@ actor SamsaraSlotThreePickup : SamsaraSlotPickup replaces SuperShotgun
       LostWolfEmpty:           PWMG E 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       TotenkopfEmpty:          TK05 G 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenEmpty:              HCS3 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
+      HexenEmptyLoadout1:      HCS3 C 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenClassicEmpty:       PAXE A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenMageEmpty:          HMS3 A 35 Bright A_ChangeFlag("FLOATBOB",false) goto SpawnLoop
       HexenFighterEmpty:       goto HexenClassicEmpty

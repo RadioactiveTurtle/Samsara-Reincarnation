@@ -13720,6 +13720,7 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_bond_slot6s", 0);
 		SetCVar("samsara_cl_bond_unique2", 0);
 		SetCVar("samsara_cl_bondgf_fallbackranged", 0);
+		SetCVar("samsara_cl_bondgf_slot1", false);
 		SetCVar("samsara_cl_bondgf_slot3", false);
 		SetCVar("samsara_cl_bondgf_slot4s", false);
 		SetCVar("samsara_cl_bondgf_slot6s", false);
@@ -13897,6 +13898,7 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_bond_slot6s", 0);
 		SetCVar("samsara_cl_bond_unique2", 0);
 		SetCVar("samsara_cl_bondgf_fallbackranged", 0);
+		SetCVar("samsara_cl_bondgf_slot1", false);
 		SetCVar("samsara_cl_bondgf_slot3", false);
 		SetCVar("samsara_cl_bondgf_slot4s", false);
 		SetCVar("samsara_cl_bondgf_slot6s", false);
@@ -14074,6 +14076,7 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_bond_slot6s", 0);
 		SetCVar("samsara_cl_bond_unique2", 0);
 		SetCVar("samsara_cl_bondgf_fallbackranged", 0);
+		SetCVar("samsara_cl_bondgf_slot1", false);
 		SetCVar("samsara_cl_bondgf_slot3", false);
 		SetCVar("samsara_cl_bondgf_slot4s", false);
 		SetCVar("samsara_cl_bondgf_slot6s", false);
@@ -14247,11 +14250,12 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_shephard_unique3", true);
 		SetCVar("samsara_cl_bitterman_slot7s", false);
 		SetCVar("samsara_cl_bond_fallbackranged", 0);
-		SetCVar("samsara_cl_bond_slot1", false);
+		SetCVar("samsara_cl_bond_slot1", true);
 		SetCVar("samsara_cl_bond_slot3", false);
 		SetCVar("samsara_cl_bond_slot6s", 0);
 		SetCVar("samsara_cl_bond_unique2", 0);
 		SetCVar("samsara_cl_bondgf_fallbackranged", 0);
+		SetCVar("samsara_cl_bondgf_slot1", true);
 		SetCVar("samsara_cl_bondgf_slot3", false);
 		SetCVar("samsara_cl_bondgf_slot4s", false);
 		SetCVar("samsara_cl_bondgf_slot6s", false);
@@ -14429,6 +14433,7 @@ script "SamsaraClientSidePresetSelection" (void)
 		SetCVar("samsara_cl_bond_slot6s", 1);
 		SetCVar("samsara_cl_bond_unique2", 1);
 		SetCVar("samsara_cl_bondgf_fallbackranged", 0);
+		SetCVar("samsara_cl_bondgf_slot1", false);
 		SetCVar("samsara_cl_bondgf_slot3", false);
 		SetCVar("samsara_cl_bondgf_slot4s", false);
 		SetCVar("samsara_cl_bondgf_slot6s", false);
@@ -14869,6 +14874,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_bond_slot6s", 0);
 		SetCVar("samsara_bond_unique2", 0);
 		SetCVar("samsara_bondgf_fallbackranged", 0);
+		SetCVar("samsara_bondgf_slot1", 0);
 		SetCVar("samsara_bondgf_slot3", 0);
 		SetCVar("samsara_bondgf_slot4s", 0);
 		SetCVar("samsara_bondgf_slot6s", 0);
@@ -15301,6 +15307,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_bond_slot6s", 0);
 		SetCVar("samsara_bond_unique2", 0);
 		SetCVar("samsara_bondgf_fallbackranged", 0);
+		SetCVar("samsara_bondgf_slot1", 0);
 		SetCVar("samsara_bondgf_slot3", 0);
 		SetCVar("samsara_bondgf_slot4s", 0);
 		SetCVar("samsara_bondgf_slot6s", 0);
@@ -15733,6 +15740,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_bond_slot6s", 0);
 		SetCVar("samsara_bond_unique2", 0);
 		SetCVar("samsara_bondgf_fallbackranged", 0);
+		SetCVar("samsara_bondgf_slot1", 0);
 		SetCVar("samsara_bondgf_slot3", 0);
 		SetCVar("samsara_bondgf_slot4s", 0);
 		SetCVar("samsara_bondgf_slot6s", 0);
@@ -16166,6 +16174,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_bond_slot6s", 0);
 		SetCVar("samsara_bond_unique2", 0);
 		SetCVar("samsara_bondgf_fallbackranged", 0);
+		SetCVar("samsara_bondgf_slot1", 0);
 		SetCVar("samsara_bondgf_slot3", 0);
 		SetCVar("samsara_bondgf_slot4s", 0);
 		SetCVar("samsara_bondgf_slot6s", 0);
@@ -16604,6 +16613,7 @@ script "SamsaraServerSidePresetSelection" (void)
 		SetCVar("samsara_bond_slot6s", 0);
 		SetCVar("samsara_bond_unique2", 0);
 		SetCVar("samsara_bondgf_fallbackranged", 0);
+		SetCVar("samsara_bondgf_slot1", 0);
 		SetCVar("samsara_bondgf_slot3", 0);
 		SetCVar("samsara_bondgf_slot4s", 0);
 		SetCVar("samsara_bondgf_slot6s", 0);

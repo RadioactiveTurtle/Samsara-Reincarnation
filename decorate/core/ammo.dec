@@ -147,7 +147,11 @@ actor Ammo1Small : SamsaraAmmoPickup
         goto PickupDisplay
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseWaves",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Waves",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseZappers",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Zappers",0,"PickupFail")
         goto PickupDisplay
@@ -237,7 +241,9 @@ actor Ammo1Small : SamsaraAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",1)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         stop
 
       PickupSuccessPainkiller:
@@ -411,7 +417,9 @@ actor Ammo1Medium : Ammo1Small
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",3)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(3,4))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         stop
 
       PickupSuccessPainkiller:
@@ -547,7 +555,9 @@ actor Ammo1Big : Ammo1Small
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",random(4,6))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(4,6))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         stop
 
       PickupSuccessPainkiller:
@@ -726,7 +736,11 @@ actor Ammo2Small : SamsaraAmmoPickup
         goto PickupDisruptor
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseXTerminators",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_XTerminators",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBursts",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bursts",0,"PickupFail")
         goto PickupDisplay
@@ -815,7 +829,9 @@ actor Ammo2Small : SamsaraAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_XTerminators",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseXTerminators")
         TNT1 A 0 A_GiveInventory("Catacomb_Bursts",1)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBursts")
         stop
 
       PickupSuccessPainkiller:
@@ -987,7 +1003,9 @@ actor Ammo2Medium : Ammo2Small
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_XTerminators",random(3,4))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseXTerminators")
         TNT1 A 0 A_GiveInventory("Catacomb_Bursts",3)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBursts")
         stop
 
       PickupSuccessPainkiller:
@@ -1152,7 +1170,9 @@ actor Ammo2Big : Ammo2Small
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_XTerminators",random(4,6))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseXTerminators")
         TNT1 A 0 A_GiveInventory("Catacomb_Bursts",random(4,6))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBursts")
         stop
 
       PickupSuccessPainkiller:
@@ -1327,6 +1347,8 @@ actor Ammo3Small : SamsaraAmmoPickup
         goto PickupHexen1
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseNukes",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Nukes",0,"PickupFail")
         goto PickupDisplay
 
@@ -1429,6 +1451,7 @@ actor Ammo3Small : SamsaraAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Nukes",1)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseNukes")
         stop
 
       PickupSuccessPainkiller:
@@ -1617,6 +1640,7 @@ actor Ammo3Medium : Ammo3Small
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Nukes",2)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseNukes")
         stop
 
       PickupSuccessPainkiller:
@@ -1805,6 +1829,7 @@ actor Ammo3Big : Ammo3Small
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Nukes",random(4,6))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseNukes")
         stop
 
       PickupSuccessPainkiller:
@@ -1962,6 +1987,8 @@ actor Ammo4Small : SamsaraAmmoPickup
         goto PickupDisplay
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBolts",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bolts",0,"PickupFail")
         goto PickupDisplay
 
@@ -2045,6 +2072,7 @@ actor Ammo4Small : SamsaraAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Bolts",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBolts")
         stop
 
       PickupSuccessPainkiller:
@@ -2213,6 +2241,7 @@ actor Ammo4Medium : Ammo4Small
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Bolts",random(3,4))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBolts")
         stop
 
       PickupSuccessPainkiller:
@@ -2383,6 +2412,7 @@ actor Ammo4Big : Ammo4Small
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Bolts",random(4,6))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBolts")
         stop
 
       PickupSuccessPainkiller:
@@ -2869,11 +2899,19 @@ actor Ammo12Small : SamsaraAmmoPickup
         goto PickupHexen1
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseWaves",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Waves",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseXTerminators",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_XTerminators",0,1)
         goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseZappers",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Zappers",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBursts",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bursts",0,"PickupFail")
         goto PickupDisplay
@@ -3031,9 +3069,13 @@ actor Ammo12Small : SamsaraAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",random(2,3))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_XTerminators",random(2,3))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseXTerminators")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(2,3))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         TNT1 A 0 A_GiveInventory("Catacomb_Bursts",random(2,3))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBursts")
         stop
 
       PickupSuccessPainkiller:
@@ -3233,7 +3275,11 @@ actor Ammo34Small : SamsaraAmmoPickup
         goto PickupHexen1
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseNukes",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Nukes",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBolts",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bolts",0,"PickupFail")
         goto PickupDisplay
@@ -3398,7 +3444,9 @@ actor Ammo34Small : SamsaraAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Nukes",random(2,3))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseNukes")
         TNT1 A 0 A_GiveInventory("Catacomb_Bolts",random(2,3))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBolts")
         stop
 
       PickupSuccessPainkiller:
@@ -3703,15 +3751,27 @@ actor EverythingAmmo : SamsaraAmmoPickup
         goto PickupDisplay
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseWaves",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Waves",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseXTerminators",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_XTerminators",0,1)
         goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseNukes",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Nukes",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBolts",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bolts",0,1)
         goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseZappers",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Zappers",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBursts",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bursts",0,"PickupFail")
         goto PickupDisplay
@@ -3965,11 +4025,17 @@ actor EverythingAmmo : SamsaraAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",random(3,4))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_XTerminators",random(3,4))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseXTerminators")
         TNT1 A 0 A_GiveInventory("Catacomb_Nukes",random(3,4))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseNukes")
         TNT1 A 0 A_GiveInventory("Catacomb_Bolts",random(3,4))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBolts")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(3,4))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         TNT1 A 0 A_GiveInventory("Catacomb_Bursts",random(3,4))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBursts")
         stop
 
       PickupSuccessPainkiller:
@@ -4217,13 +4283,23 @@ actor AmmoComboSmall : SamsaraAmmoPickup
         goto PickupHexen1
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseWaves",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Waves",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseXTerminators",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_XTerminators",0,1)
         goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBolts",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bolts",0,1)
         goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseZappers",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Zappers",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBursts",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bursts",0,"PickupFail")
         goto PickupDisplay
@@ -4412,10 +4488,15 @@ actor AmmoComboSmall : SamsaraAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_XTerminators",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseXTerminators")
         TNT1 A 0 A_GiveInventory("Catacomb_Bolts",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBolts")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         TNT1 A 0 A_GiveInventory("Catacomb_Bursts",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBursts")
         stop
 
       PickupSuccessPainkiller:
@@ -4677,15 +4758,27 @@ actor AmmoComboBig : AmmoComboSmall
         goto PickupDisplay
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseWaves",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Waves",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseXTerminators",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_XTerminators",0,1)
         goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseNukes",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Nukes",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBolts",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bolts",0,1)
         goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseZappers",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Zappers",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBursts",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bursts",0,"PickupFail")
         goto PickupDisplay
@@ -4896,11 +4989,17 @@ actor AmmoComboBig : AmmoComboSmall
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_XTerminators",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseXTerminators")
         TNT1 A 0 A_GiveInventory("Catacomb_Nukes",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseNukes")
         TNT1 A 0 A_GiveInventory("Catacomb_Bolts",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBolts")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         TNT1 A 0 A_GiveInventory("Catacomb_Bursts",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBursts")
         stop
 
       PickupSuccessPainkiller:
@@ -4997,7 +5096,11 @@ actor Clip2 : SamsaraEnemyAmmoPickup
         goto PickupDisplay
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseWaves",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Waves",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseZappers",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Zappers",0,"PickupFail")
         goto PickupDisplay
@@ -5028,7 +5131,9 @@ actor Clip2 : SamsaraEnemyAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",1)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         stop
     }
 }
@@ -5062,6 +5167,8 @@ actor GoldWandAmmo2 : SamsaraEnemyAmmoPickup
         goto PickupDisplay
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseZappers",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Zappers",0,"PickupFail")
         goto PickupDisplay
 
@@ -5091,6 +5198,7 @@ actor GoldWandAmmo2 : SamsaraEnemyAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",1)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         stop
     }
 }
@@ -5125,7 +5233,11 @@ actor BlasterAmmo2 : SamsaraEnemyAmmoPickup
         goto PickupDisplay
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseWaves",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Waves",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseZappers",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Zappers",0,"PickupFail")
         goto PickupDisplay
@@ -5156,7 +5268,9 @@ actor BlasterAmmo2 : SamsaraEnemyAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",1)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         stop
     }
 }
@@ -5216,7 +5330,11 @@ actor CrossbowAmmo2 : SamsaraEnemyAmmoPickup
         goto PickupHexen1
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseXTerminators",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_XTerminators",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBursts",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bursts",0,"PickupFail")
         goto PickupDisplay
@@ -5272,7 +5390,9 @@ actor CrossbowAmmo2 : SamsaraEnemyAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_XTerminators",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseXTerminators")
         TNT1 A 0 A_GiveInventory("Catacomb_Bursts",1)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBursts")
         stop
     }
 }
@@ -5318,7 +5438,9 @@ actor CrossbowAmmo3 : CrossbowAmmo2
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_XTerminators",random(2,3))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseXTerminators")
         TNT1 A 0 A_GiveInventory("Catacomb_Bursts",random(2,3))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBursts")
         stop
     }
 }
@@ -5387,6 +5509,8 @@ actor PhoenixRodAmmo2 : SamsaraEnemyAmmoPickup
         goto PickupHexen1
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseNukes",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Nukes",0,"PickupFail")
         goto PickupDisplay
 
@@ -5445,6 +5569,7 @@ actor PhoenixRodAmmo2 : SamsaraEnemyAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Nukes",random(3,4))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseNukes")
         stop
     }
 }
@@ -5493,6 +5618,7 @@ actor PhoenixRodAmmo3 : PhoenixRodAmmo2
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Nukes",random(4,6))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseNukes")
         stop
     }
 }
@@ -5527,6 +5653,8 @@ actor SkullRodAmmo2 : SamsaraEnemyAmmoPickup
         goto PickupDisplay
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBolts",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bolts",0,"PickupFail")
         goto PickupDisplay
 
@@ -5556,6 +5684,7 @@ actor SkullRodAmmo2 : SamsaraEnemyAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Bolts",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBolts")
         stop
     }
 }
@@ -5590,7 +5719,11 @@ actor StrifeAcolyteDrop : SamsaraEnemyAmmoPickup
         goto PickupDisplay
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseWaves",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Waves",0,1)
+        goto PickupDisplay
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseZappers",1,1)
         goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Zappers",0,"PickupFail")
         goto PickupDisplay
@@ -5621,7 +5754,9 @@ actor StrifeAcolyteDrop : SamsaraEnemyAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",1)
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         stop
     }
 }
@@ -5658,6 +5793,8 @@ actor StrifeEnergyPod2 : SamsaraEnemyAmmoPickup
         goto PickupDisplay
 
       PickupCatacomb:
+        TNT1 A 0 A_JumpIfInventory("SamsaraCatacombCanUseBolts",1,1)
+        goto PickupDisplay
         TNT1 A 0 A_JumpIfInventory("Catacomb_Bolts",0,"PickupFail")
         goto PickupDisplay
 
@@ -5687,6 +5824,7 @@ actor StrifeEnergyPod2 : SamsaraEnemyAmmoPickup
 
       PickupSuccessCatacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Bolts",random(1,2))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBolts")
         stop
     }
 }

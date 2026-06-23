@@ -1,3 +1,4 @@
+actor SamsaraCatacombCanUseZappers : Boolean {}
 actor SamsaraCatacombZappersAttackAmount : Counter { Inventory.MaxAmount 12 }
 actor SamsaraCatacombZappersAttackSilentSound : Boolean {}
 

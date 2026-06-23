@@ -1,3 +1,5 @@
+actor SamsaraCatacombCanUseBolts : Boolean {}
+
 actor Catacomb_BoltsQuickSpell : Catacomb3D_QuickSpell
 {
     Inventory.PickupMessage "Bolts"

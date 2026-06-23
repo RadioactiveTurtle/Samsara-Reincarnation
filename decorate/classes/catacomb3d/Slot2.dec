@@ -1,3 +1,5 @@
+actor SamsaraCatacombCanUseXTerminators : Boolean {}
+
 actor Catacomb_XTerminatorsQuickSpell : Catacomb3D_QuickSpell
 {
     Inventory.PickupMessage "XTerminators"

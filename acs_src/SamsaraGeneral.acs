@@ -121,9 +121,10 @@ script "SamsaraDecorate" (int choice, int arg1, int arg2) //215 - SAMSARA_DECORA
             break;
 
           case CLASS_CATACOMB:
-            if (CheckInventory("Catacomb_Zappers") < 6)
+            if (CheckInventory("Catacomb_Zappers") < 6 || !CheckInventory("SamsaraCatacombCanUseZappers"))
             {
-                SetInventory("Catacomb_Zappers", 6);
+                if (CheckInventory("Catacomb_Zappers") < 6) { SetInventory("Catacomb_Zappers", 6); }
+                SetInventory("SamsaraCatacombCanUseZappers", 1);
                 result = 1;
             }
             break;
@@ -3253,16 +3254,22 @@ Script "Samsara_ResetInventory" (void)
 			TakeInventory("Catacomb_LargeHealthPotion", INTMAX);
 			TakeInventory("Catacomb_Waves", INTMAX);
 			TakeInventory("Catacomb_WavesQuickSpell", INTMAX);
+			TakeInventory("SamsaraCatacombCanUseWaves", INTMAX);
 			TakeInventory("Catacomb_XTerminators", INTMAX);
 			TakeInventory("Catacomb_XTerminatorsQuickSpell", INTMAX);
+			TakeInventory("SamsaraCatacombCanUseXTerminators", INTMAX);
 			TakeInventory("Catacomb_Bursts", INTMAX);
 			TakeInventory("Catacomb_BurstsQuickSpell", INTMAX);
+			TakeInventory("SamsaraCatacombCanUseBursts", INTMAX);
 			TakeInventory("Catacomb_Zappers", INTMAX);
 			TakeInventory("Catacomb_ZappersQuickSpell", INTMAX);
+			TakeInventory("SamsaraCatacombCanUseZappers", INTMAX);
 			TakeInventory("Catacomb_Nukes", INTMAX);
 			TakeInventory("Catacomb_NukesQuickSpell", INTMAX);
+			TakeInventory("SamsaraCatacombCanUseNukes", INTMAX);
 			TakeInventory("Catacomb_Bolts", INTMAX);
 			TakeInventory("Catacomb_BoltsQuickSpell", INTMAX);
+			TakeInventory("SamsaraCatacombCanUseBolts", INTMAX);
 			TakeInventory("Catacomb_AtomicQuickspell", INTMAX);
 			TakeInventory("PowerCatacomb_SpreadShot", INTMAX);
 			TakeInventory("PowerCatacomb_SpreadShotInventoryItem", INTMAX);
@@ -3943,6 +3950,12 @@ script "Samsara_FillInventory" (void)
 			break;
 
 		case CLASS_CATACOMB:
+			GiveInventory("SamsaraCatacombCanUseWaves", 1);
+			GiveInventory("SamsaraCatacombCanUseXTerminators", 1);
+			GiveInventory("SamsaraCatacombCanUseBursts", 1);
+			GiveInventory("SamsaraCatacombCanUseZappers", 1);
+			GiveInventory("SamsaraCatacombCanUseNukes", 1);
+			GiveInventory("SamsaraCatacombCanUseBolts", 1);
 			GiveInventory("Catacomb_SmallHealthPotion",99);
 			GiveInventory("Catacomb_LargeHealthPotion",99);
 			GiveInventory("Catacomb_Hourglass",1);
@@ -10156,6 +10169,124 @@ script "Samsara_GiveCustomSlot" (int slot, int dropped, int startmode)
         }
         break;
 
+      case CLASS_CATACOMB:
+        switch (slot)
+        {
+          default:
+            result = -1;
+            break;
+
+          case SLOT_CHAINSAW:
+            if (!CheckInventory("Catacomb_WavesQuickSpell"))
+            {
+                GiveInventory("Catacomb_WavesQuickSpell", 1);
+                result = 1;
+            } else if (CheckInventory("Catacomb_Waves") < GetAmmoCapacity("Catacomb_Waves") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                GiveInventory("Catacomb_WavesQuickSpell", 1);
+                result = 1;
+            }
+
+            if (startmode != 0) { result = 1; }
+
+            if (result == 1) { GiveInventory("SamsaraCatacombCanUseWaves", 1); }
+            break;
+
+          case SLOT_SHOTGUN:
+            if (!CheckInventory("Catacomb_XTerminatorsQuickSpell"))
+            {
+                GiveInventory("Catacomb_XTerminatorsQuickSpell", 1);
+                result = 1;
+            } else if (CheckInventory("Catacomb_XTerminators") < GetAmmoCapacity("Catacomb_XTerminators") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                GiveInventory("Catacomb_XTerminatorsQuickSpell", 1);
+                result = 1;
+            }
+
+            if (startmode != 0) { result = 1; }
+
+            if (result == 1) { GiveInventory("SamsaraCatacombCanUseXTerminators", 1); }
+            break;
+
+          case SLOT_SUPERSHOTGUN:
+            if (!CheckInventory("Catacomb_BurstsQuickSpell"))
+            {
+                GiveInventory("Catacomb_BurstsQuickSpell", 1);
+                result = 1;
+            } else if (CheckInventory("Catacomb_Bursts") < GetAmmoCapacity("Catacomb_Bursts") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                GiveInventory("Catacomb_BurstsQuickSpell", 1);
+                result = 1;
+            }
+
+            if (startmode != 0) { result = 1; }
+
+            if (result == 1) { GiveInventory("SamsaraCatacombCanUseBursts", 1); }
+            break;
+
+          case SLOT_CHAINGUN:
+            if (!CheckInventory("Catacomb_ZappersQuickSpell"))
+            {
+                GiveInventory("Catacomb_ZappersQuickSpell", 1);
+                result = 1;
+            } else if (CheckInventory("Catacomb_Zappers") < GetAmmoCapacity("Catacomb_Zappers") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                GiveInventory("Catacomb_ZappersQuickSpell", 1);
+                result = 1;
+            }
+
+            if (startmode != 0) { result = 1; }
+
+            if (result == 1) { GiveInventory("SamsaraCatacombCanUseZappers", 1); }
+            break;
+
+          case SLOT_ROCKETLAUNCHER:
+            if (!CheckInventory("Catacomb_NukesQuickSpell"))
+            {
+                GiveInventory("Catacomb_NukesQuickSpell", 1);
+                result = 1;
+            } else if (CheckInventory("Catacomb_Nukes") < GetAmmoCapacity("Catacomb_Nukes") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                GiveInventory("Catacomb_NukesQuickSpell", 1);
+                result = 1;
+            }
+
+            if (startmode != 0) { result = 1; }
+
+            if (result == 1) { GiveInventory("SamsaraCatacombCanUseNukes", 1); }
+            break;
+
+          case SLOT_PLASMARIFLE:
+            if (!CheckInventory("Catacomb_BoltsQuickSpell"))
+            {
+                GiveInventory("Catacomb_BoltsQuickSpell", 1);
+                result = 1;
+            } else if (CheckInventory("Catacomb_Bolts") < GetAmmoCapacity("Catacomb_Bolts") / tosseddiv && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                GiveInventory("Catacomb_BoltsQuickSpell", 1);
+                result = 1;
+            }
+
+            if (startmode != 0) { result = 1; }
+
+            if (result == 1) { GiveInventory("SamsaraCatacombCanUseBolts", 1); }
+            break;
+
+          case SLOT_BFG9000:
+            if (!CheckInventory("Catacomb_AtomicQuickSpell"))
+            {
+                GiveInventory("Catacomb_AtomicQuickSpell", 1);
+                result = 1;
+            } else if ((CheckInventory("Catacomb_Nukes") < GetAmmoCapacity("Catacomb_Nukes") / tosseddiv || CheckInventory("Catacomb_XTerminators") < GetAmmoCapacity("Catacomb_XTerminators") / tosseddiv) && (dropped >= 1 || startmode != 0 || !weaponstay)) {
+                GiveInventory("Catacomb_AtomicQuickSpell", 1);
+                result = 1;
+            }
+
+            if (startmode != 0) { result = 1; }
+
+            if (result == 1)
+            {
+                GiveInventory("SamsaraCatacombCanUseNukes", 1);
+                GiveInventory("SamsaraCatacombCanUseXTerminators", 1);
+            }
+            break;
+        }
+        break;
+
       case CLASS_PAINKILLER:
         switch (slot)
         {
@@ -12447,11 +12578,17 @@ script "Samsara_GiveBackpack" (int startmode)
 
       case CLASS_CATACOMB:
         GiveInventory("Catacomb_Waves", Random(1, 2));
+        GiveInventory("SamsaraCatacombCanUseWaves", 1);
         GiveInventory("Catacomb_XTerminators", Random(1, 2));
+        GiveInventory("SamsaraCatacombCanUseXTerminators", 1);
         GiveInventory("Catacomb_Nukes", Random(1, 2));
+        GiveInventory("SamsaraCatacombCanUseNukes", 1);
         GiveInventory("Catacomb_Bolts", Random(1, 2));
+        GiveInventory("SamsaraCatacombCanUseBolts", 1);
         GiveInventory("Catacomb_Zappers", Random(1, 2));
+        GiveInventory("SamsaraCatacombCanUseZappers", 1);
         GiveInventory("Catacomb_Bursts", Random(1, 2));
+        GiveInventory("SamsaraCatacombCanUseBursts", 1);
 
         if (startmode >= 0) // do not give in LMS
         {

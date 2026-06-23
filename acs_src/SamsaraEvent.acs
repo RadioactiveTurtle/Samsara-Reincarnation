@@ -5132,7 +5132,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
                 if (CheckInventory("Catacomb_Nukes")) { GiveInventory("GotWeapon5", 1); }
                 if (CheckInventory("Catacomb_Bolts")) { GiveInventory("GotWeapon6", 1); }
 
-				if (CheckInventory("Catacomb_Waves") || CheckInventory("SamsaraHasInfiniteAmmo"))
+				if (CheckInventory("SamsaraCatacombCanUseWaves") && (CheckInventory("Catacomb_Waves") || CheckInventory("SamsaraHasInfiniteAmmo")))
 				{
 					if (!CheckInventory("Catacomb_WavesQuickSpell"))
                     {
@@ -5144,7 +5144,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 					if (CheckInventory("Catacomb_WavesQuickSpell") && !CheckWeapon("Catacomb_WavesQuickSpell")) { TakeInventory("Catacomb_WavesQuickSpell", 1); }
 				}
 
-				if (CheckInventory("Catacomb_XTerminators") || CheckInventory("SamsaraHasInfiniteAmmo"))
+				if (CheckInventory("SamsaraCatacombCanUseXTerminators") && (CheckInventory("Catacomb_XTerminators") || CheckInventory("SamsaraHasInfiniteAmmo")))
 				{
 					if (!CheckInventory("Catacomb_XTerminatorsQuickSpell"))
                     {
@@ -5156,7 +5156,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 					if (CheckInventory("Catacomb_XTerminatorsQuickSpell") && !CheckWeapon("Catacomb_XTerminatorsQuickSpell")) { TakeInventory("Catacomb_XTerminatorsQuickSpell", 1); }
 				}
 
-				if (CheckInventory("Catacomb_Bursts") || CheckInventory("SamsaraHasInfiniteAmmo"))
+				if (CheckInventory("SamsaraCatacombCanUseBursts") && (CheckInventory("Catacomb_Bursts") || CheckInventory("SamsaraHasInfiniteAmmo")))
 				{
 					if (!CheckInventory("Catacomb_BurstsQuickSpell"))
                     {
@@ -5168,7 +5168,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 					if (CheckInventory("Catacomb_BurstsQuickSpell") && !CheckWeapon("Catacomb_BurstsQuickSpell")) { TakeInventory("Catacomb_BurstsQuickSpell", 1); }
 				}
 
-				if (CheckInventory("Catacomb_Zappers") || CheckInventory("SamsaraHasInfiniteAmmo"))
+				if (CheckInventory("SamsaraCatacombCanUseZappers") && (CheckInventory("Catacomb_Zappers") || CheckInventory("SamsaraHasInfiniteAmmo")))
 				{
 					if (!CheckInventory("Catacomb_ZappersQuickSpell"))
                     {
@@ -5180,7 +5180,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 					if (CheckInventory("Catacomb_ZappersQuickSpell") && !CheckWeapon("Catacomb_ZappersQuickSpell")) { TakeInventory("Catacomb_ZappersQuickSpell", 1); }
 				}
 
-				if (CheckInventory("Catacomb_Nukes") || CheckInventory("SamsaraHasInfiniteAmmo"))
+				if (CheckInventory("SamsaraCatacombCanUseNukes") && (CheckInventory("Catacomb_Nukes") || CheckInventory("SamsaraHasInfiniteAmmo")))
 				{
 					if (!CheckInventory("Catacomb_NukesQuickSpell"))
                     {
@@ -5192,7 +5192,7 @@ script "SamsaraSpawn" (int respawning) //624 -- SAMSARA_SPAWN
 					if (CheckInventory("Catacomb_NukesQuickSpell") && !CheckWeapon("Catacomb_NukesQuickSpell")) { TakeInventory("Catacomb_NukesQuickSpell", 1); }
 				}
 
-				if (CheckInventory("Catacomb_Bolts") || CheckInventory("SamsaraHasInfiniteAmmo"))
+				if (CheckInventory("SamsaraCatacombCanUseBolts") && (CheckInventory("Catacomb_Bolts") || CheckInventory("SamsaraHasInfiniteAmmo")))
 				{
 					if (!CheckInventory("Catacomb_BoltsQuickSpell"))
                     {

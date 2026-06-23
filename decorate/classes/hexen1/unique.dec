@@ -974,9 +974,13 @@ actor SamsaraHexenMysticAmbitIncantAmmoGiver : Trigger
 
       PickupSuccessAmmo1Catacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Waves",random(50,99))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseWaves")
         TNT1 A 0 A_GiveInventory("Catacomb_XTerminators",random(50,99))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseXTerminators")
         TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(50,99))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseZappers")
         TNT1 A 0 A_GiveInventory("Catacomb_Bursts",random(50,99))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBursts")
         stop
 
       // "Mana 2" check
@@ -1038,7 +1042,9 @@ actor SamsaraHexenMysticAmbitIncantAmmoGiver : Trigger
 
       PickupSuccessAmmo2Catacomb:
         TNT1 A 0 A_GiveInventory("Catacomb_Nukes",random(50,99))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseNukes")
         TNT1 A 0 A_GiveInventory("Catacomb_Bolts",random(50,99))
+        TNT1 A 0 A_GiveInventory("SamsaraCatacombCanUseBolts")
         stop
     }
 }

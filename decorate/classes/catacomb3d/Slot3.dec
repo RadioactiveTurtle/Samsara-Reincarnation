@@ -1,3 +1,5 @@
+actor SamsaraCatacombCanUseBursts : Boolean {}
+
 actor Catacomb_BurstsQuickSpell : Catacomb3D_QuickSpell
 {
     Inventory.PickupMessage "Bursts"

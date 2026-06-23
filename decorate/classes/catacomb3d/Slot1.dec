@@ -1,3 +1,5 @@
+actor SamsaraCatacombCanUseWaves : Boolean {}
+
 actor Catacomb_WavesQuickSpell : Catacomb3D_QuickSpell
 {
     Inventory.PickupMessage "Waves"

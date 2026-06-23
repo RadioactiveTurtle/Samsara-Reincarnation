@@ -8833,6 +8833,102 @@ model SamsaraSlotOneDrop
 	FrameIndex GF00 X 0 0
 }
 
+Model SamsaraSlotOnePickup
+{
+	Path "models/goldfinger/golfclub/pickup"
+	Model 0 "golfclub.md3"
+    Scale 15.0 15.0 15.0
+
+	FrameIndex GF01 Z 0 0
+}
+
+Model SamsaraSlotOnePickup
+{
+	Path "models/goldfinger/golfclub/pickup"
+	Model 0 "golfclub_hybrid.md3"
+	Model 1 "hybrid.md2"
+	skin 1 "slot1y.png"
+	Scale 0.8 0.8 0.8
+	AngleOffset 180
+
+	FrameIndex GF01 Y 0 0
+	FrameIndex GF01 Y 1 0
+}
+
+model SamsaraSlotOnePickup
+{
+    Path "models"
+    Model 0 "slots/hybrid.md2"
+    Skin 0 "slots/slot1n.png"
+    Scale 0.8 0.8 0.8
+
+	FrameIndex GF01 X 0 0
+}
+
+Model SamsaraSlotOneNoStay
+{
+	Path "models/goldfinger/golfclub/pickup"
+	Model 0 "golfclub.md3"
+    Scale 15.0 15.0 15.0
+
+	FrameIndex GF01 Z 0 0
+}
+
+Model SamsaraSlotOneNoStay
+{
+	Path "models/goldfinger/golfclub/pickup"
+	Model 0 "golfclub_hybrid.md3"
+	Model 1 "hybrid.md2"
+	skin 1 "slot1y.png"
+	Scale 0.8 0.8 0.8
+	AngleOffset 180
+
+	FrameIndex GF01 Y 0 0
+	FrameIndex GF01 Y 1 0
+}
+
+model SamsaraSlotOneNoStay
+{
+    Path "models"
+    Model 0 "slots/hybrid.md2"
+    Skin 0 "slots/slot1n.png"
+    Scale 0.8 0.8 0.8
+
+	FrameIndex GF01 X 0 0
+}
+
+Model SamsaraSlotOneDrop
+{
+	Path "models/goldfinger/golfclub/pickup"
+	Model 0 "golfclub.md3"
+    Scale 15.0 15.0 15.0
+
+	FrameIndex GF01 Z 0 0
+}
+
+Model SamsaraSlotOneDrop
+{
+	Path "models/goldfinger/golfclub/pickup"
+	Model 0 "golfclub_hybrid.md3"
+	Model 1 "hybrid.md2"
+	skin 1 "slot1y.png"
+	Scale 0.8 0.8 0.8
+	AngleOffset 180
+
+	FrameIndex GF01 Y 0 0
+	FrameIndex GF01 Y 1 0
+}
+
+model SamsaraSlotOneDrop
+{
+    Path "models"
+    Model 0 "slots/hybrid.md2"
+    Skin 0 "slots/slot1n.png"
+    Scale 0.8 0.8 0.8
+
+	FrameIndex GF01 X 0 0
+}
+
 model SamsaraSlotTwoPickup
 {
 	Path "Models/GoldFinger/pickups"

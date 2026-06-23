@@ -266,7 +266,7 @@ actor Goldeneye_SlapperTracer : FastProjectile
     var int user_damage;
     Radius 2
     Height 4
-    Speed 24
+    Speed 40
     Damage (0)
     +DONTBLAST
     +FORCERADIUSDMG

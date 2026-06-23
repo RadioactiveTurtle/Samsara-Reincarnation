@@ -301,3 +301,40 @@ Script "HexenQuietusFireDamage" (void)
 		if(!SetActorState(0,"XDeath",1))
 			SetActorState(0,"Death",1);
 }
+
+Script "HexenGrapplePull" (void)
+{
+	//First we need to store this projectile for future reference
+	int myTid = ActivatorTid();
+	int newTid = UniqueTid();
+	Thing_ChangeTid(0,newTid);
+	
+	//Get the player's coordinates
+	SetActivator(0,AAPTR_Target);
+	int myX = GetActorX(0);
+	int myY = GetActorY(0);
+	int myZ = GetActorZ(0);
+	
+	//Now go back to the projectile and set the activator to the hit enemy
+	SetActivator(newTid);
+	Thing_ChangeTid(newTid, 0);
+	SetActivator(0,AAPTR_Tracer);
+	
+	//TO-DO, implement stuff that would prevent enemies from being grappled, such as a boss
+	
+	//Get enemy coordinates
+	int enemyX = GetActorX(0);
+	int enemyY = GetActorY(0);
+	int enemyZ = GetActorZ(0);
+	
+	//Calculate vectors here
+	int vecX = enemyX - myX;
+	int vecY = enemyY - myY;
+	int vecZ = enemyZ - myZ;
+	int angle = VectorAngle(vecX, vecY);
+	int pitch = VectorAngle(magnitudeTwo_f(vecX, vecY), vecZ);
+	int velocity = -160; //Negative as we want it to move closer to player
+	
+	//Finally, set velocity
+	SetActorVelocity(0, velocity * cos(angle), velocity * sin(angle), velocity * sin(-pitch), 0, 0);
+}

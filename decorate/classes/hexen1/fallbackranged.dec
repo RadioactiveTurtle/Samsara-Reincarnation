@@ -31,31 +31,10 @@ actor "Jade Wand" : SamsaraHexenWeapon
         H116 A 1 A_Raise
         loop
 
-      // Unpowered
       Fire:
-        TNT1 A 0 A_JumpIfInventory("PowerSamsaraHexenWeaponLevel2",1,"FirePowered")
-        TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"FirePowered")
-      FireUnpowered:
         H116 A 2
         H116 B 6 Bright Offset(0,48) A_GiveInventory("SamsaraHexenJadeWandAttackHandler")
         H116 A 5 Offset(0,40)
-        TNT1 A 0 Offset(0,36) A_ReFire
-        goto Ready
-
-      // Powered
-      FirePowered:
-        H116 A 2
-      FirePoweredLoop:
-        H116 B 2 Bright Offset(0,48) A_GiveInventory("SamsaraHexenJadeWandPoweredAttackHandler")
-        TNT1 A 0 A_JumpIfInventory("PowerSamsaraHexenWeaponLevel2",1,3)
-        TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,2)
-        TNT1 A 0 A_ClearReFire
-        goto FirePoweredFinish
-        TNT1 A 0 A_ReFire("FirePoweredLoop")
-        goto FirePoweredFinish
-
-      FirePoweredFinish:
-        H116 A 2 Offset(0,40)
         TNT1 A 0 Offset(0,36) A_ReFire
         goto Ready
     }
@@ -68,6 +47,8 @@ actor SamsaraHexenJadeWandAttackHandler : Trigger
       // Attack stuff
       Pickup:
         TNT1 A 0 A_PlaySound("hexen/jadefire",CHAN_WEAPON)
+		TNT1 A 0 A_JumpIfInventory("PowerSamsaraHexenWeaponLevel2",1,"PickupPowered")
+        TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"PickupPowered")
         TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupCoop")
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupCoop")
       PickupDM:
@@ -77,24 +58,16 @@ actor SamsaraHexenJadeWandAttackHandler : Trigger
       PickupCoop:
         TNT1 A 0 A_FireBullets(4,4,4,3,"SamsaraHexenJadePuffCoop",FBF_NOFLASH)
         stop
-    }
-}
-
-actor SamsaraHexenJadeWandPoweredAttackHandler : Trigger
-{
-    States
-    {
-      // Attack stuff
-      Pickup:
-        TNT1 A 0 A_PlaySound("hexen/jadefire",CHAN_WEAPON)
-        TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupCoop")
-        TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupCoop")
-      PickupDM:
-        TNT1 A 0 A_FireCustomMissile("SamsaraHexenJadeRay",0,false)
+		
+	  PickupPowered:
+		TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupPoweredCoop")
+        TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupPoweredCoop")
+      PickupPoweredDM:
+        TNT1 AAAAA 0 A_FireCustomMissile("SamsaraHexenJadeWandBlob",random(-5,5),false,0,0,0,random(-5,5))
         stop
 
-      PickupCoop:
-        TNT1 A 0 A_FireCustomMissile("SamsaraHexenJadeRayCoop",0,false)
+      PickupPoweredCoop:
+        TNT1 AAAAA 0 A_FireCustomMissile("SamsaraHexenJadeWandBlobCoop",random(-5,5),false,0,0,0,random(-5,5))
         stop
     }
 }
@@ -124,89 +97,32 @@ actor SamsaraHexenJadePuff
 
 actor SamsaraHexenJadePuffCoop : SamsaraHexenJadePuff { +MTHRUSPECIES }
 
-actor SamsaraHexenJadeRay : FastProjectile
+actor SamsaraHexenJadeWandBlob
 {
     Radius 4
     Height 8
-    Speed 160
-    Damage (10)
-    DamageType "HexenMedusa"
-    MissileType "SamsaraHexenJadeRayParticle"
+    Speed 64
+    Damage (16)
     DeathSound "ClericCStaffExplode"
-    +BLOODSPLATTER
+	Projectile
+	-NOGRAVITY
+	Gravity 0.8
     States
     {
       Spawn:
-        TNT1 A -1
-        stop
+        H111 ABCD 3
+        Loop
 
       Death:
-        H111 EFGH 3 Bright
+        H111 EFGH 3
         stop
     }
 }
 
-actor SamsaraHexenJadeRayCoop : SamsaraHexenJadeRay
+actor SamsaraHexenJadeWandBlobCoop : SamsaraHexenJadeWandBlob
 {
     Species "Player"
     +THRUSPECIES
-}
-
-Actor SamsaraHexenJadeRayParticle
-{
-    +CLIENTSIDEONLY
-    +NOINTERACTION
-    States
-    {
-      Spawn:
-        H112 ABCDE 2 Bright
-        stop
-    }
-}
-
-actor SamsaraHexenJadeStatueBit
-{
-    Radius 5
-    Height 5
-    +MISSILE
-    +NOICEDEATH
-    +NOTELEPORT
-    States
-    {
-      Spawn:
-        TNT1 A 0 A_Jump(256,1,2,3,4,5)
-        H116 P 0
-        goto SpawnStart
-        H116 Q 0
-        goto SpawnStart
-        H116 R 0
-        goto SpawnStart
-        H116 S 0
-        goto SpawnStart
-        H116 T 0
-        goto SpawnStart
-
-      SpawnStart:
-        "####" "#" -1
-        stop
-
-      Death:
-        TNT1 A 0 A_Jump(256,1,2,3,4,5)
-        H116 U 0
-        goto DeathFinish
-        H116 V 0
-        goto DeathFinish
-        H116 W 0
-        goto DeathFinish
-        H116 X 0
-        goto DeathFinish
-        H116 Y 0
-        goto DeathFinish
-
-      DeathFinish:
-        "####" "#" 140
-        stop
-    }
 }
 
 // Parias (Classic)/Daedolon
@@ -408,6 +324,8 @@ actor "Impaler Crossbow" : SamsaraHexenWeapon
         goto FireRanged
 
       FireMelee:
+		TNT1 A 0 A_JumpIfInventory("PowerSamsaraHexenWeaponLevel2",1,"FireMeleePowered")
+        TNT1 A 0 A_JumpIfInventory("SamsaraHasPermaWeaponLevel2",1,"FireMeleePowered")
         H100 A 2 Offset(0,24)
         H100 A 2 Offset(0,14)
         H100 A 2 Offset(0,12) A_GiveInventory("SamsaraHexenImpalerCrossbowMeleeAttackHandler")
@@ -415,6 +333,36 @@ actor "Impaler Crossbow" : SamsaraHexenWeapon
         H100 A 2 Offset(0,24)
         H100 A 10 Offset(0,32)
         goto ReadyLoop
+		
+	  FireMeleePowered:
+        H100 A 1 Offset(-8,40)
+		H100 A 1 Offset(-20,56)
+		H100 A 1 Offset(-32,72)
+		H100 A 1 Offset(-40,80)
+		H100 A 1 Offset(-44,84)
+		H100 A 0 A_GiveInventory("SamsaraHexenImpalerCrossbowMeleeAttackHandler")
+		//We'll use the powered fast punch... this is horribly slow
+		FPCH B 3 Offset(5,40)
+        FPCH C 2 Offset(5,40)
+		FPCH D 0 A_GunFlash("FireMeleeFlash",GFF_NOEXTCHANGE)
+		FPCH DE 2 Offset(5,40)
+        FPCH E 1 Offset(25,60)
+        FPCH E 1 Offset(45,80)
+        FPCH E 1 Offset(65,100)
+        FPCH E 5 Offset(0,150)
+		H100 A 1 Offset(-44,84)
+		H100 A 1 Offset(-40,80)
+		H100 A 1 Offset(-32,72)
+		H100 A 1 Offset(-20,56)
+		H100 A 1 Offset(-8,40)
+        H100 A 10 Offset(0,32)
+        goto ReadyLoop
+		
+	  //Rather unfortunately I can't control the offsets here. Well, this is probably the
+	  //best we are going to get right here...
+	  FireMeleeFlash:
+		H100 P 12
+		Stop
 
       FireRanged:
         TNT1 A 0 A_AlertMonsters
@@ -460,25 +408,26 @@ actor SamsaraHexenImpalerCrossbowMeleeAttackHandler : Trigger
 
       // Powered
       PickupPowered:
+        TNT1 A 0 A_PlaySound("*fistgrunt",CHAN_VOICE)
         TNT1 A 0 A_JumpIfInventory("SPModeOn",1,"PickupPoweredCoop")
         TNT1 A 0 A_JumpIfInventory("CoopModeOn",1,"PickupPoweredCoop")
       PickupPoweredDM:
         TNT1 A 0 A_JumpIfInventory("SamsaraHasSpread",1,"PickupPoweredDMSpread")
-        TNT1 A 0 A_CustomPunch(random(100,150),true,0,"HexenImpalerPoweredMeleePuff")
-        stop
+        TNT1 A 0 A_CustomPunch(random(40,55)*2,true,0,"HammerPuff",128)
+        goto PickupFinishHitActor
 
       PickupPoweredDMSpread:
-        TNT1 A 0 A_CustomPunch(random(100,150)*3,true,0,"HexenImpalerPoweredMeleePuff")
-        stop
+        TNT1 A 0 A_CustomPunch((random(40,55)*2)*3,true,0,"HammerPuff",128)
+        goto PickupFinishHitActor
 
       PickupPoweredCoop:
         TNT1 A 0 A_JumpIfInventory("SamsaraHasSpread",1,"PickupPoweredCoopSpread")
-        TNT1 A 0 A_CustomPunch(random(100,150),true,0,"HexenImpalerPoweredMeleePuffCoop")
-        stop
+        TNT1 A 0 A_CustomPunch(random(40,55)*2,true,0,"HammerPuffCoop",128)
+        goto PickupFinishHitActor
 
       PickupPoweredCoopSpread:
-        TNT1 A 0 A_CustomPunch(random(100,150)*3,true,0,"HexenImpalerPoweredMeleePuffCoop")
-        stop
+        TNT1 A 0 A_CustomPunch((random(40,55)*2)*3,true,0,"HammerPuffCoop",128)
+        goto PickupFinishHitActor
     }
 }
 
@@ -614,7 +563,7 @@ actor HexenImpalerMissileCoop : HexenImpalerMissile
 actor HexenImpalerMissileSilent : HexenImpalerMissile { SeeSound "" }
 actor HexenImpalerMissileSilentCoop : HexenImpalerMissileCoop { SeeSound "" }
 
-actor HexenImpalerGrapple : LoreShot
+actor HexenImpalerGrapple
 {
     Radius 4
     Height 8
@@ -622,7 +571,8 @@ actor HexenImpalerGrapple : LoreShot
     Damage (random(1,4)*10)
     DamageType "Pistol"
     SeeSound "Hexen/Weapon/XBowFire"
-    +BLOODSPLATTER
+	Projectile
+	+HITTRACER
     States
     {
       Spawn:
@@ -637,6 +587,7 @@ actor HexenImpalerGrapple : LoreShot
         stop
 
       XDeath:
+		TNT1 A 0 ACS_NamedExecuteWithResult("HexenGrapplePull")
         TNT1 A 1 A_PlaySound("Hexen/Weapon/XBowSplatter",CHAN_VOICE)
         stop
     }

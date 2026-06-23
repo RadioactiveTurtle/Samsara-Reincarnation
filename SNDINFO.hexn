@@ -162,8 +162,7 @@ Hexen/WandOfEmbers/Fire	sounds/Hexen/CWEMBFIRE.ogg
 Hexen/WandOfEmbers/Hit	sounds/Hexen/CWEMBHIT.ogg
 Hexen/FrostFang/Fire		sounds/Hexen/CFSTFFIR2.mp3
 Hexen/FrostFang/Hit		sounds/Hexen/CFSTFHIT2.mp3
-Hexen/Rocks				sounds/Hexen/ROCKS
-Hexen/RockBreak				sounds/Hexen/POTBRK1
+Hexen/GrapplePull		sounds/Hexen/CHNSWCH8
 
 hexen/weaponget         sample11
 hexen/artiget           artget1

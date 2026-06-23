@@ -13139,31 +13139,10 @@ Script "SamsaraDeathEffects" (int type)
 				SpawnForced("UniversalBloodyHellIceDeathEffectForBosses", xPosition, yPosition+random(0,3), zPosition+random(-3,3), iceTid);
 			}
 			break;
-		// Stone Shatter Effect
-		case 17:
-			for (int stoneChunkAmount = random(32, 48); stoneChunkAmount >= 0; stoneChunkAmount--)
-			{
-				iceTid = UniqueTid();
-				SpawnForced("UniversalBloodyHellStoneDeathEffect", xPosition, yPosition+random(0,1), zPosition+random(-1,1), iceTid);
-			}
-			break;
-		// Boss Stone Shatter Effect
-		case 18:
-			for (int stoneChunkAmountBoss = random(96, 144); stoneChunkAmountBoss >= 0; stoneChunkAmountBoss--)
-			{
-				iceTid = UniqueTid();
-				SpawnForced("UniversalBloodyHellStoneDeathEffectForBosses", xPosition, yPosition+random(0,3), zPosition+random(-3,3), iceTid);
-			}
-			break;
 		// General Ice Translation
 		case 100:
 			if (isZDoom()) { Thing_SetTranslation(0, TRANSLATION_ICE); }
 			else { Thing_SetTranslation(0, 7602); }
-			break;
-		// Hexen Stone Translation
-		case 101:
-			CreateTranslation(722,0:255=%[0,0,0]:[0.67,0.67,0.67]);
-			Thing_SetTranslation(0, 722);
 			break;
 		// Translation Removal
 		case 9000:

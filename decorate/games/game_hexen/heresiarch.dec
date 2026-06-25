@@ -38,6 +38,7 @@ actor Heresiarch2 : SamsaraMonsterReincHeresiarch replaces Heresiarch
 	DamageFactor "Ice", 1.1
 	DamageFactor "DoomDamageTypeIce", 1.1
 	DamageFactor "Disintegrate", 1.1
+	DamageFactor "StrifeMauler", 1.1
 	DamageFactor "DukeDamage", 1.1
 	DamageFactor "DukeExplosive", 0.95
 	DamageFactor "DukeIce", 1.15
@@ -165,6 +166,7 @@ actor Heresiarch2 : SamsaraMonsterReincHeresiarch replaces Heresiarch
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)

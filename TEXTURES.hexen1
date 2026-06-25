@@ -25,4 +25,64 @@ Sprite "H100Q0", 179, 80
 	Patch "H100A0", 0, 0
 }
 
+Sprite "TSPKE0", 51, 137
+{
+	Offset 26, 0
+	Patch "TSPKA0", 0, 0
+}
+
+Sprite "TSPKF0", 51, 137
+{
+	Offset 26, 13
+	Patch "TSPKA0", 0, 0
+}
+
+Sprite "TSPKG0", 51, 137
+{
+	Offset 26, 26
+	Patch "TSPKA0", 0, 0
+}
+
+Sprite "TSPKH0", 51, 137
+{
+	Offset 26, 39
+	Patch "TSPKA0", 0, 0
+}
+
+Sprite "TSPKI0", 51, 137
+{
+	Offset 26, 52
+	Patch "TSPKA0", 0, 0
+}
+
+Sprite "TSPKJ0", 51, 137
+{
+	Offset 26, 65
+	Patch "TSPKA0", 0, 0
+}
+
+Sprite "TSPKK0", 51, 137
+{
+	Offset 26, 78
+	Patch "TSPKA0", 0, 0
+}
+
+Sprite "TSPKL0", 51, 137
+{
+	Offset 26, 91
+	Patch "TSPKA0", 0, 0
+}
+
+Sprite "TSPKM0", 51, 137
+{
+	Offset 26, 104
+	Patch "TSPKA0", 0, 0
+}
+
+Sprite "TSPKN0", 51, 137
+{
+	Offset 26, 117
+	Patch "TSPKA0", 0, 0
+}
+
 // End of texture definitions

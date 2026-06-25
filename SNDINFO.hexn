@@ -163,6 +163,9 @@ Hexen/WandOfEmbers/Hit	sounds/Hexen/CWEMBHIT.ogg
 Hexen/FrostFang/Fire		sounds/Hexen/CFSTFFIR2.mp3
 Hexen/FrostFang/Hit		sounds/Hexen/CFSTFHIT2.mp3
 Hexen/GrapplePull		sounds/Hexen/CHNSWCH8
+Hexen/FreezeRay			sounds/Hexen/hexen_freezeray.ogg
+Hexen/Spike2			sounds/Hexen/spike2
+Hexen/Spike3			sounds/Hexen/spike3
 
 hexen/weaponget         sample11
 hexen/artiget           artget1

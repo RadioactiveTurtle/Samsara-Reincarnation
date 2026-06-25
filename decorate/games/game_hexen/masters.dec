@@ -25,6 +25,7 @@ actor FighterBoss2 : SamsaraMonsterReincFighterBoss replaces FighterBoss
 	DamageFactor "MarathonPlasmaFire", 0.9
 	DamageFactor "Ice", 0.9
 	DamageFactor "Disintegrate", 0.9
+	DamageFactor "StrifeMauler", 0.9
 	DamageFactor "DukeDamage", 0.9
 	DamageFactor "DukeExplosive", 0.75
 	DamageFactor "DukeIce", 0.9
@@ -172,6 +173,7 @@ actor FighterBoss2 : SamsaraMonsterReincFighterBoss replaces FighterBoss
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -257,6 +259,7 @@ actor ClericBoss2 : SamsaraMonsterReincClericBoss replaces ClericBoss
 	DamageFactor "MarathonPlasmaFire", 0.9
 	DamageFactor "Ice", 0.9
 	DamageFactor "Disintegrate", 0.9
+	DamageFactor "StrifeMauler", 0.9
 	DamageFactor "DukeDamage", 0.9
 	DamageFactor "DukeExplosive", 0.75
 	DamageFactor "DukeIce", 0.9
@@ -414,6 +417,7 @@ actor ClericBoss2 : SamsaraMonsterReincClericBoss replaces ClericBoss
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -657,6 +661,7 @@ actor MageBoss2 : SamsaraMonsterReincMageBoss replaces MageBoss
 	DamageFactor "MarathonPlasmaFire", 0.9
 	DamageFactor "Ice", 0.9
 	DamageFactor "Disintegrate", 0.9
+	DamageFactor "StrifeMauler", 0.9
 	DamageFactor "DukeDamage", 0.9
 	DamageFactor "DukeExplosive", 0.75
 	DamageFactor "DukeIce", 0.9
@@ -804,6 +809,7 @@ actor MageBoss2 : SamsaraMonsterReincMageBoss replaces MageBoss
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)

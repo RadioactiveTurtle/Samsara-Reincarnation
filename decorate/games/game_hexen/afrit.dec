@@ -33,6 +33,7 @@ actor FireDemon2 : SamsaraMonsterReincAfrit replaces FireDemon
 	DamageFactor "Ice", 1.15
 	DamageFactor "DoomDamageTypeIce", 1.15
 	DamageFactor "Disintegrate", 1.15
+	DamageFactor "StrifeMauler", 1.15
 	DamageFactor "DukeDamage", 1.15
 	DamageFactor "DukeExplosive", 1.05
 	DamageFactor "DukeIce", 1.2
@@ -282,6 +283,7 @@ actor FireDemon2 : SamsaraMonsterReincAfrit replaces FireDemon
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)

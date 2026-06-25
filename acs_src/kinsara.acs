@@ -336,10 +336,7 @@ script "PistolStart" ENTER
 	{
 		// We can't do pistol starts in Hexen or Strife
         // Or invasion, for that matter
-		if(GetCvar("samsara_currentgame") == 8 || GetCvar("samsara_currentgame") == 16 || isInvasion())
-		{
-			terminate;
-		}
+		if (GetCVar("samsara_currentgame") == 8 || GetCvar("samsara_currentgame") == 16 || isInvasion()) { terminate; }
 
 		if (GetCVar("samsara_moddedgame")) { terminate; }
 
@@ -365,14 +362,7 @@ script "PistolStart" ENTER
 				SetActorProperty (0, APROP_SpawnHealth, 100);
 				break;
 		}
-		
-		TakeInventory("GotWeapon0", 999);
-		TakeInventory("GotWeapon2", 999);
-		TakeInventory("GotWeapon3", 999);
-		TakeInventory("GotWeapon4", 999);
-		TakeInventory("GotWeapon5", 999);
-		TakeInventory("GotWeapon6", 999);
-		TakeInventory("GotWeapon7", 999);
+
 		ACS_NamedExecuteWithResult("Samsara_ResetInventory",0,0,0,0);
 		if (!(CheckInventory("QuakeClass") || CheckInventory("RottClass") || CheckInventory("HalfLifeClass") || CheckInventory("CatacombClass") || CheckInventory("PainkillerClass")))
 		{

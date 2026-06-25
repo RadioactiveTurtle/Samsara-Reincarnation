@@ -104,10 +104,15 @@ Duke Nukem 3D:
 
 ! When running out of alternate ammo, weapons will now switch to normal ammo if there is some remaining. Running out of normal ammo will still switch to another weapon, even with alternate ammo remaining.
 
+-All-
+
+* Fixed Duke playing pistol start taunts when starting another map after turning "Pistol Start" off in the previous map.
+
 Security Officer (Marathon):
 
 ! Damage received from Original/Lost B.J.'s rocket launcher (splash damage only) and Totenkopf B.J.'s Panzerschreck/flakgun now causes a yellow screen flash.
 ! Damage received from Ranger's Mjolnir (lightning) and thunderbolt now causes a white screen flash.
+! Damage received from Strifeguy's mauler (both modes) and Strife's templar (ranged) now causes a chartreuse screen flash.
 + The fusion pistol primary fire bolts now deal 45-60 damage (vanilla; increased from 42-56) or 60-80 damage (improved; PVE only; increased from 45-60).
 + The fusion pistol secondary fire bolts now deal 120-150 damage (vanilla; increased from 105-140) or 160-200 damage (improved; PVE only; increased from 120-150).
 * The fusion pistol's improved damage values in PVE are now taken into account when fired underwater.

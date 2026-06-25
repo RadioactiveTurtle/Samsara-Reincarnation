@@ -8,9 +8,9 @@ script "SamsaraBossMonologue" (int bossmonologueshit, int mixershit, int iosshit
 
     GiveInventory("SamsaraBossMonologueInitialized", 1);
 
-    bool CheckForIOSBossMap = !StrIcmp(strparam(n:PRINTNAME_LEVEL), "MAP30") ||
-                              !StrIcmp(strparam(n:PRINTNAME_LEVEL), "LOST61") || // PSX Final Doom CE
-                              !StrIcmp(strparam(n:PRINTNAME_LEVEL), "LOST61C"); // PSX Doom CE Lost Levels
+    bool CheckForIOSBossMap = !StrIcmp(StrParam(n:PRINTNAME_LEVEL), "MAP30") ||
+                              !StrIcmp(StrParam(n:PRINTNAME_LEVEL), "LOST61") || // PSX Final Doom CE
+                              !StrIcmp(StrParam(n:PRINTNAME_LEVEL), "LOST61C"); // PSX Doom CE Lost Levels
 
     switch (bossmonologueshit)
     {
